@@ -1,0 +1,57 @@
+id: book-factory.sync
+title: "Y-Publishing Factory"
+subtitle: "Sync GitHub → Notion"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: sync_menus
+    label: "Sync menus to Notion"
+    emoji: "📋"
+    action_type: workflow
+    target: "workflows/book-factory/sync-github-to-notion.md"
+    tags: [sync, menus, notion]
+
+  - id: sync_capabilities
+    label: "Sync capabilities registry to Notion"
+    emoji: "🧠"
+    action_type: workflow
+    target: "workflows/book-factory/sync-github-to-notion.md"
+    tags: [sync, capabilities, notion]
+
+  - id: sync_workflows
+    label: "Sync workflow docs to Notion"
+    emoji: "🔄"
+    action_type: workflow
+    target: "workflows/book-factory/sync-github-to-notion.md"
+    tags: [sync, workflows, notion]
+
+  - id: sync_book_metadata
+    label: "Sync book metadata to Notion"
+    emoji: "📚"
+    action_type: workflow
+    target: "workflows/book-factory/sync-github-to-notion.md"
+    tags: [sync, metadata, notion]
+
+  - id: sync_release_summary
+    label: "Sync release summary to Notion"
+    emoji: "📦"
+    action_type: workflow
+    target: "workflows/book-factory/sync-github-to-notion.md"
+    tags: [sync, release, notion]
+
+  - id: view_n8n_spec
+    label: "View n8n sync flow spec"
+    emoji: "⚙️"
+    action_type: documentation
+    target: "docs/n8n-sync-flow-spec.md"
+    tags: [n8n, spec, automation]
+
+  - id: back_to_root
+    label: "Return"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help]
+footer: "Reply with a number or describe your goal."

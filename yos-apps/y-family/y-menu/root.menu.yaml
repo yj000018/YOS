@@ -1,0 +1,66 @@
+id: root
+title: "Y-Menu"
+subtitle: "Cognitive Orchestration Interface"
+module: y-os
+
+items:
+  - id: open_book_factory
+    label: "Book-Factory / Y-Publishing Factory"
+    emoji: "📚"
+    description: "AI-native book production cockpit"
+    action_type: submenu
+    target: "book-factory.root"
+    tags: [publishing, books, writing]
+
+  - id: open_research_factory
+    label: "Research Factory"
+    emoji: "🔬"
+    description: "Deep research, synthesis, knowledge extraction"
+    action_type: noop
+    tags: [research, knowledge]
+    disabled_when: []
+
+  - id: open_memory_factory
+    label: "Memory Factory"
+    emoji: "🧠"
+    description: "Y-OS memory management, Notion sync, Mem0"
+    action_type: noop
+    tags: [memory, notion]
+
+  - id: open_automation_factory
+    label: "Automation Factory"
+    emoji: "⚙️"
+    description: "n8n flows, Zapier, scheduled tasks"
+    action_type: noop
+    tags: [automation, n8n]
+
+  - id: open_agent_factory
+    label: "Agent Factory"
+    emoji: "🤖"
+    description: "Build, configure and deploy Y-OS agents"
+    action_type: noop
+    tags: [agents, ai]
+
+  - id: open_notion_factory
+    label: "Notion Factory"
+    emoji: "📋"
+    description: "Notion databases, pages, sync pipelines"
+    action_type: noop
+    tags: [notion]
+
+  - id: diagnose
+    label: "Diagnose Y-OS — what can I do?"
+    emoji: "🧭"
+    description: "Show all capabilities, suggest next actions"
+    action_type: diagnostic
+    tags: [meta, help]
+
+  - id: status
+    label: "Show Y-OS status"
+    emoji: "📊"
+    description: "Active modules, pending tasks, recent actions"
+    action_type: diagnostic
+    tags: [meta, status]
+
+commands: [home, back, status, help, diagnose]
+footer: "Reply with a number or describe your goal."

@@ -1,0 +1,75 @@
+id: book-factory.website
+title: "Y-Publishing Factory"
+subtitle: "Generate Website / Webapp"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: lovable_prompt
+    label: "Generate Lovable mini-site prompt"
+    emoji: "💡"
+    action_type: prompt
+    target: "prompts/lovable-mini-site-prompt-template.md"
+    produces: [lovable_site_prompt]
+    recommended_when:
+      - "outputs.lovable_site_prompt == missing"
+    tags: [lovable, site, prompt]
+
+  - id: lovable_assets
+    label: "Generate Lovable assets package"
+    emoji: "📦"
+    action_type: workflow
+    target: "workflows/book-factory/generate-lovable-site.md"
+    produces: [lovable_assets]
+    tags: [lovable, assets]
+
+  - id: landing_page_copy
+    label: "Generate simple book landing page copy"
+    emoji: "✍️"
+    action_type: workflow
+    target: "workflows/book-factory/generate-lovable-site.md"
+    produces: [landing_copy]
+    tags: [copy, landing]
+
+  - id: purchase_section
+    label: "Generate purchase / download section"
+    emoji: "🛒"
+    action_type: workflow
+    target: "workflows/book-factory/generate-lovable-site.md"
+    produces: [purchase_copy]
+    tags: [purchase, ecommerce]
+
+  - id: astro_site_spec
+    label: "Generate Astro industrial site spec"
+    emoji: "🚀"
+    action_type: prompt
+    target: "prompts/astro-industrial-site-spec-template.md"
+    produces: [astro_site_spec]
+    recommended_when:
+      - "outputs.astro_site_spec == missing"
+    tags: [astro, industrial, catalogue]
+
+  - id: interactive_edition_spec
+    label: "Generate interactive web edition spec"
+    emoji: "⚡"
+    action_type: workflow
+    target: "workflows/book-factory/build-web-edition.md"
+    produces: [interactive_spec]
+    tags: [interactive, web, multimedia]
+
+  - id: seo_metadata
+    label: "Generate SEO metadata"
+    emoji: "🔍"
+    action_type: workflow
+    target: "workflows/book-factory/generate-lovable-site.md"
+    produces: [seo_metadata]
+    tags: [seo, metadata]
+
+  - id: back_to_root
+    label: "Return"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help]
+footer: "Reply with a number or describe your goal."

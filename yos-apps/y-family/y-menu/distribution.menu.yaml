@@ -1,0 +1,79 @@
+id: book-factory.distribution
+title: "Y-Publishing Factory"
+subtitle: "Prepare Distribution"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: prepare_kdp
+    label: "Prepare Amazon KDP package"
+    emoji: "📦"
+    action_type: workflow
+    target: "workflows/book-factory/prepare-kdp.md"
+    requires: [epub_reflowable, cover, metadata]
+    produces: [kdp_package]
+    recommended_when:
+      - "distribution.kdp == not_started"
+    tags: [kdp, amazon, kindle]
+
+  - id: prepare_ingram
+    label: "Prepare IngramSpark package"
+    emoji: "📚"
+    action_type: workflow
+    target: "workflows/book-factory/prepare-ingram.md"
+    requires: [print_pdf, cover, metadata]
+    produces: [ingram_package]
+    recommended_when:
+      - "distribution.ingram == not_started"
+    tags: [ingram, print, distribution]
+
+  - id: prepare_d2d
+    label: "Prepare Draft2Digital package"
+    emoji: "📱"
+    action_type: workflow
+    target: "workflows/book-factory/prepare-draft2digital.md"
+    requires: [epub_reflowable, metadata]
+    produces: [d2d_package]
+    recommended_when:
+      - "distribution.draft2digital == not_started"
+    tags: [draft2digital, distribution]
+
+  - id: prepare_gumroad
+    label: "Prepare Gumroad / direct sale package"
+    emoji: "💳"
+    action_type: workflow
+    target: "workflows/book-factory/prepare-draft2digital.md"
+    produces: [gumroad_package]
+    tags: [gumroad, direct, sale]
+
+  - id: platform_metadata
+    label: "Generate platform metadata"
+    emoji: "🏷"
+    action_type: workflow
+    target: "workflows/book-factory/prepare-kdp.md"
+    requires: [metadata]
+    produces: [platform_metadata]
+    tags: [metadata, platforms]
+
+  - id: upload_checklist
+    label: "Generate upload checklist"
+    emoji: "✅"
+    action_type: workflow
+    target: "workflows/book-factory/prepare-kdp.md"
+    produces: [upload_checklist]
+    tags: [checklist, upload]
+
+  - id: compare_paths
+    label: "Compare distribution paths"
+    emoji: "⚖️"
+    action_type: decision
+    tags: [compare, decision]
+
+  - id: back_to_root
+    label: "Return"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help]
+footer: "Reply with a number or describe your goal."

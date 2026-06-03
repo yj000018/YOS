@@ -1,0 +1,429 @@
+capabilities:
+
+  - id: book_factory.create_book_project
+    title: Create a new book project
+    module: book-factory
+    user_phrases:
+      - create book
+      - new book
+      - start book
+      - new project
+      - open book
+      - book project
+    required_inputs: [book_title, author]
+    optional_inputs: [book_type, publisher, isbn]
+    tools: [git, yaml-generator]
+    outputs: [book_project_folder, book_yaml, readme]
+    next_actions:
+      - Import manuscript
+      - Create Typst template
+      - Generate book metadata
+
+  - id: book_factory.import_manuscript
+    title: Import manuscript
+    module: book-factory
+    user_phrases:
+      - import manuscript
+      - import text
+      - add content
+      - upload manuscript
+      - import markdown
+      - import docx
+      - import pdf
+      - import from notion
+    required_inputs: [manuscript_file]
+    tools: [pandoc, markdownlint, notion-api]
+    outputs: [manuscript_md, book_structure]
+    next_actions:
+      - Clean and normalize manuscript
+      - Generate book.yaml metadata
+      - Create Typst print template
+
+  - id: book_factory.generate_print_pdf
+    title: Generate premium print PDF
+    module: book-factory
+    user_phrases:
+      - print pdf
+      - premium pdf
+      - typst pdf
+      - print version
+      - beautiful pdf
+      - print-ready
+      - print book
+    required_inputs: [manuscript, typst_template]
+    decision_rules:
+      - condition: "always"
+        recommend: "Use Typst. Not Pandoc. Not Scrivener export."
+    tools: [typst]
+    outputs: [print_pdf]
+    limitations:
+      - Typst template must be created first.
+      - Requires typst CLI installed.
+    fallbacks:
+      - Generate digital PDF instead
+      - Use Pandoc as fallback (lower quality)
+    next_actions:
+      - Build digital PDF
+      - Validate outputs
+      - Prepare KDP package
+
+  - id: book_factory.generate_digital_pdf
+    title: Generate digital PDF
+    module: book-factory
+    user_phrases:
+      - digital pdf
+      - screen pdf
+      - ebook pdf
+      - pdf for screens
+    required_inputs: [manuscript, typst_template]
+    tools: [typst]
+    outputs: [digital_pdf]
+    next_actions:
+      - Build reflowable EPUB
+      - Prepare distribution
+
+  - id: book_factory.generate_epub_reflowable
+    title: Generate reflowable EPUB
+    module: book-factory
+    user_phrases:
+      - epub
+      - ebook
+      - reflowable
+      - pandoc epub
+      - standard epub
+      - digital book
+    required_inputs: [manuscript]
+    decision_rules:
+      - condition: "book_type == text_only"
+        recommend: "Use Pandoc for reflowable EPUB."
+      - condition: "book_type == illustrated"
+        recommend: "Consider fixed-layout EPUB instead."
+    tools: [pandoc, epubcheck]
+    outputs: [epub_reflowable]
+    limitations:
+      - Reflowable EPUB does not preserve complex layouts.
+    fallbacks:
+      - Generate fixed-layout EPUB for illustrated books
+    next_actions:
+      - Validate EPUB
+      - Prepare Kindle package
+      - Prepare KDP upload
+
+  - id: book_factory.generate_epub_fxl
+    title: Generate fixed-layout EPUB
+    module: book-factory
+    user_phrases:
+      - fixed layout epub
+      - fxl epub
+      - illustrated epub
+      - children book epub
+      - comic epub
+      - artbook epub
+      - fixed layout
+    required_inputs: [manuscript, images, fxl_visual_system]
+    decision_rules:
+      - condition: "book_type == illustrated"
+        recommend: "Use HTML/CSS/SVG FXL engine."
+      - condition: "book_type == children_book"
+        recommend: "Use HTML/CSS/SVG FXL engine."
+      - condition: "book_type == comic"
+        recommend: "Use HTML/CSS/SVG FXL engine."
+    tools: [html-css-svg-fxl-engine, epubcheck]
+    outputs: [epub_fixed_layout]
+    limitations:
+      - Kindle FXL support varies by device.
+      - Multimedia EPUB features not consistent across readers.
+    fallbacks:
+      - Generate web edition as primary interactive experience
+      - Generate reflowable EPUB as companion
+    next_actions:
+      - Validate EPUB
+      - Preview in Kindle Previewer
+      - Prepare KDP package
+
+  - id: book_factory.produce_kindle_ready_package
+    title: Produce Kindle-ready package
+    module: book-factory
+    user_phrases:
+      - produce kindle
+      - kindle version
+      - kindle-ready
+      - publish on amazon
+      - kdp package
+      - ebook for amazon
+      - amazon kindle
+      - kindle ebook
+    required_inputs: [manuscript, cover, metadata]
+    decision_rules:
+      - condition: "book_type == text_only"
+        recommend: "workflow book-factory/build-epub-pandoc.md"
+      - condition: "book_type == illustrated"
+        recommend: "workflow book-factory/build-epub-fxl.md"
+      - condition: "book_type == children_book"
+        recommend: "workflow book-factory/build-epub-fxl.md"
+      - condition: "book_type == comic"
+        recommend: "workflow book-factory/build-epub-fxl.md"
+      - condition: "book_type == print_replica"
+        recommend: "workflow book-factory/prepare-kdp.md"
+    tools: [pandoc, epubcheck, html-css-svg-fxl-engine, kindle-previewer, kdp-checklist]
+    outputs: [epub_reflowable, cover.jpg, metadata.yaml, kdp_upload_checklist]
+    limitations:
+      - Kindle fixed-layout support requires extra validation.
+      - Multimedia EPUB features not consistently supported.
+    fallbacks:
+      - Generate PDF print version
+      - Generate web companion edition
+      - Generate simplified reflowable EPUB
+    next_actions:
+      - Validate EPUB
+      - Generate KDP checklist
+      - Prepare Amazon metadata
+
+  - id: book_factory.generate_lovable_site
+    title: Generate Lovable mini-site
+    module: book-factory
+    user_phrases:
+      - lovable site
+      - mini site
+      - book website
+      - landing page
+      - book landing
+      - lovable
+      - simple site
+      - one page site
+    required_inputs: [book_title, book_description, cover, author_bio]
+    decision_rules:
+      - condition: "catalogue_size == single"
+        recommend: "Use Lovable for speed and simplicity."
+      - condition: "catalogue_size == multi"
+        recommend: "Use Astro instead for catalogue management."
+    tools: [lovable-prompt-generator]
+    outputs: [lovable_site_prompt, lovable_assets_package]
+    limitations:
+      - Lovable is best for single-book sites.
+      - Not suitable for multi-book catalogues.
+    fallbacks:
+      - Generate Astro site spec instead
+    next_actions:
+      - Generate assets package
+      - Generate purchase section copy
+      - Generate SEO metadata
+
+  - id: book_factory.generate_astro_site_spec
+    title: Generate Astro industrial website spec
+    module: book-factory
+    user_phrases:
+      - astro site
+      - astro spec
+      - industrial site
+      - catalogue site
+      - multi book site
+      - publishing platform
+      - astro publishing
+    required_inputs: [book_catalogue, design_system]
+    decision_rules:
+      - condition: "catalogue_size == multi"
+        recommend: "Use Astro content collections."
+      - condition: "interactive == true"
+        recommend: "Use Astro + Book Factory Visual Engine."
+    tools: [astro-schema-generator, spec-generator]
+    outputs: [astro_site_spec, content_schema, seo_strategy]
+    next_actions:
+      - Generate interactive edition spec
+      - Generate SEO strategy
+      - Deploy to Vercel
+
+  - id: book_factory.prepare_kdp
+    title: Prepare KDP upload package
+    module: book-factory
+    user_phrases:
+      - kdp upload
+      - amazon upload
+      - kdp checklist
+      - prepare kdp
+      - kdp package
+      - amazon kdp
+    required_inputs: [epub_reflowable, cover, metadata]
+    tools: [kdp-checklist, epubcheck]
+    outputs: [kdp_package, kdp_checklist, kdp_metadata]
+    limitations:
+      - KDP cover must meet exact dimension specs (2560×1600 min).
+      - ISBN required for expanded distribution.
+    next_actions:
+      - Upload to KDP dashboard
+      - Set pricing and territories
+      - Preview in Kindle Previewer
+
+  - id: book_factory.prepare_ingram
+    title: Prepare IngramSpark package
+    module: book-factory
+    user_phrases:
+      - ingram
+      - ingramspark
+      - ingram spark
+      - print on demand
+      - bookstore distribution
+    required_inputs: [print_pdf, cover, metadata, isbn]
+    tools: [ingram-adapter, pdf-validator]
+    outputs: [ingram_package, ingram_checklist]
+    limitations:
+      - ISBN required.
+      - Print PDF must meet IngramSpark specs (bleed, trim size).
+    next_actions:
+      - Upload to IngramSpark portal
+      - Set pricing
+
+  - id: book_factory.prepare_draft2digital
+    title: Prepare Draft2Digital package
+    module: book-factory
+    user_phrases:
+      - draft2digital
+      - d2d
+      - wide distribution
+      - multi platform ebook
+    required_inputs: [epub_reflowable, metadata]
+    tools: [d2d-adapter]
+    outputs: [d2d_package, d2d_checklist]
+    next_actions:
+      - Upload to Draft2Digital
+      - Select distribution channels
+
+  - id: book_factory.release_edition
+    title: Release new edition
+    module: book-factory
+    user_phrases:
+      - release edition
+      - new release
+      - publish edition
+      - release v1
+      - launch book
+      - release
+    required_inputs: [print_pdf, epub_reflowable, metadata]
+    tools: [git, changelog-generator]
+    outputs: [release_archive, changelog, release_report]
+    next_actions:
+      - Sync release summary to Notion
+      - Announce release
+      - Update distribution platforms
+
+  - id: book_factory.sync_github_notion
+    title: Sync GitHub docs to Notion
+    module: book-factory
+    user_phrases:
+      - sync notion
+      - push to notion
+      - github to notion
+      - update notion
+      - sync docs
+    required_inputs: [github_repo]
+    tools: [n8n, notion-api]
+    outputs: [notion_pages, notion_database_entries]
+    limitations:
+      - Requires n8n flow configured.
+      - Notion API key required.
+    next_actions:
+      - View Notion cockpit
+      - Configure n8n sync flow
+
+  - id: book_factory.diagnose_next_action
+    title: Diagnose next best action
+    module: book-factory
+    user_phrases:
+      - what next
+      - next step
+      - what should i do
+      - diagnose
+      - recommend
+      - what can i do
+      - help me decide
+    tools: [state-manager, capability-registry]
+    outputs: [recommendations, action_plan]
+    next_actions:
+      - Show missing inputs
+      - Show possible outputs
+      - Compare tool choices
+
+  - id: book_factory.generate_all_outputs
+    title: Generate all outputs
+    module: book-factory
+    user_phrases:
+      - generate all
+      - build everything
+      - all outputs
+      - full build
+      - complete build
+    required_inputs: [manuscript, cover, typst_template, metadata]
+    tools: [typst, pandoc, html-css-svg-fxl-engine, kdp-checklist, lovable-prompt-generator]
+    outputs: [print_pdf, digital_pdf, epub_reflowable, epub_fixed_layout, kindle_package, lovable_site_prompt]
+    next_actions:
+      - Release edition
+      - Sync to Notion
+
+  - id: book_factory.compare_publishing_paths
+    title: Compare publishing paths
+    module: book-factory
+    user_phrases:
+      - compare paths
+      - which platform
+      - kdp vs ingram
+      - lovable vs astro
+      - which tool
+      - best option
+      - compare distribution
+    tools: [decision-engine]
+    outputs: [comparison_report]
+    next_actions:
+      - Choose distribution path
+      - Prepare chosen package
+
+  - id: book_factory.create_audiobook_script
+    title: Create audiobook script package
+    module: book-factory
+    user_phrases:
+      - audiobook
+      - audio version
+      - narration script
+      - audio book
+      - text to speech
+    required_inputs: [manuscript]
+    tools: [elevenlabs, script-formatter]
+    outputs: [audiobook_script, chapter_markers, tts_package]
+    next_actions:
+      - Generate TTS audio
+      - Upload to distribution platform
+
+  - id: book_factory.create_interactive_edition
+    title: Create interactive web edition
+    module: book-factory
+    user_phrases:
+      - interactive edition
+      - web edition
+      - interactive book
+      - multimedia book
+      - pwa book
+      - digital interactive
+    required_inputs: [manuscript, design_system]
+    tools: [astro, book-factory-visual-engine]
+    outputs: [interactive_web_edition, pwa_spec]
+    limitations:
+      - EPUB 3 multimedia support varies by device. Web/PWA is primary.
+    next_actions:
+      - Generate Astro site spec
+      - Deploy to Vercel
+
+  - id: book_factory.create_marketing_assets
+    title: Create book marketing assets
+    module: book-factory
+    user_phrases:
+      - marketing assets
+      - book marketing
+      - social media assets
+      - promotion
+      - launch assets
+      - book promo
+    required_inputs: [book_title, cover, book_description]
+    tools: [canva, copywriter, seo-generator]
+    outputs: [social_media_kit, press_release, email_campaign, seo_metadata]
+    next_actions:
+      - Generate landing page
+      - Schedule launch campaign

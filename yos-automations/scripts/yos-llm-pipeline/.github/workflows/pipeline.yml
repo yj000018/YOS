@@ -1,0 +1,83 @@
+name: LLM Knowledge Distillation Pipeline
+
+on:
+  schedule:
+    # 05:00 UTC daily — 2h after chatgpt2notion Auto-Sync at 03:00 UTC
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (no writes to Notion)'
+        required: false
+        default: 'false'
+        type: boolean
+      force_all:
+        description: 'Force reprocess all sessions (bootstrap)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  distill:
+    name: Distill Knowledge
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install openai requests
+
+      - name: Install manus-mcp-cli
+        run: |
+          # Install the Manus MCP CLI for Notion access
+          pip install manus-mcp-cli || true
+          # Fallback: use the bundled notion_mcp_adapter.py if CLI unavailable
+          echo "MCP CLI setup complete"
+
+      - name: Configure MCP Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          mkdir -p ~/.mcp
+          cat > ~/.mcp/config.json << EOF
+          {
+            "servers": {
+              "notion": {
+                "token": "$NOTION_TOKEN"
+              }
+            }
+          }
+          EOF
+
+      - name: Run pipeline
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          FLAGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            FLAGS="$FLAGS --dry-run"
+          fi
+          if [ "${{ github.event.inputs.force_all }}" = "true" ]; then
+            FLAGS="$FLAGS --force-all"
+          fi
+          python3 llm_distillation_pipeline.py $FLAGS
+
+      - name: Upload pipeline log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-log-${{ github.run_id }}
+          path: pipeline.log
+          retention-days: 30

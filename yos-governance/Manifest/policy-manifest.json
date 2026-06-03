@@ -1,0 +1,14 @@
+{
+  "governance_version": "1.0.0",
+  "policy_version": "1.0.0",
+  "architecture_version": "1.0.0",
+  "source_of_truth": "git",
+  "human_interface": "obsidian",
+  "routing_mode": "local-first-git-fallback",
+  "master_repository": "yj000018/YOS",
+  "agent_roles": {
+    "chatgpt": "architecture, reasoning, specifications",
+    "manus": "primary execution and orchestration",
+    "claude": "fallback local/cloud execution"
+  }
+}

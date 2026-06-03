@@ -1,0 +1,83 @@
+id: book-factory.import
+title: "Y-Publishing Factory"
+subtitle: "Import Manuscript"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: import_markdown
+    label: "Import Markdown manuscript"
+    emoji: "📝"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    produces: [manuscript]
+    tags: [import, markdown]
+
+  - id: import_pdf
+    label: "Import PDF manuscript"
+    emoji: "📄"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    produces: [manuscript]
+    tags: [import, pdf]
+
+  - id: import_docx
+    label: "Import DOCX manuscript"
+    emoji: "📃"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    produces: [manuscript]
+    tags: [import, docx]
+
+  - id: import_notion
+    label: "Import from Notion"
+    emoji: "📋"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    produces: [manuscript]
+    tags: [import, notion]
+
+  - id: import_github
+    label: "Import from GitHub repo"
+    emoji: "🐙"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    produces: [manuscript]
+    tags: [import, github]
+
+  - id: clean_manuscript
+    label: "Clean and normalize manuscript"
+    emoji: "🧹"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    requires: [manuscript]
+    produces: [manuscript_cleaned]
+    recommended_when:
+      - "manuscript.status == imported"
+    tags: [clean, normalize]
+
+  - id: detect_chapters
+    label: "Detect chapters / sections"
+    emoji: "🗂"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    requires: [manuscript]
+    tags: [structure, chapters]
+
+  - id: generate_metadata
+    label: "Generate book.yaml metadata"
+    emoji: "🏷"
+    action_type: workflow
+    target: "workflows/book-factory/import-manuscript.md"
+    requires: [manuscript]
+    produces: [metadata]
+    tags: [metadata]
+
+  - id: back_to_root
+    label: "Return to Book-Factory home"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help]
+footer: "Reply with a number or describe your goal."

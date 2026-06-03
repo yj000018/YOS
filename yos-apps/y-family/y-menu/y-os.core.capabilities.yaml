@@ -1,0 +1,43 @@
+capabilities:
+
+  - id: y_os.open_module
+    title: Open Y-OS module
+    module: y-os
+    user_phrases:
+      - open menu
+      - open module
+      - launch
+      - start
+      - go to
+      - book factory
+      - publishing factory
+    tools: [y-menu]
+    outputs: [rendered_menu]
+    next_actions:
+      - Select module
+      - Describe your goal
+
+  - id: y_os.show_status
+    title: Show Y-OS status
+    module: y-os
+    user_phrases:
+      - status
+      - what is active
+      - current state
+      - show status
+      - what is running
+    tools: [state-manager]
+    outputs: [status_report]
+
+  - id: y_os.diagnose
+    title: Diagnose Y-OS capabilities
+    module: y-os
+    user_phrases:
+      - what can i do
+      - capabilities
+      - show all
+      - help
+      - what is possible
+      - diagnose
+    tools: [capability-registry]
+    outputs: [capability_list, recommendations]

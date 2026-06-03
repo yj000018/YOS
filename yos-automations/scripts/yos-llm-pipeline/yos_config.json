@@ -1,0 +1,121 @@
+{
+  "_comment": "Y-OS LLM Distillation Pipeline — Configuration centrale",
+  "_version": "1.3",
+  "_last_updated": "2026-03-09",
+
+  "schedule": {
+    "_comment": "Extension Auto-Sync: 3h00 daily (Overwrite, latest 28). Pipeline: 5h00 daily (+2h).",
+    "extension_autosync_time": "03:00",
+    "pipeline_run_time": "05:00",
+    "timezone": "Europe/Paris"
+  },
+
+  "extension": {
+    "_comment": "chatgpt2notion.com commercial extension settings",
+    "product": "chatgpt2notion.com",
+    "autosync_mode": "Overwrite",
+    "autosync_window": 28,
+    "autosync_interval_hours": 24,
+    "max_safe_conversations_per_day": 28,
+    "note": "If daily conversation count exceeds 28, oldest conversations in the window may be missed. Manual batch sync recommended in that case."
+  },
+
+  "notion": {
+    "databases": {
+      "chat_sessions": {
+        "data_source_id": "13633cbd-7c08-475e-b610-a5377fbdfa91",
+        "url": "https://www.notion.so/97ecdc13e4be409bacb0ef1040f8d0dc",
+        "name": "Chat_Export_Sessions"
+      },
+      "knowledge": {
+        "data_source_id": "1895910b-b8d4-4773-85b6-300d01a8d53d",
+        "url": "https://www.notion.so/270ebe6cf7df4b43b91ad96010cad4b7",
+        "name": "Knowledge"
+      },
+      "concept_clusters": {
+        "data_source_id": "90fc337f-704e-4ba8-997d-d1137d6f49c6",
+        "url": "https://www.notion.so/d8a9f15ba04543baa84ef47971c9f583",
+        "name": "Concept_Clusters",
+        "status": "ready_inactive",
+        "note": "Activate when Knowledge items > 150. Set features.clusters_enabled = true."
+      },
+      "active_context": {
+        "data_source_id": "17a975d7-4d8e-489e-a859-43ca872d7c5b",
+        "url": "https://www.notion.so/108cbd59c0ed4a408718b734824b949f",
+        "name": "Active_Context",
+        "status": "active",
+        "note": "Working memory layer. Refreshed after each pipeline run. Stores active project focus, decisions, issues."
+      },
+      "pipeline_state": {
+        "data_source_id": "cb53fe34-b848-4375-aa90-6a74db18375b",
+        "url": "https://www.notion.so/8e13463eb8c94857afad53101a49a783",
+        "name": "Pipeline_State"
+      }
+    },
+    "pipeline_state_row": "llm_ingestion"
+  },
+
+  "llm": {
+    "_comment": "LLM used for distillation. Change model here to switch provider.",
+    "model": "gpt-4o-mini",
+    "api_base": "https://api.openai.com/v1",
+    "max_content_chars": 12000,
+    "temperature": 0.2,
+    "max_tokens": 2000
+  },
+
+  "merge": {
+    "_comment": "Merge strategy thresholds (Jaccard token overlap, 0–1)",
+    "similarity_threshold_duplicate": 0.72,
+    "similarity_threshold_extension": 0.45,
+    "min_content_length_chars": 30
+  },
+
+  "signal_scoring": {
+    "_comment": "Signal scoring fields added to each Knowledge item (Add6 — Layer 3.5)",
+    "enabled": true,
+    "fields": {
+      "Importance": ["critical", "high", "medium", "low"],
+      "Confidence": ["confirmed", "likely", "uncertain"],
+      "Freshness": "auto_computed_from_Last_Seen"
+    },
+    "note": "These fields guide retrieval, synthesis, and reasoning. LLM assigns Importance and Confidence at extraction time."
+  },
+
+  "pipeline": {
+    "_comment": "Pipeline behavior flags",
+    "pipeline_name": "llm_ingestion",
+    "log_file": "pipeline.log",
+    "dry_run_default": false,
+    "force_all_default": false
+  },
+
+  "features": {
+    "_comment": "Feature flags per architecture layer",
+    "clusters_enabled": false,
+    "clusters_activation_threshold": 150,
+    "graph_enabled": false,
+    "graph_activation_threshold": 300,
+    "context_builder_enabled": true,
+    "synthesis_engine_enabled": false,
+    "signal_scoring_enabled": true,
+    "embeddings_enabled": false,
+    "embeddings_activation_threshold": 3000,
+    "note": "Enable synthesis_engine when you want automated project synthesis updates. Enable embeddings when Knowledge > 3000 items."
+  },
+
+  "active_context": {
+    "_comment": "Working memory configuration (Add6 — Layer 3.4)",
+    "max_active_decisions": 10,
+    "max_active_issues": 10,
+    "max_active_knowledge_items": 20,
+    "refresh_strategy": "after_each_run",
+    "filter_by_project": true
+  },
+
+  "alerts": {
+    "_comment": "Future: Slack/Notion alert on pipeline failure",
+    "on_failure": "log_only",
+    "on_success": "silent"
+  }
+}

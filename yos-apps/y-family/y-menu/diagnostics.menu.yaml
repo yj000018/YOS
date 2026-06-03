@@ -1,0 +1,58 @@
+id: book-factory.diagnostics
+title: "Y-Publishing Factory"
+subtitle: "Diagnose Next Best Actions"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: show_project_status
+    label: "Show project status"
+    emoji: "📊"
+    action_type: diagnostic
+    tags: [status, overview]
+
+  - id: show_missing_inputs
+    label: "Show missing inputs"
+    emoji: "⚠️"
+    action_type: diagnostic
+    tags: [missing, inputs]
+
+  - id: show_possible_outputs
+    label: "Show possible outputs"
+    emoji: "📤"
+    action_type: diagnostic
+    tags: [outputs, possible]
+
+  - id: recommend_next_actions
+    label: "Recommend next best actions"
+    emoji: "⭐"
+    action_type: diagnostic
+    tags: [recommend, next]
+
+  - id: compare_tool_choices
+    label: "Compare tool choices"
+    emoji: "⚖️"
+    action_type: decision
+    tags: [compare, tools]
+
+  - id: explain_publishing_path
+    label: "Explain publishing path"
+    emoji: "🗺"
+    action_type: documentation
+    target: "docs/architecture.md"
+    tags: [explain, path]
+
+  - id: show_all_capabilities
+    label: "Show all capabilities"
+    emoji: "🧠"
+    action_type: diagnostic
+    tags: [capabilities, all]
+
+  - id: back_to_root
+    label: "Return"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help, why]
+footer: "Reply with a number or describe your goal."

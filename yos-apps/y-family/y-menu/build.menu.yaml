@@ -1,0 +1,97 @@
+id: book-factory.build
+title: "Y-Publishing Factory"
+subtitle: "Build Outputs"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: build_print_pdf
+    label: "Build premium print PDF with Typst"
+    emoji: "📄"
+    action_type: workflow
+    target: "workflows/book-factory/build-pdf-typst.md"
+    requires: [manuscript, typst_template]
+    produces: [print_pdf]
+    recommended_when:
+      - "manuscript.status == imported"
+      - "outputs.print_pdf == missing"
+    tags: [pdf, typst, print]
+
+  - id: build_digital_pdf
+    label: "Build digital PDF with Typst"
+    emoji: "💻"
+    action_type: workflow
+    target: "workflows/book-factory/build-pdf-typst.md"
+    requires: [manuscript, typst_template]
+    produces: [digital_pdf]
+    recommended_when:
+      - "manuscript.status == imported"
+      - "outputs.digital_pdf == missing"
+    tags: [pdf, typst, digital]
+
+  - id: build_epub_pandoc
+    label: "Build reflowable EPUB with Pandoc"
+    emoji: "📖"
+    action_type: workflow
+    target: "workflows/book-factory/build-epub-pandoc.md"
+    requires: [manuscript]
+    produces: [epub_reflowable]
+    recommended_when:
+      - "manuscript.status == imported"
+      - "outputs.epub_reflowable == missing"
+    tags: [epub, pandoc, reflowable]
+
+  - id: build_epub_fxl
+    label: "Build fixed-layout EPUB with HTML/CSS/SVG"
+    emoji: "🖼"
+    action_type: workflow
+    target: "workflows/book-factory/build-epub-fxl.md"
+    requires: [manuscript, fxl_visual_system]
+    produces: [epub_fixed_layout]
+    recommended_when:
+      - "outputs.epub_fixed_layout == missing"
+    tags: [epub, fxl, illustrated]
+
+  - id: build_kindle
+    label: "Build Kindle-ready package"
+    emoji: "📱"
+    action_type: workflow
+    target: "workflows/book-factory/prepare-kdp.md"
+    requires: [manuscript, cover]
+    produces: [kindle_package]
+    recommended_when:
+      - "outputs.kindle_package == missing"
+    tags: [kindle, kdp, amazon]
+
+  - id: build_web_edition
+    label: "Build web edition"
+    emoji: "🌐"
+    action_type: workflow
+    target: "workflows/book-factory/build-web-edition.md"
+    requires: [manuscript]
+    produces: [web_edition]
+    tags: [web, interactive]
+
+  - id: build_all
+    label: "Build all standard outputs"
+    emoji: "⚡"
+    action_type: workflow
+    target: "workflows/book-factory/release-edition.md"
+    requires: [manuscript, cover, typst_template]
+    produces: [print_pdf, digital_pdf, epub_reflowable, kindle_package]
+    tags: [all, batch]
+
+  - id: validate_outputs
+    label: "Validate outputs"
+    emoji: "✅"
+    action_type: diagnostic
+    tags: [validate, quality]
+
+  - id: back_to_root
+    label: "Return"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help]
+footer: "Reply with a number or describe your goal."

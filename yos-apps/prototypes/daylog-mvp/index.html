@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day Log</title>
+  <!-- Link PWA manifest and icon -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon.png">
+  <meta name="theme-color" content="#007aff" />
+  <!-- Basic styling for the application -->
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#fff;
+      --ink:#111827;
+      --muted:#6b7280;
+      --brand:#007aff;
+      --ok:#10b981;
+      --warn:#f59e0b;
+      --bad:#ef4444;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;}
+    header{position:sticky;top:0;background:var(--card);border-bottom:1px solid #e5e7eb;z-index:5;}
+    .tabs{display:flex;gap:.25rem;max-width:980px;margin:0 auto;padding:.5rem;}
+    .tab-btn{flex:1;padding:.8rem;border:0;background:#f3f4f6;border-radius:.6rem;font-weight:600;cursor:pointer;}
+    .tab-btn.active{background:var(--brand);color:#fff;}
+    main{max-width:980px;margin:0 auto;padding:1rem;display:grid;gap:1rem;}
+    .card{background:var(--card);border-radius:.9rem;padding:1rem;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+    h2{margin:.2rem 0 .6rem 0}
+    h3{margin:.2rem 0 .4rem 0}
+    .row{display:grid;gap:.6rem;margin:.5rem 0;}
+    .grid2{grid-template-columns:1fr 1fr;}
+    label{font-size:.9rem;color:var(--muted);}
+    input,select,textarea,button{font:inherit;}
+    input[type="text"],input[type="number"],input[type="time"],input[type="date"],textarea,select{width:100%;padding:.7rem;border:1px solid #e5e7eb;border-radius:.6rem;background:#fff;}
+    textarea{min-height:84px;}
+    .btn{background:var(--brand);color:#fff;border:0;border-radius:.6rem;padding:.6rem 1rem;font-weight:600;cursor:pointer;}
+    .btn.warn{background:var(--warn);}
+    .btn.bad{background:var(--bad);}
+    .btn.ok{background:var(--ok);}
+    .list{list-style:none;margin:0;padding:0;}
+    .item{padding:.7rem;border-bottom:1px solid #f1f5f9;}
+    .small{font-size:.86rem;}
+    .muted{color:var(--muted);}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.86rem;}
+    .chips{display:flex;gap:.4rem;flex-wrap:wrap;}
+    .chip{border:1px solid #e5e7eb;border-radius:999px;padding:.25rem .6rem;background:#fff;cursor:pointer;}
+  </style>
+</head>
+<body>
+  <!-- Tabs header -->
+  <header>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="import">Import</button>
+      <button class="tab-btn" data-tab="timeline">Timeline</button>
+      <button class="tab-btn" data-tab="summary">Summary</button>
+      <button class="tab-btn" data-tab="settings">Settings</button>
+    </div>
+  </header>
+  <main>
+    <!-- Import tab -->
+    <section id="tab-import" class="card">
+      <h2>Import Sources (Last 7 Days)</h2>
+      <div class="row grid2">
+        <div class="card">
+          <h3>Calendar (.ics)</h3>
+          <input type="file" id="icsInput" accept=".ics" />
+          <p class="small muted">Export from Apple/Google Calendar → drop here.</p>
+        </div>
+        <div class="card">
+          <h3>WhatsApp (.txt)</h3>
+          <input type="file" id="waInput" accept=".txt" multiple />
+          <p class="small muted">Use “Export chat” (without media) → share to Files.</p>
+        </div>
+        <div class="card">
+          <h3>Email CSV</h3>
+          <input type="file" id="mailInput" accept=".csv" />
+          <p class="small muted">CSV with <code>date,sender,subject</code> (UTC or local).</p>
+        </div>
+        <div class="card">
+          <h3>Photos (images)</h3>
+          <input type="file" id="photoInput" accept="image/*" multiple />
+          <p class="small muted">Counts by file date (EXIF coming next).</p>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn" id="buildBtn">Build Last Week</button>
+        <span class="small muted" id="importStatus"></span>
+      </div>
+      <div class="row">
+        <h3>Quick Add (Now)</h3>
+        <div class="chips" id="quickChips">
+          <div class="chip" data-activity="Coffee">☕ Coffee</div>
+          <div class="chip" data-activity="Meeting">🤝 Meeting</div>
+          <div class="chip" data-activity="Walk">🚶 Walk</div>
+          <div class="chip" data-activity="Lunch">🍽️ Lunch</div>
+        </div>
+        <button class="btn warn" id="addNow">Add Now + Sensors</button>
+        <span class="small muted">Captures location/battery/network/orientation snapshot.</span>
+      </div>
+    </section>
+    <!-- Timeline tab -->
+    <section id="tab-timeline" class="card" style="display:none">
+      <h2>Timeline (Last 7 Days)</h2>
+      <ul id="timelineList" class="list"></ul>
+    </section>
+    <!-- Summary tab -->
+    <section id="tab-summary" class="card" style="display:none">
+      <h2>Summary (Last 7 Days)</h2>
+      <div id="summaryCards" class="row grid2"></div>
+      <div class="card" style="margin-top:.6rem">
+        <h3>Insights</h3>
+        <ul id="insights" class="list"></ul>
+      </div>
+      <div class="card" style="margin-top:.6rem">
+        <h3>Data</h3>
+        <button class="btn" id="exportBtn">Export JSON</button>
+        <input type="file" id="importJson" accept="application/json" />
+      </div>
+    </section>
+    <!-- Settings tab -->
+    <section id="tab-settings" class="card" style="display:none">
+      <h2>Settings & Status</h2>
+      <div class="row grid2">
+        <div>
+          <h3>Permissions</h3>
+          <p class="small muted" id="permLoc">Location: unknown</p>
+          <p class="small muted" id="permBat">Battery: unknown</p>
+          <p class="small muted" id="permNet">Network: unknown</p>
+          <p class="small muted" id="permOri">Orientation: unknown</p>
+          <button class="btn" id="reqLoc">Request Location</button>
+        </div>
+        <div>
+          <h3>Storage</h3>
+          <button class="btn bad" id="resetBtn">Reset All</button>
+          <p class="small muted">Data stored locally in your browser.</p>
+        </div>
+      </div>
+      <div class="row">
+        <h3>Device</h3>
+        <pre id="deviceInfo" class="mono"></pre>
+      </div>
+    </section>
+  </main>
+  <!-- Main JavaScript logic -->
+  <script>
+    // Version check
+    const CURRENT_VERSION = '1.0.0';
+    fetch('version.json').then(r => r.json()).then(data => {
+      if (data.version && data.version !== CURRENT_VERSION) {
+        alert('A new version (' + data.version + ') is available. Please reload or reinstall.');
+      }
+    }).catch(() => {});
+
+    // Utility shortcuts
+    const $ = (s) => document.querySelector(s);
+    const $$ = (s) => [...document.querySelectorAll(s)];
+    const LS_KEY = 'daylog_mvp_storage';
+    let events = [];
+
+    function save() {
+      localStorage.setItem(LS_KEY, JSON.stringify(events));
+    }
+    function load() {
+      try {
+        events = JSON.parse(localStorage.getItem(LS_KEY) || '[]');
+      } catch {
+        events = [];
+      }
+    }
+    function clearAll() {
+      localStorage.removeItem(LS_KEY);
+      events = [];
+      renderAll();
+    }
+
+    function switchTab(name) {
+      $$('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === name));
+      ['import','timeline','summary','settings'].forEach(t => {
+        $('#tab-' + t).style.display = (t === name ? 'block' : 'none');
+      });
+    }
+
+    // Date/time helpers
+    function startOfToday() {
+      const d = new Date();
+      d.setHours(0, 0, 0, 0);
+      return d;
+    }
+    function daysAgo(n) {
+      const d = startOfToday();
+      d.setDate(d.getDate() - n);
+      return d;
+    }
+    function withinLastWeek(ts) {
+      const t = new Date(ts);
+      return t >= daysAgo(7) && t < daysAgo(0);
+    }
+    function toLocal(ts) {
+      const d = new Date(ts);
+      return d.toLocaleString([], { hour: '2-digit', minute: '2-digit', year: 'numeric', month: 'short', day: '2-digit' });
+    }
+
+    // Sensor variables
+    let batteryObj = null;
+    let lastOri = null;
+    async function initBattery() {
+      try {
+        if (navigator.getBattery) {
+          batteryObj = await navigator.getBattery();
+          $('#permBat').textContent = 'Battery: ok';
+        } else {
+          $('#permBat').textContent = 'Battery: unsupported';
+        }
+      } catch {
+        $('#permBat').textContent = 'Battery: denied';
+      }
+    }
+    function initNet() {
+      const c = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      $('#permNet').textContent = c ? ('Network: ' + (c.effectiveType || 'ok')) : 'Network: basic';
+    }
+    function initOri() {
+      try {
+        window.addEventListener('deviceorientation', (e) => {
+          lastOri = { a: e.alpha, b: e.beta, g: e.gamma };
+          $('#permOri').textContent = 'Orientation: ok';
+        }, true);
+      } catch {
+        $('#permOri').textContent = 'Orientation: denied';
+      }
+    }
+    function snapshot() {
+      const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+      return {
+        battery: batteryObj ? { level: batteryObj.level, charging: batteryObj.charging } : null,
+        network: conn ? { type: conn.type || null, effectiveType: conn.effectiveType || null, downlink: conn.downlink || null } : null,
+        orientation: lastOri || null
+      };
+    }
+    function requestLoc() {
+      if (!navigator.geolocation) {
+        $('#permLoc').textContent = 'Location: unsupported';
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(() => {
+        $('#permLoc').textContent = 'Location: ok';
+      }, () => {
+        $('#permLoc').textContent = 'Location: denied';
+      }, { enableHighAccuracy: true, timeout: 8000, maximumAge: 0 });
+    }
+
+    // Add event to list
+    function addEvent(e) {
+      const ev = Object.assign({ id: String(Math.random()).slice(2), place: '', people: [], source: 'manual', meta: {} }, e);
+      events.push(ev);
+      events.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+      save();
+    }
+
+    // Parsers for external files
+    async function parseICS(file) {
+      const txt = await file.text();
+      const lines = txt.split(/\r?\n/);
+      let cur = null;
+      const out = [];
+      for (const ln of lines) {
+        if (ln.startsWith('BEGIN:VEVENT')) cur = {};
+        else if (ln.startsWith('DTSTART')) {
+          const v = ln.split(':').pop().trim();
+          cur.DTSTART = v;
+        } else if (ln.startsWith('DTEND')) {
+          const v = ln.split(':').pop().trim();
+          cur.DTEND = v;
+        } else if (ln.startsWith('SUMMARY')) {
+          cur.SUMMARY = ln.split(':').slice(1).join(':').trim();
+        } else if (ln.startsWith('LOCATION')) {
+          cur.LOCATION = ln.split(':').slice(1).join(':').trim();
+        } else if (ln.startsWith('ATTENDEE')) {
+          cur.ATTENDEE = (cur.ATTENDEE || []).concat([ln]);
+        } else if (ln.startsWith('END:VEVENT')) {
+          if (cur) out.push(cur), cur = null;
+        }
+      }
+      const toISO = (v) => {
+        if (!v) return null;
+        if (/^\d{8}$/.test(v)) {
+          return new Date(v.slice(0, 4) + '-' + v.slice(4, 6) + '-' + v.slice(6, 8) + 'T00:00:00').toISOString();
+        }
+        const y = v.slice(0, 4), m = v.slice(4, 6), d = v.slice(6, 8), hh = v.slice(9, 11) || '00', mm = v.slice(11, 13) || '00', ss = v.slice(13, 15) || '00';
+        const z = v.endsWith('Z') ? 'Z' : '';
+        return new Date(`${y}-${m}-${d}T${hh}:${mm}:${ss}${z}`).toISOString();
+      };
+      out.forEach(e => {
+        const ts = toISO(e.DTSTART);
+        if (!ts || !withinLastWeek(ts)) return;
+        const attendees = (e.ATTENDEE || []).map(a => {
+          const m = a.match(/CN=([^:;]+)/);
+          return m ? decodeURIComponent(m[1]) : 'Attendee';
+        });
+        addEvent({ timestamp: ts, type: 'calendar', activity: e.SUMMARY || 'Event', place: e.LOCATION || '', people: attendees, source: 'calendar' });
+      });
+    }
+
+    async function parseWhatsApp(files) {
+      const re = [
+        /^([0-9]{1,2})[\/\-.]([0-9]{1,2})[\/\-.]([0-9]{2,4}),\s+([0-9]{1,2}:[0-9]{2})(?:\s?[AP]M)?\s+-\s+([^:]+):\s+(.+)$/,
+        /^\[([0-9]{1,2})[\/\-.]([0-9]{1,2})[\/\-.]([0-9]{2,4}),\s+([0-9]{1,2}:[0-9]{2})(?:\s?[AP]M)?\]\s+([^:]+):\s+(.+)$/
+      ];
+      const perDayPerContact = {};
+      for (const f of files) {
+        const txt = await f.text();
+        const lines = txt.split(/\r?\n/);
+        for (const ln of lines) {
+          let m = null;
+          for (const r of re) {
+            m = ln.match(r);
+            if (m) break;
+          }
+          if (!m) continue;
+          let dd = m[1], MM = m[2], yy = m[3], hm = m[4], name = m[5];
+          if (yy.length === 2) yy = '20' + yy;
+          const D = `${yy}-${String(MM).padStart(2, '0')}-${String(dd).padStart(2, '0')}`;
+          const iso = new Date(`${D}T${hm}:00`).toISOString();
+          if (!withinLastWeek(iso)) continue;
+          perDayPerContact[D] = perDayPerContact[D] || {};
+          perDayPerContact[D][name] = (perDayPerContact[D][name] || 0) + 1;
+        }
+      }
+      Object.entries(perDayPerContact).forEach(([day, map]) => {
+        const top = Object.entries(map).sort((a, b) => b[1] - a[1]).slice(0, 3);
+        const ts = new Date(day + 'T12:00:00').toISOString();
+        addEvent({ timestamp: ts, type: 'messages', activity: `WhatsApp (${Object.values(map).reduce((a, b) => a + b, 0)} msgs)`, people: top.map(([n]) => n), source: 'whatsapp' });
+      });
+    }
+
+    async function parseMailCSV(file) {
+      const txt = await file.text();
+      const rows = txt.split(/\r?\n/).filter(Boolean);
+      let cntByDay = {}, bySender = {};
+      for (let i = 0; i < rows.length; i++) {
+        const line = rows[i];
+        if (i === 0 && /date/i.test(line) && /sender/i.test(line)) continue;
+        const parts = line.split(/,(.+)/);
+        if (parts.length < 2) continue;
+        const dateStr = parts[0].trim();
+        const rest = parts[1];
+        const sender = (rest.split(',')[0] || 'Sender').replace(/^"+|"+$/g, '').trim();
+        const ts = new Date(dateStr).toISOString();
+        if (!withinLastWeek(ts)) continue;
+        const day = ts.slice(0, 10);
+        cntByDay[day] = (cntByDay[day] || 0) + 1;
+        bySender[sender] = (bySender[sender] || 0) + 1;
+      }
+      Object.entries(cntByDay).forEach(([day, count]) => {
+        const ts = new Date(day + 'T10:00:00').toISOString();
+        addEvent({ timestamp: ts, type: 'email', activity: `Emails (${count})`, source: 'email' });
+      });
+      const top = Object.entries(bySender).sort((a, b) => b[1] - a[1])[0];
+      if (top) addEvent({ timestamp: new Date().toISOString(), type: 'note', activity: `Top sender: ${top[0]} (${top[1]})`, source: 'email-summary' });
+    }
+
+    async function parsePhotos(files) {
+      const perDay = {};
+      for (const f of files) {
+        const ts = new Date(f.lastModified || Date.now()).toISOString();
+        if (!withinLastWeek(ts)) continue;
+        const day = ts.slice(0, 10);
+        perDay[day] = (perDay[day] || 0) + 1;
+      }
+      Object.entries(perDay).forEach(([day, count]) => {
+        const ts = new Date(day + 'T18:00:00').toISOString();
+        addEvent({ timestamp: ts, type: 'photos', activity: `Photos (${count})`, source: 'photos' });
+      });
+    }
+
+    // Render timeline
+    function renderTimeline() {
+      const ul = $('#timelineList');
+      ul.innerHTML = '';
+      const weekEvents = events.filter(e => withinLastWeek(e.timestamp));
+      if (!weekEvents.length) {
+        ul.innerHTML = '<li class="item small muted">No data yet. Import sources or use Quick Add.</li>';
+        return;
+      }
+      weekEvents.forEach(e => {
+        const li = document.createElement('li');
+        li.className = 'item';
+        const metaParts = [];
+        if (e.place) metaParts.push('📍 ' + e.place);
+        if (e.people && e.people.length) metaParts.push('👥 ' + e.people.join(', '));
+        if (e.meta?.coords) metaParts.push(`📌 ${e.meta.coords.lat.toFixed(5)},${e.meta.coords.lon.toFixed(5)}`);
+        if (e.meta?.battery) metaParts.push(`🔋 ${Math.round(e.meta.battery.level * 100)}%${e.meta.battery.charging ? '⚡' : ''}`);
+        if (e.meta?.network?.effectiveType) metaParts.push(`📶 ${e.meta.network.effectiveType}`);
+        li.innerHTML = `<div><strong>${toLocal(e.timestamp)}</strong> · ${e.activity} <span class="small muted">(${e.type}/${e.source})</span></div>\n<div class="small muted">${metaParts.join('  •  ')}</div>`;
+        ul.appendChild(li);
+      });
+    }
+
+    function renderSummary() {
+      const cards = $('#summaryCards');
+      cards.innerHTML = '';
+      const week = events.filter(e => withinLastWeek(e.timestamp));
+      const counts = {
+        total: week.length,
+        byType: {},
+        people: {},
+        places: {},
+        days: {},
+        avgBat: null
+      };
+      const bats = [];
+      week.forEach(e => {
+        counts.byType[e.type] = (counts.byType[e.type] || 0) + 1;
+        (e.people || []).forEach(p => counts.people[p] = (counts.people[p] || 0) + 1);
+        if (e.place) counts.places[e.place] = (counts.places[e.place] || 0) + 1;
+        const d = e.timestamp.slice(0, 10);
+        counts.days[d] = (counts.days[d] || 0) + 1;
+        if (e.meta?.battery?.level != null) bats.push(e.meta.battery.level);
+      });
+      counts.avgBat = bats.length ? Math.round(100 * bats.reduce((a, b) => a + b, 0) / bats.length) : null;
+      const mk = (title, html) => `<section class="card"><h3>${title}</h3>${html}</section>`;
+      const top = (obj, n = 5) => Object.entries(obj).sort((a, b) => b[1] - a[1]).slice(0, n);
+      cards.insertAdjacentHTML('beforeend', mk('Overview', `\n        <div class="row grid2">\n          <div><div class="muted">Total events</div><strong>${counts.total}</strong></div>\n          <div><div class="muted">Avg battery</div><strong>${counts.avgBat != null ? counts.avgBat + '%' : '—'}</strong></div>\n          <div><div class="muted">Active days</div><strong>${Object.keys(counts.days).length}</strong></div>\n          <div><div class="muted">Types</div><strong>${Object.keys(counts.byType).length}</strong></div>\n        </div>`));
+      cards.insertAdjacentHTML('beforeend', mk('Top People', `<div class="small mono">${top(counts.people).map(([k,v]) => `${k}: ${v}`).join('<br>') || '—'}</div>`));
+      cards.insertAdjacentHTML('beforeend', mk('Top Places', `<div class="small mono">${top(counts.places).map(([k,v]) => `${k}: ${v}`).join('<br>') || '—'}</div>`));
+      cards.insertAdjacentHTML('beforeend', mk('By Type', `<div class="small mono">${top(counts.byType, 10).map(([k,v]) => `${k}: ${v}`).join('<br>') || '—'}</div>`));
+      // Insights
+      const UL = $('#insights');
+      UL.innerHTML = '';
+      const insights = [];
+      if (counts.byType.meeting >= 3) insights.push('Meeting-dense week — schedule recovery time.');
+      if (top(counts.people, 1)[0]) insights.push('Most frequent contact: ' + top(counts.people, 1)[0][0]);
+      if (counts.byType.photos >= 10) insights.push('You captured lots of moments — review highlights.');
+      if (counts.avgBat != null && counts.avgBat < 30) insights.push('Low average battery; keep a charger handy.');
+      if (!insights.length) insights.push('Balanced week.');
+      insights.forEach(t => {
+        const li = document.createElement('li');
+        li.className = 'item';
+        li.textContent = t;
+        UL.appendChild(li);
+      });
+    }
+
+    function renderAll() {
+      renderTimeline();
+      renderSummary();
+    }
+
+    // Build button handler
+    $('#buildBtn').addEventListener('click', async () => {
+      $('#importStatus').textContent = 'Building…';
+      const ics = $('#icsInput').files[0];
+      if (ics) await parseICS(ics);
+      const waFiles = [...$('#waInput').files];
+      if (waFiles.length) await parseWhatsApp(waFiles);
+      const mail = $('#mailInput').files[0];
+      if (mail) await parseMailCSV(mail);
+      const photos = [...$('#photoInput').files];
+      if (photos.length) await parsePhotos(photos);
+      $('#importStatus').textContent = 'Done.';
+      renderAll();
+    });
+
+    // Quick chips
+    $('#quickChips').addEventListener('click', async (e) => {
+      const chip = e.target.closest('.chip');
+      if (!chip) return;
+      const activity = chip.dataset.activity;
+      let meta = snapshot();
+      if (navigator.geolocation) {
+        try {
+          const pos = await new Promise((res, rej) => navigator.geolocation.getCurrentPosition(res, rej, { enableHighAccuracy: true, timeout: 6000 }));
+          meta.coords = { lat: pos.coords.latitude, lon: pos.coords.longitude, acc: pos.coords.accuracy };
+        } catch {}
+      }
+      addEvent({ timestamp: new Date().toISOString(), type: 'quick', activity, source: 'quick', meta });
+      renderAll();
+    });
+
+    $('#addNow').addEventListener('click', async () => {
+      let meta = snapshot();
+      if (navigator.geolocation) {
+        try {
+          const pos = await new Promise((res, rej) => navigator.geolocation.getCurrentPosition(res, rej, { enableHighAccuracy: true, timeout: 6000 }));
+          meta.coords = { lat: pos.coords.latitude, lon: pos.coords.longitude, acc: pos.coords.accuracy };
+        } catch {}
+      }
+      addEvent({ timestamp: new Date().toISOString(), type: 'manual', activity: 'Note', source: 'add-now', meta });
+      renderAll();
+    });
+
+    // Export / Import JSON
+    $('#exportBtn').addEventListener('click', () => {
+      const data = { events, exportedAt: new Date().toISOString() };
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'daylog_week.json';
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 800);
+    });
+    $('#importJson').addEventListener('change', async (e) => {
+      const f = e.target.files[0];
+      if (!f) return;
+      try {
+        const obj = JSON.parse(await f.text());
+        if (Array.isArray(obj.events)) events = obj.events;
+        save();
+        renderAll();
+        alert('Imported.');
+      } catch {
+        alert('Invalid JSON');
+      }
+      e.target.value = '';
+    });
+
+    // Settings actions
+    $('#reqLoc').addEventListener('click', requestLoc);
+    $('#resetBtn').addEventListener('click', () => {
+      if (confirm('Delete all data?')) {
+        clearAll();
+      }
+    });
+
+    // Tab navigation
+    $$('.tab-btn').forEach(b => b.addEventListener('click', () => switchTab(b.dataset.tab)));
+
+    // Initial boot
+    (function init() {
+      load();
+      requestLoc();
+      initBattery();
+      initNet();
+      initOri();
+      $('#deviceInfo').textContent = JSON.stringify({
+        ua: navigator.userAgent,
+        lang: navigator.language,
+        tz: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        mem: navigator.deviceMemory || 'n/a',
+        cores: navigator.hardwareConcurrency || 'n/a'
+      }, null, 2);
+      renderAll();
+    })();
+  </script>
+</body>
+</html>

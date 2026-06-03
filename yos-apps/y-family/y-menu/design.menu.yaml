@@ -1,0 +1,74 @@
+id: book-factory.design
+title: "Y-Publishing Factory"
+subtitle: "Design Template"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: create_typst_template
+    label: "Create Typst print template"
+    emoji: "🖨"
+    action_type: prompt
+    target: "prompts/typst-template-generation-prompt.md"
+    requires: [manuscript]
+    produces: [typst_template]
+    tags: [typst, print, template]
+
+  - id: create_epub_css
+    label: "Create EPUB CSS theme"
+    emoji: "🎨"
+    action_type: workflow
+    target: "workflows/book-factory/design-template.md"
+    requires: [manuscript]
+    produces: [epub_css]
+    tags: [epub, css, theme]
+
+  - id: create_fxl_visual
+    label: "Create fixed-layout visual system"
+    emoji: "🖼"
+    action_type: prompt
+    target: "prompts/epub-fxl-generation-prompt.md"
+    requires: [manuscript]
+    produces: [fxl_visual_system]
+    tags: [fxl, visual, layout]
+
+  - id: create_cover_brief
+    label: "Create cover design brief"
+    emoji: "🎭"
+    action_type: workflow
+    target: "workflows/book-factory/design-template.md"
+    produces: [cover_brief]
+    tags: [cover, design]
+
+  - id: create_typography
+    label: "Create typography hierarchy"
+    emoji: "🔤"
+    action_type: workflow
+    target: "workflows/book-factory/design-template.md"
+    requires: [manuscript]
+    produces: [typography_spec]
+    tags: [typography, design]
+
+  - id: generate_design_system
+    label: "Generate premium Y-Publishing design system"
+    emoji: "✨"
+    action_type: workflow
+    target: "workflows/book-factory/design-template.md"
+    produces: [design_system]
+    tags: [design, premium]
+
+  - id: audit_visual
+    label: "Audit visual consistency"
+    emoji: "🔍"
+    action_type: diagnostic
+    requires: [typst_template]
+    tags: [audit, quality]
+
+  - id: back_to_root
+    label: "Return"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help]
+footer: "Reply with a number or describe your goal."

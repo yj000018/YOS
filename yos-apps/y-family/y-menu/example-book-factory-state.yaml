@@ -1,0 +1,46 @@
+session:
+  active_module: book-factory
+  active_menu: book-factory.root
+  navigation_stack:
+    - root
+    - book-factory.root
+  last_action: import_manuscript
+  last_result: manuscript_imported
+  recent_actions:
+    - import_manuscript
+    - create_book_project
+
+user:
+  preferred_interaction_style: y-com
+  preferred_output_style: concise_structured
+  default_language: fr
+
+book_factory:
+  active_book_id: visual-reality
+  active_book_title: Visual Reality
+  publisher: Y-Publishing
+  edition: "1.0"
+  book_type: visual_essay
+  manuscript:
+    status: imported
+    source_format: markdown
+    path: books/visual-reality/manuscript.md
+  assets:
+    cover: missing
+    images: partial
+  outputs:
+    print_pdf: missing
+    digital_pdf: missing
+    epub_reflowable: missing
+    epub_fixed_layout: missing
+    kindle_package: missing
+    lovable_site_prompt: missing
+    astro_site_spec: missing
+  distribution:
+    kdp: not_started
+    ingram: not_started
+    draft2digital: not_started
+  recommendations:
+    - build_pdf_typst
+    - build_epub_pandoc
+    - generate_lovable_site

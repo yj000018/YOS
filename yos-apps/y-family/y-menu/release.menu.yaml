@@ -1,0 +1,72 @@
+id: book-factory.release
+title: "Y-Publishing Factory"
+subtitle: "Release New Edition"
+module: book-factory
+parent: book-factory.root
+
+items:
+  - id: create_release_v1
+    label: "Create release v1.0"
+    emoji: "🎉"
+    action_type: workflow
+    target: "workflows/book-factory/release-edition.md"
+    requires: [print_pdf, epub_reflowable]
+    produces: [release_v1]
+    tags: [release, v1]
+
+  - id: create_new_edition
+    label: "Create new edition"
+    emoji: "📗"
+    action_type: workflow
+    target: "workflows/book-factory/release-edition.md"
+    produces: [new_edition]
+    tags: [edition, new]
+
+  - id: bump_version
+    label: "Bump version number"
+    emoji: "🔢"
+    action_type: script
+    target: "scripts/bump-version.sh"
+    produces: [version_bumped]
+    tags: [version, semver]
+
+  - id: generate_changelog
+    label: "Generate changelog"
+    emoji: "📋"
+    action_type: workflow
+    target: "workflows/book-factory/release-edition.md"
+    produces: [changelog]
+    tags: [changelog, history]
+
+  - id: archive_release
+    label: "Archive release folder"
+    emoji: "🗄"
+    action_type: script
+    target: "scripts/archive-release.sh"
+    produces: [release_archive]
+    tags: [archive, backup]
+
+  - id: generate_release_report
+    label: "Generate release report"
+    emoji: "📊"
+    action_type: workflow
+    target: "workflows/book-factory/release-edition.md"
+    produces: [release_report]
+    tags: [report, release]
+
+  - id: sync_notion
+    label: "Sync release summary to Notion"
+    emoji: "🔄"
+    action_type: workflow
+    target: "workflows/book-factory/sync-github-to-notion.md"
+    produces: [notion_page]
+    tags: [notion, sync]
+
+  - id: back_to_root
+    label: "Return"
+    emoji: "↩️"
+    action_type: submenu
+    target: "book-factory.root"
+
+commands: [home, back, status, help]
+footer: "Reply with a number or describe your goal."

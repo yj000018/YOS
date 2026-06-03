@@ -1,0 +1,9 @@
+{
+  "mode": "semi-auto",
+  "description": "Mode de fonctionnement du routeur LLM",
+  "modes": {
+    "auto": "Routage automatique sans confirmation",
+    "semi-auto": "Routage avec demande de confirmation (défaut)"
+  },
+  "last_updated": "2026-02-08"
+}

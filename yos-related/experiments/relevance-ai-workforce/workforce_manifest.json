@@ -1,0 +1,188 @@
+{
+  "type": "workforce",
+  "name": "Email Management Workforce",
+  "workspace_id": "d7b62b",
+  "project_id": "c4d1f814c405-40fd-ab6c-0426439371df",
+  "config": {
+    "name": "Email Management Workforce",
+    "description": "High-performance multi-agent system for email processing, categorization, and strategic analysis",
+    "workflow": {
+      "trigger": "user_message_received",
+      "nodes": [
+        {
+          "id": "trigger_1",
+          "type": "trigger",
+          "trigger_type": "user_message",
+          "label": "User message received"
+        },
+        {
+          "id": "worker_agent",
+          "type": "agent",
+          "agent_id": "8ceb23df-e102-4850-a1b1-ef603dc4aa28",
+          "label": "Worker Agent",
+          "description": "Email processing and categorization",
+          "position": {
+            "x": 200,
+            "y": 300
+          },
+          "config": {
+            "max_iterations": 5,
+            "timeout": 30,
+            "temperature": 0.7
+          }
+        },
+        {
+          "id": "coo_agent",
+          "type": "agent",
+          "agent_id": "5ba2bdd1-3ae2-48ca-9299-74a0eea7969c",
+          "label": "COO Agent",
+          "description": "Workflow management and team assignment",
+          "position": {
+            "x": 500,
+            "y": 300
+          },
+          "config": {
+            "max_iterations": 5,
+            "timeout": 30,
+            "temperature": 0.7
+          }
+        },
+        {
+          "id": "strategist_agent",
+          "type": "agent",
+          "agent_id": "9ff7953f-f2e7-49da-9b5e-4a6206a1a17e",
+          "label": "Strategist Agent",
+          "description": "Strategic analysis and recommendations",
+          "position": {
+            "x": 800,
+            "y": 300
+          },
+          "config": {
+            "max_iterations": 5,
+            "timeout": 30,
+            "temperature": 0.7
+          }
+        },
+        {
+          "id": "condition_priority",
+          "type": "condition",
+          "label": "Priority Check",
+          "position": {
+            "x": 500,
+            "y": 500
+          },
+          "conditions": [
+            {
+              "name": "Urgent",
+              "rule": "priority == 'urgent' or priority == 1",
+              "target": "strategist_agent"
+            },
+            {
+              "name": "Standard",
+              "rule": "priority != 'urgent' and priority != 1",
+              "target": "output"
+            }
+          ]
+        }
+      ],
+      "connections": [
+        {
+          "from": "trigger_1",
+          "to": "worker_agent",
+          "label": "Start processing"
+        },
+        {
+          "from": "worker_agent",
+          "to": "coo_agent",
+          "label": "Pass categorized email"
+        },
+        {
+          "from": "coo_agent",
+          "to": "condition_priority",
+          "label": "Check priority"
+        },
+        {
+          "from": "condition_priority",
+          "to": "strategist_agent",
+          "label": "Strategic analysis needed"
+        }
+      ]
+    },
+    "performance_config": {
+      "parallel_processing": true,
+      "max_concurrent_agents": 3,
+      "timeout_per_agent": 30,
+      "retry_failed_agents": true,
+      "max_retries": 3
+    },
+    "monitoring": {
+      "track_metrics": true,
+      "metrics": [
+        "processing_time",
+        "accuracy_score",
+        "completion_rate",
+        "team_assignment_accuracy",
+        "escalation_rate",
+        "user_satisfaction"
+      ],
+      "alert_thresholds": {
+        "processing_time_max": 30,
+        "accuracy_min": 0.85,
+        "completion_rate_min": 0.95
+      }
+    },
+    "teams": [
+      {
+        "name": "Sales Team",
+        "category": "Sales",
+        "priority": "High",
+        "sla": "4-24 hours",
+        "members": []
+      },
+      {
+        "name": "Support Team",
+        "category": "Support",
+        "priority": "Medium-High",
+        "sla": "2-8 hours",
+        "members": []
+      },
+      {
+        "name": "HR Team",
+        "category": "HR",
+        "priority": "Medium",
+        "sla": "24-48 hours",
+        "members": []
+      },
+      {
+        "name": "Finance Team",
+        "category": "Finance",
+        "priority": "Medium",
+        "sla": "24-48 hours",
+        "members": []
+      },
+      {
+        "name": "Operations Team",
+        "category": "Operations",
+        "priority": "Medium",
+        "sla": "24-48 hours",
+        "members": []
+      },
+      {
+        "name": "Executive Team",
+        "category": "Strategic",
+        "priority": "Critical",
+        "sla": "2-4 hours",
+        "members": []
+      },
+      {
+        "name": "Admin Team",
+        "category": "Administrative",
+        "priority": "Low-Medium",
+        "sla": "24-72 hours",
+        "members": []
+      }
+    ]
+  },
+  "status": "ready_for_deployment",
+  "created_at": "2026-01-06T02:35:00Z"
+}

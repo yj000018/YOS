@@ -1,0 +1,28 @@
+{
+  "template_folder": "04_Templates",
+  "templates_pairs": [],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "40_K-Cards",
+      "template": "04_Templates/Template - K-Card.md"
+    },
+    {
+      "folder": "50_Projects",
+      "template": "04_Templates/Template - Project.md"
+    },
+    {
+      "folder": "07_Agent_Operations",
+      "template": "04_Templates/Template - Agent.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [],
+  "startup_templates": []
+}

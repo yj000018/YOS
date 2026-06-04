@@ -1,0 +1,10 @@
+views:
+  - type: table
+    name: Table
+    order:
+      - file.folder
+      - file.name
+      - file.links
+    sort:
+      - property: file.folder
+        direction: ASC

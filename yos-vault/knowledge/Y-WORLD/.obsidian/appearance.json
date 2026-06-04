@@ -1,0 +1,14 @@
+{
+  "theme": "system",
+  "cssTheme": "Minimal",
+  "baseFontSize": 17,
+  "enabledCssSnippets": [],
+  "accentColor": "#e58c38",
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Inter",
+  "monospaceFontFamily": "JetBrains Mono",
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "translucency": false,
+  "baseFontSizeAction": true
+}

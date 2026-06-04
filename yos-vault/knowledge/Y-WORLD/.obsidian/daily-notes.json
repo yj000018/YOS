@@ -1,0 +1,6 @@
+{
+  "folder": "10_Inbox",
+  "format": "YYYY-MM-DD",
+  "template": "04_Templates/Template - Daily Note.md",
+  "autorun": false
+}

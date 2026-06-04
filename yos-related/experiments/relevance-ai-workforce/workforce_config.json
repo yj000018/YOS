@@ -1,0 +1,392 @@
+{
+  "name": "Email Management Workforce",
+  "description": "High-performance multi-agent system for email processing, categorization, and strategic analysis",
+  "workflow": {
+    "trigger": "user_message_received",
+    "nodes": [
+      {
+        "id": "trigger_1",
+        "type": "trigger",
+        "trigger_type": "user_message",
+        "label": "User message received"
+      },
+      {
+        "id": "y-ceo",
+        "type": "agent",
+        "agent_id": "ddeb1a0a-1fdb-4630-8a54-9d470ef39877",
+        "label": "Y-CEO",
+        "description": "Chief Executive Officer",
+        "position": {
+          "x": 200,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-pa",
+        "type": "agent",
+        "agent_id": "559219cf-0b52-414c-b561-afde029d7cf7",
+        "label": "Y-PA",
+        "description": "Personal Assistant / Concierge Holistique",
+        "position": {
+          "x": 400,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-strategist",
+        "type": "agent",
+        "agent_id": "1594a9b4-cb2a-4a83-b406-8bd41aa8779b",
+        "label": "Y-Strategist",
+        "description": "D\u00e9partement Strat\u00e9gie & Veille",
+        "position": {
+          "x": 600,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-hr",
+        "type": "agent",
+        "agent_id": "ec8f2590-285c-4af8-a14b-4d526b5f6af4",
+        "label": "Y-HR",
+        "description": "D\u00e9partement Ressources Humaines IA",
+        "position": {
+          "x": 800,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-coo",
+        "type": "agent",
+        "agent_id": "b261a1fe-bcf0-42e0-b571-1f18efcd6610",
+        "label": "Y-COO",
+        "description": "D\u00e9partement Op\u00e9rations & Surveillance",
+        "position": {
+          "x": 1000,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-fin",
+        "type": "agent",
+        "agent_id": "d36088f1-2427-4e8c-887e-2bf724deb3cd",
+        "label": "Y-Fin",
+        "description": "D\u00e9partement Finances",
+        "position": {
+          "x": 1200,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-tech",
+        "type": "agent",
+        "agent_id": "d6a79a51-0bf5-436d-ac1a-922c75c0528b",
+        "label": "Y-Tech",
+        "description": "D\u00e9partement Technologie & D\u00e9veloppement",
+        "position": {
+          "x": 1400,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-design",
+        "type": "agent",
+        "agent_id": "d41ad1de-31d2-4be3-af1f-75c4b6edd2b0",
+        "label": "Y-Design",
+        "description": "D\u00e9partement Design & Exp\u00e9rience Utilisateur",
+        "position": {
+          "x": 1600,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-mem",
+        "type": "agent",
+        "agent_id": "3869a9d8-1646-4692-b5b8-ecf6eadf2b4c",
+        "label": "Y-Mem",
+        "description": "D\u00e9partement M\u00e9moire & Connaissance",
+        "position": {
+          "x": 1800,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-worker",
+        "type": "agent",
+        "agent_id": "938e634d-2cc8-4d90-b4a4-0af580e185cb",
+        "label": "Y-Worker",
+        "description": "D\u00e9partement Ex\u00e9cution & Traitement",
+        "position": {
+          "x": 2000,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      },
+      {
+        "id": "y-spirit",
+        "type": "agent",
+        "agent_id": "5027640f-40e9-4b91-ae59-44187e4f1ae2",
+        "label": "Y-Spirit",
+        "description": "D\u00e9partement Guidance Spirituelle & \u00c9thique",
+        "position": {
+          "x": 2200,
+          "y": 300
+        },
+        "config": {
+          "max_iterations": 5,
+          "timeout": 30,
+          "temperature": 0.7
+        }
+      }
+    ],
+    "connections": [
+      {
+        "from": "trigger_1",
+        "to": "y-pa",
+        "label": "New User Request"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-ceo",
+        "label": "Strategic Goal Setting"
+      },
+      {
+        "from": "y-ceo",
+        "to": "y-pa",
+        "label": "Strategic Directives"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-strategist",
+        "label": "Request Strategic Scan"
+      },
+      {
+        "from": "y-strategist",
+        "to": "y-mem",
+        "label": "Aspirate Strategic Insights"
+      },
+      {
+        "from": "y-strategist",
+        "to": "y-pa",
+        "label": "Deliver Strategic Brief"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-coo",
+        "label": "Request System Surveillance"
+      },
+      {
+        "from": "y-coo",
+        "to": "y-mem",
+        "label": "Aspirate Monitoring Data"
+      },
+      {
+        "from": "y-coo",
+        "to": "y-pa",
+        "label": "Report Operational Status"
+      },
+      {
+        "from": "y-coo",
+        "to": "y-tech",
+        "label": "Delegate System Maintenance"
+      },
+      {
+        "from": "y-mem",
+        "to": "y-pa",
+        "label": "Provide Contextual Information"
+      },
+      {
+        "from": "y-mem",
+        "to": "y-strategist",
+        "label": "Provide Historical Data"
+      },
+      {
+        "from": "y-mem",
+        "to": "y-coo",
+        "label": "Provide System Logs"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-spirit",
+        "label": "Request Holistic Health Support"
+      },
+      {
+        "from": "y-spirit",
+        "to": "y-pa",
+        "label": "Provide Guidance"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-worker",
+        "label": "Assign Task Execution"
+      },
+      {
+        "from": "y-worker",
+        "to": "y-pa",
+        "label": "Report Task Completion"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-design",
+        "label": "Request Design Input"
+      },
+      {
+        "from": "y-design",
+        "to": "y-pa",
+        "label": "Provide Design Assets"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-fin",
+        "label": "Request Financial Analysis"
+      },
+      {
+        "from": "y-fin",
+        "to": "y-pa",
+        "label": "Provide Financial Report"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-hr",
+        "label": "Request HR Support"
+      },
+      {
+        "from": "y-hr",
+        "to": "y-pa",
+        "label": "Provide HR Information"
+      },
+      {
+        "from": "y-pa",
+        "to": "y-tech",
+        "label": "Request Technical Assistance"
+      },
+      {
+        "from": "y-tech",
+        "to": "y-pa",
+        "label": "Provide Technical Solution"
+      }
+    ]
+  },
+  "performance_config": {
+    "parallel_processing": true,
+    "max_concurrent_agents": 3,
+    "timeout_per_agent": 30,
+    "retry_failed_agents": true,
+    "max_retries": 3
+  },
+  "monitoring": {
+    "track_metrics": true,
+    "metrics": [
+      "processing_time",
+      "accuracy_score",
+      "completion_rate",
+      "team_assignment_accuracy",
+      "escalation_rate",
+      "user_satisfaction"
+    ],
+    "alert_thresholds": {
+      "processing_time_max": 30,
+      "accuracy_min": 0.85,
+      "completion_rate_min": 0.95
+    }
+  },
+  "teams": [
+    {
+      "name": "Sales Team",
+      "category": "Sales",
+      "priority": "High",
+      "sla": "4-24 hours",
+      "members": []
+    },
+    {
+      "name": "Support Team",
+      "category": "Support",
+      "priority": "Medium-High",
+      "sla": "2-8 hours",
+      "members": []
+    },
+    {
+      "name": "HR Team",
+      "category": "HR",
+      "priority": "Medium",
+      "sla": "24-48 hours",
+      "members": []
+    },
+    {
+      "name": "Finance Team",
+      "category": "Finance",
+      "priority": "Medium",
+      "sla": "24-48 hours",
+      "members": []
+    },
+    {
+      "name": "Operations Team",
+      "category": "Operations",
+      "priority": "Medium",
+      "sla": "24-48 hours",
+      "members": []
+    },
+    {
+      "name": "Executive Team",
+      "category": "Strategic",
+      "priority": "Critical",
+      "sla": "2-4 hours",
+      "members": []
+    },
+    {
+      "name": "Admin Team",
+      "category": "Administrative",
+      "priority": "Low-Medium",
+      "sla": "24-72 hours",
+      "members": []
+    }
+  ]
+}

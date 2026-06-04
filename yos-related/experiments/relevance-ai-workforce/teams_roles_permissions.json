@@ -1,0 +1,262 @@
+{
+  "name": "Team Roles & Permissions Configuration",
+  "version": "1.0.0",
+  "teams": [
+    {
+      "id": "sales_team",
+      "name": "Sales Team",
+      "role": "Sales & Customer Acquisition",
+      "members": [],
+      "permissions": {
+        "email_access": ["sales@", "leads@", "demo@"],
+        "notion_access": ["Sales Database", "Leads Pipeline", "Customer Records"],
+        "tools": ["CRM", "Email", "Calendar", "Notion", "Gmail"],
+        "actions": ["read_emails", "send_emails", "create_tasks", "update_crm", "schedule_meetings"]
+      },
+      "workflow": {
+        "receives_from": "COO Agent",
+        "category": "Sales",
+        "priority_levels": [1, 2, 3, 4],
+        "sla": {
+          "urgent": "4 hours",
+          "high": "12 hours",
+          "medium": "24 hours",
+          "low": "48 hours"
+        },
+        "escalation": {
+          "after": "24 hours",
+          "to": "Sales Manager"
+        }
+      },
+      "metrics": {
+        "response_time": {"target": "< 4 hours", "unit": "hours"},
+        "conversion_rate": {"target": "> 25%", "unit": "percentage"},
+        "deal_size": {"target": "> $10,000", "unit": "USD"},
+        "customer_satisfaction": {"target": "> 90%", "unit": "percentage"}
+      }
+    },
+    {
+      "id": "support_team",
+      "name": "Support Team",
+      "role": "Technical Support & Customer Service",
+      "members": [],
+      "permissions": {
+        "email_access": ["support@", "help@", "service@"],
+        "notion_access": ["Support Tickets", "Knowledge Base", "Bug Tracker"],
+        "tools": ["Support Portal", "Email", "Slack", "Notion", "Gmail"],
+        "actions": ["read_emails", "send_emails", "create_tickets", "update_status", "escalate_bugs"]
+      },
+      "workflow": {
+        "receives_from": "COO Agent",
+        "category": "Support",
+        "priority_levels": [1, 2, 3, 4],
+        "sla": {
+          "urgent": "2 hours",
+          "high": "4 hours",
+          "medium": "8 hours",
+          "low": "24 hours"
+        },
+        "escalation": {
+          "after": "8 hours",
+          "to": "Support Manager"
+        }
+      },
+      "metrics": {
+        "response_time": {"target": "< 2 hours", "unit": "hours"},
+        "resolution_time": {"target": "< 24 hours", "unit": "hours"},
+        "csat": {"target": "> 95%", "unit": "percentage"},
+        "first_contact_resolution": {"target": "> 80%", "unit": "percentage"}
+      }
+    },
+    {
+      "id": "hr_team",
+      "name": "HR Team",
+      "role": "Human Resources & Employee Relations",
+      "members": [],
+      "permissions": {
+        "email_access": ["hr@", "recruiting@", "careers@"],
+        "notion_access": ["HR Database", "Recruitment Pipeline", "Employee Records"],
+        "tools": ["HRIS", "Email", "Calendar", "Notion", "Gmail"],
+        "actions": ["read_emails", "send_emails", "manage_recruitment", "process_requests", "update_records"]
+      },
+      "workflow": {
+        "receives_from": "COO Agent",
+        "category": "HR",
+        "priority_levels": [1, 2, 3, 4],
+        "sla": {
+          "urgent": "24 hours",
+          "high": "48 hours",
+          "medium": "72 hours",
+          "low": "1 week"
+        },
+        "escalation": {
+          "after": "48 hours",
+          "to": "HR Manager"
+        }
+      },
+      "metrics": {
+        "time_to_hire": {"target": "< 30 days", "unit": "days"},
+        "employee_satisfaction": {"target": "> 85%", "unit": "percentage"},
+        "retention_rate": {"target": "> 90%", "unit": "percentage"},
+        "compliance": {"target": "100%", "unit": "percentage"}
+      }
+    },
+    {
+      "id": "finance_team",
+      "name": "Finance Team",
+      "role": "Financial Operations & Accounting",
+      "members": [],
+      "permissions": {
+        "email_access": ["finance@", "accounting@", "billing@"],
+        "notion_access": ["Finance Database", "Invoices", "Budget Tracker"],
+        "tools": ["Accounting Software", "Email", "Spreadsheets", "Notion", "Gmail"],
+        "actions": ["read_emails", "send_emails", "process_invoices", "manage_budget", "generate_reports"]
+      },
+      "workflow": {
+        "receives_from": "COO Agent",
+        "category": "Finance",
+        "priority_levels": [1, 2, 3, 4],
+        "sla": {
+          "urgent": "24 hours",
+          "high": "48 hours",
+          "medium": "72 hours",
+          "low": "1 week"
+        },
+        "escalation": {
+          "after": "48 hours",
+          "to": "Finance Manager"
+        }
+      },
+      "metrics": {
+        "payment_processing_time": {"target": "< 48 hours", "unit": "hours"},
+        "budget_variance": {"target": "< 5%", "unit": "percentage"},
+        "compliance_rate": {"target": "100%", "unit": "percentage"},
+        "audit_results": {"target": "Clean", "unit": "status"}
+      }
+    },
+    {
+      "id": "operations_team",
+      "name": "Operations Team",
+      "role": "Operations & Logistics Management",
+      "members": [],
+      "permissions": {
+        "email_access": ["operations@", "logistics@", "shipping@"],
+        "notion_access": ["Operations Database", "Inventory", "Vendor Management"],
+        "tools": ["ERP", "Email", "Inventory System", "Notion", "Gmail"],
+        "actions": ["read_emails", "send_emails", "manage_logistics", "track_inventory", "coordinate_vendors"]
+      },
+      "workflow": {
+        "receives_from": "COO Agent",
+        "category": "Operations",
+        "priority_levels": [1, 2, 3, 4],
+        "sla": {
+          "urgent": "24 hours",
+          "high": "48 hours",
+          "medium": "72 hours",
+          "low": "1 week"
+        },
+        "escalation": {
+          "after": "48 hours",
+          "to": "Operations Manager"
+        }
+      },
+      "metrics": {
+        "on_time_delivery": {"target": "> 95%", "unit": "percentage"},
+        "inventory_turnover": {"target": "> 8x/year", "unit": "times"},
+        "cost_per_unit": {"target": "Minimize", "unit": "USD"},
+        "vendor_performance": {"target": "> 90%", "unit": "percentage"}
+      }
+    },
+    {
+      "id": "executive_team",
+      "name": "Executive Team",
+      "role": "Strategic Leadership & Decision Making",
+      "members": [],
+      "permissions": {
+        "email_access": ["ceo@", "cfo@", "cto@", "board@", "executive@"],
+        "notion_access": ["All Databases", "Strategic Planning", "Board Reports"],
+        "tools": ["Email", "Calendar", "Notion", "Analytics", "Gmail"],
+        "actions": ["read_all_emails", "send_emails", "make_decisions", "review_reports", "strategic_planning"]
+      },
+      "workflow": {
+        "receives_from": "COO Agent",
+        "category": "Strategic",
+        "priority_levels": [1, 2],
+        "sla": {
+          "urgent": "2 hours",
+          "high": "4 hours",
+          "medium": "N/A",
+          "low": "N/A"
+        },
+        "escalation": {
+          "after": "4 hours",
+          "to": "CEO"
+        }
+      },
+      "metrics": {
+        "strategic_goals_achieved": {"target": "> 90%", "unit": "percentage"},
+        "partnership_value": {"target": "> $1M", "unit": "USD"},
+        "company_growth": {"target": "> 20%", "unit": "percentage"},
+        "stakeholder_satisfaction": {"target": "> 95%", "unit": "percentage"}
+      }
+    },
+    {
+      "id": "admin_team",
+      "name": "Admin Team",
+      "role": "Administrative Support & General Operations",
+      "members": [],
+      "permissions": {
+        "email_access": ["admin@", "info@", "general@"],
+        "notion_access": ["Admin Database", "Office Management", "IT Support"],
+        "tools": ["Email", "Calendar", "Notion", "Office Management", "Gmail"],
+        "actions": ["read_emails", "send_emails", "process_requests", "coordinate_facilities", "provide_support"]
+      },
+      "workflow": {
+        "receives_from": "COO Agent",
+        "category": "Administrative",
+        "priority_levels": [2, 3, 4],
+        "sla": {
+          "urgent": "N/A",
+          "high": "24 hours",
+          "medium": "48 hours",
+          "low": "72 hours"
+        },
+        "escalation": {
+          "after": "72 hours",
+          "to": "Admin Manager"
+        }
+      },
+      "metrics": {
+        "response_time": {"target": "< 24 hours", "unit": "hours"},
+        "request_completion_rate": {"target": "> 95%", "unit": "percentage"},
+        "employee_satisfaction": {"target": "> 90%", "unit": "percentage"},
+        "cost_efficiency": {"target": "Maximize", "unit": "ratio"}
+      }
+    }
+  ],
+  "global_permissions": {
+    "all_teams_can": [
+      "View assigned emails",
+      "Update task status in Notion",
+      "Communicate with other teams",
+      "Escalate urgent issues",
+      "Access knowledge base"
+    ],
+    "restricted": [
+      "Access other teams' emails (except Executive)",
+      "Modify system configuration",
+      "Delete records",
+      "Override SLA settings"
+    ]
+  },
+  "integration_permissions": {
+    "notion": {
+      "all_teams": ["read", "write", "create_tasks"],
+      "executive_only": ["delete", "modify_structure", "admin_access"]
+    },
+    "gmail": {
+      "all_teams": ["read_assigned", "send", "reply"],
+      "executive_only": ["read_all", "admin_access"]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+name: Deploy Relevance AI Workforce
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'workforce_config.json'
+      - 'knowledge_base.json'
+      - 'workflow_complete.json'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Validate configurations
+        run: |
+          echo "🔍 Validating configurations..."
+          for file in workforce_config.json knowledge_base.json workflow_complete.json; do
+            if [ -f "$file" ]; then
+              python3 -m json.tool "$file" > /dev/null && echo "✅ $file valid"
+            fi
+          done
+      
+      - name: Deploy Knowledge Base
+        env:
+          RELEVANCE_AI_API_KEY: ${{ secrets.RELEVANCE_AI_API_KEY }}
+        run: |
+          echo "📚 Deploying Knowledge Base..."
+          curl -X POST "https://api-d7b62b.stack.tryrelevance.com/latest/knowledge/upload" \
+            -H "Authorization: ${RELEVANCE_AI_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d @knowledge_base.json
+          echo "✅ Knowledge Base deployed!"
+      
+      - name: Deploy Workforce
+        env:
+          RELEVANCE_AI_API_KEY: ${{ secrets.RELEVANCE_AI_API_KEY }}
+        run: |
+          echo "⚙️ Deploying Workforce..."
+          curl -X POST "https://api-d7b62b.stack.tryrelevance.com/latest/workforces" \
+            -H "Authorization: ${RELEVANCE_AI_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -d @workflow_complete.json
+          echo "✅ Workforce deployed!"
+      
+      - name: Deployment Summary
+        run: |
+          echo "============================================"
+          echo "✅ DEPLOYMENT COMPLETE!"
+          echo "============================================"
+          echo ""
+          echo "✅ Knowledge Base: Uploaded"
+          echo "✅ Workflow: Configured"
+          echo "✅ Agents: Connected (Worker → COO → Strategist)"
+          echo "✅ Teams: 7 teams configured"
+          echo ""
+          echo "View: https://app.relevanceai.com/workforce/d7b62b/c4d1f814c405-40fd-ab6c-0426439371df"

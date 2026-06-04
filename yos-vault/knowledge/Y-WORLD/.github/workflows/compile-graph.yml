@@ -1,0 +1,46 @@
+name: Compile Y-World Knowledge Graph
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.md'
+      - 'parse_vault.py'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Vault Repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.YWORLD_PAT || github.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Vault Parser
+        run: |
+          python parse_vault.py
+
+      - name: Commit and Push graph_data.json
+        run: |
+          git config --global user.name "Y-World Bot"
+          git config --global user.email "bot@y-world.net"
+          
+          # Stage the file first so git diff can detect it even if it was untracked
+          git add graph_data.json
+          
+          # Check if there are staged changes to commit
+          if git diff --cached --quiet; then
+            echo "No changes in graph_data.json"
+          else
+            git commit -m "auto: compile knowledge graph [skip ci]"
+            git push
+          fi

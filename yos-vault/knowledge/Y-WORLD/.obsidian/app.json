@@ -1,0 +1,20 @@
+{
+  "showInlineTitle": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "legacyEditor": false,
+  "foldHeading": true,
+  "foldIndent": true,
+  "showFrontmatter": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "autoConvertHtml": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "10_Inbox",
+  "attachmentFolderPath": "10_Inbox/attachments",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "promptDelete": true,
+  "trashOption": "system"
+}

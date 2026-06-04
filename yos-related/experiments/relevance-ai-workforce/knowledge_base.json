@@ -1,0 +1,187 @@
+{
+  "name": "Email Management System Knowledge Base",
+  "description": "Complete knowledge base for email processing, categorization, and workflow management",
+  "version": "1.0.0",
+  "categories": [
+    {
+      "name": "Sales",
+      "keywords": ["sales", "lead", "prospect", "demo", "pricing", "quote", "proposal", "customer", "revenue", "deal"],
+      "priority": "High",
+      "sla": "4-24 hours",
+      "team": "Sales Team",
+      "escalation_rules": {
+        "urgent_keywords": ["urgent", "asap", "immediately", "today"],
+        "vip_domains": ["enterprise.com", "fortune500.com"]
+      }
+    },
+    {
+      "name": "Support",
+      "keywords": ["help", "issue", "problem", "bug", "error", "not working", "broken", "support", "assistance"],
+      "priority": "Medium-High",
+      "sla": "2-8 hours",
+      "team": "Support Team",
+      "escalation_rules": {
+        "urgent_keywords": ["critical", "down", "outage", "emergency"],
+        "priority_levels": ["P0", "P1", "critical"]
+      }
+    },
+    {
+      "name": "HR",
+      "keywords": ["hr", "human resources", "hiring", "recruitment", "onboarding", "benefits", "payroll", "vacation", "leave"],
+      "priority": "Medium",
+      "sla": "24-48 hours",
+      "team": "HR Team",
+      "escalation_rules": {
+        "urgent_keywords": ["resignation", "termination", "harassment", "legal"]
+      }
+    },
+    {
+      "name": "Finance",
+      "keywords": ["invoice", "payment", "billing", "accounting", "budget", "expense", "financial", "tax", "audit"],
+      "priority": "Medium",
+      "sla": "24-48 hours",
+      "team": "Finance Team",
+      "escalation_rules": {
+        "urgent_keywords": ["overdue", "late payment", "audit", "compliance"]
+      }
+    },
+    {
+      "name": "Operations",
+      "keywords": ["operations", "logistics", "shipping", "delivery", "inventory", "supply chain", "vendor", "procurement"],
+      "priority": "Medium",
+      "sla": "24-48 hours",
+      "team": "Operations Team",
+      "escalation_rules": {
+        "urgent_keywords": ["delayed", "shortage", "critical supply"]
+      }
+    },
+    {
+      "name": "Strategic",
+      "keywords": ["strategy", "partnership", "acquisition", "investment", "board", "executive", "ceo", "cfo", "cto"],
+      "priority": "Critical",
+      "sla": "2-4 hours",
+      "team": "Executive Team",
+      "escalation_rules": {
+        "urgent_keywords": ["confidential", "urgent", "board meeting"],
+        "vip_senders": ["ceo@", "cfo@", "board@"]
+      }
+    },
+    {
+      "name": "Administrative",
+      "keywords": ["admin", "office", "facilities", "it support", "general inquiry", "information", "question"],
+      "priority": "Low-Medium",
+      "sla": "24-72 hours",
+      "team": "Admin Team",
+      "escalation_rules": {}
+    }
+  ],
+  "teams": [
+    {
+      "name": "Sales Team",
+      "role": "Handle sales inquiries, leads, and customer acquisition",
+      "responsibilities": [
+        "Respond to sales inquiries within SLA",
+        "Qualify leads and schedule demos",
+        "Provide pricing and proposals",
+        "Close deals and onboard customers"
+      ],
+      "tools": ["CRM", "Email", "Calendar", "Notion"],
+      "metrics": ["Response time", "Conversion rate", "Deal size", "Customer satisfaction"]
+    },
+    {
+      "name": "Support Team",
+      "role": "Provide technical support and resolve customer issues",
+      "responsibilities": [
+        "Respond to support tickets within SLA",
+        "Troubleshoot technical issues",
+        "Escalate critical bugs to engineering",
+        "Document solutions in knowledge base"
+      ],
+      "tools": ["Support Portal", "Email", "Slack", "Notion"],
+      "metrics": ["Response time", "Resolution time", "CSAT", "First contact resolution"]
+    },
+    {
+      "name": "HR Team",
+      "role": "Manage human resources and employee relations",
+      "responsibilities": [
+        "Process HR requests within SLA",
+        "Manage recruitment and onboarding",
+        "Handle employee benefits and payroll",
+        "Ensure compliance with labor laws"
+      ],
+      "tools": ["HRIS", "Email", "Calendar", "Notion"],
+      "metrics": ["Time to hire", "Employee satisfaction", "Retention rate", "Compliance"]
+    },
+    {
+      "name": "Finance Team",
+      "role": "Manage financial operations and accounting",
+      "responsibilities": [
+        "Process invoices and payments",
+        "Manage budgets and expenses",
+        "Ensure financial compliance",
+        "Prepare financial reports"
+      ],
+      "tools": ["Accounting Software", "Email", "Spreadsheets", "Notion"],
+      "metrics": ["Payment processing time", "Budget variance", "Compliance rate", "Audit results"]
+    },
+    {
+      "name": "Operations Team",
+      "role": "Manage day-to-day operations and logistics",
+      "responsibilities": [
+        "Coordinate logistics and shipping",
+        "Manage inventory and supply chain",
+        "Work with vendors and suppliers",
+        "Optimize operational efficiency"
+      ],
+      "tools": ["ERP", "Email", "Inventory System", "Notion"],
+      "metrics": ["On-time delivery", "Inventory turnover", "Cost per unit", "Vendor performance"]
+    },
+    {
+      "name": "Executive Team",
+      "role": "Strategic decision-making and leadership",
+      "responsibilities": [
+        "Review strategic communications",
+        "Make high-level decisions",
+        "Manage partnerships and acquisitions",
+        "Oversee company direction"
+      ],
+      "tools": ["Email", "Calendar", "Notion", "Analytics"],
+      "metrics": ["Strategic goals achieved", "Partnership value", "Company growth", "Stakeholder satisfaction"]
+    },
+    {
+      "name": "Admin Team",
+      "role": "Handle administrative and general inquiries",
+      "responsibilities": [
+        "Process general inquiries",
+        "Manage office operations",
+        "Coordinate facilities and IT",
+        "Support other teams"
+      ],
+      "tools": ["Email", "Calendar", "Notion", "Office Management"],
+      "metrics": ["Response time", "Request completion rate", "Employee satisfaction", "Cost efficiency"]
+    }
+  ],
+  "workflow_rules": {
+    "categorization": {
+      "method": "keyword_matching",
+      "fallback": "manual_review",
+      "confidence_threshold": 0.85
+    },
+    "priority_assignment": {
+      "urgent": ["P0", "critical", "emergency", "urgent", "asap"],
+      "high": ["important", "high priority", "soon"],
+      "medium": ["normal", "standard"],
+      "low": ["low priority", "when possible", "no rush"]
+    },
+    "escalation": {
+      "auto_escalate_after": "24 hours",
+      "escalate_to": "manager",
+      "notify_on_escalation": true
+    },
+    "quality_standards": {
+      "min_accuracy": 0.85,
+      "max_processing_time": 30,
+      "required_fields": ["category", "priority", "team", "summary"]
+    }
+  }
+}

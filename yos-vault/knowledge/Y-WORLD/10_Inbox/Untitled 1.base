@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+  - type: list
+    name: Viewccc
+    markers: number
+    indentProperties: true
+  - type: cards
+    name: View
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - domain

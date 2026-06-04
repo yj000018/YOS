@@ -1,0 +1,27 @@
+# Obsidian workspace state (device-specific, do not sync)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Obsidian Sync conflict files
+*.sync-conflict-*
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Large media (optional — uncomment to exclude)
+# *.mp4
+# *.mov
+# *.pdf
+
+# Sensitive / private data (add specific paths as needed)
+# 99_Archive/private/

@@ -1,0 +1,6434 @@
+{
+  "nodes": [
+    {
+      "id": "10_Inbox",
+      "label": "10_Inbox",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "note",
+      "path": "10_Inbox.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "60_Y-OS",
+      "label": "60_Y-OS",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "note",
+      "path": "60_Y-OS.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Manus Operations",
+      "label": "Manus Operations",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Manus Operations.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 29
+    },
+    {
+      "id": "Metadata Schema",
+      "label": "Metadata Schema",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Metadata Schema.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Y-WORLD Operating Principles",
+      "label": "Y-WORLD Operating Principles",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Y-WORLD Operating Principles.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Workspace Strategy",
+      "label": "Workspace Strategy",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Workspace Strategy.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Obsidian OS Cockpit",
+      "label": "Obsidian OS Cockpit",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Obsidian OS Cockpit.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Profile Strategy",
+      "label": "Profile Strategy",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Profile Strategy.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Naming Conventions",
+      "label": "Naming Conventions",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Naming Conventions.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Obsidian Walkthrough",
+      "label": "Obsidian Walkthrough",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "note",
+      "path": "00_System/Obsidian Walkthrough.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Automation Safety Rules",
+      "label": "Automation Safety Rules",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Automation Safety Rules.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Y-WORLD Architecture",
+      "label": "Y-WORLD Architecture",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Y-WORLD Architecture.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Plugin Registry",
+      "label": "Plugin Registry",
+      "domain": "System",
+      "color": "#7c3aed",
+      "icon": "\u2699\ufe0f",
+      "type": "world-node",
+      "path": "00_System/Plugin Registry.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "The Oracle Archetype",
+      "label": "The Oracle Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Oracle Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "The Architect Archetype",
+      "label": "The Architect Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Architect Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "The Wanderer Archetype",
+      "label": "The Wanderer Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Wanderer Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "The Hermit Archetype",
+      "label": "The Hermit Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Hermit Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "The Alchemist Archetype",
+      "label": "The Alchemist Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Alchemist Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "The Scribe Archetype",
+      "label": "The Scribe Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Scribe Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Egyptian Tradition",
+      "label": "Egyptian Tradition",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "tradition",
+      "path": "80_Archetypes/Egyptian Tradition.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Archetypes App",
+      "label": "Archetypes App",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "project",
+      "path": "80_Archetypes/Archetypes App.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 14
+    },
+    {
+      "id": "Archetypes Log",
+      "label": "Archetypes Log",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "log",
+      "path": "80_Archetypes/Archetypes Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "The Trickster Archetype",
+      "label": "The Trickster Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Trickster Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "The Guardian Archetype",
+      "label": "The Guardian Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Guardian Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Taoist Tradition",
+      "label": "Taoist Tradition",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "tradition",
+      "path": "80_Archetypes/Taoist Tradition.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Norse Tradition",
+      "label": "Norse Tradition",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "tradition",
+      "path": "80_Archetypes/Norse Tradition.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "The Forge Archetype",
+      "label": "The Forge Archetype",
+      "domain": "Archetypes",
+      "color": "#8b5cf6",
+      "icon": "\ud83c\udfad",
+      "type": "archetype",
+      "path": "80_Archetypes/The Forge Archetype.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Template - Project",
+      "label": "Template - Project",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "project",
+      "path": "04_Templates/Template - Project.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Template - Dashboard",
+      "label": "Template - Dashboard",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "dashboard",
+      "path": "04_Templates/Template - Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Template - K-Card",
+      "label": "Template - K-Card",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "k-card",
+      "path": "04_Templates/Template - K-Card.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Template - Map Node",
+      "label": "Template - Map Node",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "map",
+      "path": "04_Templates/Template - Map Node.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Template - Agent",
+      "label": "Template - Agent",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "agent",
+      "path": "04_Templates/Template - Agent.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Template - Workflow",
+      "label": "Template - Workflow",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "workflow",
+      "path": "04_Templates/Template - Workflow.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Template - Decision",
+      "label": "Template - Decision",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "decision",
+      "path": "04_Templates/Template - Decision.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Template - Daily Note",
+      "label": "Template - Daily Note",
+      "domain": "Templates",
+      "color": "#475569",
+      "icon": "\ud83d\udccb",
+      "type": "log",
+      "path": "04_Templates/Template - Daily Note.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Book 1 \u2014 Cover Design",
+      "label": "Book 1 \u2014 Cover Design",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "asset",
+      "path": "81_Y-Publishing/Book 1 \u2014 Cover Design.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Editorial Calendar",
+      "label": "Editorial Calendar",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "planning",
+      "path": "81_Y-Publishing/Editorial Calendar.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Y-Publishing Log",
+      "label": "Y-Publishing Log",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "log",
+      "path": "81_Y-Publishing/Y-Publishing Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Y-Publishing Landing Page",
+      "label": "Y-Publishing Landing Page",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "project",
+      "path": "81_Y-Publishing/Y-Publishing Landing Page.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 12
+    },
+    {
+      "id": "Book 1 \u2014 Chapter 2 Notes",
+      "label": "Book 1 \u2014 Chapter 2 Notes",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "writing",
+      "path": "81_Y-Publishing/Book 1 \u2014 Chapter 2 Notes.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Y-Publishing Brand",
+      "label": "Y-Publishing Brand",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "asset",
+      "path": "81_Y-Publishing/Y-Publishing Brand.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Book 1 \u2014 Chapter 1 Notes",
+      "label": "Book 1 \u2014 Chapter 1 Notes",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "writing",
+      "path": "81_Y-Publishing/Book 1 \u2014 Chapter 1 Notes.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Social Strategy",
+      "label": "Social Strategy",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "strategy",
+      "path": "81_Y-Publishing/Social Strategy.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Audiobook Production",
+      "label": "Audiobook Production",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "project",
+      "path": "81_Y-Publishing/Audiobook Production.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Podcast YOS",
+      "label": "Podcast YOS",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "project",
+      "path": "81_Y-Publishing/Podcast YOS.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Book 1 \u2014 Chapter 3 Notes",
+      "label": "Book 1 \u2014 Chapter 3 Notes",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "writing",
+      "path": "81_Y-Publishing/Book 1 \u2014 Chapter 3 Notes.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Newsletter YOS",
+      "label": "Newsletter YOS",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "project",
+      "path": "81_Y-Publishing/Newsletter YOS.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Research Database",
+      "label": "Research Database",
+      "domain": "Y-Publishing",
+      "color": "#ef4444",
+      "icon": "\ud83d\udcd6",
+      "type": "database",
+      "path": "81_Y-Publishing/Research Database.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Y-World PoC Validation Node",
+      "label": "Y-World PoC Validation Node",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "Capture",
+      "path": "10_Inbox/Y-World PoC Validation Node.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Untitled 2",
+      "label": "Untitled 2",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "note",
+      "path": "10_Inbox/Untitled 2.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Y-Publishing Book 1",
+      "label": "Y-Publishing Book 1",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "note",
+      "path": "10_Inbox/Y-Publishing Book 1.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "PUBLISHING",
+      "connections": 26
+    },
+    {
+      "id": "Untitled",
+      "label": "Untitled",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "decision",
+      "path": "10_Inbox/Untitled.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Untitled 1",
+      "label": "Untitled 1",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "note",
+      "path": "10_Inbox/Untitled 1.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "2026-05-28",
+      "label": "2026-05-28",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "log",
+      "path": "10_Inbox/2026-05-28.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "2026-05-29",
+      "label": "2026-05-29",
+      "domain": "Inbox",
+      "color": "#64748b",
+      "icon": "\ud83d\udce5",
+      "type": "log",
+      "path": "10_Inbox/2026-05-29.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Project - ARC Anandaz Smart Heating",
+      "label": "Project - ARC Anandaz Smart Heating",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "project",
+      "path": "50_Projects/Project - ARC Anandaz Smart Heating.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Project - Y-Publishing Book 1",
+      "label": "Project - Y-Publishing Book 1",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "project",
+      "path": "50_Projects/Project - Y-Publishing Book 1.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Project - CasaTAO Solar Upgrade",
+      "label": "Project - CasaTAO Solar Upgrade",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "project",
+      "path": "50_Projects/Project - CasaTAO Solar Upgrade.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Project - Obsidian Git Setup",
+      "label": "Project - Obsidian Git Setup",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "project",
+      "path": "50_Projects/Project - Obsidian Git Setup.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Project - Y-WORLD.net",
+      "label": "Project - Y-WORLD.net",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "project",
+      "path": "50_Projects/Project - Y-WORLD.net.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Project - Archetypes App v1",
+      "label": "Project - Archetypes App v1",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "project",
+      "path": "50_Projects/Project - Archetypes App v1.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Projects Log",
+      "label": "Projects Log",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "log",
+      "path": "50_Projects/Projects Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 11
+    },
+    {
+      "id": "CasaTAO Studio",
+      "label": "CasaTAO Studio",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "place",
+      "path": "70_CasaTAO/CasaTAO Studio.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 12
+    },
+    {
+      "id": "CasaTAO Kitchen",
+      "label": "CasaTAO Kitchen",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "place",
+      "path": "70_CasaTAO/CasaTAO Kitchen.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "CasaTAO Water System",
+      "label": "CasaTAO Water System",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "infrastructure",
+      "path": "70_CasaTAO/CasaTAO Water System.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "CasaTAO Energy System",
+      "label": "CasaTAO Energy System",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "infrastructure",
+      "path": "70_CasaTAO/CasaTAO Energy System.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "CasaTAO Garden",
+      "label": "CasaTAO Garden",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "place",
+      "path": "70_CasaTAO/CasaTAO Garden.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "CasaTAO Cameras",
+      "label": "CasaTAO Cameras",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "hardware",
+      "path": "70_CasaTAO/CasaTAO Cameras.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "CasaTAO Log",
+      "label": "CasaTAO Log",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "log",
+      "path": "70_CasaTAO/CasaTAO Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "CasaTAO Starlink Dish",
+      "label": "CasaTAO Starlink Dish",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "hardware",
+      "path": "70_CasaTAO/CasaTAO Starlink Dish.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "CasaTAO Network",
+      "label": "CasaTAO Network",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "infrastructure",
+      "path": "70_CasaTAO/CasaTAO Network.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "CasaTAO MiniPC",
+      "label": "CasaTAO MiniPC",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "hardware",
+      "path": "70_CasaTAO/CasaTAO MiniPC.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "CasaTAO Terrace",
+      "label": "CasaTAO Terrace",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "place",
+      "path": "70_CasaTAO/CasaTAO Terrace.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "CasaTAO NAS",
+      "label": "CasaTAO NAS",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "hardware",
+      "path": "70_CasaTAO/CasaTAO NAS.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "CasaTAO Inverter",
+      "label": "CasaTAO Inverter",
+      "domain": "CasaTAO",
+      "color": "#f97316",
+      "icon": "\ud83c\udfe0",
+      "type": "hardware",
+      "path": "70_CasaTAO/CasaTAO Inverter.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Sapiens",
+      "label": "Sapiens",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "book",
+      "path": "30_Knowledge/Sapiens.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "The Sovereign Individual",
+      "label": "The Sovereign Individual",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "book",
+      "path": "30_Knowledge/The Sovereign Individual.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Obsidian",
+      "label": "Obsidian",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Obsidian.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Mermaid Diagrams",
+      "label": "Mermaid Diagrams",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Mermaid Diagrams.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Proxmox",
+      "label": "Proxmox",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Proxmox.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Dune",
+      "label": "Dune",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "book",
+      "path": "30_Knowledge/Dune.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Thinking Fast and Slow",
+      "label": "Thinking Fast and Slow",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "book",
+      "path": "30_Knowledge/Thinking Fast and Slow.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Notion",
+      "label": "Notion",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Notion.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Frank Herbert",
+      "label": "Frank Herbert",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/Frank Herbert.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "CasaTAO",
+      "label": "CasaTAO",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "place",
+      "path": "30_Knowledge/CasaTAO.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "SANCTUARY",
+      "connections": 40
+    },
+    {
+      "id": "James Davidson",
+      "label": "James Davidson",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/James Davidson.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Nassim Taleb",
+      "label": "Nassim Taleb",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/Nassim Taleb.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Yuval Noah Harari",
+      "label": "Yuval Noah Harari",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/Yuval Noah Harari.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Antifragile",
+      "label": "Antifragile",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "book",
+      "path": "30_Knowledge/Antifragile.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "MQTT Protocol",
+      "label": "MQTT Protocol",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/MQTT Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Python",
+      "label": "Python",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Python.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Docker",
+      "label": "Docker",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Docker.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "The Art of War",
+      "label": "The Art of War",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "book",
+      "path": "30_Knowledge/The Art of War.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Ollama Local LLM",
+      "label": "Ollama Local LLM",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Ollama Local LLM.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "ARC Anandaz",
+      "label": "ARC Anandaz",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "place",
+      "path": "30_Knowledge/ARC Anandaz.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "SANCTUARY",
+      "connections": 41
+    },
+    {
+      "id": "TypeScript",
+      "label": "TypeScript",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/TypeScript.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Yannick Jolliet",
+      "label": "Yannick Jolliet",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/Yannick Jolliet.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 11
+    },
+    {
+      "id": "ESP32-S3",
+      "label": "ESP32-S3",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "hardware",
+      "path": "30_Knowledge/ESP32-S3.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Carl Jung",
+      "label": "Carl Jung",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/Carl Jung.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Lao Tzu",
+      "label": "Lao Tzu",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/Lao Tzu.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Pylontech Batteries",
+      "label": "Pylontech Batteries",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "hardware",
+      "path": "30_Knowledge/Pylontech Batteries.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Raspberry Pi 5",
+      "label": "Raspberry Pi 5",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "hardware",
+      "path": "30_Knowledge/Raspberry Pi 5.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "TailwindCSS",
+      "label": "TailwindCSS",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/TailwindCSS.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Victron Energy",
+      "label": "Victron Energy",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Victron Energy.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Tao Te Ching",
+      "label": "Tao Te Ching",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "book",
+      "path": "30_Knowledge/Tao Te Ching.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 9
+    },
+    {
+      "id": "React Framework",
+      "label": "React Framework",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/React Framework.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Knowledge Log",
+      "label": "Knowledge Log",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "log",
+      "path": "30_Knowledge/Knowledge Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Daniel Kahneman",
+      "label": "Daniel Kahneman",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "person",
+      "path": "30_Knowledge/Daniel Kahneman.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Shelly Devices",
+      "label": "Shelly Devices",
+      "domain": "Knowledge",
+      "color": "#f59e0b",
+      "icon": "\ud83d\udcda",
+      "type": "technology",
+      "path": "30_Knowledge/Shelly Devices.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Sicily Residency & Living",
+      "label": "Sicily Residency & Living",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "life-note",
+      "path": "20_Life/Sicily Residency & Living.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Fasting Protocol",
+      "label": "Fasting Protocol",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Fasting Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Real Estate Portfolio",
+      "label": "Real Estate Portfolio",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "asset",
+      "path": "20_Life/Real Estate Portfolio.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Swiss Chalet Living",
+      "label": "Swiss Chalet Living",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "life-note",
+      "path": "20_Life/Swiss Chalet Living.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Life Log",
+      "label": "Life Log",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "log",
+      "path": "20_Life/Life Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Reading Practice",
+      "label": "Reading Practice",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "ritual",
+      "path": "20_Life/Reading Practice.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Physical Training",
+      "label": "Physical Training",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Physical Training.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Digital Detox Protocol",
+      "label": "Digital Detox Protocol",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Digital Detox Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Language Practice",
+      "label": "Language Practice",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "ritual",
+      "path": "20_Life/Language Practice.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Cold Exposure Protocol",
+      "label": "Cold Exposure Protocol",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Cold Exposure Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Sleep Protocol",
+      "label": "Sleep Protocol",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Sleep Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Annual Retreat Protocol",
+      "label": "Annual Retreat Protocol",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Annual Retreat Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Financial Architecture",
+      "label": "Financial Architecture",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Financial Architecture.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Crypto Portfolio",
+      "label": "Crypto Portfolio",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "asset",
+      "path": "20_Life/Crypto Portfolio.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Travel Protocol",
+      "label": "Travel Protocol",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Travel Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Morning Ritual",
+      "label": "Morning Ritual",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "ritual",
+      "path": "20_Life/Morning Ritual.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Health Protocol",
+      "label": "Health Protocol",
+      "domain": "Life",
+      "color": "#ec4899",
+      "icon": "\u2764\ufe0f",
+      "type": "protocol",
+      "path": "20_Life/Health Protocol.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "LIFE",
+      "connections": 10
+    },
+    {
+      "id": "Y-WORLD ROOT MAP",
+      "label": "Y-WORLD ROOT MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "k-card",
+      "path": "02_Maps/Y-WORLD ROOT MAP.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "ROOT",
+      "connections": 23
+    },
+    {
+      "id": "AI SYSTEMS MAP",
+      "label": "AI SYSTEMS MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/AI SYSTEMS MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "CASATAO MAP",
+      "label": "CASATAO MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/CASATAO MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "REALITY INTERFACES MAP",
+      "label": "REALITY INTERFACES MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/REALITY INTERFACES MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "KNOWLEDGE MAP",
+      "label": "KNOWLEDGE MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/KNOWLEDGE MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "ARC ANANDAZ MAP",
+      "label": "ARC ANANDAZ MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/ARC ANANDAZ MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Y-PUBLISHING MAP",
+      "label": "Y-PUBLISHING MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/Y-PUBLISHING MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "PROJECTS MAP",
+      "label": "PROJECTS MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/PROJECTS MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "ARCHETYPES MAP",
+      "label": "ARCHETYPES MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/ARCHETYPES MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Y-OS MAP",
+      "label": "Y-OS MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/Y-OS MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "LIFE MAP",
+      "label": "LIFE MAP",
+      "domain": "Maps",
+      "color": "#6366f1",
+      "icon": "\ud83d\uddfa\ufe0f",
+      "type": "map",
+      "path": "02_Maps/LIFE MAP.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Y-WORLD Dashboard",
+      "label": "Y-WORLD Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Y-WORLD Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 20
+    },
+    {
+      "id": "CasaTAO Dashboard",
+      "label": "CasaTAO Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/CasaTAO Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 9
+    },
+    {
+      "id": "Y-Publishing Dashboard",
+      "label": "Y-Publishing Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Y-Publishing Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 13
+    },
+    {
+      "id": "AI Systems Dashboard",
+      "label": "AI Systems Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/AI Systems Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Archetypes Dashboard",
+      "label": "Archetypes Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Archetypes Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Y-OS Dashboard",
+      "label": "Y-OS Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Y-OS Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Projects Dashboard",
+      "label": "Projects Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Projects Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "ARC Anandaz Dashboard",
+      "label": "ARC Anandaz Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/ARC Anandaz Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Manus Dashboard",
+      "label": "Manus Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Manus Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Life Dashboard",
+      "label": "Life Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Life Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Knowledge Dashboard",
+      "label": "Knowledge Dashboard",
+      "domain": "Dashboards",
+      "color": "#4338ca",
+      "icon": "\ud83d\udcca",
+      "type": "dashboard",
+      "path": "03_Dashboards/Knowledge Dashboard.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Obsidian Mobile",
+      "label": "Obsidian Mobile",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "interface",
+      "path": "90_Reality_Interfaces/Obsidian Mobile.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Dashboard TV Mode",
+      "label": "Dashboard TV Mode",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "interface",
+      "path": "90_Reality_Interfaces/Dashboard TV Mode.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "GitHub Public Profile",
+      "label": "GitHub Public Profile",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "interface",
+      "path": "90_Reality_Interfaces/GitHub Public Profile.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Telegram Bot YOS",
+      "label": "Telegram Bot YOS",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "interface",
+      "path": "90_Reality_Interfaces/Telegram Bot YOS.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Y-WORLD.net",
+      "label": "Y-WORLD.net",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "project",
+      "path": "90_Reality_Interfaces/Y-WORLD.net.md",
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 16
+    },
+    {
+      "id": "Y-WORLD.net Vision",
+      "label": "Y-WORLD.net Vision",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "world-node",
+      "path": "90_Reality_Interfaces/Y-WORLD.net Vision.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Voice Interface YOS",
+      "label": "Voice Interface YOS",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "interface",
+      "path": "90_Reality_Interfaces/Voice Interface YOS.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Notion Public Pages",
+      "label": "Notion Public Pages",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "interface",
+      "path": "90_Reality_Interfaces/Notion Public Pages.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Y-WORLD iOS App",
+      "label": "Y-WORLD iOS App",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "interface",
+      "path": "90_Reality_Interfaces/Y-WORLD iOS App.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Canva AI",
+      "label": "Canva AI",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Canva AI.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Gemini Flash",
+      "label": "Gemini Flash",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Gemini Flash.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Mistral 7B",
+      "label": "Mistral 7B",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Mistral 7B.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "MiniMax Video",
+      "label": "MiniMax Video",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/MiniMax Video.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Perplexity Sonar",
+      "label": "Perplexity Sonar",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Perplexity Sonar.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "ElevenLabs TTS",
+      "label": "ElevenLabs TTS",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/ElevenLabs TTS.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Llama 3.1",
+      "label": "Llama 3.1",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Llama 3.1.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Hume TTS",
+      "label": "Hume TTS",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Hume TTS.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Replicate API",
+      "label": "Replicate API",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Replicate API.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Grok xAI",
+      "label": "Grok xAI",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Grok xAI.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "GPT-5",
+      "label": "GPT-5",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/GPT-5.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Flux Image Gen",
+      "label": "Flux Image Gen",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Flux Image Gen.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 9
+    },
+    {
+      "id": "Claude Sonnet",
+      "label": "Claude Sonnet",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Claude Sonnet.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Firecrawl",
+      "label": "Firecrawl",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Firecrawl.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "HeyGen Avatars",
+      "label": "HeyGen Avatars",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/HeyGen Avatars.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Whisper STT",
+      "label": "Whisper STT",
+      "domain": "Reality Interfaces",
+      "color": "#06b6d4",
+      "icon": "\ud83c\udf10",
+      "type": "ai-model",
+      "path": "90_Reality_Interfaces/AI Systems/Whisper STT.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Tool Registry",
+      "label": "Tool Registry",
+      "domain": "Other",
+      "color": "#6b7280",
+      "icon": "\ud83d\udcc4",
+      "type": "registry",
+      "path": "05_Registries/Tool Registry.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Manus Control Surface",
+      "label": "Manus Control Surface",
+      "domain": "Cockpit",
+      "color": "#4f46e5",
+      "icon": "\ud83c\udf9b\ufe0f",
+      "type": "world-node",
+      "path": "01_Cockpit/Manus Control Surface.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Weekly Review Surface",
+      "label": "Weekly Review Surface",
+      "domain": "Cockpit",
+      "color": "#4f46e5",
+      "icon": "\ud83c\udf9b\ufe0f",
+      "type": "cockpit",
+      "path": "01_Cockpit/Weekly Review Surface.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "HOME",
+      "label": "HOME",
+      "domain": "Cockpit",
+      "color": "#4f46e5",
+      "icon": "\ud83c\udf9b\ufe0f",
+      "type": "world-node",
+      "path": "01_Cockpit/HOME.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 37
+    },
+    {
+      "id": "Daily Operating Surface",
+      "label": "Daily Operating Surface",
+      "domain": "Cockpit",
+      "color": "#4f46e5",
+      "icon": "\ud83c\udf9b\ufe0f",
+      "type": "world-node",
+      "path": "01_Cockpit/Daily Operating Surface.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Y-WORLD Command Center",
+      "label": "Y-WORLD Command Center",
+      "domain": "Cockpit",
+      "color": "#4f46e5",
+      "icon": "\ud83c\udf9b\ufe0f",
+      "type": "world-node",
+      "path": "01_Cockpit/Y-WORLD Command Center.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "ARC Reading Nook",
+      "label": "ARC Reading Nook",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "place",
+      "path": "71_ARC_Anandaz/ARC Reading Nook.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "ARC Wood Stove",
+      "label": "ARC Wood Stove",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "hardware",
+      "path": "71_ARC_Anandaz/ARC Wood Stove.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "ARC Local Server",
+      "label": "ARC Local Server",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "infrastructure",
+      "path": "71_ARC_Anandaz/ARC Local Server.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 13
+    },
+    {
+      "id": "ARC Meditation Space",
+      "label": "ARC Meditation Space",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "place",
+      "path": "71_ARC_Anandaz/ARC Meditation Space.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "ARC Terrace Alpine",
+      "label": "ARC Terrace Alpine",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "place",
+      "path": "71_ARC_Anandaz/ARC Terrace Alpine.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "ARC Cameras",
+      "label": "ARC Cameras",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "hardware",
+      "path": "71_ARC_Anandaz/ARC Cameras.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "ARC Library",
+      "label": "ARC Library",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "place",
+      "path": "71_ARC_Anandaz/ARC Library.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "ARC Sauna",
+      "label": "ARC Sauna",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "place",
+      "path": "71_ARC_Anandaz/ARC Sauna.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "ARC Heating System",
+      "label": "ARC Heating System",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "infrastructure",
+      "path": "71_ARC_Anandaz/ARC Heating System.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "ARC Anandaz Log",
+      "label": "ARC Anandaz Log",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "log",
+      "path": "71_ARC_Anandaz/ARC Anandaz Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "ARC Starlink Dish",
+      "label": "ARC Starlink Dish",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "hardware",
+      "path": "71_ARC_Anandaz/ARC Starlink Dish.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "ARC Workshop",
+      "label": "ARC Workshop",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "place",
+      "path": "71_ARC_Anandaz/ARC Workshop.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "ARC Guest Room",
+      "label": "ARC Guest Room",
+      "domain": "ARC Anandaz",
+      "color": "#0d9488",
+      "icon": "\ud83c\udfd4\ufe0f",
+      "type": "place",
+      "path": "71_ARC_Anandaz/ARC Guest Room.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Workflow Registry",
+      "label": "Workflow Registry",
+      "domain": "Other",
+      "color": "#6b7280",
+      "icon": "\ud83d\udcc4",
+      "type": "registry",
+      "path": "06_Workflows/Workflow Registry.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "n8n Cognitive Automation",
+      "label": "n8n Cognitive Automation",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/n8n Cognitive Automation.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "AUTOMATION",
+      "connections": 38
+    },
+    {
+      "id": "Archetypes System",
+      "label": "Archetypes System",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Archetypes System.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "ARCHETYPES",
+      "connections": 30
+    },
+    {
+      "id": "Frigate NVR",
+      "label": "Frigate NVR",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Frigate NVR.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 20
+    },
+    {
+      "id": "Sovereign Living",
+      "label": "Sovereign Living",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Sovereign Living.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "PHILOSOPHY",
+      "connections": 22
+    },
+    {
+      "id": "Coral Edge TPU",
+      "label": "Coral Edge TPU",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Coral Edge TPU.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 14
+    },
+    {
+      "id": "Y-OS Architecture",
+      "label": "Y-OS Architecture",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Y-OS Architecture.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "Y-OS",
+      "connections": 26
+    },
+    {
+      "id": "CRT Model Routing",
+      "label": "CRT Model Routing",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/CRT Model Routing.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 21
+    },
+    {
+      "id": "Notion Memory Hub",
+      "label": "Notion Memory Hub",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Notion Memory Hub.md",
+      "level": 1,
+      "isMeta": true,
+      "metaGroup": "MEMORY",
+      "connections": 30
+    },
+    {
+      "id": "Obsidian \u2014 Mermaid + Wikilinks incompatibility",
+      "label": "Obsidian \u2014 Mermaid + Wikilinks incompatibility",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Obsidian \u2014 Mermaid + Wikilinks incompatibility.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Anandaz Philosophy",
+      "label": "Anandaz Philosophy",
+      "domain": "K-Cards",
+      "color": "#10b981",
+      "icon": "\ud83c\udccf",
+      "type": "k-card",
+      "path": "40_K-Cards/Anandaz Philosophy.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 22
+    },
+    {
+      "id": "Manus Commands",
+      "label": "Manus Commands",
+      "domain": "Other",
+      "color": "#6b7280",
+      "icon": "\ud83d\udcc4",
+      "type": "protocol",
+      "path": "07_Agent_Operations/Manus Commands.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Manus Operating Manual",
+      "label": "Manus Operating Manual",
+      "domain": "Other",
+      "color": "#6b7280",
+      "icon": "\ud83d\udcc4",
+      "type": "protocol",
+      "path": "07_Agent_Operations/Manus Operating Manual.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Manus Change Log",
+      "label": "Manus Change Log",
+      "domain": "Other",
+      "color": "#6b7280",
+      "icon": "\ud83d\udcc4",
+      "type": "log",
+      "path": "07_Agent_Operations/Manus Change Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Manus Task Queue",
+      "label": "Manus Task Queue",
+      "domain": "Other",
+      "color": "#6b7280",
+      "icon": "\ud83d\udcc4",
+      "type": "log",
+      "path": "07_Agent_Operations/Manus Task Queue.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Manus Safety Checklist",
+      "label": "Manus Safety Checklist",
+      "domain": "Other",
+      "color": "#6b7280",
+      "icon": "\ud83d\udcc4",
+      "type": "protocol",
+      "path": "07_Agent_Operations/Manus Safety Checklist.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Cloudflare Tunnel",
+      "label": "Cloudflare Tunnel",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "infrastructure",
+      "path": "60_Y-OS/Cloudflare Tunnel.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Security Checklist",
+      "label": "Security Checklist",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "protocol",
+      "path": "60_Y-OS/Security Checklist.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "pfSense Router",
+      "label": "pfSense Router",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "infrastructure",
+      "path": "60_Y-OS/pfSense Router.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Backup Protocol",
+      "label": "Backup Protocol",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "protocol",
+      "path": "60_Y-OS/Backup Protocol.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Supabase DB",
+      "label": "Supabase DB",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Supabase DB.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 12
+    },
+    {
+      "id": "GitHub Repo Y-WORLD",
+      "label": "GitHub Repo Y-WORLD",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/GitHub Repo Y-WORLD.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 16
+    },
+    {
+      "id": "Starlink Node",
+      "label": "Starlink Node",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Starlink Node.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Manus API",
+      "label": "Manus API",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Manus API.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Zapier Bridge",
+      "label": "Zapier Bridge",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "integration",
+      "path": "60_Y-OS/Zapier Bridge.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Wrike Integration",
+      "label": "Wrike Integration",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "integration",
+      "path": "60_Y-OS/Wrike Integration.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Upstash Redis",
+      "label": "Upstash Redis",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "infrastructure",
+      "path": "60_Y-OS/Upstash Redis.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Prompt Optimizer",
+      "label": "Prompt Optimizer",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Prompt Optimizer.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 6
+    },
+    {
+      "id": "Cost Optimizer",
+      "label": "Cost Optimizer",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Cost Optimizer.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Session Synthesizer",
+      "label": "Session Synthesizer",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Session Synthesizer.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Memory Router",
+      "label": "Memory Router",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Memory Router.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Context Injector",
+      "label": "Context Injector",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Context Injector.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Mem0 Sync",
+      "label": "Mem0 Sync",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Mem0 Sync.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 7
+    },
+    {
+      "id": "Home Assistant CasaTAO",
+      "label": "Home Assistant CasaTAO",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Home Assistant CasaTAO.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 20
+    },
+    {
+      "id": "Y-OS Log",
+      "label": "Y-OS Log",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "log",
+      "path": "60_Y-OS/Y-OS Log.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "Linear Integration",
+      "label": "Linear Integration",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "integration",
+      "path": "60_Y-OS/Linear Integration.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 4
+    },
+    {
+      "id": "Sentry Monitoring",
+      "label": "Sentry Monitoring",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "infrastructure",
+      "path": "60_Y-OS/Sentry Monitoring.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 5
+    },
+    {
+      "id": "Tool Router",
+      "label": "Tool Router",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Tool Router.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "Slack Integration",
+      "label": "Slack Integration",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "integration",
+      "path": "60_Y-OS/Slack Integration.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "Y-OS Roadmap",
+      "label": "Y-OS Roadmap",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "planning",
+      "path": "60_Y-OS/Y-OS Roadmap.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 9
+    },
+    {
+      "id": "Home Assistant ARC",
+      "label": "Home Assistant ARC",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Home Assistant ARC.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 14
+    },
+    {
+      "id": "Vercel Deploy",
+      "label": "Vercel Deploy",
+      "domain": "Y-OS",
+      "color": "#4f46e5",
+      "icon": "\ud83e\udde0",
+      "type": "system",
+      "path": "60_Y-OS/Vercel Deploy.md",
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 11
+    },
+    {
+      "id": "Project - ARC Smart Heating",
+      "label": "Project - ARC Smart Heating",
+      "domain": "Projects",
+      "color": "#f97316",
+      "icon": "\ud83d\ude80",
+      "type": "node",
+      "path": null,
+      "level": 2,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 0
+    },
+    {
+      "id": "nom de note",
+      "label": "nom de note",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Y-WORLD",
+      "label": "Y-WORLD",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 17
+    },
+    {
+      "id": "{{title}} Log",
+      "label": "{{title}} Log",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "{{value:domain}} MAP",
+      "label": "{{value:domain}} MAP",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "{{value:domain}} Dashboard",
+      "label": "{{value:domain}} Dashboard",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "{{value:domain}}/",
+      "label": "{{value:domain}}/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Reality Interfaces Dashboard",
+      "label": "Reality Interfaces Dashboard",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Y-Publishing",
+      "label": "Y-Publishing",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 9
+    },
+    {
+      "id": "Y-OS",
+      "label": "Y-OS",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 8
+    },
+    {
+      "id": "40_K-Cards",
+      "label": "40_K-Cards",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "50_Projects",
+      "label": "50_Projects",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 3
+    },
+    {
+      "id": "Yos Voice",
+      "label": "Yos Voice",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "10_Inbox/",
+      "label": "10_Inbox/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 2
+    },
+    {
+      "id": "60_Y-OS/",
+      "label": "60_Y-OS/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "20_Life/",
+      "label": "20_Life/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "30_Knowledge/",
+      "label": "30_Knowledge/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "50_Projects/",
+      "label": "50_Projects/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "70_CasaTAO/",
+      "label": "70_CasaTAO/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "71_ARC_Anandaz/",
+      "label": "71_ARC_Anandaz/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "80_Archetypes/",
+      "label": "80_Archetypes/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "81_Y-Publishing/",
+      "label": "81_Y-Publishing/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "05_Registries/",
+      "label": "05_Registries/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "90_Reality_Interfaces/",
+      "label": "90_Reality_Interfaces/",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Daily Note",
+      "label": "Daily Note",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "wikilinks",
+      "label": "wikilinks",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "liens",
+      "label": "liens",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "lien",
+      "label": "lien",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    },
+    {
+      "id": "Mem0 API",
+      "label": "Mem0 API",
+      "domain": "Referenced",
+      "color": "#475569",
+      "icon": "\ud83d\udd17",
+      "type": "reference",
+      "path": null,
+      "level": 3,
+      "isMeta": false,
+      "metaGroup": null,
+      "connections": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "Metadata Schema",
+      "target": "Y-OS MAP"
+    },
+    {
+      "source": "Obsidian Walkthrough",
+      "target": "nom de note"
+    },
+    {
+      "source": "The Oracle Archetype",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "The Oracle Archetype",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "The Architect Archetype",
+      "target": "Yannick Jolliet"
+    },
+    {
+      "source": "The Architect Archetype",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "The Wanderer Archetype",
+      "target": "Travel Protocol"
+    },
+    {
+      "source": "The Wanderer Archetype",
+      "target": "Sicily Residency & Living"
+    },
+    {
+      "source": "The Wanderer Archetype",
+      "target": "Swiss Chalet Living"
+    },
+    {
+      "source": "The Hermit Archetype",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "The Hermit Archetype",
+      "target": "ARC Meditation Space"
+    },
+    {
+      "source": "The Hermit Archetype",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "The Alchemist Archetype",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "The Alchemist Archetype",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "The Scribe Archetype",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "The Scribe Archetype",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "The Scribe Archetype",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Egyptian Tradition",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Egyptian Tradition",
+      "target": "The Scribe Archetype"
+    },
+    {
+      "source": "Egyptian Tradition",
+      "target": "The Guardian Archetype"
+    },
+    {
+      "source": "Egyptian Tradition",
+      "target": "The Oracle Archetype"
+    },
+    {
+      "source": "Egyptian Tradition",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "Archetypes App",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Archetypes App",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Archetypes App",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Archetypes App",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "The Trickster Archetype",
+      "target": "Y-OS Roadmap"
+    },
+    {
+      "source": "The Trickster Archetype",
+      "target": "Prompt Optimizer"
+    },
+    {
+      "source": "The Guardian Archetype",
+      "target": "Security Checklist"
+    },
+    {
+      "source": "The Guardian Archetype",
+      "target": "pfSense Router"
+    },
+    {
+      "source": "The Guardian Archetype",
+      "target": "Backup Protocol"
+    },
+    {
+      "source": "The Guardian Archetype",
+      "target": "Cloudflare Tunnel"
+    },
+    {
+      "source": "Taoist Tradition",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Taoist Tradition",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Taoist Tradition",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Taoist Tradition",
+      "target": "The Hermit Archetype"
+    },
+    {
+      "source": "Taoist Tradition",
+      "target": "The Wanderer Archetype"
+    },
+    {
+      "source": "Taoist Tradition",
+      "target": "Tao Te Ching"
+    },
+    {
+      "source": "Taoist Tradition",
+      "target": "Lao Tzu"
+    },
+    {
+      "source": "Norse Tradition",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Norse Tradition",
+      "target": "The Architect Archetype"
+    },
+    {
+      "source": "Norse Tradition",
+      "target": "The Forge Archetype"
+    },
+    {
+      "source": "Norse Tradition",
+      "target": "The Guardian Archetype"
+    },
+    {
+      "source": "Norse Tradition",
+      "target": "The Trickster Archetype"
+    },
+    {
+      "source": "Norse Tradition",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "The Forge Archetype",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "The Forge Archetype",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Template - Project",
+      "target": "{{title}} Log"
+    },
+    {
+      "source": "Template - Dashboard",
+      "target": "{{value:domain}} MAP"
+    },
+    {
+      "source": "Template - K-Card",
+      "target": "HOME"
+    },
+    {
+      "source": "Template - K-Card",
+      "target": "KNOWLEDGE MAP"
+    },
+    {
+      "source": "Template - Map Node",
+      "target": "Y-WORLD ROOT MAP"
+    },
+    {
+      "source": "Template - Map Node",
+      "target": "{{value:domain}} Dashboard"
+    },
+    {
+      "source": "Template - Map Node",
+      "target": "{{value:domain}}/"
+    },
+    {
+      "source": "Book 1 \u2014 Cover Design",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Book 1 \u2014 Cover Design",
+      "target": "Flux Image Gen"
+    },
+    {
+      "source": "Book 1 \u2014 Cover Design",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "Editorial Calendar",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Editorial Calendar",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Editorial Calendar",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "Editorial Calendar",
+      "target": "HeyGen Avatars"
+    },
+    {
+      "source": "Y-Publishing Landing Page",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Y-Publishing Landing Page",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Y-Publishing Landing Page",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 2 Notes",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 2 Notes",
+      "target": "The Sovereign Individual"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 2 Notes",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 2 Notes",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 2 Notes",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Y-Publishing Brand",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Y-Publishing Brand",
+      "target": "Flux Image Gen"
+    },
+    {
+      "source": "Y-Publishing Brand",
+      "target": "Canva AI"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 1 Notes",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 1 Notes",
+      "target": "Sapiens"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 1 Notes",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 1 Notes",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Social Strategy",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Social Strategy",
+      "target": "Grok xAI"
+    },
+    {
+      "source": "Social Strategy",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Social Strategy",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Audiobook Production",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Audiobook Production",
+      "target": "ElevenLabs TTS"
+    },
+    {
+      "source": "Audiobook Production",
+      "target": "Hume TTS"
+    },
+    {
+      "source": "Audiobook Production",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Audiobook Production",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "Podcast YOS",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Podcast YOS",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Podcast YOS",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Podcast YOS",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "Podcast YOS",
+      "target": "ARC Library"
+    },
+    {
+      "source": "Podcast YOS",
+      "target": "ElevenLabs TTS"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 3 Notes",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 3 Notes",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 3 Notes",
+      "target": "Carl Jung"
+    },
+    {
+      "source": "Book 1 \u2014 Chapter 3 Notes",
+      "target": "The Architect Archetype"
+    },
+    {
+      "source": "Newsletter YOS",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Newsletter YOS",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "Research Database",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Research Database",
+      "target": "Sapiens"
+    },
+    {
+      "source": "Research Database",
+      "target": "The Sovereign Individual"
+    },
+    {
+      "source": "Research Database",
+      "target": "Antifragile"
+    },
+    {
+      "source": "Research Database",
+      "target": "Tao Te Ching"
+    },
+    {
+      "source": "Research Database",
+      "target": "Dune"
+    },
+    {
+      "source": "Research Database",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Y-World PoC Validation Node",
+      "target": "HOME"
+    },
+    {
+      "source": "Y-World PoC Validation Node",
+      "target": "Y-WORLD ROOT MAP"
+    },
+    {
+      "source": "Y-World PoC Validation Node",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Project - ARC Anandaz Smart Heating",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Project - ARC Anandaz Smart Heating",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Project - ARC Anandaz Smart Heating",
+      "target": "ARC Anandaz Dashboard"
+    },
+    {
+      "source": "Project - Y-Publishing Book 1",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Project - Y-Publishing Book 1",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Project - Y-Publishing Book 1",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Project - Y-Publishing Book 1",
+      "target": "Reality Interfaces Dashboard"
+    },
+    {
+      "source": "Project - Y-Publishing Book 1",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Project - CasaTAO Solar Upgrade",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Project - CasaTAO Solar Upgrade",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "Project - CasaTAO Solar Upgrade",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Project - CasaTAO Solar Upgrade",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Project - Obsidian Git Setup",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Project - Obsidian Git Setup",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Project - Obsidian Git Setup",
+      "target": "Obsidian \u2014 Mermaid + Wikilinks incompatibility"
+    },
+    {
+      "source": "Project - Y-WORLD.net",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Project - Y-WORLD.net",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Project - Y-WORLD.net",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Project - Y-WORLD.net",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Project - Y-WORLD.net",
+      "target": "Flux Image Gen"
+    },
+    {
+      "source": "Project - Archetypes App v1",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "Project - Archetypes App v1",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Project - Archetypes App v1",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Project - Archetypes App v1",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Project - CasaTAO Solar Upgrade"
+    },
+    {
+      "source": "Projects Log",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Project - ARC Anandaz Smart Heating"
+    },
+    {
+      "source": "Projects Log",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Project - Y-Publishing Book 1"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Projects Log",
+      "target": "REALITY INTERFACES MAP"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Projects Log",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "CasaTAO Studio",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "CasaTAO Studio",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "CasaTAO Studio",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "CasaTAO Studio",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "CasaTAO Kitchen",
+      "target": "CasaTAO Garden"
+    },
+    {
+      "source": "CasaTAO Kitchen",
+      "target": "Sicily Residency & Living"
+    },
+    {
+      "source": "CasaTAO Kitchen",
+      "target": "Health Protocol"
+    },
+    {
+      "source": "CasaTAO Water System",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "CasaTAO Water System",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "CasaTAO Energy System",
+      "target": "Project - CasaTAO Solar Upgrade"
+    },
+    {
+      "source": "CasaTAO Energy System",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "CasaTAO Energy System",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "CasaTAO Garden",
+      "target": "Sicily Residency & Living"
+    },
+    {
+      "source": "CasaTAO Garden",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "CasaTAO Cameras",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "CasaTAO Cameras",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "CasaTAO Cameras",
+      "target": "CasaTAO Network"
+    },
+    {
+      "source": "CasaTAO Cameras",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "CasaTAO Starlink Dish",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "CasaTAO Starlink Dish",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "CasaTAO Starlink Dish",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "CasaTAO Starlink Dish",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "CasaTAO Starlink Dish",
+      "target": "pfSense Router"
+    },
+    {
+      "source": "CasaTAO Network",
+      "target": "Starlink Node"
+    },
+    {
+      "source": "CasaTAO Network",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "CasaTAO Network",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "CasaTAO Network",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "CasaTAO MiniPC",
+      "target": "Proxmox"
+    },
+    {
+      "source": "CasaTAO MiniPC",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "CasaTAO MiniPC",
+      "target": "Docker"
+    },
+    {
+      "source": "CasaTAO MiniPC",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "CasaTAO MiniPC",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "CasaTAO MiniPC",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "CasaTAO Terrace",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "CasaTAO Terrace",
+      "target": "Morning Ritual"
+    },
+    {
+      "source": "CasaTAO Terrace",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "CasaTAO NAS",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "CasaTAO NAS",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "CasaTAO NAS",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "CasaTAO NAS",
+      "target": "Backup Protocol"
+    },
+    {
+      "source": "CasaTAO Inverter",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "CasaTAO Inverter",
+      "target": "CasaTAO Energy System"
+    },
+    {
+      "source": "CasaTAO Inverter",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "Sapiens",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Sapiens",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "The Sovereign Individual",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "The Sovereign Individual",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Obsidian",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Obsidian",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Mermaid Diagrams",
+      "target": "Obsidian"
+    },
+    {
+      "source": "Mermaid Diagrams",
+      "target": "Obsidian \u2014 Mermaid + Wikilinks incompatibility"
+    },
+    {
+      "source": "Mermaid Diagrams",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Mermaid Diagrams",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Proxmox",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Proxmox",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "Proxmox",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Proxmox",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Dune",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Dune",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Dune",
+      "target": "The Architect Archetype"
+    },
+    {
+      "source": "Thinking Fast and Slow",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Thinking Fast and Slow",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Notion",
+      "target": "Y-OS"
+    },
+    {
+      "source": "Notion",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Notion",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Notion",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Frank Herbert",
+      "target": "Dune"
+    },
+    {
+      "source": "Frank Herbert",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Frank Herbert",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "CasaTAO",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "CasaTAO",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "CasaTAO",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "James Davidson",
+      "target": "The Sovereign Individual"
+    },
+    {
+      "source": "James Davidson",
+      "target": "Financial Architecture"
+    },
+    {
+      "source": "James Davidson",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Nassim Taleb",
+      "target": "Antifragile"
+    },
+    {
+      "source": "Nassim Taleb",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Nassim Taleb",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Nassim Taleb",
+      "target": "The Trickster Archetype"
+    },
+    {
+      "source": "Yuval Noah Harari",
+      "target": "Sapiens"
+    },
+    {
+      "source": "Yuval Noah Harari",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Antifragile",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Antifragile",
+      "target": "Backup Protocol"
+    },
+    {
+      "source": "Antifragile",
+      "target": "CasaTAO Energy System"
+    },
+    {
+      "source": "Antifragile",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "MQTT Protocol",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "MQTT Protocol",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "MQTT Protocol",
+      "target": "CasaTAO MiniPC"
+    },
+    {
+      "source": "MQTT Protocol",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "MQTT Protocol",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "MQTT Protocol",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Python",
+      "target": "Y-OS"
+    },
+    {
+      "source": "Python",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Python",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Docker",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Docker",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "Docker",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Docker",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "The Art of War",
+      "target": "Y-OS Roadmap"
+    },
+    {
+      "source": "The Art of War",
+      "target": "The Architect Archetype"
+    },
+    {
+      "source": "Ollama Local LLM",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "Ollama Local LLM",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "Ollama Local LLM",
+      "target": "Starlink Node"
+    },
+    {
+      "source": "Ollama Local LLM",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "ARC Anandaz",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "ARC Anandaz",
+      "target": "ARC Anandaz Dashboard"
+    },
+    {
+      "source": "TypeScript",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "TypeScript",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "TypeScript",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Yannick Jolliet",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Yannick Jolliet",
+      "target": "Y-OS"
+    },
+    {
+      "source": "Yannick Jolliet",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Yannick Jolliet",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Yannick Jolliet",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "ESP32-S3",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ESP32-S3",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "ESP32-S3",
+      "target": "Ollama Local LLM"
+    },
+    {
+      "source": "ESP32-S3",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Carl Jung",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Carl Jung",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "Carl Jung",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Lao Tzu",
+      "target": "Tao Te Ching"
+    },
+    {
+      "source": "Lao Tzu",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Lao Tzu",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Lao Tzu",
+      "target": "The Hermit Archetype"
+    },
+    {
+      "source": "Pylontech Batteries",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Pylontech Batteries",
+      "target": "CasaTAO Inverter"
+    },
+    {
+      "source": "Pylontech Batteries",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "Pylontech Batteries",
+      "target": "Project - CasaTAO Solar Upgrade"
+    },
+    {
+      "source": "Raspberry Pi 5",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "Raspberry Pi 5",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "Raspberry Pi 5",
+      "target": "Ollama Local LLM"
+    },
+    {
+      "source": "Raspberry Pi 5",
+      "target": "Docker"
+    },
+    {
+      "source": "TailwindCSS",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "TailwindCSS",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "TailwindCSS",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "Victron Energy",
+      "target": "CasaTAO Energy System"
+    },
+    {
+      "source": "Victron Energy",
+      "target": "CasaTAO Inverter"
+    },
+    {
+      "source": "Victron Energy",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "Tao Te Ching",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Tao Te Ching",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Tao Te Ching",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Tao Te Ching",
+      "target": "ARC Meditation Space"
+    },
+    {
+      "source": "React Framework",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "React Framework",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "React Framework",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "React Framework",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "React Framework",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Daniel Kahneman",
+      "target": "Thinking Fast and Slow"
+    },
+    {
+      "source": "Daniel Kahneman",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Shelly Devices",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Shelly Devices",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Shelly Devices",
+      "target": "ARC Heating System"
+    },
+    {
+      "source": "Shelly Devices",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "Shelly Devices",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "Sicily Residency & Living",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Sicily Residency & Living",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "Sicily Residency & Living",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Sicily Residency & Living",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Sicily Residency & Living",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Fasting Protocol",
+      "target": "Health Protocol"
+    },
+    {
+      "source": "Fasting Protocol",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Fasting Protocol",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Fasting Protocol",
+      "target": "CasaTAO Kitchen"
+    },
+    {
+      "source": "Fasting Protocol",
+      "target": "CasaTAO Garden"
+    },
+    {
+      "source": "Real Estate Portfolio",
+      "target": "Financial Architecture"
+    },
+    {
+      "source": "Real Estate Portfolio",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Real Estate Portfolio",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Real Estate Portfolio",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Swiss Chalet Living",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Swiss Chalet Living",
+      "target": "Project - ARC Anandaz Smart Heating"
+    },
+    {
+      "source": "Swiss Chalet Living",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "ARC Reading Nook"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "CasaTAO Terrace"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "Antifragile"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "The Art of War"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "Dune"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "40_K-Cards"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "Obsidian Mobile"
+    },
+    {
+      "source": "Physical Training",
+      "target": "Health Protocol"
+    },
+    {
+      "source": "Physical Training",
+      "target": "ARC Workshop"
+    },
+    {
+      "source": "Physical Training",
+      "target": "CasaTAO Garden"
+    },
+    {
+      "source": "Physical Training",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Digital Detox Protocol",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Digital Detox Protocol",
+      "target": "ARC Meditation Space"
+    },
+    {
+      "source": "Digital Detox Protocol",
+      "target": "CasaTAO Terrace"
+    },
+    {
+      "source": "Digital Detox Protocol",
+      "target": "Obsidian Mobile"
+    },
+    {
+      "source": "Digital Detox Protocol",
+      "target": "Telegram Bot YOS"
+    },
+    {
+      "source": "Digital Detox Protocol",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Language Practice",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Language Practice",
+      "target": "CasaTAO Kitchen"
+    },
+    {
+      "source": "Language Practice",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Language Practice",
+      "target": "Newsletter YOS"
+    },
+    {
+      "source": "Cold Exposure Protocol",
+      "target": "Health Protocol"
+    },
+    {
+      "source": "Cold Exposure Protocol",
+      "target": "ARC Sauna"
+    },
+    {
+      "source": "Cold Exposure Protocol",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Cold Exposure Protocol",
+      "target": "Morning Ritual"
+    },
+    {
+      "source": "Sleep Protocol",
+      "target": "Health Protocol"
+    },
+    {
+      "source": "Sleep Protocol",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Sleep Protocol",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Sleep Protocol",
+      "target": "Digital Detox Protocol"
+    },
+    {
+      "source": "Sleep Protocol",
+      "target": "ARC Sauna"
+    },
+    {
+      "source": "Annual Retreat Protocol",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Annual Retreat Protocol",
+      "target": "ARC Meditation Space"
+    },
+    {
+      "source": "Annual Retreat Protocol",
+      "target": "ARC Library"
+    },
+    {
+      "source": "Annual Retreat Protocol",
+      "target": "Y-OS Roadmap"
+    },
+    {
+      "source": "Annual Retreat Protocol",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Annual Retreat Protocol",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "Financial Architecture",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Financial Architecture",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Financial Architecture",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Financial Architecture",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Crypto Portfolio",
+      "target": "Financial Architecture"
+    },
+    {
+      "source": "Crypto Portfolio",
+      "target": "Weekly Review Surface"
+    },
+    {
+      "source": "Travel Protocol",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Travel Protocol",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Travel Protocol",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Morning Ritual",
+      "target": "Yannick Jolliet"
+    },
+    {
+      "source": "Morning Ritual",
+      "target": "CasaTAO Garden"
+    },
+    {
+      "source": "Morning Ritual",
+      "target": "ARC Meditation Space"
+    },
+    {
+      "source": "Morning Ritual",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Health Protocol",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Health Protocol",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "Health Protocol",
+      "target": "CasaTAO Garden"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "HOME"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "KNOWLEDGE MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Y-OS MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Y-OS Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "LIFE MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Life Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Knowledge Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "PROJECTS MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Projects Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "CASATAO MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "ARC ANANDAZ MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "ARC Anandaz Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "ARCHETYPES MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Archetypes Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Y-PUBLISHING MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "AI SYSTEMS MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "AI Systems Dashboard"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "REALITY INTERFACES MAP"
+    },
+    {
+      "source": "Y-WORLD ROOT MAP",
+      "target": "Y-WORLD.net Vision"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "HOME"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "Y-WORLD Command Center"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Y-WORLD Dashboard",
+      "target": "REALITY INTERFACES MAP"
+    },
+    {
+      "source": "Obsidian Mobile",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Obsidian Mobile",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Obsidian Mobile",
+      "target": "10_Inbox"
+    },
+    {
+      "source": "Obsidian Mobile",
+      "target": "40_K-Cards"
+    },
+    {
+      "source": "Obsidian Mobile",
+      "target": "50_Projects"
+    },
+    {
+      "source": "Dashboard TV Mode",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "Dashboard TV Mode",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Dashboard TV Mode",
+      "target": "CasaTAO Energy System"
+    },
+    {
+      "source": "Dashboard TV Mode",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Dashboard TV Mode",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Dashboard TV Mode",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "GitHub Public Profile",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "GitHub Public Profile",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "GitHub Public Profile",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Telegram Bot YOS",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Telegram Bot YOS",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Telegram Bot YOS",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Telegram Bot YOS",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Y-WORLD.net",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Y-WORLD.net",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Y-WORLD.net",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Y-WORLD.net",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "ESP32-S3"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "Whisper STT"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "ElevenLabs TTS"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "Voice Interface YOS",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Notion Public Pages",
+      "target": "Notion"
+    },
+    {
+      "source": "Notion Public Pages",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Notion Public Pages",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Notion Public Pages",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Notion Public Pages",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "Notion Public Pages",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Y-WORLD iOS App",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Y-WORLD iOS App",
+      "target": "Obsidian Mobile"
+    },
+    {
+      "source": "Y-WORLD iOS App",
+      "target": "Telegram Bot YOS"
+    },
+    {
+      "source": "Y-WORLD iOS App",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Y-WORLD iOS App",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Y-WORLD iOS App",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Canva AI",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "Canva AI",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Canva AI",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Gemini Flash",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Gemini Flash",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Gemini Flash",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Mistral 7B",
+      "target": "Ollama Local LLM"
+    },
+    {
+      "source": "Mistral 7B",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "Mistral 7B",
+      "target": "Starlink Node"
+    },
+    {
+      "source": "Mistral 7B",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "MiniMax Video",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "MiniMax Video",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "MiniMax Video",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "MiniMax Video",
+      "target": "Flux Image Gen"
+    },
+    {
+      "source": "Perplexity Sonar",
+      "target": "Tool Router"
+    },
+    {
+      "source": "Perplexity Sonar",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Perplexity Sonar",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "ElevenLabs TTS",
+      "target": "Y-OS"
+    },
+    {
+      "source": "ElevenLabs TTS",
+      "target": "Yos Voice"
+    },
+    {
+      "source": "ElevenLabs TTS",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "Llama 3.1",
+      "target": "Ollama Local LLM"
+    },
+    {
+      "source": "Llama 3.1",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "Llama 3.1",
+      "target": "Mistral 7B"
+    },
+    {
+      "source": "Hume TTS",
+      "target": "Y-OS"
+    },
+    {
+      "source": "Hume TTS",
+      "target": "ElevenLabs TTS"
+    },
+    {
+      "source": "Replicate API",
+      "target": "Flux Image Gen"
+    },
+    {
+      "source": "Replicate API",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Replicate API",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Grok xAI",
+      "target": "Tool Router"
+    },
+    {
+      "source": "Grok xAI",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Grok xAI",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "GPT-5",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "GPT-5",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "GPT-5",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Flux Image Gen",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Flux Image Gen",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Flux Image Gen",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Flux Image Gen",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Claude Sonnet",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Claude Sonnet",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Claude Sonnet",
+      "target": "Prompt Optimizer"
+    },
+    {
+      "source": "Claude Sonnet",
+      "target": "Manus API"
+    },
+    {
+      "source": "Firecrawl",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Firecrawl",
+      "target": "Perplexity Sonar"
+    },
+    {
+      "source": "Firecrawl",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "HeyGen Avatars",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "HeyGen Avatars",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "HeyGen Avatars",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Whisper STT",
+      "target": "Telegram Bot YOS"
+    },
+    {
+      "source": "Whisper STT",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Whisper STT",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Manus Control Surface",
+      "target": "Manus Task Queue"
+    },
+    {
+      "source": "Manus Control Surface",
+      "target": "Manus Change Log"
+    },
+    {
+      "source": "Weekly Review Surface",
+      "target": "50_Projects"
+    },
+    {
+      "source": "Weekly Review Surface",
+      "target": "10_Inbox"
+    },
+    {
+      "source": "Weekly Review Surface",
+      "target": "40_K-Cards"
+    },
+    {
+      "source": "Weekly Review Surface",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Weekly Review Surface",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "HOME",
+      "target": "Daily Operating Surface"
+    },
+    {
+      "source": "HOME",
+      "target": "Manus Control Surface"
+    },
+    {
+      "source": "HOME",
+      "target": "10_Inbox/"
+    },
+    {
+      "source": "HOME",
+      "target": "Y-OS MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "Y-OS Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "60_Y-OS/"
+    },
+    {
+      "source": "HOME",
+      "target": "LIFE MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "Life Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "20_Life/"
+    },
+    {
+      "source": "HOME",
+      "target": "KNOWLEDGE MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "Knowledge Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "30_Knowledge/"
+    },
+    {
+      "source": "HOME",
+      "target": "PROJECTS MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "Projects Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "50_Projects/"
+    },
+    {
+      "source": "HOME",
+      "target": "CASATAO MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "70_CasaTAO/"
+    },
+    {
+      "source": "HOME",
+      "target": "ARC ANANDAZ MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "ARC Anandaz Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "71_ARC_Anandaz/"
+    },
+    {
+      "source": "HOME",
+      "target": "ARCHETYPES MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "Archetypes Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "80_Archetypes/"
+    },
+    {
+      "source": "HOME",
+      "target": "Y-PUBLISHING MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "81_Y-Publishing/"
+    },
+    {
+      "source": "HOME",
+      "target": "AI SYSTEMS MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "AI Systems Dashboard"
+    },
+    {
+      "source": "HOME",
+      "target": "05_Registries/"
+    },
+    {
+      "source": "HOME",
+      "target": "REALITY INTERFACES MAP"
+    },
+    {
+      "source": "HOME",
+      "target": "Y-WORLD.net Vision"
+    },
+    {
+      "source": "HOME",
+      "target": "90_Reality_Interfaces/"
+    },
+    {
+      "source": "Daily Operating Surface",
+      "target": "Daily Note"
+    },
+    {
+      "source": "Daily Operating Surface",
+      "target": "10_Inbox/"
+    },
+    {
+      "source": "Daily Operating Surface",
+      "target": "Manus Change Log"
+    },
+    {
+      "source": "Y-WORLD Command Center",
+      "target": "Manus Control Surface"
+    },
+    {
+      "source": "Y-WORLD Command Center",
+      "target": "Plugin Registry"
+    },
+    {
+      "source": "Y-WORLD Command Center",
+      "target": "Manus Operating Manual"
+    },
+    {
+      "source": "Y-WORLD Command Center",
+      "target": "Workflow Registry"
+    },
+    {
+      "source": "ARC Reading Nook",
+      "target": "ARC Library"
+    },
+    {
+      "source": "ARC Reading Nook",
+      "target": "Tao Te Ching"
+    },
+    {
+      "source": "ARC Reading Nook",
+      "target": "Sapiens"
+    },
+    {
+      "source": "ARC Reading Nook",
+      "target": "The Sovereign Individual"
+    },
+    {
+      "source": "ARC Wood Stove",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Wood Stove",
+      "target": "ARC Heating System"
+    },
+    {
+      "source": "ARC Wood Stove",
+      "target": "Sovereign Living"
+    },
+    {
+      "source": "ARC Local Server",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Local Server",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "ARC Local Server",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "ARC Local Server",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "ARC Local Server",
+      "target": "Starlink Node"
+    },
+    {
+      "source": "ARC Meditation Space",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Meditation Space",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "ARC Terrace Alpine",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Terrace Alpine",
+      "target": "Morning Ritual"
+    },
+    {
+      "source": "ARC Terrace Alpine",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "ARC Cameras",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Cameras",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "ARC Cameras",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "ARC Library",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Library",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "ARC Library",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "ARC Library",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "ARC Sauna",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Sauna",
+      "target": "Health Protocol"
+    },
+    {
+      "source": "ARC Sauna",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "ARC Heating System",
+      "target": "Project - ARC Anandaz Smart Heating"
+    },
+    {
+      "source": "ARC Heating System",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "ARC Heating System",
+      "target": "ARC Anandaz Dashboard"
+    },
+    {
+      "source": "ARC Starlink Dish",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Starlink Dish",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "ARC Starlink Dish",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "ARC Workshop",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Workshop",
+      "target": "The Forge Archetype"
+    },
+    {
+      "source": "ARC Workshop",
+      "target": "ARC Meditation Space"
+    },
+    {
+      "source": "ARC Guest Room",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "ARC Guest Room",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "ARC Guest Room",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "ARC Anandaz Dashboard"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "Manus Task Queue"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "Yannick Jolliet"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "Archetypes Dashboard"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Frigate NVR",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Frigate NVR",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Frigate NVR",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Frigate NVR",
+      "target": "Manus Control Surface"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "Yannick Jolliet"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "Y-OS"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "Y-Publishing Dashboard"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "Anandaz Philosophy"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Coral Edge TPU",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Coral Edge TPU",
+      "target": "CasaTAO Dashboard"
+    },
+    {
+      "source": "Coral Edge TPU",
+      "target": "Y-OS"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Y-OS Architecture",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "CRT Model Routing",
+      "target": "Y-OS"
+    },
+    {
+      "source": "CRT Model Routing",
+      "target": "Obsidian \u2014 Mermaid + Wikilinks incompatibility"
+    },
+    {
+      "source": "CRT Model Routing",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Notion Memory Hub",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Notion Memory Hub",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Notion Memory Hub",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Notion Memory Hub",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Notion Memory Hub",
+      "target": "Y-Publishing"
+    },
+    {
+      "source": "Obsidian \u2014 Mermaid + Wikilinks incompatibility",
+      "target": "wikilinks"
+    },
+    {
+      "source": "Obsidian \u2014 Mermaid + Wikilinks incompatibility",
+      "target": "liens"
+    },
+    {
+      "source": "Obsidian \u2014 Mermaid + Wikilinks incompatibility",
+      "target": "Y-OS MAP"
+    },
+    {
+      "source": "Obsidian \u2014 Mermaid + Wikilinks incompatibility",
+      "target": "lien"
+    },
+    {
+      "source": "Obsidian \u2014 Mermaid + Wikilinks incompatibility",
+      "target": "Y-OS Dashboard"
+    },
+    {
+      "source": "Anandaz Philosophy",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Anandaz Philosophy",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Anandaz Philosophy",
+      "target": "Y-OS Dashboard"
+    },
+    {
+      "source": "Manus Operating Manual",
+      "target": "Manus Change Log"
+    },
+    {
+      "source": "Cloudflare Tunnel",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Cloudflare Tunnel",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Cloudflare Tunnel",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "Cloudflare Tunnel",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Security Checklist",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Security Checklist",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Security Checklist",
+      "target": "pfSense Router"
+    },
+    {
+      "source": "Security Checklist",
+      "target": "Cloudflare Tunnel"
+    },
+    {
+      "source": "pfSense Router",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "pfSense Router",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "pfSense Router",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "pfSense Router",
+      "target": "Home Assistant ARC"
+    },
+    {
+      "source": "Backup Protocol",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "Backup Protocol",
+      "target": "CasaTAO Studio"
+    },
+    {
+      "source": "Backup Protocol",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Backup Protocol",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Supabase DB",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Supabase DB",
+      "target": "Vercel Deploy"
+    },
+    {
+      "source": "Supabase DB",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "GitHub Repo Y-WORLD",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "GitHub Repo Y-WORLD",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Starlink Node",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Starlink Node",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Starlink Node",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "Manus API",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Manus API",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Manus API",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Manus API",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Zapier Bridge",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Zapier Bridge",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Zapier Bridge",
+      "target": "Manus Task Queue"
+    },
+    {
+      "source": "Wrike Integration",
+      "target": "50_Projects"
+    },
+    {
+      "source": "Wrike Integration",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Wrike Integration",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Upstash Redis",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Upstash Redis",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "Upstash Redis",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Prompt Optimizer",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Prompt Optimizer",
+      "target": "Manus API"
+    },
+    {
+      "source": "Prompt Optimizer",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Cost Optimizer",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Cost Optimizer",
+      "target": "Claude Sonnet"
+    },
+    {
+      "source": "Cost Optimizer",
+      "target": "GPT-5"
+    },
+    {
+      "source": "Cost Optimizer",
+      "target": "Gemini Flash"
+    },
+    {
+      "source": "Cost Optimizer",
+      "target": "Y-WORLD Dashboard"
+    },
+    {
+      "source": "Session Synthesizer",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Session Synthesizer",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Session Synthesizer",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Session Synthesizer",
+      "target": "Gemini Flash"
+    },
+    {
+      "source": "Memory Router",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Memory Router",
+      "target": "Mem0 Sync"
+    },
+    {
+      "source": "Memory Router",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Memory Router",
+      "target": "Tool Router"
+    },
+    {
+      "source": "Context Injector",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Context Injector",
+      "target": "Mem0 Sync"
+    },
+    {
+      "source": "Context Injector",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Context Injector",
+      "target": "Claude Sonnet"
+    },
+    {
+      "source": "Mem0 Sync",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Mem0 Sync",
+      "target": "Mem0 API"
+    },
+    {
+      "source": "Mem0 Sync",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Mem0 Sync",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Home Assistant CasaTAO",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "Home Assistant CasaTAO",
+      "target": "Frigate NVR"
+    },
+    {
+      "source": "Home Assistant CasaTAO",
+      "target": "Coral Edge TPU"
+    },
+    {
+      "source": "Home Assistant CasaTAO",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Home Assistant CasaTAO",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Linear Integration",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "Linear Integration",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Linear Integration",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Linear Integration",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Sentry Monitoring",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Sentry Monitoring",
+      "target": "Archetypes App"
+    },
+    {
+      "source": "Sentry Monitoring",
+      "target": "Y-Publishing Landing Page"
+    },
+    {
+      "source": "Sentry Monitoring",
+      "target": "Slack Integration"
+    },
+    {
+      "source": "Sentry Monitoring",
+      "target": "Manus Operations"
+    },
+    {
+      "source": "Tool Router",
+      "target": "CRT Model Routing"
+    },
+    {
+      "source": "Tool Router",
+      "target": "Prompt Optimizer"
+    },
+    {
+      "source": "Tool Router",
+      "target": "Notion Memory Hub"
+    },
+    {
+      "source": "Tool Router",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "Tool Router",
+      "target": "Supabase DB"
+    },
+    {
+      "source": "Slack Integration",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Y-OS Roadmap",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Y-OS Roadmap",
+      "target": "Mem0 Sync"
+    },
+    {
+      "source": "Y-OS Roadmap",
+      "target": "Context Injector"
+    },
+    {
+      "source": "Y-OS Roadmap",
+      "target": "ARC Local Server"
+    },
+    {
+      "source": "Y-OS Roadmap",
+      "target": "ElevenLabs TTS"
+    },
+    {
+      "source": "Y-OS Roadmap",
+      "target": "Y-WORLD.net"
+    },
+    {
+      "source": "Home Assistant ARC",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "Home Assistant ARC",
+      "target": "Project - ARC Anandaz Smart Heating"
+    },
+    {
+      "source": "Home Assistant ARC",
+      "target": "Home Assistant CasaTAO"
+    },
+    {
+      "source": "Home Assistant ARC",
+      "target": "n8n Cognitive Automation"
+    },
+    {
+      "source": "Vercel Deploy",
+      "target": "Y-WORLD"
+    },
+    {
+      "source": "Vercel Deploy",
+      "target": "GitHub Repo Y-WORLD"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "CasaTAO"
+    },
+    {
+      "source": "n8n Cognitive Automation",
+      "target": "ARC Anandaz"
+    },
+    {
+      "source": "CRT Model Routing",
+      "target": "Mistral 7B"
+    },
+    {
+      "source": "CRT Model Routing",
+      "target": "Perplexity Sonar"
+    },
+    {
+      "source": "ARC Anandaz",
+      "target": "ARC Heating System"
+    },
+    {
+      "source": "CasaTAO Energy System",
+      "target": "Pylontech Batteries"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Hermit Archetype"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Forge Archetype"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Oracle Archetype"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Scribe Archetype"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Wanderer Archetype"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Alchemist Archetype"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Guardian Archetype"
+    },
+    {
+      "source": "Archetypes System",
+      "target": "The Trickster Archetype"
+    },
+    {
+      "source": "Y-Publishing Book 1",
+      "target": "Archetypes System"
+    },
+    {
+      "source": "Y-Publishing Landing Page",
+      "target": "Podcast YOS"
+    },
+    {
+      "source": "Morning Ritual",
+      "target": "Health Protocol"
+    },
+    {
+      "source": "Sovereign Living",
+      "target": "Digital Detox Protocol"
+    },
+    {
+      "source": "Yannick Jolliet",
+      "target": "Y-OS Architecture"
+    },
+    {
+      "source": "Yannick Jolliet",
+      "target": "Y-Publishing Book 1"
+    },
+    {
+      "source": "Reading Practice",
+      "target": "Tao Te Ching"
+    }
+  ],
+  "domain_colors": {
+    "Inbox": "#64748b",
+    "Y-OS": "#4f46e5",
+    "System": "#7c3aed",
+    "Archetypes": "#8b5cf6",
+    "Templates": "#475569",
+    "Y-Publishing": "#ef4444",
+    "Projects": "#f97316",
+    "CasaTAO": "#f97316",
+    "Knowledge": "#f59e0b",
+    "Life": "#ec4899",
+    "Maps": "#6366f1",
+    "Dashboards": "#4338ca",
+    "Reality Interfaces": "#06b6d4",
+    "Other": "#6b7280",
+    "Cockpit": "#4f46e5",
+    "ARC Anandaz": "#0d9488",
+    "K-Cards": "#10b981",
+    "Referenced": "#475569"
+  },
+  "stats": {
+    "total_nodes": 263,
+    "total_edges": 746,
+    "domains": 18
+  }
+}

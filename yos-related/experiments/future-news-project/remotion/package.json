@@ -1,0 +1,22 @@
+{
+  "name": "future-news-remotion",
+  "version": "1.0.0",
+  "description": "Future News Morning Edition — Remotion animation",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "render:ticker": "remotion render src/index.tsx HeadlineTicker out/headline-ticker.mp4 --codec=h264 --gl=angle",
+    "render:edition": "remotion render src/index.tsx MorningEdition out/morning-edition.mp4 --codec=h264 --gl=angle"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.290",
+    "@remotion/renderer": "4.0.290",
+    "remotion": "4.0.290",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

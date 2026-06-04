@@ -1,0 +1,130 @@
+{
+  "name": "Email Management Workforce - Complete",
+  "description": "End-to-end email processing workflow with 3 agents and 7 teams",
+  "version": "1.0.0",
+  "agents": {
+    "worker": {
+      "id": "8ceb23df-e102-4850-a1b1-ef603dc4aa28",
+      "name": "Worker Agent",
+      "role": "Email Processor",
+      "responsibilities": [
+        "Receive and validate emails",
+        "Extract metadata and content",
+        "Categorize emails into 7 categories",
+        "Assess priority (1-4)",
+        "Prepare structured data for COO"
+      ],
+      "output": {
+        "category": "string",
+        "priority": "number",
+        "sender": "string",
+        "subject": "string",
+        "summary": "string",
+        "extracted_data": "object"
+      }
+    },
+    "coo": {
+      "id": "5ba2bdd1-3ae2-48ca-9299-74a0eea7969c",
+      "name": "COO Agent",
+      "role": "Workflow Manager",
+      "responsibilities": [
+        "Receive processed emails from Worker",
+        "Assign to appropriate team (1 of 7)",
+        "Set SLA based on priority",
+        "Create tasks in Notion",
+        "Monitor workflow progress"
+      ],
+      "output": {
+        "assigned_team": "string",
+        "sla": "string",
+        "notion_task_id": "string",
+        "workflow_status": "string"
+      }
+    },
+    "strategist": {
+      "id": "9ff7953f-f2e7-49da-9b5e-4a6206a1a17e",
+      "name": "Strategist Agent",
+      "role": "Strategic Analyst",
+      "responsibilities": [
+        "Analyze high-priority emails",
+        "Identify strategic opportunities",
+        "Provide business insights",
+        "Generate recommendations"
+      ],
+      "output": {
+        "analysis": "string",
+        "insights": "array",
+        "recommendations": "array",
+        "action_items": "array"
+      }
+    }
+  },
+  "workflow": {
+    "trigger": "email_received",
+    "steps": [
+      {
+        "step": 1,
+        "agent": "worker",
+        "action": "process_email",
+        "input": "raw_email",
+        "output": "processed_email",
+        "next": "step_2"
+      },
+      {
+        "step": 2,
+        "agent": "coo",
+        "action": "assign_workflow",
+        "input": "processed_email",
+        "output": "workflow_assignment",
+        "next": "step_3_condition"
+      },
+      {
+        "step": 3,
+        "condition": "priority == 1 OR priority == 2",
+        "if_true": "step_4_strategist",
+        "if_false": "step_5_complete"
+      },
+      {
+        "step": 4,
+        "agent": "strategist",
+        "action": "analyze",
+        "input": "workflow_assignment",
+        "output": "strategic_analysis",
+        "next": "step_5_complete"
+      },
+      {
+        "step": 5,
+        "action": "complete",
+        "output": "final_result"
+      }
+    ]
+  },
+  "teams": [
+    {"name": "Sales Team", "category": "Sales", "sla": "4-24 hours"},
+    {"name": "Support Team", "category": "Support", "sla": "2-8 hours"},
+    {"name": "HR Team", "category": "HR", "sla": "24-48 hours"},
+    {"name": "Finance Team", "category": "Finance", "sla": "24-48 hours"},
+    {"name": "Operations Team", "category": "Operations", "sla": "24-48 hours"},
+    {"name": "Executive Team", "category": "Strategic", "sla": "2-4 hours"},
+    {"name": "Admin Team", "category": "Administrative", "sla": "24-72 hours"}
+  ],
+  "integrations": {
+    "notion": {
+      "database_id": "3c8c2050-f4fe-4268-ae6b-fa58fad0e758",
+      "properties": [
+        "Email ID",
+        "Category",
+        "Priority",
+        "Assigned Team",
+        "Status",
+        "SLA",
+        "Created Date",
+        "Due Date"
+      ]
+    },
+    "gmail": {
+      "enabled": true,
+      "tools": ["gmail_search", "gmail_send", "gmail_get_message"]
+    }
+  }
+}

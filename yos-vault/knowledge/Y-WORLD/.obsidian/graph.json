@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:00_System OR path:01_Cockpit",
+      "color": {
+        "a": 1,
+        "rgb": 6579954
+      }
+    },
+    {
+      "query": "path:02_Maps",
+      "color": {
+        "a": 1,
+        "rgb": 14737632
+      }
+    },
+    {
+      "query": "path:03_Dashboards",
+      "color": {
+        "a": 1,
+        "rgb": 3526655
+      }
+    },
+    {
+      "query": "path:50_Projects",
+      "color": {
+        "a": 1,
+        "rgb": 16744272
+      }
+    },
+    {
+      "query": "path:40_K-Cards",
+      "color": {
+        "a": 1,
+        "rgb": 3526655
+      }
+    },
+    {
+      "query": "path:60_Y-OS OR path:07_Agent_Operations",
+      "color": {
+        "a": 1,
+        "rgb": 6579954
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 2.4753515625,
+  "lineSizeMultiplier": 2.54191840277778,
+  "collapse-forces": false,
+  "centerStrength": 0.108072916666667,
+  "repelStrength": 20,
+  "linkStrength": 0.885546875,
+  "linkDistance": 224,
+  "scale": 0.6445171371513823,
+  "close": true
+}

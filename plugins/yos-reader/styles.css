@@ -1,0 +1,74 @@
+/* Y-OS Reader — YMD Reader MVP styles */
+
+.yos-reader-panel {
+  padding: 8px 4px;
+  font-size: 13px;
+  overflow-y: auto;
+}
+
+/* ── Empty state ── */
+.yos-empty {
+  padding: 16px 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.yos-empty pre {
+  margin-top: 8px;
+  font-size: 11px;
+  background: var(--background-secondary);
+  padding: 8px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+/* ── Group ── */
+.yos-group {
+  margin-bottom: 12px;
+}
+
+.yos-group-header {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 4px 8px 2px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 2px;
+}
+
+/* ── Item ── */
+.yos-item {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 2px;
+}
+
+.yos-item:hover {
+  background: var(--background-modifier-hover);
+}
+
+.yos-item-emoji {
+  display: none; /* emoji already in group header context; hide to reduce noise */
+}
+
+.yos-item-title {
+  font-size: 13px;
+  color: var(--text-normal);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yos-item-preview {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

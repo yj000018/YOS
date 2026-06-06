@@ -1,0 +1,10 @@
+{
+  "id": "yos-reader",
+  "name": "Y-OS Reader",
+  "version": "0.3.0",
+  "minAppVersion": "1.0.0",
+  "description": "YMD Reader MVP — parse semantic headings in the active note and display them in a grouped sidebar.",
+  "author": "Y-OS",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

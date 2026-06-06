@@ -1,14 +1,13 @@
 /**
- * ymdParser.ts — MVP B
+ * ymdParser.ts — MVP C
  *
  * Pure parser: takes a Markdown string, returns SemanticBlock[].
  * No side effects. Does not mutate input.
  *
- * MVP B additions over MVP A:
- *   - emoji variant normalization (➡ → ➡️, ⚠ → ⚠️)
- *   - free-title headings (## ✅ Use Obsidian as canonical memory)
- *   - `label` field on SemanticBlock
- *   - heading boundary rule verified (sub-headings belong to parent block)
+ * MVP C additions over MVP B:
+ *   - `preview?` field on SemanticBlock
+ *   - extractPreview(): first non-empty line, strip leading Markdown markers,
+ *     truncate at 80 chars, no Markdown rendering, no link conversion
  */
 
 import { SEMANTIC_TYPES, EMOJI_VARIANTS } from "./semanticTypes";
@@ -19,6 +18,7 @@ export interface SemanticBlock {
   label: string;    // sidebar group label (e.g. "Decisions")
   title: string;    // item title (emoji stripped)
   content: string;
+  preview?: string; // MVP C: first content line, stripped + truncated
   lineStart: number;
   lineEnd: number;
 }
@@ -27,18 +27,58 @@ export interface SemanticBlock {
 const HEADING_RE = /^(#{1,6})\s+(.+)$/;
 
 /**
+ * PREVIEW_STRIP_RE
+ *
+ * Strips only these leading Markdown markers (one or more, with trailing space):
+ *   ##  *  -  >
+ *
+ * Applied iteratively until no more leading markers remain.
+ * Does not strip inline Markdown, links, or any other syntax.
+ */
+const PREVIEW_STRIP_RE = /^(?:#{1,6}|[*\->])\s*/;
+
+/**
+ * extractPreview
+ *
+ * Rules (per MVP C Scope Override):
+ *   1. Find first non-empty content line
+ *   2. Strip only leading ## * - > markers (iteratively)
+ *   3. Trim whitespace
+ *   4. Truncate at 80 characters
+ *   5. If no content, return undefined
+ *   6. Do not convert Markdown links
+ *   7. Do not render Markdown
+ *   8. Do not mutate input
+ */
+export function extractPreview(content: string): string | undefined {
+  if (!content || content.trim().length === 0) return undefined;
+
+  const lines = content.split("\n");
+  const firstLine = lines.find((l) => l.trim().length > 0);
+  if (!firstLine) return undefined;
+
+  // Strip leading Markdown markers iteratively
+  let stripped = firstLine.trim();
+  let prev = "";
+  while (stripped !== prev) {
+    prev = stripped;
+    stripped = stripped.replace(PREVIEW_STRIP_RE, "").trim();
+  }
+
+  if (stripped.length === 0) return undefined;
+
+  // Truncate at 80 characters
+  return stripped.length > 80 ? stripped.slice(0, 80) : stripped;
+}
+
+/**
  * normalizeEmoji
  *
- * Replaces known bare-codepoint emoji variants with their canonical
- * variation-selector form before matching against SEMANTIC_TYPES.
- *
- * Only the leading characters of the heading text need normalization;
- * we scan the full string for safety.
+ * Replaces known bare-codepoint emoji variants with their canonical form.
  */
 function normalizeEmoji(text: string): string {
   let result = text;
   for (const [bare, canonical] of Object.entries(EMOJI_VARIANTS)) {
-    // Replace all occurrences (a heading could theoretically have multiple)
     result = result.split(bare).join(canonical);
   }
   return result;
@@ -49,10 +89,6 @@ function normalizeEmoji(text: string): string {
  *
  * After normalization, check whether the heading text starts with a
  * known semantic emoji. Returns { emoji, rest } or null.
- *
- * `rest` is the title: everything after the emoji, trimmed.
- * If rest is empty (pure type-label heading like "## ✅ Decision"),
- * the caller should fall back to the type label.
  */
 function extractSemanticEmoji(
   headingText: string
@@ -96,7 +132,6 @@ export function parseYmdNote(markdown: string): SemanticBlock[] {
         const lineStart = i;
 
         // Collect content lines until next heading of equal or higher level.
-        // Sub-headings (lower level = more #) belong to this block.
         const contentLines: string[] = [];
         let j = i + 1;
 
@@ -118,11 +153,7 @@ export function parseYmdNote(markdown: string): SemanticBlock[] {
           contentLines.pop();
         }
 
-        // Title: use rest if non-empty (free-title), else fall back to
-        // the singular form of the label (e.g. "Decisions" → "Decision").
-        // The singular is the label minus trailing 's' — but only for the
-        // standard type-label case where rest is exactly the label word.
-        // Simpler and more robust: use rest if non-empty, else use typeDef.label.
+        const contentStr = contentLines.join("\n").trim();
         const title = rest.length > 0 ? rest : typeDef.label;
 
         blocks.push({
@@ -130,7 +161,8 @@ export function parseYmdNote(markdown: string): SemanticBlock[] {
           emoji,
           label: typeDef.label,
           title,
-          content: contentLines.join("\n").trim(),
+          content: contentStr,
+          preview: extractPreview(contentStr),
           lineStart,
           lineEnd: j - 1,
         });

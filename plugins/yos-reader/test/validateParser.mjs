@@ -92,12 +92,14 @@ function parseYmdNote(markdown) {
           contentLines.pop();
         }
         const title = rest.length > 0 ? rest : typeDef.label;
+        const contentStr = contentLines.join("\n").trim();
         blocks.push({
           type: typeDef.type,
           emoji,
           label: typeDef.label,
           title,
-          content: contentLines.join("\n").trim(),
+          content: contentStr,
+          preview: extractPreview(contentStr),
           lineStart,
           lineEnd: j - 1,
         });
@@ -108,6 +110,25 @@ function parseYmdNote(markdown) {
     i++;
   }
   return blocks;
+}
+
+// ─── extractPreview (mirrors src/parser/ymdParser.ts) ───────────────────────
+
+const PREVIEW_STRIP_RE = /^(?:#{1,6}|[*\->])\s*/;
+
+function extractPreview(content) {
+  if (!content || content.trim().length === 0) return undefined;
+  const lines = content.split("\n");
+  const firstLine = lines.find(l => l.trim().length > 0);
+  if (!firstLine) return undefined;
+  let stripped = firstLine.trim();
+  let prev = "";
+  while (stripped !== prev) {
+    prev = stripped;
+    stripped = stripped.replace(PREVIEW_STRIP_RE, "").trim();
+  }
+  if (stripped.length === 0) return undefined;
+  return stripped.length > 80 ? stripped.slice(0, 80) : stripped;
 }
 
 // ─── Test runner ─────────────────────────────────────────────────────────────
@@ -277,6 +298,67 @@ section("8: Empty note returns zero blocks");
   assertEqual(parseYmdNote("").length, 0, "empty string \u2192 0 blocks");
   assertEqual(parseYmdNote("   \n\n   ").length, 0, "whitespace-only \u2192 0 blocks");
   assertEqual(parseYmdNote("# Just a title\n\nNo semantic headings.").length, 0, "no semantic headings \u2192 0 blocks");
+}
+
+// ─── Test 9: Preview — normal content line ──────────────────────────────────
+
+section("9: Preview — normal content line");
+{
+  const md = "## \u2705 Decision\n\nUse Obsidian as canonical memory.";
+  const blocks = parseYmdNote(md);
+  assertEqual(blocks[0]?.preview, "Use Obsidian as canonical memory.", "normal preview extracted");
+}
+
+// ─── Test 10: Preview — Markdown-prefixed (quote) ────────────────────────────
+
+section("10: Preview — quote-prefixed line");
+{
+  const md = "## \u{1F4A1} Insight\n\n> A conversation can become a memory graph.";
+  const blocks = parseYmdNote(md);
+  assertEqual(blocks[0]?.preview, "A conversation can become a memory graph.", "quote stripped from preview");
+}
+
+// ─── Test 11: Preview — bullet-prefixed line ─────────────────────────────────
+
+section("11: Preview — bullet-prefixed line");
+{
+  const md = "## \u27A1\uFE0F Action\n\n- Build reader polish.";
+  const blocks = parseYmdNote(md);
+  assertEqual(blocks[0]?.preview, "Build reader polish.", "bullet stripped from preview");
+}
+
+// ─── Test 12: Preview — empty content block ──────────────────────────────────
+
+section("12: Preview — empty content block");
+{
+  const md = "## \u2705 Decision\n";
+  const blocks = parseYmdNote(md);
+  assertEqual(blocks[0]?.preview, undefined, "empty content → preview undefined");
+  assert(true, "no crash on empty content");
+}
+
+// ─── Test 13: Preview — long line truncated at 80 chars ──────────────────────
+
+section("13: Preview — long line truncated at 80 chars");
+{
+  const longLine = "A".repeat(100);
+  const md = `## \u2705 Decision\n\n${longLine}`;
+  const blocks = parseYmdNote(md);
+  assertEqual(blocks[0]?.preview?.length, 80, "preview length = 80");
+  assertEqual(blocks[0]?.preview, "A".repeat(80), "preview = first 80 chars");
+}
+
+// ─── Test 14: Preview — Markdown link remains raw ────────────────────────────
+
+section("14: Preview — Markdown link remains raw");
+{
+  const md = "## \u{1F4E6} Project\n\nUse [Obsidian](https://obsidian.md) as the base.";
+  const blocks = parseYmdNote(md);
+  assertEqual(
+    blocks[0]?.preview,
+    "Use [Obsidian](https://obsidian.md) as the base.",
+    "Markdown link not converted"
+  );
 }
 
 // ─── Summary ──────────────────────────────────────────────────────────────────

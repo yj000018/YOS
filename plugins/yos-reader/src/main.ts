@@ -163,7 +163,7 @@ export default class YosReaderPlugin extends Plugin {
     this.lastMarkdownLeaf = mdView.leaf;
 
     const markdown = mdView.editor.getValue();
-    panel.refresh(markdown);
+    panel.refresh(markdown, allowClear);
   }
 
   /**

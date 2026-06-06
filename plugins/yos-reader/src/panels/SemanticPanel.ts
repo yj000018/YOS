@@ -1,12 +1,19 @@
 /**
- * SemanticPanel.ts — Y-OS Reader, MVP B
+ * SemanticPanel.ts — Y-OS Reader, MVP C
  *
- * MVP B changes over MVP A.1 (patch v0.2):
- *   - Group counts shown in header: "Decisions (2)"
- *   - Empty groups hidden (only groups with ≥1 item rendered)
- *   - Updated empty state listing all 10 supported types
- *   - SEMANTIC_TYPE_ORDER drives sidebar order (10 types)
- *   - No scope changes: read-only, current-note only, no vault indexing
+ * MVP C additions over MVP B:
+ *   - Preview line rendered under each item title (always visible, no toggle)
+ *   - Collapsible groups (▾ expanded / ▸ collapsed)
+ *   - Collapsed state: session memory only, resets to expanded on note switch
+ *   - Group counts remain visible when collapsed
+ *   - Condensed empty state (5-type example)
+ *   - Light visual polish via CSS classes
+ *
+ * Preserved from MVP B:
+ *   - 10 semantic types in SEMANTIC_TYPE_ORDER
+ *   - Last-valid-leaf tracking (sidebar-focus bug fix from MVP A.1)
+ *   - Click-to-source navigation with Reading View notice
+ *   - Read-only behavior
  */
 
 import {
@@ -21,27 +28,29 @@ import type YosReaderPlugin from "../main";
 
 export const YOS_READER_VIEW_TYPE = "yos-reader-view";
 
-/** MVP B: updated empty state listing all 10 types. */
+/** MVP C: condensed empty state — 5 most common types only. */
 const EMPTY_STATE_HTML = `
 <div class="yos-empty">
-  <p>No YMD semantic headings found in this note.</p>
-  <p>Try:</p>
-  <pre>## 📦 Project
-## 🏗️ Architecture
-## 🧩 Component
-## ✅ Decision
+  <p class="yos-empty-title">No YMD semantic headings found.</p>
+  <p class="yos-empty-hint">Start with:</p>
+  <pre class="yos-empty-examples">## ✅ Decision
 ## ➡️ Action
-## ⚠️ Risk
 ## ❓ Question
-## 💡 Insight
 ## 🧠 Memory
-## 🔁 Pattern</pre>
+## 💡 Insight</pre>
 </div>
 `;
 
 export class SemanticPanel extends ItemView {
   private blocks: SemanticBlock[] = [];
   private plugin: YosReaderPlugin;
+
+  /**
+   * Session-only collapsed state.
+   * Key: type string (e.g. "decision"). Value: true = collapsed.
+   * Reset to empty on every note switch (via refresh()).
+   */
+  private collapsedGroups: Set<string> = new Set();
 
   constructor(leaf: WorkspaceLeaf, plugin: YosReaderPlugin) {
     super(leaf);
@@ -55,8 +64,15 @@ export class SemanticPanel extends ItemView {
   async onOpen(): Promise<void> { this.renderPanel(); }
   async onClose(): Promise<void> { /* nothing */ }
 
-  /** Called by main.ts whenever content should update. */
-  public refresh(markdown: string | null): void {
+  /**
+   * Called by main.ts whenever content should update.
+   * AC-C6: collapsed state resets only on note switch (isNoteSwitch=true).
+   * Editor-change and sidebar-focus refreshes preserve collapse state.
+   */
+  public refresh(markdown: string | null, isNoteSwitch = false): void {
+    if (isNoteSwitch) {
+      this.collapsedGroups.clear();
+    }
     this.blocks = markdown ? parseYmdNote(markdown) : [];
     this.renderPanel();
   }
@@ -77,32 +93,79 @@ export class SemanticPanel extends ItemView {
 
     for (const typeKey of SEMANTIC_TYPE_ORDER) {
       const group = grouped[typeKey];
-
-      // AC-B6: hide empty groups
       if (!group || group.length === 0) continue;
 
       const typeDef = Object.values(SEMANTIC_TYPES).find(d => d.type === typeKey);
       if (!typeDef) continue;
 
-      const groupEl = container.createEl("div", { cls: "yos-group" });
-
-      // AC-B5: show count in group header
-      groupEl.createEl("div", {
-        cls: "yos-group-header",
-        text: `${typeDef.label} (${group.length})`,
-      });
-
-      for (const block of group) {
-        this.renderItem(groupEl, block);
-      }
+      this.renderGroup(container, typeKey, typeDef.label, group);
     }
+  }
+
+  private renderGroup(
+    container: HTMLElement,
+    typeKey: string,
+    label: string,
+    group: SemanticBlock[]
+  ): void {
+    const isCollapsed = this.collapsedGroups.has(typeKey);
+    const groupEl = container.createEl("div", { cls: "yos-group" });
+
+    // Header with collapse toggle
+    const headerEl = groupEl.createEl("div", {
+      cls: `yos-group-header${isCollapsed ? " yos-group-collapsed" : ""}`,
+    });
+
+    // Toggle marker: ▾ expanded, ▸ collapsed
+    headerEl.createEl("span", {
+      cls: "yos-group-toggle",
+      text: isCollapsed ? "▸" : "▾",
+    });
+
+    headerEl.createEl("span", {
+      cls: "yos-group-label",
+      text: `${label} (${group.length})`,
+    });
+
+    // Items container — hidden when collapsed
+    const itemsEl = groupEl.createEl("div", {
+      cls: `yos-group-items${isCollapsed ? " yos-hidden" : ""}`,
+    });
+
+    for (const block of group) {
+      this.renderItem(itemsEl, block);
+    }
+
+    // Click handler on header to toggle collapse
+    headerEl.addEventListener("click", () => {
+      if (this.collapsedGroups.has(typeKey)) {
+        this.collapsedGroups.delete(typeKey);
+        headerEl.removeClass("yos-group-collapsed");
+        headerEl.querySelector(".yos-group-toggle")!.textContent = "▾";
+        itemsEl.removeClass("yos-hidden");
+      } else {
+        this.collapsedGroups.add(typeKey);
+        headerEl.addClass("yos-group-collapsed");
+        headerEl.querySelector(".yos-group-toggle")!.textContent = "▸";
+        itemsEl.addClass("yos-hidden");
+      }
+    });
   }
 
   private renderItem(parent: HTMLElement, block: SemanticBlock): void {
     const item = parent.createEl("div", { cls: "yos-item" });
-    item.createEl("span", { cls: "yos-item-emoji", text: block.emoji });
-    item.createEl("span", { cls: "yos-item-title", text: block.title });
 
+    // Title row
+    const titleRow = item.createEl("div", { cls: "yos-item-title-row" });
+    titleRow.createEl("span", { cls: "yos-item-emoji", text: block.emoji });
+    titleRow.createEl("span", { cls: "yos-item-title", text: block.title });
+
+    // Preview line — only when preview exists (AC-C1, AC-C4)
+    if (block.preview) {
+      item.createEl("div", { cls: "yos-item-preview", text: block.preview });
+    }
+
+    // Click → navigate to source (AC-C7)
     item.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
@@ -114,12 +177,7 @@ export class SemanticPanel extends ItemView {
 
   /**
    * Navigate the Markdown editor to the given line.
-   *
-   * Strategy (preserved from MVP A.1 patch v0.2):
-   *   1. Get last known MarkdownView via plugin back-reference.
-   *   2. Reveal (focus) its leaf.
-   *   3. If Reading View, attempt switch to Live Preview; show Notice on fail.
-   *   4. Set cursor and scroll.
+   * Preserved from MVP A.1 patch v0.2 — last-valid-leaf strategy.
    */
   private async navigateTo(lineStart: number): Promise<void> {
     const mdView = this.plugin.getLastMarkdownView();

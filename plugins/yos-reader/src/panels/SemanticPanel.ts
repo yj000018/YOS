@@ -1,18 +1,19 @@
 /**
- * SemanticPanel.ts — Y-OS Reader, MVP C
+ * SemanticPanel.ts — Y-OS Reader v0.5.0 (MVP D — Settings Tab)
  *
- * MVP C additions over MVP B:
- *   - Preview line rendered under each item title (always visible, no toggle)
- *   - Collapsible groups (▾ expanded / ▸ collapsed)
- *   - Collapsed state: session memory only, resets to expanded on note switch
- *   - Group counts remain visible when collapsed
- *   - Condensed empty state (5-type example)
- *   - Light visual polish via CSS classes
+ * MVP D additions over MVP C:
+ *   - Accepts YOSReaderSettings on every refresh()
+ *   - showPreviews: hides/shows preview lines
+ *   - compactPreviews: 40-char truncation when true (80 when false)
+ *   - defaultGroupsCollapsed: initial group state on note switch
  *
- * Preserved from MVP B:
- *   - 10 semantic types in SEMANTIC_TYPE_ORDER
- *   - Last-valid-leaf tracking (sidebar-focus bug fix from MVP A.1)
- *   - Click-to-source navigation with Reading View notice
+ * Preserved from MVP C:
+ *   - Collapsible groups (▾/▸), session-only state
+ *   - Preview lines (now settings-driven)
+ *   - Group counts
+ *   - Hidden empty groups
+ *   - Click-to-source navigation (last-valid-leaf strategy)
+ *   - Reading View notice
  *   - Read-only behavior
  */
 
@@ -24,11 +25,12 @@ import {
 } from "obsidian";
 import { SemanticBlock, parseYmdNote } from "../parser/ymdParser";
 import { SEMANTIC_TYPES, SEMANTIC_TYPE_ORDER } from "../parser/semanticTypes";
-import type YosReaderPlugin from "../main";
+import type YOSReaderPlugin from "../main";
+import { YOSReaderSettings, DEFAULT_SETTINGS } from "../settings";
 
 export const YOS_READER_VIEW_TYPE = "yos-reader-view";
 
-/** MVP C: condensed empty state — 5 most common types only. */
+/** Condensed empty state — 5 most common types. */
 const EMPTY_STATE_HTML = `
 <div class="yos-empty">
   <p class="yos-empty-title">No YMD semantic headings found.</p>
@@ -43,16 +45,17 @@ const EMPTY_STATE_HTML = `
 
 export class SemanticPanel extends ItemView {
   private blocks: SemanticBlock[] = [];
-  private plugin: YosReaderPlugin;
+  private plugin: YOSReaderPlugin;
+  private settings: YOSReaderSettings = { ...DEFAULT_SETTINGS };
 
   /**
    * Session-only collapsed state.
-   * Key: type string (e.g. "decision"). Value: true = collapsed.
-   * Reset to empty on every note switch (via refresh()).
+   * Key: type string. Value: true = collapsed.
+   * Reset on note switch (isNoteSwitch=true) using defaultGroupsCollapsed setting.
    */
   private collapsedGroups: Set<string> = new Set();
 
-  constructor(leaf: WorkspaceLeaf, plugin: YosReaderPlugin) {
+  constructor(leaf: WorkspaceLeaf, plugin: YOSReaderPlugin) {
     super(leaf);
     this.plugin = plugin;
   }
@@ -65,14 +68,32 @@ export class SemanticPanel extends ItemView {
   async onClose(): Promise<void> { /* nothing */ }
 
   /**
-   * Called by main.ts whenever content should update.
-   * AC-C6: collapsed state resets only on note switch (isNoteSwitch=true).
-   * Editor-change and sidebar-focus refreshes preserve collapse state.
+   * Called by main.ts whenever content or settings should update.
+   *
+   * @param markdown  - current note content, or null to clear
+   * @param isNoteSwitch - true = real note change → reset collapse state
+   * @param settings  - current plugin settings
    */
-  public refresh(markdown: string | null, isNoteSwitch = false): void {
-    if (isNoteSwitch) {
-      this.collapsedGroups.clear();
+  public refresh(
+    markdown: string | null,
+    isNoteSwitch = false,
+    settings?: YOSReaderSettings
+  ): void {
+    if (settings) {
+      this.settings = settings;
     }
+
+    if (isNoteSwitch) {
+      // Reset collapse state using defaultGroupsCollapsed setting
+      this.collapsedGroups.clear();
+      if (this.settings.defaultGroupsCollapsed) {
+        // Pre-populate all type keys as collapsed
+        for (const typeKey of SEMANTIC_TYPE_ORDER) {
+          this.collapsedGroups.add(typeKey);
+        }
+      }
+    }
+
     this.blocks = markdown ? parseYmdNote(markdown) : [];
     this.renderPanel();
   }
@@ -116,7 +137,6 @@ export class SemanticPanel extends ItemView {
       cls: `yos-group-header${isCollapsed ? " yos-group-collapsed" : ""}`,
     });
 
-    // Toggle marker: ▾ expanded, ▸ collapsed
     headerEl.createEl("span", {
       cls: "yos-group-toggle",
       text: isCollapsed ? "▸" : "▾",
@@ -160,12 +180,17 @@ export class SemanticPanel extends ItemView {
     titleRow.createEl("span", { cls: "yos-item-emoji", text: block.emoji });
     titleRow.createEl("span", { cls: "yos-item-title", text: block.title });
 
-    // Preview line — only when preview exists (AC-C1, AC-C4)
-    if (block.preview) {
-      item.createEl("div", { cls: "yos-item-preview", text: block.preview });
+    // Preview line — controlled by showPreviews setting (AC-D2)
+    if (this.settings.showPreviews && block.preview) {
+      // Apply compactPreviews: truncate at 40 instead of 80 (AC-D3)
+      let previewText = block.preview;
+      if (this.settings.compactPreviews && previewText.length > 40) {
+        previewText = previewText.slice(0, 40) + "…";
+      }
+      item.createEl("div", { cls: "yos-item-preview", text: previewText });
     }
 
-    // Click → navigate to source (AC-C7)
+    // Click → navigate to source
     item.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
@@ -175,10 +200,6 @@ export class SemanticPanel extends ItemView {
 
   // ─── Navigation ───────────────────────────────────────────────────────────
 
-  /**
-   * Navigate the Markdown editor to the given line.
-   * Preserved from MVP A.1 patch v0.2 — last-valid-leaf strategy.
-   */
   private async navigateTo(lineStart: number): Promise<void> {
     const mdView = this.plugin.getLastMarkdownView();
 

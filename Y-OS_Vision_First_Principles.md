@@ -60,13 +60,14 @@ It answers:
 - Who should coordinate?
 
 **Core organizational roles:**
-- COO
-- Strategist
-- Architect
-- Developer
-- Researcher
+- COO (Ganesha)
+- CODO (Saraswati)
+- Strategist (Krishna)
+- Architect (Brahma)
+- Developer (Hanuman)
+- Researcher (Narada)
 - HR
-- Personal Assistant
+- Personal Assistant (Lakshmi)
 
 > **Architectural principle:** Agents are organizational roles. Agents use modules. Modules never replace agents. Agents make decisions.
 
@@ -78,7 +79,7 @@ Y-OS is designed to continuously improve itself.
 Every mission produces knowledge, feedback, execution data and improvement opportunities. The system learns through repeated execution.
 
 **Learning Loop:**
-`Mission → Execution → Result → Feedback → Learning → Capability Creation → Registry Update`
+`Mission → Execution → Result → Feedback → Lessons Learned → CODO Review → Organization Improvement → Future Execution`
 
 This transforms Y-OS from a static automation framework into an evolving cognitive organization.
 
@@ -88,6 +89,8 @@ This transforms Y-OS from a static automation framework into an evolving cogniti
 
 Most AI systems solve problems.
 **Y-OS improves the system that solves problems.**
+
+> **Y-OS Law #7:** The organization itself is a system that must continuously improve. The COO executes missions. The CODO improves the organization that executes missions.
 
 ---
 
@@ -104,13 +107,14 @@ Most AI systems solve problems.
 - Y-ORC
 
 ### Layer 3 — Organization
-- COO
-- Strategist
-- Architect
-- Developer
-- Researcher
+- COO (Ganesha)
+- CODO (Saraswati)
+- Strategist (Krishna)
+- Architect (Brahma)
+- Developer (Hanuman)
+- Researcher (Narada)
 - HR
-- PA
+- PA (Lakshmi)
 
 ### Layer 4 — Execution
 - Skills

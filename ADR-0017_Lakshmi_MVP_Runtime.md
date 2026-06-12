@@ -1,0 +1,26 @@
+# ADR-0017: Lakshmi MVP Runtime
+
+**Status:** Accepted
+**Date:** 2026-06-12
+**Author:** Chief Architect (Brahma)
+
+## Context
+ADR-0013 defined the role of ECO (Lakshmi) as the custodian of executive visibility. To operationalize this without requiring manual data entry from the CEO, Lakshmi must be implemented as an autonomous runtime that reads the Artifact Registry (ADR-0016) and synthesizes organizational state.
+
+## Decision
+We formally adopt the Lakshmi MVP Runtime architecture.
+
+Lakshmi will be implemented as a Python-based processing engine that:
+1. Queries the Notion Artifact Registry.
+2. Executes the Open Loops Engine to detect bottlenecks.
+3. Generates the Dashboard Data Model.
+4. Uses an LLM to synthesize the daily CEO Briefing.
+5. Pushes updates back to the Notion Executive Dashboard.
+
+## Rationale
+- **Decoupling:** By reading the Artifact Registry rather than querying agents directly, Lakshmi remains lightweight and unaffected by changes in the Capability Layer.
+- **Algorithmic Visibility:** The Open Loops Engine translates raw artifact states into actionable executive insights, fulfilling Lakshmi's core mission: "Transform organizational complexity into executive clarity."
+
+## Consequences
+- The Artifact Schema v1.1 Patch (adding Accepted Date, Consumed Date, Archived Date, and Review Owner) is required to support the Open Loops Engine's time-based calculations.
+- The CEO will rely on the synthesized dashboard and briefing rather than inspecting raw artifacts.

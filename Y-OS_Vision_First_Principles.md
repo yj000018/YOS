@@ -1,4 +1,4 @@
-# Y-OS Core Definition — Official Vision Statement v1
+# Y-OS Core Definition — Official Vision Statement v2
 
 **Status:** Foundational Reference Document | **Date:** 2026-06-12
 
@@ -12,29 +12,64 @@ This document formalizes the long-term vision of Y-OS and serves as the foundati
 
 ## What is Y-OS?
 
-Y-OS is a self-evolving Cognitive Operating System powered by an Autonomous Organization of AI agents.
-Its purpose is not only to solve problems, but to continuously improve the system that solves problems.
+Y-OS does not merely execute work. Y-OS continuously improves:
+- what it knows
+- what it can do
+- how it operates
 
 ### Official Definition
 
-**Y-OS = Cognitive Operating System + Autonomous Organization + Self-Learning Capability Expansion**
+**Y-OS = Cognitive Operating System + Autonomous Organization + Self-Learning System + Capability Expansion Platform + Organizational Evolution Engine**
 
-Or:
-Y-OS is a Cognitive Operating System that runs an Autonomous Organization capable of continuously learning, expanding its capabilities, and improving its own execution.
+---
+
+## Continuous Evolution Loop
+
+The objective is not only solving problems. The objective is improving the system that solves problems. This loop never stops:
+
+`Mission → Execution → Feedback → Learning → Organizational Improvement → Capability Expansion → Better Execution → Mission`
+
+---
+
+## Three Levels of Evolution
+
+### Level 1 — Knowledge Evolution
+- **Question:** What do we know?
+- **Owner:** Y-MEM
+- **Output:** Knowledge (facts, preferences, lessons, memories, project knowledge)
+- **Mission:** Learn facts.
+
+### Level 2 — Capability Evolution
+- **Question:** What can we do?
+- **Owner:** Y-REG
+- **Output:** Capabilities (skills, tools, workflows, automations, integrations, models)
+- **Mission:** Learn skills.
+
+### Level 3 — Organizational Evolution
+- **Question:** How should we operate?
+- **Owner:** CODO (Saraswati)
+- **Output:** Organizational improvements (role improvements, training, communication, delegation, coordination, performance systems, team structure)
+- **Mission:** Learn how the organization itself should work.
+
+> **Core Distinction:** Y-MEM learns knowledge. Y-REG learns capabilities. CODO learns organization.
+
+---
+
+## Expanded CODO Scope
+
+The CODO is responsible for five evolution domains:
+
+1. **Capability Expansion:** Acquire new capabilities (new tools, skills, integrations, workflows).
+2. **Competency Development:** Improve mastery of existing capabilities (prompting, tool usage, reasoning quality, execution quality).
+3. **Process Improvement:** Improve operational workflows (fewer steps, fewer errors, faster execution, lower cost).
+4. **Communication Improvement:** Improve organizational information flow (handoffs, context quality, mission clarity, reporting quality).
+5. **Organizational Optimization:** Improve the organization itself (new roles, updated responsibilities, organizational redesign, team topology improvements).
 
 ---
 
 ## Pillar 1 — Cognitive Operating System
 
 The Cognitive Operating System provides the foundational cognitive functions required for reasoning, memory, context management, orchestration, identity management and traceability.
-
-It answers:
-- What is known?
-- What exists?
-- What is relevant now?
-- What should happen next?
-- Who is involved?
-- What happened previously?
 
 **Core cognitive modules:**
 - Y-REG — Registry
@@ -52,13 +87,6 @@ It answers:
 
 Y-OS operates through an organizational layer modeled after a high-performing human company.
 
-It answers:
-- Who should think?
-- Who should decide?
-- Who should execute?
-- Who should review?
-- Who should coordinate?
-
 **Core organizational roles:**
 - COO (Ganesha)
 - CODO (Saraswati)
@@ -73,56 +101,27 @@ It answers:
 
 ---
 
-## Pillar 3 — Self-Learning Capability Expansion
-
-Y-OS is designed to continuously improve itself.
-Every mission produces knowledge, feedback, execution data and improvement opportunities. The system learns through repeated execution.
-
-**Learning Loop:**
-`Mission → Execution → Result → Feedback → Lessons Learned → CODO Review → Organization Improvement → Future Execution`
-
-This transforms Y-OS from a static automation framework into an evolving cognitive organization.
-
----
-
-## Core Architectural Law
-
-Most AI systems solve problems.
-**Y-OS improves the system that solves problems.**
+## Core Architectural Laws
 
 > **Y-OS Law #7:** The organization itself is a system that must continuously improve. The COO executes missions. The CODO improves the organization that executes missions.
+
+> **Y-OS Law #8:** The goal is not only to solve problems. The goal is to continuously improve the organization that solves problems.
 
 ---
 
 ## Layer Model
 
 ### Layer 1 — Cognitive Foundation
-- Y-REG
-- Y-MEM
-- Y-CTX
-- Y-ID
-- Y-LOG
+- Y-REG · Y-MEM · Y-CTX · Y-ID · Y-LOG
 
 ### Layer 2 — Orchestration
 - Y-ORC
 
 ### Layer 3 — Organization
-- COO (Ganesha)
-- CODO (Saraswati)
-- Strategist (Krishna)
-- Architect (Brahma)
-- Developer (Hanuman)
-- Researcher (Narada)
-- HR
-- PA (Lakshmi)
+- COO (Ganesha) · CODO (Saraswati) · Strategist (Krishna) · Architect (Brahma) · Developer (Hanuman) · Researcher (Narada) · HR · PA (Lakshmi)
 
 ### Layer 4 — Execution
-- Skills
-- Workflows
-- Automations
-- Tools
-- External Models
-- External Services
+- Skills · Workflows · Automations · Tools · External Models · External Services
 
 ---
 
@@ -134,7 +133,10 @@ Most AI systems solve problems.
 
 ## Long-Term Vision
 
-Y-OS is not intended to become a better agent.
-Y-OS is intended to become an increasingly capable autonomous organization that continuously expands its memory, capabilities, knowledge, execution quality and decision-making capacity.
+Y-OS becomes a self-improving cognitive infrastructure capable of:
+- learning knowledge
+- acquiring capabilities
+- evolving organizationally
+over time.
 
-The ultimate objective is the creation of a self-improving cognitive infrastructure capable of coordinating humans, agents, models, tools and knowledge into a unified operating system for cognition.
+The organization itself becomes an adaptive system.

@@ -140,3 +140,5 @@ Y-OS becomes a self-improving cognitive infrastructure capable of:
 over time.
 
 The organization itself becomes an adaptive system.
+
+> **Y-OS Law #9:** No agent may define itself. The organization defines agents. CODO (Saraswati) is the custodian of organizational design.

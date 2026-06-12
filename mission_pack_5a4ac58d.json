@@ -1,0 +1,29 @@
+{
+  "mission_id": "5a4ac58d-43e7-4348-b461-4fca375c5731",
+  "generated_at": "2026-06-12T08:43:34.240269Z",
+  "objective": "Develop REG",
+  "complexity": "Medium",
+  "recommended_workflow": null,
+  "recommended_agents": [
+    "agent--manus"
+  ],
+  "required_capabilities": [],
+  "required_capabilities_detail": [],
+  "constraints": [
+    "Architecture Freeze v1 active \u2014 no new core modules",
+    "Agents use modules \u2014 modules do not replace agents"
+  ],
+  "success_criteria": [
+    "Mission objective achieved: Develop REG",
+    "Output matches expected format and quality",
+    "No unresolved blockers or open issues"
+  ],
+  "validation_rules": [
+    "Output must be complete and non-empty",
+    "All required capabilities must be addressed",
+    "Constraints must be respected"
+  ],
+  "context_pack_summary": "Y-OS project. Y-REG MVP already built. Architecture Freeze v1 active.",
+  "source": "Y-ORC v1.0",
+  "registry_source": "supabase"
+}

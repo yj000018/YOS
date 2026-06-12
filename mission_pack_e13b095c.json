@@ -1,0 +1,61 @@
+{
+  "mission_id": "e13b095c-e219-46fc-bd9c-4bb80954dc38",
+  "generated_at": "2026-06-12T08:44:31.393115Z",
+  "objective": "Design and implement the full Y-OS orchestration architecture with multi-agent coordination, capability registry, memory system, and context assembly pipeline",
+  "complexity": "Advanced",
+  "recommended_workflow": null,
+  "recommended_agents": [
+    "agent--manus"
+  ],
+  "required_capabilities": [
+    "context-assembly",
+    "memory-store-retrieve",
+    "design-creation",
+    "code-execution",
+    "session-archiving"
+  ],
+  "required_capabilities_detail": [
+    {
+      "slug": "context-assembly",
+      "name": "Context Assembly"
+    },
+    {
+      "slug": "memory-store-retrieve",
+      "name": "Memory Store & Retrieve"
+    },
+    {
+      "slug": "design-creation",
+      "name": "Design Creation"
+    },
+    {
+      "slug": "code-execution",
+      "name": "Code Execution"
+    },
+    {
+      "slug": "session-archiving",
+      "name": "Session Archiving"
+    }
+  ],
+  "constraints": [
+    "Architecture Freeze v1 active \u2014 no new core modules",
+    "Agents use modules \u2014 modules do not replace agents"
+  ],
+  "success_criteria": [
+    "Mission objective achieved: Design and implement the full Y-OS orchestration architecture with multi-agent coordination, capabil",
+    "All 5 required capabilities exercised",
+    "Deliverables reviewed and validated by COO Agent",
+    "No architectural violations (Architecture Freeze v1)",
+    "No unresolved blockers or open issues"
+  ],
+  "validation_rules": [
+    "Output must be complete and non-empty",
+    "All required capabilities must be addressed",
+    "Constraints must be respected",
+    "Architecture Freeze v1: no new core modules without formal challenge",
+    "Agents use modules \u2014 modules do not replace agents (Law #3)",
+    "COO Agent must validate before execution"
+  ],
+  "context_pack_summary": "Y-OS project. Y-REG MVP already built. Architecture Freeze v1 active.",
+  "source": "Y-ORC v1.0",
+  "registry_source": "supabase"
+}

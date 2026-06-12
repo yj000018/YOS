@@ -1,0 +1,47 @@
+{
+  "mission_id": "1b83fbfa-63d6-4721-8d94-3a868892b2fd",
+  "generated_at": "2026-06-12T08:44:20.345092Z",
+  "objective": "Build a web application for Y-OS",
+  "complexity": "Medium",
+  "recommended_workflow": null,
+  "recommended_agents": [
+    "agent--manus"
+  ],
+  "required_capabilities": [
+    "web-development",
+    "web-search",
+    "code-execution"
+  ],
+  "required_capabilities_detail": [
+    {
+      "slug": "web-development",
+      "name": "Web Development"
+    },
+    {
+      "slug": "web-search",
+      "name": "Web Search"
+    },
+    {
+      "slug": "code-execution",
+      "name": "Code Execution"
+    }
+  ],
+  "constraints": [
+    "Architecture Freeze v1 active \u2014 no new core modules",
+    "Agents use modules \u2014 modules do not replace agents"
+  ],
+  "success_criteria": [
+    "Mission objective achieved: Build a web application for Y-OS",
+    "All 3 required capabilities exercised",
+    "Output matches expected format and quality",
+    "No unresolved blockers or open issues"
+  ],
+  "validation_rules": [
+    "Output must be complete and non-empty",
+    "All required capabilities must be addressed",
+    "Constraints must be respected"
+  ],
+  "context_pack_summary": "Y-OS project. Y-REG MVP already built. Architecture Freeze v1 active.",
+  "source": "Y-ORC v1.0",
+  "registry_source": "supabase"
+}

@@ -1,0 +1,52 @@
+{
+  "mission_id": "b1bd6e52-8224-42fd-8217-52daaa616044",
+  "generated_at": "2026-06-12T08:44:14.726662Z",
+  "objective": "Develop REG",
+  "complexity": "Medium",
+  "recommended_workflow": null,
+  "recommended_agents": [
+    "agent--manus"
+  ],
+  "required_capabilities": [
+    "code-execution",
+    "web-development",
+    "github-integration",
+    "api-integration"
+  ],
+  "required_capabilities_detail": [
+    {
+      "slug": "code-execution",
+      "name": "Code Execution"
+    },
+    {
+      "slug": "web-development",
+      "name": "Web Development"
+    },
+    {
+      "slug": "github-integration",
+      "name": "GitHub Integration"
+    },
+    {
+      "slug": "api-integration",
+      "name": "API Integration"
+    }
+  ],
+  "constraints": [
+    "Architecture Freeze v1 active \u2014 no new core modules",
+    "Agents use modules \u2014 modules do not replace agents"
+  ],
+  "success_criteria": [
+    "Mission objective achieved: Develop REG",
+    "All 4 required capabilities exercised",
+    "Output matches expected format and quality",
+    "No unresolved blockers or open issues"
+  ],
+  "validation_rules": [
+    "Output must be complete and non-empty",
+    "All required capabilities must be addressed",
+    "Constraints must be respected"
+  ],
+  "context_pack_summary": "Y-OS project. Y-REG MVP already built. Architecture Freeze v1 active.",
+  "source": "Y-ORC v1.0",
+  "registry_source": "supabase"
+}

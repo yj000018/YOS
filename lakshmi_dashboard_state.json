@@ -1,9 +1,6 @@
 {
-  "timestamp": "2026-06-12T23:43:12.577281",
+  "timestamp": "2026-06-12T23:54:48.002402+00:00",
   "metrics": {
-    "total_artifacts": 8,
-    "artifacts_in_draft": 0,
-    "artifacts_in_review": 0,
     "total_missions": 1,
     "active_missions": 0,
     "blocked_missions": 0,
@@ -12,32 +9,135 @@
   "missions": [
     {
       "id": "MISS-E2E-V1",
-      "name": "First End-to-End Run",
       "status": "Completed",
-      "health": "Green",
-      "current_phase": "Learning",
-      "artifacts": [
-        "ART-E2E-007",
-        "ART-E2E-006",
-        "ART-E2E-004b",
-        "ART-E2E-002",
-        "ART-E2E-004a",
-        "ART-E2E-003",
-        "ART-E2E-005",
+      "artifacts": {
+        "ART-E2E-007": {
+          "id": "ART-E2E-007",
+          "type": "Learning Report",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Saraswati",
+          "consumer": "System",
+          "review_owner": "CEO",
+          "parent_id": "ART-E2E-005",
+          "child_ids": [],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        },
+        "ART-E2E-004b": {
+          "id": "ART-E2E-004b",
+          "type": "Build Report",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Hanuman",
+          "consumer": "Ganesha",
+          "review_owner": "Ganesha",
+          "parent_id": "ART-E2E-003",
+          "child_ids": [
+            "ART-E2E-005"
+          ],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        },
+        "ART-E2E-002": {
+          "id": "ART-E2E-002",
+          "type": "Execution Plan",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Ganesha",
+          "consumer": "Brahma",
+          "review_owner": "Brahma",
+          "parent_id": "ART-E2E-001",
+          "child_ids": [
+            "ART-E2E-003"
+          ],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        },
+        "ART-E2E-004a": {
+          "id": "ART-E2E-004a",
+          "type": "Build Artifact",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Hanuman",
+          "consumer": "CEO",
+          "review_owner": "Ganesha",
+          "parent_id": "ART-E2E-003",
+          "child_ids": [],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        },
+        "ART-E2E-003": {
+          "id": "ART-E2E-003",
+          "type": "Architecture Package",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Brahma",
+          "consumer": "Hanuman",
+          "review_owner": "Hanuman",
+          "parent_id": "ART-E2E-002",
+          "child_ids": [
+            "ART-E2E-004a",
+            "ART-E2E-004b"
+          ],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        },
+        "ART-E2E-006": {
+          "id": "ART-E2E-006",
+          "type": "Lakshmi Review",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Lakshmi",
+          "consumer": "CEO",
+          "review_owner": "CEO",
+          "parent_id": "ART-E2E-005",
+          "child_ids": [],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        },
+        "ART-E2E-005": {
+          "id": "ART-E2E-005",
+          "type": "Delivery Report",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Ganesha",
+          "consumer": "CEO",
+          "review_owner": "CEO",
+          "parent_id": "ART-E2E-004b",
+          "child_ids": [
+            "ART-E2E-006",
+            "ART-E2E-007"
+          ],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        },
+        "ART-E2E-001": {
+          "id": "ART-E2E-001",
+          "type": "Strategy Brief",
+          "mission_id": "MISS-E2E-V1",
+          "mission_status": "Completed",
+          "status": "Accepted",
+          "producer": "Krishna",
+          "consumer": "Ganesha",
+          "review_owner": "Ganesha",
+          "parent_id": null,
+          "child_ids": [
+            "ART-E2E-002"
+          ],
+          "updated_date": "2026-06-12T23:54:48.002203+00:00"
+        }
+      },
+      "root_ids": [
         "ART-E2E-001"
-      ]
+      ],
+      "terminal_ids": [
+        "ART-E2E-007",
+        "ART-E2E-004a",
+        "ART-E2E-006"
+      ],
+      "health": "Green",
+      "current_phase": "Learning Report"
     }
-  ],
-  "open_loops": [
-    {
-      "id": "OL-001",
-      "mission_id": "MISS-E2E-V1",
-      "artifact_id": "ART-E2E-007",
-      "rule_id": "L-02",
-      "severity": "P3",
-      "assignee": "Saraswati",
-      "description": "Terminal artifact lacks explicit Archived Date."
-    }
-  ],
-  "ceo_action_queue": []
+  ]
 }

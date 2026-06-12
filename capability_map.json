@@ -1,0 +1,618 @@
+{
+  "capabilities": {
+    "memory-store-retrieve": {
+      "name": "Memory Store & Retrieve",
+      "module": "Y-MEM",
+      "owners": [
+        "skill-archive",
+        "skill-hydrater",
+        "skill-mem0-sync",
+        "skill-memoriser",
+        "skill-memory-manager",
+        "skill-memory-pipeline",
+        "skill-music-prompter",
+        "skill-project-hydration",
+        "skill-project-synthesis",
+        "skill-session-navigator",
+        "skill-session-synthesis",
+        "skill-session-synthesizer",
+        "skill-summary",
+        "skill-tool-router",
+        "skill-yos-helpdesk",
+        "skill-yos-mac-bridge",
+        "skill-yos-mmm",
+        "skill-yos-optimizer",
+        "skill-yos-voice"
+      ]
+    },
+    "notion-integration": {
+      "name": "Notion Integration",
+      "module": "Y-MEM",
+      "owners": [
+        "skill-archive",
+        "skill-complex-webapp-builder",
+        "skill-eta",
+        "skill-hydrater",
+        "skill-mem0-sync",
+        "skill-memoriser",
+        "skill-memory-manager",
+        "skill-memory-pipeline",
+        "skill-project-hydration",
+        "skill-project-synthesis",
+        "skill-session-navigator",
+        "skill-session-synthesis",
+        "skill-session-synthesizer",
+        "skill-summary",
+        "skill-task-manager",
+        "skill-tool-router",
+        "skill-webapp-factory",
+        "skill-yos-cleanmyapps",
+        "skill-yos-helpdesk",
+        "skill-yos-mac-bridge",
+        "skill-yos-mmm",
+        "skill-yos-optimizer"
+      ]
+    },
+    "skill-management": {
+      "name": "Skill Management",
+      "module": "Y-CAP",
+      "owners": [
+        "skill-archive",
+        "skill-automation-and-scheduling",
+        "skill-back-to-chat",
+        "skill-canva-mcp",
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-credit-optimizer",
+        "skill-dev",
+        "skill-eta",
+        "skill-excel-generator",
+        "skill-fast-navigation",
+        "skill-file-organizer",
+        "skill-fransai-basic",
+        "skill-github-gem-seeker",
+        "skill-gws-best-practices",
+        "skill-harpa-grid",
+        "skill-hydrater",
+        "skill-imagegen",
+        "skill-internet-skill-finder",
+        "skill-llm-router",
+        "skill-manus-api",
+        "skill-manus-config",
+        "skill-mem0-sync",
+        "skill-memoriser",
+        "skill-memory-manager",
+        "skill-memory-pipeline",
+        "skill-music-prompter",
+        "skill-persistent-computing",
+        "skill-project-hydration",
+        "skill-project-synthesis",
+        "skill-prompt-optimizer",
+        "skill-request-optimizer",
+        "skill-session-navigator",
+        "skill-session-synthesis",
+        "skill-session-synthesizer",
+        "skill-skill-creator",
+        "skill-status",
+        "skill-stock-analysis",
+        "skill-summary",
+        "skill-task-manager",
+        "skill-tool-router",
+        "skill-tts-prompter",
+        "skill-video-generator",
+        "skill-webapp-factory",
+        "skill-y-menu",
+        "skill-yos-cleanmyapps",
+        "skill-yos-helpdesk",
+        "skill-yos-mac-bridge",
+        "skill-yos-mmm",
+        "skill-yos-optimizer",
+        "skill-yos-voice"
+      ]
+    },
+    "code-execution": {
+      "name": "Code Execution",
+      "module": "Y-DEV",
+      "owners": [
+        "skill-archive",
+        "skill-automation-and-scheduling",
+        "skill-excel-generator",
+        "skill-github-gem-seeker",
+        "skill-gws-best-practices",
+        "skill-harpa-grid",
+        "skill-hydrater",
+        "skill-imagegen",
+        "skill-llm-router",
+        "skill-mem0-sync",
+        "skill-memory-pipeline",
+        "skill-project-synthesis",
+        "skill-prompt-optimizer",
+        "skill-session-navigator",
+        "skill-session-synthesizer",
+        "skill-skill-creator",
+        "skill-status",
+        "skill-summary",
+        "skill-task-manager",
+        "skill-video-generator",
+        "skill-webapp-factory",
+        "skill-y-menu",
+        "skill-yos-optimizer"
+      ]
+    },
+    "web-development": {
+      "name": "Web Development",
+      "module": "Y-DEV",
+      "owners": [
+        "skill-archive",
+        "skill-automation-and-scheduling",
+        "skill-canva-mcp",
+        "skill-complex-webapp-builder",
+        "skill-fast-navigation",
+        "skill-github-gem-seeker",
+        "skill-harpa-grid",
+        "skill-imagegen",
+        "skill-llm-router",
+        "skill-memoriser",
+        "skill-memory-pipeline",
+        "skill-persistent-computing",
+        "skill-prompt-optimizer",
+        "skill-request-optimizer",
+        "skill-stock-analysis",
+        "skill-task-manager",
+        "skill-webapp-factory",
+        "skill-yos-helpdesk",
+        "skill-yos-mac-bridge",
+        "skill-yos-voice"
+      ]
+    },
+    "session-archiving": {
+      "name": "Session Archiving",
+      "module": "Y-MEM",
+      "owners": [
+        "skill-archive",
+        "skill-session-synthesis"
+      ]
+    },
+    "llm-routing": {
+      "name": "LLM Routing",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-harpa-grid",
+        "skill-hydrater",
+        "skill-llm-router",
+        "skill-mem0-sync",
+        "skill-memoriser",
+        "skill-memory-pipeline",
+        "skill-project-synthesis",
+        "skill-prompt-optimizer",
+        "skill-session-synthesis",
+        "skill-tool-router",
+        "skill-webapp-factory",
+        "skill-yos-mmm",
+        "skill-yos-optimizer"
+      ]
+    },
+    "calendar-management": {
+      "name": "Calendar Management",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-gws-best-practices",
+        "skill-manus-config",
+        "skill-memory-manager"
+      ]
+    },
+    "web-search": {
+      "name": "Web Search",
+      "module": "Y-CTX",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-canva-mcp",
+        "skill-cost",
+        "skill-file-organizer",
+        "skill-github-gem-seeker",
+        "skill-gws-best-practices",
+        "skill-harpa-grid",
+        "skill-hydrater",
+        "skill-imagegen",
+        "skill-internet-skill-finder",
+        "skill-manus-config",
+        "skill-memory-manager",
+        "skill-project-hydration",
+        "skill-session-navigator",
+        "skill-session-synthesizer",
+        "skill-tool-router",
+        "skill-yos-mmm",
+        "skill-yos-optimizer"
+      ]
+    },
+    "email-integration": {
+      "name": "Email Integration",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-manus-api",
+        "skill-memory-pipeline"
+      ]
+    },
+    "database-operations": {
+      "name": "Database Operations",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-tool-router"
+      ]
+    },
+    "browser-automation": {
+      "name": "Browser Automation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-fast-navigation",
+        "skill-gws-best-practices",
+        "skill-harpa-grid",
+        "skill-imagegen",
+        "skill-manus-api",
+        "skill-memory-pipeline",
+        "skill-prompt-optimizer",
+        "skill-session-synthesis",
+        "skill-session-synthesizer",
+        "skill-tool-router",
+        "skill-webapp-factory",
+        "skill-yos-cleanmyapps",
+        "skill-yos-helpdesk",
+        "skill-yos-mac-bridge",
+        "skill-yos-optimizer",
+        "skill-yos-voice"
+      ]
+    },
+    "slack-integration": {
+      "name": "Slack Integration",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-yos-mac-bridge"
+      ]
+    },
+    "ai-model-invocation": {
+      "name": "AI Model Invocation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-canva-mcp",
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-dev",
+        "skill-eta",
+        "skill-excel-generator",
+        "skill-file-organizer",
+        "skill-fransai-basic",
+        "skill-github-gem-seeker",
+        "skill-harpa-grid",
+        "skill-imagegen",
+        "skill-internet-skill-finder",
+        "skill-manus-api",
+        "skill-memoriser",
+        "skill-memory-manager",
+        "skill-memory-pipeline",
+        "skill-persistent-computing",
+        "skill-project-hydration",
+        "skill-prompt-optimizer",
+        "skill-request-optimizer",
+        "skill-session-navigator",
+        "skill-session-synthesizer",
+        "skill-skill-creator",
+        "skill-summary",
+        "skill-task-manager",
+        "skill-tool-router",
+        "skill-tts-prompter",
+        "skill-video-generator",
+        "skill-yos-mac-bridge",
+        "skill-yos-optimizer",
+        "skill-yos-voice"
+      ]
+    },
+    "api-integration": {
+      "name": "API Integration",
+      "module": "Y-DEV",
+      "owners": [
+        "skill-automation-and-scheduling",
+        "skill-canva-mcp",
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-dev",
+        "skill-fast-navigation",
+        "skill-gws-best-practices",
+        "skill-harpa-grid",
+        "skill-imagegen",
+        "skill-llm-router",
+        "skill-manus-api",
+        "skill-manus-config",
+        "skill-mem0-sync",
+        "skill-memory-manager",
+        "skill-memory-pipeline",
+        "skill-persistent-computing",
+        "skill-prompt-optimizer",
+        "skill-request-optimizer",
+        "skill-session-navigator",
+        "skill-skill-creator",
+        "skill-stock-analysis",
+        "skill-task-manager",
+        "skill-webapp-factory",
+        "skill-yos-mac-bridge",
+        "skill-yos-optimizer",
+        "skill-yos-voice"
+      ]
+    },
+    "workflow-execution": {
+      "name": "Workflow Execution",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-back-to-chat",
+        "skill-canva-mcp",
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-credit-optimizer",
+        "skill-dev",
+        "skill-eta",
+        "skill-fast-navigation",
+        "skill-fransai-basic",
+        "skill-github-gem-seeker",
+        "skill-gws-best-practices",
+        "skill-hydrater",
+        "skill-imagegen",
+        "skill-internet-skill-finder",
+        "skill-manus-config",
+        "skill-memoriser",
+        "skill-persistent-computing",
+        "skill-project-hydration",
+        "skill-project-synthesis",
+        "skill-request-optimizer",
+        "skill-session-navigator",
+        "skill-session-synthesis",
+        "skill-session-synthesizer",
+        "skill-skill-creator",
+        "skill-summary",
+        "skill-task-manager",
+        "skill-tts-prompter",
+        "skill-video-generator",
+        "skill-webapp-factory",
+        "skill-y-menu",
+        "skill-yos-cleanmyapps",
+        "skill-yos-mac-bridge",
+        "skill-yos-voice"
+      ]
+    },
+    "slides-generation": {
+      "name": "Slides Generation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-canva-mcp",
+        "skill-credit-optimizer",
+        "skill-gws-best-practices"
+      ]
+    },
+    "mcp-tool-invocation": {
+      "name": "MCP Tool Invocation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-canva-mcp",
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-hydrater",
+        "skill-manus-config",
+        "skill-memoriser",
+        "skill-memory-manager",
+        "skill-persistent-computing",
+        "skill-project-hydration",
+        "skill-prompt-optimizer",
+        "skill-tool-router",
+        "skill-yos-mac-bridge",
+        "skill-yos-optimizer"
+      ]
+    },
+    "pdf-processing": {
+      "name": "PDF Processing",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-canva-mcp",
+        "skill-excel-generator",
+        "skill-file-organizer",
+        "skill-github-gem-seeker",
+        "skill-memoriser",
+        "skill-skill-creator"
+      ]
+    },
+    "image-generation": {
+      "name": "Image Generation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-canva-mcp",
+        "skill-imagegen",
+        "skill-music-prompter",
+        "skill-prompt-optimizer",
+        "skill-tool-router",
+        "skill-video-generator",
+        "skill-yos-mac-bridge"
+      ]
+    },
+    "design-creation": {
+      "name": "Design Creation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-canva-mcp",
+        "skill-yos-mmm"
+      ]
+    },
+    "text-generation": {
+      "name": "Text Generation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-dev",
+        "skill-excel-generator",
+        "skill-hydrater",
+        "skill-project-hydration",
+        "skill-prompt-optimizer",
+        "skill-tts-prompter",
+        "skill-video-generator",
+        "skill-yos-mmm",
+        "skill-yos-voice"
+      ]
+    },
+    "prompt-engineering": {
+      "name": "Prompt Engineering",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-complex-webapp-builder",
+        "skill-cost",
+        "skill-credit-optimizer",
+        "skill-request-optimizer"
+      ]
+    },
+    "workflow-automation": {
+      "name": "Workflow Automation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-cost",
+        "skill-github-gem-seeker",
+        "skill-harpa-grid",
+        "skill-manus-config",
+        "skill-persistent-computing",
+        "skill-session-navigator",
+        "skill-tool-router",
+        "skill-yos-mac-bridge",
+        "skill-yos-optimizer"
+      ]
+    },
+    "context-assembly": {
+      "name": "Context Assembly",
+      "module": "Y-CTX",
+      "owners": [
+        "skill-cost",
+        "skill-dev",
+        "skill-hydrater",
+        "skill-project-hydration",
+        "skill-prompt-optimizer",
+        "skill-video-generator",
+        "skill-yos-mmm"
+      ]
+    },
+    "session-management": {
+      "name": "Session Management",
+      "module": "Y-MEM",
+      "owners": [
+        "skill-dev",
+        "skill-eta",
+        "skill-hydrater",
+        "skill-project-hydration",
+        "skill-project-synthesis",
+        "skill-session-navigator",
+        "skill-session-synthesis",
+        "skill-session-synthesizer",
+        "skill-status",
+        "skill-summary",
+        "skill-yos-mmm"
+      ]
+    },
+    "spreadsheet-creation": {
+      "name": "Spreadsheet Creation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-excel-generator"
+      ]
+    },
+    "audio-generation": {
+      "name": "Audio Generation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-github-gem-seeker",
+        "skill-memoriser",
+        "skill-music-prompter",
+        "skill-tts-prompter",
+        "skill-video-generator",
+        "skill-yos-cleanmyapps",
+        "skill-yos-voice"
+      ]
+    },
+    "video-generation": {
+      "name": "Video Generation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-github-gem-seeker",
+        "skill-memoriser",
+        "skill-tts-prompter",
+        "skill-video-generator"
+      ]
+    },
+    "github-integration": {
+      "name": "GitHub Integration",
+      "module": "Y-DEV",
+      "owners": [
+        "skill-github-gem-seeker",
+        "skill-internet-skill-finder",
+        "skill-memory-manager",
+        "skill-session-synthesizer",
+        "skill-webapp-factory"
+      ]
+    },
+    "content-synthesis": {
+      "name": "Content Synthesis",
+      "module": "Y-CTX",
+      "owners": [
+        "skill-hydrater",
+        "skill-project-hydration",
+        "skill-session-navigator",
+        "skill-session-synthesizer"
+      ]
+    },
+    "audit-logging": {
+      "name": "Audit Logging",
+      "module": "Y-LOG",
+      "owners": [
+        "skill-hydrater",
+        "skill-music-prompter"
+      ]
+    },
+    "n8n-automation": {
+      "name": "n8n Automation",
+      "module": "Y-ORC",
+      "owners": [
+        "skill-persistent-computing"
+      ]
+    },
+    "data-analysis": {
+      "name": "Data Analysis",
+      "module": "Y-CTX",
+      "owners": [
+        "skill-session-navigator",
+        "skill-stock-analysis",
+        "skill-task-manager",
+        "skill-yos-mmm"
+      ]
+    },
+    "knowledge-management": {
+      "name": "Knowledge Management",
+      "module": "Y-MEM",
+      "owners": [
+        "skill-session-synthesizer"
+      ]
+    },
+    "task-tracking": {
+      "name": "Task Tracking",
+      "module": "Y-LOG",
+      "owners": [
+        "skill-skill-creator",
+        "skill-video-generator"
+      ]
+    }
+  },
+  "skills_count": 51,
+  "capabilities_count": 36
+}

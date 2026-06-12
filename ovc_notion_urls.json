@@ -1,0 +1,9 @@
+{
+  "Y-OS Operational Value Chain v1": "ERR:   unknown tool call [tool_name] [flags]\n\nFlags:\n  -h, --help           help for call\n  -i, --input string   Tool input as a JSON string\n\nGlobal Flags:\n  -s, --server string   specify the server name\n\n",
+  "Role Definitions v1 \u2014 OVC": "ERR:   unknown tool call [tool_name] [flags]\n\nFlags:\n  -h, --help           help for call\n  -i, --input string   Tool input as a JSON string\n\nGlobal Flags:\n  -s, --server string   specify the server name\n\n",
+  "Communication Contracts v1 \u2014 OVC": "https://app.notion.com/p/37d35e218cf881ecb100d799592ad1e8",
+  "Governance Model v1 \u2014 OVC": "https://app.notion.com/p/37d35e218cf88164bbf1f9d33ebbf575",
+  "Strategic-to-Execution Flow v1": "https://app.notion.com/p/37d35e218cf881e580cce09108473b8e",
+  "Future Organization Expansion v1": "https://app.notion.com/p/37d35e218cf88138ba84ca0530b4cc94",
+  "ADR-0009: Operational Value Chain": "https://app.notion.com/p/37d35e218cf881c9ad8de97ef46d7083"
+}

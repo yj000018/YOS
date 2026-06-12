@@ -142,3 +142,6 @@ over time.
 The organization itself becomes an adaptive system.
 
 > **Y-OS Law #9:** No agent may define itself. The organization defines agents. CODO (Saraswati) is the custodian of organizational design.
+
+## Y-OS Law #10
+> **The Operational Value Chain is immutable. No execution may bypass Strategy, and no delivery may bypass Learning. The flow of intent to execution to evolution must remain unbroken.**

@@ -1,0 +1,30 @@
+# Impact Analysis v1.1
+
+**Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)
+
+## Overview
+This document analyzes the impact of the v1.1 Architectural Corrections on the existing Y-OS ecosystem.
+
+## 1. Impact on Roles
+**Impact: Zero.**
+- Krishna, Ganesha, Brahma, Hanuman, Saraswati, and Lakshmi remain exactly as defined.
+- Their missions, authority, and communication contracts are unchanged.
+
+## 2. Impact on the Operational Value Chain
+**Impact: Zero.**
+- The flow `Strategy → Execution Planning → Design → Build → Delivery → Learning` is fully preserved.
+- Law #10 remains absolute.
+
+## 3. Impact on the Artifact Layer
+**Impact: Zero.**
+- ADR-0012 and the Artifact State Machine are preserved verbatim.
+- Artifacts remain the immutable system of record connecting the organization.
+
+## 4. Impact on Foundational Principles
+**Impact: Additive.**
+- Law #11 is preserved.
+- The principle *"Roles are organizational interfaces. Layers are the enduring architecture."* is now formally elevated to a core architectural axiom, clarifying the distinction between the ephemeral nature of agents/tools and the permanence of the system structure.
+
+## 5. Systemic Benefits
+- **Future-Proofing:** By decoupling tools from layers, Y-OS can now upgrade its Memory systems or LLM capabilities without triggering an organizational redesign.
+- **Clarity:** The distinction between an Execution Role (who is responsible) and a Capability (what does the work) prevents future governance confusion.

@@ -13,9 +13,11 @@ To maintain the integrity of the Artifact Registry and ensure Y-ORC can route re
 * **Mission Identity:** Every artifact MUST belong to a `Mission ID`. Orphans are strictly forbidden.
 * **Lineage Continuity:** Every non-root artifact MUST have a `Parent Artifact`.
 * **Terminality:** Every `Consumed` artifact MUST have at least one `Child Artifact`, unless it is explicitly defined as a terminal artifact type (e.g., Learning Report).
+* **Production Gate:** An artifact cannot be **produced** until its parent is accepted. (Note: the artifact is produced after parent acceptance — it is not the consumption that is gated, but the production itself.)
 
 ## 3. State Transition Rules
 
+* **Production Gate:** An artifact MUST NOT be created (produced) unless its Parent Artifact is in `Accepted` state.
 * **Acceptance:** An artifact transitioning to `Accepted` MUST have an `Accepted Date`.
 * **Rejection:** An artifact transitioning to `Rejected` MUST have `Rejection Notes` populated.
 * **Consumption:** An artifact transitioning to `Consumed` MUST have a `Consumed Date`.

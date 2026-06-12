@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-06-12T23:43:12.577281",
+  "metrics": {
+    "total_artifacts": 8,
+    "artifacts_in_draft": 0,
+    "artifacts_in_review": 0,
+    "total_missions": 1,
+    "active_missions": 0,
+    "blocked_missions": 0,
+    "completed_missions": 1
+  },
+  "missions": [
+    {
+      "id": "MISS-E2E-V1",
+      "name": "First End-to-End Run",
+      "status": "Completed",
+      "health": "Green",
+      "current_phase": "Learning",
+      "artifacts": [
+        "ART-E2E-007",
+        "ART-E2E-006",
+        "ART-E2E-004b",
+        "ART-E2E-002",
+        "ART-E2E-004a",
+        "ART-E2E-003",
+        "ART-E2E-005",
+        "ART-E2E-001"
+      ]
+    }
+  ],
+  "open_loops": [
+    {
+      "id": "OL-001",
+      "mission_id": "MISS-E2E-V1",
+      "artifact_id": "ART-E2E-007",
+      "rule_id": "L-02",
+      "severity": "P3",
+      "assignee": "Saraswati",
+      "description": "Terminal artifact lacks explicit Archived Date."
+    }
+  ],
+  "ceo_action_queue": []
+}

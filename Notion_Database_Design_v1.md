@@ -1,0 +1,31 @@
+# Notion Database Design v1
+
+**Status:** Official | **Date:** 2026-06-12 | **Owner:** Chief Architect (Brahma)
+
+## Implementation Details
+The Artifact Registry MVP will be implemented as a Notion Database.
+
+## Properties Mapping
+
+| Notion Property Name | Notion Property Type | Notes |
+| :--- | :--- | :--- |
+| **Name (Artifact ID)** | Title | Auto-generated or manually standardized format. |
+| **Artifact Type** | Select | Options: Strategy Brief, Execution Plan, Architecture Package, Build Artifact, Build Report, Delivery Report, Learning Report. |
+| **Mission ID** | Text | |
+| **Producer** | Select | Options: CEO, Krishna, Ganesha, Brahma, Hanuman, Saraswati, Lakshmi. |
+| **Consumer** | Select | Options: CEO, Krishna, Ganesha, Brahma, Hanuman, Saraswati, Lakshmi, System. |
+| **Status** | Status | Groups: To-Do (Draft), In Progress (Ready For Review), Done (Accepted, Consumed, Archived), Canceled (Rejected, Superseded). |
+| **Version** | Number | |
+| **Created Date** | Created time | Auto-populated by Notion. |
+| **Updated Date** | Last edited time | Auto-populated by Notion. |
+| **Parent Artifact** | Relation | Self-referencing relation to the Artifact Registry DB. |
+| **Child Artifact** | Relation | Self-referencing relation (syncs with Parent Artifact). |
+| **URI** | URL | |
+| **Acceptance Notes** | Text | |
+| **Rejection Notes** | Text | |
+
+## Default Views
+1. **Active Artifacts:** Filter: Status is NOT Archived AND NOT Superseded.
+2. **Review Queue:** Filter: Status IS Ready For Review. (Used by Consumers to find work).
+3. **Rejected Artifacts:** Filter: Status IS Rejected. (Used by Producers to fix work).
+4. **Mission View:** Grouped by Mission ID.

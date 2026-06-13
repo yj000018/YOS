@@ -1,7 +1,7 @@
 # ADR-0027: Context Continuity Validation (CCV-001)
 
 **Date:** 2026-06-13  
-**Status:** Accepted  
+**Status:** Accepted with clarified interpretation  
 **Owner:** Chief Architect (Brahma)
 
 ## Context
@@ -15,8 +15,14 @@ We ran the CCV-001 test using the design of CRT Runtime v1 as the test mission.
 ## Decision
 
 Y-OS adopts the **Context Pack Standard v1** as the canonical mechanism for cognitive continuity.
-All workers will operate in **stateless, fresh LLM sessions** (Mode B).
-We will not rely on hidden conversation history.
+All workers will operate in **stateless, fresh LLM sessions** (Mode B) by default.
+
+Stateful sessions may still be used as optional provider-specific cache or acceleration mechanisms, but they are not the source of truth and must never replace Context Packs.
+
+**Canonical Rule:**
+- Context Pack = source of cognitive continuity.
+- Stateful session = optional optimization.
+- Registry + Artifacts = source of organizational truth.
 
 ## Validation Evidence
 
@@ -25,7 +31,9 @@ The A/B/C test demonstrated:
 - **Mode B (Fresh Session + Context Pack):** Scored 45/45 (136% of Mode A). Perfect adherence to constraints, doctrine, and output format.
 - **Mode C (Hybrid):** Scored 42/45. Good, but verbose and unnecessary given Mode B's performance.
 
-**Conclusion:** Mode B (Stateless Context Pack) is superior to stateful history. It forces the LLM to strictly adhere to the current state and constraints without being confused by past conversational turns.
+**Conclusion:** Mode B — Fresh Session + Context Pack — passed the first controlled validation test and is accepted as the canonical baseline for Y-OS cognitive continuity.
+
+*Note: CCV-001 validates the direction, not the entire provider landscape. Initial test evidence shows that a well-structured Context Pack can outperform an unstructured live history in a controlled Y-OS task. More provider-level tests are required before generalizing across all LLMs and task types.*
 
 ## Consequences
 

@@ -1,7 +1,8 @@
-# Y-OS Master Architecture Atlas v1
+# Y-OS Master Architecture Atlas v1.1
 
 **Date:** 2026-06-13  
-**Status:** Canonical Reference — FROZEN  
+**Revised:** 2026-06-13  
+**Status:** Canonical Reference — Corrected  
 **Author:** Brahma (Chief Architect) / Manus AI
 
 > *"A new architect should be able to understand Y-OS completely by reading this document."*
@@ -89,13 +90,13 @@ Direct agent-to-agent communication is prohibited. All communication occurs via 
 
 | Role | Agent | Mission | Artifacts Produced | Artifacts Consumed |
 | :--- | :--- | :--- | :--- | :--- |
-| **CEO** | Yannick | Vision, strategy, governance | Directives | CEO Briefings |
-| **CSO** | Krishna | Research, strategy | Strategy Briefs, Execution Plans | Directives |
-| **COO** | Ganesha | Execution, delivery | Build Artifacts, Reports | Execution Plans |
-| **Chief Architect** | Brahma | Design, ADRs | Architecture Packages | Strategy Briefs |
-| **Lead Builder** | Hanuman | Deployment, handoff | Delivery Reports | Build Artifacts |
-| **ECO** | Lakshmi | Governance, observability | CEO Briefings | All (read-only) |
-| **CODO** | Saraswati | Knowledge, learning | Learning Reports | Delivery Reports |
+| **CEO** | Yannick | Vision, strategy, governance | Directives | CEO Briefings, Delivery Reports |
+| **CSO** | Krishna | Defines *what* and *why*. Strategy only. | Strategy Briefs | Directives |
+| **COO** | Ganesha | Defines *when* and *who*. Owns delivery validation. | Execution Plans, Delivery Reports | Strategy Briefs, Build Reports |
+| **Chief Architect** | Brahma | Defines *how*. Does not build. | Architecture Packages, ADRs | Execution Plans |
+| **Lead Builder** | Hanuman | Builds. Does not redesign architecture. | Build Artifact, Build Report | Architecture Packages |
+| **ECO** | Lakshmi | Provides visibility. Read-only unless delegated by CEO. | CEO Briefings, Open Loop Reports | All (read-only) |
+| **CODO** | Saraswati | Improves the organization. Produces doctrine updates. | Learning Reports, Governance Improvements | Delivery Reports |
 
 ---
 
@@ -120,12 +121,13 @@ Direct agent-to-agent communication is prohibited. All communication occurs via 
 
 | Phase | Producer | Consumer | Artifact | Acceptance Rules |
 | :--- | :--- | :--- | :--- | :--- |
-| **Strategy** | CEO | Krishna | Directive | Must have clear objective. |
-| **Planning** | Krishna | Brahma | Strategy Brief | Must define scope and constraints. |
-| **Design** | Brahma | Ganesha | Architecture Package | Must resolve all technical unknowns. |
-| **Build** | Ganesha | Hanuman | Build Artifact | Must pass all tests/constraints. |
-| **Delivery** | Hanuman | Saraswati | Delivery Report | Must be deployed/accessible. |
-| **Learning** | Saraswati | CEO | Learning Report | Must extract reusable knowledge. |
+| **Strategy** | CEO → Krishna (CSO) | Ganesha (COO) | Strategy Brief | Must define what and why. |
+| **Execution Planning** | Ganesha (COO) | Brahma (Chief Architect) | Execution Plan | Must define when and who. |
+| **Design** | Brahma (Chief Architect) | Hanuman (Lead Builder) | Architecture Package | Must resolve all technical unknowns. |
+| **Build** | Hanuman (Lead Builder) | Ganesha (COO) | Build Artifact + Build Report | Must pass all tests/constraints. |
+| **Delivery** | Ganesha (COO) | CEO / Krishna | Delivery Report | Must be deployed/accessible. |
+| **Learning** | Saraswati (CODO) | Y-OS System / CEO | Learning Report | Must extract reusable knowledge. |
+| **Visibility** (parallel) | Lakshmi (ECO) | CEO | CEO Briefing, Open Loop Report | Read-only across all artifacts. |
 
 ---
 
@@ -252,7 +254,11 @@ Y-OS uses **Stateless Context Packs** to prevent cognitive drift and vendor lock
 
 ![Context Continuity](diagrams/diagram_06.png)
 
-**Validated by CCV-001:** Mode B (Fresh Session + Context Pack) scored 136% of Mode A (Live History). Stateless is superior.
+**Validated by CCV-001:** Mode B (Fresh Session + Context Pack) passed the first controlled validation test and is accepted as the canonical baseline for Y-OS cognitive continuity. Stateful sessions may be used as optional provider-specific cache or acceleration mechanisms, but they are not the source of truth and must never replace Context Packs.
+
+> **Canonical Rule:** Context Pack = source of cognitive continuity. Stateful session = optional optimization. Registry + Artifacts = source of organizational truth.
+
+*Note: CCV-001 validates the direction, not the entire provider landscape. More provider-level tests are required before generalizing across all LLMs and task types.*
 
 ---
 
@@ -281,11 +287,13 @@ Artifact → Y-ORC → Capability → ART → Worker → CRT → Model → Artif
 | Step | Actor | Input | Output |
 | :--- | :--- | :--- | :--- |
 | 1 | CEO | — | `Directive` |
-| 2 | Y-ORC → Krishna | Directive | `Strategy Brief` |
-| 3 | Y-ORC → Krishna | Strategy Brief | `Execution Plan` |
-| 4 | Y-ORC → Ganesha | Execution Plan | `Build Artifact` (raw data) |
-| 5 | Y-ORC → Saraswati | Build Artifact | `Learning Report` |
-| 6 | Lakshmi | All artifacts | `CEO Briefing` |
+| 2 | Y-ORC → Krishna (CSO) | Directive | `Strategy Brief` |
+| 3 | Y-ORC → Ganesha (COO) | Strategy Brief | `Execution Plan` |
+| 4 | Y-ORC → Brahma (Chief Architect) | Execution Plan | `Architecture Package` |
+| 5 | Y-ORC → Hanuman (Lead Builder) | Architecture Package | `Build Artifact` + `Build Report` |
+| 6 | Y-ORC → Ganesha (COO) | Build Report | `Delivery Report` |
+| 7 | Y-ORC → Saraswati (CODO) | Delivery Report | `Learning Report` |
+| 8 | Lakshmi (ECO) | All artifacts (read-only) | `CEO Briefing` + `Open Loop Report` |
 
 All steps are autonomous, asynchronous, and fully observable in the Registry.
 

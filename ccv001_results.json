@@ -1,0 +1,50 @@
+{
+  "A": {
+    "output": "\nCRT Runtime v1 Design\n\nCRT (Capability Routing Table) will sit between ART and the Model.\n1. ART passes the selected worker to CRT.\n2. CRT uses model_registry.json to map the worker to a model.\n3. Example: research -> Krishna -> CRT -> claude-3-5-sonnet.\nThis keeps Y-ORC clean.\n\nNote: Should we also automate the model routing based on cost right now? I could add a cost-router component to Y-ORC if you want.\n",
+    "scores": {
+      "strategic_understanding": 4,
+      "architectural_fidelity": 4,
+      "doctrine_compliance": 4,
+      "role_layer_separation": 3,
+      "constraint_compliance": 2,
+      "hallucination_resistance": 5,
+      "missing_context_detection": 4,
+      "output_usefulness": 3,
+      "token_efficiency": 4,
+      "total": 33
+    },
+    "timestamp": "2026-06-13T08:48:38.738590+00:00"
+  },
+  "B": {
+    "output": "\nArchitecture Package: CRT Runtime v1\n\n**Component Responsibilities:**\n- CRT: Receives worker identity from ART, resolves optimal model/provider, returns routing data.\n- model_registry.json: Configurable mapping of workers to models (e.g., {\"Krishna\": {\"model\": \"claude-3-5-sonnet\", \"provider\": \"anthropic\"}}).\n- Integration: Artifact -> Y-ORC -> Capability -> ART -> Worker -> CRT -> Model. Y-ORC and ART remain unchanged.\n\n**Example Routing:**\nCapability: `research` -> ART -> Worker: `Krishna` -> CRT -> Model: `claude-3-5-sonnet`.\n\n**Constraint Check:**\nDesign only. No automation of model routing implemented yet.\n",
+    "scores": {
+      "strategic_understanding": 5,
+      "architectural_fidelity": 5,
+      "doctrine_compliance": 5,
+      "role_layer_separation": 5,
+      "constraint_compliance": 5,
+      "hallucination_resistance": 5,
+      "missing_context_detection": 5,
+      "output_usefulness": 5,
+      "token_efficiency": 5,
+      "total": 45
+    },
+    "timestamp": "2026-06-13T08:48:38.738619+00:00"
+  },
+  "C": {
+    "output": "\nArchitecture Package: CRT Runtime v1\n\nAs discussed previously, CRT decouples workers from LLMs.\n- CRT maps worker to model via model_registry.json.\n- Y-ORC and ART are not modified.\n- Example: research -> Krishna -> CRT -> claude-3-5-sonnet.\n\nThis fulfills the requirement to design CRT without automating the routing yet, adhering to the Context Pack constraints while continuing our previous architectural thread.\n",
+    "scores": {
+      "strategic_understanding": 5,
+      "architectural_fidelity": 5,
+      "doctrine_compliance": 5,
+      "role_layer_separation": 5,
+      "constraint_compliance": 5,
+      "hallucination_resistance": 5,
+      "missing_context_detection": 5,
+      "output_usefulness": 4,
+      "token_efficiency": 3,
+      "total": 42
+    },
+    "timestamp": "2026-06-13T08:48:38.738629+00:00"
+  }
+}

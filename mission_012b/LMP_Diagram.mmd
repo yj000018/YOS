@@ -1,0 +1,42 @@
+flowchart TD
+    A[Live Interaction\nConversation · Events · Artifacts] --> B
+
+    subgraph TRANSFORM["TRANSFORM — Stages 1–4"]
+        B["1. CAPTURE\nRaw Event Stream"]
+        B --> C["2. COMPRESS\nNoise removed · Signal preserved"]
+        C --> D["3. DELTA\nSession Delta YAML\nOnly changes since last state"]
+        D --> E["4. SUMMARIZE\nRolling Session Summary\nContinuously updated"]
+    end
+
+    E --> F
+    E --> G
+
+    subgraph PERSIST["PERSIST — Stage 5"]
+        F["5. ARCHIVE\nFull Markdown Record\nAudit · Fallback only"]
+    end
+
+    subgraph PROMOTE["PROMOTE — Stage 6"]
+        G["6. CANONICALIZE\nLakshmi validates\nConstitution · ADRs · Registry · Doctrine"]
+    end
+
+    G --> H
+
+    subgraph ASSEMBLE["ASSEMBLE — Stage 7"]
+        H["7. COMPILE — CCR Runtime v2\nContext Pack YAML\nCanonical Memory + Delta + Lineage"]
+    end
+
+    H --> I
+
+    subgraph DELIVER["DELIVER — Stage 8"]
+        I{"Context Router\nMODE-B or MODE-D?"}
+        I -->|"MODE-B default"| J["Worker · Model\nContext Pack Only"]
+        I -->|"MODE-D governance"| K["Worker · Model\nContext Pack + Canonical Memory"]
+    end
+
+    F -.->|"Escalation only"| I
+
+    style TRANSFORM fill:#1a1a2e,stroke:#4a90d9,color:#fff
+    style PERSIST fill:#1a2e1a,stroke:#4a9d4a,color:#fff
+    style PROMOTE fill:#2e1a1a,stroke:#d94a4a,color:#fff
+    style ASSEMBLE fill:#1a1a2e,stroke:#9d4ad9,color:#fff
+    style DELIVER fill:#2e2a1a,stroke:#d9a44a,color:#fff

@@ -1,0 +1,28 @@
+graph TD
+    subgraph Executive & Visibility
+        CEO[CEO]
+        CP[Control Plane / Lakshmi]
+    end
+    
+    subgraph Orchestration
+        YORC[Y-ORC]
+        ART[ART]
+        CRT[CRT]
+    end
+    
+    subgraph Execution & Design
+        K[Krishna / Strategy]
+        B[Brahma / Design]
+        G[Ganesha / Build]
+    end
+    
+    subgraph Foundation
+        REG[Artifact Registry]
+        MEM[Memory Layer]
+    end
+
+    CEO --> CP
+    CP -.-> REG
+    YORC --> ART --> CRT
+    CRT --> K & B & G
+    K & B & G --> REG

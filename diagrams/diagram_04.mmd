@@ -1,0 +1,6 @@
+stateDiagram-v2
+    [*] --> Draft
+    Draft --> ReadyForExecution : Approved
+    ReadyForExecution --> InProgress : Y-ORC Picks Up
+    InProgress --> Consumed : Worker Produces Child
+    Consumed --> [*]

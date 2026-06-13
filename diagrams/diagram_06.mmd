@@ -1,0 +1,6 @@
+graph LR
+    REG[(Artifact Registry)] -->|Read| L[Lakshmi]
+    L -->|Generate| B[CEO Briefing]
+    L -->|Update| D[Executive Dashboard]
+    B --> CEO
+    D --> CEO

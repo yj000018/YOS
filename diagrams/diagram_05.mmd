@@ -1,0 +1,6 @@
+graph BT
+    L[Learning Report] -->|Consumes| D[Delivery Report]
+    D -->|Consumes| B[Build Artifact]
+    B -->|Consumes| A[Architecture Package]
+    A -->|Consumes| S[Strategy Brief]
+    S -->|Consumes| C[CEO Directive]

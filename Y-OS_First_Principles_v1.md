@@ -71,3 +71,15 @@ Autonomous Organization
 ```
 
 > **Constitutional Reference:** These First Principles are protected by the Y-OS Constitution v1 (ADR-0024). They cannot be modified without a Constitutional Amendment (CEO/Founder override).
+
+
+---
+
+## Navigation — Y-OS Canonical Map
+
+> **Foundation frozen.** See [Y-OS Canonical Map v1](Y-OS_Canonical_Map_v1.md) for the complete doctrine index.
+
+```text
+Constitution → First Principles → Identity → Operational Cycle
+→ Organization → Governance → Control Plane → Orchestration → Execution
+```

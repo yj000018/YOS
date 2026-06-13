@@ -107,3 +107,15 @@ The system remains Y-OS if and only if:
 4.  The separation between state (Registry), observation (Control Plane), and execution (Agents) is maintained.
 
 If these conditions are met, the organization survives perfectly, even if 100% of the code and AI models have changed.
+
+
+---
+
+## Navigation — Y-OS Canonical Map
+
+> **Foundation frozen.** See [Y-OS Canonical Map v1](Y-OS_Canonical_Map_v1.md) for the complete doctrine index.
+
+```text
+Constitution → First Principles → Identity → Operational Cycle
+→ Organization → Governance → Control Plane → Orchestration → Execution
+```

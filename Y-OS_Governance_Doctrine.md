@@ -64,3 +64,15 @@ Autonomous Organization
 ```
 
 > **Constitutional Reference:** Governance precedes orchestration — this is Constitutional Principle #5 under Y-OS Constitution v1 (ADR-0024). The Control Plane must exist and be operational before any autonomous execution layer (Y-ORC) may be activated.
+
+
+---
+
+## Navigation — Y-OS Canonical Map
+
+> **Foundation frozen.** See [Y-OS Canonical Map v1](Y-OS_Canonical_Map_v1.md) for the complete doctrine index.
+
+```text
+Constitution → First Principles → Identity → Operational Cycle
+→ Organization → Governance → Control Plane → Orchestration → Execution
+```

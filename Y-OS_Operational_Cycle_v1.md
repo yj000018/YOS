@@ -66,3 +66,15 @@ Y-ORC
         ↓
 Autonomous Organization
 ```
+
+
+---
+
+## Navigation — Y-OS Canonical Map
+
+> **Foundation frozen.** See [Y-OS Canonical Map v1](Y-OS_Canonical_Map_v1.md) for the complete doctrine index.
+
+```text
+Constitution → First Principles → Identity → Operational Cycle
+→ Organization → Governance → Control Plane → Orchestration → Execution
+```

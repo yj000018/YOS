@@ -1,0 +1,55 @@
+active_constraints:
+- Schema v2.1 required
+- Source Artifact Manifest required
+compiler_version: CCR-v1.1
+compression_level: COMPRESSED
+context_pack_id: CP-M005B-81EC89
+current_state: Patch validation in progress
+expected_output_artifact: Validation Report
+freshness_timestamp: '2026-06-13T13:45:40.060677+00:00'
+human_override_status: NONE
+known_risks: []
+lakshmi_risk_score: 0
+lakshmi_verdict: PENDING
+missing_context: []
+mission_id: MISSION-005B-VALIDATION
+mission_objective: Validate CCR Runtime v1.1 governance patch compliance
+open_loops: []
+output_format: Markdown
+parent_artifact_id: ART-M005-DCD41E
+relevant_adrs:
+- ADR-0030 v2 — CCR Runtime v1.1 ACCEPTED
+relevant_decisions:
+- CCR is mandatory before worker execution
+- Context Packs are artifacts
+relevant_doctrine:
+- CCR Runtime v1.1 Governance Patch
+relevant_laws:
+- Artifacts are the source of context truth
+schema_version: '2.1'
+source_artifact_manifest:
+  lineage_depth: 3
+  missing_context_disclosure: None — all required source artifacts present
+  omitted_context_summary: Governance Review (ART-M005-F4EA52) omitted — not required
+    for build task
+  source_artifact_ids:
+  - ART-M005-8A4718
+  - ART-M005-80F9D8
+  - ART-M005-DCD41E
+  source_artifact_types:
+  - CEO Directive
+  - Strategy Brief
+  - Architecture Package
+  source_artifact_versions:
+  - v1
+  - v1
+  - v1
+success_criteria:
+- All 7 v2.1 fields present
+- Lakshmi risk score < 20
+- 'Verdict: APPROVE'
+target_capability: build
+target_model: gpt-4o
+target_provider: openai
+target_worker: Hanuman
+token_budget: 2000

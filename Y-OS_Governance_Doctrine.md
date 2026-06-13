@@ -1,0 +1,34 @@
+# Y-OS Governance Doctrine
+
+**Owner:** Chief Architect (Brahma)  
+**Status:** Foundational Doctrine  
+**Date:** 2026-06-13  
+
+## The Necessity of Governance
+
+In an autonomous system, execution without governance is chaos. The Y-OS Governance Doctrine defines how the system maintains alignment, detects failures, and ensures that execution serves the strategic intent.
+
+## The Chain of Governance
+
+Governance in Y-OS is not a separate activity; it is an emergent property of the architecture itself. It follows a strict causal chain:
+
+1.  **Execution creates artifacts.**
+2.  **Artifacts create visibility.**
+3.  **Visibility creates governance.**
+4.  **Governance creates alignment.**
+5.  **Alignment creates organizational continuity.**
+
+If any link in this chain is broken, governance fails. 
+
+## The Control Plane Axioms
+
+The Control Plane is the mechanism that enforces this chain. Its value is defined by the consequences of its absence:
+
+*   **Without artifacts, agents forget.** (The system loses state).
+*   **Without lineage, artifacts become documents.** (The system loses context).
+*   **Without visibility, lineage becomes data.** (The system loses awareness).
+*   **Without governance, visibility becomes dashboards.** (The system loses control).
+
+**The Control Plane turns information into operational decisions.**
+
+It is the difference between a system that merely *records* what happened and a system that *dictates* what must happen next. By strictly adhering to this doctrine, Y-OS ensures that it remains a governed operating system, rather than an unmanaged collection of scripts.

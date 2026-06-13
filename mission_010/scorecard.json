@@ -1,0 +1,47 @@
+[
+  {
+    "mode": "E",
+    "name": "Canonical Memory + Context Pack + Session",
+    "exec_quality": 94.8,
+    "efficiency": 84.0,
+    "org_memory": 90,
+    "final": 91.3,
+    "tokens": 1595
+  },
+  {
+    "mode": "D",
+    "name": "Canonical Memory + Context Pack",
+    "exec_quality": 88.8,
+    "efficiency": 81.0,
+    "org_memory": 85,
+    "final": 86.2,
+    "tokens": 1439
+  },
+  {
+    "mode": "A",
+    "name": "Conversation Only",
+    "exec_quality": 87.8,
+    "efficiency": 81.0,
+    "org_memory": 80,
+    "final": 85.0,
+    "tokens": 511
+  },
+  {
+    "mode": "B",
+    "name": "Context Pack Only",
+    "exec_quality": 86.3,
+    "efficiency": 81.0,
+    "org_memory": 80,
+    "final": 84.1,
+    "tokens": 805
+  },
+  {
+    "mode": "C",
+    "name": "Conversation + Context Pack",
+    "exec_quality": 86.2,
+    "efficiency": 80.0,
+    "org_memory": 80,
+    "final": 83.8,
+    "tokens": 959
+  }
+]

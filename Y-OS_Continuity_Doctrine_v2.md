@@ -27,3 +27,33 @@ When an agent is replaced, the new agent does not need to be "trained" on the hi
 Because the Registry contains every Strategy Brief, every Architecture Package, and every Build Report—linked perfectly via the Lineage Model—the new agent instantly possesses the full context of the organization.
 
 The system remembers through artifacts, not through agents. Therefore, as long as the Registry and Lineage survive, Y-OS survives. The continuity of Y-OS is absolute.
+
+---
+
+## Related Doctrines
+
+> **See also: Y-OS Theory of Organization v1 (ADR-0022)** — the foundational theory from which this doctrine derives. The Continuity Doctrine describes *how* Y-OS survives change; the Theory of Organization provides the theoretical basis for *why* artifacts — not agents — are the unit of organizational survival.
+
+### Canonical Doctrine Stack
+
+```text
+First Principles
+        ↓
+Theory of Organization    ← foundational theory (ADR-0022)
+        ↓
+Doctrine                  ← you are here (Continuity Doctrine)
+        ↓
+Artifact Registry
+        ↓
+Artifact Lineage
+        ↓
+Mission Graph
+        ↓
+Control Plane
+        ↓
+Governance Signals
+        ↓
+Y-ORC
+        ↓
+Autonomous Organization
+```

@@ -32,3 +32,33 @@ The Control Plane is the mechanism that enforces this chain. Its value is define
 **The Control Plane turns information into operational decisions.**
 
 It is the difference between a system that merely *records* what happened and a system that *dictates* what must happen next. By strictly adhering to this doctrine, Y-OS ensures that it remains a governed operating system, rather than an unmanaged collection of scripts.
+
+---
+
+## Related Doctrines
+
+> **See also: Y-OS Theory of Organization v1 (ADR-0022)** — the foundational theory from which this doctrine derives. The Governance Doctrine defines the chain of control; the Theory of Organization establishes that governance is only possible because artifacts create persistent, observable state — not because agents are smart.
+
+### Canonical Doctrine Stack
+
+```text
+First Principles
+        ↓
+Theory of Organization    ← foundational theory (ADR-0022)
+        ↓
+Doctrine                  ← you are here (Governance Doctrine)
+        ↓
+Artifact Registry
+        ↓
+Artifact Lineage
+        ↓
+Mission Graph
+        ↓
+Control Plane
+        ↓
+Governance Signals
+        ↓
+Y-ORC
+        ↓
+Autonomous Organization
+```

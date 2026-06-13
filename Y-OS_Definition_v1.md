@@ -32,3 +32,33 @@ Y-OS provides the foundational services required for cognitive work:
 *   **User Space:** Executive Visibility (Lakshmi)
 
 It is an operating system where the processes are cognitive tasks rather than binary calculations.
+
+---
+
+## Related Doctrines
+
+> **See also: Y-OS Theory of Organization v1 (ADR-0022)** — the foundational theory from which this doctrine derives. The Definition states *what* Y-OS is; the Theory of Organization explains *why* an artifact-centric operating system constitutes an organization at all.
+
+### Canonical Doctrine Stack
+
+```text
+First Principles
+        ↓
+Theory of Organization    ← foundational theory (ADR-0022)
+        ↓
+Doctrine                  ← you are here (Y-OS Definition)
+        ↓
+Artifact Registry
+        ↓
+Artifact Lineage
+        ↓
+Mission Graph
+        ↓
+Control Plane
+        ↓
+Governance Signals
+        ↓
+Y-ORC
+        ↓
+Autonomous Organization
+```

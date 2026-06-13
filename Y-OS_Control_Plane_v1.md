@@ -68,3 +68,33 @@ The establishment of the Control Plane unlocks the following future integrations
 *   Governance anomaly detection
 *   Mission replay
 *   Historical learning via Saraswati
+
+---
+
+## Related Doctrines
+
+> **See also: Y-OS Theory of Organization v1 (ADR-0022)** — the foundational theory from which this architecture derives. The Control Plane is the technical implementation of the organizational theory: Registry = institutional memory, Lineage = organizational causality, Lakshmi = governance visibility, Open Loops = governance signals.
+
+### Canonical Doctrine Stack
+
+```text
+First Principles
+        ↓
+Theory of Organization    ← foundational theory (ADR-0022)
+        ↓
+Doctrine
+        ↓
+Artifact Registry
+        ↓
+Artifact Lineage
+        ↓
+Mission Graph
+        ↓
+Control Plane             ← you are here
+        ↓
+Governance Signals
+        ↓
+Y-ORC
+        ↓
+Autonomous Organization
+```

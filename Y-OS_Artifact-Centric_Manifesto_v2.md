@@ -29,3 +29,33 @@ We chose the artifact-centric model because it is the only way to achieve **Scal
 *   **Continuity:** When the system crashes, we do not lose our minds. We just boot up new agents, point them at the Registry, and they pick up exactly where the last ones left off.
 
 Y-OS is not a chat system. It is a factory that produces artifacts.
+
+---
+
+## Related Doctrines
+
+> **See also: Y-OS Theory of Organization v1 (ADR-0022)** — the foundational theory from which this doctrine derives. The Manifesto declares the architectural inversion; the Theory of Organization provides the organizational logic that makes that inversion not just a design choice but a structural necessity.
+
+### Canonical Doctrine Stack
+
+```text
+First Principles
+        ↓
+Theory of Organization    ← foundational theory (ADR-0022)
+        ↓
+Doctrine                  ← you are here (Artifact-Centric Manifesto)
+        ↓
+Artifact Registry
+        ↓
+Artifact Lineage
+        ↓
+Mission Graph
+        ↓
+Control Plane
+        ↓
+Governance Signals
+        ↓
+Y-ORC
+        ↓
+Autonomous Organization
+```

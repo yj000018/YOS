@@ -39,3 +39,33 @@ Visibility without action is merely a dashboard. Visibility must generate specif
 ## Conclusion
 
 These six principles form a closed, self-sustaining loop. They remain valid regardless of implementation. Whether Y-OS is powered by GPT-4o, Claude, or human operators, these principles ensure the organization remains coherent, traceable, and governed.
+
+---
+
+## Related Doctrines
+
+> **See also: Y-OS Theory of Organization v1 (ADR-0022)** — the foundational theory from which this doctrine derives. The First Principles define the operational physics of Y-OS; the Theory of Organization explains *why* those physics produce an organization rather than a collection of scripts.
+
+### Canonical Doctrine Stack
+
+```text
+First Principles          ← you are here
+        ↓
+Theory of Organization    ← foundational theory (ADR-0022)
+        ↓
+Doctrine
+        ↓
+Artifact Registry
+        ↓
+Artifact Lineage
+        ↓
+Mission Graph
+        ↓
+Control Plane
+        ↓
+Governance Signals
+        ↓
+Y-ORC
+        ↓
+Autonomous Organization
+```

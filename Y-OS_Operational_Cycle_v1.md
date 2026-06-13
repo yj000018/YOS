@@ -36,3 +36,33 @@ This cycle is not merely a sequence of events; it is a mechanism of transformati
 Without this cycle, agents are just spinning their wheels, producing disconnected outputs. By forcing all execution through the cycle of Artifact → State → Visibility → Decision, Y-OS ensures that every action contributes to the permanent, governed structure of the organization. 
 
 The cycle never terminates. It is the perpetual motion engine of Y-OS.
+
+---
+
+## Related Doctrines
+
+> **See also: Y-OS Theory of Organization v1 (ADR-0022)** — the foundational theory from which this doctrine derives. The Operational Cycle describes the *mechanism* of Y-OS; the Theory of Organization explains why this cycle constitutes organizational continuity rather than mere computation.
+
+### Canonical Doctrine Stack
+
+```text
+First Principles
+        ↓
+Theory of Organization    ← foundational theory (ADR-0022)
+        ↓
+Doctrine                  ← you are here (Operational Cycle)
+        ↓
+Artifact Registry
+        ↓
+Artifact Lineage
+        ↓
+Mission Graph
+        ↓
+Control Plane
+        ↓
+Governance Signals
+        ↓
+Y-ORC
+        ↓
+Autonomous Organization
+```

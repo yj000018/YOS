@@ -1,0 +1,140 @@
+[
+  {
+    "config": "A",
+    "name": "Session History Only",
+    "provider": "openai",
+    "tokens_in": 197,
+    "tokens_out": 306,
+    "total_tokens": 503,
+    "latency": 4.7,
+    "quality": 86.0,
+    "roi": 171.0,
+    "scores": {
+      "output_quality": 85,
+      "constitutional_compliance": 90,
+      "governance_compliance": 88,
+      "context_completeness": 80,
+      "hallucination_risk": 10,
+      "reproducibility": 82,
+      "token_efficiency": 78,
+      "org_memory_utilization": 92
+    },
+    "output": "**Recommended Architecture:** Hybrid Mode D+E with Adaptive Canonical Memory\n\n**Rationale:** The Hybrid Mode D+E architecture leverages Mode D's efficiency and cost-effectiveness while incorporating key components from Mode E that enhance quality through Canonical Memory. This approach offers a balanced trade-off between token cost and output quality. The integration of Mode E\u2019s Canonical Memory allows for selective high-quality processing where organizational memory is crucial, thereby preserving institutional knowledge and ensuring consistency across productions. The hybrid use allows scaling to hundreds of missions per day, meeting both quality demands and budget constraints while maintaining constitutional compliance by ensuring comprehensive processing.\n\n**Token Budget Estimate per Mission:** Approximately 75 tokens on average, combining 60 tokens for the core Mode D processing and an additional 15 tokens for targeted Mode E features, specifically Canonical Memory utilization.\n\n**Constitutional Compliance Assessment:** The proposed architecture will maintain strict adherence to constitutional requirements by utilizing Mode E\u2019s canonical memory selectively, ensuring data integrity and compliance across missions. This ensures that outputs remain consistent with organizational standards and ethical guidelines.\n\n**When to Use vs. When to Upgrade to Full Mode E:** Use the Hybrid Mode D+E architecture for routine operational missions where cost-efficiency and moderate quality are acceptable, especially when organizational memory plays a critical role. Upgrade to full Mode E when maximum quality is imperative due to high-stakes scenarios or when specific missions require comprehensive, nuanced processing that surpasses the hybrid model\u2019s capabilities, such as complex problem-solving tasks or strategic analysis that demands highest precision.",
+    "incremental_gain": 0.0
+  },
+  {
+    "config": "B",
+    "name": "Context Pack Only",
+    "provider": "openai",
+    "tokens_in": 326,
+    "tokens_out": 297,
+    "total_tokens": 623,
+    "latency": 5.3,
+    "quality": 87.8,
+    "roi": 140.9,
+    "scores": {
+      "output_quality": 85,
+      "constitutional_compliance": 90,
+      "governance_compliance": 88,
+      "context_completeness": 87,
+      "hallucination_risk": 10,
+      "reproducibility": 92,
+      "token_efficiency": 89,
+      "org_memory_utilization": 95
+    },
+    "output": "### Recommendation: Mode D-Prime (Enhanced Canonical Context)\n\n**Rationale:**\nMode D-Prime integrates Canonical Memory with a streamlined Context Pack, thus optimizing for quality-per-token and maintaining a high performance score close to that of Mode E. Canonical Memory, identified as the critical differentiator, facilitates the storage of essential conversational elements, allowing for efficient context recall and consistency without requiring excessive token usage. This approach ensures that Y-OS can handle numerous missions daily while maximally preserving organizational memory, making it both cost-effective and scalable.\n\n**Token Budget Estimate per Mission:**\nApproximately 300-350 tokens. This estimate includes allocating tokens for Canonical Memory prioritization and concise context supplementation.\n\n**Constitutional Compliance Assessment:**\nMode D-Prime aligns with constitutional mandates, ensuring both efficiency and data protection are respected. The integration of Canonical Memory supports adherence to governance and privacy compliance by carefully managing and storing essential information only.\n\n**Usage Guidelines:**\nMode D-Prime should be employed for standard operations with intensive mission throughput to maintain cost efficacy while ensuring high-quality output. Upgrade to full Mode E should be considered when mission-critical tasks demand the highest output quality, especially in scenarios requiring comprehensive data analysis or engagement complexity that surpasses the efficient threshold set by Mode D-Prime.\n\nBy leveraging the enhancements in Mode D-Prime, Y-OS balances performance, compliance, and cost, ensuring robust execution in routine deployments without sacrificing the option for higher precision tasks when necessary.",
+    "incremental_gain": 1.8
+  },
+  {
+    "config": "C",
+    "name": "Canonical Memory Only",
+    "provider": "openai",
+    "tokens_in": 304,
+    "tokens_out": 328,
+    "total_tokens": 632,
+    "latency": 3.9,
+    "quality": 87.0,
+    "roi": 137.7,
+    "scores": {
+      "output_quality": 85,
+      "constitutional_compliance": 90,
+      "governance_compliance": 90,
+      "context_completeness": 80,
+      "hallucination_risk": 10,
+      "reproducibility": 88,
+      "token_efficiency": 85,
+      "org_memory_utilization": 92
+    },
+    "output": "**Recommended Architecture: Adaptive Contextual Execution (ACE)**\n\n**Rationale:** The Adaptive Contextual Execution (ACE) architecture is designed to balance efficiency, cost, and constitutional compliance. ACE leverages intelligent context switching to optimize resource allocation and maintain high-quality outputs while minimizing token costs. This architecture adheres to the Preservation Principle by preserving organizational memory via robust data logging, aligned with Article III's Derivation Transparency. ACE respects Article V by ensuring that every autonomous action is governed by predefined protocols, allowing seamless integration with human oversight as per Article IV. Designed for scalability, ACE efficiently manages hundreds of missions daily by dynamically adjusting computational resources based on mission complexity.\n\n**Token Budget Estimate per Mission:** The ACE architecture is expected to incur a token cost of approximately 30 tokens per mission, depending on complexity. This estimate reflects a balance between accuracy and cost-efficiency, matching the need for quality in an intensive mission context.\n\n**Constitutional Compliance Assessment:** ACE fully complies with all constitutional requirements. The architecture supports Artifact Primacy and the Preservation Principle by ensuring all outputs and decisions are documented and traceable. It also upholds Human Override Primacy, providing interfaces for human intervention when necessary. Governance is maintained through deterministic protocols, aligning with Governance Before Autonomy principles.\n\n**When to Use vs. Upgrade to Full Mode E:** Utilize ACE as the default operational mode for routine missions, ensuring low-cost, reliable execution. Upgrade to full Mode E when encountering complex, high-stakes missions requiring deeper contextual understanding and finer-grained governance. Mode E should be reserved for scenarios where cutting-edge autonomous decision-making is essential, justifying its higher token expenditure.",
+    "incremental_gain": 1.0
+  },
+  {
+    "config": "D",
+    "name": "Context Pack + Canonical Memory",
+    "provider": "anthropic",
+    "tokens_in": 579,
+    "tokens_out": 500,
+    "total_tokens": 1079,
+    "latency": 18.3,
+    "quality": 87.4,
+    "roi": 81.0,
+    "scores": {
+      "output_quality": 86,
+      "constitutional_compliance": 90,
+      "governance_compliance": 88,
+      "context_completeness": 85,
+      "hallucination_risk": 10,
+      "reproducibility": 87,
+      "token_efficiency": 75,
+      "org_memory_utilization": 89
+    },
+    "output": "# MISSION-010B: Production Context Architecture Recommendation\n\n**Mission ID:** MISS-010B | **Compiler:** CCR v1.1 | **Officer:** Krishna (CSO)\n\n---\n\n## 1. Recommended Architecture: **Mode D-Prime**\n\n**Definition:** Canonical Memory + Compressed Context Pack (no session history)\n\n---\n\n## 2. Rationale\n\nMode E's 91.3 quality score validates our architecture, but at ~2,400 tokens it's expensive for routine operations. The MISSION-010 data reveals a critical insight: **Canonical Memory is the quality differentiator** (Mode D: 86.2 vs Context Pack alone: 84.1). Mode D-Prime optimizes this finding\u2014preserving the Constitutional Core, active ADR summaries, and registry state while eliminating session transcripts. This achieves 86+ quality at approximately 40% of Mode E's token cost, satisfying Article II (Preservation) through canonical memory while enabling production scale.\n\n---\n\n## 3. Token Budget Estimate\n\n| Component | Tokens |\n|-----------|--------|\n| Constitutional Core | ~200 |\n| ADR Summaries (active) | ~300 |\n| Registry State | ~150 |\n| Task Context Pack | ~250 |\n| **Total per Mission** | **~900** |\n\n**Daily cost at 200 missions:** ~180K tokens (vs ~480K for full Mode E)\n\n---\n\n## 4. Constitutional Compliance Assessment\n\n- **Article I (Artifact Primacy):** \u2705 Canonical Memory = artifact-derived\n- **Article II (Preservation):** \u2705 Core understanding retained\n- **Article III (Derivation):** \u2705 Lineage preserved in context pack\n- **Article IV/V (Human/Governance):** \u2705 No change in authority structure\n\n**Compliance Score:** PASS\n\n---\n\n## 5. Escalation Criteria: When to Use Mode E\n\n| Use Mode D-Prime | Escalate to Mode E |\n|------------------|-------------------|\n| Routine missions | Constitutional amendments |\n| Standard ADR drafting | Cross-mission dependencies |\n| Single-artifact",
+    "incremental_gain": 1.4
+  },
+  {
+    "config": "E",
+    "name": "Context Pack + Session History",
+    "provider": "openai",
+    "tokens_in": 390,
+    "tokens_out": 317,
+    "total_tokens": 707,
+    "latency": 5.0,
+    "quality": 86.5,
+    "roi": 122.3,
+    "scores": {
+      "output_quality": 85,
+      "constitutional_compliance": 90,
+      "governance_compliance": 88,
+      "context_completeness": 80,
+      "hallucination_risk": 10,
+      "reproducibility": 87,
+      "token_efficiency": 92,
+      "org_memory_utilization": 95
+    },
+    "output": "**Recommended Architecture:** Efficient Mode D (Canonical Memory Integration with Optimized Context Pack)\n\n**Rationale:** Efficient Mode D, which combines Canonical Memory with an Optimized Context Pack, is recommended for production at Y-OS due to its superior quality-per-token balance. The key differentiator in this architecture is the Canonical Memory, which provides long-term consistency and continuity without incurring additional session-based token costs associated with full conversational histories. By optimizing the Context Pack, unnecessary data can be streamlined or eliminated, further reducing the token usage per mission. This approach supports the need for a cost-effective solution while maintaining organizational memory at a high level of quality.\n\n**Token Budget Estimate Per Mission:** By optimizing the Context Pack and leveraging Canonical Memory, it is projected that token usage could be reduced to approximately 450 tokens per mission.\n\n**Constitutional Compliance Assessment:** Efficient Mode D is compliant with the organization's constitutional framework. The PASS criteria of achieving verdict approval with a score \u2264 55 is met due to its balanced resource utilization and maintenance of high-quality outputs. This mode remains adaptable and compliant with governance by allowing precise oversight and minimal variance in mission execution.\n\n**When to Use vs. When to Upgrade to Full Mode E:** Use Efficient Mode D for missions where cost efficiency is prioritized, and full conversational context is not critical for the mission's success. Upgrade to full Mode E when mission complexity demands maximum quality or when nuanced, highly detailed interactions are necessary, justifying the higher token cost for enriched contextual understanding. This strategic flexibility allows Y-OS to maximize ROI across varying mission requirements.",
+    "incremental_gain": 0.5
+  },
+  {
+    "config": "F",
+    "name": "Context Pack + Canonical Memory + Session",
+    "provider": "anthropic",
+    "tokens_in": 785,
+    "tokens_out": 467,
+    "total_tokens": 1252,
+    "latency": 12.4,
+    "quality": 86.4,
+    "roi": 69.0,
+    "scores": {
+      "output_quality": 86,
+      "constitutional_compliance": 90,
+      "governance_compliance": 85,
+      "context_completeness": 80,
+      "hallucination_risk": 15,
+      "reproducibility": 88,
+      "token_efficiency": 95,
+      "org_memory_utilization": 92
+    },
+    "output": "# KRISHNA Strategic Recommendation \u2014 MISSION-010B\n\n## Recommended Architecture: **Mode D+ (Adaptive Context)**\n\n**Definition:** Canonical Memory + Context Pack as baseline, with Mode E escalation triggers for high-stakes decisions.\n\n---\n\n## Rationale\n\nMode D achieved 86.2 quality at dramatically lower token cost than Mode E's 91.3. The 5.1 point gap is acceptable for routine operations but unacceptable for constitutional amendments or strategic pivots. The data proves Canonical Memory is the differentiator\u2014Context Packs are compression format, not quality driver. Production Y-OS should optimize for *sustainable execution* at scale, not peak performance per mission.\n\n---\n\n## Token Budget Estimate\n\n| Mode | Est. Tokens/Mission | Use Case |\n|------|---------------------|----------|\n| Mode D+ (baseline) | ~2,500-4,000 | Standard missions |\n| Mode E (escalated) | ~8,000-12,000 | Constitutional, strategic |\n\n**Production projection:** 80% Mode D+, 20% Mode E = ~3,500 avg tokens/mission\n\n---\n\n## Constitutional Compliance Assessment\n\n- **Article I (Artifact Primacy):** \u2713 Context Packs preserve artifact references\n- **Article II (Preservation):** \u2713 Canonical Memory maintains institutional knowledge\n- **Article III (Derivation):** \u2713 Lineage depth tracked in pack headers\n- **Article IV (Human Override):** \u2713 Escalation triggers require human confirmation\n- **Article V (Governance):** \u2713 Mode selection governed by explicit criteria\n\n**Verdict:** COMPLIANT\n\n---\n\n## Escalation Triggers (Mode D+ \u2192 Mode E)\n\n1. Constitutional amendments or ADR elevation\n2. Governance score > 40 (approaching threshold)\n3. Cross-mission dependency chains > 3\n4. Human explicit request\n5. Novel domain entry (no prior artifacts)\n\n**Strategic Position:** Efficiency without amnesia. Scale without compromise.",
+    "incremental_gain": 0.4
+  }
+]

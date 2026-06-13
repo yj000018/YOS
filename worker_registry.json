@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "version": "v1.0",
+    "description": "ART Worker Registry — capability-to-worker mapping. Configurable. No hardcoded routing in Y-ORC.",
+    "principle": "Y-ORC knows capabilities. ART knows workers. Workers are replaceable without modifying Y-ORC.",
+    "updated": "2026-06-13"
+  },
+  "capabilities": {
+    "research": {
+      "workers": ["Krishna"],
+      "primary": "Krishna",
+      "output_type": "Strategy Brief",
+      "description": "Deep research, information synthesis, knowledge extraction"
+    },
+    "analysis": {
+      "workers": ["Lakshmi"],
+      "primary": "Lakshmi",
+      "output_type": "Learning Report",
+      "description": "Data analysis, metrics, pattern recognition, performance review"
+    },
+    "strategy": {
+      "workers": ["Krishna"],
+      "primary": "Krishna",
+      "output_type": "Strategy Brief",
+      "description": "Strategic planning, direction setting, vision formulation"
+    },
+    "architecture": {
+      "workers": ["Brahma"],
+      "primary": "Brahma",
+      "output_type": "Architecture Package",
+      "description": "System design, architectural review, structural decisions"
+    },
+    "execution": {
+      "workers": ["Ganesha", "Hanuman"],
+      "primary": "Ganesha",
+      "output_type": "Build Artifact",
+      "description": "Task execution, implementation, build operations"
+    },
+    "reporting": {
+      "workers": ["Ganesha"],
+      "primary": "Ganesha",
+      "output_type": "Build Report",
+      "description": "Report generation, documentation, output synthesis"
+    },
+    "governance": {
+      "workers": ["Lakshmi"],
+      "primary": "Lakshmi",
+      "output_type": "Delivery Report",
+      "description": "Governance review, compliance, control plane observation"
+    },
+    "generate_report": {
+      "workers": ["Ganesha"],
+      "primary": "Ganesha",
+      "output_type": "Build Report",
+      "description": "Alias for reporting capability (backward compat with v0/v1)"
+    },
+    "summarize": {
+      "workers": ["Saraswati"],
+      "primary": "Saraswati",
+      "output_type": "Learning Report",
+      "description": "Summarization, distillation, knowledge compression"
+    },
+    "review": {
+      "workers": ["Brahma"],
+      "primary": "Brahma",
+      "output_type": "Architecture Package",
+      "description": "Review, critique, quality assessment"
+    },
+    "plan": {
+      "workers": ["Krishna"],
+      "primary": "Krishna",
+      "output_type": "Execution Plan",
+      "description": "Planning, roadmap creation, sequencing"
+    },
+    "deliver": {
+      "workers": ["Hanuman"],
+      "primary": "Hanuman",
+      "output_type": "Delivery Report",
+      "description": "Delivery, deployment, handoff operations"
+    }
+  }
+}

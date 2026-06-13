@@ -1,0 +1,11 @@
+{"ts": "2026-06-13T08:13:55.572993+00:00", "event": "RUNTIME_START", "version": "ART-v1", "registry_path": "/home/ubuntu/yreg/worker_registry.json"}
+{"ts": "2026-06-13T08:13:55.573164+00:00", "event": "YORC_WATCHER_POLL", "known_capabilities": ["analysis", "architecture", "deliver", "execution", "generate_report", "governance", "plan", "reporting", "research", "review", "strategy", "summarize"]}
+{"ts": "2026-06-13T08:14:55.724775+00:00", "event": "RUNTIME_START", "version": "ART-v1", "registry_path": "/home/ubuntu/yreg/worker_registry.json"}
+{"ts": "2026-06-13T08:14:55.724904+00:00", "event": "YORC_WATCHER_POLL", "known_capabilities": ["analysis", "architecture", "deliver", "execution", "generate_report", "governance", "plan", "reporting", "research", "review", "strategy", "summarize"]}
+{"ts": "2026-06-13T08:15:04.012083+00:00", "event": "YORC_WATCHER_RESULT", "eligible_count": 1, "ids": ["37e35e21-8cf8-81cd-877a-dd7ffc13e3a1"]}
+{"ts": "2026-06-13T08:15:04.012281+00:00", "event": "ART_RESOLVED", "capability": "research", "worker": "Krishna", "output_type": "Strategy Brief", "all_workers": ["Krishna"]}
+{"ts": "2026-06-13T08:15:04.012340+00:00", "event": "WORKER_INVOKED", "worker": "Krishna", "input": "37e35e21-8cf8-81cd-877a-dd7ffc13e3a1"}
+{"ts": "2026-06-13T08:15:04.012406+00:00", "event": "WORKER_COMPLETED", "worker": "Krishna", "output": "Research Output \u2014 ART-RESEARCH-001 \u2014 Y-ORC ART Runtime Research Request"}
+{"ts": "2026-06-13T08:15:06.742938+00:00", "event": "ARTIFACT_WRITTEN", "new_id": "37e35e21-8cf8-8176-a5c5-da464ad5ef43", "new_url": "https://app.notion.com/p/37e35e218cf88176a5c5da464ad5ef43", "parent_id": "37e35e21-8cf8-81cd-877a-dd7ffc13e3a1", "mission_id": "MISS-ART-V1-DEMO", "lineage": true}
+{"ts": "2026-06-13T08:15:08.626095+00:00", "event": "PARENT_CONSUMED", "parent_id": "37e35e21-8cf8-81cd-877a-dd7ffc13e3a1", "status": "Done"}
+{"ts": "2026-06-13T08:15:08.626385+00:00", "event": "RUNTIME_COMPLETE", "processed": 1}

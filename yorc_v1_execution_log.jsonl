@@ -1,0 +1,18 @@
+{"ts": "2026-06-13T07:58:39.480115+00:00", "event": "RUNTIME_START", "version": "v1", "registry": "Notion"}
+{"ts": "2026-06-13T07:58:39.480308+00:00", "event": "WATCHER_POLL", "db": "8cd17557-340e-4346-9850-7291face328e", "filter": "Status=Not started, Consumer=System"}
+{"ts": "2026-06-13T07:59:15.821930+00:00", "event": "WATCHER_RESULT", "eligible_count": 1, "ids": ["37e35e21-8cf8-8167-a67a-dbf12d84e358"]}
+{"ts": "2026-06-13T07:59:15.822098+00:00", "event": "CAPABILITY_RESOLVED", "artifact_id": "37e35e21-8cf8-8167-a67a-dbf12d84e358", "capability": "generate_report", "worker": "Ganesha"}
+{"ts": "2026-06-13T07:59:15.822149+00:00", "event": "WORKER_INVOKED", "worker": "Ganesha", "input_artifact": "37e35e21-8cf8-8167-a67a-dbf12d84e358"}
+{"ts": "2026-06-13T07:59:15.822204+00:00", "event": "WORKER_COMPLETED", "worker": "Ganesha", "output_title": "ART-DEMO-002 \u2014 Report: ART-DEMO-001 \u2014 Y-ORC Runtime v1 Validation"}
+{"ts": "2026-06-13T07:59:18.072710+00:00", "event": "ARTIFACT_WRITTEN", "new_artifact_id": "UNKNOWN", "new_artifact_url": "", "parent_id": "37e35e21-8cf8-8167-a67a-dbf12d84e358", "mission_id": "MISS-YORC-V1-DEMO", "lineage_recorded": true}
+{"ts": "2026-06-13T07:59:20.519456+00:00", "event": "PARENT_CONSUMED", "parent_id": "37e35e21-8cf8-8167-a67a-dbf12d84e358", "new_status": "Done"}
+{"ts": "2026-06-13T07:59:20.519615+00:00", "event": "RUNTIME_COMPLETE", "processed": 1}
+{"ts": "2026-06-13T08:00:01.833663+00:00", "event": "RUNTIME_START", "version": "v1", "registry": "Notion"}
+{"ts": "2026-06-13T08:00:01.833801+00:00", "event": "WATCHER_POLL", "db": "8cd17557-340e-4346-9850-7291face328e", "filter": "Status=Not started, Consumer=System"}
+{"ts": "2026-06-13T08:00:59.995071+00:00", "event": "WATCHER_RESULT", "eligible_count": 1, "ids": ["37e35e21-8cf8-8167-a67a-dbf12d84e358"]}
+{"ts": "2026-06-13T08:00:59.995240+00:00", "event": "CAPABILITY_RESOLVED", "artifact_id": "37e35e21-8cf8-8167-a67a-dbf12d84e358", "capability": "generate_report", "worker": "Ganesha"}
+{"ts": "2026-06-13T08:00:59.995291+00:00", "event": "WORKER_INVOKED", "worker": "Ganesha", "input_artifact": "37e35e21-8cf8-8167-a67a-dbf12d84e358"}
+{"ts": "2026-06-13T08:00:59.995340+00:00", "event": "WORKER_COMPLETED", "worker": "Ganesha", "output_title": "ART-DEMO-002 \u2014 Report: ART-DEMO-001 \u2014 Y-ORC Runtime v1 Validation"}
+{"ts": "2026-06-13T08:01:02.411573+00:00", "event": "ARTIFACT_WRITTEN", "new_artifact_id": "37e35e21-8cf8-81c1-bbf6-e5dafca345c9", "new_artifact_url": "https://app.notion.com/p/37e35e218cf881c1bbf6e5dafca345c9", "parent_id": "37e35e21-8cf8-8167-a67a-dbf12d84e358", "mission_id": "MISS-YORC-V1-DEMO", "lineage_recorded": true}
+{"ts": "2026-06-13T08:01:05.109173+00:00", "event": "PARENT_CONSUMED", "parent_id": "37e35e21-8cf8-8167-a67a-dbf12d84e358", "new_status": "Done"}
+{"ts": "2026-06-13T08:01:05.109329+00:00", "event": "RUNTIME_COMPLETE", "processed": 1}

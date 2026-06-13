@@ -7,17 +7,30 @@ date: 2026-06-13
 source_branch: y-os-doctrine
 canonical: true
 tags:
-  - "#yos"
-  - "#memory"
-  - "#living-memory"
-  - "#session-delta"
-  - "#artifact"
+- '#yos'
+- '#memory'
+- '#living-memory'
+- '#session-delta'
+- '#artifact'
 related_adrs:
-  - "[[ADR-0038]]"
-  - "[[ADR-0039]]"
+- '[[ADR-0038]]'
+- '[[ADR-0039]]'
 aliases:
-  - Living Memory MOC
-  - LMP MOC
+- Living Memory MOC
+- LMP MOC
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+references:
+- '[[ADR-0039]]'
+- '[[ADR-0038]]'
+- '[[ADR-0037]]'
 ---
 
 # Y-OS Living Memory — Map of Content
@@ -50,3 +63,20 @@ Capture → Compress → Delta → Summarize → Archive → Canonicalize → Co
 ## Back
 
 [[00_Y-OS_Home]]
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **references:** [[ADR-0039]]
+- **references:** [[ADR-0038]]
+- **references:** [[ADR-0037]]

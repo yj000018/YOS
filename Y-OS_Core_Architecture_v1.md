@@ -12,6 +12,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
 
 # Y-OS Core Architecture v1
@@ -215,3 +217,12 @@ Any proposed new module must be submitted with a written justification demonstra
 * **Module :** System function. Brique fondamentale stable et déterministe du système.
 * **Context Pack :** Assemblage d'informations pertinentes produit par Y-CTX pour une situation donnée.
 * **Mission Pack :** Plan d'action routé et orchestré produit par Y-ORC.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

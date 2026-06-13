@@ -12,6 +12,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # Dashboard Data Model v1
@@ -39,3 +41,12 @@ For each active Mission:
 ### 3. Action Queue (Array)
 - Filtered specifically for `Review Owner == 'CEO'` or `Producer == 'CEO'`.
 - Categorized by: Decisions Required, Approvals Pending, Strategy Required.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

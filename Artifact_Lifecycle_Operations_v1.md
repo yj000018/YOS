@@ -11,6 +11,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Krishna]]'
 ---
 
 # Artifact Lifecycle Operations v1
@@ -52,3 +56,14 @@ This illustrates the exact sequence of operations in the Registry during a hando
     - `reject_artifact(ART-002, reason='Requires quantum computing.')`
     - State: **Rejected**
 12. Ganesha runs his *Producer Rework Query*, sees the rejection, and creates a new Draft to fix it.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Krishna]]

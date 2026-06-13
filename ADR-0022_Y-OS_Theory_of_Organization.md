@@ -16,6 +16,8 @@ aliases:
 - Theory of Organization
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # ADR-0022: Y-OS Theory of Organization
@@ -36,3 +38,12 @@ Y-OS shall be modeled as a persistent network of artifacts rather than a collect
 *   **Governance becomes visibility over state.**
 *   **Autonomy becomes governed execution.**
 *   **Agents become replaceable implementation details.**
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

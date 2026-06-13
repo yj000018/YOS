@@ -12,6 +12,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Krishna]]'
 ---
 
 # Alert Rules v1
@@ -33,3 +38,15 @@ While Open Loops are passive indicators on a dashboard, Alerts are active notifi
 
 ## Escalation Path
 If a P2 Alert is unresolved for 48 hours, it automatically escalates to a P1 Alert targeting the CEO.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Krishna]]

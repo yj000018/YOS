@@ -28,6 +28,21 @@ aliases:
 - MISSION-005B
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[ADR-0030_v1]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Krishna]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # ADR-0030 — CCR Runtime v1: Context Continuity Engine
@@ -129,3 +144,21 @@ Registry (updated, lineage complete)
 ---
 
 *Adopted by MISSION-005B — CCR Governance Patch*
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **supersedes:** [[ADR-0030_v1]]

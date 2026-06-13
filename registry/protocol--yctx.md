@@ -13,8 +13,9 @@ tags:
 - backend
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
-
 
 # Y-CTX — Context Module
 
@@ -33,3 +34,12 @@ Y-CTX is a system module (deterministic). It does not orchestrate. It assembles 
 ## Interface
 - Input: situation description, intent, session state
 - Output: Context Pack { memory_snippets, active_projects, relevant_objects, constraints }
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

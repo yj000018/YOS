@@ -7,14 +7,26 @@ date: 2026-06-13
 source_branch: y-os-doctrine
 canonical: true
 tags:
-  - "#yos"
-  - "#constitution"
-  - "#artifact"
+- '#yos'
+- '#constitution'
+- '#artifact'
 related_adrs:
-  - "[[ADR-0024]]"
-  - "[[ADR-0034]]"
+- '[[ADR-0024]]'
+- '[[ADR-0034]]'
 aliases:
-  - Constitution MOC
+- Constitution MOC
+governed_by:
+- '[[Constitutional_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+references:
+- '[[ADR-0024]]'
+- '[[ADR-0034]]'
+- '[[ADR-0035]]'
 ---
 
 # Y-OS Constitution — Map of Content
@@ -46,3 +58,20 @@ aliases:
 ## Back
 
 [[00_Y-OS_Home]]
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **governed_by:** [[Constitutional_Governance]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0034]]
+- **references:** [[ADR-0035]]

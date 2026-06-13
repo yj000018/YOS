@@ -23,6 +23,12 @@ aliases:
 - MISSION-012
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Session_Delta]]'
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # ADR-0038: Session Delta Engine
@@ -49,3 +55,15 @@ Key mandates:
 ## Compliance
 - **Article I (Artifact Primacy):** Maintained. Delta flushes state into artifacts.
 - **Article V (Governance Before Autonomy):** Maintained. Structured state allows deterministic governance checks on open questions and constraints.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Session_Delta]]

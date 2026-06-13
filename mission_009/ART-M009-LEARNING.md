@@ -25,6 +25,14 @@ aliases:
 - MISSION-009
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Preservation_Principle]]'
+- '[[Governance_Before_Autonomy]]'
+references:
+- '[[ADR-005]]'
+- '[[ADR-006]]'
+- '[[ADR-007]]'
 ---
 
 # ART-M009-LEARNING
@@ -66,3 +74,16 @@ None required. Current Articles accommodate executable governance without modifi
 **Architectural decisions outnumber constitutional decisions approximately 10:1.** This ratio suggests the constitutional core is appropriately abstract while permitting implementation flexibility.
 
 *Organizational maturity indicator: We can now distinguish constitutional questions from architectural questions.*
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **references:** [[ADR-005]]
+- **references:** [[ADR-006]]
+- **references:** [[ADR-007]]

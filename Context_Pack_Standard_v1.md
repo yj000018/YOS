@@ -16,6 +16,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+executed_by:
+- '[[Brahma]]'
+injects:
+- '[[Mission]]'
+references:
+- '[[ADR-0026]]'
+- '[[ADR-0027]]'
 ---
 
 # Context Pack Standard v1
@@ -67,3 +76,16 @@ The Canonical Y-OS Context Pack is the structured payload injected into every fr
 1. **Statelessness:** The Context Pack MUST be the first message (or system prompt) in a fresh session.
 2. **Completeness:** It MUST contain all information necessary to complete the task without requiring the worker to ask clarifying questions.
 3. **Format:** It SHOULD be formatted as structured JSON or clearly delineated Markdown to facilitate parsing by the LLM.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **implements:** [[Context_Pack]]
+- **injects:** [[Mission]]
+- **references:** [[ADR-0026]]
+- **references:** [[ADR-0027]]

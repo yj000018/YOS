@@ -7,15 +7,27 @@ date: 2026-06-13
 source_branch: y-os-doctrine
 canonical: true
 tags:
-  - "#yos"
-  - "#runtime"
-  - "#artifact"
+- '#yos'
+- '#runtime'
+- '#artifact'
 related_adrs:
-  - "[[ADR-0025]]"
-  - "[[ADR-0026]]"
-  - "[[ADR-0028]]"
+- '[[ADR-0025]]'
+- '[[ADR-0026]]'
+- '[[ADR-0028]]'
 aliases:
-  - Runtime MOC
+- Runtime MOC
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0025]]'
+- '[[ADR-0026]]'
+- '[[ADR-0028]]'
+- '[[ADR-0029]]'
+- '[[ADR-0030]]'
+- '[[ADR-0037]]'
 ---
 
 # Y-OS Runtime — Map of Content
@@ -41,3 +53,20 @@ aliases:
 ## Back
 
 [[00_Y-OS_Home]]
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0025]]
+- **references:** [[ADR-0026]]
+- **references:** [[ADR-0028]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0030]]
+- **references:** [[ADR-0037]]

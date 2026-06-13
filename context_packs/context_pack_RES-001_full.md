@@ -20,6 +20,16 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+executed_by:
+- '[[Krishna]]'
+references:
+- '[[ADR-0022]]'
+- '[[ADR-0023]]'
+- '[[ADR-0024]]'
+- '[[ADR-0029]]'
+- '[[ADR-0027]]'
 ---
 
 # Context Pack — CP-RES-001-FULL-974A06
@@ -88,3 +98,18 @@ Strategy Briefs
 | Actionability | 10/10 |
 | **Total** | **100/100** |
 | **Band** | **Excellent** |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Krishna]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0022]]
+- **references:** [[ADR-0023]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0027]]

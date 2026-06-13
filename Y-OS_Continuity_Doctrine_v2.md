@@ -13,6 +13,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[Y-OS_Continuity_Doctrine_v1]]'
+executed_by:
+- '[[Brahma]]'
+references:
+- '[[ADR-0022]]'
 ---
 
 # Y-OS Continuity Doctrine
@@ -86,3 +92,14 @@ Autonomous Organization
 Constitution → First Principles → Identity → Operational Cycle
 → Organization → Governance → Control Plane → Orchestration → Execution
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **references:** [[ADR-0022]]
+- **supersedes:** [[Y-OS_Continuity_Doctrine_v1]]

@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "text",
+      "x": 0,
+      "y": -600,
+      "width": 400,
+      "height": 60,
+      "text": "# Y-OS Runtime Flow",
+      "color": "4"
+    },
+    {
+      "id": "2",
+      "type": "file",
+      "x": -600,
+      "y": -450,
+      "width": 200,
+      "height": 60,
+      "file": "03_Missions_MOC.md",
+      "color": "3"
+    },
+    {
+      "id": "3",
+      "type": "file",
+      "x": -350,
+      "y": -450,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/Y_ORC.md",
+      "color": "4"
+    },
+    {
+      "id": "4",
+      "type": "file",
+      "x": -100,
+      "y": -450,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/CCR_Runtime.md",
+      "color": "4"
+    },
+    {
+      "id": "5",
+      "type": "file",
+      "x": 150,
+      "y": -450,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/CRT.md",
+      "color": "4"
+    },
+    {
+      "id": "6",
+      "type": "file",
+      "x": 400,
+      "y": -450,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/ART.md",
+      "color": "4"
+    },
+    {
+      "id": "12",
+      "type": "file",
+      "x": -100,
+      "y": -280,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/Provider_Adapter.md",
+      "color": "2"
+    },
+    {
+      "id": "13",
+      "type": "file",
+      "x": 150,
+      "y": -280,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/Worker_Registry.md",
+      "color": "3"
+    },
+    {
+      "id": "14",
+      "type": "file",
+      "x": 400,
+      "y": -280,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/Artifact_Registry.md",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "7",
+      "fromNode": "2",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "triggers"
+    },
+    {
+      "id": "8",
+      "fromNode": "3",
+      "toNode": "4",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "requests context"
+    },
+    {
+      "id": "9",
+      "fromNode": "4",
+      "toNode": "5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "compiles pack"
+    },
+    {
+      "id": "10",
+      "fromNode": "5",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "injects context"
+    },
+    {
+      "id": "11",
+      "fromNode": "3",
+      "toNode": "6",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "captures output"
+    },
+    {
+      "id": "15",
+      "fromNode": "3",
+      "toNode": "12",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "routes to"
+    },
+    {
+      "id": "16",
+      "fromNode": "3",
+      "toNode": "13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "assigns to"
+    },
+    {
+      "id": "17",
+      "fromNode": "6",
+      "toNode": "14",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    }
+  ]
+}

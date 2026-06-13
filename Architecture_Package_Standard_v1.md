@@ -11,6 +11,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Architecture Package Standard v1
@@ -59,3 +63,14 @@ A detailed breakdown of every distinct piece of the system to be built. For each
 
 ### 10. Acceptance Criteria (Architectural)
 - The specific structural conditions that must be met for the build to be considered architecturally compliant. (Note: This is distinct from operational validation performed by the COO).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

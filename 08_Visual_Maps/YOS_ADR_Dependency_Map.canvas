@@ -1,0 +1,306 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "text",
+      "x": 0,
+      "y": -700,
+      "width": 500,
+      "height": 60,
+      "text": "# Y-OS ADR Dependency Map",
+      "color": "6"
+    },
+    {
+      "id": "2",
+      "type": "text",
+      "x": -800,
+      "y": -550,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0024**\nConstitution\nFoundation",
+      "color": "1"
+    },
+    {
+      "id": "3",
+      "type": "text",
+      "x": -550,
+      "y": -550,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0025**\nY-ORC\nRuntime",
+      "color": "4"
+    },
+    {
+      "id": "4",
+      "type": "text",
+      "x": -300,
+      "y": -550,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0026**\nART\nArtifact RT",
+      "color": "4"
+    },
+    {
+      "id": "5",
+      "type": "text",
+      "x": -50,
+      "y": -550,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0027**\nProvider\nAdapter",
+      "color": "4"
+    },
+    {
+      "id": "6",
+      "type": "text",
+      "x": 200,
+      "y": -550,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0028**\nCRT\nContext RT",
+      "color": "4"
+    },
+    {
+      "id": "7",
+      "type": "text",
+      "x": -800,
+      "y": -380,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0029**\nCCR\nRuntime v1",
+      "color": "2"
+    },
+    {
+      "id": "8",
+      "type": "text",
+      "x": -550,
+      "y": -380,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0030**\nCCR\nRuntime v1.1",
+      "color": "2"
+    },
+    {
+      "id": "9",
+      "type": "text",
+      "x": -300,
+      "y": -380,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0033**\nGovernance\nDeterminism",
+      "color": "5"
+    },
+    {
+      "id": "10",
+      "type": "text",
+      "x": -50,
+      "y": -380,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0034**\nConstitutional\nCore v1",
+      "color": "1"
+    },
+    {
+      "id": "11",
+      "type": "text",
+      "x": 200,
+      "y": -380,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0035**\nExecutable\nConstitution",
+      "color": "1"
+    },
+    {
+      "id": "12",
+      "type": "text",
+      "x": -800,
+      "y": -210,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0036**\nContext\nArchitecture",
+      "color": "2"
+    },
+    {
+      "id": "13",
+      "type": "text",
+      "x": -550,
+      "y": -210,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0037**\nCCR Runtime\nv2",
+      "color": "4"
+    },
+    {
+      "id": "14",
+      "type": "text",
+      "x": -300,
+      "y": -210,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0038**\nSession Delta\nEngine",
+      "color": "5"
+    },
+    {
+      "id": "15",
+      "type": "text",
+      "x": -50,
+      "y": -210,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0039**\nLiving Memory\nPipeline",
+      "color": "2"
+    },
+    {
+      "id": "16",
+      "type": "text",
+      "x": 200,
+      "y": -210,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0040**\nKGC v1\nDoc Graph",
+      "color": "6"
+    },
+    {
+      "id": "17",
+      "type": "text",
+      "x": -400,
+      "y": -40,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0041**\nCognitive Graph\nArchitecture",
+      "color": "6"
+    },
+    {
+      "id": "18",
+      "type": "text",
+      "x": -100,
+      "y": -40,
+      "width": 200,
+      "height": 70,
+      "text": "**ADR-0042**\nKGC v2\nVisual Layer",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "19",
+      "fromNode": "2",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "20",
+      "fromNode": "2",
+      "toNode": "4",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "21",
+      "fromNode": "2",
+      "toNode": "5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "22",
+      "fromNode": "2",
+      "toNode": "6",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "23",
+      "fromNode": "3",
+      "toNode": "7",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "depends_on"
+    },
+    {
+      "id": "24",
+      "fromNode": "7",
+      "toNode": "8",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "25",
+      "fromNode": "8",
+      "toNode": "13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "26",
+      "fromNode": "9",
+      "toNode": "13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "governs"
+    },
+    {
+      "id": "27",
+      "fromNode": "10",
+      "toNode": "11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "28",
+      "fromNode": "12",
+      "toNode": "13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "informs"
+    },
+    {
+      "id": "29",
+      "fromNode": "13",
+      "toNode": "14",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "depends_on"
+    },
+    {
+      "id": "30",
+      "fromNode": "14",
+      "toNode": "15",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "31",
+      "fromNode": "15",
+      "toNode": "16",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "32",
+      "fromNode": "16",
+      "toNode": "17",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "33",
+      "fromNode": "17",
+      "toNode": "18",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    }
+  ]
+}

@@ -11,6 +11,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Architectural Correction Review v1.1
@@ -37,3 +42,15 @@ The following statement is the core architectural principle guiding this correct
 ## Scope of Impact
 - **Preserved:** All existing ADRs, Laws (including #10 and #11), Roles, Artifacts, and the Operational Value Chain.
 - **Modified:** The conceptual definitions of the Capability and Memory layers, and the visual representation of the Y-OS Architecture Stack.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

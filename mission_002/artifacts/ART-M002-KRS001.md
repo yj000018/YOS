@@ -20,6 +20,16 @@ aliases:
 - MISSION-002
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Krishna]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # ART-M002-KRS001 — Strategy Brief
@@ -133,3 +143,17 @@ After reading this document, a serious system designer should be able to:
 ### Strategic Recommendation
 
 Structure the document as a **manifesto with architectural depth**: open with the thesis, establish the problem, present the principles with rigorous justification, and close with the organizational model. Each principle should be self-contained and independently applicable.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[Context_Pack]]

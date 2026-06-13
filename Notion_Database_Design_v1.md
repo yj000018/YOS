@@ -10,6 +10,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Notion Database Design v1
@@ -43,3 +52,18 @@ The Artifact Registry MVP will be implemented as a Notion Database.
 2. **Review Queue:** Filter: Status IS Ready For Review. (Used by Consumers to find work).
 3. **Rejected Artifacts:** Filter: Status IS Rejected. (Used by Producers to fix work).
 4. **Mission View:** Grouped by Mission ID.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

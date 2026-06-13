@@ -1,0 +1,170 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "text",
+      "x": 0,
+      "y": -700,
+      "width": 500,
+      "height": 60,
+      "text": "# Y-OS Context Architecture (CCR v2)",
+      "color": "4"
+    },
+    {
+      "id": "2",
+      "type": "text",
+      "x": -700,
+      "y": -550,
+      "width": 200,
+      "height": 80,
+      "text": "**Mode A**\nFull History\nROI: 23.4",
+      "color": "2"
+    },
+    {
+      "id": "3",
+      "type": "text",
+      "x": -460,
+      "y": -550,
+      "width": 200,
+      "height": 80,
+      "text": "**Mode B** ⭐\nContext Pack Only\nROI: 140.9",
+      "color": "3"
+    },
+    {
+      "id": "4",
+      "type": "text",
+      "x": -220,
+      "y": -550,
+      "width": 200,
+      "height": 80,
+      "text": "**Mode C**\nHybrid\nROI: 89.2",
+      "color": "4"
+    },
+    {
+      "id": "5",
+      "type": "text",
+      "x": 20,
+      "y": -550,
+      "width": 200,
+      "height": 80,
+      "text": "**Mode D**\nDelta Only\nROI: 67.8",
+      "color": "5"
+    },
+    {
+      "id": "6",
+      "type": "file",
+      "x": -200,
+      "y": -380,
+      "width": 300,
+      "height": 60,
+      "file": "concepts/Context_Router.md",
+      "color": "4"
+    },
+    {
+      "id": "11",
+      "type": "file",
+      "x": -700,
+      "y": -220,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/Context_Pack.md",
+      "color": "3"
+    },
+    {
+      "id": "12",
+      "type": "file",
+      "x": -460,
+      "y": -220,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/Session_Delta.md",
+      "color": "5"
+    },
+    {
+      "id": "13",
+      "type": "file",
+      "x": -220,
+      "y": -220,
+      "width": 200,
+      "height": 60,
+      "file": "concepts/Canonical_Memory.md",
+      "color": "1"
+    },
+    {
+      "id": "14",
+      "type": "text",
+      "x": 20,
+      "y": -220,
+      "width": 200,
+      "height": 60,
+      "text": "Mission Context\n(injected)",
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "7",
+      "fromNode": "6",
+      "toNode": "2",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "selects"
+    },
+    {
+      "id": "8",
+      "fromNode": "6",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "selects"
+    },
+    {
+      "id": "9",
+      "fromNode": "6",
+      "toNode": "4",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "selects"
+    },
+    {
+      "id": "10",
+      "fromNode": "6",
+      "toNode": "5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "selects"
+    },
+    {
+      "id": "15",
+      "fromNode": "11",
+      "toNode": "6",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "16",
+      "fromNode": "12",
+      "toNode": "11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "delta → pack"
+    },
+    {
+      "id": "17",
+      "fromNode": "13",
+      "toNode": "11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "canonical → pack"
+    },
+    {
+      "id": "18",
+      "fromNode": "6",
+      "toNode": "14",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "injects"
+    }
+  ]
+}

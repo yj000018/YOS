@@ -11,6 +11,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
 
 # A/B/C Validation Protocol
@@ -59,3 +61,12 @@ Outputs from Modes A, B, and C will be scored (0-5) on the following criteria:
 ## Acceptance Criteria
 - **Mode B** must achieve a total score $\ge$ 90% of **Mode A**.
 - **Mode C** is only recommended if its score is significantly higher than B, justifying the added complexity and lock-in risk.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

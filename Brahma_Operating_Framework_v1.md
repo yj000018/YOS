@@ -11,6 +11,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Chief Architect (Brahma) Operating Framework v1
@@ -59,3 +65,16 @@ Brahma holds exclusive decision rights over:
 ### Interface with Lead Developer (Hanuman)
 - **Nature:** Direct instruction and guidance.
 - **Interaction:** Brahma delivers the Architecture Package to Hanuman. During the build, Brahma provides architectural clarifications but does not manage Hanuman's time or tasks (that is Ganesha's role).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

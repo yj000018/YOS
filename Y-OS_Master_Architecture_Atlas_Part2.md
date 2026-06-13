@@ -14,6 +14,17 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
+references:
+- '[[ADR-0026]]'
 ---
 
 ## 8. Artifact Catalog
@@ -121,3 +132,19 @@ graph TD
     C[Capability: 'research'] --> ART{ART}
     ART -->|worker_registry.json| W[Worker: 'Krishna']
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0026]]

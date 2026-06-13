@@ -10,6 +10,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Strategic-to-Execution Flow v1
@@ -39,3 +48,18 @@ The lifecycle consists of nine distinct phases, ensuring a structured progressio
 - **No Skipping:** Phases cannot be skipped. A fast-tracked mission simply moves through the phases more rapidly, but it must still generate the required outputs (e.g., a brief Strategy Brief, a short Execution Plan).
 - **Iteration within Phases:** Iteration is permitted within a phase (e.g., multiple drafts of code during the Build phase), but moving backward across phases requires a formal rejection and renegotiation of the handoff contract.
 - **Continuous Evolution:** Phase 9 (Organizational Learning) is mandatory for all significant missions, ensuring compliance with Law #7.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

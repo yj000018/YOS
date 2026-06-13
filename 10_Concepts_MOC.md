@@ -18,6 +18,24 @@ aliases:
 - Concept Layer
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+references:
+- '[[ADR-0029]]'
+- '[[ADR-0030]]'
+- '[[ADR-0037]]'
+- '[[ADR-0036]]'
+- '[[ADR-0038]]'
+- '[[ADR-0039]]'
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+- '[[ADR-0035]]'
 ---
 
 # Y-OS Concepts — Map of Content
@@ -122,3 +140,26 @@ WHERE type = "concept" AND domain = "context"
 - [[02_ADR_MOC]] — ADR Register
 - [[06_Context_Architecture_MOC]] — Context Architecture
 - [[07_Living_Memory_MOC]] — Living Memory
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **implements:** [[CCR_Runtime]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0030]]
+- **references:** [[ADR-0037]]
+- **references:** [[ADR-0036]]
+- **references:** [[ADR-0038]]
+- **references:** [[ADR-0039]]
+- **references:** [[ADR-0033]]
+- **references:** [[ADR-0034]]
+- **references:** [[ADR-0035]]

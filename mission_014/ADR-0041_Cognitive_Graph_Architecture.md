@@ -35,6 +35,26 @@ aliases:
 - ADR-0041
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # ADR-0041 — Cognitive Graph Architecture v1
@@ -267,3 +287,26 @@ Each stage is a typed edge (`compress`, `delta`, `summarize`, `archive`, `canoni
 CGA v1 is the architectural foundation that transforms Y-OS from a document archive into a cognitive operating system. The 12 concept nodes are the semantic anchors that make the graph navigable by intent, not by filename. This is the correct next evolution after MISSION-013.
 
 **Priority:** Execute MISSION-015 (KGC v2) to implement the relationship inference engine and Canvas visual maps.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]

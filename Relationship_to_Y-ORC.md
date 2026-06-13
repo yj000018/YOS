@@ -11,6 +11,13 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Krishna]]'
 ---
 
 # Relationship to Y-ORC
@@ -46,3 +53,16 @@ When Y-ORC is implemented, the loop will be:
 ## 4. Architectural Dependency
 
 Y-ORC cannot exist without the Control Plane. Y-ORC requires a deterministic, observable state machine to function. By building the Artifact Registry, Lineage, and Open Loop Engine first, we have established the necessary foundation for automated orchestration.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

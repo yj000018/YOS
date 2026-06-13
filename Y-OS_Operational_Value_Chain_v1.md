@@ -10,6 +10,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Y-OS Operational Value Chain v1
@@ -69,3 +78,18 @@ This value chain applies to all domains within Y-OS, not just software developme
 - **Software:** Strategy → Product Plan → Tech Arch → Code → Deploy
 - **Publishing:** Strategy → Editorial Plan → Outline → Draft → Publish
 - **Business:** Strategy → Business Plan → Financial Model → Execution → Launch
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

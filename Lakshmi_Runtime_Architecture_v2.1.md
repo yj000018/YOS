@@ -14,6 +14,13 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[Lakshmi_Runtime_Architecture_v1]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Lakshmi Runtime Architecture v2.1
@@ -45,3 +52,15 @@ If the LLM capability fails, Lakshmi must still produce:
 *   `lakshmi_ceo_briefing.md` (using the deterministic template)
 
 This ensures the CEO always receives the pulse of the organization, regardless of external API status.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **supersedes:** [[Lakshmi_Runtime_Architecture_v1]]

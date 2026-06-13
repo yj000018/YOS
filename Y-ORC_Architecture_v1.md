@@ -14,6 +14,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+references:
+- '[[ADR-0024]]'
 ---
 
 # Y-ORC Architecture v1
@@ -201,3 +210,16 @@ Agents
 Constitution → First Principles → Identity → Operational Cycle
 → Organization → Governance → Control Plane → Orchestration → Execution
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0024]]

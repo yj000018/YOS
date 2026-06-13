@@ -9,6 +9,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # 5. Impact on Operational Value Chain
@@ -36,3 +42,16 @@ No structural changes to the OVC are required. The 7-stage flow remains intact a
 ## Key Takeaway
 
 By aligning the reporting structure with the Operational Value Chain, Y-OS ensures that authority matches responsibility. The COO is responsible for the Execution Management phase, and therefore has authority over the Design and Build phases that execute the plan. The CSO is responsible for the Strategy phase, and therefore has authority over the researchers and analysts who inform that strategy.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

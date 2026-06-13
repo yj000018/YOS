@@ -26,6 +26,25 @@ aliases:
 - MISSION-011
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[CCR_Runtime_v1]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+depends_on:
+- '[[Session_Delta]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
+injects:
+- '[[Mission]]'
+references:
+- '[[ADR-0033]]'
 ---
 
 # CCR Runtime v2 — Context Orchestration Architecture
@@ -155,3 +174,22 @@ The future Canonical Memory transitions to a Git-backed Obsidian vault.
 - MODE-A (Session History Only) and MODE-F (Full Hybrid). They are mathematically proven to reduce quality and ROI.
 
 **Decision:** ADOPT CCR Runtime v2 Architecture.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **depends_on:** [[Session_Delta]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **injects:** [[Mission]]
+- **references:** [[ADR-0033]]
+- **supersedes:** [[CCR_Runtime_v1]]

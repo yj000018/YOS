@@ -8,24 +8,33 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article I'
-  - 'Article III'
+- Article I
+- Article III
 adr_lineage:
-  - '[[ADR-0037]]'
+- '[[ADR-0037]]'
 mission_evidence:
-  - '[[mission_011]]'
-implements: ["[[CCR_Runtime]]"]
-depends_on: ["[[Context_Pack]]", "[[Canonical_Memory]]"]
+- '[[mission_011]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+depends_on:
+- '[[Context_Pack]]'
+- '[[Canonical_Memory]]'
 tags:
-  - '#context'
-  - '#ccr'
-  - '#yos'
-  - '#accepted'
+- '#context'
+- '#ccr'
+- '#yos'
+- '#accepted'
 aliases:
-  - Mode Router
-  - CCR v2 Router
+- Mode Router
+- CCR v2 Router
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Derivation_Transparency]]'
+references:
+- '[[ADR-0037]]'
 ---
 
 # Context Router
@@ -84,3 +93,16 @@ Designed (ADR-0037). Mode B in production. Mode D for constitutional work.
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0037]]

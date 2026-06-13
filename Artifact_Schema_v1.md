@@ -11,6 +11,9 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Krishna]]'
 ---
 
 # Artifact Schema v1
@@ -37,3 +40,13 @@ Every entry in the Artifact Registry MUST conform to the following schema:
 | **URI** | URL | Link to the actual content (Notion page, Git repo, S3 link). | Yes |
 | **Acceptance Notes** | Text | Rationale or conditions upon acceptance. | No |
 | **Rejection Notes** | Text | Specific reasons for rejection, required if Status = Rejected. | No |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Krishna]]

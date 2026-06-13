@@ -10,6 +10,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Role-to-Layer Matrix
@@ -30,3 +39,18 @@ canonical: true
 
 ## The Capability Layer Distinction
 Roles like Ganesha, Brahma, and Hanuman operate *within* the Capability Layer. They use underlying capabilities (LLMs, Python, shell scripts) to perform their work. If an underlying capability changes (e.g., upgrading from GPT-4 to Claude 3.5), the Role remains unchanged.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

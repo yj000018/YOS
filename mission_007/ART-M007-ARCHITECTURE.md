@@ -26,6 +26,23 @@ aliases:
 - MISSION-007
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # ART-M007-ARCHITECTURE
@@ -95,3 +112,23 @@ The ART/CRT to alternative model evolution highlights a strategic transition in 
 **What Survives Replacement and Why?**
 
 Ultimately, Y-OS's core identity—the constitutional framework guiding component behavior—persists through these replacements. Each component operates within a system designed to be technologically agnostic and principle-centric. The system's resilience emerges from its architectural philosophy, ensuring that regardless of specific technological implementations, the adherence to core principles (artifact integrity, preservation of understanding, transparency, governance, and human authority) is continuously maintained. Components evolve, but constitutional compliance ensures that the foundational essence—the "how" over the "what"—remains both stable and integral.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]

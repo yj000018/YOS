@@ -13,6 +13,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Hanuman]]'
+references:
+- '[[ADR-0012]]'
 ---
 
 # Artifact Registry Architecture v1
@@ -36,3 +45,17 @@ Following ADR-0012, Y-OS requires a concrete system of record for all artifacts.
 - **Artifact Layer:** The Registry *is* the concrete implementation of the Artifact Layer.
 - **Execution Roles:** Ganesha, Brahma, Hanuman, etc., query the Registry to find their input artifacts and write to the Registry to log their output artifacts.
 - **Visibility Layer:** Lakshmi monitors the Registry to populate the ECO Dashboard and Open Loops Register.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0012]]

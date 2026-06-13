@@ -15,6 +15,14 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+references:
+- '[[ADR-0024]]'
 ---
 
 # Y-OS Theory of Organization v1
@@ -327,3 +335,16 @@ Agents
 Constitution → First Principles → Identity → Operational Cycle
 → Organization → Governance → Control Plane → Orchestration → Execution
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0024]]

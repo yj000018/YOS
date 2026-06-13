@@ -17,6 +17,9 @@ aliases:
 - CRT Runtime v1
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Krishna]]'
 ---
 
 # ADR-0028: CRT Runtime v1
@@ -91,3 +94,13 @@ CRT is explicitly NOT responsible for:
 - CRT v2: Add `cost_tier` field for budget-aware routing.
 - CRT v3: Add `context_window` field for task-size routing.
 - CRT v4: Add `fallback_chain` for multi-provider resilience.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Krishna]]

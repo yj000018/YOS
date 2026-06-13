@@ -21,6 +21,17 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+executed_by:
+- '[[Ganesha]]'
+references:
+- '[[ADR-0022]]'
+- '[[ADR-0023]]'
+- '[[ADR-0024]]'
+- '[[ADR-0029]]'
+- '[[ADR-0025]]'
+- '[[ADR-0026]]'
 ---
 
 # Context Pack — CP-DOC-001-FULL-C06D5C
@@ -90,3 +101,19 @@ Execution Plans, Delivery Reports
 | Actionability | 10/10 |
 | **Total** | **100/100** |
 | **Band** | **Excellent** |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0022]]
+- **references:** [[ADR-0023]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0025]]
+- **references:** [[ADR-0026]]

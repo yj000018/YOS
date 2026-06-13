@@ -22,6 +22,10 @@ aliases:
 - MISSION-007
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
 ---
 
 # ART-M007-LEARNING
@@ -81,3 +85,13 @@ If Articles conflict, no resolution mechanism exists. Article IV (Human Override
 ---
 
 **Learning Officer Certification:** Mission-007 generated durable organizational knowledge suitable for constitutional development.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]

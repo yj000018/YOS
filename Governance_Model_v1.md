@@ -12,6 +12,14 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Krishna]]'
 ---
 
 # Governance Model v1
@@ -48,3 +56,17 @@ Operational efficiency cannot override strategic intent. If an execution plan be
 
 ### Principle of Organizational Evolution
 The CODO (Saraswati) holds the authority to audit any phase of this governance model and propose changes to improve organizational efficiency (Law #7). The CODO cannot intervene in active missions but can restructure the rules for future missions.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

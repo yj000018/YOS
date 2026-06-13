@@ -11,6 +11,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
 
 # Provider Continuity Matrix
@@ -37,3 +39,12 @@ Assess the context continuity capabilities of major LLM providers to determine t
 1. **Stateful vs. Stateless:** OpenAI's Assistants API offers stateful threads, reducing the need to resend the Context Pack every time. However, this creates vendor lock-in. Anthropic and Gemini are stateless, requiring the full Context Pack per invocation, but prompt/context caching significantly reduces costs and latency for repeated context.
 2. **Context Window:** Y-OS Context Packs (Canonical + Mission + Artifact) will grow. Claude's 200k and Gemini's 1M+ windows are critical for ensuring no context is truncated.
 3. **Recommendation for Y-OS:** Y-OS must remain provider-agnostic. Therefore, Y-OS must rely on **stateless Context Packs** injected into every fresh session. Prompt caching (Anthropic/Gemini) should be utilized to mitigate costs, rather than relying on stateful APIs (OpenAI Threads) which violate the principle that the Artifact Registry is the sole source of truth.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

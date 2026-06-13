@@ -8,25 +8,38 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article I'
+- Article I
 adr_lineage:
-  - '[[ADR-0036]]'
-  - '[[ADR-0037]]'
+- '[[ADR-0036]]'
+- '[[ADR-0037]]'
 mission_evidence:
-  - '[[mission_010]]'
-  - '[[mission_011]]'
-implements: []
-depends_on: ["[[CCR_Runtime]]"]
+- '[[mission_010]]'
+- '[[mission_011]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+depends_on:
+- '[[CCR_Runtime]]'
 tags:
-  - '#context'
-  - '#ccr'
-  - '#yos'
-  - '#accepted'
+- '#context'
+- '#ccr'
+- '#yos'
+- '#accepted'
 aliases:
-  - Context Pack v1
-  - Mode B Context
+- Context Pack v1
+- Mode B Context
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Artifact_Primacy]]'
+compiles:
+- '[[Context_Pack]]'
+injects:
+- '[[Mission]]'
+references:
+- '[[ADR-0036]]'
+- '[[ADR-0037]]'
 ---
 
 # Context Pack
@@ -85,3 +98,19 @@ Production default (Mode B). Schema defined in Context_Pack_Schema_v1.
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **injects:** [[Mission]]
+- **references:** [[ADR-0036]]
+- **references:** [[ADR-0037]]

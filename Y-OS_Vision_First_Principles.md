@@ -11,6 +11,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Y-OS Core Definition — Official Vision Statement v2
@@ -166,3 +175,18 @@ The organization itself becomes an adaptive system.
 
 ## Y-OS Law #12
 > **The Artifact-Centric Principle: The system remembers through artifacts, not through agents. The organization is defined by its registry, not by its prompts. A mission does not exist unless its lineage is reconstructable.**
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

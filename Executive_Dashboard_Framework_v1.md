@@ -11,6 +11,14 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Executive Dashboard Framework v1
@@ -52,3 +60,17 @@ To define the structure of the official ECO Dashboard, the real-time interface m
 ### 8. Strategic Horizon
 - **Recommendations:** Lakshmi's algorithmic suggestions for organizational improvement.
 - **Future Opportunities:** Backlog of ideas and future architecture items.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

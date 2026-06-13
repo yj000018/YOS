@@ -11,6 +11,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # 4. Accept / Reject Framework v1
@@ -46,3 +52,16 @@ To define the governance mechanism for artifact state transitions between Produc
 - **Acceptance Criteria:** Artifact runs without fatal errors. Passes Brahma's architectural criteria. Build Report is complete.
 - **Rejection Criteria:** Execution crash. Unauthorized architectural deviations. Missing documentation.
 - **Escalation:** If rejected twice, escalates to Brahma (if architectural flaw discovered during build) or results in Hanuman being re-prompted/re-initialized.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

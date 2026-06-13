@@ -11,6 +11,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+references:
+- '[[ADR-0010]]'
 ---
 
 # Title Recommendation: Hanuman
@@ -35,3 +41,15 @@ The current formal title is **Lead Developer (Hanuman)**. A review was requested
 The title should remain "Lead Developer" for v1, as it accurately reflects the immediate operational reality (writing Python, interacting with APIs). 
 
 However, as Brahma's capabilities expand into Universal Design (ADR-0010), Hanuman's title should evolve to **Lead Builder** in v2.0 to reflect their status as the universal execution engine of Y-OS, capable of constructing any designed artifact, not just software. The "Chief" prefix must be avoided to maintain hierarchical clarity beneath the COO.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **references:** [[ADR-0010]]

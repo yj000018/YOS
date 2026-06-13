@@ -23,6 +23,13 @@ aliases:
 - MISSION-008
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+- '[[Derivation_Transparency]]'
+executed_by:
+- '[[Krishna]]'
 ---
 
 # ART-M008-STRATEGY
@@ -81,3 +88,15 @@ Y-OS remains Y-OS not through constitutional ossification, but through amendment
 ---
 
 *Filed as philosophical framework for future constitutional review.*
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **executed_by:** [[Krishna]]

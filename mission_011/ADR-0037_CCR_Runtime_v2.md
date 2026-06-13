@@ -27,6 +27,20 @@ aliases:
 - MISSION-011
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[ADR-0037_CCR_Runtime_v1]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+depends_on:
+- '[[Session_Delta]]'
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # ADR-0037: CCR Runtime v2 — Production Context Orchestration
@@ -54,3 +68,20 @@ Key architectural mandates:
 - **Article I (Artifact Primacy):** Maintained. Context Packs are strictly derived from artifacts.
 - **Article II (Preservation Principle):** Maintained. Git architecture ensures permanent preservation.
 - **Article III (Derivation Transparency):** Maintained. Session Deltas and Context Packs explicitly log lineage.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **depends_on:** [[Session_Delta]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **supersedes:** [[ADR-0037_CCR_Runtime_v1]]

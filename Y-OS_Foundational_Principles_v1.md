@@ -12,6 +12,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # Y-OS Foundational Principles v1
@@ -98,3 +103,14 @@ The value of the Control Plane lies in preventing the degradation of information
 *   Without governance, visibility becomes passive dashboards.
 
 The Control Plane turns static information into operational decisions.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

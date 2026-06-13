@@ -13,6 +13,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Registry Schema v1.1
@@ -64,3 +69,14 @@ The Artifact Registry Schema v1.1 extends the MVP schema to support the **Artifa
 3. **Root Anchor:** Added `Root Artifact` to easily query all artifacts in a mission without recursive graph traversal.
 4. **Runtime Flags:** Added `Open Loop Flag` and `Blocking Issue` to allow agents to explicitly signal bottlenecks without waiting for Lakshmi's timeout heuristics.
 5. **State Timestamps:** Formalized `Ready For Review Date` to measure review latency accurately.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

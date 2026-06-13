@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # ECO (Lakshmi) Agent Card v1
@@ -50,3 +56,15 @@ Lakshmi operates across all phases of the Operational Value Chain (Strategy, Exe
 - **To CEO (Yannick):** For strategic bottlenecks, rejected Strategy Briefs, or major cost anomalies.
 - **To COO (Ganesha):** For stalled execution artifacts or blocked builds.
 - **To CODO (Saraswati):** For repeated governance failures or broken handoff contracts.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

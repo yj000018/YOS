@@ -12,6 +12,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Lakshmi Runtime Architecture v1
@@ -39,3 +44,14 @@ Lakshmi operates on a scheduled or event-driven loop:
 
 ## Decoupling Principle
 Lakshmi does *not* query agents directly. Lakshmi *only* queries the Artifact Registry. If an agent fails to update the Registry, Lakshmi flags the missing artifact as an Open Loop.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

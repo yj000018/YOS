@@ -8,22 +8,34 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article V'
+- Article V
 adr_lineage:
-  - '[[ADR-0033]]'
+- '[[ADR-0033]]'
 mission_evidence:
-  - '[[mission_005c]]'
-implements: ["[[Constitutional_Governance]]"]
+- '[[mission_005c]]'
+implements:
+- '[[Constitutional_Governance]]'
 depends_on: []
 tags:
-  - '#governance'
-  - '#yos'
-  - '#accepted'
+- '#governance'
+- '#yos'
+- '#accepted'
 aliases:
-  - Deterministic Governance
-  - ADR-0033
+- Deterministic Governance
+- ADR-0033
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0033]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Lakshmi]]'
+references:
+- '[[ADR-0033]]'
 ---
 
 # Governance Determinism
@@ -80,3 +92,17 @@ Operational. Scoring rubric defined in Governance_Determinism_Framework_v1.
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0033]]
+- **validates:** [[ADR-0033]]

@@ -15,6 +15,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[Y-OS_Artifact-Centric_Manifesto_v1]]'
+executed_by:
+- '[[Brahma]]'
+references:
+- '[[ADR-0022]]'
 ---
 
 # Y-OS Artifact-Centric Manifesto
@@ -90,3 +96,14 @@ Autonomous Organization
 Constitution → First Principles → Identity → Operational Cycle
 → Organization → Governance → Control Plane → Orchestration → Execution
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **references:** [[ADR-0022]]
+- **supersedes:** [[Y-OS_Artifact-Centric_Manifesto_v1]]

@@ -31,6 +31,43 @@ aliases:
 - Cognitive Graph Architecture
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[ADR-0030]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+- '[[Constitutional_Governance]]'
+evolved_from:
+- '[[ADR-0030]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0037]]'
+- '[[ADR-0030]]'
+- '[[ADR-0039]]'
+- '[[ADR-0036]]'
+- '[[ADR-0029]]'
+- '[[ADR-0038]]'
+- '[[ADR-0033]]'
+- '[[ADR-0035]]'
+- '[[ADR-0020]]'
+- '[[ADR-0041]]'
+- '[[ADR-0024]]'
+- '[[ADR-0034]]'
 ---
 
 # Cognitive Graph Architecture v1
@@ -295,3 +332,40 @@ without needing to know filenames.
 | Evolution | Not encoded | `supersedes` / `evolves_into` chains |
 | Memory | Static archive | Living graph with LMP integration |
 | Visual | MOC lists | Canvas cognitive maps |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **evolved_from:** [[ADR-0030]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **governed_by:** [[Constitutional_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0037]]
+- **references:** [[ADR-0030]]
+- **references:** [[ADR-0039]]
+- **references:** [[ADR-0036]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0038]]
+- **references:** [[ADR-0033]]
+- **references:** [[ADR-0035]]
+- **references:** [[ADR-0020]]
+- **references:** [[ADR-0041]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0034]]
+- **supersedes:** [[ADR-0030]]

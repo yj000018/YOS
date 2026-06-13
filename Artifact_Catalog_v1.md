@@ -11,6 +11,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # 2. Artifact Catalog v1
@@ -34,3 +40,16 @@ canonical: true
 - Once transitioned to "Ready for Review", the artifact becomes read-only for the Producer.
 - The **Consumer** holds the authority to Accept or Reject the artifact.
 - Once "Accepted", the artifact is immutable. Any changes require a new version or an explicit amendment artifact (e.g., an ADR).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

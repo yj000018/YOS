@@ -12,6 +12,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Artifact Lineage Views
@@ -64,3 +69,14 @@ To make the Artifact Registry useful for human executives (CEO) and ECO (Lakshmi
 * **Filter:** `Status` = `Superseded`
 * **Visible Properties:** `Next Version`, `Rejection Notes`
 * **Purpose:** Historical audit trail of rework and architectural pivots.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

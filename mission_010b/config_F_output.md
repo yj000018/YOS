@@ -25,6 +25,14 @@ aliases:
 - MISSION-010B
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # Config F — Context Pack + Canonical Memory + Session
@@ -90,3 +98,16 @@ Mode D achieved 86.2 quality at dramatically lower token cost than Mode E's 91.3
 5. Novel domain entry (no prior artifacts)
 
 **Strategic Position:** Efficiency without amnesia. Scale without compromise.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **implements:** [[Context_Pack]]

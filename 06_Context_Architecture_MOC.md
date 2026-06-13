@@ -7,17 +7,27 @@ date: 2026-06-13
 source_branch: y-os-doctrine
 canonical: true
 tags:
-  - "#yos"
-  - "#context"
-  - "#ccr"
-  - "#artifact"
+- '#yos'
+- '#context'
+- '#ccr'
+- '#artifact'
 related_adrs:
-  - "[[ADR-0036]]"
-  - "[[ADR-0037]]"
-  - "[[ADR-0038]]"
+- '[[ADR-0036]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
 aliases:
-  - Context Architecture MOC
-  - CCR MOC
+- Context Architecture MOC
+- CCR MOC
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+compiles:
+- '[[Context_Pack]]'
+injects:
+- '[[Mission]]'
+references:
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
 ---
 
 # Y-OS Context Architecture — Map of Content
@@ -45,3 +55,17 @@ aliases:
 ## Back
 
 [[00_Y-OS_Home]]
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **injects:** [[Mission]]
+- **references:** [[ADR-0037]]
+- **references:** [[ADR-0038]]

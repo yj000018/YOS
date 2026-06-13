@@ -35,6 +35,24 @@ aliases:
 - MISSION-012B
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+- '[[Derivation_Transparency]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # ADR-0039 — Living Memory Pipeline
@@ -142,3 +160,24 @@ The 8-stage pipeline is the minimum necessary to satisfy:
 - No blocking reasons
 
 **CEO Recommendation (Ganesha): ADOPT**
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]

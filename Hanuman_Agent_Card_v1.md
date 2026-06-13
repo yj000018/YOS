@@ -10,6 +10,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Lead Developer (Hanuman) Agent Card v1
@@ -49,3 +54,15 @@ Hanuman's scope is strictly limited to the Build phase. This includes:
 ## 7. Escalation Rules
 - **To Brahma (Chief Architect):** If an architectural specification is ambiguous, contradictory, or fails during implementation.
 - **To COO (Ganesha):** If the build is blocked by missing credentials, sandbox limitations, or insufficient time.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

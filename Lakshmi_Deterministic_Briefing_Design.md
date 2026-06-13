@@ -12,6 +12,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # Deterministic Briefing Design
@@ -58,3 +60,12 @@ Note: This briefing was generated deterministically due to LLM synthesis unavail
 ## 3. Trigger Conditions
 
 The deterministic fallback is triggered if `generate_ceo_briefing_llm()` raises an exception, times out, or returns a string shorter than 50 characters (e.g., "LLM returned empty response").
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

@@ -16,6 +16,18 @@ aliases:
 - Context Compiler
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
+injects:
+- '[[Mission]]'
 ---
 
 # ADR-0029: Context Compiler Runtime v1 (CCR-001)
@@ -50,3 +62,18 @@ A Context Pack must be able to replace raw conversation history for a selected t
 - All future Y-ORC executions will inject a Context Pack into the LLM prompt.
 - Y-OS is fully decoupled from stateful chat threads.
 - Token usage becomes predictable and manageable via Token Budgeting.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **injects:** [[Mission]]

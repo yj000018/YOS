@@ -15,6 +15,8 @@ aliases:
 - Artifact Layer
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Saraswati]]'
 ---
 
 # ADR-0012: Formalization of the Artifact Layer
@@ -45,3 +47,12 @@ We formally establish the **Artifact Layer** as the central nervous system and s
 
 ## Organizational Impact
 Y-OS transitions from an "Agent-Centric" organization to an "Artifact-Centric" organization. Agents perform the compute; artifacts hold the value.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Saraswati]]

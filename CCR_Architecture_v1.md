@@ -14,6 +14,18 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
+injects:
+- '[[Mission]]'
 ---
 
 # Context Compiler Runtime (CCR) Architecture v1
@@ -74,3 +86,18 @@ graph TD
 - **CRT:** Provides the `Model` constraints to CCR.
 - **Lakshmi:** Scores the quality of the generated Context Pack.
 - **Memory Layer:** Provides historical context to CCR.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **injects:** [[Mission]]

@@ -24,6 +24,10 @@ aliases:
 - MISSION-010
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+constrained_by:
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # Mode C — Conversation + Context Pack
@@ -53,3 +57,12 @@ canonical: true
 **Implementation Guidance:** To implement Article VI as Amendment-001, integrate it into the existing constitutional text and establish a formal protocol for reviewing and ratifying amendments. Ensure all governance stakeholders are informed about, and trained in, the new amendment procedure to facilitate compliance.
 
 **Risk Assessment:** The primary risk associated with adopting Article VI lies in its enforcement. Without clear and robust mechanisms for formal review and ratification, the intended benefits may not materialize. Therefore, it is crucial to develop detailed procedures and checks to uphold the amendment's effectiveness and prevent potential procedural bypasses.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **implements:** [[Context_Pack]]

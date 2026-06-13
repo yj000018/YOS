@@ -11,6 +11,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
 ---
 
 # Artifact Query Model v1
@@ -40,3 +46,15 @@ Used by Lakshmi or the CEO to see the current bottleneck in a mission.
 Used by a Producer to check if their Accepted artifact has been acted upon.
 - **Filter:** `Producer == [Role] AND Status == 'Accepted'`
 - **Logic:** If an artifact stays 'Accepted' for too long, the Consumer is a bottleneck. Once the Consumer acts, the status changes to 'Consumed'.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

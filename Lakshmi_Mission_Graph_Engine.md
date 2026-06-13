@@ -13,6 +13,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # Mission Graph Engine
@@ -50,3 +52,12 @@ Required keys per artifact:
 ## 4. Output
 
 A dictionary of `Mission` objects containing the reconstructed graph and computed metadata, ready for the Dashboard Data Model.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

@@ -13,6 +13,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # Runtime Data Model v1
@@ -66,3 +68,12 @@ class OpenLoop:
     description: str
     assigned_to: str # The role responsible for closing the loop
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

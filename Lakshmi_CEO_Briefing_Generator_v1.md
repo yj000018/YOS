@@ -12,6 +12,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # CEO Briefing Generator v1
@@ -42,3 +47,14 @@ The extracted data is passed to an LLM (e.g., Claude Opus) with the following sy
 
 ### Step 3: Delivery
 The generated text is published to the top of the Executive Dashboard and optionally pushed via webhook to the CEO's preferred communication channel.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

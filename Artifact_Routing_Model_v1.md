@@ -12,6 +12,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Krishna]]'
 ---
 
 # 6. Artifact-Centric Routing Model v1
@@ -43,3 +47,14 @@ Routing work via Artifact State Changes aligns perfectly with the core hypothesi
 `If [Artifact Type] changes state to [Ready For Review], then invoke [Consumer Agent] with [Artifact URI].`
 
 This makes Y-OS a true state machine, capable of infinite scalability, pause/resume functionality, and perfect memory retention.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Krishna]]

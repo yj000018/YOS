@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Capability Roadmap: ECO (Lakshmi)
@@ -32,3 +38,15 @@ canonical: true
 1. **Predictive Bottlenecking:** Using historical data to predict which missions are likely to fail or exceed budget before the build phase begins.
 2. **Automated Triage:** Automatically resolving low-level open loops based on predefined CEO preferences.
 3. **Semantic Search:** Allowing the CEO to query Lakshmi via natural language to find specific data across the entire history of Y-OS artifacts.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

@@ -11,6 +11,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # Artifact API Model v1
@@ -43,3 +45,12 @@ While the MVP uses Notion, agents interact with it programmatically. This define
 
 ### `archive_mission_artifacts(mission_id)`
 - **Action:** Changes all artifacts associated with `mission_id` to `Archived`.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

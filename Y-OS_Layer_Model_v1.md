@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Hanuman]]'
 ---
 
 # Y-OS Layer Model v1
@@ -62,3 +68,15 @@ Y-OS is organized into seven distinct architectural layers. Each layer has a spe
 ## Conclusion
 
 This layered architecture ensures separation of concerns. If the Execution Layer fails, the State Layer remains intact. If the Orchestration Layer is paused, the Visibility Layer continues to reflect the current Truth. This is the structural foundation of Y-OS resilience.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

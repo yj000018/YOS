@@ -8,24 +8,33 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article I'
-  - 'Article II'
+- Article I
+- Article II
 adr_lineage:
-  - '[[ADR-0038]]'
+- '[[ADR-0038]]'
 mission_evidence:
-  - '[[mission_012]]'
-implements: ["[[Living_Memory]]"]
-depends_on: ["[[CCR_Runtime]]"]
+- '[[mission_012]]'
+implements:
+- '[[Living_Memory]]'
+- '[[CCR_Runtime]]'
+- '[[Session_Delta]]'
+depends_on:
+- '[[CCR_Runtime]]'
 tags:
-  - '#memory'
-  - '#session-delta'
-  - '#yos'
-  - '#accepted'
+- '#memory'
+- '#session-delta'
+- '#yos'
+- '#accepted'
 aliases:
-  - Delta Engine
-  - Session Delta Engine
+- Delta Engine
+- Session Delta Engine
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Preservation_Principle]]'
+references:
+- '[[ADR-0038]]'
 ---
 
 # Session Delta
@@ -83,3 +92,17 @@ Designed (ADR-0038). Implementation pending MISSION-015.
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Preservation_Principle]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **references:** [[ADR-0038]]

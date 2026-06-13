@@ -27,6 +27,24 @@ aliases:
 - MISSION-006
 source_branch: y-os-doctrine
 canonical: true
+produces:
+- '[[ADR-0026]]'
+implements:
+- '[[CCR_Runtime]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+references:
+- '[[ADR-0026]]'
 ---
 
 # Constitutional Elevation Review (MISSION-006)
@@ -130,3 +148,23 @@ The Minimal Set that survives the Replacement Test consists of 5 Articles:
 5. Governance Before Autonomy
 
 If all models, code, runtimes, and routing architectures are replaced, but these 5 articles are maintained, the resulting system is still definitively Y-OS.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **produces:** [[ADR-0026]]
+- **references:** [[ADR-0026]]

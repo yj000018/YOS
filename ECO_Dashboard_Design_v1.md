@@ -11,6 +11,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # ECO Dashboard Design v1
@@ -64,3 +69,15 @@ canonical: true
 ## 10. Recommendations & Future Opportunities
 - **Recommendation:** Rotate Hanuman's sandbox environment; memory usage approaching limits.
 - **Future:** Evaluate adding an automated QA agent downstream of Hanuman to reduce Ganesha's delivery load.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

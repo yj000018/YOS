@@ -11,6 +11,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Architectural KPI Framework v1
@@ -34,3 +39,15 @@ To measure the effectiveness, clarity, and impact of the Chief Architect (Brahma
 
 ## Evaluation Cycle
 These KPIs are tracked by the COO (Ganesha) during active missions and analyzed by the CODO (Saraswati) during the Organizational Learning phase to improve Brahma's training and prompting.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

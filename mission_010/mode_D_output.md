@@ -27,6 +27,22 @@ aliases:
 - MISSION-010
 source_branch: y-os-doctrine
 canonical: true
+produces:
+- '[[ADR-0008]]'
+implements:
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Lakshmi]]'
+references:
+- '[[ADR-0008]]'
 ---
 
 # Mode D — Canonical Memory + Context Pack
@@ -90,3 +106,20 @@ Article VI should be recorded as Amendment-001 with effective date, requiring su
 
 **Lakshmi Score Estimate:** 20 (Acceptable)
 **Verdict:** APPROVE
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[Context_Pack]]
+- **produces:** [[ADR-0008]]
+- **references:** [[ADR-0008]]

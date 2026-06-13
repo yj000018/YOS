@@ -7,12 +7,26 @@ date: 2026-06-13
 source_branch: y-os-doctrine
 canonical: true
 tags:
-  - "#yos"
-  - "#mission"
-  - "#artifact"
+- '#yos'
+- '#mission'
+- '#artifact'
 aliases:
-  - Missions MOC
-  - Mission Register
+- Missions MOC
+- Mission Register
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Y-OS Missions — Map of Content
@@ -57,3 +71,22 @@ Each mission folder contains:
 ## Back
 
 [[00_Y-OS_Home]]
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]

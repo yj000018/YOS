@@ -17,6 +17,11 @@ aliases:
 - Artifact Registry
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0016: Artifact Registry
@@ -44,3 +49,14 @@ We mandate the strict use of the 7-state Artifact State Machine: `Draft`, `Ready
 - No artifact is considered official unless it exists in the Artifact Registry.
 - Agents must be programmed (or prompted) to query the Registry for their inputs and log their outputs in the Registry.
 - The ECO (Lakshmi) will rely entirely on the Registry to generate the Executive Dashboard and Open Loops Register.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

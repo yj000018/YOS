@@ -20,6 +20,20 @@ aliases:
 - MISSION-002
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # Worker Runtime Specification v1
@@ -163,3 +177,21 @@ Every execution MUST produce a trace entry:
 | Saraswati | CODO | Manus Runtime | claude-sonnet-4-5 | — |
 
 **Note:** In this sandbox environment, all providers route through Manus Runtime (the agent itself), which is the only available real cognitive executor. This is architecturally valid: `CRT → Manus Runtime` is a legitimate provider mapping.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]

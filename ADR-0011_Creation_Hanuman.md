@@ -16,6 +16,12 @@ aliases:
 - Creation of Hanuman
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # ADR-0011: Creation of Lead Developer (Hanuman)
@@ -45,3 +51,16 @@ Hanuman is positioned downstream of the Chief Architect (Brahma) and reports to 
 ## Organizational Impact
 This decision completes the Build Layer of the Operational Value Chain. The core execution engine of Y-OS is now fully specified:
 Strategy (Krishna) → Plan (Ganesha) → Design (Brahma) → Build (Hanuman) → Deliver (Ganesha).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

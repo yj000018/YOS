@@ -11,6 +11,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Validation Rules
@@ -46,3 +51,14 @@ To maintain the integrity of the Artifact Registry and ensure Y-ORC can route re
 ## 5. Enforcement
 
 These rules are enforced by the Y-ORC event-driven orchestrator. If an agent attempts to submit an artifact that violates these rules, Y-ORC will reject the submission and flag it as an Open Loop for Lakshmi.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

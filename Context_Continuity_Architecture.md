@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+compiles:
+- '[[Context_Pack]]'
+injects:
+- '[[Mission]]'
 ---
 
 # Context Continuity Architecture
@@ -52,3 +58,14 @@ The delivery mechanism.
 
 ## Interaction Flow
 When Y-ORC routes a capability to a worker via ART, the CRT (Capability Routing Table, future) or the worker itself constructs the **Runtime Context Pack**. This pack is injected as the system prompt or first message into the fresh LLM session. The model then executes the task within its ephemeral **Session Context**, produces the output artifact, and the session is discarded. The cognitive state is preserved in the resulting artifact and the lineage, not in the LLM's memory.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **implements:** [[Context_Pack]]
+- **injects:** [[Mission]]

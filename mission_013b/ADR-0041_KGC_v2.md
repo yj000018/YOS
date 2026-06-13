@@ -7,7 +7,9 @@ mission: MISSION-013B
 date: '2026-06-13'
 owner: Brahma
 parent: '[[02_ADR_MOC]]'
-supersedes: '[[ADR-0040]]'
+supersedes:
+- '[[ADR-0040]]'
+- '[[ADR-0041_KGC_v1]]'
 related_adrs:
 - '[[ADR-0040]]'
 - '[[ADR-0039]]'
@@ -30,6 +32,20 @@ aliases:
 - Knowledge Graph Compiler v2
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Human_Override]]'
+- '[[Derivation_Transparency]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # ADR-0041 — Knowledge Graph Compiler v2
@@ -235,3 +251,21 @@ Risk Score estimate: 25/100 (additive only, reversible)
 - Dry-run mode mandatory before apply
 - Body wikilinks only appended to existing lines, never replacing text
 - Canvas files are additive — no existing files modified
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **supersedes:** [[ADR-0041_KGC_v1]]

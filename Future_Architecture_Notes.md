@@ -9,6 +9,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Future Architecture Notes
@@ -33,3 +38,15 @@ CODO will encode the Y-OS Laws directly into Y-ORC. If an artifact violates a ru
 
 ## 5. Agents as Plugins
 In v2, the concept of an "Agent" becomes a replaceable plugin within the Capability Layer. The Layers remain the enduring architecture. Krishna could be replaced by a specialized fine-tuned model without altering the Executive Layer or the Artifact Layer.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

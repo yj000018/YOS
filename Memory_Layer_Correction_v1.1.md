@@ -11,6 +11,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Saraswati]]'
 ---
 
 # Memory Layer Correction v1.1
@@ -42,3 +44,12 @@ The Memory Layer is no longer defined by the tools it currently uses (Notion, Gi
 
 ## Operational Implication
 If Y-OS decides to replace Obsidian with a custom graph database for the Canonical Memory Layer, the architecture of Y-OS remains unchanged. Only the tool implementation is updated.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Saraswati]]

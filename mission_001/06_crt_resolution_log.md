@@ -17,6 +17,15 @@ aliases:
 - MISSION-001
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # CRT Resolution Log — MISSION-001
@@ -30,3 +39,18 @@ canonical: true
 | 5 | Lakshmi | OpenAI | GPT-5 | governance |
 | 6 | Saraswati | Anthropic | Claude Opus | learning |
 | 7 | Ganesha | OpenAI | GPT-5 | reporting |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

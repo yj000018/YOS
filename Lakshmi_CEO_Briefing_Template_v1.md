@@ -13,6 +13,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # CEO Briefing Template v1
@@ -51,3 +56,14 @@ The LLM (Claude Opus) will be instructed to populate the following Markdown stru
 ## 6. Recommendations
 {1-2 strategic recommendations from Lakshmi based on the data}
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

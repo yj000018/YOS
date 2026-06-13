@@ -13,6 +13,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Artifact Lineage Model v1
@@ -78,3 +87,18 @@ With explicit lineage:
 * **Y-ORC** can trigger the next agent by finding the accepted artifact and checking if it has children. If not, it routes to the Consumer.
 * **Lakshmi** can detect "Broken Lineage" (an accepted artifact with no children that is not a terminal report).
 * **Saraswati** can trace a failure in the Build phase all the way back to an ambiguity in the Strategy Brief.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

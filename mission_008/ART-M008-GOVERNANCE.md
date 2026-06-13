@@ -17,6 +17,11 @@ aliases:
 - MISSION-008
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+- '[[Constitutional_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
 ---
 
 # ART-M008-GOVERNANCE
@@ -73,3 +78,13 @@ canonical: true
 
 - **Overall Verdict: APPROVE_WITH_WARNING**
   - The amendment framework is fundamentally sound, warranting approval. However, caution is advised to ensure clarity in the amendment procedure and to handle specific points that, if improved, could further safeguard constitutional identity.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **governed_by:** [[Constitutional_Governance]]

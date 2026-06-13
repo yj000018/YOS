@@ -14,6 +14,9 @@ aliases:
 - Creation of CODO Role
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Ganesha]]'
+- '[[Saraswati]]'
 ---
 
 # ADR-0006 — Creation of the CODO Role
@@ -183,3 +186,13 @@ The organization layer is now divided into two executive responsibilities:
 ## Strategic Significance
 
 This ADR formalizes the transition from **AI Agent System** to **Autonomous Organization** capable of improving not only its knowledge and capabilities, but also its own structure, processes, roles, and execution quality.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]

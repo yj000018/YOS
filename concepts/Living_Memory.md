@@ -8,26 +8,37 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article I'
-  - 'Article II'
-  - 'Article III'
+- Article I
+- Article II
+- Article III
 adr_lineage:
-  - '[[ADR-0039]]'
+- '[[ADR-0039]]'
 mission_evidence:
-  - '[[mission_012b]]'
-implements: []
-depends_on: ["[[Session_Delta]]", "[[CCR_Runtime]]", "[[Canonical_Memory]]"]
+- '[[mission_012b]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+depends_on:
+- '[[Session_Delta]]'
+- '[[CCR_Runtime]]'
+- '[[Canonical_Memory]]'
 tags:
-  - '#memory'
-  - '#living-memory'
-  - '#yos'
-  - '#accepted'
+- '#memory'
+- '#living-memory'
+- '#yos'
+- '#accepted'
 aliases:
-  - LMP
-  - Living Memory Pipeline
-  - Organizational Memory
+- LMP
+- Living Memory Pipeline
+- Organizational Memory
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+references:
+- '[[ADR-0039]]'
 ---
 
 # Living Memory
@@ -88,3 +99,17 @@ Doctrine defined (ADR-0039). Pipeline implementation pending MISSION-015.
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **references:** [[ADR-0039]]

@@ -10,6 +10,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
 
 # Y-REG Missing Capability Report v1
@@ -91,3 +93,12 @@ canonical: true
 | 6 | Gap Analysis | Y-CAP | Core Y-CAP function |
 | 7 | Namespace Management | Y-ID | Core Y-ID function |
 | 8 | Execution History | Y-LOG | Core Y-LOG function |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

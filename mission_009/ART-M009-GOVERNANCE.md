@@ -24,6 +24,16 @@ aliases:
 - MISSION-009
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Constitutional_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Hanuman]]'
 ---
 
 # ART-M009-GOVERNANCE
@@ -73,3 +83,17 @@ The governance model is largely compliant with constitutional requirements throu
 - **Enhanced Transparency Measures:** Although transparency is preserved, systems could benefit from heightened real-time tracking features to provide instant visibility into decision lineage.
 
 Strengthening these areas through targeted improvements will mitigate remaining risks and further solidify the governance structure's robustness. Continuous monitoring and iterative updates to safeguard mechanisms should also be instituted as part of an ongoing governance refinement process.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Constitutional_Governance]]

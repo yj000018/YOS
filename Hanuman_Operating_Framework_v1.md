@@ -11,6 +11,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Lead Developer (Hanuman) Operating Framework v1
@@ -57,3 +63,16 @@ Hanuman holds exclusive decision rights over:
 ### Interface with CSO (Krishna)
 - **Nature:** None.
 - **Interaction:** Hanuman does not interact with the CSO. Hanuman's reality is dictated by the Architecture Package, not the Strategy Brief.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

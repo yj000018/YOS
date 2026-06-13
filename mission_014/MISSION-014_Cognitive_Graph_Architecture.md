@@ -25,6 +25,32 @@ aliases:
 - Cognitive Graph Architecture
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[ADR-0040]]'
+produces:
+- '[[ADR-0041]]'
+- '[[ADR-0029]]'
+- '[[ADR-0040]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+- '[[Constitutional_Governance]]'
+evolved_from:
+- '[[ADR-0040]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0041]]'
+- '[[ADR-0029]]'
+- '[[ADR-0040]]'
 ---
 
 # MISSION-014 — Cognitive Graph Architecture
@@ -142,3 +168,29 @@ Each stage is a typed relationship. Each artifact is a concept node. **The graph
 - **Branch:** `y-os-doctrine`
 - **`main` untouched**
 - **No force push**
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **evolved_from:** [[ADR-0040]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **governed_by:** [[Constitutional_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **produces:** [[ADR-0041]]
+- **produces:** [[ADR-0029]]
+- **produces:** [[ADR-0040]]
+- **references:** [[ADR-0041]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0040]]
+- **supersedes:** [[ADR-0040]]

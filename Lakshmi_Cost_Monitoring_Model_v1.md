@@ -12,6 +12,13 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Cost Monitoring Model v1
@@ -35,3 +42,16 @@ For the MVP, Lakshmi relies on the `cost` Agent Skill (Credit Optimizer).
 ### Anomaly Detection
 - **Trigger:** A single artifact generation consumes > 3x the average cost for its type.
 - **Action:** Generates a P2 Alert for the CEO and CODO (Saraswati) to investigate potential loop errors or inefficient capability routing.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

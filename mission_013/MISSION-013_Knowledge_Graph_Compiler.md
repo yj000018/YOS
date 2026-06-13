@@ -21,6 +21,31 @@ aliases:
 - Knowledge Graph Compiler
 source_branch: y-os-doctrine
 canonical: true
+produces:
+- '[[ADR-0040]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
+- '[[ADR-0039]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+references:
+- '[[ADR-0040]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
+- '[[ADR-0039]]'
 ---
 
 # MISSION-013 — Knowledge Graph Compiler v1
@@ -143,3 +168,30 @@ Y-OS MISSION-013 is PASSED. The corpus is now an Obsidian-native knowledge graph
 - **Lakshmi verdict: APPROVE_WITH_WARNING** (score 18/100)
 
 The Y-OS knowledge graph is now ready for Obsidian vault deployment. Clone `y-os-doctrine` branch and open as vault.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **produces:** [[ADR-0040]]
+- **produces:** [[ADR-0037]]
+- **produces:** [[ADR-0038]]
+- **produces:** [[ADR-0039]]
+- **references:** [[ADR-0040]]
+- **references:** [[ADR-0037]]
+- **references:** [[ADR-0038]]
+- **references:** [[ADR-0039]]

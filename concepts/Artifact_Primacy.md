@@ -8,26 +8,32 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article I'
+- Article I
 adr_lineage:
-  - '[[ADR-0021]]'
-  - '[[ADR-0024]]'
-  - '[[ADR-0034]]'
+- '[[ADR-0021]]'
+- '[[ADR-0024]]'
+- '[[ADR-0034]]'
 mission_evidence:
-  - '[[mission_001]]'
-  - '[[mission_002]]'
-  - '[[mission_006]]'
+- '[[mission_001]]'
+- '[[mission_002]]'
+- '[[mission_006]]'
 implements: []
 depends_on: []
 tags:
-  - '#constitution'
-  - '#yos'
-  - '#accepted'
+- '#constitution'
+- '#yos'
+- '#accepted'
 aliases:
-  - Artifact First
-  - Article I
+- Artifact First
+- Article I
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Artifact_Primacy]]'
+references:
+- '[[ADR-0021]]'
+- '[[ADR-0024]]'
+- '[[ADR-0034]]'
 ---
 
 # Artifact Primacy
@@ -88,3 +94,15 @@ FROZEN — Constitutional Article I. Cannot be amended without supermajority.
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **references:** [[ADR-0021]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0034]]

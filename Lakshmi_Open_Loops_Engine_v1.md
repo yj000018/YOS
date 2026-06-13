@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Krishna]]'
 ---
 
 # Open Loops Engine v1
@@ -45,3 +51,15 @@ The Open Loops Engine is the core algorithmic component of Lakshmi. It scans the
 
 ## Output
 The engine generates a list of Open Loop objects, which are written to the Open Loops Register Notion Database. When the underlying condition is resolved in the Artifact Registry, Lakshmi automatically closes the Open Loop.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

@@ -10,6 +10,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
 
 # 🏗️ Y-OS Build Status Report v1
@@ -73,3 +75,12 @@ With `Y-REG` operational and the `/YOS` launcher providing visibility, the next 
   1. Read Context Pack from `Y-CTX`.
   2. Query `Y-REG` for matching capabilities/skills.
   3. Generate Mission Pack for the executing agent.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

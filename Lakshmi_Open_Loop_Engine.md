@@ -13,6 +13,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
 ---
 
 # Open Loop Engine
@@ -43,3 +47,14 @@ The engine evaluates every artifact and every mission against these rules.
 ## 2. Execution
 
 The engine runs *after* the Mission Graph Engine has grouped artifacts. It returns a flat list of `OpenLoop` objects that are appended to the `dashboard_state.json` and `open_loops.json`.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]

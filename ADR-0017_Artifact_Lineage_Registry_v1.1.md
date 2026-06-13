@@ -18,6 +18,12 @@ aliases:
 - Artifact Lineage Registry v1.1
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # ADR-0017: Artifact Lineage & Registry v1.1
@@ -61,3 +67,15 @@ The Notion Database must be updated to support self-referencing Relations for Pa
 
 ### 4.3. Complexity
 This introduces a requirement for agents (or Y-ORC acting on their behalf) to explicitly link new artifacts to their parents upon creation. This slight increase in write complexity is vastly outweighed by the read reliability it provides to the entire system.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

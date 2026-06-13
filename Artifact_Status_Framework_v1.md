@@ -11,6 +11,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Saraswati]]'
 ---
 
 # 3. Artifact Status Framework v1
@@ -49,3 +51,12 @@ To standardize the state machine of all Y-OS artifacts, enabling programmatic ro
 ## Additional State Evaluated: "Blocked"
 *Evaluation:* Should an artifact have a "Blocked" state? 
 *Decision:* No. An artifact itself is never blocked; the *process* of creating it is blocked. If a Producer is blocked, they escalate via their communication contracts. The artifact remains in "Draft" until the block is resolved.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Saraswati]]

@@ -18,6 +18,15 @@ aliases:
 - Lakshmi Runtime MVP
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0018]]'
+- '[[ADR-0013]]'
+- '[[ADR-0017]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0018: Lakshmi Runtime MVP v2
@@ -51,3 +60,17 @@ We will implement the **Lakshmi Runtime MVP v2** as a standalone Python script (
 
 *   The script will need to handle Notion API rate limits and pagination if the registry grows large.
 *   The output is static (Markdown/JSON). A future iteration will need to push this data back into a Notion Dashboard page for live viewing.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **validates:** [[ADR-0018]]
+- **validates:** [[ADR-0013]]
+- **validates:** [[ADR-0017]]

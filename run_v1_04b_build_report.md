@@ -10,6 +10,13 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Hanuman]]'
 ---
 
 # Build Report: First End-to-End Y-OS Run v1
@@ -40,3 +47,16 @@ canonical: true
 ## Handoff Instructions
 - Ganesha must review the CEO Briefing (ART-E2E-004a) and this Build Report.
 - Upon acceptance, Ganesha will generate the Delivery Report.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

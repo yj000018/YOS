@@ -24,6 +24,8 @@ aliases:
 - MISSION-010B
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # Config C — Canonical Memory Only
@@ -52,3 +54,11 @@ canonical: true
 **Constitutional Compliance Assessment:** ACE fully complies with all constitutional requirements. The architecture supports Artifact Primacy and the Preservation Principle by ensuring all outputs and decisions are documented and traceable. It also upholds Human Override Primacy, providing interfaces for human intervention when necessary. Governance is maintained through deterministic protocols, aligning with Governance Before Autonomy principles.
 
 **When to Use vs. Upgrade to Full Mode E:** Utilize ACE as the default operational mode for routine missions, ensuring low-cost, reliable execution. Upgrade to full Mode E when encountering complex, high-stakes missions requiring deeper contextual understanding and finer-grained governance. Mode E should be reserved for scenarios where cutting-edge autonomous decision-making is essential, justifying its higher token expenditure.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Governance_Before_Autonomy]]

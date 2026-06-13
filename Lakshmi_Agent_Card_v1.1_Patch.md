@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # ECO (Lakshmi) Agent Card v1.1 (Patch)
@@ -42,3 +48,15 @@ The operational definition of Lakshmi is now governed by the following formula:
 
 ## Architectural Note
 This patch supersedes conflicting sections in `Lakshmi_Agent_Card_v1.md`. The core mission remains: *Transform organizational complexity into executive clarity.*
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

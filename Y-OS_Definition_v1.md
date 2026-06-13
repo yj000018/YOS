@@ -14,6 +14,13 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+references:
+- '[[ADR-0022]]'
 ---
 
 # Y-OS Definition v1
@@ -92,3 +99,15 @@ Autonomous Organization
 Constitution → First Principles → Identity → Operational Cycle
 → Organization → Governance → Control Plane → Orchestration → Execution
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0022]]

@@ -11,6 +11,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # Notion Database Update Plan
@@ -56,3 +58,12 @@ Since Manus operates headlessly and the MCP DDL is limited, the execution strate
    If true Relations cannot be created programmatically, Manus will continue to use the Text proxy columns (`Parent Artifact ID`) but enforce the lineage logic strictly in code (Python runtime).
 3. **Phase 3: User Handoff**
    Manus will instruct the user to manually convert the proxy text columns into true self-referencing Relations in the Notion UI, as this is a known limitation of the Notion API.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

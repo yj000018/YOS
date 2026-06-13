@@ -12,6 +12,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
 ---
 
 # Artifact State Machine v1
@@ -38,3 +40,12 @@ canonical: true
 - `Accepted` → `Superseded`
 - `Consumed` → `Archived`
 - `Superseded` → `Archived`
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]

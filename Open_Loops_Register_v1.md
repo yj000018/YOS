@@ -10,6 +10,13 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # Executive Open Loops Register v1
@@ -34,3 +41,16 @@ The Open Loops Register is the definitive ledger of all unresolved organizationa
 - **Creation:** Lakshmi automatically creates an entry when an artifact stalls, an escalation occurs, or the CEO defers an action.
 - **Updates:** Lakshmi updates the `Time Open` and `Status` continuously based on Artifact Layer state changes.
 - **Closure:** An item is only closed when the triggering condition is resolved (e.g., the decision is made, the artifact is accepted). Closed items are archived, never deleted.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

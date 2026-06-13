@@ -10,6 +10,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Capability Layer Correction v1.1
@@ -37,3 +42,15 @@ The Capability Layer is a pool of execution resources that the Roles (Ganesha, B
 
 ## Operational Implication
 If Ganesha (the Role) switches from using Manus to using an Automation System to execute a task, the Role of Ganesha remains unchanged. The Capability Layer simply provided a different execution substrate.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

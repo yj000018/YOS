@@ -34,6 +34,14 @@ aliases:
 - MISSION-012A
 source_branch: y-os-doctrine
 canonical: true
+produces:
+- '[[ADR-0006]]'
+- '[[ADR-0038]]'
+implements:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0006]]'
+- '[[ADR-0038]]'
 ---
 
 # MISSION-012A — Repository & Markdown Storage Audit
@@ -241,3 +249,16 @@ Two options:
 | Can Obsidian open this today? | **YES** — after export |
 | Is the vault Obsidian-optimized? | **PARTIAL** — readable but no graph/backlinks |
 | Biggest risk? | **Sandbox termination = data loss** |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]
+- **produces:** [[ADR-0006]]
+- **produces:** [[ADR-0038]]
+- **references:** [[ADR-0006]]
+- **references:** [[ADR-0038]]

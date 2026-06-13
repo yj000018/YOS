@@ -17,6 +17,15 @@ aliases:
 - MISSION-001
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Artifact Chain — MISSION-001
@@ -31,3 +40,18 @@ canonical: true
 | ART-M001-E57AB0 | CEO Briefing | Lakshmi | Done | ART-M001-D24046 |
 | ART-M001-27D514 | Learning Report | Saraswati | Done | ART-M001-E57AB0 |
 | ART-M001-CCFAD4 | CEO Briefing | Ganesha | Done | ART-M001-27D514 |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

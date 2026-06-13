@@ -22,6 +22,57 @@ aliases:
 - Graph Quality Audit
 source_branch: y-os-doctrine
 canonical: true
+produces:
+- '[[ADR-0039]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
+- '[[ADR-0036]]'
+- '[[ADR-0040]]'
+- '[[ADR-0024]]'
+- '[[ADR-0029]]'
+- '[[ADR-0030]]'
+- '[[ADR-0027]]'
+- '[[ADR-0021]]'
+- '[[ADR-0033]]'
+- '[[ADR-0035]]'
+- '[[ADR-0025]]'
+- '[[ADR-0022]]'
+- '[[ADR-0041]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0039]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
+- '[[ADR-0036]]'
+- '[[ADR-0040]]'
+- '[[ADR-0024]]'
+- '[[ADR-0029]]'
+- '[[ADR-0030]]'
+- '[[ADR-0027]]'
+- '[[ADR-0021]]'
+- '[[ADR-0033]]'
+- '[[ADR-0035]]'
+- '[[ADR-0025]]'
+- '[[ADR-0022]]'
+- '[[ADR-0041]]'
 ---
 
 # MISSION-013B — Obsidian Graph Quality Audit
@@ -437,3 +488,55 @@ Implement KGC v2 with:
 - Canvas visual map generation
 - Improved MOC templates (Mission Timeline, ADR Evolution)
 - Unknown file reclassification
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **produces:** [[ADR-0039]]
+- **produces:** [[ADR-0037]]
+- **produces:** [[ADR-0038]]
+- **produces:** [[ADR-0036]]
+- **produces:** [[ADR-0040]]
+- **produces:** [[ADR-0024]]
+- **produces:** [[ADR-0029]]
+- **produces:** [[ADR-0030]]
+- **produces:** [[ADR-0027]]
+- **produces:** [[ADR-0021]]
+- **produces:** [[ADR-0033]]
+- **produces:** [[ADR-0035]]
+- **produces:** [[ADR-0025]]
+- **produces:** [[ADR-0022]]
+- **produces:** [[ADR-0041]]
+- **references:** [[ADR-0039]]
+- **references:** [[ADR-0037]]
+- **references:** [[ADR-0038]]
+- **references:** [[ADR-0036]]
+- **references:** [[ADR-0040]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0030]]
+- **references:** [[ADR-0027]]
+- **references:** [[ADR-0021]]
+- **references:** [[ADR-0033]]
+- **references:** [[ADR-0035]]
+- **references:** [[ADR-0025]]
+- **references:** [[ADR-0022]]
+- **references:** [[ADR-0041]]

@@ -29,6 +29,24 @@ aliases:
 - MISSION-009
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0035]]'
+- '[[ADR-0024]]'
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+- '[[mission_009]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+- '[[Constitutional_Governance]]'
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Governance_Before_Autonomy]]'
+- '[[Human_Override]]'
+- '[[Derivation_Transparency]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0035 — Executable Constitutional Governance
@@ -169,3 +187,25 @@ compiler_version: "v1.0"
 ## Status
 
 **ACCEPTED** — Y-OS adopts Executable Constitutional Governance as canonical architectural layer.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **governed_by:** [[Constitutional_Governance]]
+- **validates:** [[ADR-0035]]
+- **validates:** [[ADR-0024]]
+- **validates:** [[ADR-0033]]
+- **validates:** [[ADR-0034]]
+- **validates:** [[mission_009]]

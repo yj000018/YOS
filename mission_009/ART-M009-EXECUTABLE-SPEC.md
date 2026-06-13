@@ -24,6 +24,14 @@ aliases:
 - MISSION-009
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Constitutional_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # ART-M009-EXECUTABLE-SPEC
@@ -327,3 +335,16 @@ Future research should address improving interpretability, resilience, and adapt
 **Constitutional Questions Requiring Human Judgment**
 
 Ultimately, certain constitutional questions will always necessitate human interpretation and discretion. Efforts should focus on identifying these areas continuously, examining why they resist automation, and defining frameworks for their resolution.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **governed_by:** [[Constitutional_Governance]]

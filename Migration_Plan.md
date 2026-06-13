@@ -11,6 +11,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Migration Plan: MISS-E2E-V1
@@ -44,3 +49,14 @@ The following lineage relationships must be established for the existing artifac
 2. **Data Extraction:** Fetch the Notion Page IDs for all 8 artifacts belonging to `MISS-E2E-V1`.
 3. **Relationship Mapping:** Use the Notion API (via Python script) to update the `Parent Artifact` and `Child Artifacts` properties for each page according to the table above.
 4. **Validation:** Run the `get_broken_lineage()` query to ensure the graph is fully connected and valid.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

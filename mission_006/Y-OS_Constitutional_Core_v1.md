@@ -25,6 +25,12 @@ aliases:
 - MISSION-006
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # Y-OS Constitutional Core v1
@@ -94,3 +100,16 @@ To verify if a future system is still Y-OS, apply the Replacement Test:
 
 If YES -> The system is Y-OS.
 If NO -> The system is a different entity.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]

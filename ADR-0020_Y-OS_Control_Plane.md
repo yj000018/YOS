@@ -15,6 +15,11 @@ aliases:
 - Y-OS Control Plane
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0020: Y-OS Control Plane
@@ -43,3 +48,14 @@ The Control Plane is strictly observational and analytical. It reconstructs stat
 *   **Positive:** Establishes a clear separation of concerns between observability (Control Plane) and execution routing (Y-ORC).
 *   **Positive:** Formalizes the concept of "Governance Signals" (Open Loops) as the primary output of the observability layer.
 *   **Constraint:** Y-ORC must be designed to consume the state and signals provided by the Control Plane, rather than maintaining its own separate state machine. The Registry remains the single source of truth.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

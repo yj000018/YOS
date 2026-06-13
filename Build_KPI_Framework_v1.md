@@ -11,6 +11,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Build KPI Framework v1
@@ -32,3 +37,15 @@ To measure the efficiency, accuracy, and reliability of the Lead Developer (Hanu
 
 ## Evaluation Cycle
 These KPIs are tracked by the COO (Ganesha) upon receipt of the Build Package and analyzed by the CODO (Saraswati) during the Organizational Learning phase to improve Hanuman's execution prompting.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

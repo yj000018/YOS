@@ -13,6 +13,17 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[Y-OS_Layer_Model_v1]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Y-OS Layer Model v2 (Preview)
@@ -49,3 +60,19 @@ This represents the target architecture for the next major evolution of the oper
 ### 6. The Evolutionary Layer (Governance)
 - **Components:** CODO (Saraswati), Y-OS Laws, ADRs.
 - **Function:** Continuously monitors the interaction between all other layers to rewrite rules, update agent prompts, and optimize the system.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **supersedes:** [[Y-OS_Layer_Model_v1]]

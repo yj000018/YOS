@@ -7,11 +7,21 @@ date: 2026-06-13
 source_branch: y-os-doctrine
 canonical: true
 tags:
-  - "#yos"
-  - "#artifact"
+- '#yos'
+- '#artifact'
 aliases:
-  - Y-OS Home
-  - YOS Home
+- Y-OS Home
+- YOS Home
+implements:
+- '[[CCR_Runtime]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # Y-OS Knowledge Graph — Home
@@ -42,3 +52,17 @@ aliases:
 - **Branch:** `y-os-doctrine`
 - **Last compiled:** 2026-06-13
 - **Total files:** 301
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]

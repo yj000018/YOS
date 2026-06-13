@@ -17,6 +17,15 @@ aliases:
 - Artifact Lineage Registry v1.1
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0017]]'
+- '[[ADR-0013]]'
+- '[[ADR-0016]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0017: Lakshmi MVP Runtime
@@ -45,3 +54,17 @@ Lakshmi will be implemented as a Python-based processing engine that:
 ## Consequences
 - The Artifact Schema v1.1 Patch (adding Accepted Date, Consumed Date, Archived Date, and Review Owner) is required to support the Open Loops Engine's time-based calculations.
 - The CEO will rely on the synthesized dashboard and briefing rather than inspecting raw artifacts.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **validates:** [[ADR-0017]]
+- **validates:** [[ADR-0013]]
+- **validates:** [[ADR-0016]]

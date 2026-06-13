@@ -24,6 +24,11 @@ aliases:
 - MISSION-008
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # ART-M008-EVOLUTION-TEST
@@ -53,3 +58,14 @@ The proposed new principles dramatically shift away from the governance-centric 
 **Final Analysis: Immutable Articles**
 
 Upon reviewing the Constitution, Article I (Artifact Primacy) and Article IV (Human Override Primacy) appear to be truly immutable. Article I ensures that all organizational truths are artifact-based, preserving a robust, objectivity-focused approach to decision making. Article IV protects the primacy of human oversight, ensuring that ultimate decision-making power remains with humans and not autonomous functions. These elements are core to maintaining an organization's structure and accountability, providing indispensable checks to prevent automated processes from overriding human values and intentions.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]

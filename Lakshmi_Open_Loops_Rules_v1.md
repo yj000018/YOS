@@ -14,6 +14,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
 ---
 
 # Open Loops Detection Rules v1
@@ -45,3 +49,14 @@ canonical: true
 |---|---|---|---|---|
 | M-01 | Blocked Mission | Mission Status is `Blocked`. | P1 | CEO / Ganesha |
 | M-02 | Missing Learning | Mission Status is `Completed` but lacks a `Learning Report`. | P2 | Saraswati |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]

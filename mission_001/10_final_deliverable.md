@@ -24,6 +24,30 @@ aliases:
 - MISSION-001
 source_branch: y-os-doctrine
 canonical: true
+produces:
+- '[[ADR-0024]]'
+- '[[ADR-0025]]'
+- '[[ADR-0026]]'
+- '[[ADR-0028]]'
+- '[[ADR-0029]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Krishna]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0024]]'
+- '[[ADR-0025]]'
+- '[[ADR-0026]]'
+- '[[ADR-0028]]'
+- '[[ADR-0029]]'
 ---
 
 # Y-OS Operational Readiness Assessment v1
@@ -97,3 +121,29 @@ Lakshmi observes all artifact state transitions. Open loops are tracked. No cons
 ---
 
 *This document was produced autonomously by Y-OS MISSION-001 through the full organizational stack.*
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **produces:** [[ADR-0024]]
+- **produces:** [[ADR-0025]]
+- **produces:** [[ADR-0026]]
+- **produces:** [[ADR-0028]]
+- **produces:** [[ADR-0029]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0025]]
+- **references:** [[ADR-0026]]
+- **references:** [[ADR-0028]]
+- **references:** [[ADR-0029]]

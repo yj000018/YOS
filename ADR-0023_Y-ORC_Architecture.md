@@ -14,6 +14,11 @@ aliases:
 - Y-ORC Architecture
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0023: Y-ORC Architecture
@@ -33,3 +38,14 @@ Y-ORC becomes the orchestration layer responsible for triggering execution based
 *   **Control Plane remains governance.**
 *   **Y-ORC becomes execution coordination.**
 *   **Agents become pluggable workers.**
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

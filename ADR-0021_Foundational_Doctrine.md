@@ -15,6 +15,11 @@ aliases:
 - Foundational Doctrine
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0021: Foundational Doctrine
@@ -48,3 +53,14 @@ The following documents and the principles contained within them are hereby elev
 *   **Immutable Core:** These principles form the immutable core of Y-OS. They cannot be altered without a fundamental redesign of the entire operating system.
 *   **Architectural Guardrails:** Any future ADR or system design must be evaluated against this doctrine. If a proposed design violates these principles (e.g., an agent-centric orchestration model), it must be rejected.
 *   **Reconstructability:** This doctrine serves as the DNA of Y-OS. If all technology disappears but these documents survive, Y-OS remains reconstructable. A future architect can rebuild the system from scratch, replacing every model, agent, workflow, and runtime, while preserving the true identity and continuity of Y-OS.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

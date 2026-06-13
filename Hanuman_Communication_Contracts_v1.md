@@ -10,6 +10,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Communication Contracts: Build Phase
@@ -73,3 +78,15 @@ To formalize the inputs and outputs surrounding the Lead Developer (Hanuman) to 
 - The artifact fails to run.
 - Hanuman unilaterally altered the architecture without Brahma's approval (violates governance).
 - Missing or incomplete Build Report.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

@@ -15,6 +15,9 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
 ---
 
 # Context Pack Schema v1
@@ -71,3 +74,13 @@ meta:
 ## 2. Rationale
 
 This schema ensures that every fresh LLM session receives exactly what it needs to execute its capability, without the noise of past conversational turns. It enforces the Y-OS principle that **Artifacts are the source of truth**.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]

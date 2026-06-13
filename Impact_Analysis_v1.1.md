@@ -13,6 +13,17 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
+references:
+- '[[ADR-0012]]'
 ---
 
 # Impact Analysis v1.1
@@ -45,3 +56,19 @@ This document analyzes the impact of the v1.1 Architectural Corrections on the e
 ## 5. Systemic Benefits
 - **Future-Proofing:** By decoupling tools from layers, Y-OS can now upgrade its Memory systems or LLM capabilities without triggering an organizational redesign.
 - **Clarity:** The distinction between an Execution Role (who is responsible) and a Capability (what does the work) prevents future governance confusion.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0012]]

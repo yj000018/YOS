@@ -1,0 +1,170 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "text",
+      "x": -100,
+      "y": -800,
+      "width": 400,
+      "height": 60,
+      "text": "# Y-OS Constitutional Stack",
+      "color": "1"
+    },
+    {
+      "id": "2",
+      "type": "file",
+      "x": -100,
+      "y": -680,
+      "width": 400,
+      "height": 80,
+      "file": "CONSTITUTION/Y-OS_Constitution_v1.md",
+      "color": "1"
+    },
+    {
+      "id": "3",
+      "type": "file",
+      "x": -700,
+      "y": -550,
+      "width": 220,
+      "height": 80,
+      "file": "concepts/Artifact_Primacy.md",
+      "color": "1"
+    },
+    {
+      "id": "4",
+      "type": "file",
+      "x": -450,
+      "y": -550,
+      "width": 220,
+      "height": 80,
+      "file": "concepts/Preservation_Principle.md",
+      "color": "2"
+    },
+    {
+      "id": "5",
+      "type": "file",
+      "x": -200,
+      "y": -550,
+      "width": 220,
+      "height": 80,
+      "file": "concepts/Derivation_Transparency.md",
+      "color": "3"
+    },
+    {
+      "id": "6",
+      "type": "file",
+      "x": 50,
+      "y": -550,
+      "width": 220,
+      "height": 80,
+      "file": "concepts/Human_Override.md",
+      "color": "4"
+    },
+    {
+      "id": "7",
+      "type": "file",
+      "x": 300,
+      "y": -550,
+      "width": 220,
+      "height": 80,
+      "file": "concepts/Governance_Before_Autonomy.md",
+      "color": "5"
+    },
+    {
+      "id": "13",
+      "type": "file",
+      "x": -100,
+      "y": -350,
+      "width": 300,
+      "height": 60,
+      "file": "concepts/Governance_Determinism.md",
+      "color": "5"
+    },
+    {
+      "id": "15",
+      "type": "file",
+      "x": -100,
+      "y": -230,
+      "width": 300,
+      "height": 60,
+      "file": "concepts/Lakshmi_Governance.md",
+      "color": "5"
+    },
+    {
+      "id": "17",
+      "type": "file",
+      "x": -100,
+      "y": -110,
+      "width": 300,
+      "height": 60,
+      "file": "02_ADRs_MOC.md",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "8",
+      "fromNode": "2",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "9",
+      "fromNode": "2",
+      "toNode": "4",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "10",
+      "fromNode": "2",
+      "toNode": "5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "11",
+      "fromNode": "2",
+      "toNode": "6",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "12",
+      "fromNode": "2",
+      "toNode": "7",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "defines"
+    },
+    {
+      "id": "14",
+      "fromNode": "7",
+      "toNode": "13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "16",
+      "fromNode": "13",
+      "toNode": "15",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "implements"
+    },
+    {
+      "id": "18",
+      "fromNode": "15",
+      "toNode": "17",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "validates"
+    }
+  ]
+}

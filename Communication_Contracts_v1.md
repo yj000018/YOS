@@ -10,6 +10,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Communication Contracts v1
@@ -88,3 +94,16 @@ This document establishes the mandatory handoff protocols between roles in the Y
 - Specifications are incomplete or ambiguous.
 - The design relies on unavailable or unproven technologies.
 - The design is technically impossible to implement as specified.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

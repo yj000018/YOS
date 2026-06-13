@@ -10,6 +10,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Communication Contracts: Design Phase
@@ -77,3 +82,15 @@ To formalize the inputs and outputs surrounding the Chief Architect (Brahma) to 
 **Rejection Criteria (Ganesha rejects):**
 - The artifact fails to run.
 - Hanuman unilaterally altered the architecture without Brahma's approval (violates governance).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

@@ -11,6 +11,14 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Organization Health KPI Framework v1
@@ -32,3 +40,17 @@ To define the metrics Lakshmi uses to monitor the operational health of Y-OS, en
 
 ## Monitoring Mechanism
 Lakshmi continuously calculates these KPIs by parsing the metadata of the Artifact Layer. Anomalies are surfaced on the ECO Dashboard and included in the CEO Briefing.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

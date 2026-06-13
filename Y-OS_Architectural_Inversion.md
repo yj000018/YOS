@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # Y-OS Architectural Inversion
@@ -59,3 +65,15 @@ In Y-OS, upgrading the system means replacing a capability. You can swap the LLM
 ## 3. Conclusion
 
 The architectural inversion from Agent-Centric to Artifact-Centric is the defining characteristic of Y-OS. It is the mechanism by which we achieve the ultimate goal: an organization that continuously improves the system that solves problems (Law #8).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

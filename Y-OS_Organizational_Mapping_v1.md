@@ -10,6 +10,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
 
 # 🏢 Y-OS Organizational Mapping v1
@@ -64,3 +66,12 @@ Mapping of key operational activities to the roles responsible for them, and the
 - **Strict Separation:** The COO decides *how* to approach a situation; `Y-ORC` executes the routing logic. The COO is not `Y-ORC`.
 - **Backend vs Frontend:** The 9 core modules form the backend (Cognition + Infra). The agents form the frontend (Organization + Decision Making).
 - **Evolution:** Roles may be added, removed, or reassigned without altering the underlying system modules. Modules are frozen under *Architecture Freeze v1*.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

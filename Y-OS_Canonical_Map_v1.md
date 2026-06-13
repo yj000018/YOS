@@ -12,6 +12,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Y-OS Canonical Map v1
@@ -137,3 +142,14 @@ Future work belongs to runtime implementation, not doctrine expansion. The archi
 4. Finally, the **Control Plane** and **Y-ORC Architecture** provide the exact technical specifications for the runtime loops (Registry → Lineage → Lakshmi → Open Loops → Y-ORC → Agents). 
 
 Because the architecture explicitly decouples the organization from the specific code or models used to run it, any capable engineer can write a new implementation of the Registry, Lakshmi, and Y-ORC that adheres to these doctrines, and the resulting system will behave identically to the original Y-OS.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

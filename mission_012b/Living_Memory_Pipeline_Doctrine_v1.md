@@ -33,6 +33,28 @@ aliases:
 - MISSION-012B
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Artifact_Primacy]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0039]]'
+- '[[ADR-0038]]'
+- '[[ADR-0037]]'
+- '[[ADR-0036]]'
+- '[[ADR-0030]]'
 ---
 
 # Living Memory Pipeline Doctrine v1
@@ -218,3 +240,27 @@ The Living Memory Pipeline Doctrine formalizes what Y-OS has been doing empirica
 2. Cross-link with ADR-0036, ADR-0037, ADR-0038
 3. Add Stage 6 (Canonicalize) governance check to all future mission runners
 4. Update CCR Runtime v2 implementation spec to include explicit pipeline stage logging
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0039]]
+- **references:** [[ADR-0038]]
+- **references:** [[ADR-0037]]
+- **references:** [[ADR-0036]]
+- **references:** [[ADR-0030]]

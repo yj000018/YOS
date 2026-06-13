@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # Communication Contracts: Executive Coordination Phase
@@ -55,3 +61,15 @@ To define how Lakshmi interacts with the rest of Y-OS without violating her cons
 **Purpose:** Transmit CEO intent when the CEO is unavailable or delegates the action.
 **Mechanism:** The CEO explicitly grants Lakshmi the authority to change the state of a specific artifact (e.g., "Lakshmi, mark the Alpha Strategy Brief as Accepted").
 **Constraint:** Lakshmi must log the action as `Action performed by Lakshmi [Proxy: CEO]`.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

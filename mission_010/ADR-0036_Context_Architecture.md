@@ -26,6 +26,17 @@ aliases:
 - MISSION-010
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # ADR-0036 — Y-OS Canonical Context Architecture
@@ -123,3 +134,18 @@ Each layer has a distinct role:
 ## Status
 
 **ACCEPTED** — Mode E is the canonical Y-OS context architecture.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]

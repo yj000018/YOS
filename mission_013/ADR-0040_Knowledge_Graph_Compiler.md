@@ -27,6 +27,21 @@ aliases:
 - KGC v1
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # ADR-0040 — Knowledge Graph Compiler v1
@@ -195,3 +210,22 @@ source_branch, canonical
 - Body wikilinks pass: add `[[...]]` inline references in mission bodies
 - Dataview dashboard: create `.md` with Dataview queries for corpus analytics
 - Obsidian vault sync: configure git plugin for auto-pull on local Mac
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]

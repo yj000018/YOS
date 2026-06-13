@@ -15,6 +15,11 @@ aliases:
 - Foundational Doctrine
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # ADR-0021: Foundational Operational Principles
@@ -44,3 +49,14 @@ We also formally define the **Layer Model** (Execution, State, Truth, Causality,
 
 ## Recommendation for Integration
 These principles should be linked directly from the `Y-OS_Vision_First_Principles.md` and the `Y-OS_Org_Map_v2.md` to ensure they are highly visible to anyone studying the system architecture.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

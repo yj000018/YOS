@@ -14,6 +14,10 @@ aliases:
 - Y-OS Constitution
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+references:
+- '[[ADR-0024]]'
 ---
 
 # ADR-0024: Y-OS Constitution
@@ -33,3 +37,13 @@ Y-OS adopts a constitutional layer. Any future architectural change, orchestrato
 *   **Architectural Supremacy:** The Constitution overrides any conflicting workflow, agent behavior, or orchestration logic.
 *   **Formal Amendments:** Changes to core principles now require a formal Constitutional Amendment process (CEO/Founder override).
 *   **Guaranteed Survival:** The system is explicitly designed to survive the complete replacement of all underlying technology over a 10-year horizon.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **references:** [[ADR-0024]]

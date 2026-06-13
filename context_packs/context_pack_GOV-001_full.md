@@ -20,6 +20,18 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+references:
+- '[[ADR-0022]]'
+- '[[ADR-0023]]'
+- '[[ADR-0024]]'
+- '[[ADR-0029]]'
+- '[[ADR-0020]]'
 ---
 
 # Context Pack — CP-GOV-001-FULL-C3AFCB
@@ -88,3 +100,19 @@ CEO Briefings, Open Loop Reports
 | Actionability | 10/10 |
 | **Total** | **100/100** |
 | **Band** | **Excellent** |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0022]]
+- **references:** [[ADR-0023]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0020]]

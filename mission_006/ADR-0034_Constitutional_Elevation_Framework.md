@@ -26,6 +26,17 @@ aliases:
 - MISSION-006
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0034 — Constitutional Elevation Framework
@@ -74,3 +85,19 @@ Y-OS adopts the **Constitutional Elevation Framework** governing which principle
 - Future ADRs must explicitly state whether they are constitutional or architectural.
 - Capability Independence (ART/CRT routing) remains a powerful architectural pattern but is not constitutionally protected — it may be replaced by a swarm model or other routing paradigm without violating Y-OS identity.
 - The Constitution may only be amended by CEO/Founder Override (per Amendment Process in Y-OS Constitution v1).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

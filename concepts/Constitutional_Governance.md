@@ -8,27 +8,44 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article V'
+- Article V
 adr_lineage:
-  - '[[ADR-0033]]'
-  - '[[ADR-0034]]'
-  - '[[ADR-0035]]'
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+- '[[ADR-0035]]'
 mission_evidence:
-  - '[[mission_005c]]'
-  - '[[mission_006]]'
-  - '[[mission_009]]'
-implements: ["[[Governance_Before_Autonomy]]"]
-depends_on: ["[[Governance_Determinism]]"]
+- '[[mission_005c]]'
+- '[[mission_006]]'
+- '[[mission_009]]'
+implements:
+- '[[Governance_Before_Autonomy]]'
+depends_on:
+- '[[Governance_Determinism]]'
 tags:
-  - '#governance'
-  - '#constitution'
-  - '#yos'
-  - '#accepted'
+- '#governance'
+- '#constitution'
+- '#yos'
+- '#accepted'
 aliases:
-  - Executable Constitution
-  - Constitutional Compliance
+- Executable Constitution
+- Constitutional Compliance
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+- '[[ADR-0035]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+- '[[Constitutional_Governance]]'
+constrained_by:
+- '[[Governance_Before_Autonomy]]'
+executed_by:
+- '[[Lakshmi]]'
+references:
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+- '[[ADR-0035]]'
 ---
 
 # Constitutional Governance
@@ -89,3 +106,21 @@ Operational. Lakshmi governance review required for all ADRs.
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Governance_Before_Autonomy]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **governed_by:** [[Constitutional_Governance]]
+- **references:** [[ADR-0033]]
+- **references:** [[ADR-0034]]
+- **references:** [[ADR-0035]]
+- **validates:** [[ADR-0033]]
+- **validates:** [[ADR-0034]]
+- **validates:** [[ADR-0035]]

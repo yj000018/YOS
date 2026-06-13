@@ -20,6 +20,11 @@ aliases:
 - MISSION-012
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # Session Delta Engine v1 — Architecture & Schema
@@ -150,3 +155,14 @@ Final Prompt Context
 
 ### Phase 4: Self-Healing Delta Maintenance
 - The Delta engine periodically audits itself against the Context Pack to remove redundant information that has already been formalized into artifacts.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]

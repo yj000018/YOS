@@ -26,6 +26,17 @@ aliases:
 - MISSION-010B
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+constrained_by:
+- '[[Artifact_Primacy]]'
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
+executed_by:
+- '[[Krishna]]'
+compiles:
+- '[[Context_Pack]]'
 ---
 
 # Config D — Context Pack + Canonical Memory
@@ -95,3 +106,17 @@ Mode E's 91.3 quality score validates our architecture, but at ~2,400 tokens it'
 | Routine missions | Constitutional amendments |
 | Standard ADR drafting | Cross-mission dependencies |
 | Single-artifact
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **executed_by:** [[Krishna]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]

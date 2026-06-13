@@ -17,6 +17,11 @@ aliases:
 - Architectural Layer Corrections
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # ADR-0015: Architectural Layer Corrections
@@ -50,3 +55,15 @@ Furthermore, we formally elevate the following statement to a foundational archi
 -   The Layer Architecture Diagram v2.1 supersedes the previous version defined in ADR-0014.
 -   All existing ADRs, Laws (including #10 and #11), roles, artifacts, and the Operational Value Chain are preserved without modification.
 -   Future architectural discussions must strictly adhere to the principle that layers define functions, while tools and agents are transient implementations.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

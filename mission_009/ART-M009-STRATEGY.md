@@ -24,6 +24,9 @@ aliases:
 - MISSION-009
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Human_Override]]'
+- '[[Governance_Before_Autonomy]]'
 ---
 
 # ART-M009-STRATEGY
@@ -82,3 +85,12 @@ The test: Does compilation serve constitutional principles, or do constitutional
 ---
 
 **Strategic Recommendation**: Compile structural guarantees (Articles III, IV, V). Preserve interpretive space for wisdom-carrying provisions (Articles I, II). The constitution should constrain *categories* of action, not *instances* of judgment.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Human_Override]]
+- **constrained_by:** [[Governance_Before_Autonomy]]

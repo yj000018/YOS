@@ -13,6 +13,15 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Krishna]]'
+references:
+- '[[ADR-0012]]'
 ---
 
 # Strategy Brief: First End-to-End Y-OS Run v1
@@ -48,3 +57,17 @@ The scope is limited strictly to the creation of the artifacts required to gener
 ## Strategic Risks
 - **Artifact Schema Mismatch:** If the Notion database lacks required fields, downstream tools (or agents) may fail.
 - **Handoff Friction:** If a Consumer rejects an artifact, it may stall the mission. To mitigate, we will ensure high-quality initial drafts.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0012]]

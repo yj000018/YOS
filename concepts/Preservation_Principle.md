@@ -8,24 +8,30 @@ date: '2026-06-13'
 owner: Brahma
 parent: '[[10_Concepts_MOC]]'
 constitutional_grounding:
-  - 'Article II'
+- Article II
 adr_lineage:
-  - '[[ADR-0024]]'
-  - '[[ADR-0040]]'
+- '[[ADR-0024]]'
+- '[[ADR-0040]]'
 mission_evidence:
-  - '[[mission_013]]'
+- '[[mission_013]]'
 implements: []
-depends_on: ["[[Artifact_Primacy]]"]
+depends_on:
+- '[[Artifact_Primacy]]'
 tags:
-  - '#constitution'
-  - '#yos'
-  - '#accepted'
+- '#constitution'
+- '#yos'
+- '#accepted'
 aliases:
-  - Preservation
-  - Article II
-  - Non-Destructive Principle
+- Preservation
+- Article II
+- Non-Destructive Principle
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Preservation_Principle]]'
+references:
+- '[[ADR-0024]]'
+- '[[ADR-0040]]'
 ---
 
 # Preservation Principle
@@ -83,3 +89,14 @@ FROZEN — Constitutional Article II. Enforced by KGC dry-run constraint and Git
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[01_Constitution_MOC]] — Constitutional Layer
 - [[00_Y-OS_Home]] — Home
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0040]]

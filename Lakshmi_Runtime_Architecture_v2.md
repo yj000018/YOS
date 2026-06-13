@@ -14,6 +14,13 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[Lakshmi_Runtime_Architecture_v1]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Lakshmi Runtime Architecture v2
@@ -58,3 +65,15 @@ graph TD
 *   **Read-Only:** Lakshmi MVP v2 is strictly read-only against the Notion DB. It does not update artifact status (that is Y-ORC's future job).
 *   **Stateless:** The runtime maintains no local database. The Notion Registry is the single source of truth.
 *   **LLM Choice:** Cloud Opus (Anthropic) is prioritized for text synthesis and briefing generation per Y-OS text processing guidelines.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **supersedes:** [[Lakshmi_Runtime_Architecture_v1]]

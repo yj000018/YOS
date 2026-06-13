@@ -11,6 +11,8 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
 ---
 
 # Y-ORC Specification v1
@@ -94,3 +96,12 @@ Y-ORC classifies mission complexity to determine routing:
 3. Implement LLM-based Context Analysis (extract required capabilities from Mission).
 4. Implement rule-based Classification & Selection (Complexity, Workflow, Agent).
 5. Generate Mission Pack JSON.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **implements:** [[Context_Pack]]

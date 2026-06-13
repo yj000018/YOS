@@ -11,6 +11,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # Component Responsibility Matrix
@@ -28,3 +33,14 @@ canonical: true
 | **Lakshmi Runtime** | Orchestrate visibility generation | DAG + Open Loops | Dashboard State |
 | **Briefing Generator** | Synthesize human-readable executive summary | Dashboard State | CEO Briefing |
 | **Y-ORC (Future)** | Route work based on state changes | Registry State + Open Loops | Agent Triggers |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

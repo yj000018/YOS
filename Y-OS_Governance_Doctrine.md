@@ -15,6 +15,14 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0022]]'
+- '[[ADR-0024]]'
+executed_by:
+- '[[Brahma]]'
+references:
+- '[[ADR-0022]]'
+- '[[ADR-0024]]'
 ---
 
 # Y-OS Governance Doctrine
@@ -95,3 +103,16 @@ Autonomous Organization
 Constitution → First Principles → Identity → Operational Cycle
 → Organization → Governance → Control Plane → Orchestration → Execution
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **references:** [[ADR-0022]]
+- **references:** [[ADR-0024]]
+- **validates:** [[ADR-0022]]
+- **validates:** [[ADR-0024]]

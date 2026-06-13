@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # ECO (Lakshmi) Operating Framework v1
@@ -61,3 +67,15 @@ Lakshmi holds decision rights over:
 ### Interface with All Agents
 - **Nature:** Read-only extraction.
 - **Interaction:** Lakshmi reads the artifacts produced by all agents to maintain organizational state.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

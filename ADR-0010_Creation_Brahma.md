@@ -14,6 +14,11 @@ aliases:
 - Creation of Brahma
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # ADR-0010: Creation of Chief Architect (Brahma)
@@ -42,3 +47,15 @@ Brahma is positioned downstream of the COO (Ganesha) and upstream of the Lead De
 
 ## Organizational Impact
 This decision completes the formalization of the core Operational Value Chain. The reporting structure is solidified: Brahma reports to the COO (Ganesha), ensuring that design is managed as an operational execution phase rather than a strategic abstraction.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

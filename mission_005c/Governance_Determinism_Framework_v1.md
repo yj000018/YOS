@@ -22,6 +22,21 @@ aliases:
 - MISSION-005C
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0033]]'
+- '[[mission_005b]]'
+implements:
+- '[[CCR_Runtime]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0033]]'
 ---
 
 # Governance Determinism Framework v1
@@ -93,3 +108,20 @@ Missions may **no longer** arbitrarily demand a score of `< 20` unless the missi
 ## 5. Canonical Rule
 
 *No mission can simultaneously fail its stated success criteria and pass governance review. The Governance Determinism Framework v1 supersedes any mission-specific success criteria that attempt to define arbitrary risk thresholds.*
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0033]]
+- **validates:** [[ADR-0033]]
+- **validates:** [[mission_005b]]

@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "text",
+      "x": 0,
+      "y": -700,
+      "width": 500,
+      "height": 60,
+      "text": "# Y-OS Governance Flow",
+      "color": "5"
+    },
+    {
+      "id": "2",
+      "type": "text",
+      "x": -200,
+      "y": -580,
+      "width": 300,
+      "height": 60,
+      "text": "ADR Proposal\n(Brahma / any worker)",
+      "color": "3"
+    },
+    {
+      "id": "3",
+      "type": "file",
+      "x": -200,
+      "y": -460,
+      "width": 300,
+      "height": 80,
+      "file": "concepts/Lakshmi_Governance.md",
+      "color": "5"
+    },
+    {
+      "id": "5",
+      "type": "text",
+      "x": -500,
+      "y": -320,
+      "width": 200,
+      "height": 60,
+      "text": "APPROVE\nScore ≤ 35",
+      "color": "3"
+    },
+    {
+      "id": "6",
+      "type": "text",
+      "x": -200,
+      "y": -320,
+      "width": 200,
+      "height": 60,
+      "text": "APPROVE\nWITH WARNING\n36–55",
+      "color": "4"
+    },
+    {
+      "id": "7",
+      "type": "text",
+      "x": 100,
+      "y": -320,
+      "width": 200,
+      "height": 60,
+      "text": "REJECT\n> 55 or\nblocking",
+      "color": "1"
+    },
+    {
+      "id": "11",
+      "type": "file",
+      "x": -350,
+      "y": -160,
+      "width": 250,
+      "height": 60,
+      "file": "concepts/Ganesha.md",
+      "color": "3"
+    },
+    {
+      "id": "14",
+      "type": "text",
+      "x": -500,
+      "y": -20,
+      "width": 200,
+      "height": 60,
+      "text": "ADR ACCEPTED\n(canonical)",
+      "color": "3"
+    },
+    {
+      "id": "15",
+      "type": "text",
+      "x": -100,
+      "y": -20,
+      "width": 200,
+      "height": 60,
+      "text": "ADR REVISED\nor SUPERSEDED",
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "4",
+      "fromNode": "2",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "submits"
+    },
+    {
+      "id": "8",
+      "fromNode": "3",
+      "toNode": "5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "≤ 35"
+    },
+    {
+      "id": "9",
+      "fromNode": "3",
+      "toNode": "6",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "36–55"
+    },
+    {
+      "id": "10",
+      "fromNode": "3",
+      "toNode": "7",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "> 55"
+    },
+    {
+      "id": "12",
+      "fromNode": "5",
+      "toNode": "11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→ CEO"
+    },
+    {
+      "id": "13",
+      "fromNode": "6",
+      "toNode": "11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→ CEO"
+    },
+    {
+      "id": "16",
+      "fromNode": "11",
+      "toNode": "14",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "ADOPT"
+    },
+    {
+      "id": "17",
+      "fromNode": "11",
+      "toNode": "15",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "REJECT → revise"
+    },
+    {
+      "id": "18",
+      "fromNode": "7",
+      "toNode": "15",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "revise"
+    }
+  ]
+}

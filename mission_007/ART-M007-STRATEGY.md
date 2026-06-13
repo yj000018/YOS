@@ -23,6 +23,11 @@ aliases:
 - MISSION-007
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Constitutional_Governance]]'
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Derivation_Transparency]]'
 ---
 
 # ART-M007-STRATEGY
@@ -113,3 +118,13 @@ This is both liberating and constraining: Y-OS can run on virtually anything, bu
 **Classification:** Strategic Analysis
 **Governance:** Constitutional Core v1
 **Status:** Analysis Complete
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Derivation_Transparency]]
+- **governed_by:** [[Constitutional_Governance]]

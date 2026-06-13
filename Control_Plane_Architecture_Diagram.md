@@ -12,6 +12,11 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Control Plane Architecture Diagram
@@ -52,3 +57,15 @@ canonical: true
 │  [ Krishna ]  [ Ganesha ]  [ Brahma ]  [ Hanuman ]  [ ... ] │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

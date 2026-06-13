@@ -12,6 +12,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
 ---
 
 # Y-OS Organizational Model — Executive Summary
@@ -51,3 +55,13 @@ To achieve true autonomy, Y-OS relies on five components working in a continuous
 Without artifacts, agents forget. Without lineage, artifacts become documents. Without visibility, lineage becomes data. Without governance, visibility becomes reporting. Without orchestration, governance becomes observation. 
 
 **Y-OS unites them all into a self-governing, immortal operating system.**
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]

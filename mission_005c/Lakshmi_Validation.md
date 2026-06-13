@@ -17,6 +17,12 @@ aliases:
 - MISSION-005C
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[mission_005c]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
 ---
 
 # Lakshmi Validation — MISSION-005C
@@ -33,3 +39,14 @@ canonical: true
 4. YES. The previous thresholds were contradictory because they mandated an unrealistically low score for complex missions that can function safely with minor risks.
 
 5. YES. The canonical rule is that a mission is considered a PASS if it receives a verdict of "APPROVE" or "APPROVE_WITH_WARNING" and the overall risk score is 55 or below, aligning with the universal Success Criteria Standard.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **validates:** [[mission_005c]]

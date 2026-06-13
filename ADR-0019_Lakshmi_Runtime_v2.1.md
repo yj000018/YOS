@@ -16,6 +16,15 @@ aliases:
 - Lakshmi Runtime v2.1
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[ADR-0019_Lakshmi_Runtime_v1]]'
+validates:
+- '[[ADR-0019]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0019: Lakshmi Runtime v2.1 — Deterministic Fallback & Graph Engine
@@ -40,3 +49,16 @@ We will upgrade Lakshmi Runtime to v2.1 with the following architectural changes
 *   **Positive:** Lakshmi is now operationally autonomous and highly resilient. The CEO is guaranteed to receive a briefing regardless of API status.
 *   **Positive:** The system truly consumes the Artifact Lineage Model introduced in v1.1.
 *   **Negative:** The deterministic briefing is less nuanced than the LLM synthesis, serving purely as a data readout. This is an acceptable tradeoff for guaranteed uptime.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **supersedes:** [[ADR-0019_Lakshmi_Runtime_v1]]
+- **validates:** [[ADR-0019]]

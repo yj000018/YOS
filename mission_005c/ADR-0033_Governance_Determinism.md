@@ -19,6 +19,15 @@ aliases:
 - MISSION-005C
 source_branch: y-os-doctrine
 canonical: true
+validates:
+- '[[ADR-0033]]'
+- '[[mission_005b]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
 ---
 
 # ADR-0033 — Governance Determinism Framework
@@ -53,3 +62,17 @@ Y-OS adopts the **Governance Determinism Framework v1**.
 - The MISSION-005B paradox is resolved: the score of 25 was valid, the verdict `APPROVE_WITH_WARNING` was valid, and under the new standard, the mission successfully passed governance.
 - Future missions can be evaluated automatically by Y-ORC without human interpretation of Lakshmi's warnings.
 - Lakshmi's role becomes fully deterministic and mathematically verifiable.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **validates:** [[ADR-0033]]
+- **validates:** [[mission_005b]]

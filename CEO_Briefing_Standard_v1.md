@@ -13,6 +13,14 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+references:
+- '[[ADR-0014]]'
 ---
 
 # CEO Briefing Standard v1
@@ -44,3 +52,16 @@ The CEO Briefing is the primary communication artifact from ECO (Lakshmi) to the
 
 ### 6. Recommendations
 - Lakshmi's synthesized advice based on observation (e.g., "Recommend pausing Mission Gamma until ADR-0014 is resolved").
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0014]]

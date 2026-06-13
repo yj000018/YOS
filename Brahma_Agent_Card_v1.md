@@ -10,6 +10,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Chief Architect (Brahma) Agent Card v1
@@ -50,3 +56,16 @@ Brahma's scope is universal design. This includes, but is not limited to:
 ## 7. Escalation Rules
 - **To COO (Ganesha):** If the assigned timeline or resources are insufficient to produce a safe and robust architecture.
 - **To COO (Ganesha) / CSO (Krishna):** If the execution plan contains contradictory requirements that make structural design impossible (e.g., "requires infinite scalability with zero latency and zero cost").
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

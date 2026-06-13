@@ -12,6 +12,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
 ---
 
 # Y-OS Continuity Doctrine
@@ -67,3 +71,14 @@ If the entire capability layer (all LLMs, all scripts, all agents) were deleted 
 *   **Alignment creates organizational continuity.**
 
 By separating the "brain" (the Artifact Layer and Control Plane) from the "hands" (the Capability Layer), Y-OS achieves true organizational immortality.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]

@@ -10,6 +10,10 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
 ---
 
 # Capability Roadmap: Lead Developer (Hanuman)
@@ -37,3 +41,14 @@ Hanuman is the universal build engine of Y-OS. While currently focused on code a
 1. **Infrastructure as Code (IaC):** Writing Terraform or Ansible scripts to provision cloud resources based on Brahma's infrastructure designs.
 2. **Media Generation:** Consuming content architectures to orchestrate video, audio, and image generation pipelines.
 3. **Agent Configuration:** Building and configuring new sub-agents based on organizational designs provided by CODO/Brahma.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]

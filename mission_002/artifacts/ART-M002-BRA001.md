@@ -21,6 +21,11 @@ aliases:
 - MISSION-002
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Krishna]]'
 ---
 
 # ART-M002-BRA001 — Architecture Package
@@ -168,3 +173,14 @@ This creates a coherent argument structure, not a collection of independent clai
 - No hedging language ("might", "could", "perhaps")
 - Every claim must be either self-evident from first principles or explicitly justified
 - Tables permitted only in Section 4 (the stack) and Section 6 (adoption framework)
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Krishna]]
+- **implements:** [[Context_Pack]]

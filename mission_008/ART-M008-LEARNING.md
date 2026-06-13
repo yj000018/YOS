@@ -22,6 +22,12 @@ aliases:
 - MISSION-008
 source_branch: y-os-doctrine
 canonical: true
+constrained_by:
+- '[[Preservation_Principle]]'
+- '[[Artifact_Primacy]]'
+- '[[Human_Override]]'
+executed_by:
+- '[[Saraswati]]'
 ---
 
 # ART-M008-LEARNING
@@ -65,3 +71,14 @@ Article IV (Human Override) may also be immutable—without it, Y-OS becomes an 
 **Article VI (Amendment Procedure) should be adopted first.**
 
 Rationale: Before Y-OS can safely adopt *any* other amendment—including identity protection—it must have a governed process for doing so. Adopting Article VII without Article VI would itself be an ungoverned constitutional change, violating the spirit of Article V. Process before content. Governance before autonomy.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Preservation_Principle]]
+- **constrained_by:** [[Artifact_Primacy]]
+- **constrained_by:** [[Human_Override]]
+- **executed_by:** [[Saraswati]]

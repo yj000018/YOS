@@ -12,6 +12,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # 1. Artifact Layer v1
@@ -35,3 +41,16 @@ The Operational Value Chain is fundamentally an artifact lifecycle:
 6. **Learning Phase:** The entire chain of artifacts is consumed by Saraswati to produce the **Learning Report**.
 
 Without the Artifact Layer, agents would rely on ephemeral conversational memory, leading to hallucination, scope creep, and execution failure. The Artifact Layer guarantees structural continuity from the CEO's initial thought to the final line of code.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

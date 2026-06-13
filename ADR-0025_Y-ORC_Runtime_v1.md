@@ -16,6 +16,9 @@ aliases:
 - Y-ORC Runtime v1
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
 ---
 
 # ADR-0025: Y-ORC Runtime v1 — Real Registry Activation
@@ -52,3 +55,13 @@ Y-ORC Runtime v1 autonomously:
 ## Consequences
 
 Y-OS now executes autonomously against real state. The architectural phase is complete. The operational phase has begun.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]

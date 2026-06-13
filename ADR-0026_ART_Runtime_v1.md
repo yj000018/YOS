@@ -18,6 +18,9 @@ aliases:
 - ART Runtime v1
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Krishna]]'
 ---
 
 # ADR-0026: ART Runtime v1 — Agent Routing Table
@@ -77,3 +80,13 @@ ART resolves capability → worker.
 CRT will resolve worker → model.
 
 **ADR-0027 (CRT Runtime v1) is the natural next step.**
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Krishna]]

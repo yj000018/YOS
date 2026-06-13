@@ -13,6 +13,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
 ---
 
 # Runtime Query Model
@@ -58,3 +64,15 @@ Retrieves artifacts where `Accepted Date` is within the last `hours`.
 ### `get_artifacts_missing_required_fields()`
 Retrieves artifacts that violate the Validation Rules (e.g., missing `Mission ID`, or `Rejected` without `Rejection Notes`).
 **Usage:** Used by Saraswati (CODO) for organizational health audits.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **governed_by:** [[Lakshmi_Governance]]

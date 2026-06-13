@@ -12,6 +12,17 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[Y-OS_Org_Map_v1]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Y-OS Org Map v2 (Master Document)
@@ -63,3 +74,19 @@ Agents do not communicate directly. They communicate via artifacts.
 - **Law #9:** No agent defines itself; CODO defines agents.
 - **Law #10:** The Operational Value Chain is immutable.
 - **Law #11 (Continuity):** Agents are transient. Artifacts are persistent. Capabilities are replaceable. Memory is cumulative. The organization survives the replacement of any individual agent.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **supersedes:** [[Y-OS_Org_Map_v1]]

@@ -11,6 +11,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Lakshmi]]'
+- '[[Hanuman]]'
 ---
 
 # Artifact Schema v1.1 (Patch)
@@ -33,3 +39,15 @@ The following properties are formally added to the Artifact Schema:
 
 ## Impact on Artifact Registry
 The Notion Database will be updated to include these four new properties. The Artifact API Model is implicitly updated to populate these timestamp fields during state transitions.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

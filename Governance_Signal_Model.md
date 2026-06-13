@@ -13,6 +13,9 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Saraswati]]'
 ---
 
 # Governance Signal Model
@@ -46,3 +49,13 @@ Generated at the mission level.
 
 ## 3. Routing (Future Y-ORC Integration)
 Currently, signals are routed to the CEO Briefing. In the future, Y-ORC will route these signals directly to the responsible agents (e.g., pinging a Review Owner for a V-01 signal).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Saraswati]]

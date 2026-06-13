@@ -15,6 +15,14 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+references:
+- '[[ADR-0016]]'
 ---
 
 # Learning Report: First End-to-End Y-OS Run v1
@@ -59,3 +67,16 @@ canonical: true
 
 ## Verdict: Y-OS v1 is Operationally Valid.
 The architecture is sound. The gaps identified are implementation gaps, not design flaws.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **references:** [[ADR-0016]]

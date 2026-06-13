@@ -20,6 +20,10 @@ aliases:
 - MISSION-009
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Constitutional_Governance]]'
+constrained_by:
+- '[[Human_Override]]'
 ---
 
 # ART-M009-CEO
@@ -42,3 +46,12 @@ Adopting this approach aligns Y-OS with future technological advancements while 
 
 **First Implementation Step:** 
 Initiate a pilot project to deploy the Constitution Compiler v1 within a controlled domain of Y-OS operations. This will allow for monitoring and feedback to refine the system before broader adoption.
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **constrained_by:** [[Human_Override]]
+- **governed_by:** [[Constitutional_Governance]]

@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "type": "text",
+      "x": 0,
+      "y": -500,
+      "width": 500,
+      "height": 60,
+      "text": "# Y-OS Living Memory Pipeline (ADR-0039)",
+      "color": "2"
+    },
+    {
+      "id": "2",
+      "type": "text",
+      "x": -800,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "text": "**Capture**\nSession artifacts\nraw output",
+      "color": "2"
+    },
+    {
+      "id": "3",
+      "type": "text",
+      "x": -580,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "text": "**Compress**\nToken reduction\n60-80%",
+      "color": "2"
+    },
+    {
+      "id": "5",
+      "type": "file",
+      "x": -360,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "file": "concepts/Session_Delta.md",
+      "color": "5"
+    },
+    {
+      "id": "7",
+      "type": "text",
+      "x": -140,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "text": "**Summarize**\nCanonical Summary\nper session",
+      "color": "2"
+    },
+    {
+      "id": "9",
+      "type": "file",
+      "x": 80,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "file": "concepts/Archive_Reference.md",
+      "color": "6"
+    },
+    {
+      "id": "11",
+      "type": "file",
+      "x": 300,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "file": "concepts/Canonical_Memory.md",
+      "color": "1"
+    },
+    {
+      "id": "13",
+      "type": "file",
+      "x": 520,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "file": "concepts/Knowledge_Graph_Compiler.md",
+      "color": "4"
+    },
+    {
+      "id": "15",
+      "type": "file",
+      "x": 740,
+      "y": -300,
+      "width": 200,
+      "height": 80,
+      "file": "concepts/Context_Pack.md",
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "4",
+      "fromNode": "2",
+      "toNode": "3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "6",
+      "fromNode": "3",
+      "toNode": "5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "8",
+      "fromNode": "5",
+      "toNode": "7",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "10",
+      "fromNode": "7",
+      "toNode": "9",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "12",
+      "fromNode": "9",
+      "toNode": "11",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "14",
+      "fromNode": "11",
+      "toNode": "13",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "16",
+      "fromNode": "13",
+      "toNode": "15",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "→"
+    },
+    {
+      "id": "17",
+      "fromNode": "15",
+      "toNode": "2",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "next session"
+    }
+  ]
+}

@@ -15,6 +15,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Hanuman]]'
 ---
 
 # Build Report: Lakshmi Runtime MVP v2
@@ -48,3 +54,15 @@ cd /home/ubuntu/yreg
 python3 lakshmi_runtime_v2.py
 ```
 The outputs will be generated in the same directory.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Hanuman]]
+- **governed_by:** [[Lakshmi_Governance]]

@@ -16,6 +16,17 @@ aliases:
 - Y-OS Org Map v2
 source_branch: y-os-doctrine
 canonical: true
+supersedes:
+- '[[ADR-0014_Y-OS_Org_Map_v1]]'
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # ADR-0014: Y-OS Organizational Map v2
@@ -45,3 +56,19 @@ This map consolidates:
 - Any future changes to roles, reporting lines, or the Operational Value Chain must result in an update to the Y-OS Org Map.
 - This document supersedes any older, informal diagrams or structural assumptions.
 - No new roles or layers are introduced by this ADR; it is strictly a consolidation of validated decisions.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]
+- **supersedes:** [[ADR-0014_Y-OS_Org_Map_v1]]

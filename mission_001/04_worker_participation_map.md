@@ -17,6 +17,15 @@ aliases:
 - MISSION-001
 source_branch: y-os-doctrine
 canonical: true
+governed_by:
+- '[[Lakshmi_Governance]]'
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Lakshmi]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Worker Participation Map — MISSION-001
@@ -30,3 +39,18 @@ canonical: true
 | 5 | Lakshmi | ECO | governance | GPT-5 | ART-M001-D24046 | ART-M001-E57AB0 |
 | 6 | Saraswati | CODO | learning | Claude Opus | ART-M001-E57AB0 | ART-M001-27D514 |
 | 7 | Ganesha | COO | reporting | GPT-5 | ART-M001-27D514 | ART-M001-CCFAD4 |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Lakshmi]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]
+- **governed_by:** [[Lakshmi_Governance]]

@@ -9,6 +9,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # 2. Recommended Structure
@@ -31,3 +37,16 @@ The Y-OS Operational Value Chain explicitly separates Strategy (Direction) from 
 If the Architect reports to the CSO, the COO is bypassed entirely. This breaks the Operational Value Chain and renders the COO role meaningless for technical projects. The CSO must remain domain-agnostic and forward-looking, not bogged down in the operational realities of software architecture or code deployment.
 
 By placing Design and Build under Execution Management, Y-OS ensures that all execution is properly resourced, scheduled, and validated against the original strategic intent by an independent operational authority.
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

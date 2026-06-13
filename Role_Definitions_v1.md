@@ -10,6 +10,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+executed_by:
+- '[[Brahma]]'
+- '[[Ganesha]]'
+- '[[Saraswati]]'
+- '[[Hanuman]]'
+- '[[Krishna]]'
 ---
 
 # Role Definitions v1
@@ -67,3 +73,16 @@ This document defines the specific roles within the Y-OS Operational Value Chain
 The roles of Brahma and Hanuman are archetypes for the Design and Build phases. In non-technical domains, equivalent roles apply:
 - **Publishing:** Brahma = Lead Editor (designs the structure); Hanuman = Writer (creates the content).
 - **Business:** Brahma = Business Architect (designs the model); Hanuman = Operator (executes the model).
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **executed_by:** [[Ganesha]]
+- **executed_by:** [[Saraswati]]
+- **executed_by:** [[Hanuman]]
+- **executed_by:** [[Krishna]]

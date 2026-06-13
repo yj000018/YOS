@@ -36,6 +36,36 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[CCR_Runtime]]'
+- '[[Living_Memory]]'
+- '[[Session_Delta]]'
+- '[[Context_Pack]]'
+governed_by:
+- '[[Governance_Determinism]]'
+- '[[Constitutional_Governance]]'
+compiles:
+- '[[Context_Pack]]'
+references:
+- '[[ADR-0030]]'
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+- '[[ADR-0035]]'
+- '[[ADR-0036]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
+- '[[ADR-0039]]'
+- '[[ADR-0006]]'
+- '[[ADR-0029]]'
+- '[[ADR-0020]]'
+- '[[ADR-0021]]'
+- '[[ADR-0022]]'
+- '[[ADR-0023]]'
+- '[[ADR-0024]]'
+- '[[ADR-0025]]'
+- '[[ADR-0026]]'
+- '[[ADR-0027]]'
+- '[[ADR-0028]]'
 ---
 
 # Y-OS Git Architecture v1
@@ -213,3 +243,37 @@ git clone git@github.com:yj000018/YOS.git --branch y-os-doctrine --depth 1 ~/obs
 | Force push used | ❌ None |
 | `main` modified | ❌ None |
 | Data loss | ❌ None |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **compiles:** [[Context_Pack]]
+- **governed_by:** [[Governance_Determinism]]
+- **governed_by:** [[Constitutional_Governance]]
+- **implements:** [[CCR_Runtime]]
+- **implements:** [[Living_Memory]]
+- **implements:** [[Session_Delta]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0030]]
+- **references:** [[ADR-0033]]
+- **references:** [[ADR-0034]]
+- **references:** [[ADR-0035]]
+- **references:** [[ADR-0036]]
+- **references:** [[ADR-0037]]
+- **references:** [[ADR-0038]]
+- **references:** [[ADR-0039]]
+- **references:** [[ADR-0006]]
+- **references:** [[ADR-0029]]
+- **references:** [[ADR-0020]]
+- **references:** [[ADR-0021]]
+- **references:** [[ADR-0022]]
+- **references:** [[ADR-0023]]
+- **references:** [[ADR-0024]]
+- **references:** [[ADR-0025]]
+- **references:** [[ADR-0026]]
+- **references:** [[ADR-0027]]
+- **references:** [[ADR-0028]]

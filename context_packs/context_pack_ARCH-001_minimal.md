@@ -15,6 +15,12 @@ tags:
 - '#yos'
 source_branch: y-os-doctrine
 canonical: true
+implements:
+- '[[Context_Pack]]'
+executed_by:
+- '[[Brahma]]'
+references:
+- '[[ADR-0022]]'
 ---
 
 # Context Pack — CP-ARCH-001-MINIMAL-2ED3BE
@@ -74,3 +80,14 @@ Architecture Packages, ADRs
 | Actionability | 10/10 |
 | **Total** | **100/100** |
 | **Band** | **Excellent** |
+
+
+---
+
+## Semantic Links
+
+*Inferred by KGC v2 — MISSION-015*
+
+- **executed_by:** [[Brahma]]
+- **implements:** [[Context_Pack]]
+- **references:** [[ADR-0022]]

@@ -1,0 +1,451 @@
+{
+  "total_md_files": 311,
+  "files_by_type": {
+    "mission": 76,
+    "unknown": 71,
+    "governance_report": 39,
+    "adr": 34,
+    "artifact": 32,
+    "index": 10,
+    "context_pack": 10,
+    "learning_report": 8,
+    "diagram": 7,
+    "runtime_spec": 5,
+    "protocol": 5,
+    "ceo_briefing": 4,
+    "constitution": 2,
+    "agent": 1,
+    "capability": 1,
+    "collection": 1,
+    "command": 1,
+    "knowledge_system": 1,
+    "project": 1,
+    "skill": 1,
+    "workflow": 1
+  },
+  "frontmatter_coverage": {
+    "count": 311,
+    "pct": 100.0
+  },
+  "avg_fm_fields_populated": 11.5,
+  "files_with_tags": {
+    "count": 311,
+    "pct": 100.0
+  },
+  "files_with_aliases": {
+    "count": 142,
+    "pct": 45.7
+  },
+  "total_wikilinks": 575,
+  "files_with_outbound_links": {
+    "count": 202,
+    "pct": 65.0
+  },
+  "files_with_inbound_links": {
+    "count": 56,
+    "pct": 18.0
+  },
+  "orphan_files": {
+    "count": 108,
+    "pct": 34.7
+  },
+  "files_no_inbound": {
+    "count": 255,
+    "pct": 82.0
+  },
+  "files_no_outbound": {
+    "count": 109,
+    "pct": 35.0
+  },
+  "unknown_type_files": {
+    "count": 71,
+    "pct": 22.8
+  },
+  "adrs_total": 34,
+  "adrs_without_mission_links": {
+    "count": 24,
+    "files": [
+      "ADR-0006_Creation_CODO_Role.md",
+      "ADR-0007_Continuous_Evolution_Loop.md",
+      "ADR-0009_Operational_Value_Chain.md",
+      "ADR-0010_Creation_Brahma.md",
+      "ADR-0011_Creation_Hanuman.md",
+      "ADR-0012_Artifact_Layer.md",
+      "ADR-0013_Creation_Lakshmi.md",
+      "ADR-0014_Y-OS_Org_Map_v2.md",
+      "ADR-0015_Architectural_Layer_Corrections.md",
+      "ADR-0016_Artifact_Registry.md",
+      "ADR-0017_Artifact_Lineage_Registry_v1.1.md",
+      "ADR-0017_Lakshmi_MVP_Runtime.md",
+      "ADR-0018_Lakshmi_Runtime_MVP.md",
+      "ADR-0019_Lakshmi_Runtime_v2.1.md",
+      "ADR-0020_Y-OS_Control_Plane.md",
+      "ADR-0021_Foundational_Doctrine.md",
+      "ADR-0021_Foundational_Operational_Principles.md",
+      "ADR-0022_Y-OS_Theory_of_Organization.md",
+      "ADR-0023_Y-ORC_Architecture.md",
+      "ADR-0025_Y-ORC_Runtime_v1.md",
+      "ADR-0026_ART_Runtime_v1.md",
+      "ADR-0027_Context_Continuity.md",
+      "ADR-0028_CRT_Runtime_v1.md",
+      "ADR-0029_Context_Compiler.md"
+    ]
+  },
+  "adrs_without_adr_links": {
+    "count": 19,
+    "files": [
+      "ADR-0006_Creation_CODO_Role.md",
+      "ADR-0009_Operational_Value_Chain.md",
+      "ADR-0010_Creation_Brahma.md",
+      "ADR-0012_Artifact_Layer.md",
+      "ADR-0013_Creation_Lakshmi.md",
+      "ADR-0014_Y-OS_Org_Map_v2.md",
+      "ADR-0019_Lakshmi_Runtime_v2.1.md",
+      "ADR-0020_Y-OS_Control_Plane.md",
+      "ADR-0021_Foundational_Doctrine.md",
+      "ADR-0021_Foundational_Operational_Principles.md",
+      "ADR-0022_Y-OS_Theory_of_Organization.md",
+      "ADR-0023_Y-ORC_Architecture.md",
+      "ADR-0025_Y-ORC_Runtime_v1.md",
+      "ADR-0027_Context_Continuity.md",
+      "ADR-0028_CRT_Runtime_v1.md",
+      "ADR-0029_Context_Compiler.md",
+      "ADR-0033_Governance_Determinism.md",
+      "ADR-0037_CCR_Runtime_v2.md",
+      "ADR-0038_Session_Delta_Engine.md"
+    ]
+  },
+  "missions_total": 76,
+  "missions_without_adr_links": {
+    "count": 67
+  },
+  "moc_files": {
+    "count": 10,
+    "files": [
+      "00_Y-OS_Home.md",
+      "01_Constitution_MOC.md",
+      "02_ADR_MOC.md",
+      "03_Missions_MOC.md",
+      "04_Governance_MOC.md",
+      "05_Runtime_MOC.md",
+      "06_Context_Architecture_MOC.md",
+      "07_Living_Memory_MOC.md",
+      "Y-OS_Canonical_Map_v1.md",
+      "Y-OS_Org_Map_v2.md"
+    ]
+  },
+  "top20_most_connected": [
+    {
+      "file": "03_Missions_MOC.md",
+      "score": 128
+    },
+    {
+      "file": "02_ADR_MOC.md",
+      "score": 61
+    },
+    {
+      "file": "04_Governance_MOC.md",
+      "score": 42
+    },
+    {
+      "file": "MISSION-012A_Storage_Audit.md",
+      "score": 23
+    },
+    {
+      "file": "05_Runtime_MOC.md",
+      "score": 22
+    },
+    {
+      "file": "Y-OS_Git_Architecture_v1.md",
+      "score": 21
+    },
+    {
+      "file": "06_Context_Architecture_MOC.md",
+      "score": 19
+    },
+    {
+      "file": "00_Y-OS_Home.md",
+      "score": 18
+    },
+    {
+      "file": "01_Constitution_MOC.md",
+      "score": 11
+    },
+    {
+      "file": "ADR-0039_Living_Memory_Pipeline.md",
+      "score": 9
+    },
+    {
+      "file": "Living_Memory_Pipeline_Doctrine_v1.md",
+      "score": 9
+    },
+    {
+      "file": "07_Living_Memory_MOC.md",
+      "score": 7
+    },
+    {
+      "file": "context_pack_BUILD-001_full.md",
+      "score": 7
+    },
+    {
+      "file": "context_pack_DOC-001_full.md",
+      "score": 7
+    },
+    {
+      "file": "10_final_deliverable.md",
+      "score": 7
+    },
+    {
+      "file": "context_pack_ARCH-001_full.md",
+      "score": 6
+    },
+    {
+      "file": "context_pack_GOV-001_full.md",
+      "score": 6
+    },
+    {
+      "file": "context_pack_RES-001_full.md",
+      "score": 6
+    },
+    {
+      "file": "ADR-0030_CCR_Runtime_v1.md",
+      "score": 6
+    },
+    {
+      "file": "ART-M005-B6F433.md",
+      "score": 6
+    }
+  ],
+  "top20_orphan_low_value": [
+    {
+      "file": "ABC_Validation_Protocol.md",
+      "score": 0
+    },
+    {
+      "file": "Accept_Reject_Framework_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Architectural_Correction_Review_v1.1.md",
+      "score": 0
+    },
+    {
+      "file": "Architectural_KPI_Framework_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Architecture_Package_Standard_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_API_Model_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Catalog_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Layer_Diagram.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Layer_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Lifecycle_Model_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Lifecycle_Operations_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Lineage_Model_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Lineage_Views.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Query_Model_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Routing_Model_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Schema_v1.1_Patch.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Schema_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_State_Machine_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Artifact_Status_Framework_v1.md",
+      "score": 0
+    },
+    {
+      "file": "Brahma_Agent_Card_v1.md",
+      "score": 0
+    }
+  ],
+  "yaml_field_coverage": {
+    "aliases": {
+      "populated": 142,
+      "pct": 45.7
+    },
+    "canonical": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "constitutional_articles": {
+      "populated": 43,
+      "pct": 13.8
+    },
+    "date": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "id": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "mission": {
+      "populated": 109,
+      "pct": 35.0
+    },
+    "owner": {
+      "populated": 303,
+      "pct": 97.4
+    },
+    "parent": {
+      "populated": 174,
+      "pct": 55.9
+    },
+    "related_adrs": {
+      "populated": 65,
+      "pct": 20.9
+    },
+    "related_missions": {
+      "populated": 109,
+      "pct": 35.0
+    },
+    "source_branch": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "status": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "tags": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "title": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "type": {
+      "populated": 311,
+      "pct": 100.0
+    },
+    "version": {
+      "populated": 128,
+      "pct": 41.2
+    }
+  },
+  "orphan_file_list": [
+    "ABC_Validation_Protocol.md",
+    "Accept_Reject_Framework_v1.md",
+    "Architectural_Correction_Review_v1.1.md",
+    "Architectural_KPI_Framework_v1.md",
+    "Architecture_Package_Standard_v1.md",
+    "Artifact_API_Model_v1.md",
+    "Artifact_Catalog_v1.md",
+    "Artifact_Layer_Diagram.md",
+    "Artifact_Layer_v1.md",
+    "Artifact_Lifecycle_Model_v1.md",
+    "Artifact_Lifecycle_Operations_v1.md",
+    "Artifact_Lineage_Model_v1.md",
+    "Artifact_Lineage_Views.md",
+    "Artifact_Query_Model_v1.md",
+    "Artifact_Routing_Model_v1.md",
+    "Artifact_Schema_v1.1_Patch.md",
+    "Artifact_Schema_v1.md",
+    "Artifact_State_Machine_v1.md",
+    "Artifact_Status_Framework_v1.md",
+    "Brahma_Agent_Card_v1.md",
+    "Brahma_Capability_Roadmap_v1.md",
+    "Brahma_Communication_Contracts_v1.md",
+    "Brahma_Operating_Framework_v1.md",
+    "Build_KPI_Framework_v1.md",
+    "Build_Package_Standard_v1.md",
+    "COO_Specification_v1.md",
+    "Capability_Layer_Correction_v1.1.md",
+    "Communication_Contracts_v1.md",
+    "Component_Responsibility_Matrix.md",
+    "Context_Continuity_Architecture.md",
+    "Control_Plane_Architecture_Diagram.md",
+    "ECO_Dashboard_Design_v1.md",
+    "Executive_Dashboard_Framework_v1.md",
+    "Executive_Structure_Diagram.md",
+    "Foundational_Continuity_Principle.md",
+    "Future_Architecture_Notes.md",
+    "Future_Org_Expansion_v1.md",
+    "Hanuman_Agent_Card_v1.md",
+    "Hanuman_Capability_Roadmap_v1.md",
+    "Hanuman_Communication_Contracts_v1.md",
+    "Hanuman_Operating_Framework_v1.md",
+    "L1_Org_Placement_Review.md",
+    "L2_Recommended_Structure.md",
+    "L4_Updated_Org_Diagram.md",
+    "L5_Impact_on_OVC.md",
+    "Layer_Architecture_Diagram.md",
+    "Layer_Architecture_Diagram_v2.1.md",
+    "Memory_Layer_Correction_v1.1.md",
+    "Migration_Plan.md",
+    "Notion_Database_Design_v1.md"
+  ],
+  "unknown_file_list": [
+    "Architectural_Correction_Review_v1.1.md",
+    "Brahma_Agent_Card_v1.md",
+    "Brahma_Capability_Roadmap_v1.md",
+    "Brahma_Communication_Contracts_v1.md",
+    "COO_Specification_v1.md",
+    "Capability_Layer_Correction_v1.1.md",
+    "Communication_Contracts_v1.md",
+    "Component_Responsibility_Matrix.md",
+    "Context_Continuity_Architecture.md",
+    "ECO_Dashboard_Design_v1.md",
+    "Foundational_Continuity_Principle.md",
+    "Future_Architecture_Notes.md",
+    "Future_Org_Expansion_v1.md",
+    "Hanuman_Agent_Card_v1.md",
+    "Hanuman_Capability_Roadmap_v1.md",
+    "Hanuman_Communication_Contracts_v1.md",
+    "Hanuman_Title_Recommendation.md",
+    "Impact_Analysis_v1.1.md",
+    "L1_Org_Placement_Review.md",
+    "L2_Recommended_Structure.md",
+    "L5_Impact_on_OVC.md",
+    "L6_ADR_Recommendation.md",
+    "Memory_Layer_Correction_v1.1.md",
+    "Migration_Plan.md",
+    "Notion_Database_Design_v1.md",
+    "Notion_Database_Update_Plan.md",
+    "Open_Loops_Register_v1.md",
+    "Org_Placement_Review_v1.md",
+    "Provider_Continuity_Matrix.md",
+    "README.md"
+  ]
+}

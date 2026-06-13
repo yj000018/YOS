@@ -147,3 +147,27 @@ Registry
 
 **If every agent is replaced tomorrow:**
 Y-ORC will still operate correctly. It will read the Registry, find the `Accepted` artifacts, resolve the required capabilities, and trigger the *new* agents. The organizational behavior and governance guarantees are perfectly preserved because they live in the Registry and Y-ORC's routing logic, not in the agents themselves.
+
+---
+
+## Constitutional Status
+
+> **Constitutional Reference:** Y-ORC operates under Constitutional Principle #5 (*Governance precedes orchestration*) and Principle #8 (*Human override always exists*) from Y-OS Constitution v1 (ADR-0024). Y-ORC is replaceable; its behavioral contract is not.
+
+### Constitutional Hierarchy
+
+```text
+Constitution              ← supreme authority (ADR-0024)
+        ↓
+First Principles
+        ↓
+Theory of Organization
+        ↓
+Governance
+        ↓
+Control Plane
+        ↓
+Y-ORC                     ← you are here
+        ↓
+Agents
+```

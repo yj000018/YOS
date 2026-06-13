@@ -272,3 +272,27 @@ Without governance, visibility becomes reporting.
 Without orchestration, governance becomes observation.
 
 Together they form an operational system.
+
+---
+
+## Constitutional Status
+
+> **This document is constitutionally protected.** The Theory of Organization is a Tier-1 constitutional doctrine under Y-OS Constitution v1 (ADR-0024). Any modification requires a Constitutional Amendment (CEO/Founder override).
+
+### Full Constitutional Hierarchy
+
+```text
+Constitution              ← supreme authority (ADR-0024)
+        ↓
+First Principles          ← operational physics
+        ↓
+Theory of Organization    ← you are here
+        ↓
+Governance
+        ↓
+Control Plane
+        ↓
+Y-ORC
+        ↓
+Agents
+```

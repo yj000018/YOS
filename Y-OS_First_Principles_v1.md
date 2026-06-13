@@ -69,3 +69,5 @@ Y-ORC
         ↓
 Autonomous Organization
 ```
+
+> **Constitutional Reference:** These First Principles are protected by the Y-OS Constitution v1 (ADR-0024). They cannot be modified without a Constitutional Amendment (CEO/Founder override).

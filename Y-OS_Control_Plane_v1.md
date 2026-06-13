@@ -98,3 +98,5 @@ Y-ORC
         ↓
 Autonomous Organization
 ```
+
+> **Constitutional Reference:** The Control Plane is constitutionally mandated by Y-OS Constitution v1 (ADR-0024), Principle #6: *Control Plane precedes autonomy.* No autonomous execution layer may operate without an active Control Plane.

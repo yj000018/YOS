@@ -1,0 +1,80 @@
+context_pack_id: CP-GOV-001-FULL-C3AFCB
+mission_id: GOV-001
+target_capability: governance
+target_worker: Lakshmi
+target_provider: OpenAI
+target_model: GPT-5
+mode: full
+lineage:
+  parent_artifact_ids: []
+  current_artifact_chain:
+  - ART-GOV-001
+state:
+  mission_objective: Audit open loops across all active missions
+  current_state: Mission GOV-001 — 1 artifacts in chain
+  open_loops: []
+  known_risks:
+  - Stale artifact status not updated
+  missing_context: []
+constraints:
+  relevant_decisions:
+  - 'ADR-0022: Theory of Organization: roles, artifacts, responsibilities.'
+  - 'ADR-0023: Y-ORC Architecture: orchestration via capability routing.'
+  - 'ADR-0024: Y-OS Constitution: immutable identity layer.'
+  - 'ADR-0029: CCR Runtime v1: context compilation layer.'
+  - 'ADR-0020: Control Plane is the observability layer. It never executes.'
+  relevant_adrs:
+  - ADR-0022
+  - ADR-0023
+  - ADR-0024
+  - ADR-0029
+  - ADR-0020
+  relevant_laws:
+  - 'L1: Agents are transient. Artifacts are persistent.'
+  - 'L2: Artifacts are the sole source of truth.'
+  - 'L3: Capabilities are replaceable. Organization is not.'
+  - 'L4: Memory is cumulative. Knowledge compounds in the Registry.'
+  - 'L5: Organization survives complete component replacement.'
+  - 'L6: Organization > Agents > Models.'
+  relevant_doctrine:
+  - 'artifact_centric: All state lives in artifacts. No agent memory.'
+  - 'lineage: Every artifact records its parent. Causality is preserved.'
+  - 'governance_first: Governance precedes orchestration.'
+  - 'human_override: Human override always exists at every layer.'
+  active_constraints:
+  - 'Worker role: ECO — defines visibility'
+  - 'Output must be: CEO Briefings, Open Loop Reports'
+  - All outputs must be written as Artifacts, never as Agent Results.
+  - Lineage must be preserved in all outputs.
+knowledge:
+  relevant_memory:
+  - 'Y-OS artifact_centric: All state lives in artifacts. No agent memory.'
+  - 'Y-OS lineage: Every artifact records its parent. Causality is preserved.'
+  - 'Y-OS governance_first: Governance precedes orchestration.'
+  - 'Y-OS human_override: Human override always exists at every layer.'
+execution:
+  expected_output_artifact: CEO Briefings, Open Loop Reports
+  success_criteria:
+  - Output is a valid Y-OS Artifact.
+  - Lineage is preserved.
+  - Output matches the capability definition.
+  - No architectural constraints violated.
+  output_format: Markdown + YAML frontmatter
+meta:
+  token_budget: 128000
+  freshness_timestamp: '2026-06-13T09:39:08.238909+00:00'
+  token_estimate: 629
+quality_score:
+  dimensions:
+    coverage: 10
+    relevance: 10
+    freshness: 10
+    canonical_accuracy: 10
+    constraint_completeness: 10
+    role_alignment: 10
+    redundancy_control: 10
+    token_efficiency: 10
+    missing_context_disclosure: 10
+    actionability: 10
+  total: 100
+  band: Excellent

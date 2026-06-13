@@ -1,0 +1,28 @@
+{
+  "Krishna": {
+    "provider": "Anthropic",
+    "model": "Claude Opus",
+    "fallback": "GPT-5"
+  },
+  "Brahma": {
+    "provider": "OpenAI",
+    "model": "GPT-5",
+    "fallback": "Claude Opus"
+  },
+  "Ganesha": {
+    "provider": "OpenAI",
+    "model": "GPT-5"
+  },
+  "Hanuman": {
+    "provider": "Manus",
+    "model": "Manus Runtime"
+  },
+  "Lakshmi": {
+    "provider": "OpenAI",
+    "model": "GPT-5"
+  },
+  "Saraswati": {
+    "provider": "Anthropic",
+    "model": "Claude Opus"
+  }
+}

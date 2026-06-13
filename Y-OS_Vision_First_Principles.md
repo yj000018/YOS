@@ -148,3 +148,6 @@ The organization itself becomes an adaptive system.
 
 ## Y-OS Law #11
 > **Organizational Continuity Principle: Agents are transient. Artifacts are persistent. Capabilities are replaceable. Memory is cumulative. The organization survives the replacement of any individual agent.**
+
+## Y-OS Law #12
+> **The Artifact-Centric Principle: The system remembers through artifacts, not through agents. The organization is defined by its registry, not by its prompts. A mission does not exist unless its lineage is reconstructable.**

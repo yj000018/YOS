@@ -1,0 +1,6 @@
+{"timestamp": "2026-06-13T15:05:59.211530", "step": 1, "worker": "Krishna", "provider": "Anthropic", "model": "claude-opus-4-5", "tokens_in": 367, "tokens_out": 836, "artifact_id": "ART-M007-6F914C"}
+{"timestamp": "2026-06-13T15:06:26.491209", "step": 2, "worker": "Brahma", "provider": "OpenAI", "model": "gpt-4o", "tokens_in": 451, "tokens_out": 1035, "artifact_id": "ART-M007-83DBB2"}
+{"timestamp": "2026-06-13T15:06:35.688359", "step": 3, "worker": "Hanuman", "provider": "OpenAI", "model": "gpt-4o", "tokens_in": 487, "tokens_out": 620, "artifact_id": "ART-M007-A3C1C8"}
+{"timestamp": "2026-06-13T15:06:44.384687", "step": 4, "worker": "Lakshmi", "provider": "OpenAI", "model": "gpt-4o", "tokens_in": 439, "tokens_out": 663, "artifact_id": "ART-M007-E270A7"}
+{"timestamp": "2026-06-13T15:07:09.474166", "step": 5, "worker": "Saraswati", "provider": "Anthropic", "model": "claude-opus-4-5", "tokens_in": 505, "tokens_out": 550, "artifact_id": "ART-M007-39F9F4"}
+{"timestamp": "2026-06-13T15:07:13.274864", "step": 6, "worker": "Ganesha", "provider": "OpenAI", "model": "gpt-4o", "tokens_in": 444, "tokens_out": 322, "artifact_id": "ART-M007-BB2062"}

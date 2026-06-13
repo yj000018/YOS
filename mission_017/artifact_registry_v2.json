@@ -1,0 +1,120 @@
+{
+  "schema_version": "2.0",
+  "mission_id": "MISSION-017",
+  "updated_at": "2026-06-13T23:50:38.554438+00:00",
+  "total_artifacts": 4,
+  "artifacts": [
+    {
+      "artifact_id": "ART-M017-BRAHMA-ARCHITECTURE",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Architecture Note",
+      "worker": "Brahma",
+      "capability": "architecture",
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "parent_context_pack_id": "CP-M017-BRAHMA-ARCHITECTURE",
+      "parent_artifact_ids": [],
+      "status": "VALIDATED",
+      "created_at": "2026-06-13T23:50:04.283475+00:00",
+      "lineage": {
+        "source_context_pack": "CP-M017-BRAHMA-ARCHITECTURE",
+        "provider_payload": "payload_A",
+        "execution_trace": "TRACE-A18998B6"
+      },
+      "content_hash": "9e869ddd2074ec64c34154ead77328fd31b833df72e66733c83fe4f31e6ea508",
+      "content_preview": "# Architecture Note — Brahma / MISSION-017  **Worker:** Brahma   **Capability:** architecture   **Mode:** MODE-D   **Provider:** openai   **Model:** gpt-4o-2024-08-06   **Tokens:** 1117 (prompt: 533, ",
+      "content_path": "/home/ubuntu/yreg/mission_017/artifacts/ART-M017-BRAHMA-ARCHITECTURE.md",
+      "validation_verdict": "VALID",
+      "tags": [
+        "#artifact",
+        "#yos",
+        "#brahma",
+        "#mission-017"
+      ]
+    },
+    {
+      "artifact_id": "ART-M017-HANUMAN-BUILD",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Implementation Checklist",
+      "worker": "Hanuman",
+      "capability": "build",
+      "provider": "openai",
+      "model": "gpt-4o-mini-2024-07-18",
+      "parent_context_pack_id": "CP-M017-HANUMAN-BUILD",
+      "parent_artifact_ids": [],
+      "status": "VALIDATED",
+      "created_at": "2026-06-13T23:50:10.258107+00:00",
+      "lineage": {
+        "source_context_pack": "CP-M017-HANUMAN-BUILD",
+        "provider_payload": "payload_B",
+        "execution_trace": "TRACE-F4A698BD"
+      },
+      "content_hash": "9b94938a233d0665a71f636b421448dafb7e21b410436d6a8a9b1e7314379eef",
+      "content_preview": "# Implementation Checklist — Hanuman / MISSION-017  **Worker:** Hanuman   **Capability:** build   **Mode:** MODE-B   **Provider:** openai   **Model:** gpt-4o-mini-2024-07-18   **Tokens:** 829 (prompt:",
+      "content_path": "/home/ubuntu/yreg/mission_017/artifacts/ART-M017-HANUMAN-BUILD.md",
+      "validation_verdict": "VALID",
+      "tags": [
+        "#artifact",
+        "#yos",
+        "#hanuman",
+        "#mission-017"
+      ]
+    },
+    {
+      "artifact_id": "ART-M017-SARASWATI-LEARNING",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Learning Synthesis",
+      "worker": "Saraswati",
+      "capability": "learning",
+      "provider": "anthropic",
+      "model": "claude-opus-4-20250514",
+      "parent_context_pack_id": "CP-M017-SARASWATI-LEARNING",
+      "parent_artifact_ids": [],
+      "status": "VALIDATED",
+      "created_at": "2026-06-13T23:50:34.680159+00:00",
+      "lineage": {
+        "source_context_pack": "CP-M017-SARASWATI-LEARNING",
+        "provider_payload": "payload_C",
+        "execution_trace": "TRACE-B7F4E2F6"
+      },
+      "content_hash": "efdaed3b360829ca33865551a77f9d228201854391986c91cc397784d1b0377a",
+      "content_preview": "# Learning Synthesis — Saraswati / MISSION-017  **Worker:** Saraswati   **Capability:** learning   **Mode:** MODE-E   **Provider:** anthropic   **Model:** claude-opus-4-20250514   **Tokens:** 1358 (pr",
+      "content_path": "/home/ubuntu/yreg/mission_017/artifacts/ART-M017-SARASWATI-LEARNING.md",
+      "validation_verdict": "VALID",
+      "tags": [
+        "#artifact",
+        "#yos",
+        "#saraswati",
+        "#mission-017"
+      ]
+    },
+    {
+      "artifact_id": "ART-M017-LAKSHMI-GOVERNANCE",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Governance Review",
+      "worker": "Lakshmi",
+      "capability": "governance",
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "parent_context_pack_id": "CP-M017-LAKSHMI-GOVERNANCE",
+      "parent_artifact_ids": [],
+      "status": "VALIDATED",
+      "created_at": "2026-06-13T23:50:38.553871+00:00",
+      "lineage": {
+        "source_context_pack": "CP-M017-LAKSHMI-GOVERNANCE",
+        "provider_payload": "payload_D",
+        "execution_trace": "TRACE-E55BD61F"
+      },
+      "content_hash": "1f5f5010f4a84f4390f539eacc4d1a08c5bfef0e0e8f57d7fe865dd9bad02ca0",
+      "content_preview": "# Governance Review — Lakshmi / MISSION-017  **Worker:** Lakshmi   **Capability:** governance   **Mode:** MODE-D   **Provider:** openai   **Model:** gpt-4o-2024-08-06   **Tokens:** 993 (prompt: 564, c",
+      "content_path": "/home/ubuntu/yreg/mission_017/artifacts/ART-M017-LAKSHMI-GOVERNANCE.md",
+      "validation_verdict": "VALID",
+      "tags": [
+        "#artifact",
+        "#yos",
+        "#lakshmi",
+        "#mission-017"
+      ]
+    }
+  ]
+}

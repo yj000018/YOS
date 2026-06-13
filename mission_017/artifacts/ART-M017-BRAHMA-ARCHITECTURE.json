@@ -1,0 +1,28 @@
+{
+  "artifact_id": "ART-M017-BRAHMA-ARCHITECTURE",
+  "mission_id": "MISSION-017",
+  "artifact_type": "Architecture Note",
+  "worker": "Brahma",
+  "capability": "architecture",
+  "provider": "openai",
+  "model": "gpt-4o-2024-08-06",
+  "parent_context_pack_id": "CP-M017-BRAHMA-ARCHITECTURE",
+  "parent_artifact_ids": [],
+  "status": "CREATED",
+  "created_at": "2026-06-13T23:50:04.283475+00:00",
+  "lineage": {
+    "source_context_pack": "CP-M017-BRAHMA-ARCHITECTURE",
+    "provider_payload": "payload_A",
+    "execution_trace": "TRACE-A18998B6"
+  },
+  "content_hash": "9e869ddd2074ec64c34154ead77328fd31b833df72e66733c83fe4f31e6ea508",
+  "content_preview": "# Architecture Note — Brahma / MISSION-017  **Worker:** Brahma   **Capability:** architecture   **Mode:** MODE-D   **Provider:** openai   **Model:** gpt-4o-2024-08-06   **Tokens:** 1117 (prompt: 533, ",
+  "content_path": "/home/ubuntu/yreg/mission_017/artifacts/ART-M017-BRAHMA-ARCHITECTURE.md",
+  "validation_verdict": "",
+  "tags": [
+    "#artifact",
+    "#yos",
+    "#brahma",
+    "#mission-017"
+  ]
+}

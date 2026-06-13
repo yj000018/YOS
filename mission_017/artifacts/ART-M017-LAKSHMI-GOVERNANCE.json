@@ -1,0 +1,28 @@
+{
+  "artifact_id": "ART-M017-LAKSHMI-GOVERNANCE",
+  "mission_id": "MISSION-017",
+  "artifact_type": "Governance Review",
+  "worker": "Lakshmi",
+  "capability": "governance",
+  "provider": "openai",
+  "model": "gpt-4o-2024-08-06",
+  "parent_context_pack_id": "CP-M017-LAKSHMI-GOVERNANCE",
+  "parent_artifact_ids": [],
+  "status": "CREATED",
+  "created_at": "2026-06-13T23:50:38.553871+00:00",
+  "lineage": {
+    "source_context_pack": "CP-M017-LAKSHMI-GOVERNANCE",
+    "provider_payload": "payload_D",
+    "execution_trace": "TRACE-E55BD61F"
+  },
+  "content_hash": "1f5f5010f4a84f4390f539eacc4d1a08c5bfef0e0e8f57d7fe865dd9bad02ca0",
+  "content_preview": "# Governance Review — Lakshmi / MISSION-017  **Worker:** Lakshmi   **Capability:** governance   **Mode:** MODE-D   **Provider:** openai   **Model:** gpt-4o-2024-08-06   **Tokens:** 993 (prompt: 564, c",
+  "content_path": "/home/ubuntu/yreg/mission_017/artifacts/ART-M017-LAKSHMI-GOVERNANCE.md",
+  "validation_verdict": "",
+  "tags": [
+    "#artifact",
+    "#yos",
+    "#lakshmi",
+    "#mission-017"
+  ]
+}

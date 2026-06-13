@@ -1,0 +1,5 @@
+{"ts": "2026-06-13T07:48:13.389488Z", "event": "WATCHER_SCAN", "eligible_count": 1, "ids": ["ART-TEST-001"]}
+{"ts": "2026-06-13T07:48:13.389666Z", "event": "CAPABILITY_RESOLVED", "artifact_id": "ART-TEST-001", "capability": "generate_report", "worker": "Ganesha"}
+{"ts": "2026-06-13T07:48:13.389721Z", "event": "WORKER_INVOKED", "worker": "Ganesha", "input_artifact": "ART-TEST-001"}
+{"ts": "2026-06-13T07:48:13.389774Z", "event": "WORKER_COMPLETED", "worker": "Ganesha", "output": {"type": "Report", "title": "Report for ART-TEST-001", "content": "## Execution Report\n\n**Source Artifact:** ART-TEST-001\n**Mission:** MISS-YORC-MVP-V0\n**Capability Executed:** generate_report\n\n### Summary\nArtifact `ART-TEST-001` was processed by Ganesha (Generate Report worker).\nAll execution steps completed successfully.\n\n### Status\nExecution complete. New artifact registered in Registry with full lineage.\n", "status": "Draft"}}
+{"ts": "2026-06-13T07:48:13.389876Z", "event": "ARTIFACT_WRITTEN", "new_artifact_id": "ART-576B41", "parent_id": "ART-TEST-001", "mission_id": "MISS-YORC-MVP-V0", "lineage_recorded": true}

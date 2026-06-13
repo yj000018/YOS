@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "ART-TEST-001": {
+      "id": "ART-TEST-001",
+      "type": "Execution Request",
+      "title": "Test Execution Request \u2014 Generate Report",
+      "content": "Validate Y-ORC Runtime MVP v0 by generating a report artifact.",
+      "status": "Consumed",
+      "capability": "generate_report",
+      "mission_id": "MISS-YORC-MVP-V0",
+      "parent_id": null,
+      "producer": "Yannick (Manual Seed)",
+      "created_at": "2026-06-13T07:48:13.345089Z"
+    },
+    "ART-576B41": {
+      "id": "ART-576B41",
+      "type": "Report",
+      "title": "Report for ART-TEST-001",
+      "content": "## Execution Report\n\n**Source Artifact:** ART-TEST-001\n**Mission:** MISS-YORC-MVP-V0\n**Capability Executed:** generate_report\n\n### Summary\nArtifact `ART-TEST-001` was processed by Ganesha (Generate Report worker).\nAll execution steps completed successfully.\n\n### Status\nExecution complete. New artifact registered in Registry with full lineage.\n",
+      "status": "Draft",
+      "mission_id": "MISS-YORC-MVP-V0",
+      "parent_id": "ART-TEST-001",
+      "producer": "Y-ORC Runtime v0",
+      "created_at": "2026-06-13T07:48:13.389868Z"
+    }
+  },
+  "lineage": {
+    "ART-576B41": {
+      "parent": "ART-TEST-001",
+      "mission": "MISS-YORC-MVP-V0",
+      "produced_by": "Y-ORC Runtime v0",
+      "ts": "2026-06-13T07:48:13.389868Z"
+    }
+  }
+}

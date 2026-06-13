@@ -1,0 +1,98 @@
+{
+  "ART-M004-52311E": {
+    "id": "ART-M004-52311E",
+    "type": "CEO Directive",
+    "worker": "CEO",
+    "provider": "Human",
+    "model": "Human",
+    "parent_id": null,
+    "status": "Consumed",
+    "created_at": "2026-06-13T13:02:00.775221+00:00",
+    "tokens": 0,
+    "used_fallback": false
+  },
+  "ART-M004-BCB144": {
+    "id": "ART-M004-BCB144",
+    "type": "Strategy Output",
+    "worker": "Krishna",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M004-52311E",
+    "status": "Consumed",
+    "created_at": "2026-06-13T13:02:10.319147+00:00",
+    "tokens": 729,
+    "used_fallback": true
+  },
+  "ART-M004-82A5B4": {
+    "id": "ART-M004-82A5B4",
+    "type": "Architecture Output",
+    "worker": "Brahma",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M004-BCB144",
+    "status": "Consumed",
+    "created_at": "2026-06-13T13:02:24.934161+00:00",
+    "tokens": 1041,
+    "used_fallback": false
+  },
+  "ART-M004-C22F3D": {
+    "id": "ART-M004-C22F3D",
+    "type": "Plan Output",
+    "worker": "Ganesha",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M004-82A5B4",
+    "status": "Consumed",
+    "created_at": "2026-06-13T13:02:31.451559+00:00",
+    "tokens": 787,
+    "used_fallback": false
+  },
+  "ART-M004-D14D49": {
+    "id": "ART-M004-D14D49",
+    "type": "Build Output",
+    "worker": "Hanuman",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M004-C22F3D",
+    "status": "Consumed",
+    "created_at": "2026-06-13T13:02:43.121105+00:00",
+    "tokens": 1277,
+    "used_fallback": false
+  },
+  "ART-M004-AE262C": {
+    "id": "ART-M004-AE262C",
+    "type": "Governance Output",
+    "worker": "Lakshmi",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M004-D14D49",
+    "status": "Consumed",
+    "created_at": "2026-06-13T13:02:52.274502+00:00",
+    "tokens": 840,
+    "used_fallback": false
+  },
+  "ART-M004-50DAA1": {
+    "id": "ART-M004-50DAA1",
+    "type": "Learning Output",
+    "worker": "Saraswati",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M004-AE262C",
+    "status": "Consumed",
+    "created_at": "2026-06-13T13:02:59.788427+00:00",
+    "tokens": 875,
+    "used_fallback": true
+  },
+  "ART-M004-7FA315": {
+    "id": "ART-M004-7FA315",
+    "type": "Reporting Output",
+    "worker": "Ganesha",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M004-50DAA1",
+    "status": "Done",
+    "created_at": "2026-06-13T13:03:02.142616+00:00",
+    "tokens": 377,
+    "used_fallback": false
+  }
+}

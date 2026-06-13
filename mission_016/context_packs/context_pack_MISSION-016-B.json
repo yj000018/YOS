@@ -1,0 +1,29 @@
+{
+  "mission_id": "MISSION-016-B",
+  "worker": "Hanuman",
+  "capability": "build",
+  "mode": "MODE-B",
+  "content": "## Worker Identity\n\nHanuman — COO. Responsible for execution, build, deploy, and operational tasks. Works in MODE-B by default.\n\n## Mission Context\n\n**Mission:** MISSION-016-B\n**Capability:** build\n**Mode:** MODE-B\n\n## Relevant Concepts\n\n**[[Y_ORC]]** — Y-ORC\n**[[Artifact_Primacy]]** — Artifact Primacy\n\n## Related Missions\n\n- [[MISSION-016]]",
+  "source_manifest": [
+    "Worker identity: Hanuman (built-in)",
+    "Mission context: MISSION-016-B",
+    "concepts/Y_ORC.md",
+    "concepts/Artifact_Primacy.md",
+    "Mission references: MISSION-016"
+  ],
+  "omitted_context": [
+    "ADR-0043 — file not found in corpus"
+  ],
+  "missing_context": [],
+  "compression_mode": "structural",
+  "lineage": [
+    "Compiled by ContextCompilerV2 at 2026-06-13T23:19:29.349999+00:00",
+    "Mission: MISSION-016-B",
+    "Worker: Hanuman / build",
+    "Mode: MODE-B",
+    "ADR-0043: CCR Runtime v2 Implementation"
+  ],
+  "token_estimate": 85,
+  "raw_session_history_tokens": 0,
+  "timestamp": "2026-06-13T23:19:29.358355+00:00"
+}

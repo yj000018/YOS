@@ -1,0 +1,10 @@
+[2026-06-13T23:19:29.310533+00:00] Pipeline START: MISSION-016-A
+[2026-06-13T23:19:29.310620+00:00] STAGE capture: artifact saved → lmp_capture_MISSION-016-A.md
+[2026-06-13T23:19:29.310741+00:00] STAGE compress: artifact saved → lmp_compress_MISSION-016-A.md
+[2026-06-13T23:19:29.310847+00:00] STAGE delta: artifact saved → lmp_delta_MISSION-016-A.md
+[2026-06-13T23:19:29.310990+00:00] STAGE summarize: artifact saved → lmp_summarize_MISSION-016-A.md
+[2026-06-13T23:19:29.311099+00:00] STAGE archive: artifact saved → lmp_archive_MISSION-016-A.md
+[2026-06-13T23:19:29.311166+00:00] STAGE canonicalize: artifact saved → lmp_canonicalize_MISSION-016-A.md
+[2026-06-13T23:19:29.311234+00:00] STAGE compile: artifact saved → lmp_compile_MISSION-016-A.md
+[2026-06-13T23:19:29.311291+00:00] STAGE inject: artifact saved → lmp_inject_MISSION-016-A.md
+[2026-06-13T23:19:29.311296+00:00] Pipeline COMPLETE: MISSION-016-A — 8 stages, 8 artifacts

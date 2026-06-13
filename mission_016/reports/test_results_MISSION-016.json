@@ -1,0 +1,53 @@
+[
+  {
+    "test": "A",
+    "worker": "Brahma",
+    "capability": "architecture",
+    "expected_mode": "MODE-D",
+    "selected_mode": "MODE-D",
+    "mode_correct": true,
+    "token_estimate": 268,
+    "source_count": 10,
+    "omitted_count": 1,
+    "missing_count": 0,
+    "governance_verdict": "APPROVE",
+    "governance_score": 3,
+    "governance_passed": true,
+    "raw_session_history": 0,
+    "lineage_integrity": 1.0
+  },
+  {
+    "test": "B",
+    "worker": "Hanuman",
+    "capability": "build",
+    "expected_mode": "MODE-B",
+    "selected_mode": "MODE-B",
+    "mode_correct": true,
+    "token_estimate": 85,
+    "source_count": 5,
+    "omitted_count": 1,
+    "missing_count": 0,
+    "governance_verdict": "APPROVE",
+    "governance_score": 3,
+    "governance_passed": true,
+    "raw_session_history": 0,
+    "lineage_integrity": 1.0
+  },
+  {
+    "test": "C",
+    "worker": "Saraswati",
+    "capability": "learning",
+    "expected_mode": "MODE-E",
+    "selected_mode": "MODE-E",
+    "mode_correct": true,
+    "token_estimate": 464,
+    "source_count": 12,
+    "omitted_count": 1,
+    "missing_count": 0,
+    "governance_verdict": "APPROVE",
+    "governance_score": 3,
+    "governance_passed": true,
+    "raw_session_history": 0,
+    "lineage_integrity": 1.0
+  }
+]

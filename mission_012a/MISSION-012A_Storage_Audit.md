@@ -1,3 +1,41 @@
+---
+id: yos-mission-012a-storage-audit
+title: MISSION-012A Storage Audit
+type: mission
+status: INSPECTION
+mission: MISSION-012A
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0006]]'
+- '[[ADR-0038]]'
+related_missions:
+- '[[mission_001]]'
+- '[[mission_002]]'
+- '[[mission_003]]'
+- '[[mission_004]]'
+- '[[mission_005]]'
+- '[[mission_005b]]'
+- '[[mission_005c]]'
+- '[[mission_006]]'
+- '[[mission_007]]'
+- '[[mission_008]]'
+- '[[mission_009]]'
+- '[[mission_010]]'
+- '[[mission_010b]]'
+- '[[mission_011]]'
+- '[[mission_012]]'
+- '[[mission_012a]]'
+tags:
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-012A
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # MISSION-012A — Repository & Markdown Storage Audit
 
 **Date:** 2026-06-13  

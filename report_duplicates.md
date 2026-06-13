@@ -1,3 +1,17 @@
+---
+id: yos-report-duplicates
+title: report duplicates
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-REG Duplicate Detection Report v1
 
 **Generated:** 2026-06-12

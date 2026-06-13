@@ -1,3 +1,24 @@
+---
+id: yos-adr-0016-artifact-registry
+title: ADR-0016 Artifact Registry
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0012]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- Artifact Registry
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0016: Artifact Registry
 
 **Status:** Accepted

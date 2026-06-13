@@ -1,0 +1,336 @@
+{
+  "mode": "dry_run",
+  "date": "2026-06-13",
+  "metrics": {
+    "total_md_files": 301,
+    "files_with_frontmatter_before": 13,
+    "files_with_frontmatter_after": 301,
+    "frontmatter_coverage_pct": 100.0,
+    "wikilinks_before": 0,
+    "wikilinks_added": 269,
+    "total_adrs": 33,
+    "adrs_with_links": 14,
+    "adr_link_coverage_pct": 42.4,
+    "total_missions": 75,
+    "missions_with_links": 75,
+    "mission_link_coverage_pct": 100.0
+  },
+  "action_counts": {
+    "ADD_FRONTMATTER": 288,
+    "UPDATE": 13
+  },
+  "type_counts": {
+    "artifact": 32,
+    "adr": 33,
+    "constitution": 2,
+    "unknown": 84,
+    "diagram": 7,
+    "context_pack": 10,
+    "ceo_briefing": 4,
+    "governance_report": 39,
+    "runtime_spec": 5,
+    "learning_report": 8,
+    "index": 2,
+    "mission": 75
+  },
+  "mocs_generated": [
+    "00_Y-OS_Home.md",
+    "01_Constitution_MOC.md",
+    "02_ADR_MOC.md",
+    "03_Missions_MOC.md",
+    "04_Governance_MOC.md",
+    "05_Runtime_MOC.md",
+    "06_Context_Architecture_MOC.md",
+    "07_Living_Memory_MOC.md"
+  ],
+  "results": [
+    {
+      "path": "ABC_Validation_Protocol.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "artifact",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#artifact",
+        "#proposed",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0006_Creation_CODO_Role.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0007_Continuous_Evolution_Loop.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [
+        "[[ADR-0006]]"
+      ],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0009_Operational_Value_Chain.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0010_Creation_Brahma.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0011_Creation_Hanuman.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [
+        "[[ADR-0010]]"
+      ],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0012_Artifact_Layer.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#memory",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0013_Creation_Lakshmi.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0014_Y-OS_Org_Map_v2.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#memory",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0015_Architectural_Layer_Corrections.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#memory",
+        "#yos"
+      ],
+      "adrs_linked": [
+        "[[ADR-0014]]"
+      ],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0016_Artifact_Registry.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ],
+      "adrs_linked": [
+        "[[ADR-0012]]"
+      ],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0017_Artifact_Lineage_Registry_v1.1.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ],
+      "adrs_linked": [
+        "[[ADR-0012]]"
+      ],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0017_Lakshmi_MVP_Runtime.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [
+        "[[ADR-0013]]",
+        "[[ADR-0016]]"
+      ],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0018_Lakshmi_Runtime_MVP.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ],
+      "adrs_linked": [
+        "[[ADR-0013]]",
+        "[[ADR-0017]]"
+      ],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0019_Lakshmi_Runtime_v2.1.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0020_Y-OS_Control_Plane.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0021_Foundational_Doctrine.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0021_Foundational_Operational_Principles.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0022_Y-OS_Theory_of_Organization.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    },
+    {
+      "path": "ADR-0023_Y-ORC_Architecture.md",
+      "action": "ADD_FRONTMATTER",
+      "type": "adr",
+      "had_frontmatter": false,
+      "tags_added": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ],
+      "adrs_linked": [],
+      "missions_linked": []
+    }
+  ]
+}

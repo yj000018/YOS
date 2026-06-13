@@ -1,3 +1,19 @@
+---
+id: yos-layer-architecture-diagram-v2.1
+title: Layer Architecture Diagram v2.1
+type: diagram
+status: OFFICIAL
+date: '2026-06-12'
+version: v2.1
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Layer Architecture Diagram v2.1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

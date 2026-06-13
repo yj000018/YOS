@@ -1,3 +1,17 @@
+---
+id: yos-report-missing
+title: report missing
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-REG Missing Capability Report v1
 
 **Generated:** 2026-06-12

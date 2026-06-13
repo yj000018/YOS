@@ -1,3 +1,17 @@
+---
+id: yos-artifact-layer-diagram
+title: Artifact Layer Diagram
+type: diagram
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Artifact Layer Diagram
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

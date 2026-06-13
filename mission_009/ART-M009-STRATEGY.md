@@ -1,3 +1,31 @@
+---
+id: yos-art-m009-strategy
+title: ART-M009-STRATEGY
+type: mission
+status: ACCEPTED
+mission: MISSION-009
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_009]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#lineage'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-009
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M009-STRATEGY
 **Artifact ID:** ART-M009-D1AD37
 **Date:** 2026-06-13

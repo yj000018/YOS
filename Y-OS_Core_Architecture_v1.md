@@ -1,3 +1,19 @@
+---
+id: yos-y-os-core-architecture-v1
+title: Y-OS Core Architecture v1
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Core Architecture v1
 
 **Auteur :** Manus AI

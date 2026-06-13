@@ -1,3 +1,25 @@
+---
+id: yos-config-a-output
+title: config A output
+type: mission
+status: ACCEPTED
+mission: MISSION-010B
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_010b]]'
+tags:
+- '#accepted'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-010B
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Config A — Session History Only
 
 **Tokens:** 197+306=503 | **Quality:** 86.0 | **ROI:** 171.0/1k-tokens | **Latency:** 4.7s

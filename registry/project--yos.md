@@ -1,15 +1,19 @@
 ---
-slug: project--yos
-name: "Y-OS"
+id: yos-project--yos
+title: project--yos
 type: project
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Y-OS — Cognitive Operating System. The meta-project containing all Y-OS components, protocols, agents and workflows."
-tags: ["meta", "core", "yos"]
-git_path: "registry/project--yos.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- meta
+- core
+- yos
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-OS — Cognitive Operating System
 

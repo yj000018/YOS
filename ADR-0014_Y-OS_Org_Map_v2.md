@@ -1,3 +1,23 @@
+---
+id: yos-adr-0014-y-os-org-map-v2
+title: ADR-0014 Y-OS Org Map v2
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+version: v2
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#memory'
+- '#yos'
+aliases:
+- Y-OS Org Map v2
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0014: Y-OS Organizational Map v2
 
 **Status:** Accepted

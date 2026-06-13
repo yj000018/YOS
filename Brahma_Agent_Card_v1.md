@@ -1,3 +1,17 @@
+---
+id: yos-brahma-agent-card-v1
+title: Brahma Agent Card v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Brahma
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Chief Architect (Brahma) Agent Card v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

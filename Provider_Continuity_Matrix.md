@@ -1,3 +1,18 @@
+---
+id: yos-provider-continuity-matrix
+title: Provider Continuity Matrix
+type: unknown
+status: DRAFT
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#memory'
+- '#proposed'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Provider Continuity Matrix
 
 **Mission:** CCV-001  

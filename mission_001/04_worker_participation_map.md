@@ -1,3 +1,24 @@
+---
+id: yos-04-worker-participation-map
+title: 04 worker participation map
+type: mission
+status: ACCEPTED
+mission: MISSION-001
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_001]]'
+tags:
+- '#accepted'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-001
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Worker Participation Map — MISSION-001
 
 | Step | Worker | Role | Capability | Model | Input | Output |

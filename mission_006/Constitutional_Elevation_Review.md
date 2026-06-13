@@ -1,3 +1,34 @@
+---
+id: yos-constitutional-elevation-review
+title: Constitutional Elevation Review
+type: mission
+status: ACCEPTED
+mission: MISSION-006
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0026]]'
+related_missions:
+- '[[mission_006]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#ccr'
+- '#lineage'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-006
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Constitutional Elevation Review (MISSION-006)
 
 **Date:** 2026-06-13

@@ -1,3 +1,34 @@
+---
+id: yos-mode-d-output
+title: mode D output
+type: mission
+status: ACCEPTED
+mission: MISSION-010
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0008]]'
+related_missions:
+- '[[mission_010]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#lineage'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-010
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Mode D — Canonical Memory + Context Pack
 
 **Tokens:** 986+453

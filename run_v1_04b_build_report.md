@@ -1,3 +1,17 @@
+---
+id: yos-run-v1-04b-build-report
+title: run v1 04b build report
+type: unknown
+status: READY
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Build Report: First End-to-End Y-OS Run v1
 
 **Artifact ID:** ART-E2E-004b

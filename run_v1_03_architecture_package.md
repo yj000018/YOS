@@ -1,3 +1,18 @@
+---
+id: yos-run-v1-03-architecture-package
+title: run v1 03 architecture package
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Architecture Package: First End-to-End Y-OS Run v1
 
 **Artifact ID:** ART-E2E-003

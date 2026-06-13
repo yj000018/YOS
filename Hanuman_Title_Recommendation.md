@@ -1,3 +1,18 @@
+---
+id: yos-hanuman-title-recommendation
+title: Hanuman Title Recommendation
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+owner: Hanuman
+related_adrs:
+- '[[ADR-0010]]'
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Title Recommendation: Hanuman
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

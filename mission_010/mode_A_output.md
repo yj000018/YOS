@@ -1,3 +1,27 @@
+---
+id: yos-mode-a-output
+title: mode A output
+type: mission
+status: ACCEPTED
+mission: MISSION-010
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_010]]'
+constitutional_articles:
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-010
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Mode A — Conversation Only
 
 **Tokens:** 237+274

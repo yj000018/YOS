@@ -1,3 +1,22 @@
+---
+id: yos-y-os-artifact-centric-manifesto-v2
+title: Y-OS Artifact-Centric Manifesto v2
+type: artifact
+status: FOUNDATIONAL
+date: '2026-06-13'
+version: v2
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0022]]'
+tags:
+- '#artifact'
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Artifact-Centric Manifesto
 
 **Owner:** Chief Architect (Brahma)  

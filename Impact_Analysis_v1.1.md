@@ -1,3 +1,20 @@
+---
+id: yos-impact-analysis-v1.1
+title: Impact Analysis v1.1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1.1
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0012]]'
+tags:
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Impact Analysis v1.1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

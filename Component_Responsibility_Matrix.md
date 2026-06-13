@@ -1,3 +1,18 @@
+---
+id: yos-component-responsibility-matrix
+title: Component Responsibility Matrix
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Component Responsibility Matrix
 
 **Owner:** Chief Architect (Brahma)  

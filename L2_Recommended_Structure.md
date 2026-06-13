@@ -1,3 +1,16 @@
+---
+id: yos-l2-recommended-structure
+title: L2 Recommended Structure
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # 2. Recommended Structure
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

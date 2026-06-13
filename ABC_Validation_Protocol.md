@@ -1,3 +1,18 @@
+---
+id: yos-abc-validation-protocol
+title: ABC Validation Protocol
+type: artifact
+status: DRAFT
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#proposed'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # A/B/C Validation Protocol
 
 **Mission:** CCV-001  

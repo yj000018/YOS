@@ -1,3 +1,27 @@
+---
+id: yos-worker-runtime-specification-v1
+title: Worker Runtime Specification v1
+type: runtime_spec
+status: ACCEPTED
+mission: MISSION-002
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_002]]'
+tags:
+- '#accepted'
+- '#ccr'
+- '#lineage'
+- '#runtime'
+- '#yos'
+aliases:
+- MISSION-002
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Worker Runtime Specification v1
 
 **Date:** 2026-06-13  

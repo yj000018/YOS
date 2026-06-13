@@ -1,3 +1,19 @@
+---
+id: yos-y-os-org-map-v2
+title: Y-OS Org Map v2
+type: index
+status: OFFICIAL
+date: '2026-06-12'
+version: v2
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Org Map v2 (Master Document)
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CEO (Yannick) | **Custodian:** CODO (Saraswati)

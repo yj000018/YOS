@@ -1,3 +1,21 @@
+---
+id: yos-adr-0013-creation-lakshmi
+title: ADR-0013 Creation Lakshmi
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Lakshmi
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Creation of Lakshmi
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0013: Creation of Executive Coordination Officer (Lakshmi)
 
 **Status:** Accepted

@@ -1,3 +1,20 @@
+---
+id: yos-ceo-briefing-standard-v1
+title: CEO Briefing Standard v1
+type: ceo_briefing
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Ganesha
+related_adrs:
+- '[[ADR-0014]]'
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # CEO Briefing Standard v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

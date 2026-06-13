@@ -1,3 +1,31 @@
+---
+id: yos-ccr-runtime-v1.1-governance-patch
+title: CCR Runtime v1.1 Governance Patch
+type: governance_report
+status: ACCEPTED
+mission: MISSION-005B
+date: '2026-06-13'
+version: v1.1
+owner: Lakshmi
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_005]]'
+- '[[mission_005b]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+tags:
+- '#accepted'
+- '#ccr'
+- '#governance'
+- '#lineage'
+- '#memory'
+- '#yos'
+aliases:
+- MISSION-005B
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # CCR Runtime v1.1 — Governance Patch
 
 **Status:** ACCEPTED WITH GOVERNANCE PATCH  

@@ -1,3 +1,27 @@
+---
+id: yos-context-pack-gov-001-full
+title: context pack GOV-001 full
+type: context_pack
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[06_Context_Architecture_MOC]]'
+related_adrs:
+- '[[ADR-0020]]'
+- '[[ADR-0022]]'
+- '[[ADR-0023]]'
+- '[[ADR-0024]]'
+- '[[ADR-0029]]'
+tags:
+- '#accepted'
+- '#context'
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Context Pack — CP-GOV-001-FULL-C3AFCB
 
 **Mission:** GOV-001  

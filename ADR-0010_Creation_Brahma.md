@@ -1,3 +1,21 @@
+---
+id: yos-adr-0010-creation-brahma
+title: ADR-0010 Creation Brahma
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Creation of Brahma
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0010: Creation of Chief Architect (Brahma)
 
 **Status:** Accepted

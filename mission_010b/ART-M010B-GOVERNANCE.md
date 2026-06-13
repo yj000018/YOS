@@ -1,3 +1,25 @@
+---
+id: yos-art-m010b-governance
+title: ART-M010B-GOVERNANCE
+type: governance_report
+status: ACCEPTED
+mission: MISSION-010B
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_010b]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#memory'
+- '#yos'
+aliases:
+- MISSION-010B
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Lakshmi ROI Governance Review
 
 1. **Which architecture produces the most reliable execution per token?**

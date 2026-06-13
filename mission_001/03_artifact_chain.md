@@ -1,3 +1,24 @@
+---
+id: yos-03-artifact-chain
+title: 03 artifact chain
+type: mission
+status: ACCEPTED
+mission: MISSION-001
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_001]]'
+tags:
+- '#accepted'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-001
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Artifact Chain — MISSION-001
 
 | ID | Type | Worker | Status | Parent |

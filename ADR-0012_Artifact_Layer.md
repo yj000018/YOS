@@ -1,3 +1,22 @@
+---
+id: yos-adr-0012-artifact-layer
+title: ADR-0012 Artifact Layer
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#memory'
+- '#yos'
+aliases:
+- Artifact Layer
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0012: Formalization of the Artifact Layer
 
 **Status:** Accepted

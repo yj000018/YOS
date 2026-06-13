@@ -1,3 +1,18 @@
+---
+id: yos-l6-adr-recommendation
+title: L6 ADR Recommendation
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0009]]'
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # 6. ADR Amendment Recommendation
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

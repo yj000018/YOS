@@ -1,3 +1,23 @@
+---
+id: yos-adr-0007-continuous-evolution-loop
+title: ADR-0007 Continuous Evolution Loop
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0006]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Continuous Evolution Loop
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0007 — Continuous Evolution Loop
 
 **Status:** Accepted | **Date:** 2026-06-12

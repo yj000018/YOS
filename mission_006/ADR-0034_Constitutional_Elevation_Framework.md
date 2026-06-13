@@ -1,3 +1,33 @@
+---
+id: yos-adr-0034-constitutional-elevation-framework
+title: ADR-0034 Constitutional Elevation Framework
+type: adr
+status: ACCEPTED
+mission: MISSION-006
+date: '2026-06-13'
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0026]]'
+related_missions:
+- '[[mission_006]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Constitutional Elevation
+- MISSION-006
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0034 — Constitutional Elevation Framework
 
 **Status:** ACCEPTED

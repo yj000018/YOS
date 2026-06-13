@@ -1,3 +1,40 @@
+---
+id: yos-living-memory-pipeline-doctrine-v1
+title: Living Memory Pipeline Doctrine v1
+type: artifact
+status: PROPOSED
+mission: MISSION-012B
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0030]]'
+- '[[ADR-0036]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
+- '[[ADR-0039]]'
+related_missions:
+- '[[mission_010b]]'
+- '[[mission_012b]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article IV: Human Override Primacy'
+tags:
+- '#artifact'
+- '#ccr'
+- '#lineage'
+- '#living-memory'
+- '#memory'
+- '#proposed'
+- '#session-delta'
+- '#yos'
+aliases:
+- MISSION-012B
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Living Memory Pipeline Doctrine v1
 
 **Document ID:** LMP-001  

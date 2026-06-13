@@ -1,3 +1,27 @@
+---
+id: yos-lakshmi-review
+title: Lakshmi Review
+type: governance_report
+status: ACCEPTED
+mission: MISSION-012
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0038]]'
+related_missions:
+- '[[mission_012]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#session-delta'
+- '#yos'
+aliases:
+- MISSION-012
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Lakshmi Governance Review
 
 ### Constitutional Compliance Assessment

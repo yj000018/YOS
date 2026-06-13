@@ -1,15 +1,20 @@
 ---
-slug: knowledge-system--manus-memory
-name: "Manus Memory"
+id: yos-knowledge-system--manus-memory
+title: knowledge-system--manus-memory
 type: knowledge_system
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Persistent memory system for Y-OS. Stores sessions, projects, knowledge and preferences across Notion and Mem0."
-tags: ["memory", "notion", "mem0", "persistence"]
-git_path: "registry/knowledge-system--manus-memory.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- memory
+- notion
+- mem0
+- persistence
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Manus Memory — Y-OS Knowledge System
 

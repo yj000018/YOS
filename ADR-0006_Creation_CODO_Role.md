@@ -1,3 +1,21 @@
+---
+id: yos-adr-0006-creation-codo-role
+title: ADR-0006 Creation CODO Role
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Creation of CODO Role
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0006 — Creation of the CODO Role
 
 **Status:** Accepted

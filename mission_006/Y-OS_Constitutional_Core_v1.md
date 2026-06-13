@@ -1,3 +1,32 @@
+---
+id: yos-y-os-constitutional-core-v1
+title: Y-OS Constitutional Core v1
+type: mission
+status: ACTIVE
+mission: MISSION-006
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_006]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#lineage'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-006
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Constitutional Core v1
 
 **Status:** ACTIVE

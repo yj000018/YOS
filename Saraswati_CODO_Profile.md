@@ -1,3 +1,17 @@
+---
+id: yos-saraswati-codo-profile
+title: Saraswati CODO Profile
+type: learning_report
+status: ACTIVE
+date: '2026-06-13'
+owner: Saraswati
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # CODO Agent Card — Saraswati
 
 **Title:** Chief Organizational Development Officer

@@ -1,3 +1,21 @@
+---
+id: yos-y-os-master-architecture-atlas-v1-final
+title: Y-OS Master Architecture Atlas v1 final
+type: unknown
+status: CANONICAL
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0026]]'
+tags:
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Master Architecture Atlas v1.1
 
 **Date:** 2026-06-13  

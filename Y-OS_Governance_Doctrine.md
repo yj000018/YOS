@@ -1,3 +1,22 @@
+---
+id: yos-y-os-governance-doctrine
+title: Y-OS Governance Doctrine
+type: governance_report
+status: FOUNDATIONAL
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+related_adrs:
+- '[[ADR-0022]]'
+- '[[ADR-0024]]'
+tags:
+- '#governance'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Governance Doctrine
 
 **Owner:** Chief Architect (Brahma)  

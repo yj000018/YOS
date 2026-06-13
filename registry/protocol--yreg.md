@@ -1,15 +1,19 @@
 ---
-slug: protocol--yreg
-name: "Y-REG"
+id: yos-protocol--yreg
+title: protocol--yreg
 type: protocol
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Y-OS Registry Protocol — defines how objects are discovered, validated and registered in Y-OS. Obsidian+Git is the source of truth. Supabase is a runtime cache."
-tags: ["governance", "registry", "core"]
-git_path: "registry/protocol--yreg.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- governance
+- registry
+- core
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-REG — Y-OS Registry Protocol
 

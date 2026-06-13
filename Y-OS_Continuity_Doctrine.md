@@ -1,3 +1,19 @@
+---
+id: yos-y-os-continuity-doctrine
+title: Y-OS Continuity Doctrine
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Continuity Doctrine
 
 **Owner:** CODO (Saraswati)  

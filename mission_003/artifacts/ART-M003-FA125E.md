@@ -1,3 +1,26 @@
+---
+id: yos-art-m003-fa125e
+title: ART-M003-FA125E
+type: mission
+status: ACCEPTED
+mission: MISSION-003
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_003]]'
+- '[[mission_004]]'
+tags:
+- '#accepted'
+- '#lineage'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-003
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M003-FA125E — Learning Output
 
 **Worker:** Saraswati  

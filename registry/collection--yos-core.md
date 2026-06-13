@@ -1,15 +1,19 @@
 ---
-slug: collection--yos-core
-name: "Y-OS Core"
+id: yos-collection--yos-core
+title: collection--yos-core
 type: collection
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Collection grouping all foundational Y-OS components: protocols, core agents, and primary knowledge systems."
-tags: ["collection", "core", "yos"]
-git_path: "registry/collection--yos-core.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- collection
+- core
+- yos
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-OS Core — Collection
 

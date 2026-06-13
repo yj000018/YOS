@@ -1,3 +1,23 @@
+---
+id: yos-context-pack-standard-v1
+title: Context Pack Standard v1
+type: context_pack
+status: DRAFT
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+parent: '[[06_Context_Architecture_MOC]]'
+related_adrs:
+- '[[ADR-0026]]'
+- '[[ADR-0027]]'
+tags:
+- '#context'
+- '#proposed'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Context Pack Standard v1
 
 **Mission:** CCV-001  

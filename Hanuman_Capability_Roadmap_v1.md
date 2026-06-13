@@ -1,3 +1,17 @@
+---
+id: yos-hanuman-capability-roadmap-v1
+title: Hanuman Capability Roadmap v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Hanuman
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Capability Roadmap: Lead Developer (Hanuman)
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

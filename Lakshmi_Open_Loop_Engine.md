@@ -1,3 +1,20 @@
+---
+id: yos-lakshmi-open-loop-engine
+title: Lakshmi Open Loop Engine
+type: governance_report
+status: ACCEPTED
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Open Loop Engine
 
 **Owner:** Chief Architect (Brahma)  

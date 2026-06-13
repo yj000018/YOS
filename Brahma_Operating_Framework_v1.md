@@ -1,3 +1,18 @@
+---
+id: yos-brahma-operating-framework-v1
+title: Brahma Operating Framework v1
+type: artifact
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Brahma
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Chief Architect (Brahma) Operating Framework v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

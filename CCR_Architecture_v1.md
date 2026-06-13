@@ -1,3 +1,21 @@
+---
+id: yos-ccr-architecture-v1
+title: CCR Architecture v1
+type: context_pack
+status: CANONICAL
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+parent: '[[06_Context_Architecture_MOC]]'
+tags:
+- '#ccr'
+- '#context'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Context Compiler Runtime (CCR) Architecture v1
 
 **Date:** 2026-06-13  

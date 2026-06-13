@@ -1,15 +1,20 @@
 ---
-slug: workflow--yreg-sync
-name: "Y-REG Sync"
+id: yos-workflow--yreg-sync
+title: workflow--yreg-sync
 type: workflow
 status: active
-visibility: advanced
-registration_stage: registry
-version: "1.0.0"
-description: "Parses all Markdown/YAML files in the Y-REG Git repository and upserts them into the Supabase runtime cache. Unidirectional: Git → Supabase only."
-tags: ["sync", "parser", "supabase", "git"]
-git_path: "registry/workflow--yreg-sync.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- sync
+- parser
+- supabase
+- git
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-REG Sync — Git → Supabase Parser
 

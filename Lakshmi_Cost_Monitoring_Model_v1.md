@@ -1,3 +1,19 @@
+---
+id: yos-lakshmi-cost-monitoring-model-v1
+title: Lakshmi Cost Monitoring Model v1
+type: governance_report
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#governance'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Cost Monitoring Model v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** Chief Architect (Brahma)

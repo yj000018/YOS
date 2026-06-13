@@ -1,3 +1,17 @@
+---
+id: yos-y-os-organizational-mapping-v1
+title: Y-OS Organizational Mapping v1
+type: unknown
+status: ACTIVE
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # 🏢 Y-OS Organizational Mapping v1
 
 **Version:** 1.0

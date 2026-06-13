@@ -1,3 +1,20 @@
+---
+id: yos-y-orc-runtime-mvp-v0
+title: Y-ORC Runtime MVP v0
+type: runtime_spec
+status: OPERATIONAL
+date: '2026-06-13'
+version: v0
+owner: Manus Y-OS
+parent: '[[05_Runtime_MOC]]'
+tags:
+- '#lineage'
+- '#runtime'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-ORC Runtime MVP v0
 
 **Owner:** Chief Architect (Brahma)  

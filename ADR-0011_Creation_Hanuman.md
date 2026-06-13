@@ -1,3 +1,23 @@
+---
+id: yos-adr-0011-creation-hanuman
+title: ADR-0011 Creation Hanuman
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Hanuman
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0010]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Creation of Hanuman
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0011: Creation of Lead Developer (Hanuman)
 
 **Status:** Accepted

@@ -1,3 +1,19 @@
+---
+id: yos-y-os-organizational-model-executive-summary
+title: Y-OS Organizational Model Executive Summary
+type: artifact
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#artifact'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Organizational Model — Executive Summary
 
 **Audience:** Future architects, operators, contributors, investors, partners.  

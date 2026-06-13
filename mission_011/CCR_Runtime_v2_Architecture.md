@@ -1,3 +1,33 @@
+---
+id: yos-ccr-runtime-v2-architecture
+title: CCR Runtime v2 Architecture
+type: runtime_spec
+status: ACCEPTED
+mission: MISSION-011
+date: '2026-06-13'
+version: v2
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0033]]'
+related_missions:
+- '[[mission_011]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+tags:
+- '#accepted'
+- '#ccr'
+- '#lineage'
+- '#memory'
+- '#runtime'
+- '#session-delta'
+- '#yos'
+aliases:
+- MISSION-011
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # CCR Runtime v2 — Context Orchestration Architecture
 
 ## 1. Executive Summary

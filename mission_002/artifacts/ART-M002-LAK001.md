@@ -1,3 +1,24 @@
+---
+id: yos-art-m002-lak001
+title: ART-M002-LAK001
+type: mission
+status: DONE
+mission: MISSION-002
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_002]]'
+tags:
+- '#lineage'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-002
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M002-LAK001 — Lakshmi Governance Report
 
 **Type:** Governance Report  

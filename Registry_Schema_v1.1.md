@@ -1,3 +1,20 @@
+---
+id: yos-registry-schema-v1.1
+title: Registry Schema v1.1
+type: artifact
+status: ACCEPTED
+date: '2026-06-13'
+version: v1.1
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#artifact'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Registry Schema v1.1
 
 **Owner:** Chief Architect (Brahma)  

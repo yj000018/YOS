@@ -1,3 +1,25 @@
+---
+id: yos-art-m004-ae262c
+title: ART-M004-AE262C
+type: mission
+status: ACCEPTED
+mission: MISSION-004
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_004]]'
+tags:
+- '#accepted'
+- '#lineage'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-004
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M004-AE262C — Governance Output
 
 **Worker:** Lakshmi  

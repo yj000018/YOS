@@ -1,3 +1,23 @@
+---
+id: yos-adr-0019-lakshmi-runtime-v2.1
+title: ADR-0019 Lakshmi Runtime v2.1
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+version: v2.1
+owner: Lakshmi
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- Lakshmi Runtime v2.1
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0019: Lakshmi Runtime v2.1 — Deterministic Fallback & Graph Engine
 
 **Status:** Accepted  

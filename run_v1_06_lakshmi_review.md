@@ -1,3 +1,19 @@
+---
+id: yos-run-v1-06-lakshmi-review
+title: run v1 06 lakshmi review
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Lakshmi
+tags:
+- '#accepted'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Lakshmi Review: First End-to-End Y-OS Run v1
 
 **Artifact ID:** ART-E2E-006

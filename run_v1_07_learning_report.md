@@ -1,3 +1,22 @@
+---
+id: yos-run-v1-07-learning-report
+title: run v1 07 learning report
+type: learning_report
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Saraswati
+related_adrs:
+- '[[ADR-0016]]'
+tags:
+- '#accepted'
+- '#artifact'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Learning Report: First End-to-End Y-OS Run v1
 
 **Artifact ID:** ART-E2E-007

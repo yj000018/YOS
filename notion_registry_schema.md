@@ -1,3 +1,18 @@
+---
+id: yos-notion-registry-schema
+title: notion registry schema
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Notion Artifact Registry — Schema Reference
 
 **DB ID:** 8cd17557-340e-4346-9850-7291face328e  

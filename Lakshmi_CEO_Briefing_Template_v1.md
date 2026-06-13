@@ -1,3 +1,20 @@
+---
+id: yos-lakshmi-ceo-briefing-template-v1
+title: Lakshmi CEO Briefing Template v1
+type: governance_report
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # CEO Briefing Template v1
 
 **Owner:** Chief Architect (Brahma)  

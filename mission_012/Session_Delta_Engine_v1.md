@@ -1,3 +1,27 @@
+---
+id: yos-session-delta-engine-v1
+title: Session Delta Engine v1
+type: mission
+status: ACCEPTED
+mission: MISSION-012
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_012]]'
+tags:
+- '#accepted'
+- '#memory'
+- '#mission'
+- '#session-delta'
+- '#yos'
+aliases:
+- MISSION-012
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Session Delta Engine v1 — Architecture & Schema
 
 ## 1. Executive Summary

@@ -1,20 +1,20 @@
 ---
 id: protocol--yctx
+title: protocol--yctx
 type: protocol
-name: Y-CTX
-slug: yctx
 status: active
-visibility: public
-version: "1.0"
-description: Context extraction and assembly module. Reads Y-MEM and produces Context Packs consumed by Y-ORC.
-question: What context is relevant?
-produces: Context Pack
-consumes: Y-MEM output
-equivalent_role: Analyst, Briefing Officer
-tags: [core, context, deterministic, backend]
-module_owner: Y-CTX
-created_at: "2026-06-12"
+date: '2026-06-13'
+version: '1.0'
+owner: Manus Y-OS
+tags:
+- core
+- context
+- deterministic
+- backend
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-CTX — Context Module
 

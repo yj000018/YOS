@@ -1,3 +1,20 @@
+---
+id: yos-y-os-operational-cycle-v1
+title: Y-OS Operational Cycle v1
+type: unknown
+status: FOUNDATIONAL
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0022]]'
+tags:
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Operational Cycle v1
 
 **Owner:** Chief Architect (Brahma)  

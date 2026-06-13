@@ -1,3 +1,17 @@
+---
+id: yos-hanuman-communication-contracts-v1
+title: Hanuman Communication Contracts v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Hanuman
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Communication Contracts: Build Phase
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

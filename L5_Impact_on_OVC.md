@@ -1,3 +1,16 @@
+---
+id: yos-l5-impact-on-ovc
+title: L5 Impact on OVC
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # 5. Impact on Operational Value Chain
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

@@ -1,3 +1,22 @@
+---
+id: yos-adr-0021-foundational-operational-principles
+title: ADR-0021 Foundational Operational Principles
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- Foundational Doctrine
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0021: Foundational Operational Principles
 
 **Status:** Accepted  

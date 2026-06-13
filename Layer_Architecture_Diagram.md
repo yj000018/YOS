@@ -1,3 +1,17 @@
+---
+id: yos-layer-architecture-diagram
+title: Layer Architecture Diagram
+type: diagram
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Layer Architecture Diagram
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

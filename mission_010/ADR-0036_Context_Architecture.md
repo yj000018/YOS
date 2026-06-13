@@ -1,3 +1,33 @@
+---
+id: yos-adr-0036-context-architecture
+title: ADR-0036 Context Architecture
+type: adr
+status: ACCEPTED
+mission: MISSION-010
+date: '2026-06-13'
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0029]]'
+- '[[ADR-0033]]'
+- '[[ADR-0035]]'
+related_missions:
+- '[[mission_010]]'
+constitutional_articles:
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#adr'
+- '#ccr'
+- '#memory'
+- '#yos'
+aliases:
+- Context Architecture
+- MISSION-010
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0036 — Y-OS Canonical Context Architecture
 
 **Status:** ACCEPTED

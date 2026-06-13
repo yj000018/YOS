@@ -1,3 +1,18 @@
+---
+id: yos-relationship-to-y-orc
+title: Relationship to Y-ORC
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Relationship to Y-ORC
 
 **Owner:** Chief Architect (Brahma)  

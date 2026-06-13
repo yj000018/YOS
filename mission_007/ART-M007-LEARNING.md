@@ -1,3 +1,29 @@
+---
+id: yos-art-m007-learning
+title: ART-M007-LEARNING
+type: learning_report
+status: ACCEPTED
+mission: MISSION-007
+date: '2026-06-13'
+owner: Saraswati
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_007]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#artifact'
+- '#yos'
+aliases:
+- MISSION-007
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M007-LEARNING
 **Artifact ID:** ART-M007-39F9F4
 **Date:** 2026-06-13

@@ -1,3 +1,29 @@
+---
+id: yos-governance-determinism-framework-v1
+title: Governance Determinism Framework v1
+type: governance_report
+status: ACTIVE
+mission: MISSION-005C
+date: '2026-06-13'
+version: v1
+owner: Lakshmi
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0033]]'
+related_missions:
+- '[[mission_005b]]'
+- '[[mission_005c]]'
+tags:
+- '#ccr'
+- '#governance'
+- '#lineage'
+- '#yos'
+aliases:
+- MISSION-005C
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Governance Determinism Framework v1
 
 **Status:** ACTIVE  

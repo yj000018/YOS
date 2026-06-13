@@ -1,3 +1,22 @@
+---
+id: yos-context-pack-arch-001-minimal
+title: context pack ARCH-001 minimal
+type: context_pack
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[06_Context_Architecture_MOC]]'
+related_adrs:
+- '[[ADR-0022]]'
+tags:
+- '#accepted'
+- '#context'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Context Pack — CP-ARCH-001-MINIMAL-2ED3BE
 
 **Mission:** ARCH-001  

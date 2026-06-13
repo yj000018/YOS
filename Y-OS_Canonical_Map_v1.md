@@ -1,3 +1,19 @@
+---
+id: yos-y-os-canonical-map-v1
+title: Y-OS Canonical Map v1
+type: index
+status: FOUNDATION
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Canonical Map v1
 
 **Owner:** Chief Architect (Brahma)  

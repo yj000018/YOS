@@ -1,3 +1,21 @@
+---
+id: yos-adr-0009-operational-value-chain
+title: ADR-0009 Operational Value Chain
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Operational Value Chain
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0009: Formalization of the Operational Value Chain
 
 **Status:** Accepted

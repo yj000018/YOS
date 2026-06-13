@@ -1,3 +1,18 @@
+---
+id: yos-y-os-vision-first-principles
+title: Y-OS Vision First Principles
+type: unknown
+status: FOUNDATIONAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Core Definition — Official Vision Statement v2
 
 **Status:** Foundational Reference Document | **Date:** 2026-06-12

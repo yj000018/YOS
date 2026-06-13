@@ -1,3 +1,32 @@
+---
+id: yos-art-m007-governance
+title: ART-M007-GOVERNANCE
+type: governance_report
+status: ACCEPTED
+mission: MISSION-007
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_007]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#ccr'
+- '#governance'
+- '#lineage'
+- '#yos'
+aliases:
+- MISSION-007
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M007-GOVERNANCE
 **Artifact ID:** ART-M007-E270A7
 **Date:** 2026-06-13

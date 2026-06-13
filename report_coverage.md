@@ -1,3 +1,18 @@
+---
+id: yos-report-coverage
+title: report coverage
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-REG Capability Coverage Report v1
 
 **Generated:** 2026-06-12

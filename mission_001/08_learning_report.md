@@ -1,3 +1,27 @@
+---
+id: yos-08-learning-report
+title: 08 learning report
+type: learning_report
+status: ACCEPTED
+mission: MISSION-001
+date: '2026-06-13'
+owner: Saraswati
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_001]]'
+- '[[mission_002]]'
+tags:
+- '#accepted'
+- '#artifact'
+- '#ccr'
+- '#memory'
+- '#yos'
+aliases:
+- MISSION-001
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Learning Report — MISSION-001
 
 **Date:** 2026-06-13  

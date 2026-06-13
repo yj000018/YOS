@@ -1,3 +1,16 @@
+---
+id: yos-l1-org-placement-review
+title: L1 Org Placement Review
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # 1. Organizational Placement Review: Design & Build
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

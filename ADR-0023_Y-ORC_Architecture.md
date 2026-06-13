@@ -1,3 +1,21 @@
+---
+id: yos-adr-0023-y-orc-architecture
+title: ADR-0023 Y-ORC Architecture
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Y-ORC Architecture
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0023: Y-ORC Architecture
 
 **Date:** 2026-06-13  

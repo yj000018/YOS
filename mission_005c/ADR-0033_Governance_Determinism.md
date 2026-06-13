@@ -1,3 +1,26 @@
+---
+id: yos-adr-0033-governance-determinism
+title: ADR-0033 Governance Determinism
+type: adr
+status: ACCEPTED
+mission: MISSION-005C
+date: '2026-06-13'
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_005b]]'
+- '[[mission_005c]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Governance Determinism
+- MISSION-005C
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0033 — Governance Determinism Framework
 
 **Status:** ACCEPTED  

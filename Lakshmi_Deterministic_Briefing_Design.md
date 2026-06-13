@@ -1,3 +1,19 @@
+---
+id: yos-lakshmi-deterministic-briefing-design
+title: Lakshmi Deterministic Briefing Design
+type: governance_report
+status: ACCEPTED
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Deterministic Briefing Design
 
 **Owner:** Chief Architect (Brahma)  

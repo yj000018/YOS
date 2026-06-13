@@ -1,3 +1,20 @@
+---
+id: yos-artifact-registry-architecture-v1
+title: Artifact Registry Architecture v1
+type: artifact
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0012]]'
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Artifact Registry Architecture v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** Chief Architect (Brahma)

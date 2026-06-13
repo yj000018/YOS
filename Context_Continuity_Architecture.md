@@ -1,3 +1,19 @@
+---
+id: yos-context-continuity-architecture
+title: Context Continuity Architecture
+type: unknown
+status: DRAFT
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#lineage'
+- '#memory'
+- '#proposed'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Context Continuity Architecture
 
 **Mission:** CCV-001  

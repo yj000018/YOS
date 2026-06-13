@@ -1,3 +1,24 @@
+---
+id: yos-adr-0017-lakshmi-mvp-runtime
+title: ADR-0017 Lakshmi MVP Runtime
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Lakshmi
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0013]]'
+- '[[ADR-0016]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Artifact Lineage Registry v1.1
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0017: Lakshmi MVP Runtime
 
 **Status:** Accepted

@@ -1,3 +1,21 @@
+---
+id: yos-adr-0027-context-continuity
+title: ADR-0027 Context Continuity
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#yos'
+aliases:
+- Context Continuity
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0027: Context Continuity Validation (CCV-001)
 
 **Date:** 2026-06-13  

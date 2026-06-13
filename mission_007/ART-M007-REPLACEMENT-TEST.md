@@ -1,3 +1,33 @@
+---
+id: yos-art-m007-replacement-test
+title: ART-M007-REPLACEMENT-TEST
+type: mission
+status: ACCEPTED
+mission: MISSION-007
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_007]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#ccr'
+- '#lineage'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-007
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M007-REPLACEMENT-TEST
 **Artifact ID:** ART-M007-A3C1C8
 **Date:** 2026-06-13

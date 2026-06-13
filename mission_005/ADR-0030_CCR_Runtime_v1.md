@@ -1,3 +1,32 @@
+---
+id: yos-adr-0030-ccr-runtime-v1
+title: ADR-0030 CCR Runtime v1
+type: adr
+status: PROPOSED
+mission: MISSION-005
+date: '2026-06-13'
+version: v1
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0027]]'
+- '[[ADR-0031]]'
+- '[[ADR-0032]]'
+related_missions:
+- '[[mission_005]]'
+tags:
+- '#adr'
+- '#ccr'
+- '#lineage'
+- '#proposed'
+- '#yos'
+aliases:
+- CCR Runtime v1 + Governance Patch
+- MISSION-005
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0030 — CCR Runtime v1: Context Continuity Engine
 
 **Status:** Proposed (MISSION-005 candidate)  

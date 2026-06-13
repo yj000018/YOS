@@ -1,3 +1,17 @@
+---
+id: yos-role-definitions-v1
+title: Role Definitions v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Role Definitions v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

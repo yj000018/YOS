@@ -1,0 +1,4143 @@
+{
+  "nodes": [
+    {
+      "id": "ABC_Validation_Protocol.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#proposed",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0006_Creation_CODO_Role.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0007_Continuous_Evolution_Loop.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0009_Operational_Value_Chain.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0010_Creation_Brahma.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0011_Creation_Hanuman.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0012_Artifact_Layer.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0013_Creation_Lakshmi.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0014_Y-OS_Org_Map_v2.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0015_Architectural_Layer_Corrections.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0016_Artifact_Registry.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0017_Artifact_Lineage_Registry_v1.1.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0017_Lakshmi_MVP_Runtime.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0018_Lakshmi_Runtime_MVP.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0019_Lakshmi_Runtime_v2.1.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0020_Y-OS_Control_Plane.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0021_Foundational_Doctrine.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0021_Foundational_Operational_Principles.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0022_Y-OS_Theory_of_Organization.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0023_Y-ORC_Architecture.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0024_Y-OS_Constitution.md",
+      "type": "constitution",
+      "tags": [
+        "#accepted",
+        "#constitution",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0025_Y-ORC_Runtime_v1.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0026_ART_Runtime_v1.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0027_Context_Continuity.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0028_CRT_Runtime_v1.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ADR-0029_Context_Compiler.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#ccr",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Accept_Reject_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Architectural_Correction_Review_v1.1.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Architectural_KPI_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Architecture_Package_Standard_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_API_Model_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Catalog_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Layer_Diagram.md",
+      "type": "diagram",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Layer_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Lifecycle_Model_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Lifecycle_Operations_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Lineage_Model_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Lineage_Views.md",
+      "type": "artifact",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Query_Model_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Registry_Architecture_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Routing_Model_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Schema_v1.1_Patch.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Schema_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_State_Machine_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Artifact_Status_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Brahma_Agent_Card_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Brahma_Capability_Roadmap_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Brahma_Communication_Contracts_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Brahma_Operating_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Build_KPI_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Build_Package_Standard_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "CCR_Architecture_v1.md",
+      "type": "context_pack",
+      "tags": [
+        "#ccr",
+        "#context",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "CEO_Briefing_Standard_v1.md",
+      "type": "ceo_briefing",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "COO_Specification_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Capability_Layer_Correction_v1.1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Communication_Contracts_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Component_Responsibility_Matrix.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Context_Continuity_Architecture.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#proposed",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Context_Pack_Schema_v1.md",
+      "type": "context_pack",
+      "tags": [
+        "#ccr",
+        "#context",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Context_Pack_Standard_v1.md",
+      "type": "context_pack",
+      "tags": [
+        "#context",
+        "#proposed",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Control_Plane_Architecture_Diagram.md",
+      "type": "diagram",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "ECO_Dashboard_Design_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Executive_Dashboard_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Executive_Structure_Diagram.md",
+      "type": "diagram",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Foundational_Continuity_Principle.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Future_Architecture_Notes.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Future_Org_Expansion_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Governance_Model_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Governance_Signal_Model.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Hanuman_Agent_Card_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Hanuman_Capability_Roadmap_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Hanuman_Communication_Contracts_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Hanuman_Operating_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Hanuman_Title_Recommendation.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Impact_Analysis_v1.1.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "L1_Org_Placement_Review.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "L2_Recommended_Structure.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "L3_Advantages_Risks.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "L4_Updated_Org_Diagram.md",
+      "type": "diagram",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "L5_Impact_on_OVC.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "L6_ADR_Recommendation.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Agent_Card_v1.1_Patch.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Agent_Card_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Alert_Rules_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Build_Report_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_CEO_Briefing_Generator_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_CEO_Briefing_Template_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Capability_Roadmap_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Communication_Contracts_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Cost_Monitoring_Model_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Dashboard_Data_Model_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Dashboard_Schema_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Deterministic_Briefing_Design.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Mission_Graph_Engine.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Open_Loop_Engine.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Open_Loops_Engine_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Open_Loops_Rules_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Operating_Framework_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Runtime_Architecture_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Runtime_Architecture_v2.1.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Runtime_Architecture_v2.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Lakshmi_Runtime_Data_Model_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Layer_Architecture_Diagram.md",
+      "type": "diagram",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Layer_Architecture_Diagram_v2.1.md",
+      "type": "diagram",
+      "tags": [
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Memory_Layer_Correction_v1.1.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Migration_Plan.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Notion_Database_Design_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Notion_Database_Update_Plan.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "OVC_Diagram.md",
+      "type": "diagram",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Open_Loops_Register_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Org_Placement_Review_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Organization_Health_KPI_Framework_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Provider_Continuity_Matrix.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#proposed",
+        "#yos"
+      ]
+    },
+    {
+      "id": "README.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Registry_Schema_v1.1.md",
+      "type": "artifact",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Relationship_to_Y-ORC.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Reporting_Matrix.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Role_Definitions_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Role_Layer_Matrix.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Runtime_Flow_Diagram.md",
+      "type": "runtime_spec",
+      "tags": [
+        "#accepted",
+        "#runtime",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Runtime_Query_Model.md",
+      "type": "runtime_spec",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#runtime",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Saraswati_CODO_Profile.md",
+      "type": "learning_report",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Strategic_Execution_Flow_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Validation_Report_Lakshmi_v2.1.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Validation_Report_Template.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Validation_Rules.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-ORC_Architecture_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-ORC_Runtime_MVP_v0.md",
+      "type": "runtime_spec",
+      "tags": [
+        "#lineage",
+        "#runtime",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-ORC_Specification_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Architectural_Inversion.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Artifact-Centric_Manifesto.md",
+      "type": "artifact",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Artifact-Centric_Manifesto_v2.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Build_Status_Report_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Canonical_Map_v1.md",
+      "type": "index",
+      "tags": [
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Constitution_v1.md",
+      "type": "constitution",
+      "tags": [
+        "#accepted",
+        "#constitution",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Continuity_Doctrine.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Continuity_Doctrine_v2.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Control_Plane_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Core_Architecture_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Definition_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_First_Principles_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Foundational_Principles_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Git_Architecture_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#ccr",
+        "#living-memory",
+        "#memory",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Governance_Doctrine.md",
+      "type": "governance_report",
+      "tags": [
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Layer_Model_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Layer_Model_v2_Preview.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#memory",
+        "#proposed",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Master_Architecture_Atlas_Part1.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Master_Architecture_Atlas_Part2.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Master_Architecture_Atlas_Part3.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Master_Architecture_Atlas_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Master_Architecture_Atlas_v1_final.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Operational_Cycle_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Operational_Value_Chain_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Org_Map_v2.md",
+      "type": "index",
+      "tags": [
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Organizational_Mapping_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Organizational_Model_Executive_Summary.md",
+      "type": "artifact",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Organizational_Model_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Theory_of_Organization_v1.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "Y-OS_Vision_First_Principles.md",
+      "type": "unknown",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "context_packs/context_pack_ARCH-001_compressed.md",
+      "type": "context_pack",
+      "tags": [
+        "#accepted",
+        "#context",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "context_packs/context_pack_ARCH-001_full.md",
+      "type": "context_pack",
+      "tags": [
+        "#accepted",
+        "#context",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "context_packs/context_pack_ARCH-001_minimal.md",
+      "type": "context_pack",
+      "tags": [
+        "#accepted",
+        "#context",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "context_packs/context_pack_BUILD-001_full.md",
+      "type": "context_pack",
+      "tags": [
+        "#accepted",
+        "#context",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "context_packs/context_pack_DOC-001_full.md",
+      "type": "context_pack",
+      "tags": [
+        "#accepted",
+        "#context",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "context_packs/context_pack_GOV-001_full.md",
+      "type": "context_pack",
+      "tags": [
+        "#accepted",
+        "#context",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "context_packs/context_pack_RES-001_full.md",
+      "type": "context_pack",
+      "tags": [
+        "#accepted",
+        "#context",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "lakshmi_ceo_briefing.md",
+      "type": "ceo_briefing",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "lakshmi_open_loops.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/00_validation_report.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/01_mission_definition.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/02_mission_graph.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/03_artifact_chain.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/04_worker_participation_map.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/05_context_pack_flow.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/06_crt_resolution_log.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/07_lakshmi_governance_report.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/08_learning_report.md",
+      "type": "learning_report",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#ccr",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/09_ceo_briefing.md",
+      "type": "ceo_briefing",
+      "tags": [
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_001/10_final_deliverable.md",
+      "type": "mission",
+      "tags": [
+        "#ccr",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/00_validation_report.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/Worker_Runtime_Specification_v1.md",
+      "type": "runtime_spec",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#runtime",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/artifacts/ART-M002-BRA001.md",
+      "type": "mission",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/artifacts/ART-M002-CEO001.md",
+      "type": "mission",
+      "tags": [
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/artifacts/ART-M002-DIR001.md",
+      "type": "mission",
+      "tags": [
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/artifacts/ART-M002-HAN001.md",
+      "type": "mission",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/artifacts/ART-M002-KRS001.md",
+      "type": "mission",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/artifacts/ART-M002-LAK001.md",
+      "type": "mission",
+      "tags": [
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_002/artifacts/ART-M002-SAR001.md",
+      "type": "mission",
+      "tags": [
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-148294.md",
+      "type": "mission",
+      "tags": [
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-31480A.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-5EB6E6.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-62BCD1.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-C0819C.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-DCC856.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-E71840.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/artifacts/ART-M003-FA125E.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_003/provider_diversity_report.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-50DAA1.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-52311E.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-7FA315.md",
+      "type": "mission",
+      "tags": [
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-82A5B4.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-AE262C.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-BCB144.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-C22F3D.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/artifacts/ART-M004-D14D49.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/crt_resolution_log.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_004/failure_event_log.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/ADR-0030_CCR_Runtime_v1.md",
+      "type": "adr",
+      "tags": [
+        "#adr",
+        "#ccr",
+        "#lineage",
+        "#proposed",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-261AD1-v2.md",
+      "type": "mission",
+      "tags": [
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-261AD1.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-80F9D8.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-872D6D.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-8A4718.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-B6F433.md",
+      "type": "mission",
+      "tags": [
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-DCD41E.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005/artifacts/ART-M005-F4EA52.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005b/ADR-0030_v2_ACCEPTED.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005b/CCR_Runtime_v1.1_Governance_Patch.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#governance",
+        "#lineage",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005b/Lakshmi_Re-Review.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005c/ADR-0033_Governance_Determinism.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005c/Governance_Determinism_Framework_v1.md",
+      "type": "governance_report",
+      "tags": [
+        "#ccr",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_005c/Lakshmi_Validation.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_006/ADR-0034_Constitutional_Elevation_Framework.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_006/Constitutional_Elevation_Review.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_006/Lakshmi_Constitutional_Validation.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_006/Y-OS_Constitutional_Core_v1.md",
+      "type": "mission",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_007/ART-M007-ARCHITECTURE.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_007/ART-M007-CEO.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_007/ART-M007-GOVERNANCE.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_007/ART-M007-LEARNING.md",
+      "type": "learning_report",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_007/ART-M007-REPLACEMENT-TEST.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_007/ART-M007-STRATEGY.md",
+      "type": "mission",
+      "tags": [
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_008/ART-M008-AMENDMENT-FRAMEWORK.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_008/ART-M008-CEO.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_008/ART-M008-EVOLUTION-TEST.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_008/ART-M008-GOVERNANCE.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_008/ART-M008-LEARNING.md",
+      "type": "learning_report",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_008/ART-M008-STRATEGY.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_009/ADR-0035_Executable_Constitutional_Governance.md",
+      "type": "adr",
+      "tags": [
+        "#adr",
+        "#lineage",
+        "#proposed",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_009/ART-M009-ARCHITECTURE.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_009/ART-M009-CEO.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_009/ART-M009-EXECUTABLE-SPEC.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_009/ART-M009-GOVERNANCE.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_009/ART-M009-LEARNING.md",
+      "type": "learning_report",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_009/ART-M009-STRATEGY.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/ADR-0036_Context_Architecture.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#ccr",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/Ganesha_CEO.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/Lakshmi_Review.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/Saraswati_Learning.md",
+      "type": "learning_report",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/mode_A_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/mode_B_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/mode_C_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/mode_D_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010/mode_E_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/ART-M010B-GOVERNANCE.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/ART-M010B-LEARNING.md",
+      "type": "learning_report",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/ART-M010B-RECOMMENDATION.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/ART-M010B-ROI.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/config_A_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/config_B_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/config_C_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/config_D_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/config_E_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_010b/config_F_output.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#memory",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_011/ADR-0037_CCR_Runtime_v2.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_011/CCR_Runtime_v2_Architecture.md",
+      "type": "runtime_spec",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#lineage",
+        "#memory",
+        "#runtime",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_011/Ganesha_CEO.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_011/Lakshmi_Review.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#ccr",
+        "#governance",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_012/ADR-0038_Session_Delta_Engine.md",
+      "type": "adr",
+      "tags": [
+        "#accepted",
+        "#adr",
+        "#ccr",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_012/Ganesha_CEO.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#mission",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_012/Lakshmi_Review.md",
+      "type": "governance_report",
+      "tags": [
+        "#accepted",
+        "#governance",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_012/Session_Delta_Engine_v1.md",
+      "type": "mission",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#mission",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "type": "mission",
+      "tags": [
+        "#mission",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "type": "adr",
+      "tags": [
+        "#adr",
+        "#ccr",
+        "#living-memory",
+        "#memory",
+        "#proposed",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "type": "artifact",
+      "tags": [
+        "#artifact",
+        "#ccr",
+        "#lineage",
+        "#living-memory",
+        "#memory",
+        "#proposed",
+        "#session-delta",
+        "#yos"
+      ]
+    },
+    {
+      "id": "notion_registry_schema.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "registry/agent--manus.md",
+      "type": "unknown",
+      "tags": [
+        "agent",
+        "orchestration",
+        "core",
+        "manus"
+      ]
+    },
+    {
+      "id": "registry/capability--text-generation.md",
+      "type": "unknown",
+      "tags": [
+        "llm",
+        "text",
+        "generation",
+        "capability"
+      ]
+    },
+    {
+      "id": "registry/collection--yos-core.md",
+      "type": "unknown",
+      "tags": [
+        "collection",
+        "core",
+        "yos"
+      ]
+    },
+    {
+      "id": "registry/command--yos-launcher.md",
+      "type": "unknown",
+      "tags": [
+        "launcher",
+        "command",
+        "yos",
+        "cli"
+      ]
+    },
+    {
+      "id": "registry/knowledge-system--manus-memory.md",
+      "type": "unknown",
+      "tags": [
+        "memory",
+        "notion",
+        "mem0",
+        "persistence"
+      ]
+    },
+    {
+      "id": "registry/project--yos.md",
+      "type": "unknown",
+      "tags": [
+        "meta",
+        "core",
+        "yos"
+      ]
+    },
+    {
+      "id": "registry/protocol--yctx.md",
+      "type": "unknown",
+      "tags": [
+        "core",
+        "context",
+        "deterministic",
+        "backend"
+      ]
+    },
+    {
+      "id": "registry/protocol--ydev.md",
+      "type": "unknown",
+      "tags": [
+        "governance",
+        "development",
+        "core"
+      ]
+    },
+    {
+      "id": "registry/protocol--yid.md",
+      "type": "unknown",
+      "tags": [
+        "core",
+        "identity",
+        "naming",
+        "deterministic",
+        "backend"
+      ]
+    },
+    {
+      "id": "registry/protocol--ylog.md",
+      "type": "unknown",
+      "tags": [
+        "core",
+        "audit",
+        "logging",
+        "deterministic",
+        "backend"
+      ]
+    },
+    {
+      "id": "registry/protocol--yreg.md",
+      "type": "unknown",
+      "tags": [
+        "governance",
+        "registry",
+        "core"
+      ]
+    },
+    {
+      "id": "registry/skill--memory-manager.md",
+      "type": "unknown",
+      "tags": [
+        "memory",
+        "notion",
+        "skill",
+        "manus"
+      ]
+    },
+    {
+      "id": "registry/workflow--yreg-sync.md",
+      "type": "unknown",
+      "tags": [
+        "sync",
+        "parser",
+        "supabase",
+        "git"
+      ]
+    },
+    {
+      "id": "report_capability_graph.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "report_coverage.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#memory",
+        "#yos"
+      ]
+    },
+    {
+      "id": "report_duplicates.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "report_missing.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_01_strategy_brief.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_02_execution_plan.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_03_architecture_package.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_04a_ceo_briefing.md",
+      "type": "ceo_briefing",
+      "tags": [
+        "#artifact",
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_04b_build_report.md",
+      "type": "unknown",
+      "tags": [
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_05_delivery_report.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_06_lakshmi_review.md",
+      "type": "unknown",
+      "tags": [
+        "#accepted",
+        "#lineage",
+        "#yos"
+      ]
+    },
+    {
+      "id": "run_v1_07_learning_report.md",
+      "type": "learning_report",
+      "tags": [
+        "#accepted",
+        "#artifact",
+        "#lineage",
+        "#yos"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ADR-0007_Continuous_Evolution_Loop.md",
+      "to": "[[ADR-0006]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0011_Creation_Hanuman.md",
+      "to": "[[ADR-0010]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0015_Architectural_Layer_Corrections.md",
+      "to": "[[ADR-0014]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0016_Artifact_Registry.md",
+      "to": "[[ADR-0012]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0017_Artifact_Lineage_Registry_v1.1.md",
+      "to": "[[ADR-0012]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0017_Lakshmi_MVP_Runtime.md",
+      "to": "[[ADR-0013]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0017_Lakshmi_MVP_Runtime.md",
+      "to": "[[ADR-0016]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0018_Lakshmi_Runtime_MVP.md",
+      "to": "[[ADR-0013]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0018_Lakshmi_Runtime_MVP.md",
+      "to": "[[ADR-0017]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "ADR-0026_ART_Runtime_v1.md",
+      "to": "[[ADR-0027]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Artifact_Registry_Architecture_v1.md",
+      "to": "[[ADR-0012]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "CEO_Briefing_Standard_v1.md",
+      "to": "[[ADR-0014]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Context_Pack_Standard_v1.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Context_Pack_Standard_v1.md",
+      "to": "[[ADR-0027]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Hanuman_Title_Recommendation.md",
+      "to": "[[ADR-0010]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Impact_Analysis_v1.1.md",
+      "to": "[[ADR-0012]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "L6_ADR_Recommendation.md",
+      "to": "[[ADR-0009]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Org_Placement_Review_v1.md",
+      "to": "[[ADR-0009]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Validation_Report_Lakshmi_v2.1.md",
+      "to": "[[ADR-0019]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-ORC_Architecture_v1.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Artifact-Centric_Manifesto_v2.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Continuity_Doctrine_v2.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Control_Plane_v1.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Control_Plane_v1.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Definition_v1.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_First_Principles_v1.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_First_Principles_v1.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0006]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0020]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0021]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0023]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0025]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0027]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0028]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0030]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0033]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0034]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0035]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0036]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0037]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0038]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[ADR-0039]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Git_Architecture_v1.md",
+      "to": "[[mission_012b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "Y-OS_Governance_Doctrine.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Governance_Doctrine.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Master_Architecture_Atlas_Part2.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Master_Architecture_Atlas_v1.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Master_Architecture_Atlas_v1_final.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Operational_Cycle_v1.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "Y-OS_Theory_of_Organization_v1.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_compressed.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_compressed.md",
+      "to": "[[ADR-0023]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_compressed.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_full.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_full.md",
+      "to": "[[ADR-0023]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_full.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_full.md",
+      "to": "[[ADR-0028]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_full.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_ARCH-001_minimal.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_BUILD-001_full.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_BUILD-001_full.md",
+      "to": "[[ADR-0023]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_BUILD-001_full.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_BUILD-001_full.md",
+      "to": "[[ADR-0025]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_BUILD-001_full.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_BUILD-001_full.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_DOC-001_full.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_DOC-001_full.md",
+      "to": "[[ADR-0023]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_DOC-001_full.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_DOC-001_full.md",
+      "to": "[[ADR-0025]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_DOC-001_full.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_DOC-001_full.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_GOV-001_full.md",
+      "to": "[[ADR-0020]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_GOV-001_full.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_GOV-001_full.md",
+      "to": "[[ADR-0023]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_GOV-001_full.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_GOV-001_full.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_RES-001_full.md",
+      "to": "[[ADR-0022]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_RES-001_full.md",
+      "to": "[[ADR-0023]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_RES-001_full.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_RES-001_full.md",
+      "to": "[[ADR-0027]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "context_packs/context_pack_RES-001_full.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_001/00_validation_report.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/00_validation_report.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/01_mission_definition.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/02_mission_graph.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/03_artifact_chain.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/04_worker_participation_map.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/05_context_pack_flow.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/06_crt_resolution_log.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/07_lakshmi_governance_report.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/08_learning_report.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/08_learning_report.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/09_ceo_briefing.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/09_ceo_briefing.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_001/10_final_deliverable.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_001/10_final_deliverable.md",
+      "to": "[[ADR-0025]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_001/10_final_deliverable.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_001/10_final_deliverable.md",
+      "to": "[[ADR-0028]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_001/10_final_deliverable.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_001/10_final_deliverable.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/00_validation_report.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/00_validation_report.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/Worker_Runtime_Specification_v1.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-BRA001.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-CEO001.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-CEO001.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-DIR001.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-HAN001.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-KRS001.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-LAK001.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-SAR001.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_002/artifacts/ART-M002-SAR001.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-148294.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-31480A.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-5EB6E6.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-62BCD1.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-C0819C.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-DCC856.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-E71840.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-FA125E.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/artifacts/ART-M003-FA125E.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_003/provider_diversity_report.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-50DAA1.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-50DAA1.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-52311E.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-7FA315.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-82A5B4.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-AE262C.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-BCB144.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-C22F3D.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/artifacts/ART-M004-D14D49.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/crt_resolution_log.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_004/failure_event_log.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/ADR-0030_CCR_Runtime_v1.md",
+      "to": "[[ADR-0027]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005/ADR-0030_CCR_Runtime_v1.md",
+      "to": "[[ADR-0031]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005/ADR-0030_CCR_Runtime_v1.md",
+      "to": "[[ADR-0032]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005/ADR-0030_CCR_Runtime_v1.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-261AD1-v2.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-261AD1.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-80F9D8.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-872D6D.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-8A4718.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-B6F433.md",
+      "to": "[[ADR-001]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-B6F433.md",
+      "to": "[[ADR-002]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-B6F433.md",
+      "to": "[[ADR-003]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-B6F433.md",
+      "to": "[[ADR-004]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-B6F433.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-DCD41E.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005/artifacts/ART-M005-F4EA52.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005b/ADR-0030_v2_ACCEPTED.md",
+      "to": "[[ADR-0031]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005b/ADR-0030_v2_ACCEPTED.md",
+      "to": "[[ADR-0032]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005b/ADR-0030_v2_ACCEPTED.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005b/ADR-0030_v2_ACCEPTED.md",
+      "to": "[[mission_005b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005b/CCR_Runtime_v1.1_Governance_Patch.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005b/CCR_Runtime_v1.1_Governance_Patch.md",
+      "to": "[[mission_005b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005b/Lakshmi_Re-Review.md",
+      "to": "[[mission_005b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005c/ADR-0033_Governance_Determinism.md",
+      "to": "[[mission_005b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005c/ADR-0033_Governance_Determinism.md",
+      "to": "[[mission_005c]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005c/Governance_Determinism_Framework_v1.md",
+      "to": "[[ADR-0033]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_005c/Governance_Determinism_Framework_v1.md",
+      "to": "[[mission_005b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005c/Governance_Determinism_Framework_v1.md",
+      "to": "[[mission_005c]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_005c/Lakshmi_Validation.md",
+      "to": "[[mission_005c]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_006/ADR-0034_Constitutional_Elevation_Framework.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_006/ADR-0034_Constitutional_Elevation_Framework.md",
+      "to": "[[mission_006]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_006/Constitutional_Elevation_Review.md",
+      "to": "[[ADR-0026]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_006/Constitutional_Elevation_Review.md",
+      "to": "[[mission_006]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_006/Lakshmi_Constitutional_Validation.md",
+      "to": "[[mission_006]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_006/Y-OS_Constitutional_Core_v1.md",
+      "to": "[[mission_006]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_007/ART-M007-ARCHITECTURE.md",
+      "to": "[[mission_007]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_007/ART-M007-CEO.md",
+      "to": "[[mission_007]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_007/ART-M007-GOVERNANCE.md",
+      "to": "[[mission_007]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_007/ART-M007-LEARNING.md",
+      "to": "[[mission_007]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_007/ART-M007-REPLACEMENT-TEST.md",
+      "to": "[[mission_007]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_007/ART-M007-STRATEGY.md",
+      "to": "[[mission_007]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_008/ART-M008-AMENDMENT-FRAMEWORK.md",
+      "to": "[[mission_008]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_008/ART-M008-CEO.md",
+      "to": "[[mission_008]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_008/ART-M008-EVOLUTION-TEST.md",
+      "to": "[[mission_008]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_008/ART-M008-GOVERNANCE.md",
+      "to": "[[mission_008]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_008/ART-M008-LEARNING.md",
+      "to": "[[mission_008]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_008/ART-M008-STRATEGY.md",
+      "to": "[[mission_008]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_009/ADR-0035_Executable_Constitutional_Governance.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_009/ADR-0035_Executable_Constitutional_Governance.md",
+      "to": "[[ADR-0033]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_009/ADR-0035_Executable_Constitutional_Governance.md",
+      "to": "[[ADR-0034]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_009/ADR-0035_Executable_Constitutional_Governance.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_009/ART-M009-ARCHITECTURE.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_009/ART-M009-CEO.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_009/ART-M009-EXECUTABLE-SPEC.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_009/ART-M009-GOVERNANCE.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_009/ART-M009-LEARNING.md",
+      "to": "[[ADR-005]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_009/ART-M009-LEARNING.md",
+      "to": "[[ADR-006]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_009/ART-M009-LEARNING.md",
+      "to": "[[ADR-007]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_009/ART-M009-LEARNING.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_009/ART-M009-STRATEGY.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/ADR-0036_Context_Architecture.md",
+      "to": "[[ADR-0029]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_010/ADR-0036_Context_Architecture.md",
+      "to": "[[ADR-0033]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_010/ADR-0036_Context_Architecture.md",
+      "to": "[[ADR-0035]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_010/ADR-0036_Context_Architecture.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/Ganesha_CEO.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/Lakshmi_Review.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/Saraswati_Learning.md",
+      "to": "[[ADR-0036]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_010/Saraswati_Learning.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/mode_A_output.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/mode_B_output.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/mode_C_output.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/mode_D_output.md",
+      "to": "[[ADR-0008]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_010/mode_D_output.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010/mode_E_output.md",
+      "to": "[[ADR-0024]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_010/mode_E_output.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/ART-M010B-GOVERNANCE.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/ART-M010B-LEARNING.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/ART-M010B-RECOMMENDATION.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/ART-M010B-ROI.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/config_A_output.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/config_B_output.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/config_C_output.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/config_D_output.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/config_D_output.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/config_E_output.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_010b/config_F_output.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_011/ADR-0037_CCR_Runtime_v2.md",
+      "to": "[[mission_011]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_011/CCR_Runtime_v2_Architecture.md",
+      "to": "[[ADR-0033]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_011/CCR_Runtime_v2_Architecture.md",
+      "to": "[[mission_011]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_011/Ganesha_CEO.md",
+      "to": "[[ADR-0037]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_011/Ganesha_CEO.md",
+      "to": "[[mission_011]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_011/Lakshmi_Review.md",
+      "to": "[[mission_011]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012/ADR-0038_Session_Delta_Engine.md",
+      "to": "[[mission_012]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012/Ganesha_CEO.md",
+      "to": "[[ADR-0038]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012/Ganesha_CEO.md",
+      "to": "[[mission_012]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012/Lakshmi_Review.md",
+      "to": "[[ADR-0038]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012/Lakshmi_Review.md",
+      "to": "[[mission_012]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012/Session_Delta_Engine_v1.md",
+      "to": "[[mission_012]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[ADR-0006]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[ADR-0038]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_001]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_002]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_003]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_004]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_005]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_005b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_005c]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_006]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_007]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_008]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_009]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_011]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_012]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012a/MISSION-012A_Storage_Audit.md",
+      "to": "[[mission_012a]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "to": "[[ADR-0036]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "to": "[[ADR-0037]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "to": "[[ADR-0038]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "to": "[[mission_010]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "to": "[[mission_012a]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012b/ADR-0039_Living_Memory_Pipeline.md",
+      "to": "[[mission_012b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "to": "[[ADR-0030]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "to": "[[ADR-0036]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "to": "[[ADR-0037]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "to": "[[ADR-0038]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "to": "[[ADR-0039]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "to": "[[mission_010b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "mission_012b/Living_Memory_Pipeline_Doctrine_v1.md",
+      "to": "[[mission_012b]]",
+      "rel": "references_mission"
+    },
+    {
+      "from": "run_v1_01_strategy_brief.md",
+      "to": "[[ADR-0012]]",
+      "rel": "references_adr"
+    },
+    {
+      "from": "run_v1_07_learning_report.md",
+      "to": "[[ADR-0016]]",
+      "rel": "references_adr"
+    }
+  ],
+  "generated": "2026-06-13"
+}

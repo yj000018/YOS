@@ -1,3 +1,17 @@
+---
+id: yos-y-os-operational-value-chain-v1
+title: Y-OS Operational Value Chain v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Operational Value Chain v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

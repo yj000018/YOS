@@ -1,3 +1,20 @@
+---
+id: yos-y-os-layer-model-v2-preview
+title: Y-OS Layer Model v2 Preview
+type: artifact
+status: PROPOSED
+date: '2026-06-12'
+version: v2
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#memory'
+- '#proposed'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Layer Model v2 (Preview)
 
 **Status:** Proposed | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

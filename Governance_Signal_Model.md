@@ -1,3 +1,20 @@
+---
+id: yos-governance-signal-model
+title: Governance Signal Model
+type: governance_report
+status: ACCEPTED
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Governance Signal Model
 
 **Owner:** Chief Architect (Brahma)  

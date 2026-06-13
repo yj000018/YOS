@@ -1,3 +1,17 @@
+---
+id: yos-lakshmi-ceo-briefing
+title: lakshmi ceo briefing
+type: ceo_briefing
+status: GREEN
+date: '2026-06-12'
+owner: Lakshmi
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 ================================================
 LAKSHMI CEO BRIEFING (DETERMINISTIC FALLBACK)
 ================================================

@@ -1,3 +1,23 @@
+---
+id: yos-adr-0029-context-compiler
+title: ADR-0029 Context Compiler
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#ccr'
+- '#memory'
+- '#yos'
+aliases:
+- Context Compiler
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0029: Context Compiler Runtime v1 (CCR-001)
 
 **Date:** 2026-06-13  

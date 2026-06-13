@@ -1,3 +1,18 @@
+---
+id: yos-run-v1-04a-ceo-briefing
+title: run v1 04a ceo briefing
+type: ceo_briefing
+status: READY
+date: '2026-06-13'
+version: v1
+owner: Ganesha
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # CEO Briefing (Build Artifact)
 
 **Artifact ID:** ART-E2E-004a

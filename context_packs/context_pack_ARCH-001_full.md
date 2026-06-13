@@ -1,3 +1,27 @@
+---
+id: yos-context-pack-arch-001-full
+title: context pack ARCH-001 full
+type: context_pack
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[06_Context_Architecture_MOC]]'
+related_adrs:
+- '[[ADR-0022]]'
+- '[[ADR-0023]]'
+- '[[ADR-0024]]'
+- '[[ADR-0028]]'
+- '[[ADR-0029]]'
+tags:
+- '#accepted'
+- '#context'
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Context Pack — CP-ARCH-001-FULL-2ED3BE
 
 **Mission:** ARCH-001  

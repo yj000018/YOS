@@ -1,3 +1,35 @@
+---
+id: yos-adr-0030-v2-accepted
+title: ADR-0030 v2 ACCEPTED
+type: adr
+status: ACCEPTED
+mission: MISSION-005B
+date: '2026-06-13'
+version: v2
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0031]]'
+- '[[ADR-0032]]'
+related_missions:
+- '[[mission_005]]'
+- '[[mission_005b]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+tags:
+- '#accepted'
+- '#adr'
+- '#ccr'
+- '#lineage'
+- '#memory'
+- '#yos'
+aliases:
+- CCR Runtime v1 + Governance Patch
+- MISSION-005B
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0030 — CCR Runtime v1: Context Continuity Engine
 
 **Status:** ACCEPTED WITH GOVERNANCE PATCH  

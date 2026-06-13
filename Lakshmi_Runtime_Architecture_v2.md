@@ -1,3 +1,21 @@
+---
+id: yos-lakshmi-runtime-architecture-v2
+title: Lakshmi Runtime Architecture v2
+type: governance_report
+status: ACCEPTED
+date: '2026-06-13'
+version: v2
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Lakshmi Runtime Architecture v2
 
 **Owner:** Chief Architect (Brahma)  

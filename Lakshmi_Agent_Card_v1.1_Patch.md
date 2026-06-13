@@ -1,3 +1,19 @@
+---
+id: yos-lakshmi-agent-card-v1.1-patch
+title: Lakshmi Agent Card v1.1 Patch
+type: governance_report
+status: OFFICIAL
+date: '2026-06-12'
+version: v1.1
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#governance'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ECO (Lakshmi) Agent Card v1.1 (Patch)
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

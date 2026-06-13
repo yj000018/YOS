@@ -1,3 +1,21 @@
+---
+id: yos-y-orc-architecture-v1
+title: Y-ORC Architecture v1
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0024]]'
+tags:
+- '#accepted'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-ORC Architecture v1
 
 **Owner:** Chief Architect (Brahma)  

@@ -1,15 +1,19 @@
 ---
-slug: protocol--ydev
-name: "Y-DEV"
+id: yos-protocol--ydev
+title: protocol--ydev
 type: protocol
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Y-OS Development Protocol — governs how all Y-OS components are designed, built, tested and versioned."
-tags: ["governance", "development", "core"]
-git_path: "registry/protocol--ydev.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- governance
+- development
+- core
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-DEV — Y-OS Development Protocol
 

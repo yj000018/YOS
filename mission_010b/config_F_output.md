@@ -1,3 +1,32 @@
+---
+id: yos-config-f-output
+title: config F output
+type: mission
+status: ACCEPTED
+mission: MISSION-010B
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_010b]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#lineage'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-010B
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Config F — Context Pack + Canonical Memory + Session
 
 **Tokens:** 785+467=1252 | **Quality:** 86.4 | **ROI:** 69.0/1k-tokens | **Latency:** 12.4s

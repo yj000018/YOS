@@ -1,3 +1,23 @@
+---
+id: yos-adr-0025-y-orc-runtime-v1
+title: ADR-0025 Y-ORC Runtime v1
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- Y-ORC Runtime v1
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0025: Y-ORC Runtime v1 — Real Registry Activation
 
 **Date:** 2026-06-13  

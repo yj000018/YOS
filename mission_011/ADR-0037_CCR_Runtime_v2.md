@@ -1,3 +1,34 @@
+---
+id: yos-adr-0037-ccr-runtime-v2
+title: ADR-0037 CCR Runtime v2
+type: adr
+status: ACCEPTED
+mission: MISSION-011
+date: '2026-06-13'
+version: v2
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_011]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+tags:
+- '#accepted'
+- '#adr'
+- '#ccr'
+- '#lineage'
+- '#memory'
+- '#session-delta'
+- '#yos'
+aliases:
+- CCR Runtime v2
+- MISSION-011
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0037: CCR Runtime v2 — Production Context Orchestration
 
 ## Status

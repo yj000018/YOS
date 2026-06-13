@@ -1,3 +1,19 @@
+---
+id: yos-y-os-layer-model-v1
+title: Y-OS Layer Model v1
+type: artifact
+status: FOUNDATIONAL
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Layer Model v1
 
 **Owner:** Chief Architect (Brahma)  

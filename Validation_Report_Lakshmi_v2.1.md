@@ -1,3 +1,23 @@
+---
+id: yos-validation-report-lakshmi-v2.1
+title: Validation Report Lakshmi v2.1
+type: governance_report
+status: ACCEPTED
+date: '2026-06-13'
+version: v2.1
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+related_adrs:
+- '[[ADR-0019]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Validation Report: Lakshmi Runtime v2.1
 
 **Mission ID:** MISS-LAKSHMI-V2.1  

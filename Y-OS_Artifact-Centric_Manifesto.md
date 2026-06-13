@@ -1,3 +1,20 @@
+---
+id: yos-y-os-artifact-centric-manifesto
+title: Y-OS Artifact-Centric Manifesto
+type: artifact
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#artifact'
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Artifact-Centric Manifesto
 
 **Owner:** CODO (Saraswati)  

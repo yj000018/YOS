@@ -1,3 +1,21 @@
+---
+id: yos-adr-0024-y-os-constitution
+title: ADR-0024 Y-OS Constitution
+type: constitution
+status: ACCEPTED
+date: '2026-06-13'
+owner: Yannick
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#constitution'
+- '#yos'
+aliases:
+- Y-OS Constitution
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0024: Y-OS Constitution
 
 **Date:** 2026-06-13  

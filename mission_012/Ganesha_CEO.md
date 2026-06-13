@@ -1,3 +1,27 @@
+---
+id: yos-ganesha-ceo
+title: Ganesha CEO
+type: mission
+status: ACCEPTED
+mission: MISSION-012
+date: '2026-06-13'
+owner: Ganesha
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0038]]'
+related_missions:
+- '[[mission_012]]'
+tags:
+- '#accepted'
+- '#mission'
+- '#session-delta'
+- '#yos'
+aliases:
+- MISSION-012
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Ganesha CEO Recommendation
 
 **Recommendation: ADOPT ADR-0038**

@@ -1,3 +1,18 @@
+---
+id: yos-l3-advantages-risks
+title: L3 Advantages Risks
+type: governance_report
+status: OFFICIAL
+date: '2026-06-12'
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#governance'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # 3. Advantages and Risks of the Recommended Structure
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

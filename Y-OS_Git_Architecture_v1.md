@@ -1,3 +1,43 @@
+---
+id: yos-y-os-git-architecture-v1
+title: Y-OS Git Architecture v1
+type: unknown
+status: OPERATIONAL
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0006]]'
+- '[[ADR-0020]]'
+- '[[ADR-0021]]'
+- '[[ADR-0022]]'
+- '[[ADR-0023]]'
+- '[[ADR-0024]]'
+- '[[ADR-0025]]'
+- '[[ADR-0026]]'
+- '[[ADR-0027]]'
+- '[[ADR-0028]]'
+- '[[ADR-0029]]'
+- '[[ADR-0030]]'
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+- '[[ADR-0035]]'
+- '[[ADR-0036]]'
+- '[[ADR-0037]]'
+- '[[ADR-0038]]'
+- '[[ADR-0039]]'
+related_missions:
+- '[[mission_012b]]'
+tags:
+- '#ccr'
+- '#living-memory'
+- '#memory'
+- '#session-delta'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Git Architecture v1
 
 **Date:** 2026-06-13  

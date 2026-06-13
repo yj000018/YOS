@@ -1,15 +1,20 @@
 ---
-slug: capability--text-generation
-name: "Text Generation"
+id: yos-capability--text-generation
+title: capability--text-generation
 type: capability
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Ability to generate, rewrite, summarize or transform natural language text using LLM models."
-tags: ["llm", "text", "generation", "capability"]
-git_path: "registry/capability--text-generation.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- llm
+- text
+- generation
+- capability
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Text Generation — Y-OS Capability
 

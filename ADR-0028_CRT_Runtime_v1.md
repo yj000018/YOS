@@ -1,3 +1,24 @@
+---
+id: yos-adr-0028-crt-runtime-v1
+title: ADR-0028 CRT Runtime v1
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#memory'
+- '#yos'
+aliases:
+- CRT Runtime v1
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0028: CRT Runtime v1
 
 **Date:** 2026-06-13  

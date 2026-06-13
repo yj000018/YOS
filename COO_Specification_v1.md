@@ -1,3 +1,17 @@
+---
+id: yos-coo-specification-v1
+title: COO Specification v1
+type: unknown
+status: MVP
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # COO Agent Specification v1
 
 **Generated:** 2026-06-12

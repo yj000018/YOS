@@ -1,3 +1,17 @@
+---
+id: yos-l4-updated-org-diagram
+title: L4 Updated Org Diagram
+type: diagram
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # 4. Updated Organizational Diagram
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

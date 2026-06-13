@@ -1,3 +1,22 @@
+---
+id: yos-adr-0020-y-os-control-plane
+title: ADR-0020 Y-OS Control Plane
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- Y-OS Control Plane
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0020: Y-OS Control Plane
 
 **Status:** Accepted  

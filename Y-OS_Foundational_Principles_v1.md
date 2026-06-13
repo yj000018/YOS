@@ -1,3 +1,19 @@
+---
+id: yos-y-os-foundational-principles-v1
+title: Y-OS Foundational Principles v1
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Foundational Principles v1
 
 **Owner:** CODO (Saraswati)  

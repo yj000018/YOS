@@ -1,20 +1,21 @@
 ---
 id: protocol--yid
+title: protocol--yid
 type: protocol
-name: Y-ID
-slug: yid
 status: active
-visibility: public
-version: "1.0"
-description: Naming, namespaces and identifier management module. Ensures consistent naming across all Y-OS objects.
-question: How do we identify things?
-produces: Resolved identifiers, namespace maps
-consumes: Object definitions
-equivalent_role: Information Architect
-tags: [core, identity, naming, deterministic, backend]
-module_owner: Y-ID
-created_at: "2026-06-12"
+date: '2026-06-13'
+version: '1.0'
+owner: Manus Y-OS
+tags:
+- core
+- identity
+- naming
+- deterministic
+- backend
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-ID — Identity Module
 

@@ -1,3 +1,16 @@
+---
+id: yos-reporting-matrix
+title: Reporting Matrix
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Reporting Relationships Matrix
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

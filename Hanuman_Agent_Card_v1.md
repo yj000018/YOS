@@ -1,3 +1,17 @@
+---
+id: yos-hanuman-agent-card-v1
+title: Hanuman Agent Card v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Hanuman
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Lead Developer (Hanuman) Agent Card v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

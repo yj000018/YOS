@@ -1,3 +1,24 @@
+---
+id: yos-provider-diversity-report
+title: provider diversity report
+type: mission
+status: ACCEPTED
+mission: MISSION-003
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_003]]'
+tags:
+- '#accepted'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-003
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # MISSION-003 — Provider Diversity Report
 
 **Date:** 2026-06-13T12:43:10.968772Z  

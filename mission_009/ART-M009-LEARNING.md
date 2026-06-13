@@ -1,3 +1,32 @@
+---
+id: yos-art-m009-learning
+title: ART-M009-LEARNING
+type: learning_report
+status: ACCEPTED
+mission: MISSION-009
+date: '2026-06-13'
+owner: Saraswati
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-005]]'
+- '[[ADR-006]]'
+- '[[ADR-007]]'
+related_missions:
+- '[[mission_009]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#artifact'
+- '#yos'
+aliases:
+- MISSION-009
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M009-LEARNING
 **Artifact ID:** ART-M009-8C8021
 **Date:** 2026-06-13

@@ -1,3 +1,27 @@
+---
+id: yos-art-m002-krs001
+title: ART-M002-KRS001
+type: mission
+status: READY
+mission: MISSION-002
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_002]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+tags:
+- '#lineage'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-002
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M002-KRS001 — Strategy Brief
 
 **Type:** Strategy Brief  

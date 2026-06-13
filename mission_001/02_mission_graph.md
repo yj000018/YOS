@@ -1,3 +1,24 @@
+---
+id: yos-02-mission-graph
+title: 02 mission graph
+type: mission
+status: ACCEPTED
+mission: MISSION-001
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_001]]'
+tags:
+- '#accepted'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-001
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Mission Graph — MISSION-001
 
 ```mermaid

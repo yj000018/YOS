@@ -1,3 +1,24 @@
+---
+id: yos-art-m008-governance
+title: ART-M008-GOVERNANCE
+type: governance_report
+status: ACCEPTED
+mission: MISSION-008
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_008]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#yos'
+aliases:
+- MISSION-008
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M008-GOVERNANCE
 **Artifact ID:** ART-M008-90563F
 **Date:** 2026-06-13

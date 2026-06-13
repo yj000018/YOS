@@ -1,3 +1,24 @@
+---
+id: yos-adr-0015-architectural-layer-corrections
+title: ADR-0015 Architectural Layer Corrections
+type: adr
+status: ACCEPTED
+date: '2026-06-12'
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0014]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#memory'
+- '#yos'
+aliases:
+- Architectural Layer Corrections
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0015: Architectural Layer Corrections
 
 **Status:** Accepted

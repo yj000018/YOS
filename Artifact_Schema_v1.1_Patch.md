@@ -1,3 +1,18 @@
+---
+id: yos-artifact-schema-v1.1-patch
+title: Artifact Schema v1.1 Patch
+type: artifact
+status: OFFICIAL
+date: '2026-06-12'
+version: v1.1
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Artifact Schema v1.1 (Patch)
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** Chief Architect (Brahma)

@@ -1,3 +1,27 @@
+---
+id: yos-art-m009-ceo
+title: ART-M009-CEO
+type: mission
+status: ACCEPTED
+mission: MISSION-009
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_009]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article IV: Human Override Primacy'
+tags:
+- '#accepted'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-009
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M009-CEO
 **Artifact ID:** ART-M009-734DA3
 **Date:** 2026-06-13

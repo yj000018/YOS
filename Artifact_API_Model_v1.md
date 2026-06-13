@@ -1,3 +1,18 @@
+---
+id: yos-artifact-api-model-v1
+title: Artifact API Model v1
+type: artifact
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#artifact'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Artifact API Model v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** Chief Architect (Brahma)

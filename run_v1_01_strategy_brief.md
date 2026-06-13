@@ -1,3 +1,20 @@
+---
+id: yos-run-v1-01-strategy-brief
+title: run v1 01 strategy brief
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0012]]'
+tags:
+- '#accepted'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Strategy Brief: First End-to-End Y-OS Run v1
 
 **Artifact ID:** ART-E2E-001

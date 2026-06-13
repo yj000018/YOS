@@ -1,3 +1,25 @@
+---
+id: yos-adr-0026-art-runtime-v1
+title: ADR-0026 ART Runtime v1
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0027]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- ART Runtime v1
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0026: ART Runtime v1 — Agent Routing Table
 
 **Date:** 2026-06-13  

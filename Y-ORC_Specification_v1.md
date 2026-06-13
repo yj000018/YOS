@@ -1,3 +1,18 @@
+---
+id: yos-y-orc-specification-v1
+title: Y-ORC Specification v1
+type: unknown
+status: MVP
+date: '2026-06-13'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-ORC Specification v1
 
 **Generated:** 2026-06-12

@@ -1,3 +1,18 @@
+---
+id: yos-memory-layer-correction-v1.1
+title: Memory Layer Correction v1.1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1.1
+owner: Manus Y-OS
+tags:
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Memory Layer Correction v1.1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

@@ -1,3 +1,25 @@
+---
+id: yos-adr-0017-artifact-lineage-registry-v1.1
+title: ADR-0017 Artifact Lineage Registry v1.1
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+version: v1.1
+owner: Brahma
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0012]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- Artifact Lineage Registry v1.1
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0017: Artifact Lineage & Registry v1.1
 
 **Date:** 2026-06-13  

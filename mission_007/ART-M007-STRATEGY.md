@@ -1,3 +1,30 @@
+---
+id: yos-art-m007-strategy
+title: ART-M007-STRATEGY
+type: mission
+status: ANALYSIS
+mission: MISSION-007
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_007]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+tags:
+- '#lineage'
+- '#memory'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-007
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M007-STRATEGY
 **Artifact ID:** ART-M007-6F914C
 **Date:** 2026-06-13

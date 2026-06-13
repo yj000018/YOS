@@ -1,3 +1,24 @@
+---
+id: yos-05-context-pack-flow
+title: 05 context pack flow
+type: mission
+status: ACCEPTED
+mission: MISSION-001
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_001]]'
+tags:
+- '#accepted'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-001
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Context Pack Flow — MISSION-001
 
 | Step | Context Pack ID | Worker | Capability | Model |

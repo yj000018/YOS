@@ -1,3 +1,18 @@
+---
+id: yos-eco-dashboard-design-v1
+title: ECO Dashboard Design v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ECO Dashboard Design v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

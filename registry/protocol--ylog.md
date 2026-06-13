@@ -1,20 +1,21 @@
 ---
 id: protocol--ylog
+title: protocol--ylog
 type: protocol
-name: Y-LOG
-slug: ylog
 status: active
-visibility: public
-version: "1.0"
-description: Audit trail and operational history module. Receives events from Y-ORC after Mission Pack execution.
-question: What happened?
-produces: Audit records, operational history
-consumes: Mission Pack execution events
-equivalent_role: Auditor, Operations Recorder
-tags: [core, audit, logging, deterministic, backend]
-module_owner: Y-LOG
-created_at: "2026-06-12"
+date: '2026-06-13'
+version: '1.0'
+owner: Manus Y-OS
+tags:
+- core
+- audit
+- logging
+- deterministic
+- backend
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Y-LOG — Audit Module
 

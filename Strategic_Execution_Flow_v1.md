@@ -1,3 +1,17 @@
+---
+id: yos-strategic-execution-flow-v1
+title: Strategic Execution Flow v1
+type: unknown
+status: OFFICIAL
+date: '2026-06-12'
+version: v1
+owner: Manus Y-OS
+tags:
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Strategic-to-Execution Flow v1
 
 **Status:** Official | **Date:** 2026-06-12 | **Owner:** CODO (Saraswati)

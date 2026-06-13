@@ -1,3 +1,18 @@
+---
+id: yos-validation-rules
+title: Validation Rules
+type: unknown
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Validation Rules
 
 **Owner:** Chief Architect (Brahma)  

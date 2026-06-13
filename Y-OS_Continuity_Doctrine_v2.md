@@ -1,3 +1,20 @@
+---
+id: yos-y-os-continuity-doctrine-v2
+title: Y-OS Continuity Doctrine v2
+type: unknown
+status: FOUNDATIONAL
+date: '2026-06-13'
+version: v2
+owner: Manus Y-OS
+related_adrs:
+- '[[ADR-0022]]'
+tags:
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Continuity Doctrine
 
 **Owner:** Chief Architect (Brahma)  

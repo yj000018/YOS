@@ -1,3 +1,22 @@
+---
+id: yos-y-os-constitution-v1
+title: Y-OS Constitution v1
+type: constitution
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Yannick
+parent: '[[01_Constitution_MOC]]'
+tags:
+- '#accepted'
+- '#constitution'
+- '#lineage'
+- '#memory'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Y-OS Constitution v1
 
 **Owner:** Chief Architect (Brahma)  

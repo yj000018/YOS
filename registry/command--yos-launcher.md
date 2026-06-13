@@ -1,15 +1,20 @@
 ---
-slug: command--yos-launcher
-name: "/YOS"
+id: yos-command--yos-launcher
+title: command--yos-launcher
 type: command
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Main Y-OS launcher command. Displays all public and advanced objects from Y-REG and allows navigation and execution."
-tags: ["launcher", "command", "yos", "cli"]
-git_path: "registry/command--yos-launcher.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- launcher
+- command
+- yos
+- cli
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # /YOS — Y-OS Launcher Command
 

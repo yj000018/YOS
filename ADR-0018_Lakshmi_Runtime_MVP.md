@@ -1,3 +1,25 @@
+---
+id: yos-adr-0018-lakshmi-runtime-mvp
+title: ADR-0018 Lakshmi Runtime MVP
+type: adr
+status: ACCEPTED
+date: '2026-06-13'
+owner: Lakshmi
+parent: '[[02_ADR_MOC]]'
+related_adrs:
+- '[[ADR-0013]]'
+- '[[ADR-0017]]'
+tags:
+- '#accepted'
+- '#adr'
+- '#lineage'
+- '#yos'
+aliases:
+- Lakshmi Runtime MVP
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0018: Lakshmi Runtime MVP v2
 
 **Date:** 2026-06-13  

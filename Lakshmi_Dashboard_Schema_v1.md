@@ -1,3 +1,20 @@
+---
+id: yos-lakshmi-dashboard-schema-v1
+title: Lakshmi Dashboard Schema v1
+type: governance_report
+status: ACCEPTED
+date: '2026-06-13'
+version: v1
+owner: Lakshmi
+parent: '[[04_Governance_MOC]]'
+tags:
+- '#accepted'
+- '#governance'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Dashboard Schema v1
 
 **Owner:** Chief Architect (Brahma)  

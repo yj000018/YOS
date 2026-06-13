@@ -1,3 +1,36 @@
+---
+id: yos-adr-0035-executable-constitutional-governance
+title: ADR-0035 Executable Constitutional Governance
+type: adr
+status: PROPOSED
+mission: MISSION-009
+date: '2026-06-13'
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_adrs:
+- '[[ADR-0024]]'
+- '[[ADR-0033]]'
+- '[[ADR-0034]]'
+related_missions:
+- '[[mission_009]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article II: Preservation Principle'
+- 'Article III: Derivation Transparency'
+- 'Article IV: Human Override Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#adr'
+- '#lineage'
+- '#proposed'
+- '#yos'
+aliases:
+- Executable Constitutional Governance
+- MISSION-009
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0035 — Executable Constitutional Governance
 
 **Status:** PROPOSED → ACCEPTED (pending Ganesha ADOPT)

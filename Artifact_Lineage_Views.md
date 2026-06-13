@@ -1,3 +1,19 @@
+---
+id: yos-artifact-lineage-views
+title: Artifact Lineage Views
+type: artifact
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+tags:
+- '#accepted'
+- '#artifact'
+- '#lineage'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Artifact Lineage Views
 
 **Owner:** Chief Architect (Brahma)  

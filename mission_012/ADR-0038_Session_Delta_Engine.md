@@ -1,3 +1,30 @@
+---
+id: yos-adr-0038-session-delta-engine
+title: ADR-0038 Session Delta Engine
+type: adr
+status: ACCEPTED
+mission: MISSION-012
+date: '2026-06-13'
+owner: Brahma
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_012]]'
+constitutional_articles:
+- 'Article I: Artifact Primacy'
+- 'Article V: Governance Before Autonomy'
+tags:
+- '#accepted'
+- '#adr'
+- '#ccr'
+- '#session-delta'
+- '#yos'
+aliases:
+- Session Delta Engine
+- MISSION-012
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ADR-0038: Session Delta Engine
 
 ## Status

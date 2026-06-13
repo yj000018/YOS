@@ -1,3 +1,26 @@
+---
+id: yos-art-m005-f4ea52
+title: ART-M005-F4EA52
+type: mission
+status: ACCEPTED
+mission: MISSION-005
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[03_Missions_MOC]]'
+related_missions:
+- '[[mission_005]]'
+tags:
+- '#accepted'
+- '#ccr'
+- '#lineage'
+- '#mission'
+- '#yos'
+aliases:
+- MISSION-005
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # ART-M005-F4EA52 — Governance Review
 
 **Worker:** Lakshmi  

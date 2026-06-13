@@ -1,3 +1,19 @@
+---
+id: yos-runtime-flow-diagram
+title: Runtime Flow Diagram
+type: runtime_spec
+status: ACCEPTED
+date: '2026-06-13'
+owner: Manus Y-OS
+parent: '[[05_Runtime_MOC]]'
+tags:
+- '#accepted'
+- '#runtime'
+- '#yos'
+source_branch: y-os-doctrine
+canonical: true
+---
+
 # Runtime Flow Diagram
 
 **Owner:** Chief Architect (Brahma)  

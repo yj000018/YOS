@@ -1,15 +1,20 @@
 ---
-slug: agent--manus
-name: "Manus"
+id: yos-agent--manus
+title: agent--manus
 type: agent
 status: active
-visibility: public
-registration_stage: registry
-version: "1.0.0"
-description: "Primary orchestration agent of Y-OS. Executes tasks, manages skills, interacts with all Y-OS services and external APIs."
-tags: ["agent", "orchestration", "core", "manus"]
-git_path: "registry/agent--manus.md"
+date: '2026-06-13'
+version: 1.0.0
+owner: Manus Y-OS
+tags:
+- agent
+- orchestration
+- core
+- manus
+source_branch: y-os-doctrine
+canonical: true
 ---
+
 
 # Manus — Primary Y-OS Agent
 

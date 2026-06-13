@@ -1,0 +1,90 @@
+{
+  "ART-M003-DCC856": {
+    "id": "ART-M003-DCC856",
+    "type": "CEO Directive",
+    "worker": "CEO",
+    "provider": "Human",
+    "model": "Human",
+    "parent_id": null,
+    "status": "Consumed",
+    "created_at": "2026-06-13T12:41:36.659286Z",
+    "tokens": 0
+  },
+  "ART-M003-148294": {
+    "id": "ART-M003-148294",
+    "type": "Strategy Output",
+    "worker": "Krishna",
+    "provider": "anthropic",
+    "model": "claude-opus-4-5-20251101",
+    "parent_id": "ART-M003-DCC856",
+    "status": "Consumed",
+    "created_at": "2026-06-13T12:42:13.064677Z",
+    "tokens": 1649
+  },
+  "ART-M003-31480A": {
+    "id": "ART-M003-31480A",
+    "type": "Architecture Output",
+    "worker": "Brahma",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M003-148294",
+    "status": "Consumed",
+    "created_at": "2026-06-13T12:42:24.086790Z",
+    "tokens": 1004
+  },
+  "ART-M003-62BCD1": {
+    "id": "ART-M003-62BCD1",
+    "type": "Plan Output",
+    "worker": "Ganesha",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M003-31480A",
+    "status": "Consumed",
+    "created_at": "2026-06-13T12:42:30.897880Z",
+    "tokens": 882
+  },
+  "ART-M003-C0819C": {
+    "id": "ART-M003-C0819C",
+    "type": "Build Output",
+    "worker": "Hanuman",
+    "provider": "manus_runtime",
+    "model": "manus",
+    "parent_id": "ART-M003-62BCD1",
+    "status": "Consumed",
+    "created_at": "2026-06-13T12:42:30.898227Z",
+    "tokens": 0
+  },
+  "ART-M003-5EB6E6": {
+    "id": "ART-M003-5EB6E6",
+    "type": "Governance Output",
+    "worker": "Lakshmi",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M003-C0819C",
+    "status": "Consumed",
+    "created_at": "2026-06-13T12:42:37.023895Z",
+    "tokens": 793
+  },
+  "ART-M003-FA125E": {
+    "id": "ART-M003-FA125E",
+    "type": "Learning Output",
+    "worker": "Saraswati",
+    "provider": "anthropic",
+    "model": "claude-opus-4-5-20251101",
+    "parent_id": "ART-M003-5EB6E6",
+    "status": "Consumed",
+    "created_at": "2026-06-13T12:43:07.720524Z",
+    "tokens": 1783
+  },
+  "ART-M003-E71840": {
+    "id": "ART-M003-E71840",
+    "type": "Reporting Output",
+    "worker": "Ganesha",
+    "provider": "openai",
+    "model": "gpt-4o-2024-08-06",
+    "parent_id": "ART-M003-FA125E",
+    "status": "Done",
+    "created_at": "2026-06-13T12:43:10.967897Z",
+    "tokens": 517
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-06-14T03:55:17.495586+00:00",
+  "mission": "MISSION-020",
+  "eis_score": 87.5,
+  "eis_grade": "B",
+  "eis_status": "GOOD",
+  "components": [
+    {
+      "name": "Health",
+      "score": 90.0,
+      "weight": 0.2,
+      "weighted_score": 18.0,
+      "status": "EXCELLENT",
+      "notes": "System health score 90.0/100"
+    },
+    {
+      "name": "Governance",
+      "score": 96.8,
+      "weight": 0.2,
+      "weighted_score": 19.36,
+      "status": "EXCELLENT",
+      "notes": "Constitutional compliance 96.8/100"
+    },
+    {
+      "name": "Execution",
+      "score": 100.0,
+      "weight": 0.15,
+      "weighted_score": 15.0,
+      "status": "EXCELLENT",
+      "notes": "Pipeline success rate 100.0%"
+    },
+    {
+      "name": "Observability",
+      "score": 85.0,
+      "weight": 0.1,
+      "weighted_score": 8.5,
+      "status": "GOOD",
+      "notes": "Observability engine, alert engine, weekly review all implemented"
+    },
+    {
+      "name": "Graph Quality",
+      "score": 47.9,
+      "weight": 0.15,
+      "weighted_score": 7.19,
+      "status": "CRITICAL",
+      "notes": "Orphan rate 34.7% \u2014 4,488 edges, 645 nodes"
+    },
+    {
+      "name": "Memory Quality",
+      "score": 100.0,
+      "weight": 0.1,
+      "weighted_score": 10.0,
+      "status": "EXCELLENT",
+      "notes": "5 memory assets tracked"
+    },
+    {
+      "name": "Pipeline Quality",
+      "score": 100.0,
+      "weight": 0.05,
+      "weighted_score": 5.0,
+      "status": "EXCELLENT",
+      "notes": "10/10 artifacts validated"
+    },
+    {
+      "name": "Artifact Quality",
+      "score": 90.0,
+      "weight": 0.05,
+      "weighted_score": 4.5,
+      "status": "EXCELLENT",
+      "notes": "9/10 artifacts governance-approved"
+    }
+  ],
+  "summary": "Y-OS achieves Executive Intelligence Score 87.5/100 (B \u2014 GOOD). Governance and Execution are strong. Graph Quality requires attention (orphan rate 34.7%).",
+  "top_strengths": [
+    "Execution",
+    "Memory Quality",
+    "Pipeline Quality"
+  ],
+  "top_gaps": [
+    "Graph Quality",
+    "Observability",
+    "Health"
+  ],
+  "recommended_next_mission": "MISSION-021: KGC v4 body wikilinks pass \u2014 reduce orphan rate to <15%"
+}

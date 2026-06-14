@@ -1,0 +1,61 @@
+{
+  "review_id": "WR-W24-2026-M020",
+  "week": "W24-2026",
+  "generated_at": "2026-06-14T03:55:17.485252+00:00",
+  "health_score": 90.0,
+  "governance_score": 100.0,
+  "missions_completed": [
+    "MISSION-013",
+    "MISSION-013B",
+    "MISSION-014",
+    "MISSION-015",
+    "MISSION-016",
+    "MISSION-017",
+    "MISSION-018",
+    "MISSION-019"
+  ],
+  "adrs_accepted": [
+    "ADR-0040",
+    "ADR-0041",
+    "ADR-0042",
+    "ADR-0043",
+    "ADR-0044",
+    "ADR-0045",
+    "ADR-0046"
+  ],
+  "artifacts_produced": 10,
+  "pipelines_executed": 1,
+  "total_tokens": 9016,
+  "total_cost_usd": 0.15019,
+  "what_changed": [
+    "MISSION-019 delivered Organizational Digital Twin Runtime v1",
+    "MISSION-020 delivered Autonomous Organizational Observability",
+    "KGC v3 implemented with 29 relationship types",
+    "645 graph nodes, 4,488 edges now in knowledge graph",
+    "Executive Intelligence Score system implemented"
+  ],
+  "what_improved": [
+    "Graph edges: 565 \u2192 4,488 (+3,923 since M-013)",
+    "Concept nodes: 0 \u2192 39 (+39)",
+    "Artifact validity rate: 100%",
+    "Governance compliance: 100%",
+    "Pipeline success rate: 100%"
+  ],
+  "what_degraded": [
+    "Orphan rate: 34.7% (target \u2264 15%) \u2014 KGC body wikilinks pass needed",
+    "Average latency: 8,243ms (target \u2264 5,000ms) \u2014 provider-dependent"
+  ],
+  "strategic_risks": [
+    "OpenAI provider dependence (>70% of calls) \u2014 diversification needed",
+    "ODT Registry is static snapshot \u2014 live update hooks not yet automated",
+    "No external Notion sync \u2014 memory assets isolated to GitHub"
+  ],
+  "recommended_actions": [
+    "MISSION-021: KGC v4 body wikilinks pass \u2014 reduce orphan rate to <15%",
+    "MISSION-022: Notion ODT Sync \u2014 push registry to Notion automatically",
+    "MISSION-023: Provider Diversification \u2014 add Gemini/Grok workers",
+    "Enable Dataview plugin in Obsidian vault for live dashboard queries"
+  ],
+  "artifact_type": "Weekly Organizational Review",
+  "mission_id": "MISSION-020"
+}

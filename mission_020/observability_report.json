@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-06-14T03:55:17.482345+00:00",
+  "mission": "MISSION-020",
+  "total_findings": 11,
+  "critical": 0,
+  "high": 1,
+  "warning": 4,
+  "info": 6,
+  "findings": [
+    {
+      "finding_id": "OBS-0001",
+      "category": "ADR_DRIFT",
+      "severity": "WARNING",
+      "title": "Proposed ADRs Pending Acceptance",
+      "description": "1 ADR(s) in PROPOSED state \u2014 not yet ACCEPTED",
+      "affected_entities": [
+        "ADR-0047"
+      ],
+      "recommendation": "Review and accept or reject pending ADRs",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0002",
+      "category": "MISSION_DRIFT",
+      "severity": "WARNING",
+      "title": "Missions in RUNNING State",
+      "description": "1 mission(s) not yet completed",
+      "affected_entities": [
+        "MISSION-020"
+      ],
+      "recommendation": "Complete or cancel running missions",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0003",
+      "category": "GRAPH_ANOMALY",
+      "severity": "HIGH",
+      "title": "High Orphan Rate",
+      "description": "Orphan rate 34.7% exceeds threshold (30%). Files with no inbound links are invisible in graph navigation.",
+      "affected_entities": [],
+      "recommendation": "Run KGC v3 body wikilinks pass to reduce orphans",
+      "auto_resolvable": true
+    },
+    {
+      "finding_id": "OBS-0004",
+      "category": "GOVERNANCE_RISK",
+      "severity": "INFO",
+      "title": "Governance Compliance 100%",
+      "description": "All artifacts carry APPROVE governance verdict",
+      "affected_entities": [],
+      "recommendation": "",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0005",
+      "category": "PIPELINE_FAILURE",
+      "severity": "INFO",
+      "title": "All Pipelines Completed",
+      "description": "No failed pipelines detected",
+      "affected_entities": [],
+      "recommendation": "",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0006",
+      "category": "UNUSED_CONCEPTS",
+      "severity": "INFO",
+      "title": "Concept Coverage OK (39 nodes)",
+      "description": "Concept layer adequately populated",
+      "affected_entities": [],
+      "recommendation": "",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0007",
+      "category": "COST_ANOMALY",
+      "severity": "INFO",
+      "title": "Cost Within Budget ($0.1502)",
+      "description": "Cumulative cost below $1.00 threshold",
+      "affected_entities": [],
+      "recommendation": "",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0008",
+      "category": "PROVIDER_DEPENDENCE",
+      "severity": "WARNING",
+      "title": "High OpenAI Dependence",
+      "description": "OpenAI handles 72.7% of all calls \u2014 single-provider risk",
+      "affected_entities": [
+        "openai"
+      ],
+      "recommendation": "Diversify provider usage across Anthropic, Gemini",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0009",
+      "category": "MEMORY_GROWTH",
+      "severity": "INFO",
+      "title": "Memory Assets Tracked (5)",
+      "description": "Memory asset inventory adequate",
+      "affected_entities": [],
+      "recommendation": "",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0010",
+      "category": "LINEAGE_INTEGRITY",
+      "severity": "INFO",
+      "title": "Lineage Integrity 100%",
+      "description": "All artifacts have mission lineage",
+      "affected_entities": [],
+      "recommendation": "",
+      "auto_resolvable": false
+    },
+    {
+      "finding_id": "OBS-0011",
+      "category": "EXECUTION_BOTTLENECK",
+      "severity": "WARNING",
+      "title": "Elevated Latency",
+      "description": "Average latency 8243ms above 5s target",
+      "affected_entities": [],
+      "recommendation": "Consider async execution for non-blocking workers",
+      "auto_resolvable": false
+    }
+  ],
+  "overall_status": "HEALTHY"
+}

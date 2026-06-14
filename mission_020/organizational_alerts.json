@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-06-14T03:55:17.488425+00:00",
+  "mission": "MISSION-020",
+  "total_alerts": 6,
+  "CRITICAL": 0,
+  "HIGH": 1,
+  "WARNING": 0,
+  "INFO": 5,
+  "alerts": [
+    {
+      "alert_id": "ALT-0001",
+      "alert_type": "GRAPH_INTEGRITY",
+      "severity": "HIGH",
+      "title": "Orphan Rate Critical",
+      "description": "Orphan rate 34.7% \u2014 34.7% of files have no inbound links",
+      "affected": [],
+      "action_required": true,
+      "auto_resolvable": true,
+      "timestamp": "2026-06-14T03:55:17.488361+00:00"
+    },
+    {
+      "alert_id": "ALT-0002",
+      "alert_type": "GOVERNANCE",
+      "severity": "INFO",
+      "title": "Governance 100% Compliant",
+      "description": "All artifacts carry APPROVE verdict",
+      "affected": [],
+      "action_required": false,
+      "auto_resolvable": false,
+      "timestamp": "2026-06-14T03:55:17.488377+00:00"
+    },
+    {
+      "alert_id": "ALT-0003",
+      "alert_type": "PIPELINE_FAILURE",
+      "severity": "INFO",
+      "title": "All Pipelines Healthy",
+      "description": "No pipeline failures detected",
+      "affected": [],
+      "action_required": false,
+      "auto_resolvable": false,
+      "timestamp": "2026-06-14T03:55:17.488384+00:00"
+    },
+    {
+      "alert_id": "ALT-0004",
+      "alert_type": "COST_SPIKE",
+      "severity": "INFO",
+      "title": "Cost OK ($0.1502)",
+      "description": "Cost within acceptable range",
+      "affected": [],
+      "action_required": false,
+      "auto_resolvable": false,
+      "timestamp": "2026-06-14T03:55:17.488395+00:00"
+    },
+    {
+      "alert_id": "ALT-0005",
+      "alert_type": "LINEAGE_BREAK",
+      "severity": "INFO",
+      "title": "Lineage Integrity OK",
+      "description": "All artifacts have complete lineage",
+      "affected": [],
+      "action_required": false,
+      "auto_resolvable": false,
+      "timestamp": "2026-06-14T03:55:17.488404+00:00"
+    },
+    {
+      "alert_id": "ALT-0006",
+      "alert_type": "GRAPH_INTEGRITY",
+      "severity": "INFO",
+      "title": "System Health OK (90.0/100)",
+      "description": "Health score within acceptable range",
+      "affected": [],
+      "action_required": false,
+      "auto_resolvable": false,
+      "timestamp": "2026-06-14T03:55:17.488409+00:00"
+    }
+  ]
+}

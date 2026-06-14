@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {"id": "cockpit", "type": "file", "file": "10_Live_Dashboards/Dashboard_Executive_Cockpit.md", "x": 0, "y": 0, "width": 280, "height": 80, "color": "1"},
+    {"id": "health", "type": "file", "file": "mission_019/system_health_report.md", "x": -700, "y": -300, "width": 220, "height": 60, "color": "5"},
+    {"id": "governance", "type": "file", "file": "mission_020/governance_observability_report.md", "x": -700, "y": -100, "width": 220, "height": 60, "color": "5"},
+    {"id": "execution", "type": "file", "file": "10_Live_Dashboards/Dashboard_Live_Runtime.md", "x": -700, "y": 100, "width": 220, "height": 60, "color": "4"},
+    {"id": "memory", "type": "file", "file": "mission_019/odt_registry.md", "x": -700, "y": 300, "width": 220, "height": 60, "color": "3"},
+    {"id": "pipelines", "type": "file", "file": "10_Live_Dashboards/Dashboard_Pipelines.md", "x": 700, "y": -300, "width": 220, "height": 60, "color": "4"},
+    {"id": "economics", "type": "file", "file": "10_Live_Dashboards/Dashboard_Economics.md", "x": 700, "y": -100, "width": 220, "height": 60, "color": "6"},
+    {"id": "observability", "type": "file", "file": "mission_020/observability_report.md", "x": 700, "y": 100, "width": 220, "height": 60, "color": "3"},
+    {"id": "alerts", "type": "file", "file": "mission_020/organizational_alerts.md", "x": 700, "y": 300, "width": 220, "height": 60, "color": "6"},
+    {"id": "weekly", "type": "file", "file": "mission_020/weekly_review.md", "x": 0, "y": 400, "width": 220, "height": 60, "color": "2"},
+    {"id": "eis", "type": "file", "file": "mission_020/executive_intelligence_score.md", "x": 0, "y": -300, "width": 220, "height": 60, "color": "1"},
+    {"id": "odt_master", "type": "file", "file": "08_Visual_Maps/YOS_Organizational_Digital_Twin.canvas", "x": 0, "y": -500, "width": 260, "height": 60, "color": "1"},
+    {"id": "evolution", "type": "file", "file": "08_Visual_Maps/ODT_Evolution_Map.canvas", "x": -400, "y": 500, "width": 220, "height": 60, "color": "3"},
+    {"id": "artifacts", "type": "file", "file": "10_Live_Dashboards/Dashboard_Artifacts.md", "x": 400, "y": 500, "width": 220, "height": 60, "color": "2"}
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "cockpit", "toNode": "health", "fromSide": "left", "toSide": "right", "label": "observes"},
+    {"id": "e2", "fromNode": "cockpit", "toNode": "governance", "fromSide": "left", "toSide": "right", "label": "audits"},
+    {"id": "e3", "fromNode": "cockpit", "toNode": "execution", "fromSide": "left", "toSide": "right", "label": "monitors"},
+    {"id": "e4", "fromNode": "cockpit", "toNode": "memory", "fromSide": "left", "toSide": "right", "label": "stores"},
+    {"id": "e5", "fromNode": "cockpit", "toNode": "pipelines", "fromSide": "right", "toSide": "left", "label": "executes"},
+    {"id": "e6", "fromNode": "cockpit", "toNode": "economics", "fromSide": "right", "toSide": "left", "label": "costs"},
+    {"id": "e7", "fromNode": "cockpit", "toNode": "observability", "fromSide": "right", "toSide": "left", "label": "observes"},
+    {"id": "e8", "fromNode": "cockpit", "toNode": "alerts", "fromSide": "right", "toSide": "left", "label": "alerts"},
+    {"id": "e9", "fromNode": "cockpit", "toNode": "weekly", "fromSide": "bottom", "toSide": "top", "label": "publishes"},
+    {"id": "e10", "fromNode": "eis", "toNode": "cockpit", "fromSide": "bottom", "toSide": "top", "label": "scores"},
+    {"id": "e11", "fromNode": "odt_master", "toNode": "eis", "fromSide": "bottom", "toSide": "top", "label": "feeds"},
+    {"id": "e12", "fromNode": "cockpit", "toNode": "evolution", "fromSide": "bottom", "toSide": "top", "label": "tracks"},
+    {"id": "e13", "fromNode": "cockpit", "toNode": "artifacts", "fromSide": "bottom", "toSide": "top", "label": "produces"}
+  ]
+}

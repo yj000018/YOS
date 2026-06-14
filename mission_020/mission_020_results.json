@@ -1,0 +1,22 @@
+{
+  "mission": "MISSION-020",
+  "generated_at": "2026-06-14T03:55:17.496021+00:00",
+  "tests": {
+    "TEST_A": "PASS",
+    "TEST_B": "PASS",
+    "TEST_C": "PASS",
+    "TEST_D": "PASS",
+    "TEST_E": "PASS",
+    "TEST_F": "PASS",
+    "TEST_G": "PASS"
+  },
+  "passed": 7,
+  "total": 7,
+  "health_score": 90.0,
+  "governance_compliance": 96.8,
+  "eis_score": 87.5,
+  "eis_grade": "B",
+  "observability_findings": 11,
+  "alerts_generated": 6,
+  "weekly_review_id": "WR-W24-2026-M020"
+}

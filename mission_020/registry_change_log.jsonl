@@ -1,0 +1,3 @@
+{"event_id": "EVT-MISSION-020-COMPLETE", "event_type": "mission_complete", "source": "MISSION-020", "timestamp": "2026-06-14T03:55:17.475430+00:00", "payload": {"mission_id": "MISSION-020", "status": "PASSED"}}
+{"event_id": "EVT-ADR-0047-ACCEPTED", "event_type": "adr_accepted", "source": "ADR-0047", "timestamp": "2026-06-14T03:55:17.475972+00:00", "payload": {"adr_id": "ADR-0047", "status": "ACCEPTED"}}
+{"event_id": "EVT-ART-M020-WEEKLY-REVIEW-REGISTERED", "event_type": "artifact_registered", "source": "ART-M020-WEEKLY-REVIEW", "timestamp": "2026-06-14T03:55:17.476517+00:00", "payload": {"artifact_id": "ART-M020-WEEKLY-REVIEW"}}

@@ -13,15 +13,16 @@ Reads one JSON file, produces the canonical sketch/consulting trace:
   - WITHOUT vs WITH Y-OS comparison (bottom)
 
 Usage:
-    python3 render_value_trace.py <schema.json> <output_base>
+    python3 render_value_trace.py <schema.json> <output_base> [--format png|svg|excalidraw|mermaid|all]
 
-Example:
+Examples:
     python3 render_value_trace.py value_trace_schema.json ./out/my_mission
+    python3 render_value_trace.py value_trace_schema.json ./out/my_mission --format png
+    python3 render_value_trace.py value_trace_schema.json ./out/my_mission --format mermaid
+    python3 render_value_trace.py value_trace_schema.json ./out/my_mission --format all
 
-Produces:
-    my_mission.png
-    my_mission.svg
-    my_mission.excalidraw
+Default format: png
+Available formats: png, svg, excalidraw, mermaid, all
 """
 import sys, json, uuid
 import matplotlib
@@ -528,8 +529,99 @@ def _build_excalidraw(d, out_path):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# MERMAID BUILDER
+# ══════════════════════════════════════════════════════════════════════════════
+def _build_mermaid(d, out_path):
+    m = d["mission"]; cols = d["team_columns"]; verdict = d["verdict"]
+    metrics = d["metrics"]; handoffs = d["handoffs"]
+
+    lines = [
+        "flowchart LR",
+        f'    title["{m["id"]} — {m["title"]}"]',
+        "",
+        "    %% Team flow",
+    ]
+
+    # Nodes
+    for col in cols:
+        safe_id = f"col{col['num']}"
+        label = col['title'].replace('\n', ' ')
+        lines.append(f'    {safe_id}["{col["num"]}. {label}"]')
+
+    # Arrows between columns
+    for i in range(len(cols) - 1):
+        a = f"col{cols[i]['num']}"
+        b = f"col{cols[i+1]['num']}"
+        if i < len(handoffs):
+            ho = handoffs[i]["name"]
+            lines.append(f'    {a} -->|"{ho}"| {b}')
+        else:
+            lines.append(f'    {a} --> {b}')
+
+    ans = verdict["answer"]
+    last_col = cols[-1]["num"]
+    t_time = metrics["total_time"]
+    t_cost = metrics["total_cost"]
+    t_tok  = metrics["total_tokens"]
+    verdict_style = "    style verdict fill:#1a6e2e,color:#fff,stroke:#1a6e2e" if ans == "YES" \
+        else "    style verdict fill:#c0392b,color:#fff,stroke:#c0392b"
+    lines += [
+        "",
+        "    %% Verdict",
+        f"    verdict[\"{ans} — DID Y-OS CREATE VALUE?\"]",
+        f"    col{last_col} --> verdict",
+        "",
+        "    %% Metrics note",
+        f"    note[\"Time: {t_time} | Cost: {t_cost} | Tokens: {t_tok}\"]",
+        "",
+        "    %% Style",
+        verdict_style,
+    ]
+
+    with open(out_path, "w") as f:
+        f.write("\n".join(lines) + "\n")
+    print(f"Mermaid: {out_path}")
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: python3 render_value_trace.py <schema.json> <output_base>")
+        print("Usage: python3 render_value_trace.py <schema.json> <output_base> [--format png|svg|excalidraw|mermaid|all]")
         sys.exit(1)
-    render(sys.argv[1], sys.argv[2])
+
+    schema_path = sys.argv[1]
+    out_base    = sys.argv[2]
+    fmt = "png"  # default
+    if "--format" in sys.argv:
+        idx = sys.argv.index("--format")
+        if idx + 1 < len(sys.argv):
+            fmt = sys.argv[idx + 1].lower()
+
+    with open(schema_path) as f:
+        d = json.load(f)
+
+    if fmt in ("png", "svg", "all"):
+        import matplotlib
+        matplotlib.use("Agg")
+        render(schema_path, out_base)
+        if fmt not in ("svg", "all"):
+            # render() already saved both PNG and SVG — remove SVG if not requested
+            import os
+            if fmt == "png" and os.path.exists(out_base + ".svg"):
+                os.remove(out_base + ".svg")
+    elif fmt == "excalidraw":
+        _build_excalidraw(d, out_base + ".excalidraw")
+        print(f"Excalidraw: {out_base}.excalidraw")
+    elif fmt == "mermaid":
+        _build_mermaid(d, out_base + ".mmd")
+    elif fmt == "all":
+        pass  # already handled above by render()
+    else:
+        print(f"Unknown format: {fmt}. Choose: png, svg, excalidraw, mermaid, all")
+        sys.exit(1)
+
+    # For 'all', also build excalidraw and mermaid
+    if fmt == "all":
+        _build_excalidraw(d, out_base + ".excalidraw")
+        _build_mermaid(d, out_base + ".mmd")
+        print("All formats generated.")

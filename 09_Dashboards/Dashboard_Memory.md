@@ -60,3 +60,8 @@ SORT title ASC
 - [[concepts/Session_Delta]] — Session Delta Concept
 - [[concepts/Canonical_Memory]] — Canonical Memory Concept
 - [[YOS_Living_Memory_Pipeline]] — Visual Pipeline Map
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

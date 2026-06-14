@@ -81,3 +81,8 @@ Operational. SSH auth via y_os_github key. 71+ commits pushed.
 
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[00_Y-OS_Home]] — Home
+
+
+## Semantic Links
+
+- **implements:** [[Preservation_Principle]]

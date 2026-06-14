@@ -65,3 +65,8 @@ LIMIT 20
 - [[00_Y-OS_Home]] — Home
 - [[Dashboard_Orphans]] — Orphan Files
 - [[YOS_ADR_Dependency_Map]] — ADR Dependency Map
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

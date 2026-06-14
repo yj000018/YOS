@@ -1,0 +1,340 @@
+{
+  "nodes": [
+    {
+      "id": "m0",
+      "x": -1000,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-013\nKGC v1",
+      "color": "1"
+    },
+    {
+      "id": "m1",
+      "x": -780,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-013B\nGraph Audit",
+      "color": "2"
+    },
+    {
+      "id": "m2",
+      "x": -560,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-014\nCognitive Graph",
+      "color": "3"
+    },
+    {
+      "id": "m3",
+      "x": -340,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-015\nKGC v2",
+      "color": "4"
+    },
+    {
+      "id": "m4",
+      "x": -120,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-016\nCCR Runtime v2",
+      "color": "5"
+    },
+    {
+      "id": "m5",
+      "x": 100,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-017\nLive Workers",
+      "color": "6"
+    },
+    {
+      "id": "m6",
+      "x": 320,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-018\nPipeline",
+      "color": "1"
+    },
+    {
+      "id": "m7",
+      "x": 540,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-019\nODT",
+      "color": "2"
+    },
+    {
+      "id": "m8",
+      "x": 760,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-020\nObservability",
+      "color": "3"
+    },
+    {
+      "id": "m9",
+      "x": 980,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-021\nKGC v4",
+      "color": "4"
+    },
+    {
+      "id": "a0",
+      "x": -1000,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0040",
+      "color": "4"
+    },
+    {
+      "id": "a1",
+      "x": -780,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0041",
+      "color": "4"
+    },
+    {
+      "id": "a2",
+      "x": -560,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0042",
+      "color": "4"
+    },
+    {
+      "id": "a3",
+      "x": -340,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0043",
+      "color": "4"
+    },
+    {
+      "id": "a4",
+      "x": -120,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0044",
+      "color": "4"
+    },
+    {
+      "id": "a5",
+      "x": 100,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0045",
+      "color": "4"
+    },
+    {
+      "id": "a6",
+      "x": 320,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0046",
+      "color": "4"
+    },
+    {
+      "id": "a7",
+      "x": 540,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0047",
+      "color": "4"
+    },
+    {
+      "id": "a8",
+      "x": 760,
+      "y": 160,
+      "width": 180,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0048",
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "m0",
+      "toNode": "m1",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e2",
+      "fromNode": "m1",
+      "toNode": "m2",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e3",
+      "fromNode": "m2",
+      "toNode": "m3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e4",
+      "fromNode": "m3",
+      "toNode": "m4",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e5",
+      "fromNode": "m4",
+      "toNode": "m5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e6",
+      "fromNode": "m5",
+      "toNode": "m6",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e7",
+      "fromNode": "m6",
+      "toNode": "m7",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e8",
+      "fromNode": "m7",
+      "toNode": "m8",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e9",
+      "fromNode": "m8",
+      "toNode": "m9",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "ea0",
+      "fromNode": "m0",
+      "toNode": "a0",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea1",
+      "fromNode": "m1",
+      "toNode": "a1",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea2",
+      "fromNode": "m2",
+      "toNode": "a2",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea3",
+      "fromNode": "m3",
+      "toNode": "a3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea4",
+      "fromNode": "m4",
+      "toNode": "a4",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea5",
+      "fromNode": "m5",
+      "toNode": "a5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea6",
+      "fromNode": "m6",
+      "toNode": "a6",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea7",
+      "fromNode": "m7",
+      "toNode": "a7",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "ea8",
+      "fromNode": "m8",
+      "toNode": "a8",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    }
+  ]
+}

@@ -94,3 +94,8 @@ KGC v2 operational (MISSION-015). kg_compiler_v2.py deployed.
 
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[00_Y-OS_Home]] — Home
+
+
+## Semantic Links
+
+- **implements:** [[Cognitive_Graph]]

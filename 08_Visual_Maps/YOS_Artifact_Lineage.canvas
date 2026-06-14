@@ -1,0 +1,268 @@
+{
+  "nodes": [
+    {
+      "id": "n_m017",
+      "x": -400,
+      "y": -200,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "M-017\nLive Workers",
+      "color": "2"
+    },
+    {
+      "id": "n_m018",
+      "x": -400,
+      "y": 0,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "M-018\nPipeline",
+      "color": "2"
+    },
+    {
+      "id": "n_m019",
+      "x": -400,
+      "y": 200,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "M-019\nODT",
+      "color": "2"
+    },
+    {
+      "id": "n_brahma",
+      "x": -150,
+      "y": -200,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "Brahma\nArchitecture",
+      "color": "1"
+    },
+    {
+      "id": "n_hanuman",
+      "x": -150,
+      "y": -80,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "Hanuman\nBuild",
+      "color": "3"
+    },
+    {
+      "id": "n_saraswati",
+      "x": -150,
+      "y": 40,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "Saraswati\nLearning",
+      "color": "5"
+    },
+    {
+      "id": "n_lakshmi",
+      "x": -150,
+      "y": 160,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "Lakshmi\nGovernance",
+      "color": "4"
+    },
+    {
+      "id": "n_ganesha",
+      "x": -150,
+      "y": 280,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "Ganesha\nReporting",
+      "color": "6"
+    },
+    {
+      "id": "n_art1",
+      "x": 100,
+      "y": -200,
+      "width": 180,
+      "height": 70,
+      "type": "text",
+      "text": "ART-M017\nBRAHMA",
+      "color": "1"
+    },
+    {
+      "id": "n_art2",
+      "x": 100,
+      "y": -80,
+      "width": 180,
+      "height": 70,
+      "type": "text",
+      "text": "ART-M017\nHANUMAN",
+      "color": "3"
+    },
+    {
+      "id": "n_art3",
+      "x": 100,
+      "y": 40,
+      "width": 180,
+      "height": 70,
+      "type": "text",
+      "text": "ART-M017\nSARASWATI",
+      "color": "5"
+    },
+    {
+      "id": "n_art4",
+      "x": 100,
+      "y": 160,
+      "width": 180,
+      "height": 70,
+      "type": "text",
+      "text": "ART-M017\nLAKSHMI",
+      "color": "4"
+    },
+    {
+      "id": "n_art5",
+      "x": 100,
+      "y": 280,
+      "width": 180,
+      "height": 70,
+      "type": "text",
+      "text": "ART-M018\nCEO-BRIEFING",
+      "color": "6"
+    },
+    {
+      "id": "n_registry",
+      "x": 350,
+      "y": 40,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "Artifact\nRegistry v2",
+      "color": "2"
+    },
+    {
+      "id": "n_git",
+      "x": 550,
+      "y": 40,
+      "width": 160,
+      "height": 70,
+      "type": "text",
+      "text": "Git\ny-os-doctrine",
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n_m017",
+      "toNode": "n_brahma",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n_m017",
+      "toNode": "n_hanuman",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n_m018",
+      "toNode": "n_saraswati",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n_m018",
+      "toNode": "n_lakshmi",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n_m019",
+      "toNode": "n_ganesha",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n_brahma",
+      "toNode": "n_art1",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n_hanuman",
+      "toNode": "n_art2",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e8",
+      "fromNode": "n_saraswati",
+      "toNode": "n_art3",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e9",
+      "fromNode": "n_lakshmi",
+      "toNode": "n_art4",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e10",
+      "fromNode": "n_ganesha",
+      "toNode": "n_art5",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e11",
+      "fromNode": "n_art1",
+      "toNode": "n_registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e12",
+      "fromNode": "n_art3",
+      "toNode": "n_registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e13",
+      "fromNode": "n_art5",
+      "toNode": "n_registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e14",
+      "fromNode": "n_registry",
+      "toNode": "n_git",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "publishes"
+    }
+  ]
+}

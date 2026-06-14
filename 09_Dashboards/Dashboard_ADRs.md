@@ -73,3 +73,8 @@ SORT mission ASC
 
 - [[02_ADRs_MOC]] — ADR Map of Content
 - [[YOS_ADR_Dependency_Map]] — Visual Dependency Map
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

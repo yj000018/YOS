@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "n_title",
+      "x": 0,
+      "y": -300,
+      "width": 300,
+      "height": 80,
+      "type": "text",
+      "text": "Y-OS Graph Health\nKGC v4 \u2014 MISSION-021",
+      "color": "1"
+    },
+    {
+      "id": "n_orphan_b",
+      "x": -400,
+      "y": -100,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "Orphans BEFORE\n65 (13.1%)",
+      "color": "6"
+    },
+    {
+      "id": "n_orphan_a",
+      "x": -400,
+      "y": 50,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "Orphans AFTER\n35 (7.1%)\n\u2705 < 15%",
+      "color": "3"
+    },
+    {
+      "id": "n_gq_b",
+      "x": -100,
+      "y": -100,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "Graph Quality BEFORE\n90.8",
+      "color": "6"
+    },
+    {
+      "id": "n_gq_a",
+      "x": -100,
+      "y": 50,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "Graph Quality AFTER\n100\n\u2705 > 80",
+      "color": "3"
+    },
+    {
+      "id": "n_edges_b",
+      "x": 200,
+      "y": -100,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "Edges BEFORE\n2118",
+      "color": "6"
+    },
+    {
+      "id": "n_edges_a",
+      "x": 200,
+      "y": 50,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "Edges AFTER\n4056\n+1938",
+      "color": "3"
+    },
+    {
+      "id": "n_eis_b",
+      "x": 500,
+      "y": -100,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "EIS BEFORE\n87.5",
+      "color": "6"
+    },
+    {
+      "id": "n_eis_a",
+      "x": 500,
+      "y": 50,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "EIS AFTER\n95.3\n\u2705 > 92",
+      "color": "3"
+    },
+    {
+      "id": "n_dt",
+      "x": 0,
+      "y": 200,
+      "width": 220,
+      "height": 80,
+      "type": "text",
+      "text": "Digital Thread\n92.9% coverage\n\u2705 > 90%",
+      "color": "3"
+    },
+    {
+      "id": "n_dashboard",
+      "x": 0,
+      "y": 350,
+      "width": 220,
+      "height": 60,
+      "type": "file",
+      "color": "2",
+      "file": "10_Live_Dashboards/Dashboard_Graph_Quality.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n_orphan_b",
+      "toNode": "n_orphan_a",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "resolved"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n_gq_b",
+      "toNode": "n_gq_a",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "improved"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n_edges_b",
+      "toNode": "n_edges_a",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "grew"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n_eis_b",
+      "toNode": "n_eis_a",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "improved"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n_title",
+      "toNode": "n_dt",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "measures"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n_dt",
+      "toNode": "n_dashboard",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "reports_to"
+    }
+  ]
+}

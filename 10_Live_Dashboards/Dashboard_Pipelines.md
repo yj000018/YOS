@@ -41,3 +41,8 @@ SORT verdict ASC
 - [[pipeline_state]]
 - [[odt_registry]]
 - [[ODT_Pipeline_Flow]]
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

@@ -67,3 +67,7 @@ Hanuman — COO. Responsible for execution, build, deploy, and operational tasks
 
 ---
 *Compiled by Context Compiler v2 — Y-OS*
+
+## Semantic Links
+
+- **produces:** [[ADR-0043_CCR_Runtime_v2_Implementation]]

@@ -43,3 +43,8 @@ WHERE supersedes != null
 - [[odt_registry]]
 - [[ODT_Artifact_Lineage]]
 - [[Dashboard_Live_Runtime]]
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

@@ -49,3 +49,8 @@ tags: ['#payload', '#yos', '#openai']
 
 ---
 *Built by Provider Payload Builder v1 — Y-OS*
+
+
+## Semantic Links
+
+- **produces:** [[ADR-0041_Cognitive_Graph_Architecture]], [[ADR-0042_KGC_v2_Visual_Drill_Down]], [[ADR-0040_Knowledge_Graph_Compiler]], [[ADR-0043_CCR_Runtime_v2_Implementation]]

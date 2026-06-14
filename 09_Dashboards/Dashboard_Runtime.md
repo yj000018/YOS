@@ -60,3 +60,8 @@ SORT title ASC
 - [[concepts/Y_ORC]] — Y-ORC Concept
 - [[concepts/CCR_Runtime]] — CCR Runtime Concept
 - [[YOS_Runtime_Flow]] — Visual Runtime Flow
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

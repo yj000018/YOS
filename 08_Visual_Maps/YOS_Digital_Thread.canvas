@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "n_ceo",
+      "x": -800,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "CEO Directive\n(Yannick)",
+      "color": "1"
+    },
+    {
+      "id": "n_mission",
+      "x": -550,
+      "y": 0,
+      "width": 200,
+      "height": 80,
+      "type": "file",
+      "color": "2",
+      "file": "01_Missions_MOC.md"
+    },
+    {
+      "id": "n_adr",
+      "x": -280,
+      "y": 0,
+      "width": 200,
+      "height": 80,
+      "type": "file",
+      "color": "3",
+      "file": "02_ADR_MOC.md"
+    },
+    {
+      "id": "n_worker",
+      "x": 0,
+      "y": 0,
+      "width": 200,
+      "height": 100,
+      "type": "text",
+      "text": "Workers\n(Brahma/Hanuman/\nSaraswati/Lakshmi)",
+      "color": "4"
+    },
+    {
+      "id": "n_context",
+      "x": 260,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "Context Pack\n(CCR v2)",
+      "color": "5"
+    },
+    {
+      "id": "n_provider",
+      "x": 480,
+      "y": 0,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "LLM Provider\n(OpenAI/Anthropic)",
+      "color": "6"
+    },
+    {
+      "id": "n_artifact",
+      "x": 700,
+      "y": 0,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "Artifact\n(ART-M0XX)",
+      "color": "7"
+    },
+    {
+      "id": "n_gov",
+      "x": 700,
+      "y": 150,
+      "width": 200,
+      "height": 80,
+      "type": "text",
+      "text": "Governance Review\n(Lakshmi)",
+      "color": "2"
+    },
+    {
+      "id": "n_dashboard",
+      "x": 700,
+      "y": -150,
+      "width": 200,
+      "height": 80,
+      "type": "file",
+      "color": "3",
+      "file": "10_Live_Dashboards/Dashboard_Executive_Cockpit.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n_ceo",
+      "toNode": "n_mission",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "creates"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n_mission",
+      "toNode": "n_adr",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n_adr",
+      "toNode": "n_worker",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n_worker",
+      "toNode": "n_context",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "consumes"
+    },
+    {
+      "id": "e5",
+      "fromNode": "n_context",
+      "toNode": "n_provider",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "routes_to"
+    },
+    {
+      "id": "e6",
+      "fromNode": "n_provider",
+      "toNode": "n_artifact",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n_artifact",
+      "toNode": "n_gov",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "reviewed_by"
+    },
+    {
+      "id": "e8",
+      "fromNode": "n_artifact",
+      "toNode": "n_dashboard",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "published_to"
+    }
+  ]
+}

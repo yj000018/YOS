@@ -51,3 +51,8 @@ TOTAL: 9,133 tokens → $0.150190
 - [[odt_registry]]
 - [[ODT_Economics]]
 - [[Dashboard_Workers]]
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

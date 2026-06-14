@@ -185,3 +185,8 @@ CUMULATIVE: $0.150
 ---
 
 *Executive Cockpit v1 — MISSION-020 — Y-OS*
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

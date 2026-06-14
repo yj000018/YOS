@@ -41,3 +41,8 @@ SORT worker ASC
 - [[odt_registry]]
 - [[Dashboard_Live_Runtime]]
 - [[Dashboard_Economics]]
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

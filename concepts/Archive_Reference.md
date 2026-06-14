@@ -79,3 +79,8 @@ Doctrine defined (ADR-0039).
 
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[00_Y-OS_Home]] — Home
+
+
+## Semantic Links
+
+- **implements:** [[Living_Memory]]

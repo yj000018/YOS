@@ -82,3 +82,8 @@ Defined but not yet invoked. Constitution v1 is the current canonical version.
 
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[00_Y-OS_Home]] — Home
+
+
+## Semantic Links
+
+- **implements:** [[Governance_Before_Autonomy]]

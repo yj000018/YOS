@@ -60,3 +60,8 @@ SORT title ASC
 
 - [[10_Concepts_MOC]] — Concepts Map of Content
 - [[YOS_Organizational_Digital_Twin]] — Full System Map
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

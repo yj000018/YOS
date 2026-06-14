@@ -82,3 +82,8 @@ Operational. CEO Recommendations required for all ADR acceptance.
 
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[00_Y-OS_Home]] — Home
+
+
+## Semantic Links
+
+- **implements:** [[Human_Override]]

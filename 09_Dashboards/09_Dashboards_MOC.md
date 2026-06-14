@@ -33,3 +33,8 @@ parent: '[[00_Y-OS_Home]]'
 - [[00_Y-OS_Home]] — Home
 - [[08_Visual_Maps_MOC]] — Visual Maps
 - [[10_Concepts_MOC]] — Concepts
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

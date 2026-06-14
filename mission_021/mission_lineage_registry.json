@@ -1,0 +1,703 @@
+{
+  "MISSION-012A_Storage_Audit": {
+    "mission_id": "MISSION-012A_Storage_Audit",
+    "title": "MISSION-012A_Storage_Audit",
+    "adrs": [
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0006_Creation_CODO_Role"
+    ],
+    "artifacts": [],
+    "dashboards": [
+      "03_Missions_MOC"
+    ],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-013_Knowledge_Graph_Compiler": {
+    "mission_id": "MISSION-013_Knowledge_Graph_Compiler",
+    "title": "MISSION-013_Knowledge_Graph_Compiler",
+    "adrs": [
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0039_Living_Memory_Pipeline",
+      "ADR-0037_CCR_Runtime_v2"
+    ],
+    "artifacts": [],
+    "dashboards": [
+      "03_Missions_MOC"
+    ],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-013B_Graph_Quality_Audit": {
+    "mission_id": "MISSION-013B_Graph_Quality_Audit",
+    "title": "MISSION-013B_Graph_Quality_Audit",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0027_Context_Continuity",
+      "ADR-0029_Context_Compiler",
+      "ADR-0030_v2_ACCEPTED",
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0022_Y-OS_Theory_of_Organization",
+      "ADR-0037_CCR_Runtime_v2",
+      "ADR-0033_Governance_Determinism",
+      "ADR-0021_Foundational_Doctrine",
+      "ADR-0036_Context_Architecture",
+      "ADR-0025_Y-ORC_Runtime_v1",
+      "ADR-0024_Y-OS_Constitution",
+      "ADR-0039_Living_Memory_Pipeline",
+      "ADR-0035_Executable_Constitutional_Governance"
+    ],
+    "artifacts": [],
+    "dashboards": [
+      "03_Missions_MOC"
+    ],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-014_Cognitive_Graph_Architecture": {
+    "mission_id": "MISSION-014_Cognitive_Graph_Architecture",
+    "title": "MISSION-014_Cognitive_Graph_Architecture",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0029_Context_Compiler",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0039_Living_Memory_Pipeline"
+    ],
+    "artifacts": [],
+    "dashboards": [
+      "03_Missions_MOC"
+    ],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-015_KGC_v2_Visual_Drill_Down": {
+    "mission_id": "MISSION-015_KGC_v2_Visual_Drill_Down",
+    "title": "MISSION-015_KGC_v2_Visual_Drill_Down",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0037_CCR_Runtime_v2",
+      "ADR-0042_KGC_v2_Visual_Drill_Down",
+      "ADR-0024_Y-OS_Constitution",
+      "ADR-0039_Living_Memory_Pipeline"
+    ],
+    "artifacts": [],
+    "dashboards": [
+      "03_Missions_MOC"
+    ],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-016_CCR_Runtime_v2": {
+    "mission_id": "MISSION-016_CCR_Runtime_v2",
+    "title": "MISSION-016_CCR_Runtime_v2",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation",
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0033_Governance_Determinism",
+      "ADR-0039_Living_Memory_Pipeline"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-017_Live_Worker_Execution_Report": {
+    "mission_id": "MISSION-017_Live_Worker_Execution_Report",
+    "title": "MISSION-017_Live_Worker_Execution_Report",
+    "adrs": [
+      "ADR-0044_Live_Worker_Execution_v1"
+    ],
+    "artifacts": [
+      "ART-M017-BRAHMA-ARCHITECTURE",
+      "ART-M017-HANUMAN-BUILD",
+      "ART-M017-SARASWATI-LEARNING",
+      "ART-M017-LAKSHMI-GOVERNANCE",
+      "ART-M017-BRAHMA-ARCHITECTURE",
+      "ART-M017-HANUMAN-BUILD",
+      "ART-M017-SARASWATI-LEARNING",
+      "ART-M017-LAKSHMI-GOVERNANCE"
+    ],
+    "dashboards": [],
+    "governance_events": [
+      "ART-M017-LAKSHMI-GOVERNANCE",
+      "ART-M017-LAKSHMI-GOVERNANCE"
+    ],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-018_Multi_Worker_Pipeline_Report": {
+    "mission_id": "MISSION-018_Multi_Worker_Pipeline_Report",
+    "title": "MISSION-018_Multi_Worker_Pipeline_Report",
+    "adrs": [
+      "ADR-0045_Multi_Worker_Pipeline_Orchestration_v1"
+    ],
+    "artifacts": [
+      "ART-M018-CEO-DIRECTIVE",
+      "ART-M018-BRAHMA-ARCHITECTURE",
+      "ART-M018-HANUMAN-BUILD",
+      "ART-M018-SARASWATI-LEARNING",
+      "ART-M018-LAKSHMI-GOVERNANCE",
+      "ART-M018-GANESHA-CEO-BRIEFING",
+      "ART-M018-CEO-DIRECTIVE",
+      "ART-M018-BRAHMA-ARCHITECTURE",
+      "ART-M018-HANUMAN-BUILD",
+      "ART-M018-SARASWATI-LEARNING",
+      "ART-M018-LAKSHMI-GOVERNANCE",
+      "ART-M018-GANESHA-CEO-BRIEFING"
+    ],
+    "dashboards": [],
+    "governance_events": [
+      "ART-M018-LAKSHMI-GOVERNANCE",
+      "ART-M018-GANESHA-CEO-BRIEFING",
+      "ART-M018-LAKSHMI-GOVERNANCE",
+      "ART-M018-GANESHA-CEO-BRIEFING"
+    ],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-019_Organizational_Digital_Twin_Report": {
+    "mission_id": "MISSION-019_Organizational_Digital_Twin_Report",
+    "title": "MISSION-019_Organizational_Digital_Twin_Report",
+    "adrs": [
+      "ADR-0046_Organizational_Digital_Twin_Runtime_v1"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-020_Autonomous_Observability_Report": {
+    "mission_id": "MISSION-020_Autonomous_Observability_Report",
+    "title": "MISSION-020_Autonomous_Observability_Report",
+    "adrs": [
+      "ADR-0047_Autonomous_Organizational_Observability"
+    ],
+    "artifacts": [],
+    "dashboards": [
+      "Dashboard_Executive_Cockpit",
+      "Dashboard_Executive_Cockpit"
+    ],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "MISSION-021A_Roadmap_Architecture_Review": {
+    "mission_id": "MISSION-021A_Roadmap_Architecture_Review",
+    "title": "MISSION-021A: Roadmap Architecture Review \u2014 PASSED \u2705",
+    "adrs": [
+      "ADR-0048_Roadmap_Architecture_Review"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "context_pack_MISSION-016-A": {
+    "mission_id": "context_pack_MISSION-016-A",
+    "title": "Context Pack \u2014 MISSION-016-A / Brahma (MODE-D)",
+    "adrs": [
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0037_CCR_Runtime_v2",
+      "ADR-0033_Governance_Determinism",
+      "ADR-0039_Living_Memory_Pipeline",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "context_pack_MISSION-016-B": {
+    "mission_id": "context_pack_MISSION-016-B",
+    "title": "Context Pack \u2014 MISSION-016-B / Hanuman (MODE-B)",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "context_pack_MISSION-016-C": {
+    "mission_id": "context_pack_MISSION-016-C",
+    "title": "Context Pack \u2014 MISSION-016-C / Saraswati (MODE-E)",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0042_KGC_v2_Visual_Drill_Down",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "session_delta_MISSION-016-A": {
+    "mission_id": "session_delta_MISSION-016-A",
+    "title": "Session Delta \u2014 MISSION-016-A",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "session_delta_MISSION-016-B": {
+    "mission_id": "session_delta_MISSION-016-B",
+    "title": "Session Delta \u2014 MISSION-016-B",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "session_delta_MISSION-016-C": {
+    "mission_id": "session_delta_MISSION-016-C",
+    "title": "Session Delta \u2014 MISSION-016-C",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-A_openai": {
+    "mission_id": "payload_MISSION-016-A_openai",
+    "title": "Provider Payload \u2014 MISSION-016-A / openai",
+    "adrs": [
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0037_CCR_Runtime_v2",
+      "ADR-0033_Governance_Determinism",
+      "ADR-0039_Living_Memory_Pipeline",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-A_anthropic": {
+    "mission_id": "payload_MISSION-016-A_anthropic",
+    "title": "Provider Payload \u2014 MISSION-016-A / anthropic",
+    "adrs": [
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0037_CCR_Runtime_v2",
+      "ADR-0033_Governance_Determinism",
+      "ADR-0039_Living_Memory_Pipeline",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-A_manus": {
+    "mission_id": "payload_MISSION-016-A_manus",
+    "title": "Provider Payload \u2014 MISSION-016-A / manus",
+    "adrs": [
+      "ADR-0038_Session_Delta_Engine",
+      "ADR-0037_CCR_Runtime_v2",
+      "ADR-0033_Governance_Determinism",
+      "ADR-0039_Living_Memory_Pipeline",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-B_openai": {
+    "mission_id": "payload_MISSION-016-B_openai",
+    "title": "Provider Payload \u2014 MISSION-016-B / openai",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-B_anthropic": {
+    "mission_id": "payload_MISSION-016-B_anthropic",
+    "title": "Provider Payload \u2014 MISSION-016-B / anthropic",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-B_manus": {
+    "mission_id": "payload_MISSION-016-B_manus",
+    "title": "Provider Payload \u2014 MISSION-016-B / manus",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-C_openai": {
+    "mission_id": "payload_MISSION-016-C_openai",
+    "title": "Provider Payload \u2014 MISSION-016-C / openai",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0042_KGC_v2_Visual_Drill_Down",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-C_anthropic": {
+    "mission_id": "payload_MISSION-016-C_anthropic",
+    "title": "Provider Payload \u2014 MISSION-016-C / anthropic",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0042_KGC_v2_Visual_Drill_Down",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "payload_MISSION-016-C_manus": {
+    "mission_id": "payload_MISSION-016-C_manus",
+    "title": "Provider Payload \u2014 MISSION-016-C / manus",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0042_KGC_v2_Visual_Drill_Down",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "governance_review_MISSION-016-A": {
+    "mission_id": "governance_review_MISSION-016-A",
+    "title": "Governance Review \u2014 MISSION-016-A / Brahma",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "governance_review_MISSION-016-B": {
+    "mission_id": "governance_review_MISSION-016-B",
+    "title": "Governance Review \u2014 MISSION-016-B / Hanuman",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "governance_review_MISSION-016-C": {
+    "mission_id": "governance_review_MISSION-016-C",
+    "title": "Governance Review \u2014 MISSION-016-C / Saraswati",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_capture_MISSION-016-A": {
+    "mission_id": "lmp_capture_MISSION-016-A",
+    "title": "LMP \u2014 capture \u2014 MISSION-016-A",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_compress_MISSION-016-A": {
+    "mission_id": "lmp_compress_MISSION-016-A",
+    "title": "LMP \u2014 compress \u2014 MISSION-016-A",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_delta_MISSION-016-A": {
+    "mission_id": "lmp_delta_MISSION-016-A",
+    "title": "LMP \u2014 delta \u2014 MISSION-016-A",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_summarize_MISSION-016-A": {
+    "mission_id": "lmp_summarize_MISSION-016-A",
+    "title": "LMP \u2014 summarize \u2014 MISSION-016-A",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_archive_MISSION-016-A": {
+    "mission_id": "lmp_archive_MISSION-016-A",
+    "title": "LMP \u2014 archive \u2014 MISSION-016-A",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_canonicalize_MISSION-016-A": {
+    "mission_id": "lmp_canonicalize_MISSION-016-A",
+    "title": "LMP \u2014 canonicalize \u2014 MISSION-016-A",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_compile_MISSION-016-A": {
+    "mission_id": "lmp_compile_MISSION-016-A",
+    "title": "LMP \u2014 compile \u2014 MISSION-016-A",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation",
+      "ADR-0037_CCR_Runtime_v2"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_inject_MISSION-016-A": {
+    "mission_id": "lmp_inject_MISSION-016-A",
+    "title": "LMP \u2014 inject \u2014 MISSION-016-A",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation",
+      "ADR-0037_CCR_Runtime_v2"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_capture_MISSION-016-B": {
+    "mission_id": "lmp_capture_MISSION-016-B",
+    "title": "LMP \u2014 capture \u2014 MISSION-016-B",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_compress_MISSION-016-B": {
+    "mission_id": "lmp_compress_MISSION-016-B",
+    "title": "LMP \u2014 compress \u2014 MISSION-016-B",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_delta_MISSION-016-B": {
+    "mission_id": "lmp_delta_MISSION-016-B",
+    "title": "LMP \u2014 delta \u2014 MISSION-016-B",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_summarize_MISSION-016-B": {
+    "mission_id": "lmp_summarize_MISSION-016-B",
+    "title": "LMP \u2014 summarize \u2014 MISSION-016-B",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_archive_MISSION-016-B": {
+    "mission_id": "lmp_archive_MISSION-016-B",
+    "title": "LMP \u2014 archive \u2014 MISSION-016-B",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_canonicalize_MISSION-016-B": {
+    "mission_id": "lmp_canonicalize_MISSION-016-B",
+    "title": "LMP \u2014 canonicalize \u2014 MISSION-016-B",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_compile_MISSION-016-B": {
+    "mission_id": "lmp_compile_MISSION-016-B",
+    "title": "LMP \u2014 compile \u2014 MISSION-016-B",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_inject_MISSION-016-B": {
+    "mission_id": "lmp_inject_MISSION-016-B",
+    "title": "LMP \u2014 inject \u2014 MISSION-016-B",
+    "adrs": [
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_capture_MISSION-016-C": {
+    "mission_id": "lmp_capture_MISSION-016-C",
+    "title": "LMP \u2014 capture \u2014 MISSION-016-C",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_compress_MISSION-016-C": {
+    "mission_id": "lmp_compress_MISSION-016-C",
+    "title": "LMP \u2014 compress \u2014 MISSION-016-C",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_delta_MISSION-016-C": {
+    "mission_id": "lmp_delta_MISSION-016-C",
+    "title": "LMP \u2014 delta \u2014 MISSION-016-C",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_summarize_MISSION-016-C": {
+    "mission_id": "lmp_summarize_MISSION-016-C",
+    "title": "LMP \u2014 summarize \u2014 MISSION-016-C",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_archive_MISSION-016-C": {
+    "mission_id": "lmp_archive_MISSION-016-C",
+    "title": "LMP \u2014 archive \u2014 MISSION-016-C",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_canonicalize_MISSION-016-C": {
+    "mission_id": "lmp_canonicalize_MISSION-016-C",
+    "title": "LMP \u2014 canonicalize \u2014 MISSION-016-C",
+    "adrs": [],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_compile_MISSION-016-C": {
+    "mission_id": "lmp_compile_MISSION-016-C",
+    "title": "LMP \u2014 compile \u2014 MISSION-016-C",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0042_KGC_v2_Visual_Drill_Down",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  },
+  "lmp_inject_MISSION-016-C": {
+    "mission_id": "lmp_inject_MISSION-016-C",
+    "title": "LMP \u2014 inject \u2014 MISSION-016-C",
+    "adrs": [
+      "ADR-0041_Cognitive_Graph_Architecture",
+      "ADR-0042_KGC_v2_Visual_Drill_Down",
+      "ADR-0040_Knowledge_Graph_Compiler",
+      "ADR-0043_CCR_Runtime_v2_Implementation"
+    ],
+    "artifacts": [],
+    "dashboards": [],
+    "governance_events": [],
+    "forward_missions": [],
+    "backward_missions": []
+  }
+}

@@ -79,3 +79,8 @@ Implemented in art_runtime_v1.py.
 
 - [[10_Concepts_MOC]] — All Y-OS Concepts
 - [[00_Y-OS_Home]] — Home
+
+
+## Semantic Links
+
+- **implements:** [[Artifact_Primacy]]

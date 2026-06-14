@@ -43,3 +43,8 @@ tags: ['#payload', '#yos', '#manus']
 
 ---
 *Built by Provider Payload Builder v1 — Y-OS*
+
+
+## Semantic Links
+
+- **produces:** [[ADR-0038_Session_Delta_Engine]], [[ADR-0037_CCR_Runtime_v2]], [[ADR-0033_Governance_Determinism]], [[ADR-0039_Living_Memory_Pipeline]], [[ADR-0043_CCR_Runtime_v2_Implementation]]

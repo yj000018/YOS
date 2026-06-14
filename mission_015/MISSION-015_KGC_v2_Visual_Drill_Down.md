@@ -196,3 +196,8 @@ Implement in code:
 - **Branch:** `y-os-doctrine`
 - **`main` (930 commits):** INTACT
 - **No force push**
+
+
+## Semantic Links
+
+- **produces:** [[ADR-0041_Cognitive_Graph_Architecture]], [[ADR-0038_Session_Delta_Engine]], [[ADR-0040_Knowledge_Graph_Compiler]], [[ADR-0037_CCR_Runtime_v2]], [[ADR-0042_KGC_v2_Visual_Drill_Down]]

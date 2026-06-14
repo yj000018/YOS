@@ -51,3 +51,8 @@ SORT created_at DESC
 - [[odt_registry]]
 - [[system_health_report]]
 - [[YOS_Organizational_Digital_Twin]]
+
+
+## Semantic Links
+
+- **reports_to:** [[lmp_canonicalize_MISSION-016-C]], [[lmp_compile_MISSION-016-C]], [[lmp_inject_MISSION-016-C]]

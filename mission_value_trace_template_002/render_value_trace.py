@@ -1,55 +1,72 @@
 #!/usr/bin/env python3
 """
-render_value_trace.py
-Y-OS Value Trace Renderer v2.0
+render_value_trace.py  —  Y-OS Team Trace Renderer v3.0 (SKETCH EDITION)
+=========================================================================
+Reads one JSON file, produces the canonical sketch/consulting trace:
+  - White background, hand-drawn feel
+  - 9 numbered team columns with icon circles
+  - Artifact handoffs row
+  - Plugins NOT ACTIVATED panel (left)
+  - 3 synchronized views (Architecture / Team / Value)
+  - Runtime Metrics panel (right)
+  - DID Y-OS CREATE VALUE? verdict box (bottom right)
+  - WITHOUT vs WITH Y-OS comparison (bottom)
 
 Usage:
     python3 render_value_trace.py <schema.json> <output_base>
 
 Example:
-    python3 render_value_trace.py value_trace_schema.json ./output/my_mission
+    python3 render_value_trace.py value_trace_schema.json ./out/my_mission
 
 Produces:
     my_mission.png
     my_mission.svg
     my_mission.excalidraw
 """
-import sys
-import json
-import math
-import uuid
+import sys, json, uuid
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 from matplotlib.patches import FancyBboxPatch
-import numpy as np
 
-# ─── COLOR PALETTE ────────────────────────────────────────────────────────────
-WHITE  = "#ffffff"; CREAM = "#fafaf8"
+# ─── FONT ─────────────────────────────────────────────────────────────────────
+plt.rcParams.update({
+    "font.family": "DejaVu Sans",
+    "axes.spines.top": False, "axes.spines.right": False,
+    "axes.spines.left": False, "axes.spines.bottom": False,
+})
+
+# ─── PALETTE ──────────────────────────────────────────────────────────────────
+WHITE  = "#ffffff"; CREAM = "#fafaf8"; LIGHT = "#f5f5f0"
 BORDER = "#333333"; DARK  = "#111111"; MID   = "#444444"; DIM = "#888888"
-LIGHT_BORDER = "#cccccc"
+LIGHT_BORDER = "#aaaaaa"
 
-ROLE_COLORS = {
-    "human":       "#1a4fa0",
-    "orchestrator":"#444444",
-    "architect":   "#6b3fa0",
-    "worker":      "#1a7a6e",
-    "validator":   "#c85a00",
-    "memory":      "#444444",
-    "deliverable": "#b87800",
-    "skipped":     "#888888",
-}
-VERDICT_COLORS = {
-    "YES":   ("#1a6e2e", "#f0fff4"),
-    "NO":    ("#c0392b", "#fff5f5"),
-    "AMBER": ("#b87800", "#fffbf0"),
-}
-RED   = "#c0392b"
-GREEN = "#1a6e2e"
-AMBER = "#b87800"
+BLUE   = "#1a4fa0"   # human / Yannick
+PURPLE = "#6b3fa0"   # architect / Ganesha
+TEAL   = "#1a7a6e"   # worker
+ORANGE = "#c85a00"   # validator / Lakshmi
+AMBER  = "#b87800"   # deliverable / artifact
+GREEN  = "#1a6e2e"   # value / YES
+RED    = "#c0392b"   # plugins skipped / WITHOUT
 
-def col(role):
-    return ROLE_COLORS.get(role, DARK)
+ROLE_HEX = {
+    "human":       BLUE,
+    "orchestrator":MID,
+    "architect":   PURPLE,
+    "worker":      TEAL,
+    "validator":   ORANGE,
+    "memory":      MID,
+    "deliverable": AMBER,
+    "skipped":     DIM,
+}
+VERDICT_STYLE = {
+    "YES":   (GREEN, "#f0fff4"),
+    "NO":    (RED,   "#fff5f5"),
+    "AMBER": (AMBER, "#fffbf0"),
+}
+
+def rc(role): return ROLE_HEX.get(role, DARK)
 
 # ─── CANVAS ───────────────────────────────────────────────────────────────────
 FIG_W, FIG_H = 38, 26
@@ -63,17 +80,17 @@ def make_fig():
     return fig, ax
 
 # ─── DRAW HELPERS ─────────────────────────────────────────────────────────────
-def rbox(ax, x, y, w, h, fc=WHITE, ec=BORDER, lw=1.2, zorder=2):
+def rbox(ax, x, y, w, h, fc=WHITE, ec=BORDER, lw=1.2, alpha=1.0, zorder=2):
     p = FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.06",
-                       lw=lw, edgecolor=ec, facecolor=fc, zorder=zorder)
+                       lw=lw, edgecolor=ec, facecolor=fc, alpha=alpha, zorder=zorder)
     ax.add_patch(p)
 
 def t(ax, x, y, s, c=DARK, sz=9, w="normal", ha="left", va="top", z=5):
     ax.text(x, y, s, color=c, fontsize=sz, fontweight=w, ha=ha, va=va, zorder=z)
 
-def arrow(ax, x1, x2, y, color=BORDER, lw=1.5, label="", lc=None):
+def arrow(ax, x1, x2, y, color=BLUE, lw=1.8, label="", lc=None):
     ax.annotate("", xy=(x2, y), xytext=(x1, y),
-                arrowprops=dict(arrowstyle="-|>", color=color, lw=lw, mutation_scale=13), zorder=6)
+                arrowprops=dict(arrowstyle="-|>", color=color, lw=lw, mutation_scale=14), zorder=6)
     if label:
         mx = (x1+x2)/2
         lc = lc or color
@@ -84,35 +101,36 @@ def arrow(ax, x1, x2, y, color=BORDER, lw=1.5, label="", lc=None):
 def hline(ax, x1, x2, y, c=BORDER, lw=0.7):
     ax.plot([x1, x2], [y, y], color=c, lw=lw, zorder=3)
 
-def icon_circle(ax, cx, cy, r, color, symbol, sz=11):
+def section_header(ax, x, y, w, label, color):
+    rbox(ax, x, y-0.32, w, 0.32, fc=color, ec=color, lw=0, zorder=4)
+    t(ax, x+w/2, y-0.02, label, c=WHITE, sz=9, w="bold", ha="center", va="top", z=5)
+
+def icon_circle(ax, cx, cy, r, color, symbol, sz=12):
     circ = plt.Circle((cx, cy), r, fc=color, ec=color, lw=0, zorder=6)
     ax.add_patch(circ)
     t(ax, cx, cy+0.02, symbol, c=WHITE, sz=sz, w="bold", ha="center", va="center", z=7)
 
-def section_header(ax, x, y, w, label, color):
-    rbox(ax, x, y-0.32, w, 0.32, fc=color, ec=color, lw=0, zorder=4)
-    t(ax, x+w/2, y-0.04, label, c=WHITE, sz=9, w="bold", ha="center", va="top", z=5)
-
 # ══════════════════════════════════════════════════════════════════════════════
-# MAIN RENDER FUNCTION
+# MAIN RENDER
 # ══════════════════════════════════════════════════════════════════════════════
 def render(schema_path, out_base):
     with open(schema_path) as f:
         d = json.load(f)
 
     fig, ax = make_fig()
-    m = d["mission"]
-    req = d["request"]
-    cols_data = d["team_columns"]
+
+    m        = d["mission"]
+    req      = d["request"]
+    cols_d   = d["team_columns"]
     handoffs = d["handoffs"]
-    plugins = d["plugins_skipped"]
-    arch = d["architecture_view"]
-    team_v = d["team_view"]
-    val_v = d["value_view"]
-    metrics = d["metrics"]
-    verdict = d["verdict"]
-    without = d["without_yos"]
-    with_yos = d["with_yos"]
+    plugins  = d["plugins_skipped"]
+    arch     = d["architecture_view"]
+    team_v   = d["team_view"]
+    val_v    = d["value_view"]
+    metrics  = d["metrics"]
+    verdict  = d["verdict"]
+    without  = d["without_yos"]
+    with_y   = d["with_yos"]
 
     # ── TITLE ──────────────────────────────────────────────────────────────────
     t(ax, FIG_W/2, FIG_H-0.25, "Y-OS TEAM TRACE — EXECUTION TRACE",
@@ -121,16 +139,16 @@ def render(schema_path, out_base):
       f"Mission: {m['id']}  •  Date: {m['date']}  •  {m['title']}",
       c=DIM, sz=10, ha="center")
     t(ax, FIG_W-0.3, FIG_H-0.25, f"TRACE ID: {m['trace_id']}",
-      c=col("human"), sz=9, w="bold", ha="right")
+      c=BLUE, sz=9, w="bold", ha="right")
 
     # ── YANNICK REQUEST BOX ────────────────────────────────────────────────────
     REQ_X, REQ_Y = 0.25, FIG_H - 1.2
     REQ_W, REQ_H = 2.8, 3.2
-    rbox(ax, REQ_X, REQ_Y - REQ_H, REQ_W, REQ_H, fc=CREAM, ec=col("human"), lw=2, zorder=3)
-    t(ax, REQ_X+REQ_W/2, REQ_Y-0.18, req["user"], c=col("human"), sz=11, w="bold", ha="center")
-    t(ax, REQ_X+REQ_W/2, REQ_Y-0.45, "REQUEST", c=col("human"), sz=9, ha="center")
-    icon_circle(ax, REQ_X+REQ_W/2, REQ_Y-0.9, 0.28, col("human"), req["user_icon"], sz=13)
-    hline(ax, REQ_X+0.15, REQ_X+REQ_W-0.15, REQ_Y-1.25, col("human"), 0.8)
+    rbox(ax, REQ_X, REQ_Y - REQ_H, REQ_W, REQ_H, fc=CREAM, ec=BLUE, lw=2, zorder=3)
+    t(ax, REQ_X+REQ_W/2, REQ_Y-0.18, req["user"].upper(), c=BLUE, sz=11, w="bold", ha="center")
+    t(ax, REQ_X+REQ_W/2, REQ_Y-0.45, "REQUEST", c=BLUE, sz=9, ha="center")
+    icon_circle(ax, REQ_X+REQ_W/2, REQ_Y-0.9, 0.28, BLUE, req.get("user_icon","Y"), sz=13)
+    hline(ax, REQ_X+0.15, REQ_X+REQ_W-0.15, REQ_Y-1.25, BLUE, 0.8)
     t(ax, REQ_X+0.15, REQ_Y-1.35, f'"{req["quote"]}"', c=MID, sz=8.5, va="top")
 
     # ── TEAM VIEW HEADER ───────────────────────────────────────────────────────
@@ -139,31 +157,47 @@ def render(schema_path, out_base):
     TEAM_AREA_W   = FIG_W - TEAM_X_START - 5.8
 
     rbox(ax, TEAM_X_START, TEAM_HEADER_Y - 0.38, TEAM_AREA_W, 0.38,
-         fc="#e8eef8", ec=col("human"), lw=1.2, zorder=3)
+         fc="#e8eef8", ec=BLUE, lw=1.2, zorder=3)
     t(ax, TEAM_X_START + TEAM_AREA_W/2, TEAM_HEADER_Y - 0.04,
-      "TEAM VIEW — WHO WORKED", c=col("human"), sz=11, w="bold", ha="center")
+      "TEAM VIEW — WHO WORKED", c=BLUE, sz=11, w="bold", ha="center")
 
     # ── TEAM COLUMNS ───────────────────────────────────────────────────────────
-    N_COLS = len(cols_data)
+    N_COLS = len(cols_d)
     COL_GAP = 0.18
     COL_W = (TEAM_AREA_W - COL_GAP * (N_COLS-1)) / N_COLS
     COL_TOP = TEAM_HEADER_Y - 0.38
     COL_H = 7.8
     COL_BODY_Y = COL_TOP - COL_H
 
-    for i, cd in enumerate(cols_data):
+    for i, col in enumerate(cols_d):
         cx = TEAM_X_START + i * (COL_W + COL_GAP)
-        c_ = col(cd["color_role"])
+        c_ = rc(col["color_role"])
+
+        # Card body
         rbox(ax, cx, COL_BODY_Y, COL_W, COL_H, fc=WHITE, ec=c_, lw=1.5, zorder=3)
-        rbox(ax, cx, COL_BODY_Y + COL_H - 0.55, COL_W, 0.55, fc=c_, ec=c_, lw=0, zorder=4)
+
+        # Numbered header bar
+        rbox(ax, cx, COL_BODY_Y + COL_H - 0.55, COL_W, 0.55,
+             fc=c_, ec=c_, lw=0, zorder=4)
         t(ax, cx + COL_W/2, COL_BODY_Y + COL_H - 0.04,
-          f"{cd['num']}  {cd['title']}", c=WHITE, sz=8.5, w="bold", ha="center", va="top", z=5)
-        icon_circle(ax, cx + COL_W/2, COL_BODY_Y + COL_H - 1.05, 0.28, c_, cd["icon"], sz=11)
+          f"{col['num']}  {col['title']}", c=WHITE, sz=8.5, w="bold",
+          ha="center", va="top", z=5)
+
+        # Icon circle
+        icon_circle(ax, cx + COL_W/2, COL_BODY_Y + COL_H - 1.05, 0.28, c_, col["icon"], sz=11)
+
+        # Fields — support both dict and list-of-tuples
+        fields = col["fields"]
+        if isinstance(fields, dict):
+            field_items = list(fields.items())
+        else:
+            field_items = [(f["label"], f["value"]) for f in fields]
+
         fy = COL_BODY_Y + COL_H - 1.55
-        for label, val in cd["fields"].items():
+        for label, val in field_items:
             t(ax, cx + 0.12, fy, label, c=c_, sz=7.5, w="bold", va="top")
-            t(ax, cx + 0.12, fy - 0.22, val, c=MID, sz=7.5, va="top")
-            lines = val.count("\n") + 1
+            t(ax, cx + 0.12, fy - 0.22, str(val), c=MID, sz=7.5, va="top")
+            lines = str(val).count("\n") + 1
             fy -= 0.22 + lines * 0.22 + 0.12
             if fy < COL_BODY_Y + 0.12:
                 break
@@ -172,24 +206,31 @@ def render(schema_path, out_base):
     for i in range(N_COLS - 1):
         x1 = TEAM_X_START + (i+1) * (COL_W + COL_GAP) - COL_GAP
         x2 = TEAM_X_START + (i+1) * (COL_W + COL_GAP)
-        arrow(ax, x1, x2, COL_BODY_Y + COL_H * 0.62, color=col("human"), lw=1.5)
-    arrow(ax, REQ_X + REQ_W, TEAM_X_START, COL_BODY_Y + COL_H * 0.62, color=col("human"), lw=2)
+        arrow(ax, x1, x2, COL_BODY_Y + COL_H * 0.62, color=BLUE, lw=1.5)
+
+    # Arrow from request box to col 1
+    arrow(ax, REQ_X + REQ_W, TEAM_X_START, COL_BODY_Y + COL_H * 0.62, color=BLUE, lw=2)
 
     # ── ARTIFACT HANDOFFS ROW ──────────────────────────────────────────────────
     HO_Y = COL_BODY_Y - 0.25
     HO_H = 1.6
-    rbox(ax, TEAM_X_START, HO_Y - HO_H, TEAM_AREA_W, HO_H, fc="#fffbf0", ec=AMBER, lw=1.2, zorder=3)
+    rbox(ax, TEAM_X_START, HO_Y - HO_H, TEAM_AREA_W, HO_H,
+         fc="#fffbf0", ec=AMBER, lw=1.2, zorder=3)
     t(ax, TEAM_X_START + TEAM_AREA_W/2, HO_Y - 0.18,
       "HAND-OFFS  (ARTIFACTS PASSED BETWEEN TEAM MEMBERS)",
       c=AMBER, sz=9, w="bold", ha="center")
 
     for i, ho in enumerate(handoffs):
         col_i = i + 1
+        if col_i >= N_COLS:
+            break
         x1 = TEAM_X_START + col_i * (COL_W + COL_GAP) + COL_W * 0.1
         x2 = TEAM_X_START + (col_i+1) * (COL_W + COL_GAP) - COL_W * 0.1
+        if x2 > TEAM_X_START + TEAM_AREA_W:
+            break
         y_ho = HO_Y - HO_H/2 - 0.1
         arrow(ax, x1, x2, y_ho, color=AMBER, lw=1.5, label=ho["name"], lc=AMBER)
-        t(ax, (x1+x2)/2, y_ho - 0.22, ho["detail"], c=DIM, sz=7, ha="center", va="top")
+        t(ax, (x1+x2)/2, y_ho - 0.22, ho.get("detail",""), c=DIM, sz=7, ha="center", va="top")
 
     # ── PLUGINS NOT ACTIVATED ──────────────────────────────────────────────────
     PL_X = 0.25
@@ -212,8 +253,9 @@ def render(schema_path, out_base):
         t(ax, PL_X + 0.45, py - 0.55, "✕ SKIPPED", c=RED, sz=7.5, va="top")
         py -= 1.1
 
+    reason = d.get("plugins_skipped_reason", "Core-Only Mode")
     t(ax, PL_X + 0.15, PL_Y - PL_H + 0.55, "Reason:", c=MID, sz=8, w="bold")
-    t(ax, PL_X + 0.15, PL_Y - PL_H + 0.32, d["plugins_skipped_reason"], c=DIM, sz=7.5)
+    t(ax, PL_X + 0.15, PL_Y - PL_H + 0.32, reason, c=DIM, sz=7.5)
 
     # ── 3 SYNCHRONIZED VIEWS ──────────────────────────────────────────────────
     VIEWS_Y = HO_Y - HO_H - 0.3
@@ -224,28 +266,33 @@ def render(schema_path, out_base):
 
     # View 1 — Architecture
     V1_X = VIEWS_X
-    rbox(ax, V1_X, VIEWS_Y - VIEWS_H, VIEW_W, VIEWS_H, fc=CREAM, ec=col("human"), lw=1.5, zorder=3)
-    section_header(ax, V1_X, VIEWS_Y, VIEW_W, "View 1 — ARCHITECTURE VIEW (Validation)", col("human"))
+    rbox(ax, V1_X, VIEWS_Y - VIEWS_H, VIEW_W, VIEWS_H, fc=CREAM, ec=BLUE, lw=1.5, zorder=3)
+    section_header(ax, V1_X, VIEWS_Y, VIEW_W, "View 1 — ARCHITECTURE VIEW (Validation)", BLUE)
 
     arch_steps = arch["steps"]
-    aw = (VIEW_W - 0.4) / len(arch_steps)
+    step_w = (VIEW_W - 0.4) / len(arch_steps) - 0.12
+    step_y = VIEWS_Y - VIEWS_H + 1.8
     for j, step in enumerate(arch_steps):
-        ax_ = V1_X + 0.2 + j * aw
-        c_ = col(step["color_role"])
-        rbox(ax, ax_, VIEWS_Y - 1.5, aw - 0.1, 0.7, fc=c_, ec=c_, lw=0, zorder=4)
-        t(ax, ax_ + (aw-0.1)/2, VIEWS_Y - 1.12, step["label"], c=WHITE, sz=8, w="bold", ha="center", va="top", z=5)
-        t(ax, ax_ + (aw-0.1)/2, VIEWS_Y - 1.42, step["sub"], c=WHITE, sz=7, ha="center", va="top", z=5)
+        sx = V1_X + 0.2 + j * (step_w + 0.12)
+        sc = rc(step["color_role"])
+        rbox(ax, sx, step_y, step_w, 0.8, fc=sc, ec=sc, lw=0, zorder=4)
+        t(ax, sx + step_w/2, step_y + 0.75,
+          f"{step['label']}\n{step['sub']}", c=WHITE, sz=7.5, w="bold",
+          ha="center", va="top", z=5)
         if j < len(arch_steps)-1:
-            arrow(ax, ax_ + aw - 0.1, ax_ + aw, VIEWS_Y - 1.15, color=BORDER, lw=1.2)
+            arrow(ax, sx + step_w, sx + step_w + 0.12, step_y + 0.4, color=BLUE, lw=1.2)
 
-    t(ax, V1_X + VIEW_W/2, VIEWS_Y - 2.1, arch["summary"], c=DARK, sz=8.5, w="bold", ha="center")
-    t(ax, V1_X + VIEW_W/2, VIEWS_Y - 2.45, arch["plugins_note"], c=RED, sz=8.5, w="bold", ha="center")
-    t(ax, V1_X + VIEW_W/2, VIEWS_Y - 2.8, arch["task_type_note"], c=GREEN, sz=8, ha="center")
+    t(ax, V1_X + VIEW_W/2, VIEWS_Y - VIEWS_H + 1.4,
+      arch.get("summary",""), c=DARK, sz=8.5, w="bold", ha="center")
+    t(ax, V1_X + VIEW_W/2, VIEWS_Y - VIEWS_H + 1.0,
+      arch.get("plugins_note",""), c=RED, sz=8.5, w="bold", ha="center")
+    t(ax, V1_X + VIEW_W/2, VIEWS_Y - VIEWS_H + 0.6,
+      arch.get("task_type_note",""), c=GREEN, sz=8, ha="center")
 
     # View 2 — Team
     V2_X = V1_X + VIEW_W + 0.3
-    rbox(ax, V2_X, VIEWS_Y - VIEWS_H, VIEW_W, VIEWS_H, fc=CREAM, ec=col("architect"), lw=1.5, zorder=3)
-    section_header(ax, V2_X, VIEWS_Y, VIEW_W, "View 2 — TEAM VIEW (Who Worked)", col("architect"))
+    rbox(ax, V2_X, VIEWS_Y - VIEWS_H, VIEW_W, VIEWS_H, fc=CREAM, ec=PURPLE, lw=1.5, zorder=3)
+    section_header(ax, V2_X, VIEWS_Y, VIEW_W, "View 2 — TEAM VIEW (Who Worked)", PURPLE)
 
     icons_per_row = 4
     for j, ic in enumerate(team_v["icons"]):
@@ -253,82 +300,95 @@ def render(schema_path, out_base):
         col_j = j % icons_per_row
         ix = V2_X + 0.5 + col_j * (VIEW_W - 0.6) / icons_per_row
         iy = VIEWS_Y - 1.1 - row * 1.1
-        icon_circle(ax, ix, iy, 0.22, col(ic["color_role"]), ic["sym"], sz=10)
-        t(ax, ix, iy - 0.3, ic["name"], c=MID, sz=6.5, ha="center", va="top", z=5)
+        icon_circle(ax, ix, iy, 0.22, rc(ic["color_role"]), ic["sym"], sz=9)
+        t(ax, ix, iy - 0.28, ic["name"], c=MID, sz=7, ha="center", va="top")
 
-    t(ax, V2_X + VIEW_W/2, VIEWS_Y - 3.1, team_v["tagline"], c=DARK, sz=8, w="bold", ha="center")
-    t(ax, V2_X + VIEW_W/2, VIEWS_Y - 3.4, team_v["tagline2"], c=DIM, sz=7.5, ha="center")
+    t(ax, V2_X + VIEW_W/2, VIEWS_Y - VIEWS_H + 0.85,
+      team_v.get("tagline",""), c=DARK, sz=8, w="bold", ha="center")
+    t(ax, V2_X + VIEW_W/2, VIEWS_Y - VIEWS_H + 0.5,
+      team_v.get("tagline2",""), c=DIM, sz=7.5, ha="center")
 
     # View 3 — Value
     V3_X = V2_X + VIEW_W + 0.3
-    rbox(ax, V3_X, VIEWS_Y - VIEWS_H, VIEW_W, VIEWS_H, fc="#fffbf0", ec=AMBER, lw=1.5, zorder=3)
+    rbox(ax, V3_X, VIEWS_Y - VIEWS_H, VIEW_W, VIEWS_H, fc="#fffef0", ec=AMBER, lw=1.5, zorder=3)
     section_header(ax, V3_X, VIEWS_Y, VIEW_W, "View 3 — VALUE VIEW (What Was Created)", AMBER)
 
     kpis = val_v["kpis"]
-    vw = (VIEW_W - 0.4) / len(kpis)
+    vbox_w = (VIEW_W - 0.5) / len(kpis) - 0.1
+    vbox_y = VIEWS_Y - 1.0
     for j, kpi in enumerate(kpis):
-        vx = V3_X + 0.2 + j * vw
-        rbox(ax, vx, VIEWS_Y - 2.2, vw - 0.1, 1.1, fc=WHITE, ec=AMBER, lw=1.2, zorder=4)
-        t(ax, vx + (vw-0.1)/2, VIEWS_Y - 1.25, kpi["num"], c=AMBER, sz=18, w="bold", ha="center", va="top", z=5)
-        t(ax, vx + (vw-0.1)/2, VIEWS_Y - 1.9, kpi["label"], c=MID, sz=7, ha="center", va="top", z=5)
+        vx = V3_X + 0.25 + j * (vbox_w + 0.1)
+        rbox(ax, vx, vbox_y - 1.2, vbox_w, 1.2, fc=WHITE, ec=AMBER, lw=1.2, zorder=4)
+        t(ax, vx + vbox_w/2, vbox_y - 0.18, kpi["num"],
+          c=AMBER, sz=18, w="bold", ha="center", va="top", z=5)
+        t(ax, vx + vbox_w/2, vbox_y - 0.75, kpi["label"],
+          c=MID, sz=7, ha="center", va="top", z=5)
 
-    t(ax, V3_X + VIEW_W/2, VIEWS_Y - 2.55, val_v["summary"], c=GREEN, sz=8.5, w="bold", ha="center")
-    t(ax, V3_X + VIEW_W/2, VIEWS_Y - 2.9, val_v["note"], c=DIM, sz=7.5, ha="center")
+    t(ax, V3_X + VIEW_W/2, VIEWS_Y - VIEWS_H + 0.65,
+      val_v.get("summary",""), c=GREEN, sz=9, w="bold", ha="center")
+    t(ax, V3_X + VIEW_W/2, VIEWS_Y - VIEWS_H + 0.32,
+      val_v.get("note",""), c=DIM, sz=7.5, ha="center")
 
-    # ── WITHOUT / WITH Y-OS ────────────────────────────────────────────────────
+    # ── WITHOUT vs WITH Y-OS ────────────────────────────────────────────────────
     CMP_Y = VIEWS_Y - VIEWS_H - 0.3
     CMP_H = 3.2
-    CMP_W = VIEWS_W
-    CMP_X = 0.25
-    W1_W = (CMP_W - 0.5) / 2
+    CMP_W = (VIEWS_W - 0.5) / 2
 
     # WITHOUT
-    rbox(ax, CMP_X, CMP_Y - CMP_H, W1_W, CMP_H, fc="#fff5f5", ec=RED, lw=1.5, zorder=3)
-    section_header(ax, CMP_X, CMP_Y, W1_W, "WITHOUT Y-OS  (MANUAL PROCESS)", RED)
+    rbox(ax, VIEWS_X, CMP_Y - CMP_H, CMP_W, CMP_H, fc="#fff5f5", ec=RED, lw=1.5, zorder=3)
+    section_header(ax, VIEWS_X, CMP_Y, CMP_W, "WITHOUT Y-OS  (MANUAL PROCESS)", RED)
 
     steps_w = without["steps"]
-    ms_w = (W1_W - 0.4) / len(steps_w)
+    step_bw = (CMP_W - 0.4) / len(steps_w) - 0.08
     for j, step in enumerate(steps_w):
-        sx = CMP_X + 0.2 + j * ms_w
-        rbox(ax, sx, CMP_Y - 1.5, ms_w - 0.08, 0.65, fc=WHITE, ec=RED, lw=1, zorder=4)
-        t(ax, sx + (ms_w-0.08)/2, CMP_Y - 1.12, step, c=RED, sz=7, ha="center", va="top", z=5)
+        sx = VIEWS_X + 0.2 + j * (step_bw + 0.08)
+        rbox(ax, sx, CMP_Y - CMP_H + 1.2, step_bw, 1.0, fc=WHITE, ec=LIGHT_BORDER, lw=0.8, zorder=4)
+        t(ax, sx + step_bw/2, CMP_Y - CMP_H + 2.1, step, c=MID, sz=7.5, ha="center", va="top", z=5)
         if j < len(steps_w)-1:
-            arrow(ax, sx + ms_w - 0.08, sx + ms_w, CMP_Y - 1.18, color=RED, lw=1)
+            t(ax, sx + step_bw + 0.01, CMP_Y - CMP_H + 1.72, "→", c=RED, sz=9, ha="center", z=5)
 
-    rbox(ax, CMP_X + W1_W/2 - 1.1, CMP_Y - 2.3, 2.2, 0.65, fc="#fde8e8", ec=RED, lw=1.2, zorder=4)
-    t(ax, CMP_X + W1_W/2, CMP_Y - 1.95, without["time_estimate"], c=RED, sz=12, w="bold", ha="center")
-    t(ax, CMP_X + W1_W/2, CMP_Y - 2.25, without["note"], c=RED, sz=8, ha="center")
+    rbox(ax, VIEWS_X + CMP_W/2 - 1.2, CMP_Y - CMP_H + 0.15, 2.4, 0.9,
+         fc="#fde8e8", ec=RED, lw=1, zorder=4)
+    t(ax, VIEWS_X + CMP_W/2, CMP_Y - CMP_H + 0.95,
+      without.get("time_estimate",""), c=RED, sz=11, w="bold", ha="center")
+    t(ax, VIEWS_X + CMP_W/2, CMP_Y - CMP_H + 0.55,
+      without.get("note",""), c=RED, sz=8, ha="center")
 
-    t(ax, CMP_X + W1_W + 0.25, CMP_Y - CMP_H/2, "VS", c=DARK, sz=14, w="bold", ha="center", va="center")
+    t(ax, VIEWS_X + CMP_W + 0.25, CMP_Y - CMP_H/2,
+      "VS", c=DARK, sz=16, w="bold", ha="center", va="center")
 
     # WITH
-    W2_X = CMP_X + W1_W + 0.5
-    W2_W = W1_W
-    rbox(ax, W2_X, CMP_Y - CMP_H, W2_W, CMP_H, fc="#f0fff4", ec=GREEN, lw=1.5, zorder=3)
-    section_header(ax, W2_X, CMP_Y, W2_W, "WITH Y-OS  (AUTOMATED WITH GOVERNANCE)", GREEN)
+    WITH_X = VIEWS_X + CMP_W + 0.5
+    rbox(ax, WITH_X, CMP_Y - CMP_H, CMP_W, CMP_H, fc="#f0fff4", ec=GREEN, lw=2, zorder=3)
+    section_header(ax, WITH_X, CMP_Y, CMP_W, "WITH Y-OS  (AUTOMATED WITH GOVERNANCE)", GREEN)
 
-    steps_y = with_yos["steps"]
-    ys_w = (W2_W - 0.4) / len(steps_y)
+    steps_y = with_y["steps"]
+    step_bw2 = (CMP_W - 0.4) / len(steps_y) - 0.1
     for j, step in enumerate(steps_y):
-        yx = W2_X + 0.2 + j * ys_w
-        icon_circle(ax, yx + (ys_w-0.08)/2, CMP_Y - 1.18, 0.22, GREEN, str(j+1), sz=9)
-        t(ax, yx + (ys_w-0.08)/2, CMP_Y - 1.52, step, c=MID, sz=7, ha="center", va="top", z=5)
+        sx = WITH_X + 0.2 + j * (step_bw2 + 0.1)
+        rbox(ax, sx, CMP_Y - CMP_H + 1.2, step_bw2, 1.0, fc=WHITE, ec=GREEN, lw=1, zorder=4)
+        icon_circle(ax, sx + step_bw2/2, CMP_Y - CMP_H + 1.95, 0.2, GREEN, str(j+1), sz=8)
+        t(ax, sx + step_bw2/2, CMP_Y - CMP_H + 1.65, step, c=MID, sz=7.5, ha="center", va="top", z=5)
         if j < len(steps_y)-1:
-            arrow(ax, yx + ys_w - 0.08, yx + ys_w, CMP_Y - 1.18, color=GREEN, lw=1)
+            t(ax, sx + step_bw2 + 0.02, CMP_Y - CMP_H + 1.72, "→", c=GREEN, sz=9, ha="center", z=5)
 
-    rbox(ax, W2_X + W2_W/2 - 1.1, CMP_Y - 2.3, 2.2, 0.65, fc="#e8f5e9", ec=GREEN, lw=1.2, zorder=4)
-    t(ax, W2_X + W2_W/2, CMP_Y - 1.95, with_yos["time_estimate"], c=GREEN, sz=12, w="bold", ha="center")
-    t(ax, W2_X + W2_W/2, CMP_Y - 2.25, with_yos["note"], c=GREEN, sz=8, ha="center")
+    rbox(ax, WITH_X + CMP_W/2 - 1.2, CMP_Y - CMP_H + 0.15, 2.4, 0.9,
+         fc="#d1fae5", ec=GREEN, lw=1, zorder=4)
+    t(ax, WITH_X + CMP_W/2, CMP_Y - CMP_H + 0.95,
+      with_y.get("time_estimate",""), c=GREEN, sz=14, w="bold", ha="center")
+    t(ax, WITH_X + CMP_W/2, CMP_Y - CMP_H + 0.55,
+      with_y.get("note",""), c=GREEN, sz=8, ha="center")
 
     # ── RUNTIME METRICS PANEL ──────────────────────────────────────────────────
-    MET_X = FIG_W - 5.5
-    MET_Y = FIG_H - 1.1
-    MET_W = 5.25
-    MET_H = FIG_H - CMP_Y + CMP_H - 0.5
+    MP_X = FIG_W - 5.5
+    MP_Y = FIG_H - 1.1
+    MP_W = 5.2
+    MP_H = FIG_H - 1.4
 
-    rbox(ax, MET_X, MET_Y - MET_H, MET_W, MET_H, fc=CREAM, ec=BORDER, lw=1.5, zorder=3)
-    rbox(ax, MET_X, MET_Y - 0.4, MET_W, 0.4, fc=DARK, ec=DARK, lw=0, zorder=4)
-    t(ax, MET_X + MET_W/2, MET_Y - 0.05, "RUNTIME METRICS", c=WHITE, sz=10, w="bold", ha="center")
+    rbox(ax, MP_X, MP_Y - MP_H, MP_W, MP_H, fc=CREAM, ec=DARK, lw=2, zorder=3)
+    rbox(ax, MP_X, MP_Y - 0.42, MP_W, 0.42, fc=DARK, ec=DARK, lw=0, zorder=4)
+    t(ax, MP_X + MP_W/2, MP_Y - 0.06, "RUNTIME METRICS",
+      c=WHITE, sz=10, w="bold", ha="center", z=5)
 
     met_items = [
         ("⏱", "Total Time",       metrics["total_time"]),
@@ -339,35 +399,38 @@ def render(schema_path, out_base):
         ("A", "Artifacts Created", metrics["artifacts_created"]),
         ("✕", "Plugins Skipped",   metrics["plugins_skipped"]),
     ]
-    my = MET_Y - 0.65
+    my = MP_Y - 0.65
     for icon_s, label, val in met_items:
-        t(ax, MET_X + 0.25, my, icon_s, c=col("human"), sz=10, w="bold", va="top")
-        t(ax, MET_X + 0.65, my, label, c=DARK, sz=8.5, w="bold", va="top")
-        lines = val.count("\n") + 1
-        t(ax, MET_X + 0.65, my - 0.26, val, c=MID, sz=8, va="top")
-        my -= 0.26 + lines * 0.22 + 0.22
-        hline(ax, MET_X + 0.2, MET_X + MET_W - 0.2, my + 0.1, LIGHT_BORDER, 0.5)
+        t(ax, MP_X + 0.25, my, icon_s, c=BLUE, sz=12, va="top")
+        t(ax, MP_X + 0.65, my, label, c=DARK, sz=9, w="bold", va="top")
+        lines = str(val).count("\n") + 1
+        t(ax, MP_X + 0.65, my - 0.28, str(val), c=MID, sz=8.5, va="top")
+        hline(ax, MP_X + 0.2, MP_X + MP_W - 0.2,
+              my - 0.28 - lines * 0.26 - 0.1, LIGHT_BORDER, 0.6)
+        my -= 0.28 + lines * 0.26 + 0.28
 
     # ── VERDICT BOX ───────────────────────────────────────────────────────────
-    VD_X = MET_X
-    VD_Y = CMP_Y
-    VD_W = MET_W
-    VD_H = CMP_H
-
     ans = verdict["answer"]
-    vd_fg, vd_bg = VERDICT_COLORS.get(ans, (GREEN, "#f0fff4"))
+    vd_fg, vd_bg = VERDICT_STYLE.get(ans, (GREEN, "#f0fff4"))
+
+    VD_X = MP_X
+    VD_Y = CMP_Y
+    VD_W = MP_W
+    VD_H = CMP_H
 
     rbox(ax, VD_X, VD_Y - VD_H, VD_W, VD_H, fc=vd_bg, ec=vd_fg, lw=2, zorder=3)
     section_header(ax, VD_X, VD_Y, VD_W, "DID Y-OS CREATE VALUE?", vd_fg)
-    rbox(ax, VD_X + 0.3, VD_Y - 1.4, VD_W - 0.6, 0.75, fc=vd_fg, ec=vd_fg, lw=0, zorder=4)
-    t(ax, VD_X + VD_W/2, VD_Y - 0.85, ans, c=WHITE, sz=22, w="bold", ha="center", va="top", z=5)
 
-    cy = VD_Y - 1.65
-    for reason in verdict["reasons"]:
+    rbox(ax, VD_X + 0.3, VD_Y - 1.5, VD_W - 0.6, 0.9, fc=vd_fg, ec=vd_fg, lw=0, zorder=4)
+    t(ax, VD_X + VD_W/2, VD_Y - 0.72, ans, c=WHITE, sz=22, w="bold", ha="center", z=5)
+
+    cy = VD_Y - 1.75
+    for reason in verdict.get("reasons", []):
         t(ax, VD_X + 0.25, cy, reason, c=vd_fg, sz=8, va="top")
-        cy -= 0.28
+        cy -= 0.38
 
     # ── SAVE PNG + SVG ────────────────────────────────────────────────────────
+    plt.tight_layout(pad=0)
     plt.savefig(out_base + ".png", format="png", dpi=DPI, bbox_inches="tight",
                 facecolor=WHITE, edgecolor="none")
     plt.savefig(out_base + ".svg", format="svg", dpi=DPI, bbox_inches="tight",
@@ -376,191 +439,94 @@ def render(schema_path, out_base):
     print(f"PNG: {out_base}.png")
     print(f"SVG: {out_base}.svg")
 
-    # ── BUILD EXCALIDRAW ──────────────────────────────────────────────────────
-    build_excalidraw(d, out_base + ".excalidraw")
+    # ── EXCALIDRAW ────────────────────────────────────────────────────────────
+    _build_excalidraw(d, out_base + ".excalidraw")
     print(f"Excalidraw: {out_base}.excalidraw")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXCALIDRAW BUILDER
+# EXCALIDRAW BUILDER (lightweight — main visual is the PNG/SVG)
 # ══════════════════════════════════════════════════════════════════════════════
-def uid():
-    return str(uuid.uuid4())[:8]
+def _uid(): return str(uuid.uuid4())[:8]
 
-def ex_rect(x, y, w, h, bg="#ffffff", stroke="#333333", lw=1, label="", font_sz=14,
-            bold=False, color="#000000", zorder=1, corner=8):
-    el = {
-        "id": uid(), "type": "rectangle", "x": x, "y": y, "width": w, "height": h,
-        "backgroundColor": bg, "strokeColor": stroke, "strokeWidth": lw,
-        "fillStyle": "solid", "roughness": 0, "opacity": 100,
-        "roundness": {"type": 3, "value": corner},
-    }
-    els = [el]
+def _ex_rect(x, y, w, h, bg="#ffffff", stroke="#333333", lw=1, label="", sz=14, bold=False, color="#000000"):
+    els = [{"id": _uid(), "type": "rectangle", "x": x, "y": y, "width": w, "height": h,
+            "backgroundColor": bg, "strokeColor": stroke, "strokeWidth": lw,
+            "fillStyle": "solid", "roughness": 1, "opacity": 100,
+            "roundness": {"type": 3, "value": 8}}]
     if label:
-        els.append(ex_text(x + w/2, y + h/2, label, font_sz, bold, color, "center", "middle"))
+        els.append({"id": _uid(), "type": "text", "x": x+w/2, "y": y+h/2,
+                    "text": label, "fontSize": sz, "fontFamily": 1,
+                    "textAlign": "center", "verticalAlign": "middle",
+                    "strokeColor": color, "backgroundColor": "transparent",
+                    "fillStyle": "solid", "roughness": 1, "opacity": 100,
+                    "width": len(label)*sz*0.6, "height": sz*1.4,
+                    "fontWeight": "bold" if bold else "normal"})
     return els
 
-def ex_text(x, y, text, sz=14, bold=False, color="#000000", ha="center", va="middle"):
-    return {
-        "id": uid(), "type": "text", "x": x, "y": y,
-        "text": text, "fontSize": sz, "fontFamily": 1,
-        "textAlign": ha, "verticalAlign": va,
-        "strokeColor": color, "backgroundColor": "transparent",
-        "fillStyle": "solid", "roughness": 0, "opacity": 100,
-        "width": len(text) * sz * 0.6, "height": sz * 1.4,
-    }
+SCALE = 28
 
-def ex_arrow(x1, y1, x2, y2, color="#333333", lw=2, label=""):
-    el = {
-        "id": uid(), "type": "arrow",
-        "x": x1, "y": y1,
-        "points": [[0, 0], [x2-x1, y2-y1]],
-        "strokeColor": color, "strokeWidth": lw,
-        "fillStyle": "solid", "roughness": 0, "opacity": 100,
-        "startArrowhead": None, "endArrowhead": "arrow",
-    }
-    els = [el]
-    if label:
-        mx, my = (x1+x2)/2, (y1+y2)/2
-        els.append(ex_text(mx, my - 16, label, 11, False, color))
-    return els
+def _m2e(x, y): return x * SCALE, (FIG_H - y) * SCALE
 
-SCALE = 28  # matplotlib units → excalidraw pixels
-
-def m2e(x, y, fig_h=FIG_H):
-    """Convert matplotlib coords to excalidraw coords (flip Y)."""
-    return x * SCALE, (fig_h - y) * SCALE
-
-def build_excalidraw(d, out_path):
+def _build_excalidraw(d, out_path):
     elements = []
-    cols_data = d["team_columns"]
-    metrics = d["metrics"]
-    verdict = d["verdict"]
-    m = d["mission"]
-    req = d["request"]
+    m = d["mission"]; req = d["request"]
 
     # Title
-    tx, ty = m2e(FIG_W/2, FIG_H - 0.25)
-    elements.append(ex_text(tx, ty, "Y-OS TEAM TRACE — EXECUTION TRACE", 22, True, "#111111"))
-    tx2, ty2 = m2e(FIG_W/2, FIG_H - 0.75)
-    elements.append(ex_text(tx2, ty2, f"Mission: {m['id']}  •  {m['date']}  •  {m['title']}", 12, False, "#888888"))
+    tx, ty = _m2e(FIG_W/2, FIG_H-0.25)
+    elements.append({"id": _uid(), "type": "text", "x": tx, "y": ty,
+                     "text": "Y-OS TEAM TRACE — EXECUTION TRACE",
+                     "fontSize": 22, "fontFamily": 1, "textAlign": "center",
+                     "verticalAlign": "middle", "strokeColor": "#111111",
+                     "backgroundColor": "transparent", "fillStyle": "solid",
+                     "roughness": 1, "opacity": 100, "width": 600, "height": 30})
 
     # Request box
     REQ_X, REQ_Y = 0.25, FIG_H - 1.2
     REQ_W, REQ_H = 2.8, 3.2
-    rx, ry = m2e(REQ_X, REQ_Y - REQ_H)
-    elements += ex_rect(rx, ry, REQ_W*SCALE, REQ_H*SCALE, bg="#fafaf8", stroke=ROLE_COLORS["human"], lw=2,
-                        label=f"{req['user']}\nREQUEST\n\n{req['quote']}", font_sz=11, color=ROLE_COLORS["human"])
+    rx, ry = _m2e(REQ_X, REQ_Y - REQ_H)
+    elements += _ex_rect(rx, ry - REQ_H*SCALE, REQ_W*SCALE, REQ_H*SCALE,
+                         bg="#fafaf8", stroke=BLUE, lw=2,
+                         label=f"{req['user']}\nREQUEST\n{req['quote']}", sz=11, color=BLUE)
 
     # Team columns
     TEAM_X_START = REQ_X + REQ_W + 0.35
     TEAM_AREA_W  = FIG_W - TEAM_X_START - 5.8
-    N_COLS = len(cols_data)
+    cols_d = d["team_columns"]
+    N_COLS = len(cols_d)
     COL_GAP = 0.18
     COL_W = (TEAM_AREA_W - COL_GAP * (N_COLS-1)) / N_COLS
     COL_H = 7.8
     TEAM_HEADER_Y = FIG_H - 1.1
-    COL_TOP = TEAM_HEADER_Y - 0.38
-    COL_BODY_Y = COL_TOP - COL_H
+    COL_BODY_Y = TEAM_HEADER_Y - 0.38 - COL_H
 
-    # Team header
-    thx, thy = m2e(TEAM_X_START, COL_TOP + 0.38)
-    elements += ex_rect(thx, thy, TEAM_AREA_W*SCALE, 0.38*SCALE,
-                        bg="#e8eef8", stroke=ROLE_COLORS["human"], lw=1,
-                        label="TEAM VIEW — WHO WORKED", font_sz=12, bold=True, color=ROLE_COLORS["human"])
-
-    for i, cd in enumerate(cols_data):
+    for i, col in enumerate(cols_d):
         cx = TEAM_X_START + i * (COL_W + COL_GAP)
-        c_ = ROLE_COLORS.get(cd["color_role"], DARK)
-        ecx, ecy = m2e(cx, COL_BODY_Y)
-        # Card body
-        elements += ex_rect(ecx, ecy - COL_H*SCALE, COL_W*SCALE, COL_H*SCALE,
-                             bg="#ffffff", stroke=c_, lw=2)
-        # Header bar
-        hbx, hby = m2e(cx, COL_BODY_Y + COL_H)
-        elements += ex_rect(hbx, hby - 0.55*SCALE, COL_W*SCALE, 0.55*SCALE,
-                             bg=c_, stroke=c_, lw=0,
-                             label=f"{cd['num']}  {cd['title']}", font_sz=9, bold=True, color="#ffffff")
-        # Fields summary
-        field_text = "\n".join(f"{k}: {v}" for k, v in list(cd["fields"].items())[:6])
-        ftx, fty = m2e(cx + COL_W/2, COL_BODY_Y + COL_H - 1.6)
-        elements.append(ex_text(ftx, fty, field_text, 8, False, MID, "center", "top"))
+        c_ = ROLE_HEX.get(col["color_role"], DARK)
+        ecx, ecy = _m2e(cx, COL_BODY_Y + COL_H)
+        elements += _ex_rect(ecx, ecy - COL_H*SCALE, COL_W*SCALE, COL_H*SCALE,
+                              bg="#ffffff", stroke=c_, lw=2,
+                              label=f"{col['num']} {col['title']}", sz=9, bold=True, color=c_)
 
-    # Handoffs row
-    handoffs = d["handoffs"]
-    HO_Y = COL_BODY_Y - 0.25
-    HO_H = 1.6
-    hox, hoy = m2e(TEAM_X_START, HO_Y - HO_H)
-    elements += ex_rect(hox, hoy - HO_H*SCALE, TEAM_AREA_W*SCALE, HO_H*SCALE,
-                        bg="#fffbf0", stroke=AMBER, lw=1,
-                        label="HAND-OFFS (ARTIFACTS PASSED BETWEEN TEAM MEMBERS)",
-                        font_sz=10, bold=True, color=AMBER)
-
-    for i, ho in enumerate(handoffs):
-        col_i = i + 1
-        x1 = TEAM_X_START + col_i * (COL_W + COL_GAP) + COL_W * 0.1
-        x2 = TEAM_X_START + (col_i+1) * (COL_W + COL_GAP) - COL_W * 0.1
-        y_ho = HO_Y - HO_H/2 - 0.1
-        ax1, ay1 = m2e(x1, y_ho)
-        ax2, ay2 = m2e(x2, y_ho)
-        elements += ex_arrow(ax1, ay1, ax2, ay2, color=AMBER, lw=2, label=ho["name"])
-
-    # Metrics panel
-    MET_X = FIG_W - 5.5
-    MET_Y = FIG_H - 1.1
-    MET_W = 5.25
-    MET_H = 18.5
-    mx, my = m2e(MET_X, MET_Y - MET_H)
-    elements += ex_rect(mx, my - MET_H*SCALE, MET_W*SCALE, MET_H*SCALE,
-                        bg="#fafaf8", stroke=BORDER, lw=1)
-    # Header
-    mhx, mhy = m2e(MET_X, MET_Y)
-    elements += ex_rect(mhx, mhy - 0.4*SCALE, MET_W*SCALE, 0.4*SCALE,
-                        bg=DARK, stroke=DARK, lw=0,
-                        label="RUNTIME METRICS", font_sz=11, bold=True, color="#ffffff")
-    met_text = (
-        f"Total Time: {metrics['total_time']}\n"
-        f"Total Cost: {metrics['total_cost']}\n"
-        f"Total Tokens: {metrics['total_tokens']}\n"
-        f"Models: {metrics['models_used'].split(chr(10))[0]}\n"
-        f"Plugins Skipped: {metrics['plugins_skipped']}"
-    )
-    mtx, mty = m2e(MET_X + MET_W/2, MET_Y - 1.0)
-    elements.append(ex_text(mtx, mty, met_text, 10, False, MID, "center", "top"))
-
-    # Verdict box
+    # Verdict
+    verdict = d["verdict"]
     ans = verdict["answer"]
-    vd_fg, vd_bg = VERDICT_COLORS.get(ans, (GREEN, "#f0fff4"))
-    CMP_Y = HO_Y - HO_H - 0.3 - 3.8 - 0.3
+    vd_fg, vd_bg = VERDICT_STYLE.get(ans, (GREEN, "#f0fff4"))
+    CMP_Y = TEAM_HEADER_Y - 0.38 - COL_H - 1.6 - 0.3 - 3.8 - 0.3
     VD_H = 3.2
-    vdx, vdy = m2e(MET_X, CMP_Y - VD_H)
-    elements += ex_rect(vdx, vdy - VD_H*SCALE, MET_W*SCALE, VD_H*SCALE,
-                        bg=vd_bg, stroke=vd_fg, lw=2)
-    vdtx, vdty = m2e(MET_X + MET_W/2, CMP_Y - 0.5)
-    elements.append(ex_text(vdtx, vdty, "DID Y-OS CREATE VALUE?", 11, True, vd_fg, "center"))
-    vdax, vday = m2e(MET_X + MET_W/2, CMP_Y - 1.0)
-    elements.append(ex_text(vdax, vday, ans, 28, True, vd_fg, "center"))
-    reasons_text = "\n".join(verdict["reasons"])
-    vrx, vry = m2e(MET_X + 0.3, CMP_Y - 1.7)
-    elements.append(ex_text(vrx, vry, reasons_text, 9, False, vd_fg, "left", "top"))
+    MP_X = FIG_W - 5.5
+    MP_W = 5.2
+    vdx, vdy = _m2e(MP_X, CMP_Y)
+    elements += _ex_rect(vdx, vdy - VD_H*SCALE, MP_W*SCALE, VD_H*SCALE,
+                          bg=vd_bg, stroke=vd_fg, lw=2,
+                          label=f"DID Y-OS CREATE VALUE?\n{ans}", sz=20, bold=True, color=vd_fg)
 
-    excalidraw_obj = {
-        "type": "excalidraw",
-        "version": 2,
-        "source": "https://excalidraw.com",
-        "elements": elements,
-        "appState": {
-            "viewBackgroundColor": "#ffffff",
-            "gridSize": None,
-        },
-        "files": {}
-    }
+    obj = {"type": "excalidraw", "version": 2, "source": "https://excalidraw.com",
+           "elements": elements, "appState": {"viewBackgroundColor": "#ffffff"}, "files": {}}
     with open(out_path, "w") as f:
-        json.dump(excalidraw_obj, f, indent=2)
+        json.dump(obj, f, indent=2)
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# ENTRY POINT
 # ══════════════════════════════════════════════════════════════════════════════
 if __name__ == "__main__":
     if len(sys.argv) < 3:

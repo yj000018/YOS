@@ -1,0 +1,52 @@
+{
+  "version": "v1",
+  "generated_by": "MISSION-031",
+  "benchmark_task": "Y-OS 7-layer architecture analysis",
+  "scores": [
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-flash",
+      "quality_score": 88.3,
+      "dimensions": {
+        "reasoning": 100,
+        "accuracy": 75,
+        "governance": 85,
+        "structure": 100,
+        "artifact_compliance": 90,
+        "consistency": 80
+      }
+    },
+    {
+      "provider": "gemini",
+      "model": "gemini-2.5-pro",
+      "quality_score": 88.3,
+      "dimensions": {
+        "reasoning": 100,
+        "accuracy": 75,
+        "governance": 85,
+        "structure": 100,
+        "artifact_compliance": 90,
+        "consistency": 80
+      }
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-4o",
+      "quality_score": 83.8,
+      "dimensions": {
+        "reasoning": 58,
+        "accuracy": 90,
+        "governance": 85,
+        "structure": 100,
+        "artifact_compliance": 90,
+        "consistency": 80
+      }
+    }
+  ],
+  "ranking": [
+    "gemini/gemini-2.5-flash",
+    "gemini/gemini-2.5-pro",
+    "openai/gpt-4o"
+  ],
+  "generated_at": "2026-06-14T18:17:46.609230+00:00"
+}

@@ -1,0 +1,949 @@
+{
+  "generated": "2026-06-14",
+  "inventory": {
+    "total_modules": 71,
+    "classifications": {
+      "CORE": 12,
+      "IMPORTANT": 24,
+      "OPTIONAL": 24,
+      "EXPERIMENTAL": 11
+    },
+    "groups": {
+      "routing": 4,
+      "governance": 1,
+      "execution": 2,
+      "memory": 5,
+      "observability": 2,
+      "pipeline": 5,
+      "providers": 7,
+      "graph": 2,
+      "odt": 4,
+      "obs": 5,
+      "intel": 7,
+      "sim": 6,
+      "time": 7,
+      "lineage": 6,
+      "events": 7,
+      "artifacts": 1
+    },
+    "daily_use_modules": 20,
+    "daily_use_pct": 28.2
+  },
+  "modules": {
+    "ccr_runtime_v2": {
+      "classification": "CORE",
+      "group": "routing",
+      "daily_use": true,
+      "notes": "Context Router \u2014 heart of Y-OS"
+    },
+    "context_compiler_v2": {
+      "classification": "CORE",
+      "group": "routing",
+      "daily_use": true,
+      "notes": "Context Pack compiler"
+    },
+    "provider_router_v2": {
+      "classification": "CORE",
+      "group": "routing",
+      "daily_use": true,
+      "notes": "Multi-provider routing"
+    },
+    "provider_registry_v1": {
+      "classification": "CORE",
+      "group": "routing",
+      "daily_use": true,
+      "notes": "Provider registry"
+    },
+    "lakshmi_context_review_v1": {
+      "classification": "CORE",
+      "group": "governance",
+      "daily_use": true,
+      "notes": "Constitutional governance hook"
+    },
+    "live_worker_executor_v1": {
+      "classification": "CORE",
+      "group": "execution",
+      "daily_use": true,
+      "notes": "Real LLM API calls"
+    },
+    "output_validator_v1": {
+      "classification": "CORE",
+      "group": "execution",
+      "daily_use": true,
+      "notes": "Artifact validation"
+    },
+    "artifact_registry_v2": {
+      "classification": "CORE",
+      "group": "memory",
+      "daily_use": true,
+      "notes": "Artifact storage"
+    },
+    "execution_trace_logger_v1": {
+      "classification": "CORE",
+      "group": "observability",
+      "daily_use": true,
+      "notes": "Execution lineage"
+    },
+    "cost_tracker_v1": {
+      "classification": "CORE",
+      "group": "observability",
+      "daily_use": true,
+      "notes": "Cost per call"
+    },
+    "pipeline_state_manager_v1": {
+      "classification": "IMPORTANT",
+      "group": "pipeline",
+      "daily_use": true,
+      "notes": "Multi-step pipeline state"
+    },
+    "artifact_chaining_engine_v1": {
+      "classification": "IMPORTANT",
+      "group": "pipeline",
+      "daily_use": true,
+      "notes": "Artifact \u2192 artifact lineage"
+    },
+    "checkpoint_rollback_engine_v1": {
+      "classification": "IMPORTANT",
+      "group": "pipeline",
+      "daily_use": false,
+      "notes": "Rollback \u2014 rarely triggered"
+    },
+    "validation_queue_v1": {
+      "classification": "IMPORTANT",
+      "group": "pipeline",
+      "daily_use": false,
+      "notes": "Queue validation \u2014 could merge with output_validator"
+    },
+    "context_cache_v1": {
+      "classification": "IMPORTANT",
+      "group": "pipeline",
+      "daily_use": true,
+      "notes": "Context caching \u2014 performance"
+    },
+    "session_delta_engine_v1": {
+      "classification": "CORE",
+      "group": "memory",
+      "daily_use": true,
+      "notes": "Session delta \u2014 prevents raw history injection"
+    },
+    "living_memory_pipeline_v1": {
+      "classification": "IMPORTANT",
+      "group": "memory",
+      "daily_use": true,
+      "notes": "8-stage LMP \u2014 complex, high value"
+    },
+    "strategic_memory_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "memory",
+      "daily_use": false,
+      "notes": "Strategic memory \u2014 overlaps with ODT"
+    },
+    "simulation_memory_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "memory",
+      "daily_use": false,
+      "notes": "Simulation memory \u2014 niche use"
+    },
+    "provider_health_monitor_v1": {
+      "classification": "IMPORTANT",
+      "group": "providers",
+      "daily_use": true,
+      "notes": "Provider health"
+    },
+    "provider_failover_engine_v1": {
+      "classification": "IMPORTANT",
+      "group": "providers",
+      "daily_use": true,
+      "notes": "Failover \u2014 critical for resilience"
+    },
+    "provider_cost_optimizer_v1": {
+      "classification": "OPTIONAL",
+      "group": "providers",
+      "daily_use": false,
+      "notes": "Cost optimizer \u2014 overlaps cost_tracker"
+    },
+    "provider_observability_dashboard_v1": {
+      "classification": "OPTIONAL",
+      "group": "providers",
+      "daily_use": false,
+      "notes": "Dashboard generator \u2014 low daily use"
+    },
+    "provider_payload_builder_v1": {
+      "classification": "CORE",
+      "group": "providers",
+      "daily_use": true,
+      "notes": "Payload formatting per provider"
+    },
+    "gemini_runtime_validation_v1": {
+      "classification": "OPTIONAL",
+      "group": "providers",
+      "daily_use": false,
+      "notes": "Gemini-specific validator \u2014 merge into provider_router"
+    },
+    "gemini_benchmark_runner_v1": {
+      "classification": "OPTIONAL",
+      "group": "providers",
+      "daily_use": false,
+      "notes": "Benchmark runner \u2014 one-time use"
+    },
+    "kg_compiler_v3": {
+      "classification": "EXPERIMENTAL",
+      "group": "graph",
+      "daily_use": false,
+      "notes": "KGC v3 \u2014 superseded by v4"
+    },
+    "kgc_v4_connectivity_engine": {
+      "classification": "IMPORTANT",
+      "group": "graph",
+      "daily_use": false,
+      "notes": "KGC v4 \u2014 current graph engine"
+    },
+    "organizational_digital_twin_registry_v1": {
+      "classification": "IMPORTANT",
+      "group": "odt",
+      "daily_use": false,
+      "notes": "ODT registry \u2014 high value, low daily use"
+    },
+    "evolution_tracker_v1": {
+      "classification": "IMPORTANT",
+      "group": "odt",
+      "daily_use": false,
+      "notes": "Evolution tracking"
+    },
+    "system_health_monitor_v1": {
+      "classification": "IMPORTANT",
+      "group": "odt",
+      "daily_use": true,
+      "notes": "Health score \u2014 daily value"
+    },
+    "odt_live_update_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "odt",
+      "daily_use": false,
+      "notes": "ODT auto-update \u2014 rarely triggered"
+    },
+    "organizational_observability_engine_v1": {
+      "classification": "IMPORTANT",
+      "group": "obs",
+      "daily_use": false,
+      "notes": "Org observability"
+    },
+    "governance_observability_v1": {
+      "classification": "IMPORTANT",
+      "group": "obs",
+      "daily_use": false,
+      "notes": "Governance compliance tracking"
+    },
+    "executive_intelligence_score_v1": {
+      "classification": "IMPORTANT",
+      "group": "obs",
+      "daily_use": true,
+      "notes": "EIS score \u2014 useful metric"
+    },
+    "organizational_alert_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "obs",
+      "daily_use": false,
+      "notes": "Alert engine \u2014 low signal/noise"
+    },
+    "weekly_review_generator_v1": {
+      "classification": "OPTIONAL",
+      "group": "obs",
+      "daily_use": false,
+      "notes": "Weekly review \u2014 nice-to-have"
+    },
+    "strategic_recommendation_engine_v1": {
+      "classification": "IMPORTANT",
+      "group": "intel",
+      "daily_use": false,
+      "notes": "Strategic recs \u2014 high value"
+    },
+    "organizational_gap_analysis_v1": {
+      "classification": "IMPORTANT",
+      "group": "intel",
+      "daily_use": false,
+      "notes": "Gap analysis"
+    },
+    "evidence_based_reasoning_engine_v1": {
+      "classification": "IMPORTANT",
+      "group": "intel",
+      "daily_use": false,
+      "notes": "Evidence-based reasoning"
+    },
+    "mission_proposal_generator_v1": {
+      "classification": "IMPORTANT",
+      "group": "intel",
+      "daily_use": false,
+      "notes": "Mission proposals"
+    },
+    "recommendation_prioritization_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "intel",
+      "daily_use": false,
+      "notes": "Prioritization \u2014 overlaps strategic_rec"
+    },
+    "roadmap_generation_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "intel",
+      "daily_use": false,
+      "notes": "Roadmap gen \u2014 low daily use"
+    },
+    "executive_advisor_dashboard_v1": {
+      "classification": "OPTIONAL",
+      "group": "intel",
+      "daily_use": false,
+      "notes": "Dashboard gen \u2014 low daily use"
+    },
+    "executive_simulation_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "sim",
+      "daily_use": false,
+      "notes": "Simulation \u2014 high complexity, low daily use"
+    },
+    "scenario_modeling_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "sim",
+      "daily_use": false,
+      "notes": "Scenario modeling"
+    },
+    "impact_propagation_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "sim",
+      "daily_use": false,
+      "notes": "Impact propagation"
+    },
+    "counterfactual_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "sim",
+      "daily_use": false,
+      "notes": "Counterfactual \u2014 interesting but niche"
+    },
+    "decision_comparison_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "sim",
+      "daily_use": false,
+      "notes": "Decision comparison"
+    },
+    "simulation_governance_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "sim",
+      "daily_use": false,
+      "notes": "Simulation governance"
+    },
+    "odt_time_machine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "time",
+      "daily_use": false,
+      "notes": "Time machine \u2014 high complexity"
+    },
+    "organizational_snapshot_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "time",
+      "daily_use": false,
+      "notes": "Snapshot engine"
+    },
+    "temporal_reconstruction_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "time",
+      "daily_use": false,
+      "notes": "Temporal reconstruction"
+    },
+    "snapshot_diff_engine_v1": {
+      "classification": "EXPERIMENTAL",
+      "group": "time",
+      "daily_use": false,
+      "notes": "Snapshot diff"
+    },
+    "organizational_timeline_generator_v1": {
+      "classification": "OPTIONAL",
+      "group": "time",
+      "daily_use": false,
+      "notes": "Timeline generator"
+    },
+    "historical_navigation_dashboard_v1": {
+      "classification": "OPTIONAL",
+      "group": "time",
+      "daily_use": false,
+      "notes": "Historical nav dashboard"
+    },
+    "evolution_analysis_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "time",
+      "daily_use": false,
+      "notes": "Evolution analysis"
+    },
+    "legacy_lineage_recovery_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "lineage",
+      "daily_use": false,
+      "notes": "Legacy lineage \u2014 one-time use"
+    },
+    "semantic_relationship_inference_v1": {
+      "classification": "OPTIONAL",
+      "group": "lineage",
+      "daily_use": false,
+      "notes": "Semantic inference \u2014 part of KGC"
+    },
+    "lineage_validation_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "lineage",
+      "daily_use": false,
+      "notes": "Lineage validation \u2014 merge with output_validator"
+    },
+    "lineage_review_registry_v1": {
+      "classification": "OPTIONAL",
+      "group": "lineage",
+      "daily_use": false,
+      "notes": "Lineage registry \u2014 merge with artifact_registry"
+    },
+    "lineage_dashboard_generator_v1": {
+      "classification": "OPTIONAL",
+      "group": "lineage",
+      "daily_use": false,
+      "notes": "Dashboard gen \u2014 low daily use"
+    },
+    "lineage_canvas_generator_v1": {
+      "classification": "OPTIONAL",
+      "group": "lineage",
+      "daily_use": false,
+      "notes": "Canvas gen \u2014 low daily use"
+    },
+    "event_bus_core_v1": {
+      "classification": "IMPORTANT",
+      "group": "events",
+      "daily_use": false,
+      "notes": "Event bus \u2014 infrastructure"
+    },
+    "event_registry_v1": {
+      "classification": "IMPORTANT",
+      "group": "events",
+      "daily_use": false,
+      "notes": "Event registry"
+    },
+    "event_router_v1": {
+      "classification": "IMPORTANT",
+      "group": "events",
+      "daily_use": false,
+      "notes": "Event router"
+    },
+    "event_persistence_v1": {
+      "classification": "IMPORTANT",
+      "group": "events",
+      "daily_use": false,
+      "notes": "Event persistence"
+    },
+    "event_replay_engine_v1": {
+      "classification": "IMPORTANT",
+      "group": "events",
+      "daily_use": false,
+      "notes": "Event replay \u2014 for time machine"
+    },
+    "event_observability_v1": {
+      "classification": "OPTIONAL",
+      "group": "events",
+      "daily_use": false,
+      "notes": "Event observability \u2014 low daily use"
+    },
+    "event_lineage_tracker_v1": {
+      "classification": "OPTIONAL",
+      "group": "events",
+      "daily_use": false,
+      "notes": "Event lineage \u2014 overlaps execution_trace"
+    },
+    "artifact_supersession_engine_v1": {
+      "classification": "OPTIONAL",
+      "group": "artifacts",
+      "daily_use": false,
+      "notes": "Supersession \u2014 rarely triggered"
+    }
+  },
+  "duplicates": [
+    {
+      "group": "Cost Tracking",
+      "modules": [
+        "cost_tracker_v1",
+        "provider_cost_optimizer_v1"
+      ],
+      "recommendation": "MERGE \u2192 cost_tracker_v2",
+      "savings": "1 module"
+    },
+    {
+      "group": "Validation",
+      "modules": [
+        "output_validator_v1",
+        "validation_queue_v1",
+        "lineage_validation_engine_v1"
+      ],
+      "recommendation": "MERGE \u2192 validation_engine_v2",
+      "savings": "2 modules"
+    },
+    {
+      "group": "Registry",
+      "modules": [
+        "artifact_registry_v2",
+        "lineage_review_registry_v1",
+        "provider_registry_v1"
+      ],
+      "recommendation": "MERGE \u2192 unified_registry_v1 (or keep separate \u2014 different domains)",
+      "savings": "0-1 modules"
+    },
+    {
+      "group": "Dashboard Generators",
+      "modules": [
+        "provider_observability_dashboard_v1",
+        "executive_advisor_dashboard_v1",
+        "lineage_dashboard_generator_v1",
+        "historical_navigation_dashboard_v1"
+      ],
+      "recommendation": "MERGE \u2192 dashboard_generator_v1 (single templated generator)",
+      "savings": "3 modules"
+    },
+    {
+      "group": "Canvas Generators",
+      "modules": [
+        "lineage_canvas_generator_v1"
+      ],
+      "recommendation": "MERGE into dashboard_generator_v1",
+      "savings": "1 module"
+    },
+    {
+      "group": "Memory",
+      "modules": [
+        "strategic_memory_engine_v1",
+        "simulation_memory_engine_v1"
+      ],
+      "recommendation": "MERGE \u2192 memory_engine_v2 (or deprecate both \u2014 ODT covers this)",
+      "savings": "2 modules"
+    },
+    {
+      "group": "Lineage Tracking",
+      "modules": [
+        "execution_trace_logger_v1",
+        "event_lineage_tracker_v1",
+        "lineage_validation_engine_v1"
+      ],
+      "recommendation": "MERGE \u2192 lineage_tracker_v2",
+      "savings": "2 modules"
+    },
+    {
+      "group": "KGC Versions",
+      "modules": [
+        "kg_compiler_v3",
+        "kgc_v4_connectivity_engine"
+      ],
+      "recommendation": "ARCHIVE kg_compiler_v3 \u2014 superseded",
+      "savings": "1 module"
+    },
+    {
+      "group": "Gemini-Specific",
+      "modules": [
+        "gemini_runtime_validation_v1",
+        "gemini_benchmark_runner_v1"
+      ],
+      "recommendation": "MERGE into provider_router_v2 + provider_health_monitor_v1",
+      "savings": "2 modules"
+    }
+  ],
+  "sunset_candidates": [
+    {
+      "module": "kg_compiler_v3",
+      "reason": "Superseded by kgc_v4",
+      "risk": "LOW"
+    },
+    {
+      "module": "gemini_benchmark_runner_v1",
+      "reason": "One-time validation, done",
+      "risk": "LOW"
+    },
+    {
+      "module": "gemini_runtime_validation_v1",
+      "reason": "Merge into provider_router",
+      "risk": "LOW"
+    },
+    {
+      "module": "simulation_memory_engine_v1",
+      "reason": "ODT covers this",
+      "risk": "LOW"
+    },
+    {
+      "module": "strategic_memory_engine_v1",
+      "reason": "ODT + strategic_rec covers this",
+      "risk": "LOW"
+    },
+    {
+      "module": "legacy_lineage_recovery_engine_v1",
+      "reason": "One-time use, mission complete",
+      "risk": "LOW"
+    },
+    {
+      "module": "lineage_canvas_generator_v1",
+      "reason": "Merge into dashboard_generator",
+      "risk": "LOW"
+    },
+    {
+      "module": "lineage_dashboard_generator_v1",
+      "reason": "Merge into dashboard_generator",
+      "risk": "LOW"
+    },
+    {
+      "module": "provider_observability_dashboard_v1",
+      "reason": "Merge into dashboard_generator",
+      "risk": "LOW"
+    },
+    {
+      "module": "executive_advisor_dashboard_v1",
+      "reason": "Merge into dashboard_generator",
+      "risk": "LOW"
+    },
+    {
+      "module": "event_lineage_tracker_v1",
+      "reason": "Merge into execution_trace_logger",
+      "risk": "LOW"
+    },
+    {
+      "module": "lineage_review_registry_v1",
+      "reason": "Merge into artifact_registry",
+      "risk": "LOW"
+    },
+    {
+      "module": "lineage_validation_engine_v1",
+      "reason": "Merge into output_validator",
+      "risk": "LOW"
+    },
+    {
+      "module": "provider_cost_optimizer_v1",
+      "reason": "Merge into cost_tracker",
+      "risk": "LOW"
+    },
+    {
+      "module": "recommendation_prioritization_engine_v1",
+      "reason": "Merge into strategic_rec",
+      "risk": "LOW"
+    },
+    {
+      "module": "roadmap_generation_engine_v1",
+      "reason": "Merge into strategic_rec",
+      "risk": "LOW"
+    },
+    {
+      "module": "organizational_alert_engine_v1",
+      "reason": "Low signal/noise, low daily use",
+      "risk": "MEDIUM"
+    },
+    {
+      "module": "weekly_review_generator_v1",
+      "reason": "Nice-to-have, low daily use",
+      "risk": "LOW"
+    },
+    {
+      "module": "odt_live_update_engine_v1",
+      "reason": "Rarely triggered, ODT handles manually",
+      "risk": "MEDIUM"
+    }
+  ],
+  "core_architecture_v2": {
+    "layers": {
+      "L1_ROUTING": {
+        "modules": [
+          "ccr_runtime_v2",
+          "context_compiler_v2",
+          "provider_router_v2",
+          "provider_registry_v1",
+          "provider_payload_builder_v1"
+        ],
+        "description": "Context routing and provider selection"
+      },
+      "L2_EXECUTION": {
+        "modules": [
+          "live_worker_executor_v1",
+          "output_validator_v1",
+          "artifact_registry_v2",
+          "lakshmi_context_review_v1"
+        ],
+        "description": "Worker execution, validation, governance"
+      },
+      "L3_MEMORY": {
+        "modules": [
+          "session_delta_engine_v1",
+          "execution_trace_logger_v1",
+          "cost_tracker_v1",
+          "context_cache_v1"
+        ],
+        "description": "Session memory, lineage, cost"
+      },
+      "L4_PIPELINE": {
+        "modules": [
+          "pipeline_state_manager_v1",
+          "artifact_chaining_engine_v1",
+          "provider_health_monitor_v1",
+          "provider_failover_engine_v1"
+        ],
+        "description": "Multi-step execution, resilience"
+      },
+      "L5_OBSERVABILITY": {
+        "modules": [
+          "system_health_monitor_v1",
+          "executive_intelligence_score_v1",
+          "governance_observability_v1",
+          "organizational_observability_engine_v1"
+        ],
+        "description": "Health, EIS, governance compliance"
+      },
+      "L6_INTELLIGENCE": {
+        "modules": [
+          "strategic_recommendation_engine_v1",
+          "organizational_gap_analysis_v1",
+          "evidence_based_reasoning_engine_v1",
+          "mission_proposal_generator_v1"
+        ],
+        "description": "Strategic autonomy"
+      },
+      "L7_KNOWLEDGE": {
+        "modules": [
+          "kgc_v4_connectivity_engine",
+          "living_memory_pipeline_v1"
+        ],
+        "description": "Corpus navigation, memory pipeline"
+      }
+    },
+    "total_core_modules": 27,
+    "optional_layers": {
+      "L8_EVENTS": "Event Bus (7 modules) \u2014 add when real-time triggers needed",
+      "L9_ODT": "ODT Registry + Evolution (4 modules) \u2014 add for organizational awareness",
+      "L10_INTELLIGENCE_PLUS": "Simulation + Time Machine (12 modules) \u2014 add for predictive capability"
+    }
+  },
+  "rebuild_test": {
+    "day_1": {
+      "title": "Foundation",
+      "modules": [
+        "ccr_runtime_v2",
+        "context_compiler_v2",
+        "provider_router_v2",
+        "provider_registry_v1",
+        "provider_payload_builder_v1"
+      ],
+      "rationale": "Without routing, nothing works"
+    },
+    "day_2": {
+      "title": "Execution + Governance",
+      "modules": [
+        "live_worker_executor_v1",
+        "output_validator_v1",
+        "artifact_registry_v2",
+        "lakshmi_context_review_v1"
+      ],
+      "rationale": "Without execution + governance, no artifacts"
+    },
+    "day_3": {
+      "title": "Memory + Lineage",
+      "modules": [
+        "session_delta_engine_v1",
+        "execution_trace_logger_v1",
+        "cost_tracker_v1"
+      ],
+      "rationale": "Without memory, no continuity"
+    },
+    "day_4": {
+      "title": "Pipeline + Resilience",
+      "modules": [
+        "pipeline_state_manager_v1",
+        "artifact_chaining_engine_v1",
+        "provider_health_monitor_v1",
+        "provider_failover_engine_v1"
+      ],
+      "rationale": "Multi-step + failover"
+    },
+    "day_5": {
+      "title": "Observability",
+      "modules": [
+        "system_health_monitor_v1",
+        "executive_intelligence_score_v1",
+        "organizational_observability_engine_v1"
+      ],
+      "rationale": "Without observability, no self-awareness"
+    },
+    "day_6": {
+      "title": "Intelligence",
+      "modules": [
+        "strategic_recommendation_engine_v1",
+        "organizational_gap_analysis_v1",
+        "evidence_based_reasoning_engine_v1",
+        "mission_proposal_generator_v1"
+      ],
+      "rationale": "Strategic autonomy"
+    },
+    "day_7": {
+      "title": "Knowledge Graph (minimal)",
+      "modules": [
+        "kgc_v4_connectivity_engine",
+        "living_memory_pipeline_v1"
+      ],
+      "rationale": "Corpus navigation + memory pipeline"
+    },
+    "NOT_rebuilt": {
+      "modules": [
+        "event_bus_core_v1 (and all 6 event_* modules)",
+        "odt_time_machine_v1 (and all 5 time_* modules)",
+        "executive_simulation_engine_v1 (and all 5 sim_* modules)",
+        "counterfactual_engine_v1",
+        "scenario_modeling_engine_v1",
+        "impact_propagation_engine_v1",
+        "organizational_digital_twin_registry_v1",
+        "evolution_tracker_v1",
+        "all dashboard_generator_* modules",
+        "all lineage_* legacy modules"
+      ],
+      "rationale": "High complexity, low daily value, can be added in month 2"
+    }
+  },
+  "simplification_backlog": [
+    {
+      "id": "SIMP-001",
+      "action": "ARCHIVE kg_compiler_v3",
+      "effort": "30min",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-002",
+      "action": "MERGE 4 dashboard generators \u2192 dashboard_generator_v1",
+      "effort": "2h",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-003",
+      "action": "MERGE validation_queue + lineage_validation \u2192 output_validator_v2",
+      "effort": "2h",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-004",
+      "action": "MERGE cost_tracker + provider_cost_optimizer \u2192 cost_tracker_v2",
+      "effort": "1h",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-005",
+      "action": "ARCHIVE legacy_lineage_recovery (one-time use)",
+      "effort": "10min",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-006",
+      "action": "ARCHIVE gemini_benchmark_runner (one-time use)",
+      "effort": "10min",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-007",
+      "action": "MERGE gemini_runtime_validation \u2192 provider_router_v2",
+      "effort": "2h",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-008",
+      "action": "MERGE strategic_memory + simulation_memory \u2192 memory_engine_v2",
+      "effort": "2h",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-009",
+      "action": "MERGE recommendation_prioritization + roadmap_gen \u2192 strategic_rec_v2",
+      "effort": "2h",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-010",
+      "action": "MERGE event_lineage_tracker \u2192 execution_trace_logger_v2",
+      "effort": "1h",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-011",
+      "action": "MERGE lineage_review_registry \u2192 artifact_registry_v3",
+      "effort": "1h",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-012",
+      "action": "DEPRECATE organizational_alert_engine (low S/N)",
+      "effort": "10min",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-013",
+      "action": "DEPRECATE weekly_review_generator (low daily use)",
+      "effort": "10min",
+      "roi": "LOW",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-014",
+      "action": "DEPRECATE odt_live_update_engine (rarely triggered)",
+      "effort": "10min",
+      "roi": "LOW",
+      "risk": "MEDIUM"
+    },
+    {
+      "id": "SIMP-015",
+      "action": "MOVE simulation layer to /experimental/ folder",
+      "effort": "30min",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-016",
+      "action": "MOVE time_machine layer to /experimental/ folder",
+      "effort": "30min",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-017",
+      "action": "FLATTEN runtime/ \u2192 group by layer (routing/, execution/, etc.)",
+      "effort": "2h",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-018",
+      "action": "CONSOLIDATE 26 canvas maps \u2192 8 canonical maps",
+      "effort": "2h",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-019",
+      "action": "CONSOLIDATE 17 dashboards \u2192 6 canonical dashboards",
+      "effort": "2h",
+      "roi": "HIGH",
+      "risk": "LOW"
+    },
+    {
+      "id": "SIMP-020",
+      "action": "ARCHIVE mission_001\u2192012 dirs \u2192 /archive/ (doctrine preserved in .md)",
+      "effort": "1h",
+      "roi": "MEDIUM",
+      "risk": "LOW"
+    }
+  ],
+  "complexity_reduction": {
+    "current_modules": 71,
+    "core_modules": 27,
+    "sunset_candidates": 19,
+    "after_simplification": 52,
+    "reduction_pct": 26.8
+  }
+}

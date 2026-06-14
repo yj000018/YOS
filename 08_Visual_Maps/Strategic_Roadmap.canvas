@@ -1,0 +1,178 @@
+{
+  "nodes": [
+    {
+      "id": "now",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 160,
+      "height": 60,
+      "text": "**NOW**\nM-025 Strategic Engine",
+      "color": "#10b981"
+    },
+    {
+      "id": "h_6_months",
+      "type": "text",
+      "x": 300,
+      "y": -120,
+      "width": 200,
+      "height": 50,
+      "text": "**6 Months (Q3 2026)**",
+      "color": "#1e293b"
+    },
+    {
+      "id": "mission_026",
+      "type": "text",
+      "x": 300,
+      "y": 0,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-026**\nExecutive Simulation Layer\nCRITICAL",
+      "color": "#ef4444"
+    },
+    {
+      "id": "mission_031",
+      "type": "text",
+      "x": 300,
+      "y": 120,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-031**\nLive Gemini + Budget Enforcement\nHIGH",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "mission_029",
+      "type": "text",
+      "x": 300,
+      "y": 240,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-029**\nNotion ODT Sync + Cross-Session Memory\nHIGH",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "h_12_months",
+      "type": "text",
+      "x": 600,
+      "y": -120,
+      "width": 200,
+      "height": 50,
+      "text": "**12 Months (Q4 2026\u2013Q1 2027)**",
+      "color": "#1e293b"
+    },
+    {
+      "id": "mission_027",
+      "type": "text",
+      "x": 600,
+      "y": 0,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-027**\nKGC v5 \u2014 Semantic Depth Pass\nHIGH",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "mission_028",
+      "type": "text",
+      "x": 600,
+      "y": 120,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-028**\nn8n Integration \u2014 Autonomous Scheduling\nHIGH",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "mission_030",
+      "type": "text",
+      "x": 600,
+      "y": 240,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-030**\nConstitutional Amendment Protocol\nMEDIUM",
+      "color": "#6366f1"
+    },
+    {
+      "id": "h_24_months",
+      "type": "text",
+      "x": 900,
+      "y": -120,
+      "width": 200,
+      "height": 50,
+      "text": "**24 Months (2027)**",
+      "color": "#1e293b"
+    },
+    {
+      "id": "mission_032",
+      "type": "text",
+      "x": 900,
+      "y": 0,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-032**\nDashboard Exporter + Semantic Search\nMEDIUM",
+      "color": "#6366f1"
+    },
+    {
+      "id": "mission_033",
+      "type": "text",
+      "x": 900,
+      "y": 120,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-033**\nAutonomous Mission Execution (no human trigger)\nHIGH",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "mission_034",
+      "type": "text",
+      "x": 900,
+      "y": 240,
+      "width": 200,
+      "height": 80,
+      "text": "**MISSION-034**\nMulti-Agent Y-OS (parallel cognitive workers)\nHIGH",
+      "color": "#f59e0b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_mission_026",
+      "fromNode": "now",
+      "toNode": "mission_026",
+      "label": "Q3 2026"
+    },
+    {
+      "id": "e_mission_027",
+      "fromNode": "now",
+      "toNode": "mission_027",
+      "label": "Q4 2026"
+    },
+    {
+      "id": "e_mission_028",
+      "fromNode": "h_6_months",
+      "toNode": "mission_028",
+      "label": "Q4 2026"
+    },
+    {
+      "id": "e_mission_030",
+      "fromNode": "h_6_months",
+      "toNode": "mission_030",
+      "label": "Q1 2027"
+    },
+    {
+      "id": "e_mission_032",
+      "fromNode": "now",
+      "toNode": "mission_032",
+      "label": "Q2 2027"
+    },
+    {
+      "id": "e_mission_033",
+      "fromNode": "h_12_months",
+      "toNode": "mission_033",
+      "label": "Q3 2027"
+    },
+    {
+      "id": "e_mission_034",
+      "fromNode": "h_12_months",
+      "toNode": "mission_034",
+      "label": "Q4 2027"
+    }
+  ]
+}

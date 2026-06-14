@@ -1,0 +1,24 @@
+{
+  "mission": "MISSION-025",
+  "status": "PASSED",
+  "tests": {
+    "TEST_A": "PASS",
+    "TEST_B": "PASS",
+    "TEST_C": "PASS",
+    "TEST_D": "PASS",
+    "TEST_E": "PASS",
+    "TEST_F": "PASS",
+    "TEST_G": "PASS",
+    "TEST_H": "PASS"
+  },
+  "pass_count": 8,
+  "recommendations_generated": 12,
+  "gaps_identified": 20,
+  "mission_proposals": 7,
+  "evidence_coverage": 100.0,
+  "priority_queue_size": 12,
+  "memory_entries": 17,
+  "lakshmi_score": 10,
+  "lakshmi_verdict": "APPROVE",
+  "generated_at": "2026-06-14T17:14:09.241361+00:00"
+}

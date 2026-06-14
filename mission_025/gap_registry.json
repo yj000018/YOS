@@ -1,0 +1,298 @@
+{
+  "analysis": {
+    "total_gaps": 20,
+    "by_severity": {
+      "CRITICAL": 1,
+      "HIGH": 7,
+      "LOW": 1,
+      "MEDIUM": 11
+    },
+    "by_category": {
+      "CAPABILITY": 3,
+      "TECHNICAL_DEBT": 4,
+      "PROVIDER_RISK": 2,
+      "GOVERNANCE": 2,
+      "GRAPH": 2,
+      "EXECUTION": 2,
+      "OBSERVABILITY": 2,
+      "MEMORY": 3
+    },
+    "critical_gaps": [
+      "GAP-001"
+    ],
+    "high_gaps": [
+      "GAP-002",
+      "GAP-003",
+      "GAP-004",
+      "GAP-008",
+      "GAP-009",
+      "GAP-018",
+      "GAP-019"
+    ],
+    "generated_at": "2026-06-14T17:14:09.237374+00:00"
+  },
+  "gaps": [
+    {
+      "gap_id": "GAP-001",
+      "category": "CAPABILITY",
+      "title": "No Executive Simulation Layer",
+      "description": "Y-OS cannot model causal impact of decisions. What-if analysis is impossible.",
+      "severity": "CRITICAL",
+      "evidence": [
+        "ADR-0048 M-026 pending",
+        "EIS=96 plateau"
+      ],
+      "remediation": "Implement MISSION-026 Executive Simulation Layer",
+      "target_mission": "MISSION-026"
+    },
+    {
+      "gap_id": "GAP-002",
+      "category": "CAPABILITY",
+      "title": "No Semantic Search over Corpus",
+      "description": "4,056 semantic edges exist but are not queryable via natural language.",
+      "severity": "HIGH",
+      "evidence": [
+        "kg_semantic_graph_v4.json",
+        "Exa in routing playbook"
+      ],
+      "remediation": "Implement vector index + semantic search API",
+      "target_mission": "MISSION-027"
+    },
+    {
+      "gap_id": "GAP-003",
+      "category": "CAPABILITY",
+      "title": "No External Trigger for Event Bus",
+      "description": "Event Bus operational but requires manual trigger. No n8n/webhook integration.",
+      "severity": "HIGH",
+      "evidence": [
+        "M-022 Event Bus",
+        "44 event types",
+        "n8n in playbook"
+      ],
+      "remediation": "Implement n8n webhook \u2192 Event Bus bridge",
+      "target_mission": "MISSION-028"
+    },
+    {
+      "gap_id": "GAP-004",
+      "category": "TECHNICAL_DEBT",
+      "title": "Orphan Rate 7.1% (34 files)",
+      "description": "34 Markdown files remain unlinked despite KGC v4. Body wikilinks pass incomplete.",
+      "severity": "HIGH",
+      "evidence": [
+        "M-021 audit",
+        "ADR-0049 partial pass"
+      ],
+      "remediation": "KGC v5 body wikilinks pass targeting orphan files",
+      "target_mission": "MISSION-027"
+    },
+    {
+      "gap_id": "GAP-005",
+      "category": "TECHNICAL_DEBT",
+      "title": "Python __pycache__ committed to Git",
+      "description": "Runtime __pycache__ directories are committed to y-os-doctrine. Adds noise.",
+      "severity": "LOW",
+      "evidence": [
+        "git log --name-only shows .pyc files"
+      ],
+      "remediation": "Add .gitignore for __pycache__ and remove committed .pyc files",
+      "target_mission": "MISSION-025"
+    },
+    {
+      "gap_id": "GAP-006",
+      "category": "TECHNICAL_DEBT",
+      "title": "No Git auto-push hook",
+      "description": "Every mission requires manual git commit + push. 82 manual operations.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "82 commits",
+        "M-022 Event Bus MISSION_COMPLETED event"
+      ],
+      "remediation": "Implement Event Bus \u2192 git push hook",
+      "target_mission": "MISSION-026"
+    },
+    {
+      "gap_id": "GAP-007",
+      "category": "TECHNICAL_DEBT",
+      "title": "Mission lineage 9 LOW-confidence edges",
+      "description": "9 of 20 lineage edges are LOW confidence (human_review_required=true).",
+      "severity": "MEDIUM",
+      "evidence": [
+        "M-022A candidate_lineage_edges.json",
+        "lineage_review_registry"
+      ],
+      "remediation": "Human review + confirmation of 9 LOW-confidence edges",
+      "target_mission": "MISSION-025"
+    },
+    {
+      "gap_id": "GAP-008",
+      "category": "PROVIDER_RISK",
+      "title": "Gemini not live-tested",
+      "description": "Gemini registered in provider registry but no live API key validated.",
+      "severity": "HIGH",
+      "evidence": [
+        "M-023 provider_registry.json",
+        "failover tests used mock"
+      ],
+      "remediation": "Add GEMINI_API_KEY to Manus Secrets, run live validation",
+      "target_mission": "MISSION-025"
+    },
+    {
+      "gap_id": "GAP-009",
+      "category": "PROVIDER_RISK",
+      "title": "No cost budget enforcement",
+      "description": "Cost tracking exists but no hard budget limits. Runaway cost possible.",
+      "severity": "HIGH",
+      "evidence": [
+        "M-023 cost_tracker_v1",
+        "K2 rule",
+        "M-017 cost_report"
+      ],
+      "remediation": "Implement budget_enforcer_v1 with configurable limits",
+      "target_mission": "MISSION-026"
+    },
+    {
+      "gap_id": "GAP-010",
+      "category": "GOVERNANCE",
+      "title": "No Constitutional Amendment Protocol",
+      "description": "Constitution v1 FROZEN but no formal amendment process defined.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "Y-OS_Constitution_v1 FROZEN",
+        "ADR-0034"
+      ],
+      "remediation": "Define amendment protocol in new ADR",
+      "target_mission": "MISSION-029"
+    },
+    {
+      "gap_id": "GAP-011",
+      "category": "GOVERNANCE",
+      "title": "Lakshmi review is code-only, not LLM-based",
+      "description": "Lakshmi governance is rule-based scoring, not semantic reasoning.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "lakshmi_context_review_v1.py",
+        "ADR-0043"
+      ],
+      "remediation": "Implement LLM-based Lakshmi review using Anthropic API",
+      "target_mission": "MISSION-027"
+    },
+    {
+      "gap_id": "GAP-012",
+      "category": "GRAPH",
+      "title": "ADR supersession chain not traversable",
+      "description": "ADRs that supersede others lack machine-readable supersedes edges.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "ADR-0041 supersedes pattern",
+        "kg_semantic_graph_v4.json"
+      ],
+      "remediation": "Add supersedes edges in KGC v5",
+      "target_mission": "MISSION-027"
+    },
+    {
+      "gap_id": "GAP-013",
+      "category": "GRAPH",
+      "title": "No concept-to-concept edges",
+      "description": "12\u219239 concept nodes exist but have no inter-concept edges.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "M-014 concept nodes",
+        "10_Concepts_MOC.md"
+      ],
+      "remediation": "Add concept-to-concept typed edges in KGC v5",
+      "target_mission": "MISSION-027"
+    },
+    {
+      "gap_id": "GAP-014",
+      "category": "EXECUTION",
+      "title": "Pipeline orchestrator has no retry logic",
+      "description": "Failed worker calls have no automatic retry. Failover is provider-level only.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "M-018 pipeline_orchestrator",
+        "M-023 failover_engine"
+      ],
+      "remediation": "Add retry_policy to pipeline_orchestrator_v2",
+      "target_mission": "MISSION-026"
+    },
+    {
+      "gap_id": "GAP-015",
+      "category": "EXECUTION",
+      "title": "No parallel worker execution",
+      "description": "Pipeline executes workers sequentially. Parallel execution would reduce latency.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "M-018 pipeline_state_manager",
+        "ADR-0045"
+      ],
+      "remediation": "Implement parallel worker lanes in pipeline_orchestrator_v2",
+      "target_mission": "MISSION-028"
+    },
+    {
+      "gap_id": "GAP-016",
+      "category": "OBSERVABILITY",
+      "title": "No real-time alerting to external channel",
+      "description": "Alert engine generates alerts but does not push to Slack/email/webhook.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "M-020 organizational_alert_engine_v1",
+        "n8n in playbook"
+      ],
+      "remediation": "Implement alert_publisher_v1 with n8n/webhook output",
+      "target_mission": "MISSION-028"
+    },
+    {
+      "gap_id": "GAP-017",
+      "category": "OBSERVABILITY",
+      "title": "Dashboards not accessible outside Obsidian",
+      "description": "All dashboards are Dataview-dependent. No static HTML export.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "M-015 dashboards",
+        "M-019 dashboards",
+        "M-020 dashboards"
+      ],
+      "remediation": "Implement dashboard_exporter_v1 generating static HTML",
+      "target_mission": "MISSION-027"
+    },
+    {
+      "gap_id": "GAP-018",
+      "category": "MEMORY",
+      "title": "No Notion sync for ODT Registry",
+      "description": "ODT Registry is JSON-only. Not accessible cross-session without file read.",
+      "severity": "HIGH",
+      "evidence": [
+        "M-019 odt_registry.json",
+        "Notion MCP available"
+      ],
+      "remediation": "Implement notion_odt_sync_v1",
+      "target_mission": "MISSION-026"
+    },
+    {
+      "gap_id": "GAP-019",
+      "category": "MEMORY",
+      "title": "No cross-session memory for strategic decisions",
+      "description": "Strategic recommendations generated per-session. No persistent memory.",
+      "severity": "HIGH",
+      "evidence": [
+        "M-025 strategic_memory_engine",
+        "Mem0 in routing playbook"
+      ],
+      "remediation": "Implement Mem0 sync for strategic decisions",
+      "target_mission": "MISSION-026"
+    },
+    {
+      "gap_id": "GAP-020",
+      "category": "MEMORY",
+      "title": "y-os-doctrine not archived to Notion Memory",
+      "description": "82 commits represent significant knowledge not yet in Notion Memory.",
+      "severity": "MEDIUM",
+      "evidence": [
+        "82 commits on y-os-doctrine",
+        "memory-manager skill"
+      ],
+      "remediation": "Run session-synthesizer + memoriser skills on y-os-doctrine",
+      "target_mission": "MISSION-025"
+    }
+  ]
+}

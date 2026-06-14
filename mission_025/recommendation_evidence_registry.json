@@ -1,0 +1,187 @@
+[
+  {
+    "recommendation_id": "REC-001",
+    "evidence_count": 3,
+    "evidence_items": [
+      "ADR-0048 roadmap",
+      "EIS=96 plateau",
+      "M-025 strategic engine operational"
+    ],
+    "sources": [
+      "ADR Registry (ADR-0006 \u2192 ADR-0054)",
+      "Executive Intelligence Score Dashboard",
+      "Mission Registry (M-001 \u2192 M-025)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 3 sources"
+  },
+  {
+    "recommendation_id": "REC-002",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-021 audit: orphan_rate=7.1%",
+      "ADR-0049 partial pass",
+      "Graph Quality=100 ceiling"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Graph Quality Audit (M-021)",
+      "ADR Registry (ADR-0006 \u2192 ADR-0054)",
+      "Graph Quality Dashboard"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 4 sources"
+  },
+  {
+    "recommendation_id": "REC-003",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-023: Gemini registered, no live test",
+      "provider_registry.json",
+      "failover_engine_v1"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Provider Registry (3 providers)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 2 sources"
+  },
+  {
+    "recommendation_id": "REC-004",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-019 ODT Registry",
+      "Notion MCP available",
+      "M-020 observability operational"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Notion Memory (MCP)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 2 sources"
+  },
+  {
+    "recommendation_id": "REC-005",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-022 Event Bus operational",
+      "44 event types registered",
+      "n8n in Y-OS routing playbook"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Event Registry (44 event types)",
+      "n8n Routing Playbook"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 3 sources"
+  },
+  {
+    "recommendation_id": "REC-006",
+    "evidence_count": 3,
+    "evidence_items": [
+      "82 commits on y-os-doctrine",
+      "Notion MCP available",
+      "memory-manager skill"
+    ],
+    "sources": [
+      "Notion Memory (MCP)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 1 sources"
+  },
+  {
+    "recommendation_id": "REC-007",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-015: 9 dashboards generated",
+      "Dataview dependency",
+      "M-019 ODT dashboards"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 1 sources"
+  },
+  {
+    "recommendation_id": "REC-008",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-019 worker_registry.json",
+      "M-023 provider health monitor",
+      "M-022 Event Bus"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Provider Registry (3 providers)",
+      "Event Registry (44 event types)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 3 sources"
+  },
+  {
+    "recommendation_id": "REC-009",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-022 Event Bus: MISSION_COMPLETED event",
+      "82 manual commits",
+      "git_push_hook pattern"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Event Registry (44 event types)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 2 sources"
+  },
+  {
+    "recommendation_id": "REC-010",
+    "evidence_count": 3,
+    "evidence_items": [
+      "Y-OS_Constitution_v1 FROZEN",
+      "ADR-0034 Constitutional Elevation",
+      "Lakshmi governance pattern"
+    ],
+    "sources": [
+      "Y-OS Constitution v1",
+      "ADR Registry (ADR-0006 \u2192 ADR-0054)",
+      "Governance Review Registry"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 3 sources"
+  },
+  {
+    "recommendation_id": "REC-011",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-021: 4,056 edges",
+      "kg_semantic_graph_v4.json",
+      "Exa semantic search in routing playbook"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Knowledge Graph v4 (4,056 edges)"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 2 sources"
+  },
+  {
+    "recommendation_id": "REC-012",
+    "evidence_count": 3,
+    "evidence_items": [
+      "M-023 cost_tracker_v1",
+      "M-017 cost_report.md",
+      "K2 rule: no spend without authorization"
+    ],
+    "sources": [
+      "Mission Registry (M-001 \u2192 M-025)",
+      "Cost Tracker",
+      "Y-OS Operating Rules"
+    ],
+    "validated": true,
+    "validation_reason": "\u2705 3 evidence items from 3 sources"
+  }
+]

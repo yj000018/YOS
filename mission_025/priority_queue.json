@@ -1,0 +1,170 @@
+[
+  {
+    "rank": 1,
+    "recommendation_id": "REC-001",
+    "title": "Implement Executive Simulation Layer (MISSION-026)",
+    "priority_score": 102.55,
+    "breakdown": {
+      "impact": 40,
+      "urgency": 30,
+      "confidence": 14.55,
+      "leverage": 15,
+      "dependency_readiness": 3,
+      "total": 102.55
+    }
+  },
+  {
+    "rank": 2,
+    "recommendation_id": "REC-003",
+    "title": "Implement Gemini API key and validate live Gemini calls",
+    "priority_score": 92.7,
+    "breakdown": {
+      "impact": 30,
+      "urgency": 30,
+      "confidence": 14.7,
+      "leverage": 15,
+      "dependency_readiness": 3,
+      "total": 92.7
+    }
+  },
+  {
+    "rank": 3,
+    "recommendation_id": "REC-004",
+    "title": "Build Notion Sync for ODT Registry",
+    "priority_score": 78.2,
+    "breakdown": {
+      "impact": 30,
+      "urgency": 20,
+      "confidence": 13.2,
+      "leverage": 12,
+      "dependency_readiness": 3,
+      "total": 78.2
+    }
+  },
+  {
+    "rank": 4,
+    "recommendation_id": "REC-002",
+    "title": "Reduce orphan rate from 7.1% to <3%",
+    "priority_score": 74.8,
+    "breakdown": {
+      "impact": 30,
+      "urgency": 20,
+      "confidence": 13.8,
+      "leverage": 8,
+      "dependency_readiness": 3,
+      "total": 74.8
+    }
+  },
+  {
+    "rank": 5,
+    "recommendation_id": "REC-012",
+    "title": "Implement cost budget enforcement in provider router",
+    "priority_score": 71.8,
+    "breakdown": {
+      "impact": 20,
+      "urgency": 20,
+      "confidence": 13.8,
+      "leverage": 15,
+      "dependency_readiness": 3,
+      "total": 71.8
+    }
+  },
+  {
+    "rank": 6,
+    "recommendation_id": "REC-005",
+    "title": "Implement n8n workflow automation for mission triggers",
+    "priority_score": 67.75,
+    "breakdown": {
+      "impact": 30,
+      "urgency": 10,
+      "confidence": 12.75,
+      "leverage": 12,
+      "dependency_readiness": 3,
+      "total": 67.75
+    }
+  },
+  {
+    "rank": 7,
+    "recommendation_id": "REC-011",
+    "title": "Implement semantic search over corpus (Obsidian + Manus)",
+    "priority_score": 66.7,
+    "breakdown": {
+      "impact": 30,
+      "urgency": 10,
+      "confidence": 11.7,
+      "leverage": 12,
+      "dependency_readiness": 3,
+      "total": 66.7
+    }
+  },
+  {
+    "rank": 8,
+    "recommendation_id": "REC-009",
+    "title": "Implement Git auto-push hook post-mission",
+    "priority_score": 66.5,
+    "breakdown": {
+      "impact": 20,
+      "urgency": 20,
+      "confidence": 13.5,
+      "leverage": 10,
+      "dependency_readiness": 3,
+      "total": 66.5
+    }
+  },
+  {
+    "rank": 9,
+    "recommendation_id": "REC-006",
+    "title": "Archive y-os-doctrine branch to Notion Memory",
+    "priority_score": 65.25,
+    "breakdown": {
+      "impact": 20,
+      "urgency": 20,
+      "confidence": 14.25,
+      "leverage": 8,
+      "dependency_readiness": 3,
+      "total": 65.25
+    }
+  },
+  {
+    "rank": 10,
+    "recommendation_id": "REC-007",
+    "title": "Implement Dataview plugin for live corpus queries",
+    "priority_score": 55.3,
+    "breakdown": {
+      "impact": 20,
+      "urgency": 10,
+      "confidence": 12.3,
+      "leverage": 10,
+      "dependency_readiness": 3,
+      "total": 55.3
+    }
+  },
+  {
+    "rank": 11,
+    "recommendation_id": "REC-008",
+    "title": "Implement worker registry with live health monitoring",
+    "priority_score": 52.0,
+    "breakdown": {
+      "impact": 20,
+      "urgency": 10,
+      "confidence": 12.0,
+      "leverage": 7,
+      "dependency_readiness": 3,
+      "total": 52.0
+    }
+  },
+  {
+    "rank": 12,
+    "recommendation_id": "REC-010",
+    "title": "Implement Constitutional Amendment Protocol",
+    "priority_score": 49.2,
+    "breakdown": {
+      "impact": 20,
+      "urgency": 5,
+      "confidence": 13.2,
+      "leverage": 8,
+      "dependency_readiness": 3,
+      "total": 49.2
+    }
+  }
+]

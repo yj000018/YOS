@@ -1,0 +1,244 @@
+[
+  {
+    "recommendation_id": "REC-001",
+    "title": "Implement Executive Simulation Layer (MISSION-026)",
+    "description": "Y-OS can observe, remember, and recommend \u2014 but cannot simulate causal impact. MISSION-026 closes the final gap in the cognitive loop.",
+    "category": "STRATEGIC_GAP",
+    "impact": "CRITICAL",
+    "confidence": 0.97,
+    "urgency": "IMMEDIATE",
+    "evidence": [
+      "ADR-0048 roadmap",
+      "EIS=96 plateau",
+      "M-025 strategic engine operational"
+    ],
+    "dependencies": [
+      "MISSION-025"
+    ],
+    "expected_roi": "Enables what-if analysis, reduces decision risk by ~40%",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226483+00:00"
+  },
+  {
+    "recommendation_id": "REC-002",
+    "title": "Reduce orphan rate from 7.1% to <3%",
+    "description": "34 files remain unlinked. KGC v5 body-wikilinks pass would close this gap and push Graph Quality to 105+.",
+    "category": "TECHNICAL_DEBT",
+    "impact": "HIGH",
+    "confidence": 0.92,
+    "urgency": "SHORT_TERM",
+    "evidence": [
+      "M-021 audit: orphan_rate=7.1%",
+      "ADR-0049 partial pass",
+      "Graph Quality=100 ceiling"
+    ],
+    "dependencies": [
+      "MISSION-021"
+    ],
+    "expected_roi": "Graph Quality 100 \u2192 105+, EIS +2\u20133 points",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226501+00:00"
+  },
+  {
+    "recommendation_id": "REC-003",
+    "title": "Implement Gemini API key and validate live Gemini calls",
+    "description": "Provider registry has Gemini registered but no live API key. 28.6% of routing decisions target an untested provider.",
+    "category": "RISK",
+    "impact": "HIGH",
+    "confidence": 0.98,
+    "urgency": "IMMEDIATE",
+    "evidence": [
+      "M-023: Gemini registered, no live test",
+      "provider_registry.json",
+      "failover_engine_v1"
+    ],
+    "dependencies": [
+      "MISSION-023"
+    ],
+    "expected_roi": "Eliminates single-point-of-failure risk, enables true 3-provider resilience",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226506+00:00"
+  },
+  {
+    "recommendation_id": "REC-004",
+    "title": "Build Notion Sync for ODT Registry",
+    "description": "ODT Registry exists as JSON only. Syncing to Notion enables human-readable organizational dashboard accessible outside Obsidian.",
+    "category": "OPPORTUNITY",
+    "impact": "HIGH",
+    "confidence": 0.88,
+    "urgency": "SHORT_TERM",
+    "evidence": [
+      "M-019 ODT Registry",
+      "Notion MCP available",
+      "M-020 observability operational"
+    ],
+    "dependencies": [
+      "MISSION-019",
+      "MISSION-020"
+    ],
+    "expected_roi": "CEO-accessible dashboard, reduces context-loading time by ~60%",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226510+00:00"
+  },
+  {
+    "recommendation_id": "REC-005",
+    "title": "Implement n8n workflow automation for mission triggers",
+    "description": "Event Bus is operational but has no external trigger. n8n integration would enable scheduled mission execution, webhook triggers, and external system integration.",
+    "category": "OPPORTUNITY",
+    "impact": "HIGH",
+    "confidence": 0.85,
+    "urgency": "MEDIUM_TERM",
+    "evidence": [
+      "M-022 Event Bus operational",
+      "44 event types registered",
+      "n8n in Y-OS routing playbook"
+    ],
+    "dependencies": [
+      "MISSION-022"
+    ],
+    "expected_roi": "Autonomous mission scheduling, reduces manual trigger overhead by ~80%",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226513+00:00"
+  },
+  {
+    "recommendation_id": "REC-006",
+    "title": "Archive y-os-doctrine branch to Notion Memory",
+    "description": "82 commits on y-os-doctrine represent significant organizational knowledge. Archiving to Notion Memory ensures cross-session persistence.",
+    "category": "GOVERNANCE",
+    "impact": "MEDIUM",
+    "confidence": 0.95,
+    "urgency": "SHORT_TERM",
+    "evidence": [
+      "82 commits on y-os-doctrine",
+      "Notion MCP available",
+      "memory-manager skill"
+    ],
+    "dependencies": [
+      "MISSION-013"
+    ],
+    "expected_roi": "Cross-session memory continuity, eliminates re-discovery overhead",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226516+00:00"
+  },
+  {
+    "recommendation_id": "REC-007",
+    "title": "Implement Dataview plugin for live corpus queries",
+    "description": "9 Dataview dashboards exist but require Obsidian + Dataview plugin. Generating static HTML exports would make dashboards accessible without Obsidian.",
+    "category": "BOTTLENECK",
+    "impact": "MEDIUM",
+    "confidence": 0.82,
+    "urgency": "MEDIUM_TERM",
+    "evidence": [
+      "M-015: 9 dashboards generated",
+      "Dataview dependency",
+      "M-019 ODT dashboards"
+    ],
+    "dependencies": [
+      "MISSION-015"
+    ],
+    "expected_roi": "Dashboard accessibility without Obsidian setup, reduces onboarding friction",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226519+00:00"
+  },
+  {
+    "recommendation_id": "REC-008",
+    "title": "Implement worker registry with live health monitoring",
+    "description": "6 workers are registered but health is simulated. Live health checks would enable real-time worker availability routing.",
+    "category": "PERFORMANCE",
+    "impact": "MEDIUM",
+    "confidence": 0.8,
+    "urgency": "MEDIUM_TERM",
+    "evidence": [
+      "M-019 worker_registry.json",
+      "M-023 provider health monitor",
+      "M-022 Event Bus"
+    ],
+    "dependencies": [
+      "MISSION-019",
+      "MISSION-023"
+    ],
+    "expected_roi": "Real-time worker routing, reduces failed execution rate",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226522+00:00"
+  },
+  {
+    "recommendation_id": "REC-009",
+    "title": "Implement Git auto-push hook post-mission",
+    "description": "Every mission requires manual git commit + push. An auto-push hook triggered by the Event Bus would eliminate this overhead.",
+    "category": "BOTTLENECK",
+    "impact": "MEDIUM",
+    "confidence": 0.9,
+    "urgency": "SHORT_TERM",
+    "evidence": [
+      "M-022 Event Bus: MISSION_COMPLETED event",
+      "82 manual commits",
+      "git_push_hook pattern"
+    ],
+    "dependencies": [
+      "MISSION-022"
+    ],
+    "expected_roi": "Eliminates manual git overhead, ensures real-time GitHub sync",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226525+00:00"
+  },
+  {
+    "recommendation_id": "REC-010",
+    "title": "Implement Constitutional Amendment Protocol",
+    "description": "Y-OS Constitution v1 is FROZEN but has no formal amendment protocol. As Y-OS evolves, a governed amendment process is required.",
+    "category": "GOVERNANCE",
+    "impact": "MEDIUM",
+    "confidence": 0.88,
+    "urgency": "LONG_TERM",
+    "evidence": [
+      "Y-OS_Constitution_v1 FROZEN",
+      "ADR-0034 Constitutional Elevation",
+      "Lakshmi governance pattern"
+    ],
+    "dependencies": [
+      "MISSION-006"
+    ],
+    "expected_roi": "Enables constitutional evolution without breaking governance invariants",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226528+00:00"
+  },
+  {
+    "recommendation_id": "REC-011",
+    "title": "Implement semantic search over corpus (Obsidian + Manus)",
+    "description": "565 wikilinks + 4,056 semantic edges exist but are not searchable semantically. A vector index over the corpus would enable natural language queries.",
+    "category": "OPPORTUNITY",
+    "impact": "HIGH",
+    "confidence": 0.78,
+    "urgency": "MEDIUM_TERM",
+    "evidence": [
+      "M-021: 4,056 edges",
+      "kg_semantic_graph_v4.json",
+      "Exa semantic search in routing playbook"
+    ],
+    "dependencies": [
+      "MISSION-021"
+    ],
+    "expected_roi": "Natural language corpus navigation, reduces lookup time by ~70%",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226531+00:00"
+  },
+  {
+    "recommendation_id": "REC-012",
+    "title": "Implement cost budget enforcement in provider router",
+    "description": "Cost tracking exists but has no hard budget limits. A budget enforcement layer would prevent runaway LLM costs.",
+    "category": "RISK",
+    "impact": "MEDIUM",
+    "confidence": 0.92,
+    "urgency": "SHORT_TERM",
+    "evidence": [
+      "M-023 cost_tracker_v1",
+      "M-017 cost_report.md",
+      "K2 rule: no spend without authorization"
+    ],
+    "dependencies": [
+      "MISSION-023"
+    ],
+    "expected_roi": "Prevents cost overruns, enforces K2 rule autonomously",
+    "priority_score": 0.0,
+    "generated_at": "2026-06-14T17:14:09.226534+00:00"
+  }
+]

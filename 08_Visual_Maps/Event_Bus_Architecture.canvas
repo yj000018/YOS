@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "id": "bus",
+      "type": "text",
+      "x": 400,
+      "y": 0,
+      "width": 200,
+      "height": 80,
+      "text": "## Event Bus Core\npublish \u00b7 subscribe\nreplay \u00b7 DLQ",
+      "color": "#6366f1"
+    },
+    {
+      "id": "registry",
+      "type": "text",
+      "x": 0,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Event Registry**\n10 categories\n31 types",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "router",
+      "type": "text",
+      "x": 200,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Event Router**\n21 routing rules",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "persistence",
+      "type": "text",
+      "x": 400,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Persistence**\nAppend-only JSONL",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "replay",
+      "type": "text",
+      "x": 600,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Replay Engine**\nTime Machine ready",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "lineage",
+      "type": "text",
+      "x": 800,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Lineage Tracker**\nFull traceability",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "observability",
+      "type": "text",
+      "x": 400,
+      "y": 350,
+      "width": 200,
+      "height": 70,
+      "text": "**Observability**\nMetrics \u00b7 Dashboard",
+      "color": "#10b981"
+    },
+    {
+      "id": "mission",
+      "type": "text",
+      "x": 0,
+      "y": -150,
+      "width": 150,
+      "height": 60,
+      "text": "Mission\nCompleted",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "provider",
+      "type": "text",
+      "x": 200,
+      "y": -150,
+      "width": 150,
+      "height": 60,
+      "text": "Provider\nFailed",
+      "color": "#ef4444"
+    },
+    {
+      "id": "artifact",
+      "type": "text",
+      "x": 400,
+      "y": -150,
+      "width": 150,
+      "height": 60,
+      "text": "Artifact\nCreated",
+      "color": "#10b981"
+    },
+    {
+      "id": "governance",
+      "type": "text",
+      "x": 600,
+      "y": -150,
+      "width": 150,
+      "height": 60,
+      "text": "Governance\nApproved",
+      "color": "#6366f1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "mission",
+      "toNode": "bus",
+      "label": "emit"
+    },
+    {
+      "id": "e2",
+      "fromNode": "provider",
+      "toNode": "bus",
+      "label": "emit"
+    },
+    {
+      "id": "e3",
+      "fromNode": "artifact",
+      "toNode": "bus",
+      "label": "emit"
+    },
+    {
+      "id": "e4",
+      "fromNode": "governance",
+      "toNode": "bus",
+      "label": "emit"
+    },
+    {
+      "id": "e5",
+      "fromNode": "bus",
+      "toNode": "registry",
+      "label": "validate"
+    },
+    {
+      "id": "e6",
+      "fromNode": "bus",
+      "toNode": "router",
+      "label": "route"
+    },
+    {
+      "id": "e7",
+      "fromNode": "bus",
+      "toNode": "persistence",
+      "label": "persist"
+    },
+    {
+      "id": "e8",
+      "fromNode": "bus",
+      "toNode": "replay",
+      "label": "replay"
+    },
+    {
+      "id": "e9",
+      "fromNode": "bus",
+      "toNode": "lineage",
+      "label": "track"
+    },
+    {
+      "id": "e10",
+      "fromNode": "bus",
+      "toNode": "observability",
+      "label": "observe"
+    }
+  ]
+}

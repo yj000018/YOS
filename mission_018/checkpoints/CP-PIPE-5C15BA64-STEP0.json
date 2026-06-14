@@ -1,0 +1,8 @@
+{
+  "checkpoint_id": "CP-PIPE-5C15BA64-STEP0",
+  "step_id": 0,
+  "worker": "CEO",
+  "pipeline_status_snapshot": "INITIALIZED",
+  "active_artifacts": [],
+  "created_at": "2026-06-14T00:10:02.780733+00:00"
+}

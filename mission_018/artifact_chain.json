@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "mission_id": "MISSION-018",
+  "generated_at": "2026-06-14T00:10:46.526953+00:00",
+  "chain_length": 6,
+  "artifact_order": [
+    "ART-M018-CEO-DIRECTIVE",
+    "ART-M018-BRAHMA-ARCHITECTURE",
+    "ART-M018-HANUMAN-BUILD",
+    "ART-M018-SARASWATI-LEARNING",
+    "ART-M018-LAKSHMI-GOVERNANCE",
+    "ART-M018-GANESHA-CEO-BRIEFING"
+  ],
+  "links": [
+    {
+      "parent_artifact_id": "ART-M018-CEO-DIRECTIVE",
+      "child_artifact_id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:08.924991+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-CEO-DIRECTIVE",
+      "child_artifact_id": "ART-M018-HANUMAN-BUILD",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:14.097748+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "child_artifact_id": "ART-M018-HANUMAN-BUILD",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:14.097760+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-CEO-DIRECTIVE",
+      "child_artifact_id": "ART-M018-SARASWATI-LEARNING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:37.324986+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "child_artifact_id": "ART-M018-SARASWATI-LEARNING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:37.324997+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-HANUMAN-BUILD",
+      "child_artifact_id": "ART-M018-SARASWATI-LEARNING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:37.325000+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-CEO-DIRECTIVE",
+      "child_artifact_id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:40.510033+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "child_artifact_id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:40.510041+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-HANUMAN-BUILD",
+      "child_artifact_id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:40.510045+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-SARASWATI-LEARNING",
+      "child_artifact_id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:40.510048+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-CEO-DIRECTIVE",
+      "child_artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:46.525508+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "child_artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:46.525550+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-HANUMAN-BUILD",
+      "child_artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:46.525558+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-SARASWATI-LEARNING",
+      "child_artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:46.525561+00:00"
+    },
+    {
+      "parent_artifact_id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "child_artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "relationship": "produces",
+      "created_at": "2026-06-14T00:10:46.525564+00:00"
+    }
+  ],
+  "integrity": {
+    "valid": false,
+    "integrity_score": 60,
+    "chain_length": 6,
+    "links": 15,
+    "issues": [
+      "ART-M018-LAKSHMI-GOVERNANCE has 4 parent links \u2014 possible cycle",
+      "ART-M018-GANESHA-CEO-BRIEFING has 5 parent links \u2014 possible cycle"
+    ]
+  }
+}

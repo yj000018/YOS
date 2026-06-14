@@ -1,0 +1,10 @@
+{
+  "checkpoint_id": "CP-PIPE-5C15BA64-STEP1",
+  "step_id": 1,
+  "worker": "Brahma",
+  "pipeline_status_snapshot": "RUNNING",
+  "active_artifacts": [
+    "ART-M018-CEO-DIRECTIVE"
+  ],
+  "created_at": "2026-06-14T00:10:02.782237+00:00"
+}

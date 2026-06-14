@@ -1,0 +1,178 @@
+{
+  "pipeline_id": "PIPE-5C15BA64",
+  "mission_id": "MISSION-018",
+  "status": "COMPLETED",
+  "started_at": "2026-06-14T00:10:02.778796+00:00",
+  "completed_at": "2026-06-14T00:10:46.526315+00:00",
+  "current_step": null,
+  "completed_steps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "failed_steps": [],
+  "active_artifacts": [
+    "ART-M018-CEO-DIRECTIVE",
+    "ART-M018-BRAHMA-ARCHITECTURE",
+    "ART-M018-HANUMAN-BUILD",
+    "ART-M018-SARASWATI-LEARNING",
+    "ART-M018-LAKSHMI-GOVERNANCE",
+    "ART-M018-GANESHA-CEO-BRIEFING"
+  ],
+  "parent_artifact_chain": [
+    "ART-M018-CEO-DIRECTIVE",
+    "ART-M018-BRAHMA-ARCHITECTURE",
+    "ART-M018-HANUMAN-BUILD",
+    "ART-M018-SARASWATI-LEARNING",
+    "ART-M018-LAKSHMI-GOVERNANCE",
+    "ART-M018-GANESHA-CEO-BRIEFING"
+  ],
+  "steps": [
+    {
+      "step_id": 0,
+      "worker": "CEO",
+      "capability": "directive",
+      "status": "COMPLETED",
+      "artifact_id": "ART-M018-CEO-DIRECTIVE",
+      "context_pack_id": "",
+      "trace_id": "",
+      "started_at": "2026-06-14T00:10:02.781069+00:00",
+      "completed_at": "2026-06-14T00:10:02.781810+00:00",
+      "error": ""
+    },
+    {
+      "step_id": 1,
+      "worker": "Brahma",
+      "capability": "architecture",
+      "status": "COMPLETED",
+      "artifact_id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "context_pack_id": "CP-M018-BRAHMA-ARCHITECTURE",
+      "trace_id": "TRACE-435246E1",
+      "started_at": "2026-06-14T00:10:02.782624+00:00",
+      "completed_at": "2026-06-14T00:10:08.925009+00:00",
+      "error": ""
+    },
+    {
+      "step_id": 2,
+      "worker": "Hanuman",
+      "capability": "build",
+      "status": "COMPLETED",
+      "artifact_id": "ART-M018-HANUMAN-BUILD",
+      "context_pack_id": "CP-M018-HANUMAN-BUILD",
+      "trace_id": "TRACE-2544D658",
+      "started_at": "2026-06-14T00:10:08.926381+00:00",
+      "completed_at": "2026-06-14T00:10:14.097800+00:00",
+      "error": ""
+    },
+    {
+      "step_id": 3,
+      "worker": "Saraswati",
+      "capability": "learning",
+      "status": "COMPLETED",
+      "artifact_id": "ART-M018-SARASWATI-LEARNING",
+      "context_pack_id": "CP-M018-SARASWATI-LEARNING",
+      "trace_id": "TRACE-B8924A00",
+      "started_at": "2026-06-14T00:10:14.099111+00:00",
+      "completed_at": "2026-06-14T00:10:37.325010+00:00",
+      "error": ""
+    },
+    {
+      "step_id": 4,
+      "worker": "Lakshmi",
+      "capability": "governance",
+      "status": "COMPLETED",
+      "artifact_id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "context_pack_id": "CP-M018-LAKSHMI-GOVERNANCE",
+      "trace_id": "TRACE-66BCF6DC",
+      "started_at": "2026-06-14T00:10:37.326291+00:00",
+      "completed_at": "2026-06-14T00:10:40.510055+00:00",
+      "error": ""
+    },
+    {
+      "step_id": 5,
+      "worker": "Ganesha",
+      "capability": "reporting",
+      "status": "COMPLETED",
+      "artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "context_pack_id": "CP-M018-GANESHA-REPORTING",
+      "trace_id": "TRACE-9CA4F2F6",
+      "started_at": "2026-06-14T00:10:40.511229+00:00",
+      "completed_at": "2026-06-14T00:10:46.525571+00:00",
+      "error": ""
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpoint_id": "CP-PIPE-5C15BA64-STEP0",
+      "step_id": 0,
+      "worker": "CEO",
+      "pipeline_status_snapshot": "INITIALIZED",
+      "active_artifacts": [],
+      "created_at": "2026-06-14T00:10:02.780733+00:00"
+    },
+    {
+      "checkpoint_id": "CP-PIPE-5C15BA64-STEP1",
+      "step_id": 1,
+      "worker": "Brahma",
+      "pipeline_status_snapshot": "RUNNING",
+      "active_artifacts": [
+        "ART-M018-CEO-DIRECTIVE"
+      ],
+      "created_at": "2026-06-14T00:10:02.782237+00:00"
+    },
+    {
+      "checkpoint_id": "CP-PIPE-5C15BA64-STEP2",
+      "step_id": 2,
+      "worker": "Hanuman",
+      "pipeline_status_snapshot": "RUNNING",
+      "active_artifacts": [
+        "ART-M018-CEO-DIRECTIVE",
+        "ART-M018-BRAHMA-ARCHITECTURE"
+      ],
+      "created_at": "2026-06-14T00:10:08.925954+00:00"
+    },
+    {
+      "checkpoint_id": "CP-PIPE-5C15BA64-STEP3",
+      "step_id": 3,
+      "worker": "Saraswati",
+      "pipeline_status_snapshot": "RUNNING",
+      "active_artifacts": [
+        "ART-M018-CEO-DIRECTIVE",
+        "ART-M018-BRAHMA-ARCHITECTURE",
+        "ART-M018-HANUMAN-BUILD"
+      ],
+      "created_at": "2026-06-14T00:10:14.098605+00:00"
+    },
+    {
+      "checkpoint_id": "CP-PIPE-5C15BA64-STEP4",
+      "step_id": 4,
+      "worker": "Lakshmi",
+      "pipeline_status_snapshot": "RUNNING",
+      "active_artifacts": [
+        "ART-M018-CEO-DIRECTIVE",
+        "ART-M018-BRAHMA-ARCHITECTURE",
+        "ART-M018-HANUMAN-BUILD",
+        "ART-M018-SARASWATI-LEARNING"
+      ],
+      "created_at": "2026-06-14T00:10:37.325799+00:00"
+    },
+    {
+      "checkpoint_id": "CP-PIPE-5C15BA64-STEP5",
+      "step_id": 5,
+      "worker": "Ganesha",
+      "pipeline_status_snapshot": "RUNNING",
+      "active_artifacts": [
+        "ART-M018-CEO-DIRECTIVE",
+        "ART-M018-BRAHMA-ARCHITECTURE",
+        "ART-M018-HANUMAN-BUILD",
+        "ART-M018-SARASWATI-LEARNING",
+        "ART-M018-LAKSHMI-GOVERNANCE"
+      ],
+      "created_at": "2026-06-14T00:10:40.510751+00:00"
+    }
+  ],
+  "rollback_events": []
+}

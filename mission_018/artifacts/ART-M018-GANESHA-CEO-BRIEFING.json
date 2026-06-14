@@ -1,0 +1,40 @@
+{
+  "artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+  "mission_id": "MISSION-018",
+  "artifact_type": "CEO Briefing",
+  "worker": "Ganesha",
+  "capability": "reporting",
+  "provider": "openai",
+  "model": "gpt-4o-2024-08-06",
+  "parent_context_pack_id": "CP-M018-GANESHA-REPORTING",
+  "parent_artifact_ids": [
+    "ART-M018-CEO-DIRECTIVE",
+    "ART-M018-BRAHMA-ARCHITECTURE",
+    "ART-M018-HANUMAN-BUILD",
+    "ART-M018-SARASWATI-LEARNING",
+    "ART-M018-LAKSHMI-GOVERNANCE"
+  ],
+  "status": "CREATED",
+  "created_at": "2026-06-14T00:10:46.524292+00:00",
+  "lineage": {
+    "source_context_pack": "CP-M018-GANESHA-REPORTING",
+    "trace_id": "TRACE-9CA4F2F6",
+    "parent_artifacts": [
+      "ART-M018-CEO-DIRECTIVE",
+      "ART-M018-BRAHMA-ARCHITECTURE",
+      "ART-M018-HANUMAN-BUILD",
+      "ART-M018-SARASWATI-LEARNING",
+      "ART-M018-LAKSHMI-GOVERNANCE"
+    ]
+  },
+  "content_hash": "1622e71b03a3fee42c82cf1861d87b82ad5ccbcda49eda7c1e3988e30790aaf5",
+  "content_preview": "# CEO Briefing — Ganesha / MISSION-018  **Worker:** Ganesha   **Capability:** reporting   **Mode:** MODE-D   **Provider:** openai   **Model:** gpt-4o-2024-08-06   **Tokens:** 1054   **Context Pack:** ",
+  "content_path": "/home/ubuntu/yreg/mission_018/artifacts/ART-M018-GANESHA-CEO-BRIEFING.md",
+  "validation_verdict": "",
+  "tags": [
+    "#artifact",
+    "#yos",
+    "#ganesha",
+    "#mission-018"
+  ]
+}

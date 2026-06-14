@@ -1,0 +1,26 @@
+{
+  "artifact_id": "ART-M018-CEO-DIRECTIVE",
+  "mission_id": "MISSION-018",
+  "artifact_type": "CEO Directive",
+  "worker": "CEO",
+  "capability": "directive",
+  "provider": "human",
+  "model": "human",
+  "parent_context_pack_id": "",
+  "parent_artifact_ids": [],
+  "status": "CREATED",
+  "created_at": "2026-06-14T00:10:02.781333+00:00",
+  "lineage": {
+    "source": "CEO human directive"
+  },
+  "content_hash": "91eb417cbc74590a835bd2e1d7bc6f61cddac37536b63eb1c40941c25b6410c4",
+  "content_preview": "# CEO Directive — MISSION-018  **Worker:** CEO (human)   **Type:** CEO Directive   **Provider:** human    ---  ## Directive  Produce a Y-OS Pipeline Resilience Note explaining how multi-worker artifac",
+  "content_path": "/home/ubuntu/yreg/mission_018/artifacts/ART-M018-CEO-DIRECTIVE.md",
+  "validation_verdict": "",
+  "tags": [
+    "#artifact",
+    "#yos",
+    "#ceo",
+    "#mission-018"
+  ]
+}

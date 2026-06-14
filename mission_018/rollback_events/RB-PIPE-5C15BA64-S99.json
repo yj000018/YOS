@@ -1,0 +1,17 @@
+{
+  "rollback_id": "RB-PIPE-5C15BA64-S99",
+  "pipeline_id": "PIPE-5C15BA64",
+  "trigger_step_id": 99,
+  "rollback_to_checkpoint_id": "CKPT-PIPE-5C15BA64-S5",
+  "reason": "Simulated failure for rollback test \u2014 no real failure occurred",
+  "failed_artifact_id": "ART-M018-SIMULATED-FAIL",
+  "artifacts_preserved": [
+    "ART-M018-CEO-DIRECTIVE",
+    "ART-M018-BRAHMA-ARCHITECTURE",
+    "ART-M018-HANUMAN-BUILD",
+    "ART-M018-SARASWATI-LEARNING",
+    "ART-M018-LAKSHMI-GOVERNANCE",
+    "ART-M018-GANESHA-CEO-BRIEFING"
+  ],
+  "created_at": "2026-06-14T00:10:46.527413+00:00"
+}

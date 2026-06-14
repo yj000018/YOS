@@ -1,0 +1,36 @@
+{
+  "artifact_id": "ART-M018-SARASWATI-LEARNING",
+  "mission_id": "MISSION-018",
+  "artifact_type": "Learning Report",
+  "worker": "Saraswati",
+  "capability": "learning",
+  "provider": "anthropic",
+  "model": "claude-opus-4-20250514",
+  "parent_context_pack_id": "CP-M018-SARASWATI-LEARNING",
+  "parent_artifact_ids": [
+    "ART-M018-CEO-DIRECTIVE",
+    "ART-M018-BRAHMA-ARCHITECTURE",
+    "ART-M018-HANUMAN-BUILD"
+  ],
+  "status": "CREATED",
+  "created_at": "2026-06-14T00:10:37.323971+00:00",
+  "lineage": {
+    "source_context_pack": "CP-M018-SARASWATI-LEARNING",
+    "trace_id": "TRACE-B8924A00",
+    "parent_artifacts": [
+      "ART-M018-CEO-DIRECTIVE",
+      "ART-M018-BRAHMA-ARCHITECTURE",
+      "ART-M018-HANUMAN-BUILD"
+    ]
+  },
+  "content_hash": "26f395e17250008a2a609ac28c2981157bcd45fd1a0f47858499bc02de617f63",
+  "content_preview": "# Learning Report — Saraswati / MISSION-018  **Worker:** Saraswati   **Capability:** learning   **Mode:** MODE-E   **Provider:** anthropic   **Model:** claude-opus-4-20250514   **Tokens:** 1243   **Co",
+  "content_path": "/home/ubuntu/yreg/mission_018/artifacts/ART-M018-SARASWATI-LEARNING.md",
+  "validation_verdict": "",
+  "tags": [
+    "#artifact",
+    "#yos",
+    "#saraswati",
+    "#mission-018"
+  ]
+}

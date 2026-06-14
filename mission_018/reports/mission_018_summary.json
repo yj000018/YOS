@@ -1,0 +1,141 @@
+{
+  "verdict": "PASSED",
+  "pipeline_id": "PIPE-5C15BA64",
+  "pipeline_status": "COMPLETED",
+  "workers_executed": 6,
+  "live_calls": {
+    "attempted": 5,
+    "succeeded": 5,
+    "failed": 0,
+    "fallback": 0
+  },
+  "artifacts_registered": 6,
+  "checkpoints_created": 6,
+  "rollback_events": 1,
+  "validation_queue": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "pass_rate_pct": 100.0,
+    "verdicts": {
+      "ART-M018-BRAHMA-ARCHITECTURE": "VALID",
+      "ART-M018-LAKSHMI-GOVERNANCE": "VALID",
+      "ART-M018-HANUMAN-BUILD": "VALID_WITH_WARNING",
+      "ART-M018-SARASWATI-LEARNING": "VALID",
+      "ART-M018-GANESHA-CEO-BRIEFING": "VALID"
+    }
+  },
+  "context_cache": {
+    "total_entries": 5,
+    "hits": 1,
+    "misses": 5,
+    "hit_rate_pct": 16.7
+  },
+  "chain_integrity": {
+    "valid": false,
+    "integrity_score": 60,
+    "chain_length": 6,
+    "links": 15,
+    "issues": [
+      "ART-M018-LAKSHMI-GOVERNANCE has 4 parent links \u2014 possible cycle",
+      "ART-M018-GANESHA-CEO-BRIEFING has 5 parent links \u2014 possible cycle"
+    ]
+  },
+  "total_tokens": 4836,
+  "estimated_cost_usd": 0.074135,
+  "raw_session_history_tokens": 0,
+  "secrets_exposed": 0,
+  "step_results": {
+    "0": {
+      "step": 0,
+      "worker": "CEO",
+      "artifact_id": "ART-M018-CEO-DIRECTIVE",
+      "artifact_registered": true
+    },
+    "1": {
+      "step": 1,
+      "worker": "Brahma",
+      "capability": "architecture",
+      "expected_mode": "MODE-D",
+      "selected_mode": "MODE-D",
+      "mode_correct": true,
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "SUCCESS",
+      "tokens": 957,
+      "latency_ms": 4910.0,
+      "artifact_id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "artifact_registered": true,
+      "checkpoint": "CKPT-PIPE-5C15BA64-S1",
+      "raw_session_history": 0
+    },
+    "2": {
+      "step": 2,
+      "worker": "Hanuman",
+      "capability": "build",
+      "expected_mode": "MODE-B",
+      "selected_mode": "MODE-B",
+      "mode_correct": true,
+      "provider": "openai",
+      "model": "gpt-4o-mini-2024-07-18",
+      "status": "SUCCESS",
+      "tokens": 766,
+      "latency_ms": 5097.6,
+      "artifact_id": "ART-M018-HANUMAN-BUILD",
+      "artifact_registered": true,
+      "checkpoint": "CKPT-PIPE-5C15BA64-S2",
+      "raw_session_history": 0
+    },
+    "3": {
+      "step": 3,
+      "worker": "Saraswati",
+      "capability": "learning",
+      "expected_mode": "MODE-E",
+      "selected_mode": "MODE-E",
+      "mode_correct": true,
+      "provider": "anthropic",
+      "model": "claude-opus-4-20250514",
+      "status": "SUCCESS",
+      "tokens": 1243,
+      "latency_ms": 22139.6,
+      "artifact_id": "ART-M018-SARASWATI-LEARNING",
+      "artifact_registered": true,
+      "checkpoint": "CKPT-PIPE-5C15BA64-S3",
+      "raw_session_history": 0
+    },
+    "4": {
+      "step": 4,
+      "worker": "Lakshmi",
+      "capability": "governance",
+      "expected_mode": "MODE-D",
+      "selected_mode": "MODE-D",
+      "mode_correct": true,
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "SUCCESS",
+      "tokens": 816,
+      "latency_ms": 3115.9,
+      "artifact_id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "artifact_registered": true,
+      "checkpoint": "CKPT-PIPE-5C15BA64-S4",
+      "raw_session_history": 0
+    },
+    "5": {
+      "step": 5,
+      "worker": "Ganesha",
+      "capability": "reporting",
+      "expected_mode": "MODE-D",
+      "selected_mode": "MODE-D",
+      "mode_correct": true,
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "SUCCESS",
+      "tokens": 1054,
+      "latency_ms": 5952.5,
+      "artifact_id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "artifact_registered": true,
+      "checkpoint": "CKPT-PIPE-5C15BA64-S5",
+      "raw_session_history": 0
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "openai": {
+    "provider_id": "openai",
+    "display_name": "OpenAI",
+    "health_state": "HEALTHY",
+    "availability": 0.999,
+    "avg_latency_ms": 650,
+    "success_rate": 0.997,
+    "model_count": 3,
+    "models": [
+      {
+        "model_id": "gpt-4o-2024-08-06",
+        "tier": "premium",
+        "capabilities": [
+          "architecture",
+          "governance",
+          "build",
+          "vision"
+        ],
+        "input_cost_per_1k": 0.0025,
+        "output_cost_per_1k": 0.01,
+        "context_window": 128000
+      },
+      {
+        "model_id": "gpt-4o-mini-2024-07-18",
+        "tier": "economy",
+        "capabilities": [
+          "build",
+          "learning"
+        ],
+        "input_cost_per_1k": 0.00015,
+        "output_cost_per_1k": 0.0006,
+        "context_window": 128000
+      },
+      {
+        "model_id": "o1-mini",
+        "tier": "premium",
+        "capabilities": [
+          "architecture",
+          "reasoning"
+        ],
+        "input_cost_per_1k": 0.003,
+        "output_cost_per_1k": 0.012,
+        "context_window": 128000
+      }
+    ]
+  },
+  "anthropic": {
+    "provider_id": "anthropic",
+    "display_name": "Anthropic",
+    "health_state": "HEALTHY",
+    "availability": 0.997,
+    "avg_latency_ms": 900,
+    "success_rate": 0.995,
+    "model_count": 3,
+    "models": [
+      {
+        "model_id": "claude-opus-4-20250514",
+        "tier": "premium",
+        "capabilities": [
+          "learning",
+          "governance",
+          "architecture",
+          "long_context"
+        ],
+        "input_cost_per_1k": 0.015,
+        "output_cost_per_1k": 0.075,
+        "context_window": 200000
+      },
+      {
+        "model_id": "claude-sonnet-4-20250514",
+        "tier": "standard",
+        "capabilities": [
+          "learning",
+          "build",
+          "governance"
+        ],
+        "input_cost_per_1k": 0.003,
+        "output_cost_per_1k": 0.015,
+        "context_window": 200000
+      },
+      {
+        "model_id": "claude-haiku-3-5",
+        "tier": "economy",
+        "capabilities": [
+          "build",
+          "learning"
+        ],
+        "input_cost_per_1k": 0.00025,
+        "output_cost_per_1k": 0.00125,
+        "context_window": 200000
+      }
+    ]
+  },
+  "gemini": {
+    "provider_id": "gemini",
+    "display_name": "Google Gemini",
+    "health_state": "HEALTHY",
+    "availability": 0.995,
+    "avg_latency_ms": 750,
+    "success_rate": 0.993,
+    "model_count": 3,
+    "models": [
+      {
+        "model_id": "gemini-2.0-flash-exp",
+        "tier": "economy",
+        "capabilities": [
+          "architecture",
+          "learning",
+          "long_context",
+          "vision"
+        ],
+        "input_cost_per_1k": 0.0001,
+        "output_cost_per_1k": 0.0004,
+        "context_window": 1000000
+      },
+      {
+        "model_id": "gemini-1.5-pro",
+        "tier": "standard",
+        "capabilities": [
+          "architecture",
+          "learning",
+          "long_context",
+          "governance"
+        ],
+        "input_cost_per_1k": 0.00125,
+        "output_cost_per_1k": 0.005,
+        "context_window": 2000000
+      },
+      {
+        "model_id": "gemini-1.5-flash",
+        "tier": "economy",
+        "capabilities": [
+          "build",
+          "learning"
+        ],
+        "input_cost_per_1k": 7.5e-05,
+        "output_cost_per_1k": 0.0003,
+        "context_window": 1000000
+      }
+    ]
+  }
+}

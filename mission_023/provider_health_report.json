@@ -1,0 +1,29 @@
+{
+  "openai": {
+    "health_state": "HEALTHY",
+    "availability": 0.999,
+    "avg_latency_ms": 650,
+    "success_rate": 0.997,
+    "cost_anomaly": true,
+    "score": 90.1,
+    "checked_at": "2026-06-14T04:48:49.740982+00:00"
+  },
+  "anthropic": {
+    "health_state": "HEALTHY",
+    "availability": 0.997,
+    "avg_latency_ms": 900,
+    "success_rate": 0.995,
+    "cost_anomaly": true,
+    "score": 86.2,
+    "checked_at": "2026-06-14T04:48:49.740994+00:00"
+  },
+  "gemini": {
+    "health_state": "HEALTHY",
+    "availability": 0.995,
+    "avg_latency_ms": 750,
+    "success_rate": 0.993,
+    "cost_anomaly": true,
+    "score": 88.3,
+    "checked_at": "2026-06-14T04:48:49.741002+00:00"
+  }
+}

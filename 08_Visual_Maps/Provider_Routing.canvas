@@ -1,0 +1,148 @@
+{
+  "nodes": [
+    {
+      "id": "provider_openai",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 200,
+      "height": 100,
+      "text": "## Openai\nShare: 42.9%\nHealth: HEALTHY",
+      "color": "#10b981"
+    },
+    {
+      "id": "provider_anthropic",
+      "type": "text",
+      "x": 600,
+      "y": 0,
+      "width": 200,
+      "height": 100,
+      "text": "## Anthropic\nShare: 28.6%\nHealth: HEALTHY",
+      "color": "#6366f1"
+    },
+    {
+      "id": "provider_gemini",
+      "type": "text",
+      "x": 1200,
+      "y": 0,
+      "width": 200,
+      "height": 100,
+      "text": "## Gemini\nShare: 28.6%\nHealth: HEALTHY",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "worker_0",
+      "type": "text",
+      "x": 0,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "text": "**Brahma**\narchitecture\nMODE-D",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "worker_1",
+      "type": "text",
+      "x": 200,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "text": "**Hanuman**\nbuild\nMODE-B",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "worker_2",
+      "type": "text",
+      "x": 400,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "text": "**Saraswati**\nlearning\nMODE-E",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "worker_3",
+      "type": "text",
+      "x": 600,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "text": "**Lakshmi**\ngovernance\nMODE-D",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "worker_4",
+      "type": "text",
+      "x": 800,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "text": "**Ganesha**\nreporting\nMODE-D",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "worker_5",
+      "type": "text",
+      "x": 1000,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "text": "**Vishnu**\narchitecture\nMODE-E",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "worker_6",
+      "type": "text",
+      "x": 1200,
+      "y": 250,
+      "width": 180,
+      "height": 80,
+      "text": "**Indra**\nbuild\nMODE-B",
+      "color": "#94a3b8"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_0",
+      "fromNode": "worker_0",
+      "toNode": "provider_openai",
+      "label": "gpt-4o-2024-08-06"
+    },
+    {
+      "id": "edge_1",
+      "fromNode": "worker_1",
+      "toNode": "provider_gemini",
+      "label": "gemini-1.5-flash"
+    },
+    {
+      "id": "edge_2",
+      "fromNode": "worker_2",
+      "toNode": "provider_anthropic",
+      "label": "claude-sonnet-4-2025"
+    },
+    {
+      "id": "edge_3",
+      "fromNode": "worker_3",
+      "toNode": "provider_openai",
+      "label": "gpt-4o-2024-08-06"
+    },
+    {
+      "id": "edge_4",
+      "fromNode": "worker_4",
+      "toNode": "provider_openai",
+      "label": "gpt-4o-2024-08-06"
+    },
+    {
+      "id": "edge_5",
+      "fromNode": "worker_5",
+      "toNode": "provider_anthropic",
+      "label": "claude-opus-4-202505"
+    },
+    {
+      "id": "edge_6",
+      "fromNode": "worker_6",
+      "toNode": "provider_gemini",
+      "label": "gemini-1.5-flash"
+    }
+  ]
+}

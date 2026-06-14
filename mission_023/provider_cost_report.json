@@ -1,0 +1,85 @@
+{
+  "total_cost_usd": 0.08595,
+  "by_provider": {
+    "openai": 0.0225,
+    "gemini": 0.00045,
+    "anthropic": 0.063
+  },
+  "by_worker": {
+    "Brahma": 0.0075,
+    "Hanuman": 0.000225,
+    "Saraswati": 0.0105,
+    "Lakshmi": 0.0075,
+    "Ganesha": 0.0075,
+    "Vishnu": 0.0525,
+    "Indra": 0.000225
+  },
+  "by_mission": {
+    "MISSION-023": 0.08595
+  },
+  "records": [
+    {
+      "provider": "openai",
+      "worker": "Brahma",
+      "model": "gpt-4o-2024-08-06",
+      "tokens_in": 1000,
+      "tokens_out": 500,
+      "cost_usd": 0.0075,
+      "mission": "MISSION-023"
+    },
+    {
+      "provider": "gemini",
+      "worker": "Hanuman",
+      "model": "gemini-1.5-flash",
+      "tokens_in": 1000,
+      "tokens_out": 500,
+      "cost_usd": 0.000225,
+      "mission": "MISSION-023"
+    },
+    {
+      "provider": "anthropic",
+      "worker": "Saraswati",
+      "model": "claude-sonnet-4-20250514",
+      "tokens_in": 1000,
+      "tokens_out": 500,
+      "cost_usd": 0.0105,
+      "mission": "MISSION-023"
+    },
+    {
+      "provider": "openai",
+      "worker": "Lakshmi",
+      "model": "gpt-4o-2024-08-06",
+      "tokens_in": 1000,
+      "tokens_out": 500,
+      "cost_usd": 0.0075,
+      "mission": "MISSION-023"
+    },
+    {
+      "provider": "openai",
+      "worker": "Ganesha",
+      "model": "gpt-4o-2024-08-06",
+      "tokens_in": 1000,
+      "tokens_out": 500,
+      "cost_usd": 0.0075,
+      "mission": "MISSION-023"
+    },
+    {
+      "provider": "anthropic",
+      "worker": "Vishnu",
+      "model": "claude-opus-4-20250514",
+      "tokens_in": 1000,
+      "tokens_out": 500,
+      "cost_usd": 0.0525,
+      "mission": "MISSION-023"
+    },
+    {
+      "provider": "gemini",
+      "worker": "Indra",
+      "model": "gemini-1.5-flash",
+      "tokens_in": 1000,
+      "tokens_out": 500,
+      "cost_usd": 0.000225,
+      "mission": "MISSION-023"
+    }
+  ]
+}

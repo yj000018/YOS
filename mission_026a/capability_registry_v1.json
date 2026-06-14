@@ -1,0 +1,406 @@
+{
+  "version": "v1",
+  "generated_by": "MISSION-026A",
+  "total": 28,
+  "by_classification": {
+    "CORE": 10,
+    "IMPORTANT": 10,
+    "OPTIONAL": 5,
+    "EXPERIMENTAL": 3
+  },
+  "capabilities": [
+    {
+      "id": "CAP-001",
+      "name": "Constitutional Governance",
+      "mission": "M-001\u2192M-012",
+      "owner": "Lakshmi",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 10,
+      "usage_freq": "every_session",
+      "dependencies": [],
+      "notes": "5 Articles, frozen"
+    },
+    {
+      "id": "CAP-002",
+      "name": "ADR Decision Registry",
+      "mission": "M-001\u2192M-026A",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 10,
+      "usage_freq": "every_mission",
+      "dependencies": [
+        "CAP-001"
+      ],
+      "notes": "51 ADRs"
+    },
+    {
+      "id": "CAP-003",
+      "name": "Knowledge Graph Compilation (KGC v4)",
+      "mission": "M-013\u2192M-021",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 9,
+      "usage_freq": "per_mission",
+      "dependencies": [
+        "CAP-002"
+      ],
+      "notes": "496 nodes, 4056 edges, 44 rel types"
+    },
+    {
+      "id": "CAP-004",
+      "name": "CCR Context Routing (MODE-B/D/E)",
+      "mission": "M-016",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 9,
+      "usage_freq": "every_execution",
+      "dependencies": [
+        "CAP-003"
+      ],
+      "notes": "3 modes, worker-specific"
+    },
+    {
+      "id": "CAP-005",
+      "name": "Live Worker Execution",
+      "mission": "M-017",
+      "owner": "Hanuman",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 9,
+      "usage_freq": "every_execution",
+      "dependencies": [
+        "CAP-004",
+        "CAP-011"
+      ],
+      "notes": "Real LLM API calls"
+    },
+    {
+      "id": "CAP-006",
+      "name": "Multi-Worker Pipeline Orchestration",
+      "mission": "M-018",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 9,
+      "usage_freq": "per_pipeline",
+      "dependencies": [
+        "CAP-005"
+      ],
+      "notes": "Checkpoint, rollback, chaining"
+    },
+    {
+      "id": "CAP-007",
+      "name": "Artifact Registry & Lineage",
+      "mission": "M-017",
+      "owner": "Lakshmi",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 9,
+      "usage_freq": "every_execution",
+      "dependencies": [
+        "CAP-005"
+      ],
+      "notes": "Immutable, typed, lineage-tracked"
+    },
+    {
+      "id": "CAP-008",
+      "name": "Governance Review (Lakshmi)",
+      "mission": "M-016",
+      "owner": "Lakshmi",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 10,
+      "usage_freq": "every_execution",
+      "dependencies": [
+        "CAP-001"
+      ],
+      "notes": "Pre/post execution, score/100"
+    },
+    {
+      "id": "CAP-009",
+      "name": "Git Version Control",
+      "mission": "M-013",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 9,
+      "usage_freq": "every_mission",
+      "dependencies": [],
+      "notes": "SSH, y-os-doctrine branch"
+    },
+    {
+      "id": "CAP-010",
+      "name": "Obsidian Knowledge Navigation",
+      "mission": "M-013\u2192M-015",
+      "owner": "Saraswati",
+      "status": "ACTIVE",
+      "classification": "CORE",
+      "strategic_value": 8,
+      "usage_freq": "daily",
+      "dependencies": [
+        "CAP-003"
+      ],
+      "notes": "531 files, 25 canvas, 14 dashboards"
+    },
+    {
+      "id": "CAP-011",
+      "name": "Provider Diversification & Routing",
+      "mission": "M-023",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 8,
+      "usage_freq": "every_execution",
+      "dependencies": [
+        "CAP-005"
+      ],
+      "notes": "3 providers, 9 models, failover"
+    },
+    {
+      "id": "CAP-012",
+      "name": "Event Bus (44 types, 24 rules)",
+      "mission": "M-022",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 7,
+      "usage_freq": "per_event",
+      "dependencies": [
+        "CAP-006"
+      ],
+      "notes": "DLQ, replay, lineage"
+    },
+    {
+      "id": "CAP-013",
+      "name": "Organizational Digital Twin",
+      "mission": "M-019",
+      "owner": "Ganesha",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 8,
+      "usage_freq": "per_mission",
+      "dependencies": [
+        "CAP-003",
+        "CAP-007"
+      ],
+      "notes": "6 workers, 8 missions, 10 artifacts"
+    },
+    {
+      "id": "CAP-014",
+      "name": "System Observability & EIS",
+      "mission": "M-020",
+      "owner": "Lakshmi",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 8,
+      "usage_freq": "continuous",
+      "dependencies": [
+        "CAP-013"
+      ],
+      "notes": "EIS 97/100, alerts, weekly review"
+    },
+    {
+      "id": "CAP-015",
+      "name": "ODT Time Machine",
+      "mission": "M-024",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 7,
+      "usage_freq": "on_demand",
+      "dependencies": [
+        "CAP-013",
+        "CAP-012"
+      ],
+      "notes": "29 snapshots, 12 phases"
+    },
+    {
+      "id": "CAP-016",
+      "name": "Strategic Recommendation Engine",
+      "mission": "M-025",
+      "owner": "Ganesha",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 8,
+      "usage_freq": "per_review",
+      "dependencies": [
+        "CAP-014",
+        "CAP-015"
+      ],
+      "notes": "12 recs, 20 gaps, 0 hallucinations"
+    },
+    {
+      "id": "CAP-017",
+      "name": "Executive Simulation Layer",
+      "mission": "M-026",
+      "owner": "Ganesha",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 8,
+      "usage_freq": "per_decision",
+      "dependencies": [
+        "CAP-016"
+      ],
+      "notes": "7 scenarios, 4 CFs, 3 DCs"
+    },
+    {
+      "id": "CAP-018",
+      "name": "Living Memory Pipeline",
+      "mission": "M-016",
+      "owner": "Saraswati",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 7,
+      "usage_freq": "per_session",
+      "dependencies": [
+        "CAP-007"
+      ],
+      "notes": "8 stages, session delta"
+    },
+    {
+      "id": "CAP-019",
+      "name": "Semantic Connectivity Layer (KGC v4)",
+      "mission": "M-021",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 7,
+      "usage_freq": "per_mission",
+      "dependencies": [
+        "CAP-003"
+      ],
+      "notes": "Orphan rate 7.1%, Digital Thread 92.9%"
+    },
+    {
+      "id": "CAP-020",
+      "name": "Legacy Lineage Recovery",
+      "mission": "M-022A",
+      "owner": "Brahma",
+      "status": "ACTIVE",
+      "classification": "IMPORTANT",
+      "strategic_value": 6,
+      "usage_freq": "on_demand",
+      "dependencies": [
+        "CAP-003"
+      ],
+      "notes": "100% coverage, 20 edges"
+    },
+    {
+      "id": "CAP-021",
+      "name": "Dataview Dashboards (14)",
+      "mission": "M-015\u2192M-026",
+      "owner": "Saraswati",
+      "status": "ACTIVE",
+      "classification": "OPTIONAL",
+      "strategic_value": 6,
+      "usage_freq": "on_demand",
+      "dependencies": [
+        "CAP-010"
+      ],
+      "notes": "Obsidian plugin required"
+    },
+    {
+      "id": "CAP-022",
+      "name": "Canvas Visual Maps (25)",
+      "mission": "M-015\u2192M-026",
+      "owner": "Saraswati",
+      "status": "ACTIVE",
+      "classification": "OPTIONAL",
+      "strategic_value": 5,
+      "usage_freq": "on_demand",
+      "dependencies": [
+        "CAP-010"
+      ],
+      "notes": "Obsidian native"
+    },
+    {
+      "id": "CAP-023",
+      "name": "Concept Nodes (39)",
+      "mission": "M-014\u2192M-015",
+      "owner": "Saraswati",
+      "status": "ACTIVE",
+      "classification": "OPTIONAL",
+      "strategic_value": 6,
+      "usage_freq": "on_demand",
+      "dependencies": [
+        "CAP-003"
+      ],
+      "notes": "12 original + 27 expanded"
+    },
+    {
+      "id": "CAP-024",
+      "name": "Provider Cost Optimizer",
+      "mission": "M-023",
+      "owner": "Lakshmi",
+      "status": "ACTIVE",
+      "classification": "OPTIONAL",
+      "strategic_value": 6,
+      "usage_freq": "per_execution",
+      "dependencies": [
+        "CAP-011"
+      ],
+      "notes": "Budget enforcement pending"
+    },
+    {
+      "id": "CAP-025",
+      "name": "Weekly Review Generator",
+      "mission": "M-020",
+      "owner": "Ganesha",
+      "status": "ACTIVE",
+      "classification": "OPTIONAL",
+      "strategic_value": 5,
+      "usage_freq": "weekly",
+      "dependencies": [
+        "CAP-014"
+      ],
+      "notes": "Artifact-based"
+    },
+    {
+      "id": "CAP-026",
+      "name": "Excalidraw Visual Maps",
+      "mission": "M-015 (deferred)",
+      "owner": "Saraswati",
+      "status": "DEFERRED",
+      "classification": "EXPERIMENTAL",
+      "strategic_value": 4,
+      "usage_freq": "never",
+      "dependencies": [
+        "CAP-022"
+      ],
+      "notes": "Deferred to M-016 (never executed)"
+    },
+    {
+      "id": "CAP-027",
+      "name": "Notion ODT Sync",
+      "mission": "M-025 (proposed)",
+      "owner": "Brahma",
+      "status": "PROPOSED",
+      "classification": "EXPERIMENTAL",
+      "strategic_value": 7,
+      "usage_freq": "never",
+      "dependencies": [
+        "CAP-013"
+      ],
+      "notes": "REC-004 from M-025"
+    },
+    {
+      "id": "CAP-028",
+      "name": "Live Gemini API Validation",
+      "mission": "M-031 (proposed)",
+      "owner": "Brahma",
+      "status": "PROPOSED",
+      "classification": "EXPERIMENTAL",
+      "strategic_value": 7,
+      "usage_freq": "never",
+      "dependencies": [
+        "CAP-011"
+      ],
+      "notes": "REC-003 from M-025"
+    }
+  ],
+  "generated_at": "2026-06-14T17:55:55.529182+00:00"
+}

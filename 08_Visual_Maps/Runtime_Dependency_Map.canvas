@@ -1,0 +1,870 @@
+{
+  "nodes": [
+    {
+      "id": "constitution",
+      "type": "text",
+      "x": -1200,
+      "y": -150,
+      "width": 200,
+      "height": 50,
+      "text": "**Y-OS Constitution**\n_doctrine_",
+      "color": "#e8f5e9"
+    },
+    {
+      "id": "adr_registry",
+      "type": "text",
+      "x": -1200,
+      "y": -50,
+      "width": 200,
+      "height": 50,
+      "text": "**ADR Registry (51)**\n_governance_",
+      "color": "#e8f5e9"
+    },
+    {
+      "id": "git",
+      "type": "text",
+      "x": -1200,
+      "y": 50,
+      "width": 200,
+      "height": 50,
+      "text": "**Git / y-os-doctrine**\n_infrastructure_",
+      "color": "#e8f5e9"
+    },
+    {
+      "id": "kgc_v4",
+      "type": "text",
+      "x": -800,
+      "y": -300,
+      "width": 200,
+      "height": 50,
+      "text": "**KGC v4 Connectivity**\n_compiler_",
+      "color": "#e3f2fd"
+    },
+    {
+      "id": "semantic_graph",
+      "type": "text",
+      "x": -800,
+      "y": -200,
+      "width": 200,
+      "height": 50,
+      "text": "**Semantic Graph v4**\n_data_",
+      "color": "#e3f2fd"
+    },
+    {
+      "id": "concept_nodes",
+      "type": "text",
+      "x": -800,
+      "y": -100,
+      "width": 200,
+      "height": 50,
+      "text": "**Concept Nodes (39)**\n_knowledge_",
+      "color": "#e3f2fd"
+    },
+    {
+      "id": "mocs",
+      "type": "text",
+      "x": -800,
+      "y": 0,
+      "width": 200,
+      "height": 50,
+      "text": "**MOCs (11)**\n_navigation_",
+      "color": "#e3f2fd"
+    },
+    {
+      "id": "dashboards",
+      "type": "text",
+      "x": -800,
+      "y": 100,
+      "width": 200,
+      "height": 50,
+      "text": "**Dashboards (14)**\n_visualization_",
+      "color": "#e3f2fd"
+    },
+    {
+      "id": "canvas_maps",
+      "type": "text",
+      "x": -800,
+      "y": 200,
+      "width": 200,
+      "height": 50,
+      "text": "**Canvas Maps (25)**\n_visualization_",
+      "color": "#e3f2fd"
+    },
+    {
+      "id": "ccr_runtime",
+      "type": "text",
+      "x": -200,
+      "y": -900,
+      "width": 200,
+      "height": 50,
+      "text": "**CCR Runtime v2**\n_router_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "context_compiler",
+      "type": "text",
+      "x": -200,
+      "y": -800,
+      "width": 200,
+      "height": 50,
+      "text": "**Context Compiler v2**\n_compiler_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "context_cache",
+      "type": "text",
+      "x": -200,
+      "y": -700,
+      "width": 200,
+      "height": 50,
+      "text": "**Context Cache**\n_cache_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "lakshmi_review",
+      "type": "text",
+      "x": -200,
+      "y": -600,
+      "width": 200,
+      "height": 50,
+      "text": "**Lakshmi Context Review**\n_governance_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "provider_router",
+      "type": "text",
+      "x": -200,
+      "y": -500,
+      "width": 200,
+      "height": 50,
+      "text": "**Provider Router v2**\n_router_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "provider_registry",
+      "type": "text",
+      "x": -200,
+      "y": -400,
+      "width": 200,
+      "height": 50,
+      "text": "**Provider Registry**\n_registry_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "provider_health",
+      "type": "text",
+      "x": -200,
+      "y": -300,
+      "width": 200,
+      "height": 50,
+      "text": "**Provider Health Monitor**\n_monitor_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "provider_failover",
+      "type": "text",
+      "x": -200,
+      "y": -200,
+      "width": 200,
+      "height": 50,
+      "text": "**Provider Failover**\n_resilience_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "live_executor",
+      "type": "text",
+      "x": -200,
+      "y": -100,
+      "width": 200,
+      "height": 50,
+      "text": "**Live Worker Executor**\n_executor_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "pipeline_orchestrator",
+      "type": "text",
+      "x": -200,
+      "y": 0,
+      "width": 200,
+      "height": 50,
+      "text": "**Pipeline Orchestrator**\n_orchestrator_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "artifact_chaining",
+      "type": "text",
+      "x": -200,
+      "y": 100,
+      "width": 200,
+      "height": 50,
+      "text": "**Artifact Chaining Engine**\n_engine_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "checkpoint_rollback",
+      "type": "text",
+      "x": -200,
+      "y": 200,
+      "width": 200,
+      "height": 50,
+      "text": "**Checkpoint Rollback**\n_recovery_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "artifact_registry",
+      "type": "text",
+      "x": -200,
+      "y": 300,
+      "width": 200,
+      "height": 50,
+      "text": "**Artifact Registry v2**\n_registry_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "output_validator",
+      "type": "text",
+      "x": -200,
+      "y": 400,
+      "width": 200,
+      "height": 50,
+      "text": "**Output Validator**\n_validator_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "event_bus",
+      "type": "text",
+      "x": -200,
+      "y": 500,
+      "width": 200,
+      "height": 50,
+      "text": "**Event Bus Core**\n_bus_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "event_router",
+      "type": "text",
+      "x": -200,
+      "y": 600,
+      "width": 200,
+      "height": 50,
+      "text": "**Event Router (24 rules)**\n_router_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "event_persistence",
+      "type": "text",
+      "x": -200,
+      "y": 700,
+      "width": 200,
+      "height": 50,
+      "text": "**Event Persistence**\n_store_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "event_replay",
+      "type": "text",
+      "x": -200,
+      "y": 800,
+      "width": 200,
+      "height": 50,
+      "text": "**Event Replay Engine**\n_engine_",
+      "color": "#fff3e0"
+    },
+    {
+      "id": "time_machine",
+      "type": "text",
+      "x": 400,
+      "y": -250,
+      "width": 200,
+      "height": 50,
+      "text": "**ODT Time Machine**\n_engine_",
+      "color": "#fce4ec"
+    },
+    {
+      "id": "snapshot_engine",
+      "type": "text",
+      "x": 400,
+      "y": -150,
+      "width": 200,
+      "height": 50,
+      "text": "**Snapshot Engine**\n_engine_",
+      "color": "#fce4ec"
+    },
+    {
+      "id": "temporal_reconstruction",
+      "type": "text",
+      "x": 400,
+      "y": -50,
+      "width": 200,
+      "height": 50,
+      "text": "**Temporal Reconstruction**\n_engine_",
+      "color": "#fce4ec"
+    },
+    {
+      "id": "living_memory",
+      "type": "text",
+      "x": 400,
+      "y": 50,
+      "width": 200,
+      "height": 50,
+      "text": "**Living Memory Pipeline**\n_pipeline_",
+      "color": "#fce4ec"
+    },
+    {
+      "id": "session_delta",
+      "type": "text",
+      "x": 400,
+      "y": 150,
+      "width": 200,
+      "height": 50,
+      "text": "**Session Delta Engine**\n_engine_",
+      "color": "#fce4ec"
+    },
+    {
+      "id": "odt_registry",
+      "type": "text",
+      "x": 900,
+      "y": -300,
+      "width": 200,
+      "height": 50,
+      "text": "**ODT Registry**\n_registry_",
+      "color": "#f3e5f5"
+    },
+    {
+      "id": "odt_live_update",
+      "type": "text",
+      "x": 900,
+      "y": -200,
+      "width": 200,
+      "height": 50,
+      "text": "**ODT Live Update Engine**\n_engine_",
+      "color": "#f3e5f5"
+    },
+    {
+      "id": "health_monitor",
+      "type": "text",
+      "x": 900,
+      "y": -100,
+      "width": 200,
+      "height": 50,
+      "text": "**System Health Monitor**\n_monitor_",
+      "color": "#f3e5f5"
+    },
+    {
+      "id": "alert_engine",
+      "type": "text",
+      "x": 900,
+      "y": 0,
+      "width": 200,
+      "height": 50,
+      "text": "**Alert Engine**\n_engine_",
+      "color": "#f3e5f5"
+    },
+    {
+      "id": "eis",
+      "type": "text",
+      "x": 900,
+      "y": 100,
+      "width": 200,
+      "height": 50,
+      "text": "**Executive Intelligence Score**\n_scorer_",
+      "color": "#f3e5f5"
+    },
+    {
+      "id": "governance_obs",
+      "type": "text",
+      "x": 900,
+      "y": 200,
+      "width": 200,
+      "height": 50,
+      "text": "**Governance Observability**\n_monitor_",
+      "color": "#f3e5f5"
+    },
+    {
+      "id": "strategic_engine",
+      "type": "text",
+      "x": 1400,
+      "y": -250,
+      "width": 200,
+      "height": 50,
+      "text": "**Strategic Recommendation Engine**\n_engine_",
+      "color": "#e8eaf6"
+    },
+    {
+      "id": "gap_analysis",
+      "type": "text",
+      "x": 1400,
+      "y": -150,
+      "width": 200,
+      "height": 50,
+      "text": "**Gap Analysis**\n_analyzer_",
+      "color": "#e8eaf6"
+    },
+    {
+      "id": "evidence_reasoning",
+      "type": "text",
+      "x": 1400,
+      "y": -50,
+      "width": 200,
+      "height": 50,
+      "text": "**Evidence-Based Reasoning**\n_engine_",
+      "color": "#e8eaf6"
+    },
+    {
+      "id": "mission_proposal",
+      "type": "text",
+      "x": 1400,
+      "y": 50,
+      "width": 200,
+      "height": 50,
+      "text": "**Mission Proposal Generator**\n_generator_",
+      "color": "#e8eaf6"
+    },
+    {
+      "id": "roadmap_engine",
+      "type": "text",
+      "x": 1400,
+      "y": 150,
+      "width": 200,
+      "height": 50,
+      "text": "**Roadmap Generation Engine**\n_generator_",
+      "color": "#e8eaf6"
+    },
+    {
+      "id": "sim_engine",
+      "type": "text",
+      "x": 1900,
+      "y": -250,
+      "width": 200,
+      "height": 50,
+      "text": "**Executive Simulation Engine**\n_engine_",
+      "color": "#fff8e1"
+    },
+    {
+      "id": "scenario_modeling",
+      "type": "text",
+      "x": 1900,
+      "y": -150,
+      "width": 200,
+      "height": 50,
+      "text": "**Scenario Modeling Engine**\n_engine_",
+      "color": "#fff8e1"
+    },
+    {
+      "id": "impact_propagation",
+      "type": "text",
+      "x": 1900,
+      "y": -50,
+      "width": 200,
+      "height": 50,
+      "text": "**Impact Propagation Engine**\n_engine_",
+      "color": "#fff8e1"
+    },
+    {
+      "id": "counterfactual",
+      "type": "text",
+      "x": 1900,
+      "y": 50,
+      "width": 200,
+      "height": 50,
+      "text": "**Counterfactual Engine**\n_engine_",
+      "color": "#fff8e1"
+    },
+    {
+      "id": "decision_comparison",
+      "type": "text",
+      "x": 1900,
+      "y": 150,
+      "width": 200,
+      "height": 50,
+      "text": "**Decision Comparison Engine**\n_engine_",
+      "color": "#fff8e1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_0",
+      "fromNode": "constitution",
+      "fromSide": "right",
+      "toNode": "adr_registry",
+      "toSide": "left",
+      "label": "governed_by"
+    },
+    {
+      "id": "edge_1",
+      "fromNode": "adr_registry",
+      "fromSide": "right",
+      "toNode": "kgc_v4",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "edge_2",
+      "fromNode": "kgc_v4",
+      "fromSide": "right",
+      "toNode": "semantic_graph",
+      "toSide": "left",
+      "label": "compiles"
+    },
+    {
+      "id": "edge_3",
+      "fromNode": "semantic_graph",
+      "fromSide": "right",
+      "toNode": "concept_nodes",
+      "toSide": "left",
+      "label": "contains"
+    },
+    {
+      "id": "edge_4",
+      "fromNode": "semantic_graph",
+      "fromSide": "right",
+      "toNode": "mocs",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "edge_5",
+      "fromNode": "semantic_graph",
+      "fromSide": "right",
+      "toNode": "dashboards",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "edge_6",
+      "fromNode": "context_compiler",
+      "fromSide": "right",
+      "toNode": "ccr_runtime",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_7",
+      "fromNode": "ccr_runtime",
+      "fromSide": "right",
+      "toNode": "provider_router",
+      "toSide": "left",
+      "label": "routes_to"
+    },
+    {
+      "id": "edge_8",
+      "fromNode": "ccr_runtime",
+      "fromSide": "right",
+      "toNode": "context_cache",
+      "toSide": "left",
+      "label": "uses"
+    },
+    {
+      "id": "edge_9",
+      "fromNode": "ccr_runtime",
+      "fromSide": "right",
+      "toNode": "lakshmi_review",
+      "toSide": "left",
+      "label": "governed_by"
+    },
+    {
+      "id": "edge_10",
+      "fromNode": "provider_router",
+      "fromSide": "right",
+      "toNode": "provider_registry",
+      "toSide": "left",
+      "label": "reads"
+    },
+    {
+      "id": "edge_11",
+      "fromNode": "provider_router",
+      "fromSide": "right",
+      "toNode": "provider_health",
+      "toSide": "left",
+      "label": "observes"
+    },
+    {
+      "id": "edge_12",
+      "fromNode": "provider_router",
+      "fromSide": "right",
+      "toNode": "provider_failover",
+      "toSide": "left",
+      "label": "delegates_to"
+    },
+    {
+      "id": "edge_13",
+      "fromNode": "live_executor",
+      "fromSide": "right",
+      "toNode": "ccr_runtime",
+      "toSide": "left",
+      "label": "uses"
+    },
+    {
+      "id": "edge_14",
+      "fromNode": "live_executor",
+      "fromSide": "right",
+      "toNode": "artifact_registry",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "edge_15",
+      "fromNode": "live_executor",
+      "fromSide": "right",
+      "toNode": "output_validator",
+      "toSide": "left",
+      "label": "validates_via"
+    },
+    {
+      "id": "edge_16",
+      "fromNode": "pipeline_orchestrator",
+      "fromSide": "right",
+      "toNode": "live_executor",
+      "toSide": "left",
+      "label": "orchestrates"
+    },
+    {
+      "id": "edge_17",
+      "fromNode": "pipeline_orchestrator",
+      "fromSide": "right",
+      "toNode": "artifact_chaining",
+      "toSide": "left",
+      "label": "uses"
+    },
+    {
+      "id": "edge_18",
+      "fromNode": "pipeline_orchestrator",
+      "fromSide": "right",
+      "toNode": "checkpoint_rollback",
+      "toSide": "left",
+      "label": "uses"
+    },
+    {
+      "id": "edge_19",
+      "fromNode": "event_bus",
+      "fromSide": "right",
+      "toNode": "event_router",
+      "toSide": "left",
+      "label": "routes_to"
+    },
+    {
+      "id": "edge_20",
+      "fromNode": "event_bus",
+      "fromSide": "right",
+      "toNode": "event_persistence",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "edge_21",
+      "fromNode": "event_bus",
+      "fromSide": "right",
+      "toNode": "event_replay",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "edge_22",
+      "fromNode": "artifact_registry",
+      "fromSide": "right",
+      "toNode": "living_memory",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_23",
+      "fromNode": "session_delta",
+      "fromSide": "right",
+      "toNode": "living_memory",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_24",
+      "fromNode": "event_replay",
+      "fromSide": "right",
+      "toNode": "time_machine",
+      "toSide": "left",
+      "label": "enables"
+    },
+    {
+      "id": "edge_25",
+      "fromNode": "snapshot_engine",
+      "fromSide": "right",
+      "toNode": "time_machine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_26",
+      "fromNode": "temporal_reconstruction",
+      "fromSide": "right",
+      "toNode": "time_machine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_27",
+      "fromNode": "time_machine",
+      "fromSide": "right",
+      "toNode": "odt_registry",
+      "toSide": "left",
+      "label": "updates"
+    },
+    {
+      "id": "edge_28",
+      "fromNode": "odt_live_update",
+      "fromSide": "right",
+      "toNode": "odt_registry",
+      "toSide": "left",
+      "label": "updates"
+    },
+    {
+      "id": "edge_29",
+      "fromNode": "health_monitor",
+      "fromSide": "right",
+      "toNode": "odt_registry",
+      "toSide": "left",
+      "label": "reads"
+    },
+    {
+      "id": "edge_30",
+      "fromNode": "health_monitor",
+      "fromSide": "right",
+      "toNode": "alert_engine",
+      "toSide": "left",
+      "label": "triggers"
+    },
+    {
+      "id": "edge_31",
+      "fromNode": "odt_registry",
+      "fromSide": "right",
+      "toNode": "eis",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_32",
+      "fromNode": "governance_obs",
+      "fromSide": "right",
+      "toNode": "eis",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_33",
+      "fromNode": "odt_registry",
+      "fromSide": "right",
+      "toNode": "gap_analysis",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_34",
+      "fromNode": "eis",
+      "fromSide": "right",
+      "toNode": "strategic_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_35",
+      "fromNode": "gap_analysis",
+      "fromSide": "right",
+      "toNode": "strategic_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_36",
+      "fromNode": "evidence_reasoning",
+      "fromSide": "right",
+      "toNode": "strategic_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_37",
+      "fromNode": "strategic_engine",
+      "fromSide": "right",
+      "toNode": "mission_proposal",
+      "toSide": "left",
+      "label": "generates"
+    },
+    {
+      "id": "edge_38",
+      "fromNode": "strategic_engine",
+      "fromSide": "right",
+      "toNode": "roadmap_engine",
+      "toSide": "left",
+      "label": "generates"
+    },
+    {
+      "id": "edge_39",
+      "fromNode": "strategic_engine",
+      "fromSide": "right",
+      "toNode": "sim_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_40",
+      "fromNode": "scenario_modeling",
+      "fromSide": "right",
+      "toNode": "sim_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_41",
+      "fromNode": "impact_propagation",
+      "fromSide": "right",
+      "toNode": "sim_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_42",
+      "fromNode": "counterfactual",
+      "fromSide": "right",
+      "toNode": "sim_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_43",
+      "fromNode": "decision_comparison",
+      "fromSide": "right",
+      "toNode": "sim_engine",
+      "toSide": "left",
+      "label": "feeds"
+    },
+    {
+      "id": "edge_44",
+      "fromNode": "sim_engine",
+      "fromSide": "right",
+      "toNode": "roadmap_engine",
+      "toSide": "left",
+      "label": "informs"
+    },
+    {
+      "id": "edge_45",
+      "fromNode": "constitution",
+      "fromSide": "right",
+      "toNode": "lakshmi_review",
+      "toSide": "left",
+      "label": "governed_by"
+    },
+    {
+      "id": "edge_46",
+      "fromNode": "constitution",
+      "fromSide": "right",
+      "toNode": "governance_obs",
+      "toSide": "left",
+      "label": "governed_by"
+    },
+    {
+      "id": "edge_47",
+      "fromNode": "adr_registry",
+      "fromSide": "right",
+      "toNode": "governance_obs",
+      "toSide": "left",
+      "label": "governed_by"
+    }
+  ]
+}

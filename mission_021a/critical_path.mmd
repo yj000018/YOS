@@ -1,0 +1,26 @@
+graph LR
+    subgraph "PROPOSED (sub-optimal)"
+        P1["M-021"] --> P2["M-022"] --> P3["M-023"] --> P4["M-024"] --> P5["M-025"] --> P6["M-026"]
+    end
+
+    subgraph "REVISED ⭐ (optimal sequential)"
+        R1["M-021\nGraph Quality"] --> R3["M-023\nProviders"] --> R2["M-022\nEvent Bus"] --> R4["M-024\nTime Machine"] --> R5["M-025\nStrategy"] --> R6["M-026\nSimulation"]
+    end
+
+    subgraph "Critical Paths to Targets"
+        CP1["M-021 → M-022\n🧵 Digital Thread\n2 missions"]
+        CP2["M-021 → M-024\n⏱ Time Machine\n2 missions"]
+        CP3["M-021 → M-023 → M-024 → M-025\n🧠 Strategic Engine\n4 missions"]
+        CP4["M-021 → M-023 → M-022 → M-024 → M-025 → M-026\n🎭 Exec Simulation\n6 missions"]
+    end
+
+    style R1 fill:#1a5fa8,color:#fff
+    style R2 fill:#1a5fa8,color:#fff
+    style R3 fill:#1a5fa8,color:#fff
+    style R4 fill:#1a5fa8,color:#fff
+    style R5 fill:#7a1a7a,color:#fff
+    style R6 fill:#7a1a7a,color:#fff
+    style CP1 fill:#c47a00,color:#fff
+    style CP2 fill:#c47a00,color:#fff
+    style CP3 fill:#c47a00,color:#fff
+    style CP4 fill:#c47a00,color:#fff

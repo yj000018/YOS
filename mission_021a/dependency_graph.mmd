@@ -1,0 +1,56 @@
+graph TD
+    M020["M-020\nAutonomous Observability\n✅ DONE"]
+    M016["M-016\nCCR Runtime v2\n✅ DONE"]
+    M019["M-019\nODT Runtime v1\n✅ DONE"]
+
+    M021["M-021\nSemantic Connectivity\nKGC v4"]
+    M022["M-022\nLive Event Bus"]
+    M023["M-023\nProvider Diversification"]
+    M024["M-024\nODT Time Machine"]
+    M025["M-025\nStrategic Engine"]
+    M026["M-026\nExec Simulation"]
+
+    DT["🧵 Digital Thread"]
+    TM["⏱ Time Machine"]
+    SE["🧠 Strategic Engine"]
+    ES["🎭 Exec Simulation"]
+
+    M020 -->|"EIS baseline"| M021
+    M020 -->|"ODT Live Update base"| M022
+    M016 -->|"CCR Runtime v2"| M023
+    M019 -->|"evolution tracker"| M024
+
+    M021 -->|"graph quality"| M022
+    M021 -->|"graph quality"| M024
+    M021 -->|"graph quality"| M025
+    M023 -->|"multi-provider"| M025
+    M024 -->|"historical patterns"| M025
+    M022 -->|"live state"| M025
+    M025 -->|"strategic context"| M026
+    M022 -->|"event bus"| M026
+    M023 -->|"provider routing"| M026
+    M024 -->|"historical baselines"| M026
+
+    M021 --> DT
+    M022 --> DT
+    M021 --> TM
+    M024 --> TM
+    M021 --> SE
+    M023 --> SE
+    M024 --> SE
+    M025 --> SE
+    M026 --> ES
+
+    style M020 fill:#2d7a2d,color:#fff
+    style M016 fill:#2d7a2d,color:#fff
+    style M019 fill:#2d7a2d,color:#fff
+    style M021 fill:#1a5fa8,color:#fff
+    style M022 fill:#1a5fa8,color:#fff
+    style M023 fill:#1a5fa8,color:#fff
+    style M024 fill:#1a5fa8,color:#fff
+    style M025 fill:#7a1a7a,color:#fff
+    style M026 fill:#7a1a7a,color:#fff
+    style DT fill:#c47a00,color:#fff
+    style TM fill:#c47a00,color:#fff
+    style SE fill:#c47a00,color:#fff
+    style ES fill:#c47a00,color:#fff

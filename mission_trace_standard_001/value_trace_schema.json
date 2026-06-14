@@ -1,0 +1,465 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yos.local/schemas/value_trace_schema.json",
+  "title": "Y-OS Value Trace Schema",
+  "description": "Machine-readable schema for generating value-oriented Excalidraw traces for any Y-OS mission. Principle: value first, architecture second.",
+  "version": "1.0.0",
+  "created": "2026-06-14",
+  "standard": "MISSION-TRACE-STANDARD-001",
+
+  "type": "object",
+  "required": [
+    "trace_id",
+    "mission_id",
+    "created",
+    "request",
+    "team_steps",
+    "artifact_handoffs",
+    "metrics",
+    "plugins_skipped",
+    "value_created",
+    "without_yos",
+    "with_yos",
+    "final_verdict"
+  ],
+
+  "properties": {
+
+    "trace_id": {
+      "type": "string",
+      "description": "Unique trace identifier. Format: TRACE-{MISSION_ID}-{DATE}",
+      "example": "TRACE-TEAM-001-20260614"
+    },
+
+    "mission_id": {
+      "type": "string",
+      "description": "Parent mission identifier.",
+      "example": "MISSION-TEAM-TRACE-001"
+    },
+
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of trace creation."
+    },
+
+    "request": {
+      "type": "object",
+      "description": "Zone A — REQUEST PANEL. What Yannick asked.",
+      "required": ["user", "exact_request", "intent", "expected_output"],
+      "properties": {
+        "user": {
+          "type": "string",
+          "description": "Who made the request.",
+          "example": "Yannick"
+        },
+        "exact_request": {
+          "type": "string",
+          "description": "Verbatim request text.",
+          "example": "Summarize the operational audit and tell me what to simplify next."
+        },
+        "intent": {
+          "type": "string",
+          "enum": ["analysis", "creation", "research", "decision", "automation", "review", "other"],
+          "description": "Classified intent of the request."
+        },
+        "expected_output": {
+          "type": "string",
+          "description": "What Yannick expects to receive.",
+          "example": "Concrete simplification recommendation"
+        }
+      }
+    },
+
+    "team_steps": {
+      "type": "array",
+      "description": "Zone B — TEAM FLOW. Ordered list of team members who worked on the request.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["position", "role", "worker", "provider", "model", "tools", "input", "output", "latency_ms", "cost_usd"],
+        "properties": {
+          "position": {
+            "type": "integer",
+            "description": "Order in the flow (1 = first)."
+          },
+          "role": {
+            "type": "string",
+            "enum": ["Client", "Orchestrator", "Architect", "Researcher", "Builder", "Writer", "Validator", "Archivist", "Memory", "Deliverable"],
+            "description": "Functional role in the team."
+          },
+          "worker": {
+            "type": "string",
+            "description": "Named worker (e.g., Ganesha, Lakshmi, Manus).",
+            "example": "Ganesha"
+          },
+          "provider": {
+            "type": "string",
+            "description": "Provider of the worker (Anthropic, Y-OS Runtime, Human, External).",
+            "example": "Anthropic"
+          },
+          "model": {
+            "type": ["string", "null"],
+            "description": "Model used, if applicable.",
+            "example": "claude-opus-4"
+          },
+          "tools": {
+            "type": "array",
+            "items": {"type": "string"},
+            "description": "List of tools/modules invoked.",
+            "example": ["context_compiler_v2", "artifact_registry_v2"]
+          },
+          "input": {
+            "type": "string",
+            "description": "What this worker received as input.",
+            "example": "CSO-002 audit + Constitution + CSO rules"
+          },
+          "output": {
+            "type": "string",
+            "description": "What this worker produced.",
+            "example": "Simplification recommendation: archive 22 modules"
+          },
+          "latency_ms": {
+            "type": "integer",
+            "description": "Execution time in milliseconds.",
+            "minimum": 0
+          },
+          "cost_usd": {
+            "type": "number",
+            "description": "Cost in USD.",
+            "minimum": 0
+          },
+          "artifact_created": {
+            "type": ["string", "null"],
+            "description": "Artifact ID produced by this step, if any.",
+            "example": "ARTIFACT-TRACE-001"
+          },
+          "value_note": {
+            "type": "string",
+            "description": "One-line human-readable value statement.",
+            "example": "Produces the actual answer Yannick needed"
+          }
+        }
+      }
+    },
+
+    "artifact_handoffs": {
+      "type": "array",
+      "description": "Zone C — ARTIFACT HANDOFFS. What moved between team members.",
+      "items": {
+        "type": "object",
+        "required": ["from_step", "to_step", "artifact_name", "token_count", "latency_ms", "cost_usd", "status"],
+        "properties": {
+          "from_step": {"type": "integer", "description": "Position of sending worker."},
+          "to_step": {"type": "integer", "description": "Position of receiving worker."},
+          "artifact_name": {
+            "type": "string",
+            "description": "Name/ID of the artifact passed.",
+            "example": "CTX-TRACE-001"
+          },
+          "token_count": {
+            "type": "integer",
+            "description": "Token count of the artifact.",
+            "minimum": 0
+          },
+          "latency_ms": {
+            "type": "integer",
+            "description": "Transfer latency in milliseconds.",
+            "minimum": 0
+          },
+          "cost_usd": {
+            "type": "number",
+            "description": "Cost of this transfer.",
+            "minimum": 0
+          },
+          "status": {
+            "type": "string",
+            "enum": ["ACTUAL", "SIMULATED", "PLANNED"],
+            "description": "Whether this handoff actually happened."
+          }
+        }
+      }
+    },
+
+    "metrics": {
+      "type": "object",
+      "description": "Zone E — RUNTIME METRICS. Aggregate performance data.",
+      "required": ["total_time_ms", "total_cost_usd", "total_tokens", "models_used", "tools_used", "artifacts_created", "plugins_skipped_count"],
+      "properties": {
+        "total_time_ms": {"type": "integer", "minimum": 0},
+        "total_cost_usd": {"type": "number", "minimum": 0},
+        "total_tokens": {"type": "integer", "minimum": 0},
+        "models_used": {
+          "type": "array",
+          "items": {"type": "string"},
+          "example": ["claude-opus-4"]
+        },
+        "tools_used": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "artifacts_created": {"type": "integer", "minimum": 0},
+        "plugins_skipped_count": {"type": "integer", "minimum": 0}
+      }
+    },
+
+    "plugins_skipped": {
+      "type": "array",
+      "description": "Zone D — PLUGINS SKIPPED. Inactive plugins, proving Core-Only Mode was respected.",
+      "items": {
+        "type": "object",
+        "required": ["name", "status", "reason"],
+        "properties": {
+          "name": {"type": "string", "example": "ODT"},
+          "full_name": {"type": "string", "example": "Organizational Digital Twin"},
+          "status": {
+            "type": "string",
+            "enum": ["SKIPPED", "NOT_ACTIVATED", "DEFERRED"],
+            "default": "NOT_ACTIVATED"
+          },
+          "reason": {
+            "type": "string",
+            "description": "Why this plugin was not used.",
+            "example": "Core-Only Mode active — not required for this request"
+          }
+        }
+      }
+    },
+
+    "value_created": {
+      "type": "object",
+      "description": "Zone F — VALUE PANEL. What was actually produced.",
+      "required": ["artifacts", "decisions", "knowledge_added", "repositories_updated", "final_deliverable"],
+      "properties": {
+        "artifacts": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "List of artifacts created.",
+          "example": ["ARTIFACT-TRACE-001 — Simplification recommendation"]
+        },
+        "decisions": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Concrete decisions produced.",
+          "example": ["Archive 22 self-referential modules"]
+        },
+        "knowledge_added": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "New knowledge captured.",
+          "example": ["Operational density: 17%"]
+        },
+        "repositories_updated": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "repo": {"type": "string"},
+              "update": {"type": "string"},
+              "status": {"type": "string", "enum": ["ACTUAL", "SIMULATED"]}
+            }
+          }
+        },
+        "final_deliverable": {
+          "type": "string",
+          "description": "One-sentence description of what Yannick received.",
+          "example": "Actionable recommendation in 3 seconds for $0.044"
+        }
+      }
+    },
+
+    "without_yos": {
+      "type": "object",
+      "description": "Zone H — WITHOUT Y-OS. What would have happened without the system.",
+      "required": ["steps", "estimated_time_min", "estimated_cost_usd", "risks"],
+      "properties": {
+        "steps": {
+          "type": "array",
+          "items": {"type": "string"},
+          "example": [
+            "Manual search for audit document",
+            "Copy/paste context into ChatGPT",
+            "Ask LLM for recommendation",
+            "Manually save result",
+            "No lineage",
+            "No governance"
+          ]
+        },
+        "estimated_time_min": {
+          "type": "number",
+          "description": "Estimated time in minutes to complete manually.",
+          "minimum": 0
+        },
+        "estimated_cost_usd": {
+          "type": "number",
+          "description": "Estimated cost without Y-OS.",
+          "minimum": 0
+        },
+        "risks": {
+          "type": "array",
+          "items": {"type": "string"},
+          "example": ["No audit trail", "No constitutional validation", "Context loss"]
+        }
+      }
+    },
+
+    "with_yos": {
+      "type": "object",
+      "description": "Zone H — WITH Y-OS. What Y-OS provided.",
+      "required": ["steps", "actual_time_ms", "actual_cost_usd", "advantages"],
+      "properties": {
+        "steps": {
+          "type": "array",
+          "items": {"type": "string"},
+          "example": [
+            "Automatic context compilation",
+            "Team routing to right expert",
+            "Constitutional governance",
+            "Artifact registration with lineage",
+            "Memory update",
+            "Final answer returned"
+          ]
+        },
+        "actual_time_ms": {"type": "integer", "minimum": 0},
+        "actual_cost_usd": {"type": "number", "minimum": 0},
+        "advantages": {
+          "type": "array",
+          "items": {"type": "string"},
+          "example": [
+            "Zero manual copy-paste",
+            "Full audit trail",
+            "Constitutional validation",
+            "Permanent artifact lineage"
+          ]
+        }
+      }
+    },
+
+    "final_verdict": {
+      "type": "object",
+      "description": "Zone G — FINAL VERDICT. Did Y-OS create value?",
+      "required": ["verdict", "explanation"],
+      "properties": {
+        "verdict": {
+          "type": "string",
+          "enum": ["YES", "NO", "AMBER"],
+          "description": "YES = clear value. NO = overhead only. AMBER = mixed (self-referential input, real output)."
+        },
+        "explanation": {
+          "type": "string",
+          "description": "One paragraph explaining the verdict."
+        },
+        "value_location": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "If YES or AMBER: exactly where value was produced.",
+          "example": ["Architect (Ganesha) — produced the recommendation", "Validator (Lakshmi) — ensured safety"]
+        },
+        "overhead_location": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "If NO or AMBER: where time was spent on self-observation."
+        },
+        "time_saved_min": {
+          "type": "number",
+          "description": "Estimated minutes saved vs without_yos.",
+          "minimum": 0
+        },
+        "cost_saved_usd": {
+          "type": "number",
+          "description": "Estimated cost saved vs without_yos.",
+          "minimum": 0
+        }
+      }
+    }
+  },
+
+  "example": {
+    "trace_id": "TRACE-TEAM-001-20260614",
+    "mission_id": "MISSION-TEAM-TRACE-001",
+    "created": "2026-06-14T00:00:00Z",
+    "request": {
+      "user": "Yannick",
+      "exact_request": "Summarize the operational audit and tell me what to simplify next.",
+      "intent": "decision",
+      "expected_output": "Concrete simplification recommendation"
+    },
+    "team_steps": [
+      {
+        "position": 1, "role": "Client", "worker": "Yannick",
+        "provider": "Human", "model": null, "tools": [],
+        "input": "Natural language request", "output": "Structured request",
+        "latency_ms": 0, "cost_usd": 0,
+        "artifact_created": null, "value_note": "Defines the work"
+      },
+      {
+        "position": 2, "role": "Orchestrator", "worker": "Manus",
+        "provider": "Y-OS Runtime", "model": "ccr_runtime_v2",
+        "tools": ["session_delta_engine_v1", "ccr_runtime_v2"],
+        "input": "Raw request", "output": "MODE-B, Worker: Ganesha",
+        "latency_ms": 20, "cost_usd": 0,
+        "artifact_created": "SESSION-2026-06-14", "value_note": "Routes to right expert"
+      },
+      {
+        "position": 3, "role": "Architect", "worker": "Ganesha",
+        "provider": "Anthropic", "model": "claude-opus-4",
+        "tools": ["context_compiler_v2", "context_cache_v1", "artifact_registry_v2"],
+        "input": "CSO-002 audit + Constitution + CSO rules",
+        "output": "Archive 22 self-referential modules",
+        "latency_ms": 2840, "cost_usd": 0.044,
+        "artifact_created": "ARTIFACT-TRACE-001", "value_note": "THE ANSWER"
+      },
+      {
+        "position": 4, "role": "Validator", "worker": "Lakshmi",
+        "provider": "Y-OS Runtime", "model": "lakshmi_context_review_v1",
+        "tools": ["output_validator_v1", "lakshmi_context_review_v1"],
+        "input": "ARTIFACT-TRACE-001", "output": "APPROVED, Risk 8/100",
+        "latency_ms": 47, "cost_usd": 0,
+        "artifact_created": "VALIDATION-TRACE-001", "value_note": "Constitutional safety"
+      }
+    ],
+    "artifact_handoffs": [
+      {"from_step": 1, "to_step": 2, "artifact_name": "Request", "token_count": 0, "latency_ms": 0, "cost_usd": 0, "status": "ACTUAL"},
+      {"from_step": 2, "to_step": 3, "artifact_name": "CTX-TRACE-001", "token_count": 3840, "latency_ms": 66, "cost_usd": 0, "status": "ACTUAL"},
+      {"from_step": 3, "to_step": 4, "artifact_name": "ARTIFACT-TRACE-001", "token_count": 612, "latency_ms": 2840, "cost_usd": 0.044, "status": "ACTUAL"}
+    ],
+    "metrics": {
+      "total_time_ms": 3021, "total_cost_usd": 0.044, "total_tokens": 4452,
+      "models_used": ["claude-opus-4"], "tools_used": ["context_compiler_v2", "ccr_runtime_v2"],
+      "artifacts_created": 3, "plugins_skipped_count": 4
+    },
+    "plugins_skipped": [
+      {"name": "ODT", "full_name": "Organizational Digital Twin", "status": "NOT_ACTIVATED", "reason": "Core-Only Mode"},
+      {"name": "Strategic Intel", "full_name": "Strategic Intelligence", "status": "NOT_ACTIVATED", "reason": "Core-Only Mode"},
+      {"name": "Simulation", "full_name": "Time Machine / Counterfactual", "status": "NOT_ACTIVATED", "reason": "Core-Only Mode"},
+      {"name": "Observability", "full_name": "Advanced Observability Dashboard", "status": "NOT_ACTIVATED", "reason": "Core-Only Mode"}
+    ],
+    "value_created": {
+      "artifacts": ["ARTIFACT-TRACE-001 — Simplification recommendation"],
+      "decisions": ["Archive 22 self-referential modules", "Maintain Core-Only Mode 90 days"],
+      "knowledge_added": ["Operational density: 17%", "Min viable arch: 19 modules"],
+      "repositories_updated": [
+        {"repo": "y-os-doctrine", "update": "commit f476520", "status": "ACTUAL"},
+        {"repo": "Notion", "update": "Y-OS Memory page", "status": "SIMULATED"}
+      ],
+      "final_deliverable": "Actionable recommendation in 3 seconds for $0.044"
+    },
+    "without_yos": {
+      "steps": ["Manual search", "Copy/paste context", "Ask LLM", "Manually save", "No lineage", "No governance"],
+      "estimated_time_min": 15, "estimated_cost_usd": 0.10,
+      "risks": ["No audit trail", "No constitutional validation", "Context loss"]
+    },
+    "with_yos": {
+      "steps": ["Auto context", "Team routing", "Governance", "Artifact registration", "Memory update", "Final answer"],
+      "actual_time_ms": 3021, "actual_cost_usd": 0.044,
+      "advantages": ["Zero copy-paste", "Full audit trail", "Constitutional validation", "Permanent lineage"]
+    },
+    "final_verdict": {
+      "verdict": "AMBER",
+      "explanation": "Input was self-referential (CSO-002 audit). Output was actionable (archive recommendation). Productive use of Y-OS.",
+      "value_location": ["Architect (Ganesha) — produced the recommendation", "Validator (Lakshmi) — ensured safety"],
+      "overhead_location": ["Input data was Y-OS self-analysis (acceptable during build phase)"],
+      "time_saved_min": 14.95, "cost_saved_usd": 0.056
+    }
+  }
+}

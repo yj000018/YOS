@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "id": "tm_core",
+      "type": "text",
+      "x": 400,
+      "y": 0,
+      "width": 220,
+      "height": 80,
+      "text": "## ODT Time Machine\nload \u00b7 replay \u00b7 diff \u00b7 timeline",
+      "color": "#6366f1"
+    },
+    {
+      "id": "snap_engine",
+      "type": "text",
+      "x": 0,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Snapshot Engine**\n29 snapshots",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "recon_engine",
+      "type": "text",
+      "x": 200,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Reconstruction**\n100% accuracy",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "diff_engine",
+      "type": "text",
+      "x": 400,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Diff Engine**\n28 diffs",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "timeline_gen",
+      "type": "text",
+      "x": 600,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Timeline Generator**\n4 timelines",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "evo_engine",
+      "type": "text",
+      "x": 800,
+      "y": 200,
+      "width": 180,
+      "height": 70,
+      "text": "**Evolution Engine**\n12 phases",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "dashboard",
+      "type": "text",
+      "x": 400,
+      "y": 350,
+      "width": 200,
+      "height": 70,
+      "text": "**Dashboard_Time_Machine**\nFull history view",
+      "color": "#10b981"
+    },
+    {
+      "id": "event_bus",
+      "type": "text",
+      "x": 0,
+      "y": -150,
+      "width": 160,
+      "height": 60,
+      "text": "Event Bus\n(M-022)",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "odt",
+      "type": "text",
+      "x": 200,
+      "y": -150,
+      "width": 160,
+      "height": 60,
+      "text": "ODT Registry\n(M-019)",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "m025",
+      "type": "text",
+      "x": 600,
+      "y": -150,
+      "width": 160,
+      "height": 60,
+      "text": "M-025\nStrategic Engine",
+      "color": "#10b981"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "event_bus",
+      "toNode": "tm_core",
+      "label": "feeds"
+    },
+    {
+      "id": "e2",
+      "fromNode": "odt",
+      "toNode": "tm_core",
+      "label": "feeds"
+    },
+    {
+      "id": "e3",
+      "fromNode": "tm_core",
+      "toNode": "snap_engine",
+      "label": "generates"
+    },
+    {
+      "id": "e4",
+      "fromNode": "tm_core",
+      "toNode": "recon_engine",
+      "label": "reconstructs"
+    },
+    {
+      "id": "e5",
+      "fromNode": "tm_core",
+      "toNode": "diff_engine",
+      "label": "compares"
+    },
+    {
+      "id": "e6",
+      "fromNode": "tm_core",
+      "toNode": "timeline_gen",
+      "label": "generates"
+    },
+    {
+      "id": "e7",
+      "fromNode": "tm_core",
+      "toNode": "evo_engine",
+      "label": "analyzes"
+    },
+    {
+      "id": "e8",
+      "fromNode": "tm_core",
+      "toNode": "dashboard",
+      "label": "powers"
+    },
+    {
+      "id": "e9",
+      "fromNode": "tm_core",
+      "toNode": "m025",
+      "label": "enables"
+    }
+  ]
+}

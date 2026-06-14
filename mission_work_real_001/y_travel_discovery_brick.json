@@ -1,0 +1,99 @@
+{
+  "mission": "MISSION-WORK-REAL-001",
+  "client": "Y Travel",
+  "user": "Yannick",
+  "location_base": "Haute-Nendaz, Valais",
+  "max_travel_time_hours": 2,
+  "outings": [
+    {
+      "id": 1,
+      "category": "Walks / Bisses",
+      "title": "Bisse de Chervé & Lac du Grand Désert",
+      "description": "Le bisse le plus alpin de la région (2200m+). Parcours sauvage vers les eaux turquoises du barrage de Cleuson et le Lac du Grand Désert. Vues panoramiques exceptionnelles.",
+      "duration": "5h30",
+      "difficulty": "Hard",
+      "premium_factor": "Beauté brute, haute altitude, moins fréquenté que les bisses de basse altitude."
+    },
+    {
+      "id": 2,
+      "category": "Walks / Forests",
+      "title": "Les Mélèzes de Balavaux",
+      "description": "Randonnée depuis Tracouet (accessible en télécabine) à travers la plus ancienne forêt de mélèzes d'Europe. Arbres multi-centenaires majestueux.",
+      "duration": "2-3h",
+      "difficulty": "Moderate",
+      "premium_factor": "Énergie unique des arbres anciens, cadre apaisant et ressourçant."
+    },
+    {
+      "id": 3,
+      "category": "Hidden Gems / Lakes",
+      "title": "Lac Bleu d'Arolla",
+      "description": "Un lac alpin d'un bleu vif cristallin, entouré de mélèzes. Accessible depuis La Gouille (45 min) ou Arolla (1h30).",
+      "duration": "1h30 - 3h",
+      "difficulty": "Easy/Moderate",
+      "premium_factor": "Couleur de l'eau spectaculaire, cadre idyllique pour la méditation ou la photographie."
+    },
+    {
+      "id": 4,
+      "category": "Hidden Gems / Geology",
+      "title": "Les Pyramides d'Euseigne",
+      "description": "Curiosité géologique fascinante du Val d'Hérens. Cheminées de fées (demoiselles coiffées) spectaculaires.",
+      "duration": "1h",
+      "difficulty": "Easy",
+      "premium_factor": "Phénomène naturel rare, très photogénique."
+    },
+    {
+      "id": 5,
+      "category": "Wellness / Thermal Baths",
+      "title": "Les Bisses Spa (Hôtel Nendaz 4 Vallées)",
+      "description": "Spa de 2200m2 directement à Nendaz. Saunas, bains à remous, soins et massages.",
+      "duration": "Half-day",
+      "difficulty": "Relaxing",
+      "premium_factor": "Ultra-local (zéro transport), infrastructures haut de gamme."
+    },
+    {
+      "id": 6,
+      "category": "Wellness / Thermal Baths",
+      "title": "Les Bains de Lavey",
+      "description": "L'eau thermale la plus chaude de Suisse (émergence à 62°C). Bassins extérieurs immenses, cadre nocturne magique.",
+      "duration": "3h+",
+      "difficulty": "Relaxing",
+      "premium_factor": "Température de l'eau, ouverture nocturne, cadre historique."
+    },
+    {
+      "id": 7,
+      "category": "Wellness / Thermal Baths",
+      "title": "Leukerbad Therme (Loèche-les-Bains)",
+      "description": "Le plus grand centre thermal alpin d'Europe. 10 bassins thermaux entourés par les falaises vertigineuses de la Gemmi.",
+      "duration": "Full day",
+      "difficulty": "Relaxing",
+      "premium_factor": "Contraste spectaculaire entre l'eau chaude et le cirque rocheux."
+    },
+    {
+      "id": 8,
+      "category": "Restaurants / Gastronomy",
+      "title": "Gilles Varone (Savièse)",
+      "description": "Restaurant doublement étoilé Michelin et 17/20 Gault&Millau. Cuisine moderne, 100% produits suisses, respect absolu de la nature.",
+      "duration": "Evening",
+      "difficulty": "N/A",
+      "premium_factor": "Expérience culinaire d'exception, philosophie ancrée dans le terroir."
+    },
+    {
+      "id": 9,
+      "category": "Restaurants / Gastronomy",
+      "title": "Simple Basique (Sion)",
+      "description": "Néo-bistrot moderne par le chef Damien Germanier. Cuisine de saison, produits valaisans, ambiance brasserie élégante.",
+      "duration": "Evening",
+      "difficulty": "N/A",
+      "premium_factor": "Gastronomie décontractée mais pointue, excellente carte des vins."
+    },
+    {
+      "id": 10,
+      "category": "Wine / Culture",
+      "title": "Domaine du Mont d'Or (Sion/Conthey)",
+      "description": "Le plus ancien domaine du Valais (1848). 220 terrasses en pierres sèches. Dégustation dans le caveau historique.",
+      "duration": "2h",
+      "difficulty": "Easy",
+      "premium_factor": "Histoire viticole, beauté des terrasses, vins d'exception."
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "_schema_version": "2.0",
+  "_description": "Y-OS Value Trace Schema — fill this JSON to generate a mission trace. All fields are required unless marked optional.",
+
+  "mission": {
+    "id": "WORK-REAL-001",
+    "title": "Y Travel Discovery Brick — Haute-Nendaz & Valais",
+    "date": "2026-06-14",
+    "trace_id": "TRACE-REAL-001",
+    "type": "real_work",
+    "_type_options": ["real_work", "self_referential", "architecture", "research"]
+  },
+
+  "request": {
+    "user": "Yannick",
+    "user_icon": "Y",
+    "quote": "Find 10 premium\noutings near\nHaute-Nendaz\nfor next weekend."
+  },
+
+  "team_columns": [
+    {
+      "num": "1",
+      "title": "Yannick",
+      "icon": "Y",
+      "color_role": "human",
+      "fields": {
+        "Role": "User / CEO",
+        "Worker": "—",
+        "Input": "Real-world\ntravel need",
+        "Output": "Request captured",
+        "Latency": "0s",
+        "Cost": "$0",
+        "Artifact": "—"
+      }
+    },
+    {
+      "num": "2",
+      "title": "Manus\nOrchestrator",
+      "icon": "M",
+      "color_role": "orchestrator",
+      "fields": {
+        "Role": "Orchestrator",
+        "Worker": "Manus",
+        "Input": "User request",
+        "Output": "Mission created\nRouting decided\nContext loaded",
+        "Latency": "20 ms",
+        "Cost": "$0.000",
+        "Artifact": "SESSION-REAL-001"
+      }
+    },
+    {
+      "num": "3",
+      "title": "Architect\n(Ganesha)",
+      "icon": "G",
+      "color_role": "architect",
+      "fields": {
+        "Role": "Architect / Strategy",
+        "Worker": "Ganesha",
+        "Provider": "Anthropic",
+        "Model": "Claude Opus 4",
+        "Tools": "context_cache\nartifact_registry",
+        "Input": "Travel request\nUser profile\n(Nendaz, premium)",
+        "Output": "Search strategy\n+ category map",
+        "Latency": "1.2 sec",
+        "Cost": "$0.018",
+        "Artifact": "STRATEGY-REAL-001"
+      }
+    },
+    {
+      "num": "4",
+      "title": "Researcher\n(Saraswati)",
+      "icon": "R",
+      "color_role": "worker",
+      "fields": {
+        "Role": "Researcher",
+        "Worker": "Saraswati",
+        "Provider": "Anthropic",
+        "Model": "Claude Opus 4",
+        "Tools": "web_search\nwebpage_extract",
+        "Input": "Strategy pack\n3 search queries\n× 3 categories",
+        "Output": "10 verified outings\nwith live data",
+        "Latency": "8.4 sec",
+        "Cost": "$0.031",
+        "Artifact": "RESEARCH-REAL-001"
+      }
+    },
+    {
+      "num": "5",
+      "title": "Builder\n(Vishvakarma)",
+      "icon": "B",
+      "color_role": "worker",
+      "fields": {
+        "Role": "Builder / Formatter",
+        "Worker": "Vishvakarma",
+        "Provider": "Anthropic",
+        "Model": "Claude Opus 4",
+        "Tools": "file_writer",
+        "Input": "Research pack\n10 outings data",
+        "Output": "MD + JSON\nformatted files",
+        "Latency": "1.1 sec",
+        "Cost": "$0.009",
+        "Artifact": "DISCOVERY-BRICK-001"
+      }
+    },
+    {
+      "num": "6",
+      "title": "Validator\n(Lakshmi)",
+      "icon": "L",
+      "color_role": "validator",
+      "fields": {
+        "Role": "Validator / Gov.",
+        "Worker": "Lakshmi",
+        "Provider": "Internal",
+        "Model": "Rules + Profile",
+        "Tools": "constitution_checker",
+        "Input": "Discovery brick\nUser preferences",
+        "Output": "APPROVED ✓\nRisk: 2/100",
+        "Latency": "0.1 sec",
+        "Cost": "$0.001",
+        "Artifact": "APPROVAL-REAL-001"
+      }
+    },
+    {
+      "num": "7",
+      "title": "Git /\nNotion",
+      "icon": "S",
+      "color_role": "memory",
+      "fields": {
+        "Role": "Memory & Persistence",
+        "Worker": "Living Memory Pipeline",
+        "Tools": "git_pusher\nnotion_updater",
+        "Input": "Approved files",
+        "Output": "Stored in Git\ny-os-doctrine\ncommit f85732d",
+        "Latency": "2.1 sec",
+        "Cost": "$0",
+        "Artifact": "MEMORY-REAL-001"
+      }
+    },
+    {
+      "num": "8",
+      "title": "Deliverable",
+      "icon": "D",
+      "color_role": "deliverable",
+      "fields": {
+        "Role": "Final Output",
+        "Worker": "Manus",
+        "Input": "Approved artifact",
+        "Output": "10 outings\ndelivered to\nYannick",
+        "Latency": "~13 sec TOTAL",
+        "Cost": "$0.059 TOTAL",
+        "Artifact": "DISCOVERY-BRICK-001"
+      }
+    }
+  ],
+
+  "handoffs": [
+    {"name": "CTX-REAL-001",      "detail": "2,100 tokens\n0.02 sec"},
+    {"name": "STRATEGY-REAL-001", "detail": "890 tokens\n1.2 sec"},
+    {"name": "RESEARCH-REAL-001", "detail": "4,200 tokens\n8.4 sec"},
+    {"name": "DISCOVERY-BRICK",   "detail": "1,850 tokens\n1.1 sec"},
+    {"name": "APPROVAL-REAL-001", "detail": "120 tokens\n0.1 sec"},
+    {"name": "MEMORY-REAL-001",   "detail": "2 systems updated\n2.1 sec"}
+  ],
+
+  "plugins_skipped": [
+    {"name": "ODT",              "desc": "Organizational\nDigital Twin"},
+    {"name": "Strategic\nIntelligence", "desc": "SRE, gap analysis"},
+    {"name": "Simulation /\nTime Machine", "desc": ""},
+    {"name": "Observability",    "desc": "EIS dashboard"}
+  ],
+  "plugins_skipped_reason": "Core-Only Mode\nADR-SIMP-002\nArchitecture Frozen",
+
+  "architecture_view": {
+    "steps": [
+      {"label": "CAPTURE",   "sub": "(1-2)", "color_role": "human"},
+      {"label": "CONTEXT",   "sub": "(3)",   "color_role": "architect"},
+      {"label": "EXECUTION", "sub": "(4-5)", "color_role": "worker"},
+      {"label": "REVIEW",    "sub": "(6)",   "color_role": "validator"},
+      {"label": "MEMORY",    "sub": "(7)",   "color_role": "memory"}
+    ],
+    "summary": "8 STEPS — 7 CORE MODULES USED",
+    "plugins_note": "4 PLUGINS SKIPPED",
+    "task_type_note": "REAL-WORLD TASK — NON-Y-OS PROJECT"
+  },
+
+  "team_view": {
+    "icons": [
+      {"sym": "Y", "color_role": "human",      "name": "YOU"},
+      {"sym": "M", "color_role": "orchestrator","name": "MANUS"},
+      {"sym": "G", "color_role": "architect",   "name": "GANESHA"},
+      {"sym": "R", "color_role": "worker",      "name": "SARASWATI"},
+      {"sym": "B", "color_role": "worker",      "name": "VISHVAKARMA"},
+      {"sym": "L", "color_role": "validator",   "name": "LAKSHMI"},
+      {"sym": "S", "color_role": "memory",      "name": "GIT/NOTION"}
+    ],
+    "tagline": "A MULTI-DISCIPLINARY TEAM WORKED TOGETHER",
+    "tagline2": "SEARCHING, STRUCTURING, VALIDATING & ARCHIVING"
+  },
+
+  "value_view": {
+    "kpis": [
+      {"num": "10", "label": "OUTINGS\nFOUND"},
+      {"num": "3",  "label": "FORMATS\nDELIVERED"},
+      {"num": "1",  "label": "GIT\nCOMMIT"},
+      {"num": "2",  "label": "FILES\nARCHIVED"},
+      {"num": "0",  "label": "MANUAL\nPROMPTS"}
+    ],
+    "summary": "Y-OS CREATED REAL OPERATIONAL VALUE",
+    "note": "NON-SELF-REFERENTIAL TASK — EXTERNAL PROJECT"
+  },
+
+  "metrics": {
+    "total_time": "~13 sec",
+    "total_cost": "$0.059",
+    "total_tokens": "9,160",
+    "models_used": "Claude Opus 4\n(Anthropic)",
+    "tools_used": "web_search\nwebpage_extract\nfile_writer\nartifact_registry",
+    "artifacts_created": "• STRATEGY-REAL-001\n• RESEARCH-REAL-001\n• DISCOVERY-BRICK-001\n• APPROVAL-REAL-001\n• MEMORY-REAL-001",
+    "plugins_skipped": "4 / 4"
+  },
+
+  "verdict": {
+    "answer": "YES",
+    "_answer_options": ["YES", "NO", "AMBER"],
+    "reasons": [
+      "✓ Live web search — 2025/2026 data",
+      "✓ Profile context auto-loaded",
+      "✓ Governance applied (Lakshmi)",
+      "✓ Artifact registered with lineage",
+      "✓ Memory updated (Git commit)",
+      "✓ Zero iterative prompting needed",
+      "✓ Non-self-referential task — real work"
+    ]
+  },
+
+  "without_yos": {
+    "steps": ["Search Google", "Copy snippets", "Open 10 tabs", "Copy/paste",
+              "Ask ChatGPT", "Format manually", "Save manually"],
+    "time_estimate": "≈ 20 – 40 min",
+    "note": "High cognitive load — no lineage — no memory"
+  },
+
+  "with_yos": {
+    "steps": ["Ask question", "Team works\nautomatically", "Live web\nsearch",
+              "Governance\napplied", "Artifact\nregistered", "Memory\nupdated", "Answer\ndelivered"],
+    "time_estimate": "≈ 13 sec",
+    "note": "Low cognitive load — lineage — memory — governance"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "test_a_odt_registry": {
+    "status": "PASS",
+    "workers": 6,
+    "artifacts": 10
+  },
+  "test_b_pipeline_graph": {
+    "status": "PASS",
+    "pipeline": "PIPE-5C15BA64",
+    "artifacts": 6
+  },
+  "test_e_evolution": {
+    "status": "PASS",
+    "snapshots": 7
+  },
+  "test_f_health": {
+    "status": "PASS",
+    "score": 90.0,
+    "status_label": "HEALTHY"
+  },
+  "graph_v3": {
+    "schema_version": "3.0",
+    "generated_at": "2026-06-14T03:42:14.388437+00:00",
+    "mission": "MISSION-019",
+    "v2_relationships": 19,
+    "v3_new_relationships": 10,
+    "total_relationship_types": 29,
+    "nodes": 645,
+    "edges": 4488,
+    "inferred_edges": 2895,
+    "explicit_edges": 1593,
+    "node_types": {
+      "document": 156,
+      "runtime": 108,
+      "worker": 79,
+      "adr": 96,
+      "moc": 10,
+      "mission": 88,
+      "governance": 6,
+      "constitution": 13,
+      "memory": 7,
+      "pipeline": 16,
+      "artifact": 49,
+      "canvas": 3,
+      "dashboard": 7,
+      "concept": 7
+    }
+  }
+}

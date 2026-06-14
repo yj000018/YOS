@@ -1,0 +1,158 @@
+{
+  "nodes": [
+    {
+      "id": "total",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 220,
+      "height": 80,
+      "text": "TOTAL COST\n$0.150190 USD\n9,133 tokens",
+      "color": "6"
+    },
+    {
+      "id": "openai_eco",
+      "type": "text",
+      "x": -400,
+      "y": -200,
+      "width": 200,
+      "height": 80,
+      "text": "OpenAI\n$0.120 \u00b7 6,412 tokens\n8 calls"
+    },
+    {
+      "id": "anthropic_eco",
+      "type": "text",
+      "x": -400,
+      "y": 100,
+      "width": 200,
+      "height": 80,
+      "text": "Anthropic\n$0.030 \u00b7 2,601 tokens\n2 calls"
+    },
+    {
+      "id": "m017_eco",
+      "type": "text",
+      "x": 400,
+      "y": -200,
+      "width": 200,
+      "height": 80,
+      "text": "MISSION-017\n4,297 tokens\n$0.076055",
+      "color": "2"
+    },
+    {
+      "id": "m018_eco",
+      "type": "text",
+      "x": 400,
+      "y": 100,
+      "width": 200,
+      "height": 80,
+      "text": "MISSION-018\n4,836 tokens\n$0.074135",
+      "color": "2"
+    },
+    {
+      "id": "brahma_eco",
+      "type": "text",
+      "x": 0,
+      "y": -300,
+      "width": 160,
+      "height": 60,
+      "text": "Brahma\n1,957 tokens",
+      "color": "4"
+    },
+    {
+      "id": "saraswati_eco",
+      "type": "text",
+      "x": 0,
+      "y": -100,
+      "width": 160,
+      "height": 60,
+      "text": "Saraswati\n2,601 tokens",
+      "color": "4"
+    },
+    {
+      "id": "lakshmi_eco",
+      "type": "text",
+      "x": 0,
+      "y": 100,
+      "width": 160,
+      "height": 60,
+      "text": "Lakshmi\n1,809 tokens",
+      "color": "5"
+    },
+    {
+      "id": "hanuman_eco",
+      "type": "text",
+      "x": 0,
+      "y": 300,
+      "width": 160,
+      "height": 60,
+      "text": "Hanuman\n1,595 tokens",
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "openai_eco",
+      "toNode": "total",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "costs"
+    },
+    {
+      "id": "e2",
+      "fromNode": "anthropic_eco",
+      "toNode": "total",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "costs"
+    },
+    {
+      "id": "e3",
+      "fromNode": "m017_eco",
+      "toNode": "total",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "costs"
+    },
+    {
+      "id": "e4",
+      "fromNode": "m018_eco",
+      "toNode": "total",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "costs"
+    },
+    {
+      "id": "e5",
+      "fromNode": "brahma_eco",
+      "toNode": "openai_eco",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "runs_on"
+    },
+    {
+      "id": "e6",
+      "fromNode": "saraswati_eco",
+      "toNode": "anthropic_eco",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "runs_on"
+    },
+    {
+      "id": "e7",
+      "fromNode": "lakshmi_eco",
+      "toNode": "openai_eco",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "runs_on"
+    },
+    {
+      "id": "e8",
+      "fromNode": "hanuman_eco",
+      "toNode": "openai_eco",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "runs_on"
+    }
+  ]
+}

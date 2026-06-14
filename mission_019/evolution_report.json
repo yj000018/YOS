@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-14T03:42:14.452495+00:00",
+  "mission": "MISSION-019",
+  "snapshots": 7,
+  "growth": {
+    "adrs": {
+      "first": 20,
+      "last": 26,
+      "delta": 6,
+      "growth_pct": 30.0
+    },
+    "missions": {
+      "first": 12,
+      "last": 18,
+      "delta": 6,
+      "growth_pct": 50.0
+    },
+    "concepts": {
+      "first": 0,
+      "last": 39,
+      "delta": 39,
+      "growth_pct": 0.0
+    },
+    "pipelines": {
+      "first": 0,
+      "last": 1,
+      "delta": 1,
+      "growth_pct": 0.0
+    },
+    "artifacts": {
+      "first": 0,
+      "last": 10,
+      "delta": 10,
+      "growth_pct": 0.0
+    },
+    "graph_nodes": {
+      "first": 301,
+      "last": 450,
+      "delta": 149,
+      "growth_pct": 49.5
+    },
+    "graph_edges": {
+      "first": 565,
+      "last": 5200,
+      "delta": 4635,
+      "growth_pct": 820.4
+    },
+    "total_tokens": {
+      "first": 0,
+      "last": 9133,
+      "delta": 9133,
+      "growth_pct": 0.0
+    },
+    "total_cost_usd": {
+      "first": 0.0,
+      "last": 0.15019,
+      "delta": 0.15019,
+      "growth_pct": 0.0
+    },
+    "markdown_files": {
+      "first": 301,
+      "last": 450,
+      "delta": 149,
+      "growth_pct": 49.5
+    }
+  },
+  "snapshots_data": [
+    {
+      "date": "2026-06-14-M013",
+      "mission": "MISSION-013",
+      "adrs": 20,
+      "missions": 12,
+      "concepts": 0,
+      "pipelines": 0,
+      "artifacts": 0,
+      "graph_nodes": 301,
+      "graph_edges": 565,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "markdown_files": 301
+    },
+    {
+      "date": "2026-06-14-M014",
+      "mission": "MISSION-014",
+      "adrs": 21,
+      "missions": 13,
+      "concepts": 12,
+      "pipelines": 0,
+      "artifacts": 0,
+      "graph_nodes": 330,
+      "graph_edges": 600,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "markdown_files": 330
+    },
+    {
+      "date": "2026-06-14-M015",
+      "mission": "MISSION-015",
+      "adrs": 22,
+      "missions": 14,
+      "concepts": 39,
+      "pipelines": 0,
+      "artifacts": 0,
+      "graph_nodes": 375,
+      "graph_edges": 4498,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "markdown_files": 375
+    },
+    {
+      "date": "2026-06-14-M016",
+      "mission": "MISSION-016",
+      "adrs": 23,
+      "missions": 15,
+      "concepts": 39,
+      "pipelines": 0,
+      "artifacts": 0,
+      "graph_nodes": 381,
+      "graph_edges": 4520,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "markdown_files": 381
+    },
+    {
+      "date": "2026-06-14-M017",
+      "mission": "MISSION-017",
+      "adrs": 24,
+      "missions": 16,
+      "concepts": 39,
+      "pipelines": 0,
+      "artifacts": 4,
+      "graph_nodes": 395,
+      "graph_edges": 4600,
+      "total_tokens": 4297,
+      "total_cost_usd": 0.076055,
+      "markdown_files": 395
+    },
+    {
+      "date": "2026-06-14-M018",
+      "mission": "MISSION-018",
+      "adrs": 25,
+      "missions": 17,
+      "concepts": 39,
+      "pipelines": 1,
+      "artifacts": 10,
+      "graph_nodes": 420,
+      "graph_edges": 4800,
+      "total_tokens": 9133,
+      "total_cost_usd": 0.15019,
+      "markdown_files": 420
+    },
+    {
+      "date": "2026-06-14-M019",
+      "mission": "MISSION-019",
+      "adrs": 26,
+      "missions": 18,
+      "concepts": 39,
+      "pipelines": 1,
+      "artifacts": 10,
+      "graph_nodes": 450,
+      "graph_edges": 5200,
+      "total_tokens": 9133,
+      "total_cost_usd": 0.15019,
+      "markdown_files": 450
+    }
+  ]
+}

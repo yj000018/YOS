@@ -1,0 +1,210 @@
+{
+  "nodes": [
+    {
+      "id": "ceo",
+      "type": "text",
+      "x": -600,
+      "y": 0,
+      "width": 160,
+      "height": 60,
+      "text": "CEO\nDirective",
+      "color": "1"
+    },
+    {
+      "id": "brahma",
+      "type": "text",
+      "x": -300,
+      "y": -200,
+      "width": 160,
+      "height": 60,
+      "text": "Brahma\nArchitecture",
+      "color": "4"
+    },
+    {
+      "id": "hanuman",
+      "type": "text",
+      "x": -300,
+      "y": 0,
+      "width": 160,
+      "height": 60,
+      "text": "Hanuman\nBuild",
+      "color": "4"
+    },
+    {
+      "id": "saraswati",
+      "type": "text",
+      "x": -300,
+      "y": 200,
+      "width": 160,
+      "height": 60,
+      "text": "Saraswati\nLearning",
+      "color": "4"
+    },
+    {
+      "id": "lakshmi",
+      "type": "text",
+      "x": 0,
+      "y": -100,
+      "width": 160,
+      "height": 60,
+      "text": "Lakshmi\nGovernance",
+      "color": "5"
+    },
+    {
+      "id": "ganesha",
+      "type": "text",
+      "x": 0,
+      "y": 100,
+      "width": 160,
+      "height": 60,
+      "text": "Ganesha\nReporting",
+      "color": "4"
+    },
+    {
+      "id": "ccr",
+      "type": "text",
+      "x": 300,
+      "y": 0,
+      "width": 180,
+      "height": 60,
+      "text": "CCR Runtime v2\nMODE-B/D/E",
+      "color": "3"
+    },
+    {
+      "id": "openai",
+      "type": "text",
+      "x": 600,
+      "y": -100,
+      "width": 160,
+      "height": 60,
+      "text": "OpenAI\ngpt-4o / mini"
+    },
+    {
+      "id": "anthropic",
+      "type": "text",
+      "x": 600,
+      "y": 100,
+      "width": 160,
+      "height": 60,
+      "text": "Anthropic\nclaude-opus-4"
+    },
+    {
+      "id": "validator",
+      "type": "text",
+      "x": 300,
+      "y": 300,
+      "width": 180,
+      "height": 60,
+      "text": "Output Validator\n100% VALID",
+      "color": "5"
+    },
+    {
+      "id": "registry",
+      "type": "text",
+      "x": 600,
+      "y": 300,
+      "width": 180,
+      "height": 60,
+      "text": "Artifact Registry\n10 artifacts",
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "ceo",
+      "toNode": "brahma",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "routes_to"
+    },
+    {
+      "id": "e2",
+      "fromNode": "ceo",
+      "toNode": "hanuman",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "routes_to"
+    },
+    {
+      "id": "e3",
+      "fromNode": "ceo",
+      "toNode": "saraswati",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "routes_to"
+    },
+    {
+      "id": "e4",
+      "fromNode": "brahma",
+      "toNode": "ccr",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e5",
+      "fromNode": "hanuman",
+      "toNode": "ccr",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e6",
+      "fromNode": "saraswati",
+      "toNode": "ccr",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e7",
+      "fromNode": "lakshmi",
+      "toNode": "ccr",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e8",
+      "fromNode": "ganesha",
+      "toNode": "ccr",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "executed_by"
+    },
+    {
+      "id": "e9",
+      "fromNode": "ccr",
+      "toNode": "openai",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "runs_on"
+    },
+    {
+      "id": "e10",
+      "fromNode": "ccr",
+      "toNode": "anthropic",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "runs_on"
+    },
+    {
+      "id": "e11",
+      "fromNode": "ccr",
+      "toNode": "validator",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e12",
+      "fromNode": "validator",
+      "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    }
+  ]
+}

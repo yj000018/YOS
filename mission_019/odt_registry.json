@@ -1,0 +1,686 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-14T03:42:14.449201+00:00",
+  "mission": "MISSION-019",
+  "summary": {
+    "workers": 6,
+    "missions": 8,
+    "adrs": 7,
+    "concepts": 39,
+    "pipelines": 1,
+    "artifacts": 10,
+    "providers": 3,
+    "git_commits": 7,
+    "memory_assets": 5
+  },
+  "workers": {
+    "Brahma": {
+      "id": "brahma",
+      "name": "Brahma",
+      "capability": "architecture",
+      "provider": "openai",
+      "model": "gpt-4o",
+      "executions": 2,
+      "artifacts_produced": 2,
+      "total_tokens": 2074,
+      "total_cost_usd": 0.0,
+      "avg_latency_ms": 0.0,
+      "last_active": "2026-06-14"
+    },
+    "Hanuman": {
+      "id": "hanuman",
+      "name": "Hanuman",
+      "capability": "build",
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "executions": 2,
+      "artifacts_produced": 2,
+      "total_tokens": 1595,
+      "total_cost_usd": 0.0,
+      "avg_latency_ms": 0.0,
+      "last_active": "2026-06-14"
+    },
+    "Saraswati": {
+      "id": "saraswati",
+      "name": "Saraswati",
+      "capability": "learning",
+      "provider": "anthropic",
+      "model": "claude-opus-4-20250514",
+      "executions": 2,
+      "artifacts_produced": 2,
+      "total_tokens": 2601,
+      "total_cost_usd": 0.0,
+      "avg_latency_ms": 0.0,
+      "last_active": "2026-06-14"
+    },
+    "Lakshmi": {
+      "id": "lakshmi",
+      "name": "Lakshmi",
+      "capability": "governance",
+      "provider": "openai",
+      "model": "gpt-4o",
+      "executions": 2,
+      "artifacts_produced": 2,
+      "total_tokens": 1809,
+      "total_cost_usd": 0.0,
+      "avg_latency_ms": 0.0,
+      "last_active": "2026-06-14"
+    },
+    "Ganesha": {
+      "id": "ganesha",
+      "name": "Ganesha",
+      "capability": "reporting",
+      "provider": "openai",
+      "model": "gpt-4o",
+      "executions": 1,
+      "artifacts_produced": 1,
+      "total_tokens": 1054,
+      "total_cost_usd": 0.0,
+      "avg_latency_ms": 0.0,
+      "last_active": "2026-06-14"
+    },
+    "CEO": {
+      "id": "ceo",
+      "name": "CEO",
+      "capability": "directive",
+      "provider": "human",
+      "model": "human",
+      "executions": 1,
+      "artifacts_produced": 1,
+      "total_tokens": 0,
+      "total_cost_usd": 0.0,
+      "avg_latency_ms": 0.0,
+      "last_active": "2026-06-14"
+    }
+  },
+  "missions": {
+    "MISSION-013": {
+      "id": "MISSION-013",
+      "title": "Knowledge Graph Compiler v1",
+      "status": "PASSED",
+      "adr": "ADR-0040",
+      "artifacts_produced": 2,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    "MISSION-013B": {
+      "id": "MISSION-013B",
+      "title": "Graph Quality Audit",
+      "status": "PASSED",
+      "adr": "ADR-0041",
+      "artifacts_produced": 1,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    "MISSION-014": {
+      "id": "MISSION-014",
+      "title": "Cognitive Graph Architecture v1",
+      "status": "PASSED",
+      "adr": "ADR-0041",
+      "artifacts_produced": 12,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    "MISSION-015": {
+      "id": "MISSION-015",
+      "title": "KGC v2 Visual Drill-Down",
+      "status": "PASSED",
+      "adr": "ADR-0042",
+      "artifacts_produced": 45,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    "MISSION-016": {
+      "id": "MISSION-016",
+      "title": "CCR Runtime v2",
+      "status": "PASSED",
+      "adr": "ADR-0043",
+      "artifacts_produced": 6,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    "MISSION-017": {
+      "id": "MISSION-017",
+      "title": "Live Worker Execution v1",
+      "status": "PASSED",
+      "adr": "ADR-0044",
+      "artifacts_produced": 4,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    "MISSION-018": {
+      "id": "MISSION-018",
+      "title": "Multi-Worker Pipeline Orchestration v1",
+      "status": "PASSED",
+      "adr": "ADR-0045",
+      "artifacts_produced": 6,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    },
+    "MISSION-019": {
+      "id": "MISSION-019",
+      "title": "Organizational Digital Twin Runtime v1",
+      "status": "RUNNING",
+      "adr": "ADR-0046",
+      "artifacts_produced": 0,
+      "date": "2026-06-14",
+      "tokens": 0,
+      "cost_usd": 0.0
+    }
+  },
+  "adrs": {
+    "ADR-0040": {
+      "id": "ADR-0040",
+      "title": "Knowledge Graph Compiler v1",
+      "status": "ACCEPTED",
+      "mission": "MISSION-013",
+      "date": "2026-06-14",
+      "supersedes": ""
+    },
+    "ADR-0041": {
+      "id": "ADR-0041",
+      "title": "Cognitive Graph Architecture v1",
+      "status": "ACCEPTED",
+      "mission": "MISSION-014",
+      "date": "2026-06-14",
+      "supersedes": ""
+    },
+    "ADR-0042": {
+      "id": "ADR-0042",
+      "title": "KGC v2 Visual Drill-Down",
+      "status": "ACCEPTED",
+      "mission": "MISSION-015",
+      "date": "2026-06-14",
+      "supersedes": ""
+    },
+    "ADR-0043": {
+      "id": "ADR-0043",
+      "title": "CCR Runtime v2 Implementation",
+      "status": "ACCEPTED",
+      "mission": "MISSION-016",
+      "date": "2026-06-14",
+      "supersedes": ""
+    },
+    "ADR-0044": {
+      "id": "ADR-0044",
+      "title": "Live Worker Execution v1",
+      "status": "ACCEPTED",
+      "mission": "MISSION-017",
+      "date": "2026-06-14",
+      "supersedes": ""
+    },
+    "ADR-0045": {
+      "id": "ADR-0045",
+      "title": "Multi-Worker Pipeline Orchestration v1",
+      "status": "ACCEPTED",
+      "mission": "MISSION-018",
+      "date": "2026-06-14",
+      "supersedes": ""
+    },
+    "ADR-0046": {
+      "id": "ADR-0046",
+      "title": "Organizational Digital Twin Runtime v1",
+      "status": "PROPOSED",
+      "mission": "MISSION-019",
+      "date": "2026-06-14",
+      "supersedes": ""
+    }
+  },
+  "concepts": {
+    "Artifact_Primacy": {
+      "id": "Artifact_Primacy",
+      "domain": "Y-OS",
+      "description": "Concept node: Artifact Primacy",
+      "source_file": "concepts/Artifact_Primacy.md"
+    },
+    "Preservation_Principle": {
+      "id": "Preservation_Principle",
+      "domain": "Y-OS",
+      "description": "Concept node: Preservation Principle",
+      "source_file": "concepts/Preservation_Principle.md"
+    },
+    "Derivation_Transparency": {
+      "id": "Derivation_Transparency",
+      "domain": "Y-OS",
+      "description": "Concept node: Derivation Transparency",
+      "source_file": "concepts/Derivation_Transparency.md"
+    },
+    "Human_Override": {
+      "id": "Human_Override",
+      "domain": "Y-OS",
+      "description": "Concept node: Human Override",
+      "source_file": "concepts/Human_Override.md"
+    },
+    "Governance_Before_Autonomy": {
+      "id": "Governance_Before_Autonomy",
+      "domain": "Y-OS",
+      "description": "Concept node: Governance Before Autonomy",
+      "source_file": "concepts/Governance_Before_Autonomy.md"
+    },
+    "CCR_Runtime": {
+      "id": "CCR_Runtime",
+      "domain": "Y-OS",
+      "description": "Concept node: CCR Runtime",
+      "source_file": "concepts/CCR_Runtime.md"
+    },
+    "Session_Delta": {
+      "id": "Session_Delta",
+      "domain": "Y-OS",
+      "description": "Concept node: Session Delta",
+      "source_file": "concepts/Session_Delta.md"
+    },
+    "Living_Memory": {
+      "id": "Living_Memory",
+      "domain": "Y-OS",
+      "description": "Concept node: Living Memory",
+      "source_file": "concepts/Living_Memory.md"
+    },
+    "Context_Pack": {
+      "id": "Context_Pack",
+      "domain": "Y-OS",
+      "description": "Concept node: Context Pack",
+      "source_file": "concepts/Context_Pack.md"
+    },
+    "Context_Router": {
+      "id": "Context_Router",
+      "domain": "Y-OS",
+      "description": "Concept node: Context Router",
+      "source_file": "concepts/Context_Router.md"
+    },
+    "Constitutional_Governance": {
+      "id": "Constitutional_Governance",
+      "domain": "Y-OS",
+      "description": "Concept node: Constitutional Governance",
+      "source_file": "concepts/Constitutional_Governance.md"
+    },
+    "Governance_Determinism": {
+      "id": "Governance_Determinism",
+      "domain": "Y-OS",
+      "description": "Concept node: Governance Determinism",
+      "source_file": "concepts/Governance_Determinism.md"
+    },
+    "Constitutional_Core": {
+      "id": "Constitutional_Core",
+      "domain": "Y-OS",
+      "description": "Concept node: Constitutional Core",
+      "source_file": "concepts/Constitutional_Core.md"
+    },
+    "Replacement_Test": {
+      "id": "Replacement_Test",
+      "domain": "Y-OS",
+      "description": "Concept node: Replacement Test",
+      "source_file": "concepts/Replacement_Test.md"
+    },
+    "Amendment_Procedure": {
+      "id": "Amendment_Procedure",
+      "domain": "Y-OS",
+      "description": "Concept node: Amendment Procedure",
+      "source_file": "concepts/Amendment_Procedure.md"
+    },
+    "Lakshmi_Governance": {
+      "id": "Lakshmi_Governance",
+      "domain": "Y-OS",
+      "description": "Concept node: Lakshmi Governance",
+      "source_file": "concepts/Lakshmi_Governance.md"
+    },
+    "Y_ORC": {
+      "id": "Y_ORC",
+      "domain": "Y-OS",
+      "description": "Concept node: Y ORC",
+      "source_file": "concepts/Y_ORC.md"
+    },
+    "ART": {
+      "id": "ART",
+      "domain": "Y-OS",
+      "description": "Concept node: ART",
+      "source_file": "concepts/ART.md"
+    },
+    "CRT": {
+      "id": "CRT",
+      "domain": "Y-OS",
+      "description": "Concept node: CRT",
+      "source_file": "concepts/CRT.md"
+    },
+    "Context_Compiler": {
+      "id": "Context_Compiler",
+      "domain": "Y-OS",
+      "description": "Concept node: Context Compiler",
+      "source_file": "concepts/Context_Compiler.md"
+    },
+    "Provider_Adapter": {
+      "id": "Provider_Adapter",
+      "domain": "Y-OS",
+      "description": "Concept node: Provider Adapter",
+      "source_file": "concepts/Provider_Adapter.md"
+    },
+    "Worker_Registry": {
+      "id": "Worker_Registry",
+      "domain": "Y-OS",
+      "description": "Concept node: Worker Registry",
+      "source_file": "concepts/Worker_Registry.md"
+    },
+    "Model_Registry": {
+      "id": "Model_Registry",
+      "domain": "Y-OS",
+      "description": "Concept node: Model Registry",
+      "source_file": "concepts/Model_Registry.md"
+    },
+    "Artifact_Registry": {
+      "id": "Artifact_Registry",
+      "domain": "Y-OS",
+      "description": "Concept node: Artifact Registry",
+      "source_file": "concepts/Artifact_Registry.md"
+    },
+    "Canonical_Memory": {
+      "id": "Canonical_Memory",
+      "domain": "Y-OS",
+      "description": "Concept node: Canonical Memory",
+      "source_file": "concepts/Canonical_Memory.md"
+    },
+    "Archive_Reference": {
+      "id": "Archive_Reference",
+      "domain": "Y-OS",
+      "description": "Concept node: Archive Reference",
+      "source_file": "concepts/Archive_Reference.md"
+    },
+    "Knowledge_Graph_Compiler": {
+      "id": "Knowledge_Graph_Compiler",
+      "domain": "Y-OS",
+      "description": "Concept node: Knowledge Graph Compiler",
+      "source_file": "concepts/Knowledge_Graph_Compiler.md"
+    },
+    "Cognitive_Graph": {
+      "id": "Cognitive_Graph",
+      "domain": "Y-OS",
+      "description": "Concept node: Cognitive Graph",
+      "source_file": "concepts/Cognitive_Graph.md"
+    },
+    "Organizational_Digital_Twin": {
+      "id": "Organizational_Digital_Twin",
+      "domain": "Y-OS",
+      "description": "Concept node: Organizational Digital Twin",
+      "source_file": "concepts/Organizational_Digital_Twin.md"
+    },
+    "Ganesha": {
+      "id": "Ganesha",
+      "domain": "Y-OS",
+      "description": "Concept node: Ganesha",
+      "source_file": "concepts/Ganesha.md"
+    },
+    "Brahma": {
+      "id": "Brahma",
+      "domain": "Y-OS",
+      "description": "Concept node: Brahma",
+      "source_file": "concepts/Brahma.md"
+    },
+    "Lakshmi": {
+      "id": "Lakshmi",
+      "domain": "Y-OS",
+      "description": "Concept node: Lakshmi",
+      "source_file": "concepts/Lakshmi.md"
+    },
+    "Saraswati": {
+      "id": "Saraswati",
+      "domain": "Y-OS",
+      "description": "Concept node: Saraswati",
+      "source_file": "concepts/Saraswati.md"
+    },
+    "Hanuman": {
+      "id": "Hanuman",
+      "domain": "Y-OS",
+      "description": "Concept node: Hanuman",
+      "source_file": "concepts/Hanuman.md"
+    },
+    "Krishna": {
+      "id": "Krishna",
+      "domain": "Y-OS",
+      "description": "Concept node: Krishna",
+      "source_file": "concepts/Krishna.md"
+    },
+    "Git_backed_Memory": {
+      "id": "Git_backed_Memory",
+      "domain": "Y-OS",
+      "description": "Concept node: Git backed Memory",
+      "source_file": "concepts/Git_backed_Memory.md"
+    },
+    "Obsidian_Vault": {
+      "id": "Obsidian_Vault",
+      "domain": "Y-OS",
+      "description": "Concept node: Obsidian Vault",
+      "source_file": "concepts/Obsidian_Vault.md"
+    },
+    "Markdown_Corpus": {
+      "id": "Markdown_Corpus",
+      "domain": "Y-OS",
+      "description": "Concept node: Markdown Corpus",
+      "source_file": "concepts/Markdown_Corpus.md"
+    },
+    "GitHub_Remote": {
+      "id": "GitHub_Remote",
+      "domain": "Y-OS",
+      "description": "Concept node: GitHub Remote",
+      "source_file": "concepts/GitHub_Remote.md"
+    }
+  },
+  "pipelines": {
+    "PIPE-5C15BA64": {
+      "id": "PIPE-5C15BA64",
+      "mission_id": "MISSION-018",
+      "status": "COMPLETED",
+      "steps": 6,
+      "artifacts": 6,
+      "checkpoints": 6,
+      "rollbacks": 1,
+      "total_tokens": 4836,
+      "cost_usd": 0.074135,
+      "started_at": "2026-06-14T00:00:00Z",
+      "completed_at": "2026-06-14T00:41:12Z"
+    }
+  },
+  "artifacts": {
+    "ART-M017-BRAHMA-ARCHITECTURE": {
+      "id": "ART-M017-BRAHMA-ARCHITECTURE",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Architecture Note",
+      "worker": "Brahma",
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "VALIDATED",
+      "tokens": 1117,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M017-HANUMAN-BUILD": {
+      "id": "ART-M017-HANUMAN-BUILD",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Implementation Plan",
+      "worker": "Hanuman",
+      "provider": "openai",
+      "model": "gpt-4o-mini-2024-07-18",
+      "status": "VALIDATED",
+      "tokens": 829,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M017-SARASWATI-LEARNING": {
+      "id": "ART-M017-SARASWATI-LEARNING",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Learning Report",
+      "worker": "Saraswati",
+      "provider": "anthropic",
+      "model": "claude-opus-4-20250514",
+      "status": "VALIDATED",
+      "tokens": 1358,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M017-LAKSHMI-GOVERNANCE": {
+      "id": "ART-M017-LAKSHMI-GOVERNANCE",
+      "mission_id": "MISSION-017",
+      "artifact_type": "Governance Review",
+      "worker": "Lakshmi",
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "VALIDATED",
+      "tokens": 993,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M018-CEO-DIRECTIVE": {
+      "id": "ART-M018-CEO-DIRECTIVE",
+      "mission_id": "MISSION-018",
+      "artifact_type": "CEO Directive",
+      "worker": "CEO",
+      "provider": "human",
+      "model": "human",
+      "status": "VALIDATED",
+      "tokens": 0,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M018-BRAHMA-ARCHITECTURE": {
+      "id": "ART-M018-BRAHMA-ARCHITECTURE",
+      "mission_id": "MISSION-018",
+      "artifact_type": "Architecture Note",
+      "worker": "Brahma",
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "VALIDATED",
+      "tokens": 957,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M018-HANUMAN-BUILD": {
+      "id": "ART-M018-HANUMAN-BUILD",
+      "mission_id": "MISSION-018",
+      "artifact_type": "Implementation Plan",
+      "worker": "Hanuman",
+      "provider": "openai",
+      "model": "gpt-4o-mini-2024-07-18",
+      "status": "VALIDATED",
+      "tokens": 766,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M018-SARASWATI-LEARNING": {
+      "id": "ART-M018-SARASWATI-LEARNING",
+      "mission_id": "MISSION-018",
+      "artifact_type": "Learning Report",
+      "worker": "Saraswati",
+      "provider": "anthropic",
+      "model": "claude-opus-4-20250514",
+      "status": "VALIDATED",
+      "tokens": 1243,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M018-LAKSHMI-GOVERNANCE": {
+      "id": "ART-M018-LAKSHMI-GOVERNANCE",
+      "mission_id": "MISSION-018",
+      "artifact_type": "Governance Review",
+      "worker": "Lakshmi",
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "VALIDATED",
+      "tokens": 816,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    },
+    "ART-M018-GANESHA-CEO-BRIEFING": {
+      "id": "ART-M018-GANESHA-CEO-BRIEFING",
+      "mission_id": "MISSION-018",
+      "artifact_type": "CEO Briefing",
+      "worker": "Ganesha",
+      "provider": "openai",
+      "model": "gpt-4o-2024-08-06",
+      "status": "VALIDATED",
+      "tokens": 1054,
+      "validation_verdict": "VALID",
+      "governance_verdict": "APPROVE",
+      "created_at": "2026-06-14"
+    }
+  },
+  "providers": {
+    "openai": {
+      "id": "openai",
+      "name": "OpenAI",
+      "calls": 8,
+      "tokens": 6412,
+      "cost_usd": 0.12,
+      "avg_latency_ms": 4700,
+      "success_rate": 100.0
+    },
+    "anthropic": {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "calls": 2,
+      "tokens": 2601,
+      "cost_usd": 0.03,
+      "avg_latency_ms": 22700,
+      "success_rate": 100.0
+    },
+    "human": {
+      "id": "human",
+      "name": "Human (CEO)",
+      "calls": 1,
+      "tokens": 0,
+      "cost_usd": 0.0,
+      "avg_latency_ms": 0,
+      "success_rate": 100.0
+    }
+  },
+  "git_commits": [
+    "688f374 \u2014 MISSION-018",
+    "5e1397f \u2014 MISSION-017",
+    "8faffab \u2014 MISSION-016",
+    "3d2c350 \u2014 MISSION-015",
+    "b8f2c29 \u2014 MISSION-014",
+    "0b09eeb \u2014 MISSION-013B",
+    "b39af84 \u2014 MISSION-013"
+  ],
+  "memory_assets": [
+    "Y-OS_Constitution_v1.md",
+    "Cognitive_Graph_Architecture_v1.md",
+    "kg_semantic_graph_v2.json",
+    "kg_semantic_graph_v3.json",
+    "odt_registry.json"
+  ],
+  "cost_summary": {
+    "total_cost_usd": 0.15,
+    "by_provider": {
+      "OpenAI": 0.12,
+      "Anthropic": 0.03,
+      "Human (CEO)": 0.0
+    },
+    "by_worker": {
+      "Brahma": 2074,
+      "Hanuman": 1595,
+      "Saraswati": 2601,
+      "Lakshmi": 1809,
+      "CEO": 0,
+      "Ganesha": 1054
+    },
+    "by_mission": {
+      "MISSION-017": 4297,
+      "MISSION-018": 4836
+    },
+    "total_tokens": 9133,
+    "generated_at": "2026-06-14T03:42:14.451424+00:00"
+  }
+}

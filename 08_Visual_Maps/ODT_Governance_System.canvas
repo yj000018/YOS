@@ -1,0 +1,150 @@
+{
+  "nodes": [
+    {
+      "id": "constitution",
+      "type": "text",
+      "x": 0,
+      "y": -400,
+      "width": 220,
+      "height": 60,
+      "text": "Y-OS Constitution\n5 Articles",
+      "color": "1"
+    },
+    {
+      "id": "lakshmi_gov",
+      "type": "text",
+      "x": 0,
+      "y": -200,
+      "width": 200,
+      "height": 60,
+      "text": "Lakshmi\nGovernance Worker",
+      "color": "5"
+    },
+    {
+      "id": "pre_review",
+      "type": "text",
+      "x": -300,
+      "y": 0,
+      "width": 180,
+      "height": 60,
+      "text": "Pre-Review\nBefore LLM call",
+      "color": "5"
+    },
+    {
+      "id": "post_review",
+      "type": "text",
+      "x": 300,
+      "y": 0,
+      "width": 180,
+      "height": 60,
+      "text": "Post-Review\nAfter artifact",
+      "color": "5"
+    },
+    {
+      "id": "adr_gov",
+      "type": "text",
+      "x": -300,
+      "y": 200,
+      "width": 180,
+      "height": 60,
+      "text": "ADR Governance\nADR-0040\u21920046",
+      "color": "3"
+    },
+    {
+      "id": "artifact_gov",
+      "type": "text",
+      "x": 300,
+      "y": 200,
+      "width": 180,
+      "height": 60,
+      "text": "Artifact Governance\n10 APPROVE",
+      "color": "2"
+    },
+    {
+      "id": "risk_score",
+      "type": "text",
+      "x": 0,
+      "y": 200,
+      "width": 180,
+      "height": 60,
+      "text": "Risk Scores\n3-18/100",
+      "color": "5"
+    },
+    {
+      "id": "compliance",
+      "type": "text",
+      "x": 0,
+      "y": 400,
+      "width": 200,
+      "height": 60,
+      "text": "Constitutional\nCompliance \u2705",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "constitution",
+      "toNode": "lakshmi_gov",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "governed_by"
+    },
+    {
+      "id": "e2",
+      "fromNode": "lakshmi_gov",
+      "toNode": "pre_review",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e3",
+      "fromNode": "lakshmi_gov",
+      "toNode": "post_review",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e4",
+      "fromNode": "pre_review",
+      "toNode": "risk_score",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "validates"
+    },
+    {
+      "id": "e5",
+      "fromNode": "post_review",
+      "toNode": "risk_score",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "validates"
+    },
+    {
+      "id": "e6",
+      "fromNode": "lakshmi_gov",
+      "toNode": "adr_gov",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "audits"
+    },
+    {
+      "id": "e7",
+      "fromNode": "lakshmi_gov",
+      "toNode": "artifact_gov",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "audits"
+    },
+    {
+      "id": "e8",
+      "fromNode": "risk_score",
+      "toNode": "compliance",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "validates"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "nodes": [
+    {
+      "id": "m013",
+      "type": "text",
+      "x": -700,
+      "y": 0,
+      "width": 160,
+      "height": 80,
+      "text": "M-013\nDoc Graph\n301 files"
+    },
+    {
+      "id": "m014",
+      "type": "text",
+      "x": -500,
+      "y": 0,
+      "width": 160,
+      "height": 80,
+      "text": "M-014\nCognitive Graph\n12 concepts"
+    },
+    {
+      "id": "m015",
+      "type": "text",
+      "x": -300,
+      "y": 0,
+      "width": 160,
+      "height": 80,
+      "text": "M-015\nKGC v2\n39 concepts\n4,498 links"
+    },
+    {
+      "id": "m016",
+      "type": "text",
+      "x": -100,
+      "y": 0,
+      "width": 160,
+      "height": 80,
+      "text": "M-016\nCCR Runtime v2\n6 modules",
+      "color": "4"
+    },
+    {
+      "id": "m017",
+      "type": "text",
+      "x": 100,
+      "y": 0,
+      "width": 160,
+      "height": 80,
+      "text": "M-017\nLive Workers\n4 artifacts",
+      "color": "4"
+    },
+    {
+      "id": "m018",
+      "type": "text",
+      "x": 300,
+      "y": 0,
+      "width": 160,
+      "height": 80,
+      "text": "M-018\nPipeline\n6 artifacts",
+      "color": "4"
+    },
+    {
+      "id": "m019",
+      "type": "text",
+      "x": 500,
+      "y": 0,
+      "width": 160,
+      "height": 80,
+      "text": "M-019\nODT Runtime\n645 nodes",
+      "color": "1"
+    },
+    {
+      "id": "adr_growth",
+      "type": "text",
+      "x": 0,
+      "y": -200,
+      "width": 160,
+      "height": 60,
+      "text": "ADR Growth\n20 \u2192 26",
+      "color": "3"
+    },
+    {
+      "id": "cost_growth",
+      "type": "text",
+      "x": 0,
+      "y": 200,
+      "width": 160,
+      "height": 60,
+      "text": "Cost Growth\n$0 \u2192 $0.150",
+      "color": "6"
+    },
+    {
+      "id": "graph_growth",
+      "type": "text",
+      "x": 200,
+      "y": -200,
+      "width": 180,
+      "height": 60,
+      "text": "Graph Growth\n565 \u2192 4,488 edges",
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "m013",
+      "toNode": "m014",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e2",
+      "fromNode": "m014",
+      "toNode": "m015",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e3",
+      "fromNode": "m015",
+      "toNode": "m016",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e4",
+      "fromNode": "m016",
+      "toNode": "m017",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e5",
+      "fromNode": "m017",
+      "toNode": "m018",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e6",
+      "fromNode": "m018",
+      "toNode": "m019",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "evolves_into"
+    },
+    {
+      "id": "e7",
+      "fromNode": "m019",
+      "toNode": "adr_growth",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e8",
+      "fromNode": "m019",
+      "toNode": "cost_growth",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    },
+    {
+      "id": "e9",
+      "fromNode": "m019",
+      "toNode": "graph_growth",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces"
+    }
+  ]
+}

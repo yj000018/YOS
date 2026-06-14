@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "ceo_dir",
+      "type": "text",
+      "x": -600,
+      "y": 0,
+      "width": 180,
+      "height": 60,
+      "text": "CEO Directive",
+      "color": "1"
+    },
+    {
+      "id": "brahma_art",
+      "type": "text",
+      "x": -300,
+      "y": -200,
+      "width": 200,
+      "height": 60,
+      "text": "Brahma Architecture\nART-M018-BRAHMA",
+      "color": "4"
+    },
+    {
+      "id": "hanuman_art",
+      "type": "text",
+      "x": -300,
+      "y": 0,
+      "width": 200,
+      "height": 60,
+      "text": "Hanuman Build\nART-M018-HANUMAN",
+      "color": "4"
+    },
+    {
+      "id": "saraswati_art",
+      "type": "text",
+      "x": -300,
+      "y": 200,
+      "width": 200,
+      "height": 60,
+      "text": "Saraswati Learning\nART-M018-SARASWATI",
+      "color": "4"
+    },
+    {
+      "id": "lakshmi_art",
+      "type": "text",
+      "x": 100,
+      "y": -100,
+      "width": 200,
+      "height": 60,
+      "text": "Lakshmi Governance\nART-M018-LAKSHMI",
+      "color": "5"
+    },
+    {
+      "id": "ganesha_art",
+      "type": "text",
+      "x": 100,
+      "y": 100,
+      "width": 200,
+      "height": 60,
+      "text": "Ganesha CEO Briefing\nART-M018-GANESHA",
+      "color": "4"
+    },
+    {
+      "id": "registry",
+      "type": "text",
+      "x": 500,
+      "y": 0,
+      "width": 200,
+      "height": 60,
+      "text": "Artifact Registry v2\n10 artifacts",
+      "color": "2"
+    },
+    {
+      "id": "git_commit",
+      "type": "text",
+      "x": 500,
+      "y": 200,
+      "width": 200,
+      "height": 60,
+      "text": "Git y-os-doctrine\n688f374"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "ceo_dir",
+      "toNode": "brahma_art",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces_artifact"
+    },
+    {
+      "id": "e2",
+      "fromNode": "brahma_art",
+      "toNode": "hanuman_art",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces_artifact"
+    },
+    {
+      "id": "e3",
+      "fromNode": "brahma_art",
+      "toNode": "saraswati_art",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces_artifact"
+    },
+    {
+      "id": "e4",
+      "fromNode": "hanuman_art",
+      "toNode": "lakshmi_art",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces_artifact"
+    },
+    {
+      "id": "e5",
+      "fromNode": "saraswati_art",
+      "toNode": "lakshmi_art",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces_artifact"
+    },
+    {
+      "id": "e6",
+      "fromNode": "lakshmi_art",
+      "toNode": "ganesha_art",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "produces_artifact"
+    },
+    {
+      "id": "e7",
+      "fromNode": "brahma_art",
+      "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e8",
+      "fromNode": "hanuman_art",
+      "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e9",
+      "fromNode": "saraswati_art",
+      "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e10",
+      "fromNode": "lakshmi_art",
+      "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e11",
+      "fromNode": "ganesha_art",
+      "toNode": "registry",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "stores"
+    },
+    {
+      "id": "e12",
+      "fromNode": "registry",
+      "toNode": "git_commit",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "committed_to"
+    }
+  ]
+}

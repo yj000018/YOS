@@ -1,752 +1,213 @@
 {
   "nodes": [
     {
-      "id": "1",
+      "id": "yos",
       "type": "text",
-      "x": -200,
-      "y": -1400,
-      "width": 600,
-      "height": 80,
-      "text": "# Y-OS Organizational Digital Twin",
-      "color": "1"
-    },
-    {
-      "id": "2",
-      "type": "text",
-      "x": -200,
-      "y": -1250,
-      "width": 600,
-      "height": 60,
-      "text": "**Layer 1 — Constitution**",
-      "color": "6"
-    },
-    {
-      "id": "3",
-      "type": "file",
-      "x": -900,
-      "y": -1150,
-      "width": 200,
-      "height": 60,
-      "file": "CONSTITUTION/Y-OS_Constitution_v1.md",
-      "color": "1"
-    },
-    {
-      "id": "4",
-      "type": "file",
-      "x": -650,
-      "y": -1150,
-      "width": 200,
-      "height": 60,
-      "file": "CONSTITUTION/Y-OS_Constitution_v1.md",
-      "color": "1"
-    },
-    {
-      "id": "5",
-      "type": "file",
-      "x": -400,
-      "y": -1150,
-      "width": 200,
-      "height": 60,
-      "file": "CONSTITUTION/Y-OS_Constitution_v1.md",
-      "color": "1"
-    },
-    {
-      "id": "6",
-      "type": "file",
-      "x": -150,
-      "y": -1150,
-      "width": 200,
-      "height": 60,
-      "file": "CONSTITUTION/Y-OS_Constitution_v1.md",
-      "color": "1"
-    },
-    {
-      "id": "7",
-      "type": "file",
-      "x": 100,
-      "y": -1150,
-      "width": 200,
-      "height": 60,
-      "file": "CONSTITUTION/Y-OS_Constitution_v1.md",
-      "color": "1"
-    },
-    {
-      "id": "8",
-      "type": "text",
-      "x": -200,
-      "y": -1000,
-      "width": 600,
-      "height": 60,
-      "text": "**Layer 2 — Governance**",
-      "color": "5"
-    },
-    {
-      "id": "9",
-      "type": "file",
-      "x": -900,
-      "y": -900,
-      "width": 200,
-      "height": 60,
-      "file": "concepts/Lakshmi.md",
-      "color": "5"
-    },
-    {
-      "id": "10",
-      "type": "file",
-      "x": -650,
-      "y": -900,
-      "width": 200,
-      "height": 60,
-      "file": "concepts/Governance_Determinism.md",
-      "color": "5"
-    },
-    {
-      "id": "11",
-      "type": "text",
-      "x": -400,
-      "y": -900,
-      "width": 200,
-      "height": 60,
-      "text": "Risk Score\n≤ 35 = APPROVE",
-      "color": "5"
-    },
-    {
-      "id": "12",
-      "type": "file",
-      "x": -150,
-      "y": -900,
-      "width": 200,
-      "height": 60,
-      "file": "concepts/Human_Override.md",
-      "color": "5"
-    },
-    {
-      "id": "13",
-      "type": "file",
-      "x": 100,
-      "y": -900,
-      "width": 200,
-      "height": 60,
-      "file": "concepts/Constitutional_Governance.md",
-      "color": "5"
-    },
-    {
-      "id": "14",
-      "type": "text",
-      "x": -200,
-      "y": -750,
-      "width": 600,
-      "height": 60,
-      "text": "**Layer 3 — Organization**",
-      "color": "3"
-    },
-    {
-      "id": "15",
-      "type": "file",
-      "x": -1100,
-      "y": -650,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Ganesha.md",
-      "color": "3"
-    },
-    {
-      "id": "16",
-      "type": "file",
-      "x": -880,
-      "y": -650,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Krishna.md",
-      "color": "3"
-    },
-    {
-      "id": "17",
-      "type": "file",
-      "x": -660,
-      "y": -650,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Brahma.md",
-      "color": "3"
-    },
-    {
-      "id": "18",
-      "type": "file",
-      "x": -440,
-      "y": -650,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Hanuman.md",
-      "color": "3"
-    },
-    {
-      "id": "19",
-      "type": "file",
-      "x": -220,
-      "y": -650,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Lakshmi.md",
-      "color": "3"
-    },
-    {
-      "id": "20",
-      "type": "file",
       "x": 0,
-      "y": -650,
-      "width": 180,
+      "y": 0,
+      "width": 260,
+      "height": 80,
+      "text": "Y-OS\nOrganizational Digital Twin",
+      "color": "1"
+    },
+    {
+      "id": "constitution",
+      "type": "text",
+      "x": -600,
+      "y": -300,
+      "width": 200,
       "height": 60,
-      "file": "concepts/Saraswati.md",
+      "text": "CONSTITUTION\nY-OS_Constitution_v1",
+      "color": "5"
+    },
+    {
+      "id": "governance",
+      "type": "text",
+      "x": -600,
+      "y": -100,
+      "width": 200,
+      "height": 60,
+      "text": "GOVERNANCE\nLakshmi \u00b7 ADRs",
+      "color": "5"
+    },
+    {
+      "id": "runtime",
+      "type": "text",
+      "x": -600,
+      "y": 100,
+      "width": 200,
+      "height": 60,
+      "text": "RUNTIME\nCCR v2 \u00b7 Workers \u00b7 Pipelines",
+      "color": "4"
+    },
+    {
+      "id": "memory",
+      "type": "text",
+      "x": -600,
+      "y": 300,
+      "width": 200,
+      "height": 60,
+      "text": "MEMORY\nLiving Memory \u00b7 Session Delta",
       "color": "3"
     },
     {
-      "id": "21",
+      "id": "pipelines",
       "type": "text",
-      "x": -200,
-      "y": -500,
-      "width": 600,
+      "x": 600,
+      "y": -300,
+      "width": 200,
       "height": 60,
-      "text": "**Layer 4 — Orchestration**",
+      "text": "PIPELINES\nPIPE-5C15BA64",
       "color": "4"
     },
     {
-      "id": "22",
-      "type": "file",
-      "x": -900,
-      "y": -400,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Y_ORC.md",
-      "color": "4"
-    },
-    {
-      "id": "23",
-      "type": "file",
-      "x": -680,
-      "y": -400,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/ART.md",
-      "color": "4"
-    },
-    {
-      "id": "24",
-      "type": "file",
-      "x": -460,
-      "y": -400,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/CRT.md",
-      "color": "4"
-    },
-    {
-      "id": "25",
-      "type": "file",
-      "x": -240,
-      "y": -400,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/CCR_Runtime.md",
-      "color": "4"
-    },
-    {
-      "id": "26",
-      "type": "file",
-      "x": -20,
-      "y": -400,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Context_Router.md",
-      "color": "4"
-    },
-    {
-      "id": "27",
+      "id": "artifacts",
       "type": "text",
-      "x": -200,
-      "y": -250,
-      "width": 600,
+      "x": 600,
+      "y": -100,
+      "width": 200,
       "height": 60,
-      "text": "**Layer 5 — Living Memory Pipeline**",
+      "text": "ARTIFACTS\n10 registered",
       "color": "2"
     },
     {
-      "id": "28",
+      "id": "economics",
       "type": "text",
-      "x": -1100,
-      "y": -150,
-      "width": 140,
+      "x": 600,
+      "y": 100,
+      "width": 200,
       "height": 60,
-      "text": "Capture",
-      "color": "2"
+      "text": "ECONOMICS\n$0.150 \u00b7 9,133 tokens",
+      "color": "6"
     },
     {
-      "id": "29",
+      "id": "infra",
       "type": "text",
-      "x": -930,
-      "y": -150,
-      "width": 140,
+      "x": 600,
+      "y": 300,
+      "width": 200,
       "height": 60,
-      "text": "Compress",
-      "color": "2"
+      "text": "INFRASTRUCTURE\nGitHub \u00b7 OpenAI \u00b7 Anthropic"
     },
     {
-      "id": "30",
-      "type": "file",
-      "x": -760,
-      "y": -150,
-      "width": 140,
-      "height": 60,
-      "file": "concepts/Session_Delta.md",
-      "color": "2"
-    },
-    {
-      "id": "31",
+      "id": "kg",
       "type": "text",
-      "x": -590,
-      "y": -150,
-      "width": 140,
+      "x": 0,
+      "y": 400,
+      "width": 260,
       "height": 60,
-      "text": "Summarize",
-      "color": "2"
+      "text": "KNOWLEDGE GRAPH\n645 nodes \u00b7 4,488 edges",
+      "color": "3"
     },
     {
-      "id": "32",
-      "type": "file",
-      "x": -420,
-      "y": -150,
-      "width": 140,
-      "height": 60,
-      "file": "concepts/Archive_Reference.md",
-      "color": "2"
-    },
-    {
-      "id": "33",
-      "type": "file",
-      "x": -250,
-      "y": -150,
-      "width": 140,
-      "height": 60,
-      "file": "concepts/Canonical_Memory.md",
-      "color": "2"
-    },
-    {
-      "id": "34",
-      "type": "file",
-      "x": -80,
-      "y": -150,
-      "width": 140,
-      "height": 60,
-      "file": "concepts/Knowledge_Graph_Compiler.md",
-      "color": "2"
-    },
-    {
-      "id": "35",
-      "type": "file",
-      "x": 90,
-      "y": -150,
-      "width": 140,
-      "height": 60,
-      "file": "concepts/Context_Pack.md",
-      "color": "2"
-    },
-    {
-      "id": "36",
+      "id": "health",
       "type": "text",
-      "x": -200,
-      "y": 0,
-      "width": 600,
+      "x": 0,
+      "y": -300,
+      "width": 200,
       "height": 60,
-      "text": "**Layer 6 — Runtime**",
-      "color": "6"
+      "text": "HEALTH SCORE\n90/100 \u2014 HEALTHY",
+      "color": "5"
     },
     {
-      "id": "37",
-      "type": "file",
-      "x": -900,
-      "y": 100,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Artifact_Registry.md",
-      "color": "6"
-    },
-    {
-      "id": "38",
-      "type": "file",
-      "x": -680,
-      "y": 100,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Context_Pack.md",
-      "color": "6"
-    },
-    {
-      "id": "39",
-      "type": "file",
-      "x": -460,
-      "y": 100,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Worker_Registry.md",
-      "color": "6"
-    },
-    {
-      "id": "40",
-      "type": "file",
-      "x": -240,
-      "y": 100,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Provider_Adapter.md",
-      "color": "6"
-    },
-    {
-      "id": "41",
-      "type": "file",
-      "x": -20,
-      "y": 100,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Model_Registry.md",
-      "color": "6"
-    },
-    {
-      "id": "42",
-      "type": "file",
-      "x": 200,
-      "y": 100,
-      "width": 180,
-      "height": 60,
-      "file": "concepts/Git_backed_Memory.md",
-      "color": "6"
-    },
-    {
-      "id": "43",
+      "id": "missions",
       "type": "text",
-      "x": -200,
-      "y": 250,
-      "width": 600,
+      "x": 0,
+      "y": 200,
+      "width": 200,
       "height": 60,
-      "text": "**Layer 7 — Validation History**",
-      "color": "1"
-    },
-    {
-      "id": "44",
-      "type": "file",
-      "x": -900,
-      "y": 350,
-      "width": 400,
-      "height": 60,
-      "file": "03_Missions_MOC.md",
-      "color": "1"
-    },
-    {
-      "id": "45",
-      "type": "file",
-      "x": -450,
-      "y": 350,
-      "width": 400,
-      "height": 60,
-      "file": "02_ADRs_MOC.md",
-      "color": "1"
+      "text": "MISSIONS\n18 completed",
+      "color": "2"
     }
   ],
   "edges": [
     {
-      "id": "46",
-      "fromNode": "2",
-      "toNode": "3",
+      "id": "e1",
+      "fromNode": "yos",
+      "toNode": "constitution",
       "fromSide": "right",
       "toSide": "left",
-      "label": "defines"
+      "label": "governed_by"
     },
     {
-      "id": "47",
-      "fromNode": "2",
-      "toNode": "4",
+      "id": "e2",
+      "fromNode": "yos",
+      "toNode": "governance",
       "fromSide": "right",
       "toSide": "left",
-      "label": "defines"
+      "label": "governed_by"
     },
     {
-      "id": "48",
-      "fromNode": "2",
-      "toNode": "5",
+      "id": "e3",
+      "fromNode": "yos",
+      "toNode": "runtime",
       "fromSide": "right",
       "toSide": "left",
-      "label": "defines"
+      "label": "implements"
     },
     {
-      "id": "49",
-      "fromNode": "2",
-      "toNode": "6",
+      "id": "e4",
+      "fromNode": "yos",
+      "toNode": "memory",
       "fromSide": "right",
       "toSide": "left",
-      "label": "defines"
+      "label": "stores"
     },
     {
-      "id": "50",
-      "fromNode": "2",
-      "toNode": "7",
+      "id": "e5",
+      "fromNode": "yos",
+      "toNode": "pipelines",
       "fromSide": "right",
       "toSide": "left",
-      "label": "defines"
+      "label": "executes"
     },
     {
-      "id": "51",
-      "fromNode": "8",
-      "toNode": "9",
+      "id": "e6",
+      "fromNode": "yos",
+      "toNode": "artifacts",
       "fromSide": "right",
       "toSide": "left",
-      "label": "governs"
+      "label": "produces"
     },
     {
-      "id": "52",
-      "fromNode": "8",
-      "toNode": "10",
+      "id": "e7",
+      "fromNode": "yos",
+      "toNode": "economics",
       "fromSide": "right",
       "toSide": "left",
-      "label": "governs"
+      "label": "costs"
     },
     {
-      "id": "53",
-      "fromNode": "8",
-      "toNode": "11",
+      "id": "e8",
+      "fromNode": "yos",
+      "toNode": "infra",
       "fromSide": "right",
       "toSide": "left",
-      "label": "governs"
+      "label": "runs_on"
     },
     {
-      "id": "54",
-      "fromNode": "8",
-      "toNode": "12",
+      "id": "e9",
+      "fromNode": "yos",
+      "toNode": "kg",
       "fromSide": "right",
       "toSide": "left",
-      "label": "governs"
+      "label": "compiles"
     },
     {
-      "id": "55",
-      "fromNode": "8",
-      "toNode": "13",
+      "id": "e10",
+      "fromNode": "yos",
+      "toNode": "health",
       "fromSide": "right",
       "toSide": "left",
-      "label": "governs"
+      "label": "observes"
     },
     {
-      "id": "56",
-      "fromNode": "14",
-      "toNode": "15",
+      "id": "e11",
+      "fromNode": "yos",
+      "toNode": "missions",
       "fromSide": "right",
       "toSide": "left",
-      "label": "employs"
-    },
-    {
-      "id": "57",
-      "fromNode": "14",
-      "toNode": "16",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "employs"
-    },
-    {
-      "id": "58",
-      "fromNode": "14",
-      "toNode": "17",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "employs"
-    },
-    {
-      "id": "59",
-      "fromNode": "14",
-      "toNode": "18",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "employs"
-    },
-    {
-      "id": "60",
-      "fromNode": "14",
-      "toNode": "19",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "employs"
-    },
-    {
-      "id": "61",
-      "fromNode": "14",
-      "toNode": "20",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "employs"
-    },
-    {
-      "id": "62",
-      "fromNode": "21",
-      "toNode": "22",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "runs"
-    },
-    {
-      "id": "63",
-      "fromNode": "21",
-      "toNode": "23",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "runs"
-    },
-    {
-      "id": "64",
-      "fromNode": "21",
-      "toNode": "24",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "runs"
-    },
-    {
-      "id": "65",
-      "fromNode": "21",
-      "toNode": "25",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "runs"
-    },
-    {
-      "id": "66",
-      "fromNode": "21",
-      "toNode": "26",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "runs"
-    },
-    {
-      "id": "67",
-      "fromNode": "27",
-      "toNode": "28",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "68",
-      "fromNode": "27",
-      "toNode": "29",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "69",
-      "fromNode": "27",
-      "toNode": "30",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "70",
-      "fromNode": "27",
-      "toNode": "31",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "71",
-      "fromNode": "27",
-      "toNode": "32",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "72",
-      "fromNode": "27",
-      "toNode": "33",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "73",
-      "fromNode": "27",
-      "toNode": "34",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "74",
-      "fromNode": "27",
-      "toNode": "35",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "stage"
-    },
-    {
-      "id": "75",
-      "fromNode": "36",
-      "toNode": "37",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "contains"
-    },
-    {
-      "id": "76",
-      "fromNode": "36",
-      "toNode": "38",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "contains"
-    },
-    {
-      "id": "77",
-      "fromNode": "36",
-      "toNode": "39",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "contains"
-    },
-    {
-      "id": "78",
-      "fromNode": "36",
-      "toNode": "40",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "contains"
-    },
-    {
-      "id": "79",
-      "fromNode": "36",
-      "toNode": "41",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "contains"
-    },
-    {
-      "id": "80",
-      "fromNode": "36",
-      "toNode": "42",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "contains"
-    },
-    {
-      "id": "81",
-      "fromNode": "43",
-      "toNode": "44",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "validates"
-    },
-    {
-      "id": "82",
-      "fromNode": "43",
-      "toNode": "45",
-      "fromSide": "right",
-      "toSide": "left",
-      "label": "validates"
+      "label": "produces"
     }
   ]
 }

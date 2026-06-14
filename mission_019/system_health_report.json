@@ -1,0 +1,111 @@
+{
+  "health_score": 90.0,
+  "status": "HEALTHY",
+  "generated_at": "2026-06-14T03:42:14.452992+00:00",
+  "metrics": [
+    {
+      "name": "graph_connectivity",
+      "value": 100.0,
+      "unit": "%",
+      "score": 100.0,
+      "weight": 0.15,
+      "status": "GREEN",
+      "threshold_green": 80,
+      "threshold_yellow": 50,
+      "note": "4488 edges / 645 nodes"
+    },
+    {
+      "name": "orphan_rate",
+      "value": 34.7,
+      "unit": "%",
+      "score": 20.0,
+      "weight": 0.1,
+      "status": "RED",
+      "threshold_green": 15,
+      "threshold_yellow": 30,
+      "note": "Files with no inbound links"
+    },
+    {
+      "name": "artifact_validity_rate",
+      "value": 100.0,
+      "unit": "%",
+      "score": 100.0,
+      "weight": 0.2,
+      "status": "GREEN",
+      "threshold_green": 95,
+      "threshold_yellow": 80,
+      "note": "10/10 valid"
+    },
+    {
+      "name": "pipeline_success_rate",
+      "value": 100.0,
+      "unit": "%",
+      "score": 100.0,
+      "weight": 0.15,
+      "status": "GREEN",
+      "threshold_green": 90,
+      "threshold_yellow": 70,
+      "note": "1/1 completed"
+    },
+    {
+      "name": "governance_compliance",
+      "value": 100.0,
+      "unit": "%",
+      "score": 100.0,
+      "weight": 0.15,
+      "status": "GREEN",
+      "threshold_green": 95,
+      "threshold_yellow": 80,
+      "note": "10/10 approved"
+    },
+    {
+      "name": "provider_reliability",
+      "value": 100.0,
+      "unit": "%",
+      "score": 100.0,
+      "weight": 0.1,
+      "status": "GREEN",
+      "threshold_green": 99,
+      "threshold_yellow": 95,
+      "note": "Avg success rate across providers"
+    },
+    {
+      "name": "avg_latency_ms",
+      "value": 8243.0,
+      "unit": "ms",
+      "score": 60.0,
+      "weight": 0.05,
+      "status": "YELLOW",
+      "threshold_green": 5000,
+      "threshold_yellow": 15000,
+      "note": "Average worker execution latency"
+    },
+    {
+      "name": "memory_assets",
+      "value": 5.0,
+      "unit": "count",
+      "score": 100.0,
+      "weight": 0.05,
+      "status": "GREEN",
+      "threshold_green": 5,
+      "threshold_yellow": 2,
+      "note": "Tracked memory assets"
+    },
+    {
+      "name": "adr_coverage",
+      "value": 87.5,
+      "unit": "%",
+      "score": 100.0,
+      "weight": 0.05,
+      "status": "GREEN",
+      "threshold_green": 80,
+      "threshold_yellow": 60,
+      "note": "7 ADRs for 8 missions"
+    }
+  ],
+  "recommendations": [
+    "CRITICAL: orphan_rate = 34.7% \u2014 Files with no inbound links",
+    "WARNING: avg_latency_ms = 8243.0ms \u2014 Average worker execution latency"
+  ],
+  "mission": "MISSION-019"
+}

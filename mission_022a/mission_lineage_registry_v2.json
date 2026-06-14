@@ -1,0 +1,170 @@
+{
+  "MISSION-012A_Storage_Audit": {
+    "mission_id": "MISSION-012A_Storage_Audit",
+    "title": "MISSION-012A_Storage_Audit",
+    "mission_num": 12.1,
+    "is_legacy": true,
+    "total_inferred_edges": 20,
+    "adr_links": [
+      {
+        "target": "ADR-0006_Creation_CODO_Role",
+        "rel": "implements",
+        "confidence": 0.95,
+        "band": "HIGH",
+        "review_required": false,
+        "reason": "Explicit ADR-0006 reference in body"
+      },
+      {
+        "target": "ADR-0038_Session_Delta_Engine",
+        "rel": "implements",
+        "confidence": 0.95,
+        "band": "HIGH",
+        "review_required": false,
+        "reason": "Explicit ADR-0038 reference in body"
+      },
+      {
+        "target": "ADR-0009_Operational_Value_Chain",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: operational"
+      },
+      {
+        "target": "ADR-0010_Creation_Brahma",
+        "rel": "references",
+        "confidence": 0.7999999999999999,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (2/3): ['brahma', 'architect', 'architecture']"
+      },
+      {
+        "target": "ADR-0012_Artifact_Layer",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: artifact"
+      },
+      {
+        "target": "ADR-0013_Creation_Lakshmi",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: lakshmi"
+      },
+      {
+        "target": "ADR-0014_Y-OS_Org_Map_v2",
+        "rel": "references",
+        "confidence": 0.7999999999999999,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (2/3): ['org', 'map', 'organizational']"
+      },
+      {
+        "target": "ADR-0015_Architectural_Layer_Corrections",
+        "rel": "references",
+        "confidence": 0.7999999999999999,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (2/3): ['worker', 'registry', 'roles']"
+      },
+      {
+        "target": "ADR-0016_Artifact_Registry",
+        "rel": "references",
+        "confidence": 0.7999999999999999,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (2/3): ['context', 'pack', 'injection']"
+      },
+      {
+        "target": "ADR-0018_Lakshmi_Runtime_MVP",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: model"
+      },
+      {
+        "target": "ADR-0020_Y-OS_Control_Plane",
+        "rel": "references",
+        "confidence": 0.85,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (3/3): ['constitution', 'governance', 'principles']"
+      },
+      {
+        "target": "ADR-0021_Foundational_Doctrine",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: artifact"
+      },
+      {
+        "target": "ADR-0023_Y-ORC_Architecture",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: human"
+      },
+      {
+        "target": "ADR-0024_Y-OS_Constitution",
+        "rel": "references",
+        "confidence": 0.7999999999999999,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (2/3): ['governance', 'autonomy', 'before']"
+      },
+      {
+        "target": "ADR-0025_Y-ORC_Runtime_v1",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: ccr"
+      },
+      {
+        "target": "ADR-0027_Context_Continuity",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: worker"
+      },
+      {
+        "target": "ADR-0028_CRT_Runtime_v1",
+        "rel": "references",
+        "confidence": 0.7999999999999999,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (2/3): ['artifact', 'registry', 'versioning']"
+      },
+      {
+        "target": "ADR-0029_Context_Compiler",
+        "rel": "references",
+        "confidence": 0.72,
+        "band": "LOW",
+        "review_required": true,
+        "reason": "Single keyword match: ccr"
+      },
+      {
+        "target": "ADR-0030_v2_ACCEPTED",
+        "rel": "references",
+        "confidence": 0.7999999999999999,
+        "band": "MEDIUM",
+        "review_required": true,
+        "reason": "Keyword match (2/4): ['ccr', 'runtime', 'v1']"
+      }
+    ],
+    "dependencies": [],
+    "concepts_produced": [
+      "Constitutional_Governance"
+    ],
+    "governance": [],
+    "has_adr_link": true,
+    "lineage_complete": true
+  }
+}

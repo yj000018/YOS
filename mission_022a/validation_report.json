@@ -1,0 +1,9 @@
+{
+  "total_edges": 20,
+  "valid_edges": 20,
+  "invalid_edges": 0,
+  "cycles_detected": 0,
+  "duplicate_edges": 0,
+  "violations": [],
+  "passed": true
+}

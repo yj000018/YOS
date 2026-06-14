@@ -1,0 +1,202 @@
+[
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0006_Creation_CODO_Role",
+    "relationship_type": "implements",
+    "confidence_score": 0.95,
+    "confidence_band": "HIGH",
+    "inference_reason": "Explicit ADR-0006 reference in body",
+    "human_review_required": false,
+    "inferred_at": "2026-06-14T04:40:04.754588+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0038_Session_Delta_Engine",
+    "relationship_type": "implements",
+    "confidence_score": 0.95,
+    "confidence_band": "HIGH",
+    "inference_reason": "Explicit ADR-0038 reference in body",
+    "human_review_required": false,
+    "inferred_at": "2026-06-14T04:40:04.754608+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0009_Operational_Value_Chain",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: operational",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754671+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0010_Creation_Brahma",
+    "relationship_type": "references",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (2/3): ['brahma', 'architect', 'architecture']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754694+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0012_Artifact_Layer",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: artifact",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754729+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0013_Creation_Lakshmi",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: lakshmi",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754748+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0014_Y-OS_Org_Map_v2",
+    "relationship_type": "references",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (2/3): ['org', 'map', 'organizational']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754765+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0015_Architectural_Layer_Corrections",
+    "relationship_type": "references",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (2/3): ['worker', 'registry', 'roles']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754785+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0016_Artifact_Registry",
+    "relationship_type": "references",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (2/3): ['context', 'pack', 'injection']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754798+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0018_Lakshmi_Runtime_MVP",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: model",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754838+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0020_Y-OS_Control_Plane",
+    "relationship_type": "references",
+    "confidence_score": 0.85,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (3/3): ['constitution', 'governance', 'principles']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754866+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0021_Foundational_Doctrine",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: artifact",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754885+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0023_Y-ORC_Architecture",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: human",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754924+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0024_Y-OS_Constitution",
+    "relationship_type": "references",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (2/3): ['governance', 'autonomy', 'before']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754943+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0025_Y-ORC_Runtime_v1",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: ccr",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754960+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0027_Context_Continuity",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: worker",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.754994+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0028_CRT_Runtime_v1",
+    "relationship_type": "references",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (2/3): ['artifact', 'registry', 'versioning']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.755011+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0029_Context_Compiler",
+    "relationship_type": "references",
+    "confidence_score": 0.72,
+    "confidence_band": "LOW",
+    "inference_reason": "Single keyword match: ccr",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.755031+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "ADR-0030_v2_ACCEPTED",
+    "relationship_type": "references",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Keyword match (2/4): ['ccr', 'runtime', 'v1']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.755051+00:00"
+  },
+  {
+    "source": "MISSION-012A_Storage_Audit",
+    "target": "Constitutional_Governance",
+    "relationship_type": "produces",
+    "confidence_score": 0.8,
+    "confidence_band": "MEDIUM",
+    "inference_reason": "Concept keyword match (3): ['constitution', 'governance', 'principles']",
+    "human_review_required": true,
+    "inferred_at": "2026-06-14T04:40:04.755544+00:00"
+  }
+]

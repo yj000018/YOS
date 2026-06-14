@@ -1,0 +1,193 @@
+{
+  "nodes": [
+    {
+      "id": "m_0",
+      "x": -550,
+      "y": -200,
+      "width": 180,
+      "height": 80,
+      "type": "text",
+      "text": "M-012A\n\u2705\n19 ADRs",
+      "color": "3"
+    },
+    {
+      "id": "adr_0",
+      "x": -1710,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0006_Creation_CO",
+      "color": "4"
+    },
+    {
+      "id": "adr_1",
+      "x": -1530,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0009_Operational",
+      "color": "4"
+    },
+    {
+      "id": "adr_2",
+      "x": -1350,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0010_Creation_Br",
+      "color": "4"
+    },
+    {
+      "id": "adr_3",
+      "x": -1170,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0012_Artifact_La",
+      "color": "4"
+    },
+    {
+      "id": "adr_4",
+      "x": -990,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0013_Creation_La",
+      "color": "4"
+    },
+    {
+      "id": "adr_5",
+      "x": -810,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0014_Y-OS_Org_Ma",
+      "color": "4"
+    },
+    {
+      "id": "adr_6",
+      "x": -630,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0016_Artifact_Re",
+      "color": "4"
+    },
+    {
+      "id": "adr_7",
+      "x": -450,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0018_Lakshmi_Run",
+      "color": "4"
+    },
+    {
+      "id": "adr_8",
+      "x": -270,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0020_Y-OS_Contro",
+      "color": "4"
+    },
+    {
+      "id": "adr_9",
+      "x": -90,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0021_Foundationa",
+      "color": "4"
+    },
+    {
+      "id": "adr_10",
+      "x": 90,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0024_Y-OS_Consti",
+      "color": "4"
+    },
+    {
+      "id": "adr_11",
+      "x": 270,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0027_Context_Con",
+      "color": "4"
+    },
+    {
+      "id": "adr_12",
+      "x": 450,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0028_CRT_Runtime",
+      "color": "4"
+    },
+    {
+      "id": "adr_13",
+      "x": 630,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0029_Context_Com",
+      "color": "4"
+    },
+    {
+      "id": "adr_14",
+      "x": 810,
+      "y": 400,
+      "width": 160,
+      "height": 60,
+      "type": "text",
+      "text": "ADR-0038_Session_Del",
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_0",
+      "fromNode": "m_0",
+      "toNode": "adr_0",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "implements\n0.95",
+      "color": "3"
+    },
+    {
+      "id": "e_1",
+      "fromNode": "m_0",
+      "toNode": "adr_14",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "implements\n0.95",
+      "color": "3"
+    },
+    {
+      "id": "e_2",
+      "fromNode": "m_0",
+      "toNode": "adr_1",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "references\n0.72",
+      "color": "6"
+    }
+  ]
+}

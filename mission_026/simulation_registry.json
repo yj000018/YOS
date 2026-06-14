@@ -1,0 +1,561 @@
+[
+  {
+    "simulation_id": "SIM-SCN-001-001",
+    "scenario_id": "SCN-001",
+    "proposed_change": "provider_openai_pct=10, provider_gemini_pct=70, provider_anthropic_pct=20",
+    "initial_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "predicted_state": {
+      "graph_quality": 100.0,
+      "eis_score": 94.5,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 10.0,
+      "provider_anthropic_pct": 20.0,
+      "provider_gemini_pct": 70.0,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.33,
+      "governance_compliance": 96.3,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "state_delta": {
+      "eis_score": {
+        "before": 96.0,
+        "after": 94.5,
+        "delta": -1.5
+      },
+      "provider_openai_pct": {
+        "before": 42.9,
+        "after": 10.0,
+        "delta": -32.9
+      },
+      "provider_anthropic_pct": {
+        "before": 28.6,
+        "after": 20.0,
+        "delta": -8.600000000000001
+      },
+      "provider_gemini_pct": {
+        "before": 28.6,
+        "after": 70.0,
+        "delta": 41.4
+      },
+      "monthly_cost_usd": {
+        "before": 0.45,
+        "after": 0.33,
+        "delta": -0.12
+      },
+      "governance_compliance": {
+        "before": 96.8,
+        "after": 96.3,
+        "delta": -0.5
+      }
+    },
+    "confidence": 0.82,
+    "risk_level": "LOW",
+    "key_impacts": [
+      "provider_openai_pct: 42.9 \u2192 10.0",
+      "provider_gemini_pct: 28.6 \u2192 70.0",
+      "provider_anthropic_pct: 28.6 \u2192 20.0",
+      "monthly_cost_usd: 0.45 \u2192 0.33",
+      "eis_score: 96.0 \u2192 94.5",
+      "governance_compliance: 96.8 \u2192 96.3"
+    ],
+    "warnings": [
+      "Gemini not yet live-validated",
+      "Worker prompt compatibility unknown"
+    ],
+    "status": "COMPLETED",
+    "computed_at": "2026-06-14T17:30:13.186804+00:00"
+  },
+  {
+    "simulation_id": "SIM-SCN-002-002",
+    "scenario_id": "SCN-002",
+    "proposed_change": "active_workers=7, total_missions+1",
+    "initial_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "predicted_state": {
+      "graph_quality": 100.0,
+      "eis_score": 97.2,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 7,
+      "total_missions": 26,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 97.1,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "state_delta": {
+      "eis_score": {
+        "before": 96.0,
+        "after": 97.2,
+        "delta": 1.2000000000000028
+      },
+      "active_workers": {
+        "before": 6,
+        "after": 7,
+        "delta": 1
+      },
+      "total_missions": {
+        "before": 25,
+        "after": 26,
+        "delta": 1
+      },
+      "governance_compliance": {
+        "before": 96.8,
+        "after": 97.1,
+        "delta": 0.29999999999999716
+      }
+    },
+    "confidence": 0.88,
+    "risk_level": "LOW",
+    "key_impacts": [
+      "active_workers: 6 \u2192 7",
+      "total_missions: 25 \u2192 26",
+      "eis_score: 96.0 \u2192 97.2",
+      "governance_compliance: 96.8 \u2192 97.1"
+    ],
+    "warnings": [
+      "New worker requires context pack design",
+      "ADR required for new worker"
+    ],
+    "status": "COMPLETED",
+    "computed_at": "2026-06-14T17:30:13.186941+00:00"
+  },
+  {
+    "simulation_id": "SIM-SCN-003-003",
+    "scenario_id": "SCN-003",
+    "proposed_change": "orphan_rate stays 7.1%, n8n integration active",
+    "initial_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "predicted_state": {
+      "graph_quality": 100.0,
+      "eis_score": 94.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.6,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.4,
+      "governance_compliance": 95.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "state_delta": {
+      "eis_score": {
+        "before": 96.0,
+        "after": 94.0,
+        "delta": -2.0
+      },
+      "orphan_rate": {
+        "before": 7.1,
+        "after": 7.6,
+        "delta": 0.5
+      },
+      "monthly_cost_usd": {
+        "before": 0.45,
+        "after": 0.4,
+        "delta": -0.04999999999999999
+      },
+      "governance_compliance": {
+        "before": 96.8,
+        "after": 95.8,
+        "delta": -1.0
+      }
+    },
+    "confidence": 0.75,
+    "risk_level": "LOW",
+    "key_impacts": [
+      "eis_score: 96.0 \u2192 94.0",
+      "orphan_rate: 7.1 \u2192 7.6",
+      "governance_compliance: 96.8 \u2192 95.8",
+      "monthly_cost_usd: 0.45 \u2192 0.4"
+    ],
+    "warnings": [
+      "Orphan rate may increase without KGC v5",
+      "EIS plateau risk"
+    ],
+    "status": "COMPLETED",
+    "computed_at": "2026-06-14T17:30:13.187012+00:00"
+  },
+  {
+    "simulation_id": "SIM-SCN-004-004",
+    "scenario_id": "SCN-004",
+    "proposed_change": "governance_compliance+2, total_adrs+1",
+    "initial_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "predicted_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.5,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 55,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 98.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "state_delta": {
+      "eis_score": {
+        "before": 96.0,
+        "after": 96.5,
+        "delta": 0.5
+      },
+      "total_adrs": {
+        "before": 54,
+        "after": 55,
+        "delta": 1
+      },
+      "governance_compliance": {
+        "before": 96.8,
+        "after": 98.8,
+        "delta": 2.0
+      }
+    },
+    "confidence": 0.92,
+    "risk_level": "LOW",
+    "key_impacts": [
+      "governance_compliance: 96.8 \u2192 98.8",
+      "total_adrs: 54 \u2192 55",
+      "eis_score: 96.0 \u2192 96.5"
+    ],
+    "warnings": [
+      "Amendment process could be misused without strict governance"
+    ],
+    "status": "COMPLETED",
+    "computed_at": "2026-06-14T17:30:13.187069+00:00"
+  },
+  {
+    "simulation_id": "SIM-SCN-005-005",
+    "scenario_id": "SCN-005",
+    "proposed_change": "monthly_cost_usd reduced by 30%, some workers use cheaper models",
+    "initial_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "predicted_state": {
+      "graph_quality": 100.0,
+      "eis_score": 95.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.32,
+      "governance_compliance": 97.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "state_delta": {
+      "eis_score": {
+        "before": 96.0,
+        "after": 95.0,
+        "delta": -1.0
+      },
+      "monthly_cost_usd": {
+        "before": 0.45,
+        "after": 0.32,
+        "delta": -0.13
+      },
+      "governance_compliance": {
+        "before": 96.8,
+        "after": 97.8,
+        "delta": 1.0
+      }
+    },
+    "confidence": 0.9,
+    "risk_level": "LOW",
+    "key_impacts": [
+      "monthly_cost_usd: 0.45 \u2192 0.32",
+      "eis_score: 96.0 \u2192 95.0",
+      "governance_compliance: 96.8 \u2192 97.8"
+    ],
+    "warnings": [
+      "Quality degradation if budget too tight",
+      "Brahma/architecture needs premium models"
+    ],
+    "status": "COMPLETED",
+    "computed_at": "2026-06-14T17:30:13.187112+00:00"
+  },
+  {
+    "simulation_id": "SIM-SCN-006-006",
+    "scenario_id": "SCN-006",
+    "proposed_change": "orphan_rate=2.5, graph_quality=108",
+    "initial_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "predicted_state": {
+      "graph_quality": 108.0,
+      "eis_score": 97.5,
+      "mission_lineage": 100.0,
+      "orphan_rate": 2.5,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "state_delta": {
+      "graph_quality": {
+        "before": 100.0,
+        "after": 108.0,
+        "delta": 8.0
+      },
+      "eis_score": {
+        "before": 96.0,
+        "after": 97.5,
+        "delta": 1.5
+      },
+      "orphan_rate": {
+        "before": 7.1,
+        "after": 2.5,
+        "delta": -4.6
+      }
+    },
+    "confidence": 0.88,
+    "risk_level": "LOW",
+    "key_impacts": [
+      "orphan_rate: 7.1 \u2192 2.5",
+      "graph_quality: 100.0 \u2192 108.0",
+      "eis_score: 96.0 \u2192 97.5",
+      "total_adrs: 54 \u2192 54"
+    ],
+    "warnings": [
+      "Body edits must remain additive",
+      "Large corpus \u2014 risk of regression"
+    ],
+    "status": "COMPLETED",
+    "computed_at": "2026-06-14T17:30:13.187156+00:00"
+  },
+  {
+    "simulation_id": "SIM-SCN-007-007",
+    "scenario_id": "SCN-007",
+    "proposed_change": "3 missions in parallel, faster delivery, higher coordination cost",
+    "initial_state": {
+      "graph_quality": 100.0,
+      "eis_score": 96.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 7.1,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.45,
+      "governance_compliance": 96.8,
+      "event_bus_active": true,
+      "notion_sync": false,
+      "semantic_search": false,
+      "simulation_layer": false
+    },
+    "predicted_state": {
+      "graph_quality": 100.0,
+      "eis_score": 99.0,
+      "mission_lineage": 100.0,
+      "orphan_rate": 2.5,
+      "provider_openai_pct": 42.9,
+      "provider_anthropic_pct": 28.6,
+      "provider_gemini_pct": 28.6,
+      "active_workers": 6,
+      "total_missions": 25,
+      "total_adrs": 54,
+      "total_artifacts": 22,
+      "monthly_cost_usd": 0.65,
+      "governance_compliance": 95.3,
+      "event_bus_active": true,
+      "notion_sync": true,
+      "semantic_search": false,
+      "simulation_layer": true
+    },
+    "state_delta": {
+      "eis_score": {
+        "before": 96.0,
+        "after": 99.0,
+        "delta": 3.0
+      },
+      "orphan_rate": {
+        "before": 7.1,
+        "after": 2.5,
+        "delta": -4.6
+      },
+      "monthly_cost_usd": {
+        "before": 0.45,
+        "after": 0.65,
+        "delta": 0.2
+      },
+      "governance_compliance": {
+        "before": 96.8,
+        "after": 95.3,
+        "delta": -1.5
+      },
+      "notion_sync": {
+        "before": false,
+        "after": true,
+        "delta": 1
+      },
+      "simulation_layer": {
+        "before": false,
+        "after": true,
+        "delta": 1
+      }
+    },
+    "confidence": 0.7,
+    "risk_level": "LOW",
+    "key_impacts": [
+      "eis_score: 96.0 \u2192 99.0",
+      "orphan_rate: 7.1 \u2192 2.5",
+      "notion_sync: False \u2192 True",
+      "simulation_layer: False \u2192 True",
+      "monthly_cost_usd: 0.45 \u2192 0.65",
+      "governance_compliance: 96.8 \u2192 95.3"
+    ],
+    "warnings": [
+      "Dependency conflicts between missions",
+      "Higher governance review burden"
+    ],
+    "status": "COMPLETED",
+    "computed_at": "2026-06-14T17:30:13.187211+00:00"
+  }
+]

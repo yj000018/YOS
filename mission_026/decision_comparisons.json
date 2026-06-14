@@ -1,0 +1,177 @@
+[
+  {
+    "comparison_id": "DC-001",
+    "question": "What is the optimal next mission after MISSION-026?",
+    "best_option_id": "OPT-D",
+    "rationale": "MISSION-031 (Live Gemini) is fastest, lowest risk, highest confidence, and closes GAP-008 immediately. Cost -27%.",
+    "tradeoffs": [
+      "OPT-A: Higher EIS gain but no operational impact",
+      "OPT-B: Highest EIS gain but MEDIUM risk and 3-week timeline",
+      "OPT-C: Good memory value but no infrastructure improvement",
+      "OPT-D: \u2b50 Fastest, cheapest, closes critical gap \u2014 recommended"
+    ],
+    "risk_profile": {
+      "LOW": 3,
+      "MEDIUM": 1,
+      "HIGH": 0
+    },
+    "options": [
+      {
+        "option_id": "OPT-A",
+        "title": "MISSION-027: KGC v5",
+        "description": "Reduce orphans, deepen graph",
+        "eis_impact": 1.5,
+        "cost_impact": 0.0,
+        "risk_level": "LOW",
+        "time_to_value": "2 weeks",
+        "dependencies": [],
+        "confidence": 0.88
+      },
+      {
+        "option_id": "OPT-B",
+        "title": "MISSION-028: n8n Integration",
+        "description": "Autonomous scheduling",
+        "eis_impact": 2.0,
+        "cost_impact": 0.1,
+        "risk_level": "MEDIUM",
+        "time_to_value": "3 weeks",
+        "dependencies": [
+          "MISSION-022"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "option_id": "OPT-C",
+        "title": "MISSION-029: Notion Sync",
+        "description": "Cross-session memory",
+        "eis_impact": 1.8,
+        "cost_impact": 0.0,
+        "risk_level": "LOW",
+        "time_to_value": "2 weeks",
+        "dependencies": [
+          "MISSION-019"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "option_id": "OPT-D",
+        "title": "MISSION-031: Live Gemini",
+        "description": "Provider validation",
+        "eis_impact": 0.5,
+        "cost_impact": -0.12,
+        "risk_level": "LOW",
+        "time_to_value": "1 week",
+        "dependencies": [
+          "MISSION-023"
+        ],
+        "confidence": 0.95
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.180499+00:00"
+  },
+  {
+    "comparison_id": "DC-002",
+    "question": "Should Y-OS execute missions sequentially or in parallel?",
+    "best_option_id": "OPT-PAR2",
+    "rationale": "2-parallel balances speed and governance risk. 3-parallel has HIGH risk and 70% confidence.",
+    "tradeoffs": [
+      "Sequential: safest but slowest",
+      "2-Parallel: \u2b50 42% faster, manageable risk \u2014 recommended",
+      "3-Parallel: fastest but HIGH coordination risk"
+    ],
+    "risk_profile": {
+      "LOW": 1,
+      "MEDIUM": 1,
+      "HIGH": 1
+    },
+    "options": [
+      {
+        "option_id": "OPT-SEQ",
+        "title": "Sequential Execution",
+        "description": "One mission at a time, current model",
+        "eis_impact": 0.0,
+        "cost_impact": 0.0,
+        "risk_level": "LOW",
+        "time_to_value": "12 months for 7 missions",
+        "dependencies": [],
+        "confidence": 0.95
+      },
+      {
+        "option_id": "OPT-PAR2",
+        "title": "2-Parallel Execution",
+        "description": "2 independent missions simultaneously",
+        "eis_impact": 1.5,
+        "cost_impact": 0.15,
+        "risk_level": "MEDIUM",
+        "time_to_value": "7 months for 7 missions",
+        "dependencies": [],
+        "confidence": 0.8
+      },
+      {
+        "option_id": "OPT-PAR3",
+        "title": "3-Parallel Execution",
+        "description": "SCN-007: M-026+M-027+M-029 parallel",
+        "eis_impact": 3.0,
+        "cost_impact": 0.2,
+        "risk_level": "HIGH",
+        "time_to_value": "5 months for 7 missions",
+        "dependencies": [],
+        "confidence": 0.7
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.180511+00:00"
+  },
+  {
+    "comparison_id": "DC-003",
+    "question": "Which provider should be primary for Brahma (architecture) worker?",
+    "best_option_id": "OPT-CLAUDE",
+    "rationale": "Claude Opus 4 outperforms GPT-4o on architecture reasoning. Marginal cost increase justified.",
+    "tradeoffs": [
+      "GPT-4o: proven but not optimal for long-context architecture",
+      "Claude Opus 4: \u2b50 best quality for Brahma \u2014 recommended",
+      "Gemini: cheapest but HIGH risk until M-031 validation"
+    ],
+    "risk_profile": {
+      "LOW": 2,
+      "HIGH": 1
+    },
+    "options": [
+      {
+        "option_id": "OPT-GPT4O",
+        "title": "GPT-4o (OpenAI)",
+        "description": "Current primary, proven quality",
+        "eis_impact": 0.0,
+        "cost_impact": 0.0,
+        "risk_level": "LOW",
+        "time_to_value": "Immediate",
+        "dependencies": [],
+        "confidence": 0.95
+      },
+      {
+        "option_id": "OPT-CLAUDE",
+        "title": "Claude Opus 4 (Anthropic)",
+        "description": "Best for long-context reasoning",
+        "eis_impact": 0.5,
+        "cost_impact": 0.02,
+        "risk_level": "LOW",
+        "time_to_value": "Immediate",
+        "dependencies": [],
+        "confidence": 0.92
+      },
+      {
+        "option_id": "OPT-GEMINI",
+        "title": "Gemini 1.5 Pro",
+        "description": "Cheapest, not yet validated",
+        "eis_impact": -1.0,
+        "cost_impact": -0.08,
+        "risk_level": "HIGH",
+        "time_to_value": "After M-031",
+        "dependencies": [
+          "MISSION-031"
+        ],
+        "confidence": 0.7
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.180517+00:00"
+  }
+]

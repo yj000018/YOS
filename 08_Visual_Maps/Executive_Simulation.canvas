@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "id": "center",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 180,
+      "height": 60,
+      "text": "**Executive Simulation Layer**\nMISSION-026",
+      "color": "#6366f1"
+    },
+    {
+      "id": "scn-001",
+      "type": "text",
+      "x": -420,
+      "y": -80,
+      "width": 200,
+      "height": 80,
+      "text": "**SCN-001**\nGemini Becomes Primary Provider\nPROVIDER_CHANGE",
+      "color": "#1e293b"
+    },
+    {
+      "id": "scn-002",
+      "type": "text",
+      "x": -140,
+      "y": -80,
+      "width": 200,
+      "height": 80,
+      "text": "**SCN-002**\nAdd Vishnu Worker (Integration Specialist)\nWORKER_CHANGE",
+      "color": "#1e293b"
+    },
+    {
+      "id": "scn-003",
+      "type": "text",
+      "x": 140,
+      "y": -80,
+      "width": 200,
+      "height": 80,
+      "text": "**SCN-003**\nSkip MISSION-027 (KGC v5), go directly to MISSION-028 (n8n)\nMISSION_CHANGE",
+      "color": "#1e293b"
+    },
+    {
+      "id": "scn-004",
+      "type": "text",
+      "x": 420,
+      "y": -80,
+      "width": 200,
+      "height": 80,
+      "text": "**SCN-004**\nImplement Constitutional Amendment Protocol (MISSION-030)\nGOVERNANCE_CHANGE",
+      "color": "#1e293b"
+    },
+    {
+      "id": "scn-005",
+      "type": "text",
+      "x": -420,
+      "y": 80,
+      "width": 200,
+      "height": 80,
+      "text": "**SCN-005**\nEnforce $0.10/session Budget Cap\nCOST_CHANGE",
+      "color": "#1e293b"
+    },
+    {
+      "id": "scn-006",
+      "type": "text",
+      "x": -140,
+      "y": 80,
+      "width": 200,
+      "height": 80,
+      "text": "**SCN-006**\nKGC v5: Reduce Orphan Rate to <3%\nGRAPH_CHANGE",
+      "color": "#1e293b"
+    },
+    {
+      "id": "scn-007",
+      "type": "text",
+      "x": 140,
+      "y": 80,
+      "width": 200,
+      "height": 80,
+      "text": "**SCN-007**\nAccelerate Roadmap: Execute M-026+M-027+M-029 in Parallel\nROADMAP_CHANGE",
+      "color": "#1e293b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_scn-001",
+      "fromNode": "center",
+      "toNode": "scn-001",
+      "label": "82%"
+    },
+    {
+      "id": "e_scn-002",
+      "fromNode": "center",
+      "toNode": "scn-002",
+      "label": "88%"
+    },
+    {
+      "id": "e_scn-003",
+      "fromNode": "center",
+      "toNode": "scn-003",
+      "label": "75%"
+    },
+    {
+      "id": "e_scn-004",
+      "fromNode": "center",
+      "toNode": "scn-004",
+      "label": "92%"
+    },
+    {
+      "id": "e_scn-005",
+      "fromNode": "center",
+      "toNode": "scn-005",
+      "label": "90%"
+    },
+    {
+      "id": "e_scn-006",
+      "fromNode": "center",
+      "toNode": "scn-006",
+      "label": "88%"
+    },
+    {
+      "id": "e_scn-007",
+      "fromNode": "center",
+      "toNode": "scn-007",
+      "label": "70%"
+    }
+  ]
+}

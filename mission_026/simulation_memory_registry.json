@@ -1,0 +1,102 @@
+{
+  "summary": {
+    "total_records": 7,
+    "by_status": {
+      "PENDING": 7
+    },
+    "calibration_score": 1.0
+  },
+  "registry": [
+    {
+      "record_id": "SREC-0001",
+      "simulation_id": "SIM-SCN-001-001",
+      "scenario_id": "SCN-001",
+      "prediction": "EIS change for SCN-001",
+      "predicted_value": 94.5,
+      "actual_value": null,
+      "status": "PENDING",
+      "confidence": 0.82,
+      "calibration_error": null,
+      "notes": "provider_openai_pct=10, provider_gemini_pct=70, provider_anthropic_pct=20",
+      "recorded_at": "2026-06-14T17:30:13.189706+00:00"
+    },
+    {
+      "record_id": "SREC-0002",
+      "simulation_id": "SIM-SCN-002-002",
+      "scenario_id": "SCN-002",
+      "prediction": "EIS change for SCN-002",
+      "predicted_value": 97.2,
+      "actual_value": null,
+      "status": "PENDING",
+      "confidence": 0.88,
+      "calibration_error": null,
+      "notes": "active_workers=7, total_missions+1",
+      "recorded_at": "2026-06-14T17:30:13.189728+00:00"
+    },
+    {
+      "record_id": "SREC-0003",
+      "simulation_id": "SIM-SCN-003-003",
+      "scenario_id": "SCN-003",
+      "prediction": "EIS change for SCN-003",
+      "predicted_value": 94.0,
+      "actual_value": null,
+      "status": "PENDING",
+      "confidence": 0.75,
+      "calibration_error": null,
+      "notes": "orphan_rate stays 7.1%, n8n integration active",
+      "recorded_at": "2026-06-14T17:30:13.189741+00:00"
+    },
+    {
+      "record_id": "SREC-0004",
+      "simulation_id": "SIM-SCN-004-004",
+      "scenario_id": "SCN-004",
+      "prediction": "EIS change for SCN-004",
+      "predicted_value": 96.5,
+      "actual_value": null,
+      "status": "PENDING",
+      "confidence": 0.92,
+      "calibration_error": null,
+      "notes": "governance_compliance+2, total_adrs+1",
+      "recorded_at": "2026-06-14T17:30:13.189750+00:00"
+    },
+    {
+      "record_id": "SREC-0005",
+      "simulation_id": "SIM-SCN-005-005",
+      "scenario_id": "SCN-005",
+      "prediction": "EIS change for SCN-005",
+      "predicted_value": 95.0,
+      "actual_value": null,
+      "status": "PENDING",
+      "confidence": 0.9,
+      "calibration_error": null,
+      "notes": "monthly_cost_usd reduced by 30%, some workers use cheaper models",
+      "recorded_at": "2026-06-14T17:30:13.189759+00:00"
+    },
+    {
+      "record_id": "SREC-0006",
+      "simulation_id": "SIM-SCN-006-006",
+      "scenario_id": "SCN-006",
+      "prediction": "EIS change for SCN-006",
+      "predicted_value": 97.5,
+      "actual_value": null,
+      "status": "PENDING",
+      "confidence": 0.88,
+      "calibration_error": null,
+      "notes": "orphan_rate=2.5, graph_quality=108",
+      "recorded_at": "2026-06-14T17:30:13.189768+00:00"
+    },
+    {
+      "record_id": "SREC-0007",
+      "simulation_id": "SIM-SCN-007-007",
+      "scenario_id": "SCN-007",
+      "prediction": "EIS change for SCN-007",
+      "predicted_value": 99.0,
+      "actual_value": null,
+      "status": "PENDING",
+      "confidence": 0.7,
+      "calibration_error": null,
+      "notes": "3 missions in parallel, faster delivery, higher coordination cost",
+      "recorded_at": "2026-06-14T17:30:13.189777+00:00"
+    }
+  ]
+}

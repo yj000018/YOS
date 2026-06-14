@@ -1,0 +1,1192 @@
+[
+  {
+    "scenario_id": "SCN-001",
+    "node_count": 22,
+    "edge_count": 16,
+    "total_impact_score": 5.224,
+    "nodes": [
+      {
+        "node_id": "direct_eis_score",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.15,
+        "description": "eis_score: 96.0 \u2192 94.5"
+      },
+      {
+        "node_id": "direct_provider_openai_pct",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -1.0,
+        "description": "provider_openai_pct: 42.9 \u2192 10.0"
+      },
+      {
+        "node_id": "cascade_provider_openai_pct_workers",
+        "layer": "WORKERS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.5,
+        "description": "provider_openai_pct change propagates to workers"
+      },
+      {
+        "node_id": "cascade_provider_openai_pct_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.5,
+        "description": "provider_openai_pct change propagates to artifacts"
+      },
+      {
+        "node_id": "cascade_provider_openai_pct_cost",
+        "layer": "COST",
+        "impact_type": "CASCADE",
+        "magnitude": -0.5,
+        "description": "provider_openai_pct change propagates to cost"
+      },
+      {
+        "node_id": "cascade_provider_openai_pct_events",
+        "layer": "EVENTS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.5,
+        "description": "provider_openai_pct change propagates to events"
+      },
+      {
+        "node_id": "secondary_provider_openai_pct_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": -0.05,
+        "description": "Secondary: eis_score affected by provider_openai_pct"
+      },
+      {
+        "node_id": "secondary_provider_openai_pct_monthly_cost_usd",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.002,
+        "description": "Secondary: monthly_cost_usd affected by provider_openai_pct"
+      },
+      {
+        "node_id": "direct_provider_anthropic_pct",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.8600000000000001,
+        "description": "provider_anthropic_pct: 28.6 \u2192 20.0"
+      },
+      {
+        "node_id": "direct_provider_gemini_pct",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 1.0,
+        "description": "provider_gemini_pct: 28.6 \u2192 70.0"
+      },
+      {
+        "node_id": "cascade_provider_gemini_pct_workers",
+        "layer": "WORKERS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.5,
+        "description": "provider_gemini_pct change propagates to workers"
+      },
+      {
+        "node_id": "cascade_provider_gemini_pct_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.5,
+        "description": "provider_gemini_pct change propagates to artifacts"
+      },
+      {
+        "node_id": "cascade_provider_gemini_pct_cost",
+        "layer": "COST",
+        "impact_type": "CASCADE",
+        "magnitude": 0.5,
+        "description": "provider_gemini_pct change propagates to cost"
+      },
+      {
+        "node_id": "secondary_provider_gemini_pct_monthly_cost_usd",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": -0.003,
+        "description": "Secondary: monthly_cost_usd affected by provider_gemini_pct"
+      },
+      {
+        "node_id": "direct_monthly_cost_usd",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.012,
+        "description": "monthly_cost_usd: 0.45 \u2192 0.33"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_providers",
+        "layer": "PROVIDERS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.006,
+        "description": "monthly_cost_usd change propagates to providers"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_workers",
+        "layer": "WORKERS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.006,
+        "description": "monthly_cost_usd change propagates to workers"
+      },
+      {
+        "node_id": "direct_governance_compliance",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.05,
+        "description": "governance_compliance: 96.8 \u2192 96.3"
+      },
+      {
+        "node_id": "cascade_governance_compliance_adrs",
+        "layer": "ADRS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.025,
+        "description": "governance_compliance change propagates to adrs"
+      },
+      {
+        "node_id": "cascade_governance_compliance_missions",
+        "layer": "MISSIONS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.025,
+        "description": "governance_compliance change propagates to missions"
+      },
+      {
+        "node_id": "cascade_governance_compliance_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.025,
+        "description": "governance_compliance change propagates to artifacts"
+      },
+      {
+        "node_id": "secondary_governance_compliance_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "Secondary: eis_score affected by governance_compliance"
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "direct_provider_openai_pct",
+        "to_node": "cascade_provider_openai_pct_workers",
+        "relationship": "propagates_to",
+        "weight": 0.5
+      },
+      {
+        "from_node": "direct_provider_openai_pct",
+        "to_node": "cascade_provider_openai_pct_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.5
+      },
+      {
+        "from_node": "direct_provider_openai_pct",
+        "to_node": "cascade_provider_openai_pct_cost",
+        "relationship": "propagates_to",
+        "weight": 0.5
+      },
+      {
+        "from_node": "direct_provider_openai_pct",
+        "to_node": "cascade_provider_openai_pct_events",
+        "relationship": "propagates_to",
+        "weight": 0.5
+      },
+      {
+        "from_node": "direct_provider_openai_pct",
+        "to_node": "secondary_provider_openai_pct_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_provider_openai_pct",
+        "to_node": "secondary_provider_openai_pct_monthly_cost_usd",
+        "relationship": "secondary_effect",
+        "weight": 0.002
+      },
+      {
+        "from_node": "direct_provider_gemini_pct",
+        "to_node": "cascade_provider_gemini_pct_workers",
+        "relationship": "propagates_to",
+        "weight": 0.5
+      },
+      {
+        "from_node": "direct_provider_gemini_pct",
+        "to_node": "cascade_provider_gemini_pct_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.5
+      },
+      {
+        "from_node": "direct_provider_gemini_pct",
+        "to_node": "cascade_provider_gemini_pct_cost",
+        "relationship": "propagates_to",
+        "weight": 0.5
+      },
+      {
+        "from_node": "direct_provider_gemini_pct",
+        "to_node": "secondary_provider_gemini_pct_monthly_cost_usd",
+        "relationship": "secondary_effect",
+        "weight": 0.003
+      },
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_providers",
+        "relationship": "propagates_to",
+        "weight": 0.006
+      },
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_workers",
+        "relationship": "propagates_to",
+        "weight": 0.006
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_adrs",
+        "relationship": "propagates_to",
+        "weight": 0.025
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_missions",
+        "relationship": "propagates_to",
+        "weight": 0.025
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.025
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "secondary_governance_compliance_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.01
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.186834+00:00"
+  },
+  {
+    "scenario_id": "SCN-002",
+    "node_count": 13,
+    "edge_count": 9,
+    "total_impact_score": 0.467,
+    "nodes": [
+      {
+        "node_id": "direct_eis_score",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.12000000000000029,
+        "description": "eis_score: 96.0 \u2192 97.2"
+      },
+      {
+        "node_id": "direct_active_workers",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.1,
+        "description": "active_workers: 6 \u2192 7"
+      },
+      {
+        "node_id": "cascade_active_workers_missions",
+        "layer": "MISSIONS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "active_workers change propagates to missions"
+      },
+      {
+        "node_id": "cascade_active_workers_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "active_workers change propagates to artifacts"
+      },
+      {
+        "node_id": "cascade_active_workers_events",
+        "layer": "EVENTS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "active_workers change propagates to events"
+      },
+      {
+        "node_id": "secondary_active_workers_total_missions",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.2,
+        "description": "Secondary: total_missions affected by active_workers"
+      },
+      {
+        "node_id": "secondary_active_workers_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.08,
+        "description": "Secondary: eis_score affected by active_workers"
+      },
+      {
+        "node_id": "direct_total_missions",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.1,
+        "description": "total_missions: 25 \u2192 26"
+      },
+      {
+        "node_id": "direct_governance_compliance",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.029999999999999714,
+        "description": "governance_compliance: 96.8 \u2192 97.1"
+      },
+      {
+        "node_id": "cascade_governance_compliance_adrs",
+        "layer": "ADRS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.014999999999999857,
+        "description": "governance_compliance change propagates to adrs"
+      },
+      {
+        "node_id": "cascade_governance_compliance_missions",
+        "layer": "MISSIONS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.014999999999999857,
+        "description": "governance_compliance change propagates to missions"
+      },
+      {
+        "node_id": "cascade_governance_compliance_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.014999999999999857,
+        "description": "governance_compliance change propagates to artifacts"
+      },
+      {
+        "node_id": "secondary_governance_compliance_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "Secondary: eis_score affected by governance_compliance"
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "direct_active_workers",
+        "to_node": "cascade_active_workers_missions",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_active_workers",
+        "to_node": "cascade_active_workers_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_active_workers",
+        "to_node": "cascade_active_workers_events",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_active_workers",
+        "to_node": "secondary_active_workers_total_missions",
+        "relationship": "secondary_effect",
+        "weight": 0.2
+      },
+      {
+        "from_node": "direct_active_workers",
+        "to_node": "secondary_active_workers_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.08
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_adrs",
+        "relationship": "propagates_to",
+        "weight": 0.014999999999999857
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_missions",
+        "relationship": "propagates_to",
+        "weight": 0.014999999999999857
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.014999999999999857
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "secondary_governance_compliance_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.01
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.186958+00:00"
+  },
+  {
+    "scenario_id": "SCN-003",
+    "node_count": 14,
+    "edge_count": 10,
+    "total_impact_score": 0.493,
+    "nodes": [
+      {
+        "node_id": "direct_eis_score",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.2,
+        "description": "eis_score: 96.0 \u2192 94.0"
+      },
+      {
+        "node_id": "direct_orphan_rate",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.05,
+        "description": "orphan_rate: 7.1 \u2192 7.6"
+      },
+      {
+        "node_id": "cascade_orphan_rate_graph",
+        "layer": "GRAPH",
+        "impact_type": "CASCADE",
+        "magnitude": 0.025,
+        "description": "orphan_rate change propagates to graph"
+      },
+      {
+        "node_id": "cascade_orphan_rate_dashboards",
+        "layer": "DASHBOARDS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.025,
+        "description": "orphan_rate change propagates to dashboards"
+      },
+      {
+        "node_id": "cascade_orphan_rate_navigation",
+        "layer": "NAVIGATION",
+        "impact_type": "CASCADE",
+        "magnitude": 0.025,
+        "description": "orphan_rate change propagates to navigation"
+      },
+      {
+        "node_id": "secondary_orphan_rate_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": -0.03,
+        "description": "Secondary: eis_score affected by orphan_rate"
+      },
+      {
+        "node_id": "direct_monthly_cost_usd",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.004999999999999999,
+        "description": "monthly_cost_usd: 0.45 \u2192 0.4"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_providers",
+        "layer": "PROVIDERS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.0024999999999999996,
+        "description": "monthly_cost_usd change propagates to providers"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_workers",
+        "layer": "WORKERS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.0024999999999999996,
+        "description": "monthly_cost_usd change propagates to workers"
+      },
+      {
+        "node_id": "direct_governance_compliance",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.1,
+        "description": "governance_compliance: 96.8 \u2192 95.8"
+      },
+      {
+        "node_id": "cascade_governance_compliance_adrs",
+        "layer": "ADRS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.05,
+        "description": "governance_compliance change propagates to adrs"
+      },
+      {
+        "node_id": "cascade_governance_compliance_missions",
+        "layer": "MISSIONS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.05,
+        "description": "governance_compliance change propagates to missions"
+      },
+      {
+        "node_id": "cascade_governance_compliance_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.05,
+        "description": "governance_compliance change propagates to artifacts"
+      },
+      {
+        "node_id": "secondary_governance_compliance_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "Secondary: eis_score affected by governance_compliance"
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_graph",
+        "relationship": "propagates_to",
+        "weight": 0.025
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_dashboards",
+        "relationship": "propagates_to",
+        "weight": 0.025
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_navigation",
+        "relationship": "propagates_to",
+        "weight": 0.025
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "secondary_orphan_rate_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.03
+      },
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_providers",
+        "relationship": "propagates_to",
+        "weight": 0.0024999999999999996
+      },
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_workers",
+        "relationship": "propagates_to",
+        "weight": 0.0024999999999999996
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_adrs",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_missions",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "secondary_governance_compliance_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.01
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.187022+00:00"
+  },
+  {
+    "scenario_id": "SCN-004",
+    "node_count": 7,
+    "edge_count": 4,
+    "total_impact_score": 0.53,
+    "nodes": [
+      {
+        "node_id": "direct_eis_score",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.05,
+        "description": "eis_score: 96.0 \u2192 96.5"
+      },
+      {
+        "node_id": "direct_total_adrs",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.1,
+        "description": "total_adrs: 54 \u2192 55"
+      },
+      {
+        "node_id": "direct_governance_compliance",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.2,
+        "description": "governance_compliance: 96.8 \u2192 98.8"
+      },
+      {
+        "node_id": "cascade_governance_compliance_adrs",
+        "layer": "ADRS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.1,
+        "description": "governance_compliance change propagates to adrs"
+      },
+      {
+        "node_id": "cascade_governance_compliance_missions",
+        "layer": "MISSIONS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.1,
+        "description": "governance_compliance change propagates to missions"
+      },
+      {
+        "node_id": "cascade_governance_compliance_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.1,
+        "description": "governance_compliance change propagates to artifacts"
+      },
+      {
+        "node_id": "secondary_governance_compliance_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "Secondary: eis_score affected by governance_compliance"
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_adrs",
+        "relationship": "propagates_to",
+        "weight": 0.1
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_missions",
+        "relationship": "propagates_to",
+        "weight": 0.1
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.1
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "secondary_governance_compliance_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.01
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.187077+00:00"
+  },
+  {
+    "scenario_id": "SCN-005",
+    "node_count": 9,
+    "edge_count": 6,
+    "total_impact_score": 0.311,
+    "nodes": [
+      {
+        "node_id": "direct_eis_score",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.1,
+        "description": "eis_score: 96.0 \u2192 95.0"
+      },
+      {
+        "node_id": "direct_monthly_cost_usd",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.013000000000000001,
+        "description": "monthly_cost_usd: 0.45 \u2192 0.32"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_providers",
+        "layer": "PROVIDERS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.006500000000000001,
+        "description": "monthly_cost_usd change propagates to providers"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_workers",
+        "layer": "WORKERS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.006500000000000001,
+        "description": "monthly_cost_usd change propagates to workers"
+      },
+      {
+        "node_id": "direct_governance_compliance",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.1,
+        "description": "governance_compliance: 96.8 \u2192 97.8"
+      },
+      {
+        "node_id": "cascade_governance_compliance_adrs",
+        "layer": "ADRS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "governance_compliance change propagates to adrs"
+      },
+      {
+        "node_id": "cascade_governance_compliance_missions",
+        "layer": "MISSIONS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "governance_compliance change propagates to missions"
+      },
+      {
+        "node_id": "cascade_governance_compliance_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "governance_compliance change propagates to artifacts"
+      },
+      {
+        "node_id": "secondary_governance_compliance_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "Secondary: eis_score affected by governance_compliance"
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_providers",
+        "relationship": "propagates_to",
+        "weight": 0.006500000000000001
+      },
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_workers",
+        "relationship": "propagates_to",
+        "weight": 0.006500000000000001
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_adrs",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_missions",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "secondary_governance_compliance_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.01
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.187121+00:00"
+  },
+  {
+    "scenario_id": "SCN-006",
+    "node_count": 11,
+    "edge_count": 8,
+    "total_impact_score": 2.544,
+    "nodes": [
+      {
+        "node_id": "direct_graph_quality",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.8,
+        "description": "graph_quality: 100.0 \u2192 108.0"
+      },
+      {
+        "node_id": "cascade_graph_quality_dashboards",
+        "layer": "DASHBOARDS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.4,
+        "description": "graph_quality change propagates to dashboards"
+      },
+      {
+        "node_id": "cascade_graph_quality_navigation",
+        "layer": "NAVIGATION",
+        "impact_type": "CASCADE",
+        "magnitude": 0.4,
+        "description": "graph_quality change propagates to navigation"
+      },
+      {
+        "node_id": "cascade_graph_quality_semantic_search",
+        "layer": "SEMANTIC_SEARCH",
+        "impact_type": "CASCADE",
+        "magnitude": 0.4,
+        "description": "graph_quality change propagates to semantic_search"
+      },
+      {
+        "node_id": "secondary_graph_quality_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.02,
+        "description": "Secondary: eis_score affected by graph_quality"
+      },
+      {
+        "node_id": "direct_eis_score",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.15,
+        "description": "eis_score: 96.0 \u2192 97.5"
+      },
+      {
+        "node_id": "direct_orphan_rate",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.45999999999999996,
+        "description": "orphan_rate: 7.1 \u2192 2.5"
+      },
+      {
+        "node_id": "cascade_orphan_rate_graph",
+        "layer": "GRAPH",
+        "impact_type": "CASCADE",
+        "magnitude": -0.22999999999999998,
+        "description": "orphan_rate change propagates to graph"
+      },
+      {
+        "node_id": "cascade_orphan_rate_dashboards",
+        "layer": "DASHBOARDS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.22999999999999998,
+        "description": "orphan_rate change propagates to dashboards"
+      },
+      {
+        "node_id": "cascade_orphan_rate_navigation",
+        "layer": "NAVIGATION",
+        "impact_type": "CASCADE",
+        "magnitude": -0.22999999999999998,
+        "description": "orphan_rate change propagates to navigation"
+      },
+      {
+        "node_id": "secondary_orphan_rate_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": -0.03,
+        "description": "Secondary: eis_score affected by orphan_rate"
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "direct_graph_quality",
+        "to_node": "cascade_graph_quality_dashboards",
+        "relationship": "propagates_to",
+        "weight": 0.4
+      },
+      {
+        "from_node": "direct_graph_quality",
+        "to_node": "cascade_graph_quality_navigation",
+        "relationship": "propagates_to",
+        "weight": 0.4
+      },
+      {
+        "from_node": "direct_graph_quality",
+        "to_node": "cascade_graph_quality_semantic_search",
+        "relationship": "propagates_to",
+        "weight": 0.4
+      },
+      {
+        "from_node": "direct_graph_quality",
+        "to_node": "secondary_graph_quality_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.02
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_graph",
+        "relationship": "propagates_to",
+        "weight": 0.22999999999999998
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_dashboards",
+        "relationship": "propagates_to",
+        "weight": 0.22999999999999998
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_navigation",
+        "relationship": "propagates_to",
+        "weight": 0.22999999999999998
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "secondary_orphan_rate_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.03
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.187164+00:00"
+  },
+  {
+    "scenario_id": "SCN-007",
+    "node_count": 23,
+    "edge_count": 17,
+    "total_impact_score": 1.841,
+    "nodes": [
+      {
+        "node_id": "direct_eis_score",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.3,
+        "description": "eis_score: 96.0 \u2192 99.0"
+      },
+      {
+        "node_id": "direct_orphan_rate",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.45999999999999996,
+        "description": "orphan_rate: 7.1 \u2192 2.5"
+      },
+      {
+        "node_id": "cascade_orphan_rate_graph",
+        "layer": "GRAPH",
+        "impact_type": "CASCADE",
+        "magnitude": -0.22999999999999998,
+        "description": "orphan_rate change propagates to graph"
+      },
+      {
+        "node_id": "cascade_orphan_rate_dashboards",
+        "layer": "DASHBOARDS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.22999999999999998,
+        "description": "orphan_rate change propagates to dashboards"
+      },
+      {
+        "node_id": "cascade_orphan_rate_navigation",
+        "layer": "NAVIGATION",
+        "impact_type": "CASCADE",
+        "magnitude": -0.22999999999999998,
+        "description": "orphan_rate change propagates to navigation"
+      },
+      {
+        "node_id": "secondary_orphan_rate_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": -0.03,
+        "description": "Secondary: eis_score affected by orphan_rate"
+      },
+      {
+        "node_id": "direct_monthly_cost_usd",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.02,
+        "description": "monthly_cost_usd: 0.45 \u2192 0.65"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_providers",
+        "layer": "PROVIDERS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "monthly_cost_usd change propagates to providers"
+      },
+      {
+        "node_id": "cascade_monthly_cost_usd_workers",
+        "layer": "WORKERS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "monthly_cost_usd change propagates to workers"
+      },
+      {
+        "node_id": "direct_governance_compliance",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": -0.15,
+        "description": "governance_compliance: 96.8 \u2192 95.3"
+      },
+      {
+        "node_id": "cascade_governance_compliance_adrs",
+        "layer": "ADRS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.075,
+        "description": "governance_compliance change propagates to adrs"
+      },
+      {
+        "node_id": "cascade_governance_compliance_missions",
+        "layer": "MISSIONS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.075,
+        "description": "governance_compliance change propagates to missions"
+      },
+      {
+        "node_id": "cascade_governance_compliance_artifacts",
+        "layer": "ARTIFACTS",
+        "impact_type": "CASCADE",
+        "magnitude": -0.075,
+        "description": "governance_compliance change propagates to artifacts"
+      },
+      {
+        "node_id": "secondary_governance_compliance_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.01,
+        "description": "Secondary: eis_score affected by governance_compliance"
+      },
+      {
+        "node_id": "direct_notion_sync",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.1,
+        "description": "notion_sync: False \u2192 True"
+      },
+      {
+        "node_id": "cascade_notion_sync_memory",
+        "layer": "MEMORY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "notion_sync change propagates to memory"
+      },
+      {
+        "node_id": "cascade_notion_sync_dashboards",
+        "layer": "DASHBOARDS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "notion_sync change propagates to dashboards"
+      },
+      {
+        "node_id": "secondary_notion_sync_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "Secondary: eis_score affected by notion_sync"
+      },
+      {
+        "node_id": "direct_simulation_layer",
+        "layer": "DIRECT",
+        "impact_type": "DIRECT",
+        "magnitude": 0.1,
+        "description": "simulation_layer: False \u2192 True"
+      },
+      {
+        "node_id": "cascade_simulation_layer_decisions",
+        "layer": "DECISIONS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "simulation_layer change propagates to decisions"
+      },
+      {
+        "node_id": "cascade_simulation_layer_roadmap",
+        "layer": "ROADMAP",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "simulation_layer change propagates to roadmap"
+      },
+      {
+        "node_id": "cascade_simulation_layer_dashboards",
+        "layer": "DASHBOARDS",
+        "impact_type": "CASCADE",
+        "magnitude": 0.05,
+        "description": "simulation_layer change propagates to dashboards"
+      },
+      {
+        "node_id": "secondary_simulation_layer_eis_score",
+        "layer": "SECONDARY",
+        "impact_type": "CASCADE",
+        "magnitude": 0.1,
+        "description": "Secondary: eis_score affected by simulation_layer"
+      }
+    ],
+    "edges": [
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_graph",
+        "relationship": "propagates_to",
+        "weight": 0.22999999999999998
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_dashboards",
+        "relationship": "propagates_to",
+        "weight": 0.22999999999999998
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "cascade_orphan_rate_navigation",
+        "relationship": "propagates_to",
+        "weight": 0.22999999999999998
+      },
+      {
+        "from_node": "direct_orphan_rate",
+        "to_node": "secondary_orphan_rate_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.03
+      },
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_providers",
+        "relationship": "propagates_to",
+        "weight": 0.01
+      },
+      {
+        "from_node": "direct_monthly_cost_usd",
+        "to_node": "cascade_monthly_cost_usd_workers",
+        "relationship": "propagates_to",
+        "weight": 0.01
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_adrs",
+        "relationship": "propagates_to",
+        "weight": 0.075
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_missions",
+        "relationship": "propagates_to",
+        "weight": 0.075
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "cascade_governance_compliance_artifacts",
+        "relationship": "propagates_to",
+        "weight": 0.075
+      },
+      {
+        "from_node": "direct_governance_compliance",
+        "to_node": "secondary_governance_compliance_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.01
+      },
+      {
+        "from_node": "direct_notion_sync",
+        "to_node": "cascade_notion_sync_memory",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_notion_sync",
+        "to_node": "cascade_notion_sync_dashboards",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_notion_sync",
+        "to_node": "secondary_notion_sync_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_simulation_layer",
+        "to_node": "cascade_simulation_layer_decisions",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_simulation_layer",
+        "to_node": "cascade_simulation_layer_roadmap",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_simulation_layer",
+        "to_node": "cascade_simulation_layer_dashboards",
+        "relationship": "propagates_to",
+        "weight": 0.05
+      },
+      {
+        "from_node": "direct_simulation_layer",
+        "to_node": "secondary_simulation_layer_eis_score",
+        "relationship": "secondary_effect",
+        "weight": 0.1
+      }
+    ],
+    "computed_at": "2026-06-14T17:30:13.187220+00:00"
+  }
+]

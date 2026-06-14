@@ -1,0 +1,143 @@
+[
+  {
+    "scenario_id": "SCN-001",
+    "scenario_type": "PROVIDER_CHANGE",
+    "title": "Gemini Becomes Primary Provider",
+    "description": "OpenAI is deprecated. Gemini handles 70% of worker calls.",
+    "proposed_change": "provider_openai_pct=10, provider_gemini_pct=70, provider_anthropic_pct=20",
+    "impact_model": {
+      "provider_openai_pct": -32.9,
+      "provider_gemini_pct": 41.4,
+      "provider_anthropic_pct": -8.6,
+      "monthly_cost_usd": -0.12,
+      "eis_score": -1.5,
+      "governance_compliance": -0.5
+    },
+    "confidence": 0.82,
+    "rationale": "Gemini pricing 40% lower. Risk: not live-tested (GAP-008).",
+    "risks": [
+      "Gemini not yet live-validated",
+      "Worker prompt compatibility unknown"
+    ],
+    "created_at": "2026-06-14T17:30:13.173205+00:00"
+  },
+  {
+    "scenario_id": "SCN-002",
+    "scenario_type": "WORKER_CHANGE",
+    "title": "Add Vishnu Worker (Integration Specialist)",
+    "description": "New worker Vishnu handles system integration tasks, reducing Hanuman overload.",
+    "proposed_change": "active_workers=7, total_missions+1",
+    "impact_model": {
+      "active_workers": 1,
+      "total_missions": 1,
+      "eis_score": 1.2,
+      "governance_compliance": 0.3
+    },
+    "confidence": 0.88,
+    "rationale": "Hanuman/build handles 40% of missions. Specialization reduces bottleneck.",
+    "risks": [
+      "New worker requires context pack design",
+      "ADR required for new worker"
+    ],
+    "created_at": "2026-06-14T17:30:13.173236+00:00"
+  },
+  {
+    "scenario_id": "SCN-003",
+    "scenario_type": "MISSION_CHANGE",
+    "title": "Skip MISSION-027 (KGC v5), go directly to MISSION-028 (n8n)",
+    "description": "Delay semantic depth pass. Prioritize automation integration.",
+    "proposed_change": "orphan_rate stays 7.1%, n8n integration active",
+    "impact_model": {
+      "eis_score": -2.0,
+      "orphan_rate": 0.5,
+      "governance_compliance": -1.0,
+      "monthly_cost_usd": -0.05
+    },
+    "confidence": 0.75,
+    "rationale": "n8n delivers operational value faster. Graph quality already at 100.",
+    "risks": [
+      "Orphan rate may increase without KGC v5",
+      "EIS plateau risk"
+    ],
+    "created_at": "2026-06-14T17:30:13.173240+00:00"
+  },
+  {
+    "scenario_id": "SCN-004",
+    "scenario_type": "GOVERNANCE_CHANGE",
+    "title": "Implement Constitutional Amendment Protocol (MISSION-030)",
+    "description": "Define formal amendment process. Constitution v1 becomes evolvable.",
+    "proposed_change": "governance_compliance+2, total_adrs+1",
+    "impact_model": {
+      "governance_compliance": 2.0,
+      "total_adrs": 1,
+      "eis_score": 0.5
+    },
+    "confidence": 0.92,
+    "rationale": "FROZEN constitution limits Y-OS evolution. Amendment protocol enables controlled growth.",
+    "risks": [
+      "Amendment process could be misused without strict governance"
+    ],
+    "created_at": "2026-06-14T17:30:13.173244+00:00"
+  },
+  {
+    "scenario_id": "SCN-005",
+    "scenario_type": "COST_CHANGE",
+    "title": "Enforce $0.10/session Budget Cap",
+    "description": "Hard budget limit per pipeline execution. Triggers provider downgrade.",
+    "proposed_change": "monthly_cost_usd reduced by 30%, some workers use cheaper models",
+    "impact_model": {
+      "monthly_cost_usd": -0.135,
+      "eis_score": -1.0,
+      "governance_compliance": 1.0
+    },
+    "confidence": 0.9,
+    "rationale": "K2 rule: never spend without authorization. Budget enforcement closes GAP-009.",
+    "risks": [
+      "Quality degradation if budget too tight",
+      "Brahma/architecture needs premium models"
+    ],
+    "created_at": "2026-06-14T17:30:13.173247+00:00"
+  },
+  {
+    "scenario_id": "SCN-006",
+    "scenario_type": "GRAPH_CHANGE",
+    "title": "KGC v5: Reduce Orphan Rate to <3%",
+    "description": "Body wikilinks pass + concept-to-concept edges + ADR supersession chains.",
+    "proposed_change": "orphan_rate=2.5, graph_quality=108",
+    "impact_model": {
+      "orphan_rate": -4.6,
+      "graph_quality": 8.0,
+      "eis_score": 1.5,
+      "total_adrs": 0
+    },
+    "confidence": 0.88,
+    "rationale": "M-021 audit: 34 orphan files remain. KGC v5 closes the gap.",
+    "risks": [
+      "Body edits must remain additive",
+      "Large corpus \u2014 risk of regression"
+    ],
+    "created_at": "2026-06-14T17:30:13.173251+00:00"
+  },
+  {
+    "scenario_id": "SCN-007",
+    "scenario_type": "ROADMAP_CHANGE",
+    "title": "Accelerate Roadmap: Execute M-026+M-027+M-029 in Parallel",
+    "description": "Run simulation, graph depth, and Notion sync simultaneously.",
+    "proposed_change": "3 missions in parallel, faster delivery, higher coordination cost",
+    "impact_model": {
+      "eis_score": 3.0,
+      "orphan_rate": -4.6,
+      "notion_sync": 1,
+      "simulation_layer": 1,
+      "monthly_cost_usd": 0.2,
+      "governance_compliance": -1.5
+    },
+    "confidence": 0.7,
+    "rationale": "Parallel execution reduces calendar time by ~60%. Risk: coordination overhead.",
+    "risks": [
+      "Dependency conflicts between missions",
+      "Higher governance review burden"
+    ],
+    "created_at": "2026-06-14T17:30:13.173254+00:00"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "total_score": 0,
+  "verdict": "APPROVE",
+  "traceability_rate": 1.0,
+  "lineage_rate": 1.0,
+  "assumption_coverage": 1.0,
+  "avg_confidence": 0.836,
+  "checks": [
+    {
+      "check_id": "GOV-001",
+      "article": "Article I",
+      "description": "All simulations traceable to scenarios",
+      "passed": true,
+      "finding": "7/7 simulations have scenario_id",
+      "risk_points": 0
+    },
+    {
+      "check_id": "GOV-002",
+      "article": "Article II",
+      "description": "No files deleted, no doctrine modified",
+      "passed": true,
+      "finding": "Simulation layer is additive \u2014 no deletions",
+      "risk_points": 0
+    },
+    {
+      "check_id": "GOV-003",
+      "article": "Article III",
+      "description": "All simulations have unique IDs (lineage)",
+      "passed": true,
+      "finding": "All 7 simulations have unique IDs",
+      "risk_points": 0
+    },
+    {
+      "check_id": "GOV-004",
+      "article": "Article IV",
+      "description": "All counterfactuals have documented insights",
+      "passed": true,
+      "finding": "4/4 counterfactuals have insights",
+      "risk_points": 0
+    },
+    {
+      "check_id": "GOV-005",
+      "article": "Article V",
+      "description": "All simulations have confidence >= 0.70",
+      "passed": true,
+      "finding": "0 simulations below 0.70 confidence threshold",
+      "risk_points": 0
+    }
+  ],
+  "generated_at": "2026-06-14T17:30:13.190627+00:00"
+}

@@ -1,0 +1,79 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e293b', 'primaryTextColor': '#f8fafc', 'primaryBorderColor': '#334155', 'lineColor': '#64748b', 'secondaryColor': '#0f172a', 'tertiaryColor': '#1e293b', 'fontSize': '14px'}}}%%
+flowchart LR
+
+    %% ═══════════════════════════════════════════════════════════════════
+    %% VIEW 1 — ARCHITECTURE VIEW (left column)
+    %% ═══════════════════════════════════════════════════════════════════
+    subgraph V1["VIEW 1 — Architecture"]
+        direction TB
+        A_CAP["📥 CAPTURE\nsession_delta_engine\nccr_runtime_v2\n20ms"]
+        A_CTX["🧠 CONTEXT\ncontext_compiler_v2\nprovider_payload_builder\n66ms"]
+        A_EXE["⚙️ EXECUTION\nlive_worker_executor\ncontext_cache\n2,877ms"]
+        A_REV["🔍 REVIEW\noutput_validator\nlakshmi_review\n58ms"]
+        A_MEM["💾 MEMORY\nliving_memory_pipeline\n0ms — SIMULATED"]
+        A_CAP --> A_CTX --> A_EXE --> A_REV --> A_MEM
+    end
+
+    %% ═══════════════════════════════════════════════════════════════════
+    %% VIEW 2 — TEAM VIEW (center column)
+    %% ═══════════════════════════════════════════════════════════════════
+    subgraph V2["VIEW 2 — Team"]
+        direction TB
+        T_YJ["🧑 Yannick\nClient\n'Summarize the audit'"]
+        T_OR["🤖 Manus Orchestrator\nY-OS Runtime\nRoutes + classifies"]
+        T_AR["🏛️ Architect — Ganesha\nAnthropic / claude-opus-4\n$0.044 / 2.8s\nProduces recommendation"]
+        T_VA["⚖️ Validator — Lakshmi\nY-OS Runtime\nConstitution check\nAPPROVED"]
+        T_RG["💾 Archivist — Registry\nY-OS Runtime\nRegisters ARTIFACT-TRACE-001"]
+        T_DL["📦 Git / Notion / Obsidian\nExternal\nPersists the work"]
+        T_YJ --> T_OR --> T_AR --> T_VA --> T_RG --> T_DL
+    end
+
+    %% ═══════════════════════════════════════════════════════════════════
+    %% VIEW 3 — VALUE VIEW (right column)
+    %% ═══════════════════════════════════════════════════════════════════
+    subgraph V3["VIEW 3 — Value"]
+        direction TB
+        V_REQ["📩 Request\nYannick's question\nabout simplification"]
+        V_ART["📄 Artifacts Created\n• ARTIFACT-TRACE-001\n• SESSION-2026-06-14\n• CTX-TRACE-001"]
+        V_DEC["✅ Decisions Produced\n• Archive 22 self-referential modules\n• Maintain Core-Only Mode\n• Measure by task completion"]
+        V_KNW["🧠 Knowledge Added\n• Operational density: 17%\n• Min viable arch: 19 modules\n• Self-referential ratio: 54%"]
+        V_REP["🗄️ Repositories Updated\n• y-os-doctrine (commit f476520)\n• Notion (simulated)\n• Obsidian (simulated)"]
+        V_OUT["🎯 Final Deliverable\nActionable recommendation\n3 seconds / $0.044"]
+        V_REQ --> V_ART --> V_DEC --> V_KNW --> V_REP --> V_OUT
+    end
+
+    %% ═══════════════════════════════════════════════════════════════════
+    %% METRICS PANEL (bottom)
+    %% ═══════════════════════════════════════════════════════════════════
+    subgraph METRICS["METRICS PANEL"]
+        direction LR
+        M1["⏱️ Total Time\n3.02 seconds"]
+        M2["💰 Total Cost\n$0.044"]
+        M3["🔤 Total Tokens\n4,452"]
+        M4["🤖 Models Used\nAnthropic claude-opus-4"]
+        M5["🔧 Tools Used\n10 modules"]
+        M6["📦 Artifacts Created\n3"]
+    end
+
+    %% ═══════════════════════════════════════════════════════════════════
+    %% VERDICT (bottom)
+    %% ═══════════════════════════════════════════════════════════════════
+    VERDICT["🟡 VERDICT — AMBER\nY-OS produced REAL work\nInput was self-referential (CSO-002 audit)\nOutput was NOT self-referential\n(actionable recommendation)"]
+
+    V3 --> METRICS
+    METRICS --> VERDICT
+
+    %% ═══════════════════════════════════════════════════════════════════
+    %% STYLING
+    %% ═══════════════════════════════════════════════════════════════════
+    classDef archDomain fill:#1e3a5f,stroke:#3b82f6,color:#dbeafe
+    classDef teamMember fill:#166534,stroke:#16a34a,color:#f0fdf4
+    classDef valueStage fill:#4a1d96,stroke:#7c3aed,color:#ede9fe
+    classDef metric fill:#1c1917,stroke:#78716c,color:#e7e5e4
+    classDef verdict fill:#78350f,stroke:#d97706,color:#fef3c7
+
+    class A_CAP,A_CTX,A_EXE,A_REV,A_MEM archDomain
+    class T_YJ,T_OR,T_AR,T_VA,T_RG,T_DL teamMember
+    class V_REQ,V_ART,V_DEC,V_KNW,V_REP,V_OUT valueStage
+    class M1,M2,M3,M4,M5,M6 metric
+    class VERDICT verdict

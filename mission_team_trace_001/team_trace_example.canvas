@@ -1,0 +1,248 @@
+{
+  "nodes": [
+
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# Y-OS Team Trace\n\n**TEAM-TRACE-001** — 2026-06-14\n\n**Request:** *\"Summarize the operational audit and tell me what to simplify next.\"*\n\n**3 synchronized views:** Architecture · Team · Value",
+      "x": -200,
+      "y": -280,
+      "width": 600,
+      "height": 120,
+      "color": "2"
+    },
+
+    {
+      "id": "v1-group",
+      "type": "group",
+      "label": "VIEW 1 — Architecture",
+      "x": -1200,
+      "y": -100,
+      "width": 380,
+      "height": 800,
+      "color": "1"
+    },
+    {
+      "id": "v1-cap",
+      "type": "text",
+      "text": "**📥 CAPTURE**\n\n`session_delta_engine_v1`\n`ccr_runtime_v2`\n\nRequest received\nRules loaded\n\n⏱ 20ms",
+      "x": -1180,
+      "y": -80,
+      "width": 340,
+      "height": 140,
+      "color": "1"
+    },
+    {
+      "id": "v1-ctx",
+      "type": "text",
+      "text": "**🧠 CONTEXT**\n\n`context_compiler_v2`\n`provider_payload_builder_v1`\n\nContext pack: 3,840 tokens\nWorker: Ganesha\nProvider: Anthropic\n\n⏱ 66ms",
+      "x": -1180,
+      "y": 100,
+      "width": 340,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "v1-exe",
+      "type": "text",
+      "text": "**⚙️ EXECUTION**\n\n`live_worker_executor_v1`\n`context_cache_v1`\n\nLLM call → claude-opus-4\n4,452 tokens\n\n⏱ 2,877ms",
+      "x": -1180,
+      "y": 300,
+      "width": 340,
+      "height": 150,
+      "color": "1"
+    },
+    {
+      "id": "v1-rev",
+      "type": "text",
+      "text": "**🔍 REVIEW**\n\n`output_validator_v1`\n`lakshmi_context_review_v1`\n\nValidation: PASS (0.94)\nGovernance: APPROVED\n\n⏱ 58ms",
+      "x": -1180,
+      "y": 490,
+      "width": 340,
+      "height": 150,
+      "color": "1"
+    },
+    {
+      "id": "v1-mem",
+      "type": "text",
+      "text": "**💾 MEMORY**\n\n`living_memory_pipeline_v1`\n\nGit push (simulated)\nNotion update (simulated)\n\n🔶 SIMULATED",
+      "x": -1180,
+      "y": 680,
+      "width": 340,
+      "height": 100,
+      "color": "3"
+    },
+
+    {
+      "id": "v2-group",
+      "type": "group",
+      "label": "VIEW 2 — Team",
+      "x": -720,
+      "y": -100,
+      "width": 420,
+      "height": 1000,
+      "color": "4"
+    },
+    {
+      "id": "v2-yj",
+      "type": "text",
+      "text": "**🧑 Yannick**\nRole: Client\nProvider: Human\n\n*\"Summarize the audit\nand tell me what to simplify.\"*\n\nValue: Defines the work",
+      "x": -700,
+      "y": -80,
+      "width": 380,
+      "height": 140,
+      "color": "4"
+    },
+    {
+      "id": "v2-or",
+      "type": "text",
+      "text": "**🤖 Manus Orchestrator**\nRole: Orchestrator\nProvider: Y-OS Runtime\nModel: `ccr_runtime_v2`\n\nTools: `session_delta_engine`, `ccr_runtime`\n\nValue: Routes to right expert",
+      "x": -700,
+      "y": 100,
+      "width": 380,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "v2-ar",
+      "type": "text",
+      "text": "**🏛️ Architect — Ganesha**\nRole: Architect\nProvider: **Anthropic**\nModel: **claude-opus-4**\n\nTools: `context_compiler`, `context_cache`, `artifact_registry`\nInput: Operational audit + CSO rules\nOutput: Simplification recommendation\n\n💰 $0.044 / ⏱ 2.8s\n\nValue: Produces the actual answer",
+      "x": -700,
+      "y": 300,
+      "width": 380,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "v2-va",
+      "type": "text",
+      "text": "**⚖️ Validator — Lakshmi**\nRole: Governance\nProvider: Y-OS Runtime\nModel: `lakshmi_context_review_v1`\n\nTools: `output_validator`, `lakshmi_review`\nOutput: APPROVED — Risk 8/100\n\nValue: Ensures recommendation is safe",
+      "x": -700,
+      "y": 580,
+      "width": 380,
+      "height": 180,
+      "color": "4"
+    },
+    {
+      "id": "v2-rg",
+      "type": "text",
+      "text": "**💾 Archivist — Registry**\nRole: Memory\nProvider: Y-OS Runtime\nModel: `artifact_registry_v2`\n\nArtifact: ARTIFACT-TRACE-001\nLineage: → ARTIFACT-CSO-002\n\nValue: Nothing is ever lost",
+      "x": -700,
+      "y": 800,
+      "width": 380,
+      "height": 160,
+      "color": "4"
+    },
+
+    {
+      "id": "v3-group",
+      "type": "group",
+      "label": "VIEW 3 — Value",
+      "x": -200,
+      "y": -100,
+      "width": 420,
+      "height": 1000,
+      "color": "5"
+    },
+    {
+      "id": "v3-req",
+      "type": "text",
+      "text": "**📩 Request**\n\nYannick's question about simplification",
+      "x": -180,
+      "y": -80,
+      "width": 380,
+      "height": 80,
+      "color": "5"
+    },
+    {
+      "id": "v3-art",
+      "type": "text",
+      "text": "**📄 Artifacts Created**\n\n• `ARTIFACT-TRACE-001` — Simplification recommendation\n• `SESSION-2026-06-14` — Session delta\n• `CTX-TRACE-001` — Context pack (reusable)",
+      "x": -180,
+      "y": 40,
+      "width": 380,
+      "height": 140,
+      "color": "5"
+    },
+    {
+      "id": "v3-dec",
+      "type": "text",
+      "text": "**✅ Decisions Produced**\n\n• Archive 22 self-referential modules\n• Maintain Core-Only Mode for 90 days\n• Measure by task completion rate",
+      "x": -180,
+      "y": 220,
+      "width": 380,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "v3-knw",
+      "type": "text",
+      "text": "**🧠 Knowledge Added**\n\n• Operational density: **17%** (7/41 modules)\n• Minimum viable architecture: **19 modules**\n• Self-referential ratio: **54%**",
+      "x": -180,
+      "y": 390,
+      "width": 380,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "v3-rep",
+      "type": "text",
+      "text": "**🗄️ Repositories Updated**\n\n• `y-os-doctrine` — commit `f476520` ✅\n• Notion — Y-OS Memory (simulated)\n• Obsidian — wikilink (simulated)",
+      "x": -180,
+      "y": 560,
+      "width": 380,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "v3-out",
+      "type": "text",
+      "text": "**🎯 Final Deliverable**\n\nActionable recommendation delivered to Yannick\n**3 seconds / $0.044**\nNo manual copy-paste required",
+      "x": -180,
+      "y": 730,
+      "width": 380,
+      "height": 120,
+      "color": "5"
+    },
+
+    {
+      "id": "metrics",
+      "type": "text",
+      "text": "## METRICS PANEL\n\n| Metric | Value |\n|---|---|\n| ⏱ Total Time | 3.02 seconds |\n| 💰 Total Cost | $0.044 |\n| 🔤 Total Tokens | 4,452 |\n| 🤖 Models Used | Anthropic claude-opus-4 |\n| 🔧 Tools Used | 10 modules |\n| 📦 Artifacts Created | 3 |\n| 👥 Team Members | 5 |\n| ⛔ Plugins Skipped | 4 |",
+      "x": 300,
+      "y": -100,
+      "width": 400,
+      "height": 340,
+      "color": "6"
+    },
+
+    {
+      "id": "verdict",
+      "type": "text",
+      "text": "## 🟡 VERDICT — AMBER\n\n**Did Y-OS produce work, or did it analyze itself?**\n\n**Answer: BOTH — but the output is real.**\n\nThe INPUT was self-referential (CSO-002 audit — Y-OS analyzing Y-OS).\n\nThe OUTPUT was NOT self-referential. Ganesha produced an actionable recommendation: *\"Archive 22 modules. Focus on 7 operational ones.\"*\n\nThis is acceptable. The risk would be if the recommendation had been *\"Y-OS should build more dashboards to track itself.\"* It was not.\n\n**Self-referential input → Real output = Productive use of Y-OS.**",
+      "x": 300,
+      "y": 280,
+      "width": 400,
+      "height": 340,
+      "color": "3"
+    }
+  ],
+
+  "edges": [
+    { "id": "e-v1-cap-ctx", "fromNode": "v1-cap", "toNode": "v1-ctx", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v1-ctx-exe", "fromNode": "v1-ctx", "toNode": "v1-exe", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v1-exe-rev", "fromNode": "v1-exe", "toNode": "v1-rev", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v1-rev-mem", "fromNode": "v1-rev", "toNode": "v1-mem", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v2-yj-or", "fromNode": "v2-yj", "toNode": "v2-or", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v2-or-ar", "fromNode": "v2-or", "toNode": "v2-ar", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v2-ar-va", "fromNode": "v2-ar", "toNode": "v2-va", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v2-va-rg", "fromNode": "v2-va", "toNode": "v2-rg", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v3-req-art", "fromNode": "v3-req", "toNode": "v3-art", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v3-art-dec", "fromNode": "v3-art", "toNode": "v3-dec", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v3-dec-knw", "fromNode": "v3-dec", "toNode": "v3-knw", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v3-knw-rep", "fromNode": "v3-knw", "toNode": "v3-rep", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v3-rep-out", "fromNode": "v3-rep", "toNode": "v3-out", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-v3-out-metrics", "fromNode": "v3-out", "toNode": "metrics", "fromSide": "right", "toSide": "left" },
+    { "id": "e-metrics-verdict", "fromNode": "metrics", "toNode": "verdict", "fromSide": "bottom", "toSide": "top" }
+  ]
+}

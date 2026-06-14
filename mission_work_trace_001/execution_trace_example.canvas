@@ -1,0 +1,280 @@
+{
+  "nodes": [
+    {
+      "id": "user-in",
+      "type": "text",
+      "text": "## 🧑 Yannick\n\n**Request:**\n*\"Summarize the Y-OS operational value audit and tell me what to simplify next.\"*",
+      "x": -600,
+      "y": 0,
+      "width": 320,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "domain-capture",
+      "type": "group",
+      "label": "📥 CAPTURE",
+      "x": -200,
+      "y": -200,
+      "width": 360,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "s1",
+      "type": "text",
+      "text": "**Step 1** — `session_delta_engine_v1`\n\nCaptures request\nIntent: architecture + governance\n\n✅ ACTUAL",
+      "x": -180,
+      "y": -180,
+      "width": 320,
+      "height": 140,
+      "color": "4"
+    },
+    {
+      "id": "s2",
+      "type": "text",
+      "text": "**Step 2** — `ccr_runtime_v2`\n\nLoads rules & guardrails\nMODE-B selected\nConstitution + CSO + ADR-SIMP-002\n\n✅ ACTUAL",
+      "x": -180,
+      "y": 0,
+      "width": 320,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "domain-context",
+      "type": "group",
+      "label": "🧠 CONTEXT",
+      "x": 240,
+      "y": -280,
+      "width": 360,
+      "height": 560,
+      "color": "5"
+    },
+    {
+      "id": "s3",
+      "type": "text",
+      "text": "**Step 3** — `context_compiler_v2`\n\nContext pack compiled\n3,840 tokens — CTX-TRACE-001\n4 sources loaded\n\n✅ ACTUAL",
+      "x": 260,
+      "y": -260,
+      "width": 320,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "s4",
+      "type": "text",
+      "text": "**Step 4** — `ccr_runtime_v2`\n\nWorker selected: **Ganesha**\nCEO / Governance / Strategy\n\n✅ ACTUAL",
+      "x": 260,
+      "y": -60,
+      "width": 320,
+      "height": 130,
+      "color": "4"
+    },
+    {
+      "id": "s5",
+      "type": "text",
+      "text": "**Step 5** — `provider_payload_builder_v1`\n\nProvider: **Anthropic**\nModel: **claude-opus-4**\n\n✅ ACTUAL",
+      "x": 260,
+      "y": 110,
+      "width": 320,
+      "height": 130,
+      "color": "4"
+    },
+    {
+      "id": "domain-execution",
+      "type": "group",
+      "label": "⚙️ EXECUTION",
+      "x": 680,
+      "y": -280,
+      "width": 360,
+      "height": 560,
+      "color": "5"
+    },
+    {
+      "id": "s6",
+      "type": "text",
+      "text": "**Step 6** — `live_worker_executor_v1`\n\nTools:\n• `context_cache_v1` → miss\n• `artifact_registry_v2` → found CSO-002\n\n✅ ACTUAL",
+      "x": 700,
+      "y": -260,
+      "width": 320,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "s7",
+      "type": "text",
+      "text": "**Step 7** — `live_worker_executor_v1`\n\nLLM call → Anthropic claude-opus-4\n4,452 tokens / 2,840ms\n\n✅ ACTUAL",
+      "x": 700,
+      "y": -60,
+      "width": 320,
+      "height": 130,
+      "color": "4"
+    },
+    {
+      "id": "s8",
+      "type": "text",
+      "text": "**Step 8** — `live_worker_executor_v1`\n\nGanesha output:\n*\"Archive 22 self-referential modules\"*\nConfidence: 0.91\n\n✅ ACTUAL",
+      "x": 700,
+      "y": 110,
+      "width": 320,
+      "height": 150,
+      "color": "4"
+    },
+    {
+      "id": "domain-review",
+      "type": "group",
+      "label": "🔍 REVIEW",
+      "x": 1120,
+      "y": -280,
+      "width": 360,
+      "height": 560,
+      "color": "5"
+    },
+    {
+      "id": "s9",
+      "type": "text",
+      "text": "**Step 9** — `output_validator_v1`\n\nValidation: **PASS**\nScore: 0.94\n\n✅ ACTUAL",
+      "x": 1140,
+      "y": -260,
+      "width": 320,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "s10",
+      "type": "text",
+      "text": "**Step 10** — `lakshmi_context_review_v1`\n\nGovernance: **APPROVED**\nRisk score: 8/100\nAll 5 Articles: PASS\n\n✅ ACTUAL",
+      "x": 1140,
+      "y": -100,
+      "width": 320,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "id": "s11",
+      "type": "text",
+      "text": "**Step 11** — `artifact_registry_v2`\n\nArtifact registered:\nARTIFACT-TRACE-001\nLineage → ARTIFACT-CSO-002\n\n✅ ACTUAL",
+      "x": 1140,
+      "y": 100,
+      "width": 320,
+      "height": 140,
+      "color": "4"
+    },
+    {
+      "id": "domain-memory",
+      "type": "group",
+      "label": "💾 MEMORY",
+      "x": 1560,
+      "y": -200,
+      "width": 360,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "s12",
+      "type": "text",
+      "text": "**Step 12** — `living_memory_pipeline_v1`\n\nGit push → y-os-doctrine\nNotion update\nObsidian wikilink\n\n🔶 SIMULATED",
+      "x": 1580,
+      "y": -180,
+      "width": 320,
+      "height": 180,
+      "color": "3"
+    },
+    {
+      "id": "s13",
+      "type": "text",
+      "text": "**Step 13** — `ccr_runtime_v2`\n\nFinal answer returned\n3,021ms total / $0.044\n\n✅ ACTUAL",
+      "x": 1580,
+      "y": 40,
+      "width": 320,
+      "height": 130,
+      "color": "4"
+    },
+    {
+      "id": "user-out",
+      "type": "text",
+      "text": "## 🧑 Yannick\n\n**Receives:**\nStructured recommendation\nfrom Ganesha (Anthropic)",
+      "x": 2000,
+      "y": 0,
+      "width": 280,
+      "height": 120,
+      "color": "1"
+    },
+    {
+      "id": "skipped-group",
+      "type": "group",
+      "label": "⛔ PLUGINS SKIPPED — Core-Only Mode",
+      "x": -200,
+      "y": 500,
+      "width": 1400,
+      "height": 160,
+      "color": "6"
+    },
+    {
+      "id": "skip1",
+      "type": "text",
+      "text": "⛔ **ODT**\nOrganizational Digital Twin",
+      "x": -180,
+      "y": 520,
+      "width": 280,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "skip2",
+      "type": "text",
+      "text": "⛔ **Strategic Intelligence**\nSRE, gap analysis, roadmap",
+      "x": 160,
+      "y": 520,
+      "width": 280,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "skip3",
+      "type": "text",
+      "text": "⛔ **Simulation / Time Machine**\nCounterfactual analysis",
+      "x": 500,
+      "y": 520,
+      "width": 280,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "skip4",
+      "type": "text",
+      "text": "⛔ **Advanced Observability**\nEIS, governance dashboard",
+      "x": 840,
+      "y": 520,
+      "width": 280,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "summary-box",
+      "type": "text",
+      "text": "## Trace Summary\n\n| Metric | Value |\n|---|---|\n| Total Latency | 3,021 ms |\n| Total Tokens | 4,452 |\n| Estimated Cost | $0.044 |\n| Core Modules Used | 10 |\n| Plugins Skipped | 4 |\n| Actual Steps | 11/13 |\n| Simulated Steps | 1/13 |",
+      "x": 2000,
+      "y": 200,
+      "width": 360,
+      "height": 300,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    { "id": "e-uj-s1", "fromNode": "user-in", "toNode": "s1", "fromSide": "right", "toSide": "left" },
+    { "id": "e-s1-s2", "fromNode": "s1", "toNode": "s2", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s2-s3", "fromNode": "s2", "toNode": "s3", "fromSide": "right", "toSide": "left" },
+    { "id": "e-s3-s4", "fromNode": "s3", "toNode": "s4", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s4-s5", "fromNode": "s4", "toNode": "s5", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s5-s6", "fromNode": "s5", "toNode": "s6", "fromSide": "right", "toSide": "left" },
+    { "id": "e-s6-s7", "fromNode": "s6", "toNode": "s7", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s7-s8", "fromNode": "s7", "toNode": "s8", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s8-s9", "fromNode": "s8", "toNode": "s9", "fromSide": "right", "toSide": "left" },
+    { "id": "e-s9-s10", "fromNode": "s9", "toNode": "s10", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s10-s11", "fromNode": "s10", "toNode": "s11", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s11-s12", "fromNode": "s11", "toNode": "s12", "fromSide": "right", "toSide": "left" },
+    { "id": "e-s12-s13", "fromNode": "s12", "toNode": "s13", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-s13-uj", "fromNode": "s13", "toNode": "user-out", "fromSide": "right", "toSide": "left" }
+  ]
+}

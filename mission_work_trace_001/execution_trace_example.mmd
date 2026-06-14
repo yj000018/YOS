@@ -1,0 +1,76 @@
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#1e293b', 'primaryTextColor': '#f8fafc', 'primaryBorderColor': '#334155', 'lineColor': '#64748b', 'secondaryColor': '#0f172a', 'tertiaryColor': '#1e293b'}}}%%
+flowchart TD
+
+    %% ─── ENTRY ───────────────────────────────────────────────────────────────
+    YJ["🧑 Yannick\n'Summarize the operational audit\nand tell me what to simplify.'"]
+
+    %% ─── DOMAIN: CAPTURE ─────────────────────────────────────────────────────
+    subgraph CAPTURE["📥 CAPTURE"]
+        S1["Step 1 — session_delta_engine_v1\nCaptures request\nIntent: architecture + governance\n✅ ACTUAL"]
+        S2["Step 2 — ccr_runtime_v2\nLoads rules & guardrails\nMODE-B selected\nConstitution + CSO + ADR-SIMP-002\n✅ ACTUAL"]
+    end
+
+    %% ─── DOMAIN: CONTEXT ─────────────────────────────────────────────────────
+    subgraph CONTEXT["🧠 CONTEXT"]
+        S3["Step 3 — context_compiler_v2\nContext pack compiled\n3,840 tokens — CTX-TRACE-001\n✅ ACTUAL"]
+        S4["Step 4 — ccr_runtime_v2\nWorker selected: Ganesha\nCEO / Governance / Strategy\n✅ ACTUAL"]
+        S5["Step 5 — provider_payload_builder_v1\nProvider: Anthropic\nModel: claude-opus-4\n✅ ACTUAL"]
+    end
+
+    %% ─── DOMAIN: EXECUTION ───────────────────────────────────────────────────
+    subgraph EXECUTION["⚙️ EXECUTION"]
+        S6["Step 6 — live_worker_executor_v1\nTools used:\n• context_cache_v1 (miss)\n• artifact_registry_v2 (found CSO-002)\n✅ ACTUAL"]
+        S7["Step 7 — live_worker_executor_v1\nLLM call → Anthropic claude-opus-4\n4,452 tokens / 2,840ms\n✅ ACTUAL"]
+        S8["Step 8 — live_worker_executor_v1\nWorker output produced\nGanesha: 'Archive 22 self-referential modules'\nConfidence: 0.91\n✅ ACTUAL"]
+    end
+
+    %% ─── DOMAIN: REVIEW ──────────────────────────────────────────────────────
+    subgraph REVIEW["🔍 REVIEW"]
+        S9["Step 9 — output_validator_v1\nValidation: PASS\nScore: 0.94\n✅ ACTUAL"]
+        S10["Step 10 — lakshmi_context_review_v1\nGovernance: APPROVED\nRisk score: 8/100\nAll 5 Articles: PASS\n✅ ACTUAL"]
+        S11["Step 11 — artifact_registry_v2\nArtifact registered\nARTIFACT-TRACE-001\n✅ ACTUAL"]
+    end
+
+    %% ─── DOMAIN: MEMORY ──────────────────────────────────────────────────────
+    subgraph MEMORY["💾 MEMORY"]
+        S12["Step 12 — living_memory_pipeline_v1\nGit push → y-os-doctrine\nNotion update\nObsidian wikilink\n🔶 SIMULATED"]
+    end
+
+    %% ─── RESPONSE ────────────────────────────────────────────────────────────
+    S13["Step 13 — ccr_runtime_v2\nFinal answer returned\n3,021ms total / $0.044\n✅ ACTUAL"]
+    YJ_OUT["🧑 Yannick\nReceives structured recommendation"]
+
+    %% ─── SKIPPED PLUGINS ─────────────────────────────────────────────────────
+    subgraph SKIPPED["⛔ PLUGINS SKIPPED — Core-Only Mode"]
+        P1["ODT — Organizational Digital Twin"]
+        P2["Strategic Intelligence\n(SRE, gap analysis, roadmap)"]
+        P3["Simulation / Time Machine"]
+        P4["Advanced Observability\n(EIS, governance dashboard)"]
+    end
+
+    %% ─── FLOW ────────────────────────────────────────────────────────────────
+    YJ --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+    S7 --> S8
+    S8 --> S9
+    S9 --> S10
+    S10 --> S11
+    S11 --> S12
+    S12 --> S13
+    S13 --> YJ_OUT
+
+    %% ─── STYLING ─────────────────────────────────────────────────────────────
+    classDef actual fill:#166534,stroke:#16a34a,color:#f0fdf4
+    classDef simulated fill:#92400e,stroke:#d97706,color:#fffbeb
+    classDef skipped fill:#1e1b4b,stroke:#4338ca,color:#e0e7ff
+    classDef user fill:#1e3a5f,stroke:#3b82f6,color:#dbeafe
+
+    class S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S13 actual
+    class S12 simulated
+    class P1,P2,P3,P4 skipped
+    class YJ,YJ_OUT user

@@ -1,0 +1,299 @@
+{
+  "trace_id": "TRACE-001-EXAMPLE",
+  "mission": "WORK-TRACE-001",
+  "created": "2026-06-14T00:00:00Z",
+  "description": "Visual execution trace of one real Y-OS request through the core loop",
+  "example_request": "Yannick asks: 'Summarize the Y-OS operational value audit and tell me what to simplify next.'",
+
+  "legend": {
+    "ACTUAL": "Action performed by a real module with real output",
+    "SIMULATED": "Action planned/modeled but not live-executed in this trace",
+    "SKIPPED": "Optional plugin not activated — Core-Only Mode enforced"
+  },
+
+  "core_loop_domain": "CAPTURE → MEMORY → CONTEXT → EXECUTION → REVIEW",
+
+  "steps": [
+    {
+      "step": 1,
+      "domain": "CAPTURE",
+      "label": "User request received",
+      "status": "ACTUAL",
+      "module": "session_delta_engine_v1",
+      "input": "Yannick: 'Summarize the Y-OS operational value audit and tell me what to simplify next.'",
+      "output": {
+        "session_id": "SESSION-2026-06-14",
+        "delta_type": "new_request",
+        "intent": "summarize + recommend",
+        "capability": "architecture",
+        "governance_risk": 10
+      },
+      "latency_ms": 12
+    },
+    {
+      "step": 2,
+      "domain": "CAPTURE",
+      "label": "Rules and guardrails loaded",
+      "status": "ACTUAL",
+      "module": "ccr_runtime_v2",
+      "input": "RoutingRequest(mission_id='WORK-TRACE-001', worker='Ganesha', capability='architecture', task_type='standard', governance_risk=10)",
+      "output": {
+        "mode_selected": "MODE-B",
+        "mode_description": "Standard context — recent delta + capability context",
+        "constitutional_scope": false,
+        "rules_loaded": [
+          "CONSTITUTION Article 1 — Simplicity",
+          "CONSTITUTION Article 3 — Artifact Primacy",
+          "CSO Rule — Core-Only Mode active",
+          "ADR-SIMP-002 — Architecture frozen"
+        ],
+        "token_budget": 8000
+      },
+      "latency_ms": 8
+    },
+    {
+      "step": 3,
+      "domain": "CONTEXT",
+      "label": "Context pack compiled",
+      "status": "ACTUAL",
+      "module": "context_compiler_v2",
+      "input": "mode=MODE-B, capability=architecture, token_budget=8000",
+      "output": {
+        "context_pack_id": "CTX-TRACE-001",
+        "sources_included": [
+          "mission_cso_002/CSO-002_Operational_Value_Audit.md",
+          "mission_simp_exec_002/YOS_HARD_CORE_v1.md",
+          "mission_cso_001/CHIEF_SIMPLICITY_OFFICER.md",
+          "CONSTITUTION/Y-OS_Constitution_v1.md"
+        ],
+        "token_count": 3840,
+        "cache_hit": false,
+        "context_freshness": "2026-06-14"
+      },
+      "latency_ms": 45
+    },
+    {
+      "step": 4,
+      "domain": "CONTEXT",
+      "label": "Worker selected",
+      "status": "ACTUAL",
+      "module": "ccr_runtime_v2",
+      "input": "capability=architecture, task_type=standard",
+      "output": {
+        "worker": "Ganesha",
+        "worker_role": "CEO / Governance / Strategic Recommendations",
+        "rationale": "Request is architectural + governance — Ganesha is the designated worker for strategy and simplification"
+      },
+      "latency_ms": 3
+    },
+    {
+      "step": 5,
+      "domain": "CONTEXT",
+      "label": "Provider and model selected",
+      "status": "ACTUAL",
+      "module": "provider_payload_builder_v1",
+      "input": "worker=Ganesha, token_budget=8000, context_pack_id=CTX-TRACE-001",
+      "output": {
+        "provider": "Anthropic",
+        "model": "claude-opus-4",
+        "rationale": "Ganesha → Anthropic by default routing (governance/architecture tasks)",
+        "provider_distribution_before": {
+          "openai": "42.9%",
+          "anthropic": "28.6%",
+          "gemini": "28.6%"
+        },
+        "payload_tokens": 4120
+      },
+      "latency_ms": 18
+    },
+    {
+      "step": 6,
+      "domain": "EXECUTION",
+      "label": "Tools used",
+      "status": "ACTUAL",
+      "module": "live_worker_executor_v1",
+      "input": "provider=Anthropic, model=claude-opus-4",
+      "output": {
+        "tools_invoked": [
+          "context_cache_v1 — checked for cached context pack (miss)",
+          "artifact_registry_v2 — checked for prior audit artifacts (found: ARTIFACT-CSO-002)"
+        ],
+        "tools_skipped": [
+          "event_bus_core_v1 — no active consumers in Core-Only Mode",
+          "kgc_v4_connectivity_engine — not needed for this request type"
+        ]
+      },
+      "latency_ms": 22
+    },
+    {
+      "step": 7,
+      "domain": "EXECUTION",
+      "label": "LLM call executed",
+      "status": "ACTUAL",
+      "module": "live_worker_executor_v1",
+      "input": {
+        "provider": "Anthropic",
+        "model": "claude-opus-4",
+        "system_prompt": "You are Ganesha — Y-OS CEO worker. Provide architectural recommendations based on the operational value audit.",
+        "context_pack_tokens": 3840,
+        "user_message": "Summarize the Y-OS operational value audit and tell me what to simplify next."
+      },
+      "output": {
+        "call_id": "CALL-TRACE-001",
+        "status": "success",
+        "response_tokens": 612,
+        "total_tokens": 4452,
+        "latency_ms": 2840
+      },
+      "latency_ms": 2840
+    },
+    {
+      "step": 8,
+      "domain": "EXECUTION",
+      "label": "Worker output produced",
+      "status": "ACTUAL",
+      "module": "live_worker_executor_v1",
+      "input": "CALL-TRACE-001 response",
+      "output": {
+        "worker_output_id": "OUT-TRACE-001",
+        "summary": "Y-OS operational density is 17% (7/41 modules do real work). 54% of modules are self-referential. Recommended simplification: archive the 22 self-referential modules to experimental/, use only the 7 operational + 12 supporting modules for the next 90 days. Measure by task completion rate, not by architecture score.",
+        "format": "structured_markdown",
+        "confidence": 0.91
+      },
+      "latency_ms": 15
+    },
+    {
+      "step": 9,
+      "domain": "EXECUTION",
+      "label": "Output validated",
+      "status": "ACTUAL",
+      "module": "output_validator_v1",
+      "input": "OUT-TRACE-001",
+      "output": {
+        "validation_status": "PASS",
+        "checks": {
+          "format_valid": true,
+          "no_hallucination_flags": true,
+          "constitutional_alignment": true,
+          "confidence_threshold_met": true
+        },
+        "validation_score": 0.94
+      },
+      "latency_ms": 28
+    },
+    {
+      "step": 10,
+      "domain": "REVIEW",
+      "label": "Lakshmi governance review",
+      "status": "ACTUAL",
+      "module": "lakshmi_context_review_v1",
+      "input": "OUT-TRACE-001, governance_risk=10",
+      "output": {
+        "lakshmi_status": "APPROVED",
+        "risk_score": 8,
+        "articles_checked": [
+          "Article 1 — Simplicity: PASS (output recommends simplification)",
+          "Article 2 — Artifact Primacy: PASS (output will be registered)",
+          "Article 3 — No Raw History: PASS (no raw session data in output)",
+          "Article 4 — Provider Diversity: PASS (Anthropic used, within quota)",
+          "Article 5 — Human Override: PASS (recommendation only, not auto-executed)"
+        ],
+        "flags": []
+      },
+      "latency_ms": 19
+    },
+    {
+      "step": 11,
+      "domain": "REVIEW",
+      "label": "Artifact registered",
+      "status": "ACTUAL",
+      "module": "artifact_registry_v2",
+      "input": "OUT-TRACE-001, CALL-TRACE-001, CTX-TRACE-001",
+      "output": {
+        "artifact_id": "ARTIFACT-TRACE-001",
+        "artifact_type": "governance_recommendation",
+        "lineage": {
+          "parent_artifact": "ARTIFACT-CSO-002",
+          "mission": "WORK-TRACE-001",
+          "session": "SESSION-2026-06-14"
+        },
+        "registered_at": "2026-06-14T00:00:00Z"
+      },
+      "latency_ms": 11
+    },
+    {
+      "step": 12,
+      "domain": "REVIEW",
+      "label": "Git / Notion / Obsidian update",
+      "status": "SIMULATED",
+      "module": "living_memory_pipeline_v1",
+      "note": "In production: artifact committed to y-os-doctrine, Notion page updated, Obsidian wikilink added. In this trace: simulated — no live external write performed.",
+      "output": {
+        "git_commit": "SIMULATED — would push ARTIFACT-TRACE-001 to y-os-doctrine",
+        "notion_update": "SIMULATED — would update Y-OS Memory page",
+        "obsidian_wikilink": "SIMULATED — would add [[ARTIFACT-TRACE-001]] to 00_Y-OS_Home.md"
+      },
+      "latency_ms": 0
+    },
+    {
+      "step": 13,
+      "domain": "CAPTURE",
+      "label": "Final answer returned to Yannick",
+      "status": "ACTUAL",
+      "module": "ccr_runtime_v2",
+      "input": "ARTIFACT-TRACE-001, Lakshmi APPROVED",
+      "output": {
+        "response_delivered": true,
+        "response_format": "structured_markdown",
+        "total_pipeline_latency_ms": 3021,
+        "tokens_used": 4452,
+        "estimated_cost_usd": 0.044
+      },
+      "latency_ms": 8
+    }
+  ],
+
+  "plugins_skipped": [
+    {
+      "plugin": "ODT — Organizational Digital Twin",
+      "reason": "Core-Only Mode — not activated"
+    },
+    {
+      "plugin": "Strategic Intelligence (SRE, gap analysis, roadmap)",
+      "reason": "Core-Only Mode — not activated"
+    },
+    {
+      "plugin": "Simulation / Time Machine",
+      "reason": "Core-Only Mode — not activated"
+    },
+    {
+      "plugin": "Advanced Observability (EIS, governance dashboard)",
+      "reason": "Core-Only Mode — not activated"
+    }
+  ],
+
+  "summary": {
+    "total_steps": 13,
+    "actual_steps": 11,
+    "simulated_steps": 1,
+    "skipped_plugins": 4,
+    "core_modules_used": [
+      "session_delta_engine_v1",
+      "ccr_runtime_v2",
+      "context_compiler_v2",
+      "provider_payload_builder_v1",
+      "live_worker_executor_v1",
+      "output_validator_v1",
+      "lakshmi_context_review_v1",
+      "artifact_registry_v2",
+      "context_cache_v1",
+      "living_memory_pipeline_v1"
+    ],
+    "core_modules_not_used": [
+      "provider_registry_v1 — not needed for single-provider call"
+    ],
+    "total_latency_ms": 3021,
+    "total_tokens": 4452,
+    "estimated_cost_usd": 0.044
+  }
+}

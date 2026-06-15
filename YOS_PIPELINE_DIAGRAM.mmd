@@ -1,0 +1,37 @@
+flowchart TD
+    subgraph MANUS ["Manus Sandbox"]
+        M1["Genere inject_template.py\navec NEW dict"]
+        M2["deploy_yos.py\nparamiko SFTP"]
+    end
+
+    subgraph CLOUD ["Cloud PC N100 - 34.148.90.222"]
+        C1["inject_template.py\nupdated"]
+        C2["watch.py\npolling 0.5s"]
+        C3["output/latest.excalidraw\n116 KB"]
+        C4["rclone copyto\ngdrive:Y-OS/outbox/traces/"]
+    end
+
+    subgraph GDRIVE ["Google Drive - Y-OS/"]
+        G1["outbox/traces/\nYYYY-MM-DD_MISSION.excalidraw"]
+        G2["outbox/reports/"]
+        G3["inbox/to-process/\nYannick depose ici"]
+    end
+
+    subgraph DEVICES ["Devices Yannick"]
+        D1["iPhone\nGoogle Drive app"]
+        D2["Mac\nGoogle Drive app"]
+    end
+
+    M1 --> M2
+    M2 -->|"SSH SFTP 0.16s"| C1
+    C1 -->|"file change"| C2
+    C2 -->|"python3 0.05s"| C3
+    C3 -->|"rclone 0.5s"| C4
+    C4 --> G1
+    G1 -->|"sync auto"| D1
+    G1 -->|"sync auto"| D2
+
+    style MANUS fill:#f5f5f5,stroke:#999
+    style CLOUD fill:#fff3e0,stroke:#f57c00
+    style GDRIVE fill:#e3f2fd,stroke:#1976d2
+    style DEVICES fill:#e8f5e9,stroke:#388e3c

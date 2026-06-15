@@ -50,8 +50,8 @@ AMB_BG  = "#fff8e1"
 AMB_STR = "#b87800"
 HAND_BG = "#fffde7"
 HAND_STR= "#b87800"
-METRICS_BG  = "#1e1e2e"
-METRICS_STR = "#ffffff"
+METRICS_BG  = "#f8f8f8"
+METRICS_STR = "#1e1e1e"
 ARCH_BG = "#e8f0fb"
 TEAM_BG = "#f3e8ff"
 VAL_BG  = "#fff8e1"
@@ -333,7 +333,9 @@ def build(schema_path, out_path):
     MET_W = 300
     MET_H = VIEWS_Y + VIEWS_H - TEAM_Y
     els.append(rect(MET_X, MET_Y, MET_W, MET_H, bg=METRICS_BG, stroke="#333333", sw=1.5, radius=8))
-    els.append(text_el(MET_X+10, MET_Y+10, MET_W-20, 24, "RUNTIME METRICS", fsize=14, bold=True, color=WHITE, align="center"))
+    # Header bar
+    els.append(rect(MET_X, MET_Y, MET_W, 36, bg="#333333", stroke="#333333", sw=0, radius=8))
+    els.append(text_el(MET_X+10, MET_Y+8, MET_W-20, 22, "RUNTIME METRICS", fsize=14, bold=True, color=WHITE, align="center"))
 
     met_items = [
         ("⏱", "Total Time",    metrics["total_time"]),
@@ -344,13 +346,13 @@ def build(schema_path, out_path):
         ("📦","Artifacts",     metrics["artifacts_created"].replace("\n", " / ")),
         ("✕", "Plugins Skipped", metrics["plugins_skipped"]),
     ]
-    my = MET_Y + 44
+    my = MET_Y + 46
     for icon, label, val in met_items:
-        els.append(text_el(MET_X+10, my, 20, 18, icon, fsize=13, color=AMB_STR))
-        els.append(text_el(MET_X+32, my, MET_W-42, 14, label, fsize=10, bold=True, color="#aaaaaa"))
-        my += 14
-        els.append(text_el(MET_X+32, my, MET_W-42, 20, val, fsize=11, color=WHITE))
-        my += 24
+        els.append(text_el(MET_X+10, my, 24, 18, icon, fsize=13, color=AMB_STR))
+        els.append(text_el(MET_X+36, my, MET_W-46, 14, label, fsize=10, bold=True, color="#888888"))
+        my += 15
+        els.append(text_el(MET_X+36, my, MET_W-46, 20, val, fsize=12, bold=True, color=DARK))
+        my += 26
 
     # ── WITHOUT vs WITH Y-OS ──────────────────────────────────────────────────
     COMP_Y = VIEWS_Y + VIEWS_H + 20

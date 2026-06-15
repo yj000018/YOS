@@ -25,18 +25,30 @@ Default format: png
 Available formats: png, svg, excalidraw, mermaid, all
 """
 import sys, json, uuid
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-from matplotlib.patches import FancyBboxPatch
 
-# ─── FONT ─────────────────────────────────────────────────────────────────────
-plt.rcParams.update({
-    "font.family": "DejaVu Sans",
-    "axes.spines.top": False, "axes.spines.right": False,
-    "axes.spines.left": False, "axes.spines.bottom": False,
-})
+# matplotlib is lazy-loaded only when --format png/svg/all is requested.
+# excalidraw and mermaid paths never import it.
+plt = None
+mpatches = None
+FancyBboxPatch = None
+
+def _load_matplotlib():
+    global plt, mpatches, FancyBboxPatch
+    if plt is not None:
+        return
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as _plt
+    import matplotlib.patches as _mp
+    from matplotlib.patches import FancyBboxPatch as _fbp
+    plt = _plt
+    mpatches = _mp
+    FancyBboxPatch = _fbp
+    plt.rcParams.update({
+        "font.family": "DejaVu Sans",
+        "axes.spines.top": False, "axes.spines.right": False,
+        "axes.spines.left": False, "axes.spines.bottom": False,
+    })
 
 # ─── PALETTE ──────────────────────────────────────────────────────────────────
 WHITE  = "#ffffff"; CREAM = "#fafaf8"; LIGHT = "#f5f5f0"
@@ -74,6 +86,7 @@ FIG_W, FIG_H = 38, 26
 DPI = 130
 
 def make_fig():
+    _load_matplotlib()
     fig, ax = plt.subplots(figsize=(FIG_W, FIG_H))
     ax.set_xlim(0, FIG_W); ax.set_ylim(0, FIG_H)
     ax.set_aspect("equal"); ax.axis("off")
@@ -115,6 +128,7 @@ def icon_circle(ax, cx, cy, r, color, symbol, sz=12):
 # MAIN RENDER
 # ══════════════════════════════════════════════════════════════════════════════
 def render(schema_path, out_base):
+    _load_matplotlib()
     with open(schema_path) as f:
         d = json.load(f)
 

@@ -43,7 +43,7 @@ This document consolidates:
 1. yOS may use growing session context for local continuity inside the same active coherent work thread.
 2. yOS does not treat long conversational memory as organizational truth.
 3. When context crosses boundaries between LLMs, tools, agents, sessions, missions, project phases, or authority levels, continuity must be carried by artifact-backed Context Packs.
-4. Fresh sessions with mission-specific Context Packs are required for handoff, recovery, governance-sensitive work, model switching, tool switching, major phase transitions, or drift recovery.
+4. Fresh or formally re-contextualized sessions with mission-specific Context Packs are required for handoff, recovery, governance-sensitive work, model switching, tool switching, major phase transitions, or drift recovery.
 5. Canonical Memory is injected only when required by risk, governance, architecture, full-project recovery, constitutional/canonical work, or explicit user request.
 6. Short Session Context may be used manually, parametrically, programmatically, by matrix default, or through proactive Manus suggestion for bounded multi-turn continuity.
 7. `previous_response_id` is an optional bounded session-continuity mechanism. It is useful for local multi-turn reasoning but must not become canonical memory.

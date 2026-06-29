@@ -58,8 +58,11 @@ Every output artifact produced from a Context Pack must reference:
 * Promoted unverified output is a `hard_stop`.
 
 ## 9. Constraint Acknowledgment Protocol (CAP) Enforcement
-As a rule of handoff validation, the receiving LLM must declaratively acknowledge the active constraints.
-* **If acknowledgment is missing or incomplete:** `enforcement_level = blocking`.
+As a rule of handoff validation:
+* LLM acknowledgment is declarative.
+* Runtime/script verification is authoritative when available.
+* Missing or incomplete acknowledgment at a governed handoff is `blocking`.
+* For gate-critical work, CAP failure may become `hard_stop` depending on matrix policy.
 
 ## 10. Integrity and Staleness Enforcement
 * **Checksum Verification:** The `pack_checksum` must be verified by the runtime or script. This verification is authoritative.

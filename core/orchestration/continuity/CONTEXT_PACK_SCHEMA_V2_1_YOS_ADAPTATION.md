@@ -66,10 +66,12 @@ Ensures the Context Pack is not silently truncated.
 *(Note: Checksum is verified by runtime/script; LLM acknowledgment is declarative only. Runtime verification is authoritative.)*
 
 ### 3.2 Constraint Acknowledgment Protocol (CAP)
-Validates handoff by ensuring the receiving LLM acknowledges constraints.
+Validates handoff continuity at governed boundaries.
 * `cap_required` (boolean)
 * `cap_min_constraints` (integer)
 * `cap_verified` (boolean/pending)
+
+*(Note: LLM acknowledgment is declarative. Runtime/script verification is authoritative when available. Missing or incomplete acknowledgment at a governed handoff is blocking. For gate-critical work, CAP failure may become hard_stop depending on matrix policy.)*
 
 ### 3.3 Staleness Detection
 Defines policies based on `task_class`.

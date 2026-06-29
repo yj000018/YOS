@@ -109,7 +109,7 @@ No duplicate canonical matrix found. No competing full routing matrix detected.
 
 ## 10. Commit Hash
 
-To be populated after commit.
+`5e7020c` — registry: normalize yOS routing matrix continuity fields
 
 ---
 

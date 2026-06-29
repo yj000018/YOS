@@ -226,7 +226,7 @@ Deferred: `rollback` and `diff` — Phase 2 only.
 
 > Note: Commit message says "12 scripts" — this is a documentation error corrected in this report. 13 scripts were committed. The commit itself is correct and complete.
 
-Reconciliation commit: TBD (this report + usage guide corrections)
+Reconciliation commit: `a9d15d3` — docs: reconcile yOS Continuity Core phase 1 closeout
 
 ---
 

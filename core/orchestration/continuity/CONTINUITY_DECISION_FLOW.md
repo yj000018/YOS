@@ -20,7 +20,7 @@ The following flow determines the appropriate continuity mechanism for a given t
    * **No:** Proceed to step 5.
 5. **Is the task a bounded, local continuation of the current thread?**
    * **Yes:** Local session continuity or `previous_response_id` may be used.
-   * **No:** Apply the default mode from the yOS LLM & Tool Routing Matrix.
+   * **No:** Apply the default mode from the yOS LLM & Tool Routing Matrix (`YOS/core/orchestration/registries/LLM_AND_TOOL_ROUTING_MATRIX.md`).
 
 ## 2. Proactive Manus Escalation
 

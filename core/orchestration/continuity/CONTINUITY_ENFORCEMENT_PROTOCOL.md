@@ -1,6 +1,6 @@
 # Continuity Enforcement Protocol
 
-This protocol defines the automatic enforcement rules for the yOS Continuity Core.
+This protocol defines the automatic enforcement rules for the yOS Continuity Core. Enforcement levels and escalation thresholds are governed by defaults defined in the canonical yOS LLM & Tool Routing Matrix (`YOS/core/orchestration/registries/LLM_AND_TOOL_ROUTING_MATRIX.md`).
 
 ## 1. Boundary Enforcement
 If work crosses an LLM, tool, agent, session, mission, or phase boundary, a Context Pack is **required**.

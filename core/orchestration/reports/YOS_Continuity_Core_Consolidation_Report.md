@@ -3,7 +3,7 @@
 **Date:** 2026-06-29
 **Execution Mode:** Manus Max / Architecture Consolidation Mode
 **Target Branch:** `phase-iii/yos-continuity-core-consolidation`
-**Status:** ACCEPTED WITH FIXES COMPLETED — READY FOR CHIEF ARCHITECT FINAL REVIEW
+**Status:** ACCEPTED AS CANONICAL yOS CORE MODULE
 
 ---
 
@@ -185,7 +185,7 @@ YOS/
 │       │   ├── CONTINUITY_ENFORCEMENT_PROTOCOL.md
 │       │   └── CONTINUITY_DECISION_FLOW.md
 │       ├── registries/
-│       │   └── (LLM_AND_TOOL_ROUTING_MATRIX.md — to be created)
+│       │   └─── LLM_AND_TOOL_ROUTING_MATRIX.md — canonical yOS routing registry, expected at this path; missing in current branch state
 │       └── reports/
 │           └── YOS_Continuity_Core_Consolidation_Report.md
 ```

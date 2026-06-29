@@ -88,7 +88,7 @@ The routing matrix is expected to exist in the main branch or a dedicated orches
 
 ## 7. Commit Hash
 
-To be populated after commit execution.
+`9ae22a1` — canon: approve yOS Continuity Core
 
 ---
 

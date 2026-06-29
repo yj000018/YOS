@@ -55,10 +55,10 @@ Established at `BOOK/_fcs/registries/LLM_MATRIX.md`. It contains no routing logi
 - No prose modified.
 
 ## 13. Commit Hash
-To be populated after commit.
+`a5efea9` — registry: restore yOS LLM and Tool Routing Matrix
 
 ## 14. Tag Created
-To be populated after commit.
+`phase-iii-yos-routing-matrix-restored`
 
 ## 15. Remaining Debt
 The Python script `yos-agents/manus/yos-skills/llm-router/router.py` currently hardcodes the matrix. Future implementation should refactor `router.py` to parse `LLM_AND_TOOL_ROUTING_MATRIX.md` dynamically to ensure a single source of truth.

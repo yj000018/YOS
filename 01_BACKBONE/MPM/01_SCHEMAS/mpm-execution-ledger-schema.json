@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/yj000018/kap-control-plane/02_MPMs/_runtime/mpm-execution-ledger-schema.json",
+  "title": "yOS MPM Execution Ledger Schema",
+  "description": "Schema for the yOS MPM inter-LLM execution ledger. JSON is the canonical source of truth. The MD ledger is a generated view — never edit the MD directly. Patch: YOS-MPM-NAMING-PATCH-2026-07-04.",
+  "version": "1.1.0",
+  "type": "object",
+  "required": ["ledger_version", "last_updated", "entries"],
+  "properties": {
+    "ledger_version": {
+      "type": "string",
+      "description": "Semantic version of the ledger format"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "mpm_id",
+          "title",
+          "mode",
+          "status",
+          "created_by",
+          "executor",
+          "created_at",
+          "mpm_path"
+        ],
+        "properties": {
+          "mpm_id": {
+            "type": "string",
+            "description": "Packet ID. Pattern: <PACKET_CODE>-YYYYMMDD-SLUG",
+            "pattern": "^(MP|MPM|MPC|MPX|MPG|MPP)-[0-9]{8}-[A-Z0-9_-]+$"
+          },
+          "packet_type": {
+            "type": "string",
+            "enum": ["MP", "MPM", "MPC", "MPX", "MPG", "MPP"],
+            "description": "Packet type code. MP=generic, MPM=Manus, MPC=Claude, MPX=ChatGPT, MPG=Gemini, MPP=Perplexity"
+          },
+          "target_llm": {
+            "type": "string",
+            "enum": ["Generic", "Manus", "Claude", "ChatGPT", "Gemini", "Perplexity"]
+          },
+          "title": { "type": "string" },
+          "mode": {
+            "type": "string",
+            "enum": ["sprint", "run", "marathon"]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "draft",
+              "ready_for_execution",
+              "running",
+              "blocked",
+              "executed_awaiting_guardian_review",
+              "guardian_accepted",
+              "guardian_rejected",
+              "superseded",
+              "archived"
+            ]
+          },
+          "created_by": { "type": "string" },
+          "executor": { "type": "string" },
+          "created_at": { "type": "string", "format": "date-time" },
+          "started_at": { "type": "string", "format": "date-time" },
+          "completed_at": { "type": "string", "format": "date-time" },
+          "mpm_path": { "type": "string" },
+          "report_path": { "type": "string" },
+          "execution_commit": { "type": "string" },
+          "control_plane_commit": { "type": "string" },
+          "next_gate": { "type": "string" },
+          "guardian_decision": {
+            "type": "string",
+            "enum": ["pending", "accepted", "rejected", "patched"]
+          },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

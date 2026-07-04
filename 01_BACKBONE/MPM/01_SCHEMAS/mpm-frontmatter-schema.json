@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/yj000018/kap-control-plane/02_MPMs/_runtime/mpm-frontmatter-schema.json",
+  "title": "yOS MPM Frontmatter Schema",
+  "description": "YAML frontmatter schema for every Mega Prompt in the yOS MPM — Mega Prompt Manager (Inter-LLM Prompt Runtime & Relay System). JSON is the source of truth; MD frontmatter must be consistent with this schema. Patch: MP-COMMAND-CANON-V2-2026-07-04.",
+  "version": "1.2.0",
+  "type": "object",
+  "required": [
+    "mpm_id",
+    "title",
+    "mode",
+    "status",
+    "created_by",
+    "created_at",
+    "executor",
+    "guardian_required"
+  ],
+  "properties": {
+    "mpm_id": {
+      "type": "string",
+      "description": "Unique packet identifier. Format: <PACKET_CODE>-YYYYMMDD-SLUG (e.g., MPM-20260704-RUNTIME-PACK, MPX-20260704-REVIEW)",
+      "pattern": "^(MP|MPM|MPC|MPX|MPG|MPP)-[0-9]{8}-[A-Z0-9_-]+$"
+    },
+    "packet_type": {
+      "type": "string",
+      "enum": ["MP", "MPM", "MPC", "MPX", "MPG", "MPP"],
+      "description": "Packet type code. MP=generic, MPM=Manus, MPC=Claude, MPX=ChatGPT, MPG=Gemini, MPP=Perplexity. MPA is deprecated."
+    },
+    "target_llm": {
+      "type": "string",
+      "enum": ["Generic", "Manus", "Claude", "ChatGPT", "Gemini", "Perplexity"],
+      "description": "Target LLM for this packet. Must be consistent with packet_type."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Human-readable title of the Mega Prompt"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["sprint", "run", "marathon"],
+      "description": "Execution mode. sprint=fast/bounded, run=controlled, marathon=long-running coordinator+workers"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "ready_for_execution",
+        "running",
+        "blocked",
+        "executed_awaiting_guardian_review",
+        "guardian_accepted",
+        "guardian_rejected",
+        "superseded",
+        "archived"
+      ],
+      "description": "Current lifecycle status of the packet"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "LLM or human that authored the packet (e.g., ChatGPT, Claude, Yannick)"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 creation timestamp"
+    },
+    "executor": {
+      "type": "string",
+      "description": "LLM or agent that will execute this packet (e.g., Manus, Claude)"
+    },
+    "guardian_required": {
+      "type": "boolean",
+      "description": "Whether Guardian Architect review is required before archiving"
+    },
+    "source_scope": {
+      "type": "string",
+      "description": "Which source corpora are in scope (e.g., kap-control-plane only, yos-cognitive-os, none)"
+    },
+    "forbidden_actions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Explicit list of forbidden actions for this packet"
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of expected output file paths"
+    },
+    "report_path": {
+      "type": "string",
+      "description": "Path to the gate/execution report produced by this packet"
+    },
+    "execution_commit": {
+      "type": "string",
+      "description": "Git commit hash in yos-cognitive-os after execution"
+    },
+    "control_plane_commit": {
+      "type": "string",
+      "description": "Git commit hash in kap-control-plane after execution"
+    },
+    "supersedes": {
+      "type": "string",
+      "description": "mpm_id of the packet this supersedes"
+    },
+    "superseded_by": {
+      "type": "string",
+      "description": "mpm_id of the packet that supersedes this one"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "guardian_decision": {
+      "type": "string",
+      "enum": ["pending", "accepted", "rejected", "patched"],
+      "default": "pending"
+    },
+    "next_gate": {
+      "type": "string",
+      "description": "Recommended next gate or packet after this one"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "source_mutation",
+          "github_push",
+          "gdrive_mutation",
+          "icloud_mutation",
+          "merge_execution",
+          "canonicalization_execution",
+          "destructive_deduplication",
+          "broad_scan",
+          "ludivine_content_access",
+          "notion_body_block_export",
+          "unclear_authorization",
+          "unclear_target"
+        ]
+      },
+      "description": "Risk flags for auto-run safety check (Canon v2). If any flag is present, Manus must not auto-run and must trigger the exception handler."
+    }
+  },
+  "additionalProperties": false
+}

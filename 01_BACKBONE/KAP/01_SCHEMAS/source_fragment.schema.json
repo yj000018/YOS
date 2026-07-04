@@ -1,0 +1,291 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/yj000018/yos-cognitive-os/02_Architecture/Synthesis/_schemas/source_fragment.schema.json",
+  "title": "SourceFragment",
+  "description": "Minimal traceable unit of source material in the YOS/KAP cognitive architecture. PATCHED: SOURCE-FRAGMENT-ID-NORMALIZATION-PATCH 2026-07-03. Schema version: 1.2",
+  "type": "object",
+  "required": [
+    "fragment_id",
+    "source_object_id",
+    "source_instance_id",
+    "source_channel_id",
+    "id_normalization_status",
+    "fragment_title",
+    "source_system",
+    "source_type",
+    "source_observed_at",
+    "captured_by",
+    "canonical_status",
+    "review_status",
+    "merge_status",
+    "supersession_status",
+    "sensitivity_level"
+  ],
+  "properties": {
+    "fragment_id": {
+      "type": "string",
+      "description": "Canonical L3 Source Fragment ID. Format: SF-<CHANNELCODE>-<INSTANCESEQ>-<OBJECTSEQ>-<FRAGMENTSEQ>. Legacy FRAG-YYYYMMDD-XXXX IDs must be preserved ONLY in legacy_fragment_ids — never as primary fragment_id.",
+      "pattern": "^SF-[A-Z]+-[0-9]+-[0-9]+-[0-9]+$"
+    },
+    "legacy_fragment_ids": {
+      "type": "array",
+      "description": "Preserved legacy / symbolic IDs (e.g., FRAG-20260703-CP01). Never delete these.",
+      "items": { "type": "string" }
+    },
+    "source_object_id": {
+      "type": "string",
+      "description": "L2 Source Object ID. Format: SO-<CHANNELCODE>-<INSTANCESEQ>-<OBJECTSEQ>",
+      "pattern": "^SO-[A-Z]+-[0-9]+-[0-9]+$"
+    },
+    "source_instance_id": {
+      "type": "string",
+      "description": "L1 Source Instance ID. Format: <CHANNELCODE>-<SEQ>",
+      "pattern": "^[A-Z]+-[0-9]+$"
+    },
+    "source_channel_id": {
+      "type": "string",
+      "description": "L0 Source Channel ID. Format: CH-<SEQ>",
+      "pattern": "^CH-[0-9]+$"
+    },
+    "id_normalization_status": {
+      "type": "string",
+      "description": "ID normalization status for this fragment.",
+      "enum": [
+        "canonical",
+        "legacy_alias_preserved",
+        "mapped_from_legacy",
+        "requires_review",
+        "pending_source_object"
+      ]
+    },
+    "fragment_title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200
+    },
+    "source_system": {
+      "type": "string",
+      "enum": [
+        "ChatGPT",
+        "Manus",
+        "Notion",
+        "Obsidian",
+        "Markdown",
+        "Git",
+        "Google_Drive",
+        "Mem0",
+        "Web",
+        "Uploaded_File",
+        "Manual_Note",
+        "Unknown"
+      ]
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "conversation",
+        "session_capture_pack",
+        "mpm",
+        "gate_report",
+        "architecture_doc",
+        "decision_log",
+        "registry",
+        "notion_page",
+        "notion_database",
+        "obsidian_note",
+        "markdown_file",
+        "git_file",
+        "git_commit",
+        "web_reference",
+        "memory_item",
+        "tool_output",
+        "report",
+        "unknown"
+      ]
+    },
+    "source_subtype": {
+      "type": "string",
+      "description": "Optional finer classification within source_type"
+    },
+    "source_path_or_url": {
+      "type": "string",
+      "description": "Path or URL in the origin system"
+    },
+    "source_repo": {
+      "type": "string",
+      "description": "GitHub repo (e.g., yj000018/KAP)"
+    },
+    "source_branch": {
+      "type": "string"
+    },
+    "source_commit": {
+      "type": "string",
+      "description": "Git commit hash (short or full)"
+    },
+    "source_created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Original creation timestamp in ISO 8601"
+    },
+    "source_modified_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_observed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When KAP first observed this fragment (required fallback if created_at unknown)"
+    },
+    "extracted_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "captured_by": {
+      "type": "string",
+      "description": "Agent or user who captured the fragment (e.g., Manus, User, ChatGPT)"
+    },
+    "capture_method": {
+      "type": "string",
+      "description": "Pipeline or tool used (e.g., manual, session_capture_pack, git_clone)"
+    },
+    "content_boundary": {
+      "type": "string",
+      "enum": ["full", "snippet", "metadata_only", "summary_only", "unknown"]
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 or MD5 hash of the content for deduplication"
+    },
+    "language": {
+      "type": "string",
+      "default": "en"
+    },
+    "project_scope": {
+      "type": "string",
+      "description": "Associated project or scope (e.g., KAP, YOUniverse, Elysium)"
+    },
+    "domain_tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Thematic tags (e.g., architecture, obsidian, decision)"
+    },
+    "candidate_thought_lines": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Thought Line IDs this fragment might belong to"
+    },
+    "candidate_claims": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidate_decisions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidate_impasses": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "maturity_hint": {
+      "type": "string",
+      "enum": [
+        "raw",
+        "rough_note",
+        "exploratory",
+        "proposal",
+        "validated_gate_output",
+        "implementation_evidence",
+        "active_doctrine",
+        "canonical_candidate",
+        "deprecated",
+        "unknown"
+      ]
+    },
+    "authority_hint": {
+      "type": "string",
+      "enum": [
+        "user_directive",
+        "guardian_architect_decision",
+        "manus_execution_report",
+        "git_commit_evidence",
+        "source_document",
+        "memory_hint",
+        "external_reference",
+        "unknown"
+      ]
+    },
+    "provenance_confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "sensitivity_level": {
+      "type": "string",
+      "enum": [
+        "public",
+        "internal",
+        "private",
+        "sensitive",
+        "secret_reference_only",
+        "unknown"
+      ]
+    },
+    "canonical_status": {
+      "type": "string",
+      "enum": [
+        "not_canonical",
+        "candidate_evidence",
+        "active_control_plane",
+        "historical_source",
+        "implementation_evidence",
+        "superseded_source",
+        "requires_review"
+      ]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "unreviewed",
+        "metadata_reviewed",
+        "content_reviewed",
+        "approved_for_claim_extraction",
+        "approved_for_decision_threading",
+        "rejected",
+        "needs_human_review"
+      ]
+    },
+    "merge_status": {
+      "type": "string",
+      "enum": [
+        "not_merged",
+        "staged",
+        "linked_to_claim",
+        "linked_to_thought_line",
+        "linked_to_decision_thread",
+        "linked_to_impasse",
+        "merged_into_synthesis",
+        "merge_blocked"
+      ]
+    },
+    "supersession_status": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "active",
+        "historical",
+        "superseded",
+        "supersedes_other",
+        "contradicted",
+        "needs_supersession_review"
+      ]
+    },
+    "related_fragments": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Array of related fragment_ids"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

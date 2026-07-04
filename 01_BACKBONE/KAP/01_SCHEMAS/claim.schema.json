@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/yj000018/yos-cognitive-os/02_Architecture/Synthesis/_schemas/claim.schema.json",
+  "title": "Claim",
+  "description": "An atomic, reviewable statement derived from one or more Source Fragments in the YOS/KAP cognitive architecture.",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "claim_text",
+    "claim_type",
+    "claim_scope",
+    "source_fragment_ids",
+    "created_at",
+    "canonical_status",
+    "review_status",
+    "truth_status",
+    "contradiction_status",
+    "supersession_status"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CLAIM-[0-9]{8}-[A-Z0-9]{4}$"
+    },
+    "claim_text": {
+      "type": "string",
+      "minLength": 10
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "definition", "assertion", "recommendation", "constraint", "risk", 
+        "architecture_principle", "workflow_rule", "tooling_observation", 
+        "implementation_fact", "decision_candidate", "open_question", 
+        "impasse_candidate", "supersession_candidate", "unknown"
+      ]
+    },
+    "claim_scope": {
+      "type": "string"
+    },
+    "claim_language": {
+      "type": "string",
+      "default": "en"
+    },
+    "source_fragment_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 0
+    },
+    "source_systems": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "first_seen_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_seen_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "extraction_method": {
+      "type": "string"
+    },
+    "claim_boundary": {
+      "type": "string"
+    },
+    "supporting_fragment_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contradicting_fragment_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "parent_claim_id": {
+      "type": "string"
+    },
+    "child_claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidate_thought_line_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidate_decision_thread_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "candidate_impasse_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "confidence_level": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "confidence_rationale": {
+      "type": "string"
+    },
+    "authority_hint": {
+      "type": "string",
+      "enum": [
+        "user_directive", "guardian_architect_decision", "manus_execution_report", 
+        "git_commit_evidence", "source_document", "implementation_evidence", 
+        "memory_hint", "external_reference", "unknown"
+      ]
+    },
+    "maturity_hint": {
+      "type": "string",
+      "enum": [
+        "raw", "rough_note", "exploratory", "proposal", "validated_gate_output", 
+        "implementation_evidence", "active_doctrine", "canonical_candidate", 
+        "deprecated", "unknown"
+      ]
+    },
+    "canonical_status": {
+      "type": "string",
+      "enum": [
+        "not_canonical", "candidate_evidence", "active_control_plane", 
+        "historical_source", "implementation_evidence", "superseded_source", 
+        "requires_review"
+      ]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "unreviewed", "metadata_reviewed", "content_reviewed", 
+        "approved_for_thought_line_linking", "approved_for_decision_threading", 
+        "approved_for_synthesis_consideration", "rejected", "needs_human_review", "blocked"
+      ]
+    },
+    "truth_status": {
+      "type": "string",
+      "enum": [
+        "unverified", "supported", "contested", "contradicted", 
+        "validated", "rejected", "obsolete", "unknown"
+      ]
+    },
+    "contradiction_status": {
+      "type": "string",
+      "enum": [
+        "none_known", "has_supporting_fragments", "has_contradicting_fragments", 
+        "internally_inconsistent", "contested_by_later_source", "contested_by_decision", 
+        "contested_by_implementation", "needs_contradiction_review"
+      ]
+    },
+    "supersession_status": {
+      "type": "string",
+      "enum": [
+        "unknown", "active", "historical", "superseded", "supersedes_other", 
+        "partially_superseded", "needs_supersession_review"
+      ]
+    },
+    "merge_status": {
+      "type": "string",
+      "enum": [
+        "not_merged", "linked_to_source_fragment", "linked_to_thought_line", 
+        "linked_to_decision_thread", "linked_to_impasse", "eligible_for_synthesis", 
+        "merged_into_synthesis", "merge_blocked"
+      ]
+    },
+    "sensitivity_level": {
+      "type": "string",
+      "enum": [
+        "public", "internal", "private", "sensitive", "secret_reference_only", "unknown"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

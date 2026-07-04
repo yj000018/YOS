@@ -1,0 +1,236 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/yj000018/yos-cognitive-os/02_Architecture/Synthesis/_schemas/thought_line.schema.json",
+  "title": "ThoughtLine",
+  "description": "An evolving, reviewable thematic thread in the YOS/KAP cognitive architecture.",
+  "type": "object",
+  "required": [
+    "thought_line_id",
+    "title",
+    "thought_line_type",
+    "domain",
+    "status",
+    "canonical_status",
+    "review_status",
+    "current_best_status",
+    "synthesis_allowed",
+    "created_at"
+  ],
+  "properties": {
+    "thought_line_id": {
+      "type": "string",
+      "pattern": "^TL-[0-9]{8}-[A-Z0-9]{4}$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 5
+    },
+    "short_title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "thought_line_type": {
+      "type": "string",
+      "enum": [
+        "architecture", "doctrine", "workflow", "source_strategy", "tooling",
+        "pipeline", "agent_system", "memory_system", "automation", "project",
+        "ontology", "symbolic_system", "civilizational_project", "personal_system",
+        "research_thread", "open_question_cluster", "unknown"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "YOS", "KAP", "KOSMOS", "CasaTAO", "ELYSIUM", "YOUniverse",
+        "Obsidian", "Notion", "Manus", "ChatGPT", "Git", "Automation",
+        "Memory", "Agents", "Source_Acquisition", "Synthesis", "Unknown"
+      ]
+    },
+    "scope": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "candidate", "seeded", "active", "under_review", "merged",
+        "split", "superseded", "deprecated", "archived", "requires_review"
+      ]
+    },
+    "maturity_level": {
+      "type": "string",
+      "enum": [
+        "seed", "exploratory", "emerging_pattern", "candidate_architecture",
+        "validated_architecture", "active_doctrine", "implementation_supported",
+        "canonical_candidate", "canonical", "deprecated", "unknown"
+      ]
+    },
+    "canonical_status": {
+      "type": "string",
+      "enum": [
+        "not_canonical", "candidate_evidence", "active_control_plane",
+        "historical_source", "implementation_evidence", "superseded_source",
+        "requires_review"
+      ]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "unreviewed", "metadata_reviewed", "content_reviewed",
+        "claim_links_reviewed", "decision_links_reviewed",
+        "approved_for_decision_threading", "approved_for_synthesis_consideration",
+        "needs_human_review", "blocked"
+      ]
+    },
+    "source_fragment_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "decision_thread_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "impasse_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related_thought_line_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "parent_thought_line_id": {
+      "type": "string"
+    },
+    "child_thought_line_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "first_seen_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_seen_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "origin_source_fragment_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "origin_claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "active_claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "contested_claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "superseded_claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "open_question_claim_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "current_best_synthesis_id": {
+      "type": "string"
+    },
+    "current_best_status": {
+      "type": "string",
+      "enum": [
+        "not_allowed_yet", "not_started", "draft_candidate",
+        "review_required", "validated", "superseded", "blocked"
+      ]
+    },
+    "synthesis_allowed": {
+      "type": "string",
+      "enum": ["false", "requires_current_best_gate", "true_after_gate"],
+      "default": "false"
+    },
+    "confidence_level": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "authority_hint": {
+      "type": "string",
+      "enum": [
+        "user_directive", "guardian_architect_decision", "manus_execution_report",
+        "git_commit_evidence", "source_document", "implementation_evidence",
+        "memory_hint", "external_reference", "unknown"
+      ]
+    },
+    "maturity_hint": {
+      "type": "string"
+    },
+    "contradiction_status": {
+      "type": "string",
+      "enum": [
+        "none_known", "contains_contested_claims", "contains_contradicting_claims",
+        "contains_superseded_claims", "contains_unreviewed_claims",
+        "needs_contradiction_review"
+      ]
+    },
+    "supersession_status": {
+      "type": "string",
+      "enum": [
+        "unknown", "active", "historical", "partially_superseded",
+        "superseded", "supersedes_other", "needs_supersession_review"
+      ]
+    },
+    "merge_status": {
+      "type": "string",
+      "enum": [
+        "not_merged", "candidate_for_merge", "merged_into_parent",
+        "split_into_children", "merge_blocked", "requires_review"
+      ]
+    },
+    "sensitivity_level": {
+      "type": "string",
+      "enum": [
+        "public", "internal", "private", "sensitive",
+        "secret_reference_only", "unknown"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "human_summary": {
+      "type": "string"
+    },
+    "agent_summary": {
+      "type": "string"
+    },
+    "review_notes": {
+      "type": "string"
+    },
+    "next_review_gate": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

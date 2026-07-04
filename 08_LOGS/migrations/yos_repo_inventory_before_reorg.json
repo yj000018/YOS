@@ -1,0 +1,213 @@
+{
+  "schema": "yos-repo-inventory-v1.0",
+  "generated_at": "2026-07-05T00:00:00Z",
+  "repo": "yj000018/YOS",
+  "branch_inspected": "main",
+  "working_branch": "yos-monorepo-canonical-reorganization",
+  "total_files": 940,
+  "inventory": [
+    {
+      "path": "README.md",
+      "type": "file",
+      "classification": "meta",
+      "canonical_target": "README.md",
+      "migration_decision": "keep_in_place",
+      "notes": "Root README — update to reflect new topology"
+    },
+    {
+      "path": "archive/",
+      "type": "folder",
+      "classification": "archive",
+      "file_count": 1,
+      "canonical_target": "99_ARCHIVE/legacy/",
+      "migration_decision": "copy_then_defer",
+      "notes": "Contains only .gitkeep — empty archive folder"
+    },
+    {
+      "path": "plugins/",
+      "type": "folder",
+      "classification": "interface",
+      "file_count": 19,
+      "canonical_target": "04_INTERFACES/obsidian/",
+      "migration_decision": "copy",
+      "notes": "Contains yos-reader Obsidian plugin — belongs in interfaces/obsidian"
+    },
+    {
+      "path": "plugins/yos-reader/",
+      "type": "folder",
+      "classification": "interface",
+      "file_count": 19,
+      "canonical_target": "04_INTERFACES/obsidian/yos-reader/",
+      "migration_decision": "copy",
+      "notes": "Obsidian plugin — TypeScript, compiled JS, artifacts"
+    },
+    {
+      "path": "yos-agents/",
+      "type": "folder",
+      "classification": "agent",
+      "file_count": 173,
+      "canonical_target": "02_AGENTS/",
+      "migration_decision": "copy",
+      "notes": "Contains manus/ (skills, enhancer, client) and routing/"
+    },
+    {
+      "path": "yos-agents/manus/",
+      "type": "folder",
+      "classification": "agent",
+      "canonical_target": "02_AGENTS/manus/",
+      "migration_decision": "copy",
+      "notes": "Manus skills (30+), enhancer, client"
+    },
+    {
+      "path": "yos-agents/routing/",
+      "type": "folder",
+      "classification": "backbone",
+      "canonical_target": "01_BACKBONE/ROUTING/",
+      "migration_decision": "copy",
+      "notes": "Routing rules — belongs in backbone"
+    },
+    {
+      "path": "yos-apps/",
+      "type": "folder",
+      "classification": "app_product",
+      "file_count": 191,
+      "canonical_target": "06_APPS_PRODUCTS/",
+      "migration_decision": "copy",
+      "notes": "Contains y-family (daylog, y-menu), prototypes (youniverse, daylog-mvp, etc.), y-travel"
+    },
+    {
+      "path": "yos-automations/",
+      "type": "folder",
+      "classification": "automation",
+      "file_count": 70,
+      "canonical_target": "03_AUTOMATIONS/",
+      "migration_decision": "copy",
+      "notes": "n8n workflows, scripts, playbooks"
+    },
+    {
+      "path": "yos-governance/",
+      "type": "folder",
+      "classification": "backbone",
+      "file_count": 19,
+      "canonical_target": "01_BACKBONE/GOVERNANCE/",
+      "migration_decision": "copy",
+      "notes": "ADRs, policy-manifest.json, schemas, standards — backbone governance layer"
+    },
+    {
+      "path": "yos-governance/Decisions/",
+      "type": "folder",
+      "classification": "backbone",
+      "canonical_target": "01_BACKBONE/GOVERNANCE/Decisions/",
+      "migration_decision": "copy",
+      "notes": "5 ADRs: Git, Obsidian, Local-First, Monorepo, Agent roles"
+    },
+    {
+      "path": "yos-governance/Manifest/",
+      "type": "folder",
+      "classification": "backbone",
+      "canonical_target": "01_BACKBONE/GOVERNANCE/Manifest/",
+      "migration_decision": "copy",
+      "notes": "policy-manifest.json — canonical agent roles, routing mode"
+    },
+    {
+      "path": "yos-governance/yos-governance/",
+      "type": "folder",
+      "classification": "backbone",
+      "canonical_target": "01_BACKBONE/GOVERNANCE/",
+      "migration_decision": "merge_into_parent",
+      "notes": "Nested duplicate folder — merge into parent"
+    },
+    {
+      "path": "yos-governance/yos-project/",
+      "type": "folder",
+      "classification": "backbone",
+      "canonical_target": "01_BACKBONE/GOVERNANCE/yos-project/",
+      "migration_decision": "copy",
+      "notes": "Project docs: acceptance criteria, architecture notes, build context, MVP scope"
+    },
+    {
+      "path": "yos-related/",
+      "type": "folder",
+      "classification": "legacy",
+      "file_count": 186,
+      "canonical_target": "99_ARCHIVE/legacy/ or 06_APPS_PRODUCTS/prototypes/",
+      "migration_decision": "split",
+      "notes": "experiments/ → 06_APPS_PRODUCTS/prototypes/ or 99_ARCHIVE; legacy/ → 99_ARCHIVE/legacy/; undecided/ → defer"
+    },
+    {
+      "path": "yos-related/experiments/",
+      "type": "folder",
+      "classification": "app_product",
+      "canonical_target": "06_APPS_PRODUCTS/prototypes/",
+      "migration_decision": "copy",
+      "notes": "casa-tao-nest, eia-awakening-petal, future-news-project, pulse-app, relevance-ai-workforce, remotion-project"
+    },
+    {
+      "path": "yos-related/legacy/",
+      "type": "folder",
+      "classification": "archive",
+      "canonical_target": "99_ARCHIVE/legacy/",
+      "migration_decision": "defer",
+      "notes": "Empty — defer"
+    },
+    {
+      "path": "yos-related/undecided/",
+      "type": "folder",
+      "classification": "unknown",
+      "canonical_target": "defer",
+      "migration_decision": "defer",
+      "notes": "Y-Browser-Admin, YMap — unclear classification"
+    },
+    {
+      "path": "yos-vault/",
+      "type": "folder",
+      "classification": "knowledge_domain",
+      "file_count": 281,
+      "canonical_target": "05_KNOWLEDGE_DOMAINS/Y-WORLD/",
+      "migration_decision": "copy",
+      "notes": "Full Y-WORLD Obsidian vault (289 MD files). Also candidate for 07_SOURCE_CORPUS pointer."
+    },
+    {
+      "path": "yos-vault/knowledge/Y-WORLD/",
+      "type": "folder",
+      "classification": "knowledge_domain",
+      "canonical_target": "05_KNOWLEDGE_DOMAINS/Y-WORLD/",
+      "migration_decision": "copy",
+      "notes": "234 MD files — canonical superset of Y-WORLD knowledge"
+    }
+  ],
+  "new_modules_to_create": [
+    {
+      "path": "01_BACKBONE/MPM/",
+      "source": "kap-control-plane/02_MPMs/_runtime/",
+      "action": "copy_universal_runtime",
+      "notes": "MPM backbone module — copy universal assets from kap-control-plane"
+    },
+    {
+      "path": "01_BACKBONE/KAP/",
+      "source": "yos-cognitive-os/",
+      "action": "scaffold",
+      "notes": "KAP backbone module — scaffold structure, copy key schemas/protocols"
+    },
+    {
+      "path": "00_META/",
+      "action": "create",
+      "notes": "Constitution, module registry, repo map, source of truth, migration index"
+    },
+    {
+      "path": "07_SOURCE_CORPUS/",
+      "action": "create",
+      "notes": "Quarantine, inventories, fingerprints, imports, source-maps"
+    },
+    {
+      "path": "08_LOGS/",
+      "action": "create",
+      "notes": "Execution, decisions, agent-runs, mpm-reports, kap-runs, migrations, errors"
+    },
+    {
+      "path": "99_ARCHIVE/",
+      "action": "create",
+      "notes": "Legacy, superseded, quarantined"
+    }
+  ]
+}

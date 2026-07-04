@@ -70,3 +70,15 @@ Example:
 yos-cognitive-os: MPM-20260704-RUNTIME-PACK — Runtime pack files created
 kap-control-plane: MPM-20260704-RUNTIME-PACK — Ledger and schemas committed
 ```
+
+---
+
+## MPR Canonical Path
+
+After execution, the target LLM writes the canonical Mega Prompt Report (MPR) to:
+```
+01_BACKBONE/MPM/06_REPORTS/awaiting-review/
+```
+The source LLM retrieves the MPR from that canonical path for review.
+See: `00_PROTOCOLS/mpr-report-placement-protocol.md`
+

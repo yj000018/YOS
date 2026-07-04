@@ -187,3 +187,15 @@ Use `MP queue` to inspect queue/status.
 **Deletion rule:** Never automatic. Require explicit confirmation. Move to `superseded/`. Log in `08_LOGS/`.
 
 > **Canonical summary:** `MP` is auto-run by default, not menu-first. Menus are exception handlers, not the normal path.
+
+---
+
+## MPR Canonical Path
+
+After execution, the target LLM writes the canonical Mega Prompt Report (MPR) to:
+```
+01_BACKBONE/MPM/06_REPORTS/awaiting-review/
+```
+The source LLM retrieves the MPR from that canonical path for review.
+See: `00_PROTOCOLS/mpr-report-placement-protocol.md`
+

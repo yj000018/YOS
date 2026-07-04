@@ -131,3 +131,15 @@ Manus will:
 3. Add a `draft` entry to the ledger JSON.
 4. Regenerate the MD ledger view.
 5. Commit.
+
+---
+
+## MPR Canonical Path
+
+After execution, the target LLM writes the canonical Mega Prompt Report (MPR) to:
+```
+01_BACKBONE/MPM/06_REPORTS/awaiting-review/
+```
+The source LLM retrieves the MPR from that canonical path for review.
+See: `00_PROTOCOLS/mpr-report-placement-protocol.md`
+

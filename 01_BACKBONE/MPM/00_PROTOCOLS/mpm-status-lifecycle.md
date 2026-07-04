@@ -71,3 +71,15 @@ Can be triggered at any stage if a newer MPM explicitly supersedes this one.
 - Status transitions must always be reflected in `inter_llm_execution_ledger.json` **first**.
 - The MD ledger view is regenerated from JSON — never edited directly.
 - File location must match the status (e.g., `running` MPMs live in `02_MPMs/running/`).
+
+---
+
+## MPR Canonical Path
+
+After execution, the target LLM writes the canonical Mega Prompt Report (MPR) to:
+```
+01_BACKBONE/MPM/06_REPORTS/awaiting-review/
+```
+The source LLM retrieves the MPR from that canonical path for review.
+See: `00_PROTOCOLS/mpr-report-placement-protocol.md`
+

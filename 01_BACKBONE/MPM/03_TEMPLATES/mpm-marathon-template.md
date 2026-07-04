@@ -18,7 +18,9 @@ expected_outputs:
   - "<Lane B output path>"
   - "06_REPORTS/<MARATHON-NAME>-BATCH-REPORT.md"
   - "06_Reports/Gates/KAP-MORNING-LAUNCHPAD-AFTER-<MARATHON-NAME>.md"
-report_path: "06_REPORTS/<MARATHON-NAME>-BATCH-REPORT.md"
+expected_mpr_path: "01_BACKBONE/MPM/06_REPORTS/awaiting-review/<MP_ID>-REPORT.md"
+log_pointer_path: "08_LOGS/<category>/<MP_ID>-REPORT-POINTER.md"
+report_path: "01_BACKBONE/MPM/06_REPORTS/awaiting-review/<MP_ID>-REPORT.md"
 execution_commit: null
 control_plane_commit: null
 guardian_decision: pending

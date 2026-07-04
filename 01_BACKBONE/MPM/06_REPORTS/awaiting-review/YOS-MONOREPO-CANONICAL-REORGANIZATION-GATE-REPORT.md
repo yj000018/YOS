@@ -1,10 +1,16 @@
 # YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE — Execution Report
 
-> **Status:** `executed_awaiting_architect_guardian_review`
+> **report_id:** YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT
+> **report_type:** MPR
+> **mpm_id:** YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE
+> **status:** awaiting_architect_guardian_review
+> **canonical_mpr_path:** 01_BACKBONE/MPM/06_REPORTS/awaiting-review/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT.md
+> **log_pointer_path:** 08_LOGS/migrations/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT-POINTER.md
+> **source_report_path:** 08_LOGS/migrations/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT.md
+> **branch:** yos-monorepo-canonical-reorganization
+> **commit:** TBD — updated after MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH commit
 > **Mode:** MPM marathon — Coordinator + 8 Worker Tasks
-> **Branch:** `yos-monorepo-canonical-reorganization`
 > **Repo:** `yj000018/YOS` (public)
-> **Commit:** 967935a (placement patch: TBD)
 > **Date:** 2026-07-05
 
 ---

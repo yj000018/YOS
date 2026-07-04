@@ -1,12 +1,15 @@
-# Report Pointer — YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE
+# MPR Pointer — YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT
 
-> This file is a pointer only. The canonical MPM execution report lives at:
+> This file is a **log pointer only**. It is not the canonical MPR.
 
+**Canonical MPR:**
 ```
 01_BACKBONE/MPM/06_REPORTS/awaiting-review/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT.md
 ```
 
-The copy in `08_LOGS/migrations/` is a migration log reference. The canonical source of truth for MPM execution reports is always under `01_BACKBONE/MPM/06_REPORTS/`.
+**report_id:** YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT
+**report_type:** MPR
+**status:** awaiting_architect_guardian_review
+**branch:** yos-monorepo-canonical-reorganization
 
-**Commit:** 967935a (placement patch)
-**Branch:** `yos-monorepo-canonical-reorganization`
+> Per `mpr-report-placement-protocol.md`: canonical MPRs live under `01_BACKBONE/MPM/06_REPORTS/`. `08_LOGS/` contains log entries and pointers only.

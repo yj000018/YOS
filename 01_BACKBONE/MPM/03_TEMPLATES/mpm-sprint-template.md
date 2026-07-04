@@ -12,7 +12,9 @@ forbidden_actions:
   - no source mutation
 expected_outputs:
   - "06_REPORTS/<OUTPUT-FILE>.md"
-report_path: "06_REPORTS/<OUTPUT-FILE>.md"
+expected_mpr_path: "01_BACKBONE/MPM/06_REPORTS/awaiting-review/<MP_ID>-REPORT.md"
+log_pointer_path: "08_LOGS/<category>/<MP_ID>-REPORT-POINTER.md"
+report_path: "01_BACKBONE/MPM/06_REPORTS/awaiting-review/<MP_ID>-REPORT.md"
 guardian_decision: pending
 ---
 

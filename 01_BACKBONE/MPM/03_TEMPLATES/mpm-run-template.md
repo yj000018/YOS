@@ -16,7 +16,9 @@ expected_outputs:
   - "<path/to/output1.md>"
   - "<path/to/output2.json>"
   - "06_REPORTS/<GATE-NAME>-GATE-REPORT.md"
-report_path: "06_REPORTS/<GATE-NAME>-GATE-REPORT.md"
+expected_mpr_path: "01_BACKBONE/MPM/06_REPORTS/awaiting-review/<MP_ID>-REPORT.md"
+log_pointer_path: "08_LOGS/<category>/<MP_ID>-REPORT-POINTER.md"
+report_path: "01_BACKBONE/MPM/06_REPORTS/awaiting-review/<MP_ID>-REPORT.md"
 execution_commit: null
 control_plane_commit: null
 guardian_decision: pending

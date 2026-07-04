@@ -8,8 +8,8 @@
 
 | Report ID | MPM ID | Status | Branch | Commit | Review |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT | YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE | `awaiting_architect_guardian_review` | yos-monorepo-canonical-reorganization | TBD | pending |
-| YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH-REPORT | YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH | `awaiting_architect_guardian_review` | yos-monorepo-canonical-reorganization | TBD | pending |
+| YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT | YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE | `awaiting_architect_guardian_review` | yos-monorepo-canonical-reorganization | `833b939` | pending |
+| YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH-REPORT | YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH | `awaiting_architect_guardian_review` | yos-monorepo-canonical-reorganization | `833b939` | pending |
 
 ---
 

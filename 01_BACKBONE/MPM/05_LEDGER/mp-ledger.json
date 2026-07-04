@@ -1,6 +1,6 @@
 {
   "$schema": "yos-mpm-ledger-schema-v1.0.0",
-  "system": "yOS MPM — Mega Prompt Manager",
+  "system": "yOS MPM \u2014 Mega Prompt Manager",
   "version": "1.0.0",
   "last_updated": "2026-07-05T00:00:00Z",
   "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
@@ -16,7 +16,7 @@
       "target_llm": "Manus",
       "source_llm": "ChatGPT / MPX",
       "branch": "yos-monorepo-canonical-reorganization",
-      "commit": "TBD — updated after MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH commit",
+      "commit": "833b939",
       "created_at": "2026-07-05T00:00:00Z",
       "executed_at": "2026-07-05T00:00:00Z",
       "notes": "Marathon: Coordinator + 8 Workers. 134 files created. No deletion. No main modification."
@@ -32,7 +32,7 @@
       "target_llm": "Manus",
       "source_llm": "ChatGPT / MPX",
       "branch": "yos-monorepo-canonical-reorganization",
-      "commit": "TBD — updated after this patch commit",
+      "commit": "833b939",
       "created_at": "2026-07-05T00:00:00Z",
       "executed_at": "2026-07-05T00:00:00Z",
       "notes": "Patches A-G: report placement, protocol docs, templates, ledger, indexes."

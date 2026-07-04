@@ -8,8 +8,8 @@
 
 | MP ID | Code | Mode | Status | Target LLM | Branch | Commit |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE | MPM | marathon | `awaiting_architect_guardian_review` | Manus | yos-monorepo-canonical-reorganization | TBD |
-| YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH | MPM | run | `awaiting_architect_guardian_review` | Manus | yos-monorepo-canonical-reorganization | TBD |
+| YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE | MPM | marathon | `awaiting_architect_guardian_review` | Manus | yos-monorepo-canonical-reorganization | `833b939` |
+| YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH | MPM | run | `awaiting_architect_guardian_review` | Manus | yos-monorepo-canonical-reorganization | `833b939` |
 
 ---
 

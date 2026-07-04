@@ -1,6 +1,6 @@
 {
   "$schema": "yos-mpr-index-schema-v1.0.0",
-  "system": "yOS MPM — Mega Prompt Manager",
+  "system": "yOS MPM \u2014 Mega Prompt Manager",
   "version": "1.0.0",
   "last_updated": "2026-07-05T00:00:00Z",
   "description": "Canonical index of all MPRs. JSON is source of truth. MPR-INDEX.md is a generated view.",
@@ -12,7 +12,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/migrations/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT-POINTER.md",
       "branch": "yos-monorepo-canonical-reorganization",
-      "commit": "TBD — updated after MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH commit",
+      "commit": "833b939",
       "created_at": "2026-07-05T00:00:00Z",
       "review_status": "pending"
     },
@@ -23,7 +23,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH-REPORT-POINTER.md",
       "branch": "yos-monorepo-canonical-reorganization",
-      "commit": "TBD — updated after this patch commit",
+      "commit": "833b939",
       "created_at": "2026-07-05T00:00:00Z",
       "review_status": "pending"
     }

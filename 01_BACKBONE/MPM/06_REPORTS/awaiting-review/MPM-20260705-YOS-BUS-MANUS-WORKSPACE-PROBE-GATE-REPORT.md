@@ -7,7 +7,7 @@ status: executed_awaiting_architect_guardian_review
 executor: Manus
 source_llm: ChatGPT / A&G
 branch: main
-commit: pending_patch
+commit: f67a834
 executed_at: "2026-07-05T15:30:00Z"
 canonical_mpr_path: 01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE-REPORT.md
 log_pointer_path: 08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE-REPORT-POINTER.md
@@ -21,7 +21,7 @@ log_pointer_path: 08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE
 STATUS:                              EXECUTED_AWAITING_A_G_REVIEW
 MODE:                                run
 BRANCH:                              main
-COMMIT:                              pending_patch
+COMMIT:                              f67a834
 MANUS_WORKSPACE_FS_AVAILABLE:        yes
 MANUS_WORKSPACE_PATH:                /home/ubuntu/yos-bus-runtime
 SAME_SESSION_READ_WRITE:             yes

@@ -1,20 +1,17 @@
 {
   "$schema": "yos-bus-latest-event-v1.0.0",
-  "event_id": "BUS-20260705-MANUS-API-CAPABILITY-VERIFICATION",
-  "event_type": "api_capability_verification",
+  "event_id": "BUS-20260705-YARP-CONSTITUTION",
+  "event_type": "protocol_constitution",
   "domain": "mpm",
   "status": "executed",
-  "mp_id": "MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE",
-  "capabilities_verified": 9,
-  "proven": ["task_create", "send_message", "file_upload", "task_attachment", "conversation_continuation", "auth_model", "structured_output"],
-  "supported": ["webhooks"],
-  "unsupported_direct_supported_indirect": ["workspace_write", "workspace_read"],
-  "critical_blockers": ["BL-01 (no direct workspace write)", "BL-02 (no direct workspace read)"],
-  "recommended_pattern": "Async Task Relay Pattern",
-  "best_auth": "x-manus-api-key",
-  "artifacts": [
-    "01_BACKBONE/BUS/06_INDEXES/manus-api-capability-matrix.json",
-    "01_BACKBONE/BUS/06_INDEXES/manus-api-capability-matrix.md"
-  ],
-  "updated_at": "2026-07-05T17:00:00Z"
+  "mp_id": "MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE",
+  "yarp_module_created": true,
+  "yarp_placement": "01_BACKBONE/YARP/",
+  "yarp_maturity": "candidate",
+  "files_created": 17,
+  "schemas_created": 7,
+  "spec_files_created": 9,
+  "message_types_defined": 13,
+  "transport_adapters_mapped": 8,
+  "updated_at": "2026-07-05T18:00:00Z"
 }

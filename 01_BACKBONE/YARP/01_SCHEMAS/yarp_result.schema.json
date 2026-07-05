@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "yarp_result.schema.json",
+  "title": "YARP RESULT Payload",
+  "description": "Canonical result shape for YARP RESULT message — returned by executor after MP execution.",
+  "type": "object",
+  "required": ["correlation_id", "mp_id", "task_id", "status", "commit", "mpr_path", "artifacts", "validation", "errors"],
+  "additionalProperties": false,
+  "properties": {
+    "correlation_id": {
+      "type": "string",
+      "description": "Correlation ID of the EXECUTE_MP",
+      "pattern": "^YARP-CORR-[0-9a-f-]{36}$"
+    },
+    "mp_id": {
+      "type": "string",
+      "description": "MP identifier",
+      "pattern": "^MPM-[0-9]{8}-[A-Z0-9-]+$"
+    },
+    "task_id": {
+      "type": "string",
+      "description": "Manus API task ID or BUS claim ID"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["completed", "failed", "partial", "blocked"],
+      "description": "Execution result status"
+    },
+    "commit": {
+      "type": "string",
+      "description": "Git commit hash of the execution result",
+      "pattern": "^[0-9a-f]{7,40}$"
+    },
+    "mpr_path": {
+      "type": "string",
+      "description": "Path to MPR in repo",
+      "example": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-...-REPORT.md"
+    },
+    "artifacts": {
+      "type": "array",
+      "description": "Array of artifact pointers produced by execution",
+      "items": {
+        "$ref": "yarp_artifact_pointer.schema.json"
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": ["bus", "mpm"],
+      "additionalProperties": false,
+      "properties": {
+        "bus": {
+          "type": "string",
+          "enum": ["PASS", "PASS_WITH_WARNINGS", "FAIL", "SKIPPED"]
+        },
+        "mpm": {
+          "type": "string",
+          "enum": ["PASS", "PASS_WITH_WARNINGS", "FAIL", "SKIPPED"]
+        }
+      }
+    },
+    "errors": {
+      "type": "array",
+      "description": "Array of error objects (empty if success)",
+      "items": {
+        "$ref": "yarp_error.schema.json"
+      }
+    },
+    "structured_output": {
+      "type": ["object", "null"],
+      "description": "JSON result if structured_output_schema was set in EXECUTE_MP"
+    },
+    "executed_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "duration_seconds": {
+      "type": ["integer", "null"],
+      "minimum": 0
+    }
+  }
+}

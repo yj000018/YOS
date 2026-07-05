@@ -316,6 +316,28 @@
       "commit": "adc5211",
       "executed_at": "2026-07-05T17:00:00Z",
       "notes": "Sprint: 9 capabilities verified. Proven: task_create, sendMessage, file_upload, attachment, conversation_continuation, auth, structured_output. Supported: webhooks. Unsupported direct: workspace_write, workspace_read. Recommended: Async Task Relay Pattern."
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE",
+      "title": "YOS Agent Relay Protocol Constitution Gate",
+      "packet_code": "MPM",
+      "mode": "marathon",
+      "status": "running",
+      "created_by": "ChatGPT / A&G",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executor": "Manus",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "guardian_required": true,
+      "risk_flags": [],
+      "auto_run_eligible": true,
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE-REPORT-POINTER.md",
+      "branch": "main",
+      "commit": "pending_patch",
+      "executed_at": "2026-07-05T18:00:00Z",
+      "notes": "Marathon: YARP v1.0.0-candidate created. 17 files: 9 spec + 7 schemas + 1 README. Placement: 01_BACKBONE/YARP/. 13 message types, 8 transport adapters, 5-layer architecture, Phase 0-4 migration plan. Maturity: candidate."
     }
   ]
 }

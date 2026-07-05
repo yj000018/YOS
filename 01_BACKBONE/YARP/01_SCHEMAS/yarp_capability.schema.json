@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "yarp_capability.schema.json",
+  "title": "YARP Capability Response Payload",
+  "description": "Payload for CAPABILITY_RESPONSE message — declares an agent's capabilities.",
+  "type": "object",
+  "required": ["query_id", "agent_id", "yarp_version", "supported_message_types", "supported_transports", "supported_artifact_types"],
+  "additionalProperties": false,
+  "properties": {
+    "query_id": {
+      "type": "string",
+      "description": "Echo of CAPABILITY_QUERY.query_id"
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Responding agent identifier",
+      "example": "agent-manus-executor"
+    },
+    "yarp_version": {
+      "type": "string",
+      "description": "Supported YARP version",
+      "pattern": "^[0-9]+\\.[0-9]+$"
+    },
+    "supported_message_types": {
+      "type": "array",
+      "description": "Message types this agent can handle",
+      "items": {
+        "type": "string",
+        "enum": ["PING", "HEARTBEAT", "CANCEL", "FINALIZE", "CAPABILITY_QUERY", "CAPABILITY_RESPONSE", "EXECUTE_MP", "ACK", "NACK", "PROGRESS", "REQUEST_INFO", "RESULT", "ERROR"]
+      },
+      "minItems": 1
+    },
+    "supported_transports": {
+      "type": "array",
+      "description": "Transport adapter IDs this agent supports",
+      "items": {"type": "string"},
+      "example": ["manus-api-task-relay", "direct-file-bus", "git-bus-fallback"]
+    },
+    "supported_artifact_types": {
+      "type": "array",
+      "description": "Artifact types this agent can produce or consume",
+      "items": {
+        "type": "string",
+        "enum": ["mp", "mpr", "context_pack", "oca", "kap_pack", "markdown_file", "json_payload", "blob", "url_pointer", "bus_packet", "schema_file"]
+      }
+    },
+    "agent_profile": {
+      "type": ["string", "null"],
+      "description": "Agent model/profile identifier",
+      "example": "manus-1.6"
+    },
+    "max_mp_mode": {
+      "type": ["string", "null"],
+      "enum": ["sprint", "run", "marathon", null],
+      "description": "Maximum MP mode this agent can execute"
+    },
+    "rate_limits": {
+      "type": ["object", "null"],
+      "description": "Known rate limits",
+      "properties": {
+        "execute_mp_per_minute": {"type": ["integer", "null"]},
+        "execute_mp_per_day": {"type": ["integer", "null"]}
+      }
+    }
+  }
+}

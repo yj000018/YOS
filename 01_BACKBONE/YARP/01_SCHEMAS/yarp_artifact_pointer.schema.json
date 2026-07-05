@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "yarp_artifact_pointer.schema.json",
+  "title": "YARP Artifact Pointer",
+  "description": "Pointer to a YARP artifact — used in RESULT.artifacts and EXECUTE_MP artifact references.",
+  "type": "object",
+  "required": ["artifact_id", "artifact_type", "created_at", "created_by"],
+  "additionalProperties": false,
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "description": "Unique artifact identifier",
+      "pattern": "^YARP-ART-[0-9a-f-]{36}$"
+    },
+    "artifact_type": {
+      "type": "string",
+      "description": "Artifact type",
+      "enum": ["mp", "mpr", "context_pack", "oca", "kap_pack", "markdown_file", "json_payload", "blob", "url_pointer", "bus_packet", "schema_file"]
+    },
+    "title": {
+      "type": ["string", "null"],
+      "description": "Human-readable artifact title"
+    },
+    "path": {
+      "type": ["string", "null"],
+      "description": "Relative path in yOS monorepo",
+      "example": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-...-REPORT.md"
+    },
+    "url": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Public URL (CDN, GitHub raw, etc.)"
+    },
+    "file_id": {
+      "type": ["string", "null"],
+      "description": "Manus API file_id (for file.upload artifacts)"
+    },
+    "size_bytes": {
+      "type": ["integer", "null"],
+      "minimum": 0
+    },
+    "checksum_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Agent ID that created this artifact",
+      "example": "agent-manus-executor"
+    }
+  }
+}

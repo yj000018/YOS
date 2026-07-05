@@ -4,16 +4,15 @@
 
 | Field | Value |
 |---|---|
-| Event ID | BUS-20260705-MANUS-API-CAPABILITY-VERIFICATION |
-| Event Type | api_capability_verification |
+| Event ID | BUS-20260705-YARP-CONSTITUTION |
+| Event Type | protocol_constitution |
 | Domain | mpm |
 | Status | executed |
-| MP ID | MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE |
-| Capabilities Verified | 9 |
-| Proven | task_create, send_message, file_upload, task_attachment, conversation_continuation, auth_model, structured_output |
-| Supported | webhooks |
-| Unsupported Direct / Supported Indirect | workspace_write, workspace_read |
-| Critical Blockers | BL-01 (no direct workspace write), BL-02 (no direct workspace read) |
-| Recommended Pattern | Async Task Relay Pattern |
-| Best Auth | x-manus-api-key |
-| Updated At | 2026-07-05T17:00:00Z |
+| MP ID | MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE |
+| YARP Module Created | yes |
+| YARP Placement | `01_BACKBONE/YARP/` |
+| YARP Maturity | candidate |
+| Files Created | 17 (9 spec + 7 schemas + 1 README) |
+| Message Types Defined | 13 |
+| Transport Adapters Mapped | 8 |
+| Updated At | 2026-07-05T18:00:00Z |

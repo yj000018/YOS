@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "yarp_message.schema.json",
+  "title": "YARP EXECUTE_MP Message Payload",
+  "description": "Payload for EXECUTE_MP message type — instructs executor to run a Mega Prompt.",
+  "type": "object",
+  "required": ["mp_id", "mp_content", "mp_mode", "correlation_id"],
+  "additionalProperties": false,
+  "properties": {
+    "mp_id": {
+      "type": "string",
+      "description": "Canonical MP identifier",
+      "pattern": "^MPM-[0-9]{8}-[A-Z0-9-]+$",
+      "example": "MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE"
+    },
+    "mp_content": {
+      "type": "string",
+      "description": "Full MP content as string, or artifact pointer path"
+    },
+    "mp_mode": {
+      "type": "string",
+      "enum": ["sprint", "run", "marathon"],
+      "description": "MP execution mode"
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Correlation ID for this execution",
+      "pattern": "^YARP-CORR-[0-9a-f-]{36}$"
+    },
+    "requested_executor": {
+      "type": ["string", "null"],
+      "description": "Target agent ID",
+      "example": "agent-manus-executor"
+    },
+    "structured_output_schema": {
+      "type": ["object", "null"],
+      "description": "JSON Schema for structured RESULT output"
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "normal", "high"],
+      "default": "normal"
+    },
+    "deadline_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "ISO8601 deadline for execution"
+    },
+    "mp_artifact_pointer": {
+      "type": ["object", "null"],
+      "description": "Artifact pointer if mp_content is a reference",
+      "properties": {
+        "artifact_id": {"type": "string"},
+        "path": {"type": ["string", "null"]},
+        "url": {"type": ["string", "null"]},
+        "file_id": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "yarp_envelope.schema.json",
+  "title": "YARP Envelope",
+  "description": "Universal wrapper for all YARP messages. Every YARP message is wrapped in a YARP envelope.",
+  "type": "object",
+  "required": ["yarp_version", "envelope_id", "message_type", "correlation_id", "sender_id", "receiver_id", "sent_at", "attempt_id", "attempt_number", "payload"],
+  "additionalProperties": false,
+  "properties": {
+    "yarp_version": {
+      "type": "string",
+      "description": "YARP protocol version (semver MAJOR.MINOR)",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "example": "1.0"
+    },
+    "envelope_id": {
+      "type": "string",
+      "description": "Unique envelope identifier",
+      "pattern": "^YARP-ENV-[0-9a-f-]{36}$"
+    },
+    "message_type": {
+      "type": "string",
+      "description": "YARP message type",
+      "enum": ["PING", "HEARTBEAT", "CANCEL", "FINALIZE", "CAPABILITY_QUERY", "CAPABILITY_RESPONSE", "EXECUTE_MP", "ACK", "NACK", "PROGRESS", "REQUEST_INFO", "RESULT", "ERROR"]
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Links EXECUTE_MP → ACK → RESULT. UUID4 format.",
+      "pattern": "^YARP-CORR-[0-9a-f-]{36}$"
+    },
+    "conversation_id": {
+      "type": ["string", "null"],
+      "description": "Groups all messages in a session",
+      "pattern": "^YARP-CONV-[0-9a-f-]{36}$"
+    },
+    "sender_id": {
+      "type": "string",
+      "description": "Sending agent identifier",
+      "example": "agent-chatgpt-ag"
+    },
+    "receiver_id": {
+      "type": "string",
+      "description": "Receiving agent identifier",
+      "example": "agent-manus-executor"
+    },
+    "sent_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO8601 timestamp when message was sent"
+    },
+    "attempt_id": {
+      "type": "string",
+      "description": "Unique per retry attempt",
+      "pattern": "^YARP-ATT-[0-9a-f-]{36}-[0-9]{3}$"
+    },
+    "attempt_number": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Attempt number (1 = first attempt)"
+    },
+    "ttl_seconds": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "Message time-to-live in seconds"
+    },
+    "transport_id": {
+      "type": ["string", "null"],
+      "description": "Transport adapter used for delivery",
+      "example": "manus-api-task-relay"
+    },
+    "payload": {
+      "type": "object",
+      "description": "Message-type-specific payload"
+    }
+  }
+}

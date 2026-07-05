@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "yarp_error.schema.json",
+  "title": "YARP Error Object",
+  "description": "Error object used in YARP ERROR messages and RESULT.errors array.",
+  "type": "object",
+  "required": ["error_code", "error_message", "recoverable", "retry_eligible"],
+  "additionalProperties": false,
+  "properties": {
+    "error_code": {
+      "type": "string",
+      "description": "YARP error code from error catalogue",
+      "pattern": "^YARP-E[0-9]{3}$",
+      "example": "YARP-E403"
+    },
+    "error_name": {
+      "type": ["string", "null"],
+      "description": "Human-readable error name",
+      "example": "EXECUTION_TIMEOUT"
+    },
+    "error_message": {
+      "type": "string",
+      "description": "Human-readable error description"
+    },
+    "recoverable": {
+      "type": "boolean",
+      "description": "Whether the error is recoverable"
+    },
+    "retry_eligible": {
+      "type": "boolean",
+      "description": "Whether the operation can be retried"
+    },
+    "retry_after_seconds": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Suggested retry delay in seconds"
+    },
+    "context": {
+      "type": ["object", "null"],
+      "description": "Additional error context",
+      "properties": {
+        "correlation_id": {"type": ["string", "null"]},
+        "mp_id": {"type": ["string", "null"]},
+        "task_id": {"type": ["string", "null"]},
+        "phase": {"type": ["string", "null"]},
+        "transport_id": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

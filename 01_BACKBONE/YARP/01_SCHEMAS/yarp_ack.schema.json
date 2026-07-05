@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "yarp_ack.schema.json",
+  "title": "YARP ACK Payload",
+  "description": "Payload for ACK and NACK message types.",
+  "type": "object",
+  "required": ["ack_for_message_id", "ack_for_type", "accepted"],
+  "additionalProperties": false,
+  "properties": {
+    "ack_for_message_id": {
+      "type": "string",
+      "description": "envelope_id of the acknowledged message"
+    },
+    "ack_for_type": {
+      "type": "string",
+      "description": "Message type being acknowledged",
+      "enum": ["PING", "HEARTBEAT", "CANCEL", "FINALIZE", "CAPABILITY_QUERY", "CAPABILITY_RESPONSE", "EXECUTE_MP", "ACK", "NACK", "PROGRESS", "REQUEST_INFO", "RESULT", "ERROR"]
+    },
+    "accepted": {
+      "type": "boolean",
+      "description": "Whether the message was accepted"
+    },
+    "task_id": {
+      "type": ["string", "null"],
+      "description": "Assigned task ID (for EXECUTE_MP ACK)"
+    },
+    "reason": {
+      "type": ["string", "null"],
+      "description": "If accepted=false, reason for rejection"
+    },
+    "error_code": {
+      "type": ["string", "null"],
+      "description": "YARP error code if accepted=false",
+      "pattern": "^YARP-E[0-9]{3}$"
+    },
+    "retry_eligible": {
+      "type": ["boolean", "null"],
+      "description": "Whether sender can retry (for NACK)"
+    },
+    "retry_after_seconds": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Suggested retry delay in seconds"
+    }
+  }
+}

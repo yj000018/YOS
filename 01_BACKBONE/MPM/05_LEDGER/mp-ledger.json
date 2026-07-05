@@ -247,7 +247,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-REPORT-POINTER.md",
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "8244928",
       "executed_at": "2026-07-05T14:30:00Z",
       "notes": "Marathon: implement BUS first-mile (write/ingest) and last-mile (latest-report/report-pointer) integration layer. bus.py v1.1.0. 15 new files. 3 patched. Both selftests pass."
     }

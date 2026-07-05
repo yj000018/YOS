@@ -7,7 +7,7 @@ status: executed_awaiting_architect_guardian_review
 executor: Manus
 source_llm: ChatGPT / A&G
 branch: main
-commit: pending_patch
+commit: 8244928
 executed_at: "2026-07-05T14:30:00Z"
 canonical_mpr_path: 01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-REPORT.md
 log_pointer_path: 08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-REPORT-POINTER.md
@@ -21,7 +21,7 @@ log_pointer_path: 08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEG
 STATUS:                           EXECUTED_AWAITING_A_G_REVIEW
 MODE:                             marathon
 BRANCH:                           main
-COMMIT:                           pending_patch
+COMMIT:                           8244928
 FIRST_MILE_PROTOCOL_CREATED:      yes
 LAST_MILE_PROTOCOL_CREATED:       yes
 ENTRY_BACKEND_REGISTRY_CREATED:   yes

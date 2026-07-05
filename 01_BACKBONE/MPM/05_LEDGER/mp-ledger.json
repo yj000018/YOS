@@ -123,7 +123,7 @@
       "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH.md",
       "expected_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT-POINTER.md",
-      "commit": "TBD",
+      "commit": "eacd89b",
       "guardian_required": true
     }
   ]

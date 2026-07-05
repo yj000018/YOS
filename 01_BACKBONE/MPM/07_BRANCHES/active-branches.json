@@ -1,0 +1,33 @@
+{
+  "$schema": "yos-mpm-branch-runtime-registry-v1.0.0",
+  "system": "yOS MPM — Mega Prompt Manager",
+  "version": "1.0.0",
+  "last_updated": "2026-07-05T00:00:00Z",
+  "description": "Canonical branch runtime registry. JSON is source of truth. active-branches.md is a generated view.",
+  "canonical_repo": "yj000018/YOS",
+  "default_runtime_branch": "main",
+  "runtime_path": "01_BACKBONE/MPM/",
+  "queue_path": "01_BACKBONE/MPM/04_QUEUE/",
+  "ledger_path": "01_BACKBONE/MPM/05_LEDGER/mp-ledger.json",
+  "reports_path": "01_BACKBONE/MPM/06_REPORTS/",
+  "legacy_bootstrap_repo": {
+    "repo": "yj000018/kap-control-plane",
+    "status": "legacy_bootstrap_only",
+    "default_runtime": false,
+    "notes": "Bootstrap repo used before YOS monorepo topology was established. Never use as default runtime. Inspect only as fallback if YOS runtime is inaccessible."
+  },
+  "test_branches": [
+    {
+      "branch": "yos-monorepo-canonical-reorganization",
+      "status": "staging_validated_pending_merge",
+      "runtime_path": "01_BACKBONE/MPM/",
+      "queue_path": "01_BACKBONE/MPM/04_QUEUE/",
+      "ledger_path": "01_BACKBONE/MPM/05_LEDGER/mp-ledger.json",
+      "allowed_commands": [
+        "MP branch=yos-monorepo-canonical-reorganization",
+        "MP queue branch=yos-monorepo-canonical-reorganization"
+      ],
+      "notes": "Canonical reorganization branch. Contains MPM runtime, KAP backbone, governance. Pending A&G review before merge to main."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/yj000018/yos-cognitive-os/02_Architecture/Synthesis/_schemas/contradiction_supersession.schema.json",
+  "title": "ContradictionSupersessionRelation",
+  "description": "A relationship record defining a contradiction or supersession between two YOS/KAP objects.",
+  "type": "object",
+  "required": [
+    "relation_id",
+    "relation_type",
+    "source_object_id",
+    "source_object_type",
+    "target_object_id",
+    "target_object_type",
+    "created_at",
+    "resolution_status"
+  ],
+  "properties": {
+    "relation_id": {
+      "type": "string",
+      "pattern": "^REL-[0-9]{8}-[A-Z0-9]{4}$"
+    },
+    "relation_type": {
+      "type": "string",
+      "enum": ["contradiction", "supersession"]
+    },
+    "source_object_id": { "type": "string" },
+    "source_object_type": {
+      "type": "string",
+      "enum": ["source_fragment", "claim", "thought_line", "decision_thread", "unknown"]
+    },
+    "target_object_id": { "type": "string" },
+    "target_object_type": {
+      "type": "string",
+      "enum": ["source_fragment", "claim", "thought_line", "decision_thread", "unknown"]
+    },
+    "contradiction_type": {
+      "type": "string",
+      "enum": [
+        "none", "direct_conflict", "partial_conflict", "scope_conflict",
+        "temporal_conflict", "terminology_conflict", "implementation_conflict",
+        "authority_conflict", "evidence_conflict", "decision_conflict", "unknown"
+      ]
+    },
+    "contradiction_status": {
+      "type": "string",
+      "enum": [
+        "none_known", "suspected", "confirmed", "contested", "resolved",
+        "partially_resolved", "needs_review", "not_applicable", "unknown"
+      ]
+    },
+    "supersession_type": {
+      "type": "string",
+      "enum": [
+        "none", "full_supersession", "partial_supersession", "reversal",
+        "deprecation", "implementation_supersession", "gate_supersession",
+        "guardian_supersession", "human_directive_supersession",
+        "historical_retention", "unknown"
+      ]
+    },
+    "supersession_status": {
+      "type": "string",
+      "enum": [
+        "not_superseded", "suspected_superseded", "superseded",
+        "partially_superseded", "supersedes_other", "partially_supersedes_other",
+        "deprecated", "reversed", "historical_only", "needs_review", "unknown"
+      ]
+    },
+    "current_validity_effect": {
+      "type": "string",
+      "enum": [
+        "active", "active_with_conditions", "candidate", "historical_context",
+        "superseded", "partially_superseded", "deprecated", "rejected",
+        "contested", "uncertain", "requires_review", "not_applicable"
+      ]
+    },
+    "evidence_fragment_ids": { "type": "array", "items": { "type": "string" } },
+    "evidence_claim_ids": { "type": "array", "items": { "type": "string" } },
+    "evidence_decision_thread_ids": { "type": "array", "items": { "type": "string" } },
+    "created_at": { "type": "string", "format": "date-time" },
+    "created_by": { "type": "string" },
+    "review_requirement": {
+      "type": "string",
+      "enum": [
+        "none", "metadata_review", "content_review", "evidence_review",
+        "authority_review", "contradiction_review", "supersession_review",
+        "guardian_review", "human_review", "blocked"
+      ]
+    },
+    "resolution_status": {
+      "type": "string",
+      "enum": [
+        "unresolved", "resolved_by_gate", "resolved_by_guardian",
+        "resolved_by_user", "resolved_by_implementation",
+        "resolved_by_later_decision", "partially_resolved", "deferred",
+        "blocked", "unknown"
+      ]
+    },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

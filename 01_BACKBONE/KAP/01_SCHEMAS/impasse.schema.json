@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Impasse",
+  "type": "object",
+  "properties": {
+    "impasse_id": {
+      "type": "string",
+      "pattern": "^IMP-[0-9]{8}-[A-Z0-9]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["UNRESOLVED", "RESOLVED", "BYPASSED"]
+    },
+    "linked_thought_line_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "linked_decision_thread_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["impasse_id", "title", "description", "status"]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "yos-mpm-ledger-schema-v1.0.0",
+  "system": "yOS MPM \u2014 Mega Prompt Manager",
+  "version": "1.0.0",
+  "last_updated": "2026-07-05T00:00:00Z",
+  "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
+  "entries": [
+    {
+      "mp_id": "YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE",
+      "packet_code": "MPM",
+      "mode": "marathon",
+      "status": "awaiting_architect_guardian_review",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/migrations/YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE-REPORT-POINTER.md",
+      "source_module": "YOS monorepo reorganization",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / MPX",
+      "branch": "yos-monorepo-canonical-reorganization",
+      "commit": "833b939",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executed_at": "2026-07-05T00:00:00Z",
+      "notes": "Marathon: Coordinator + 8 Workers. 134 files created. No deletion. No main modification."
+    },
+    {
+      "mp_id": "YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH",
+      "packet_code": "MPM",
+      "mode": "run",
+      "status": "awaiting_architect_guardian_review",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/YOS-MPM-MPR-CANONICAL-PLACEMENT-PROTOCOL-PATCH-REPORT-POINTER.md",
+      "source_module": "MPM protocol system",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / MPX",
+      "branch": "yos-monorepo-canonical-reorganization",
+      "commit": "833b939",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executed_at": "2026-07-05T00:00:00Z",
+      "notes": "Patches A-G: report placement, protocol docs, templates, ledger, indexes."
+    },
+    {
+      "mp_id": "MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01",
+      "packet_code": "MPM",
+      "mode": "sprint",
+      "status": "executed_awaiting_architect_guardian_review",
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01-REPORT-POINTER.md",
+      "source_module": "MPM semi-auto transport validation",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / MPX",
+      "branch": "yos-monorepo-canonical-reorganization",
+      "created_commit": "6df881e",
+      "commit": "pending_execution",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executed_at": "2026-07-05T00:00:00Z",
+      "notes": "Semi-auto test executed. Auto-run triggered: exactly_one_ready, risk_flags empty. MPR written."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "yos-folder-migration-map-v1.0",
+  "generated_at": "2026-07-05T00:00:00Z",
+  "repo": "yj000018/YOS",
+  "branch": "yos-monorepo-canonical-reorganization",
+  "mappings": [
+    {
+      "current_path": "yos-agents/",
+      "recommended_target": "02_AGENTS/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Direct mapping — agents belong in 02_AGENTS/",
+      "exception": "yos-agents/routing/ → 01_BACKBONE/ROUTING/ (backbone, not agent)"
+    },
+    {
+      "current_path": "yos-agents/manus/",
+      "recommended_target": "02_AGENTS/manus/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Manus agent tools (skills, enhancer, client)"
+    },
+    {
+      "current_path": "yos-agents/routing/",
+      "recommended_target": "01_BACKBONE/ROUTING/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Routing rules are backbone infrastructure, not agent definitions"
+    },
+    {
+      "current_path": "yos-automations/",
+      "recommended_target": "03_AUTOMATIONS/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Direct mapping — n8n, scripts, playbooks"
+    },
+    {
+      "current_path": "yos-apps/",
+      "recommended_target": "06_APPS_PRODUCTS/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Direct mapping — y-family, prototypes, y-travel"
+    },
+    {
+      "current_path": "yos-governance/",
+      "recommended_target": "01_BACKBONE/GOVERNANCE/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Governance is backbone — ADRs, policies, manifest, schemas, standards"
+    },
+    {
+      "current_path": "yos-governance/yos-governance/",
+      "recommended_target": "01_BACKBONE/GOVERNANCE/",
+      "decision": "merge_into_parent",
+      "risk": "low",
+      "reason": "Nested duplicate folder — content should merge into parent"
+    },
+    {
+      "current_path": "yos-vault/",
+      "recommended_target": "05_KNOWLEDGE_DOMAINS/Y-WORLD/",
+      "decision": "copy",
+      "risk": "medium",
+      "reason": "Large vault (281 files) — safe to copy but deferred to next gate to avoid large commit",
+      "notes": "Also candidate for 07_SOURCE_CORPUS pointer"
+    },
+    {
+      "current_path": "yos-related/experiments/",
+      "recommended_target": "06_APPS_PRODUCTS/prototypes/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Experiments are prototype apps — casa-tao-nest, eia-awakening-petal, etc."
+    },
+    {
+      "current_path": "yos-related/legacy/",
+      "recommended_target": "99_ARCHIVE/legacy/",
+      "decision": "defer",
+      "risk": "low",
+      "reason": "Empty folder — defer"
+    },
+    {
+      "current_path": "yos-related/temporary/",
+      "recommended_target": "99_ARCHIVE/legacy/",
+      "decision": "defer",
+      "risk": "low",
+      "reason": "Empty folder — defer"
+    },
+    {
+      "current_path": "yos-related/undecided/",
+      "recommended_target": "defer",
+      "decision": "defer",
+      "risk": "medium",
+      "reason": "Y-Browser-Admin and YMap — unclear classification, requires A&G decision",
+      "requires_ag_approval": true
+    },
+    {
+      "current_path": "plugins/yos-reader/",
+      "recommended_target": "04_INTERFACES/obsidian/yos-reader/",
+      "decision": "copy",
+      "risk": "low",
+      "reason": "Obsidian plugin — belongs in interfaces/obsidian"
+    },
+    {
+      "current_path": "archive/",
+      "recommended_target": "99_ARCHIVE/legacy/",
+      "decision": "defer",
+      "risk": "low",
+      "reason": "Contains only .gitkeep — defer"
+    }
+  ],
+  "safe_migrations_executed_this_gate": [
+    "01_BACKBONE/MPM/ — MPM universal runtime copied from kap-control-plane",
+    "01_BACKBONE/KAP/ — KAP scaffolded from yos-cognitive-os",
+    "01_BACKBONE/GOVERNANCE/ — yos-governance/ copied",
+    "01_BACKBONE/ROUTING/ — yos-agents/routing/ copied",
+    "04_INTERFACES/obsidian/ — plugins/yos-reader/ copied"
+  ],
+  "deferred_migrations": [
+    "yos-vault/ → 05_KNOWLEDGE_DOMAINS/Y-WORLD/ (large, next gate)",
+    "yos-agents/ → 02_AGENTS/ (next gate)",
+    "yos-apps/ → 06_APPS_PRODUCTS/ (next gate)",
+    "yos-automations/ → 03_AUTOMATIONS/ (next gate)",
+    "yos-related/undecided/ → requires A&G decision",
+    "KAP run history → 01_BACKBONE/KAP/05_RUNS/bootstrap-history/ (deferred)"
+  ]
+}

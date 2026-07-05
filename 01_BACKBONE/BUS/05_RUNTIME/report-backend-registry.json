@@ -1,0 +1,17 @@
+{
+  "$schema": "yos-bus-report-backend-registry-v1.0.0",
+  "canonical_last_mile": "MPR fast path",
+  "fixed_latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/indexes/latest-mpr.json",
+  "preferred_order": [
+    "latest_mpr_json",
+    "bus_outbox_pointer",
+    "git_fetch_direct",
+    "manual_paste"
+  ],
+  "rules": [
+    "No search by default.",
+    "Read latest-mpr.json first.",
+    "Then read latest_mpr_path.",
+    "Only search if latest pointer is missing or corrupt."
+  ]
+}

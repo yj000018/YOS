@@ -2,7 +2,7 @@
 
 > **yOS MPM — Mega Prompt Manager** (Inter-LLM Prompt Runtime & Relay System)
 > Source: `mpm-frontmatter-schema.json`
-> Version: 1.5.0 — Patch: YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE-2026-07-05
+> Version: 1.6.0 — Patch: YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-2026-07-05
 
 ---
 
@@ -238,6 +238,52 @@ MPR still uses `latest-mpr.json` fast path (unchanged).
 MPM/04_QUEUE/ready remains the canonical Git fallback queue.
 
 See: `02_ADAPTERS/mpm-bus-adapter.md` and `01_BACKBONE/BUS/00_PROTOCOLS/bus-mpm-bridge-protocol.md`
+
+---
+
+## First/Last Mile Integration Doctrine (v1.6 — 2026-07-05)
+
+### First Mile — BUS.write(packet)
+
+**ChatGPT side:**
+```
+MPM = generate next MP packet
+   -> BUS entry backend (preferred: direct_file)
+   -> BUS inbox/mpm
+   -> Manus MP execution
+```
+
+**Current safe fallback (manual upload bridge):**
+```
+ChatGPT creates downloadable packet
+-> user uploads to Manus
+-> Manus: bus.py ingest --domain mpm --file <uploaded_file>
+-> packet lands in BUS runtime inbox/mpm
+-> MP executes via BUS-first resolution
+```
+
+### Last Mile — BUS.read_latest_report()
+
+**ChatGPT/A&G side:**
+```
+MPR = read 01_BACKBONE/MPM/06_REPORTS/indexes/latest-mpr.json
+   -> read latest_mpr_path
+   -> A&G review
+```
+
+No search. No glob. Fixed path always.
+
+**bus.py commands (v1.1.0):**
+```bash
+bus.py ingest --domain mpm --file <path>                    # first-mile manual bridge
+bus.py write --domain mpm --file <path> [--backend <b>]     # programmatic first-mile
+bus.py latest-report                                         # last-mile fixed path read
+bus.py report-pointer --domain mpm                           # BUS-friendly report pointer
+bus.py entry-backends                                        # list entry backend registry
+bus.py report-backends                                       # list report backend registry
+```
+
+See: `01_BACKBONE/BUS/00_PROTOCOLS/bus-first-last-mile-protocol.md`
 
 
 

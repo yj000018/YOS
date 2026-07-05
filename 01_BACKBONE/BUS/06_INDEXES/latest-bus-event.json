@@ -1,15 +1,16 @@
 {
   "$schema": "yos-bus-latest-event-v1.0.0",
-  "event_id": "BUS-20260705-DIRECT-FILE-RUNTIME-PROBE",
-  "event_type": "direct_file_runtime_probe",
+  "event_id": "BUS-20260705-FIRST-LAST-MILE-INTEGRATION-GATE",
+  "event_type": "first_last_mile_integration",
   "domain": "mpm",
-  "status": "validated_awaiting_a_g_review",
-  "test_packet_id": "BUS-DIRECT-FILE-MPM-TEST-20260705",
-  "runtime_root": "/tmp/yos-bus-runtime",
-  "backend_active": "direct_file",
-  "claim_applied": true,
-  "claim_latency_ms": 43,
-  "final_state": "outbox",
-  "canonical_report_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md",
-  "updated_at": "2026-07-05T13:00:00Z"
+  "status": "executed",
+  "mp_id": "MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE",
+  "bus_version": "1.1.0",
+  "new_commands": ["ingest", "write", "latest-report", "report-pointer", "entry-backends", "report-backends"],
+  "new_files": 15,
+  "patched_files": 3,
+  "first_mile_selftest": "pass",
+  "last_mile_selftest": "pass",
+  "notes": "First/last mile integration layer implemented. BUS.write(packet) and BUS.read_latest_report() abstractions operational.",
+  "updated_at": "2026-07-05T14:30:00Z"
 }

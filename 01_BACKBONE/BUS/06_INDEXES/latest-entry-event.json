@@ -1,0 +1,10 @@
+{
+  "$schema": "yos-bus-latest-entry-event-v1.0.0",
+  "event_id": "BUS-ENTRY-20260705T170458",
+  "event_type": "ingest",
+  "domain": "mpm",
+  "status": "ingested",
+  "backend_used": "direct_file",
+  "packet_id": "MPM-BUS-ENTRY-SELFTEST.md",
+  "updated_at": "2026-07-05T17:04:58.990597+00:00"
+}

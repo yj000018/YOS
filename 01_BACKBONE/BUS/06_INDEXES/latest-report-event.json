@@ -1,0 +1,10 @@
+{
+  "$schema": "yos-bus-latest-report-event-v1.0.0",
+  "event_id": "BUS-REPORT-20260705T170505",
+  "event_type": "latest_report_read",
+  "domain": "mpm",
+  "status": "read",
+  "backend_used": "latest_mpr_json",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md",
+  "updated_at": "2026-07-05T17:05:05.645619+00:00"
+}

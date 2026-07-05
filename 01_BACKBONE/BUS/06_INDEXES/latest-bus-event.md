@@ -4,15 +4,15 @@
 
 | Field | Value |
 |---|---|
-| Event ID | BUS-20260705-DIRECT-FILE-RUNTIME-PROBE |
-| Event Type | direct_file_runtime_probe |
+| Event ID | BUS-20260705-FIRST-LAST-MILE-INTEGRATION-GATE |
+| Event Type | first_last_mile_integration |
 | Domain | mpm |
-| Status | validated_awaiting_a_g_review |
-| Test Packet | BUS-DIRECT-FILE-MPM-TEST-20260705 |
-| Runtime Root | /tmp/yos-bus-runtime |
-| Backend Active | direct_file |
-| Claim Applied | yes |
-| Claim Latency | ~43ms |
-| Final State | outbox |
-| Report | `01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md` |
-| Updated At | 2026-07-05T13:00:00Z |
+| Status | executed |
+| MP ID | MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE |
+| BUS Version | 1.1.0 |
+| New Commands | ingest, write, latest-report, report-pointer, entry-backends, report-backends |
+| New Files | 15 |
+| Patched Files | 3 |
+| First Mile Selftest | pass |
+| Last Mile Selftest | pass |
+| Updated At | 2026-07-05T14:30:00Z |

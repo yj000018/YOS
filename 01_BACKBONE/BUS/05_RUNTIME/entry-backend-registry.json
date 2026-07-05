@@ -1,0 +1,61 @@
+{
+  "$schema": "yos-bus-entry-backend-registry-v1.0.0",
+  "canonical_module": "YOS BUS",
+  "entry_abstraction": "BUS.write(packet)",
+  "env": {
+    "backend": "YOS_BUS_ENTRY_BACKEND",
+    "runtime_root": "YOS_BUS_RUNTIME_ROOT"
+  },
+  "preferred_order": [
+    "direct_file",
+    "manus_workspace",
+    "google_drive",
+    "nas",
+    "git",
+    "manual_upload",
+    "blob_payload"
+  ],
+  "backends": {
+    "direct_file": {
+      "status": "validated_local_runtime",
+      "versioned": false,
+      "transport_commit_required": false,
+      "notes": "Validated in direct-file runtime probe. Requires accessible runtime root."
+    },
+    "manus_workspace": {
+      "status": "probe_required",
+      "versioned": false,
+      "transport_commit_required": false,
+      "notes": "Potential online Manus server/workspace transport. Must be probed."
+    },
+    "google_drive": {
+      "status": "candidate",
+      "versioned": false,
+      "transport_commit_required": false,
+      "notes": "Cloud folder transport candidate."
+    },
+    "nas": {
+      "status": "optional",
+      "versioned": false,
+      "transport_commit_required": false,
+      "notes": "Works if NAS/N100 is online; must not be mandatory."
+    },
+    "git": {
+      "status": "fallback",
+      "versioned": true,
+      "transport_commit_required": true,
+      "notes": "Reliable but slow and may trigger ChatGPT/GitHub confirmations."
+    },
+    "manual_upload": {
+      "status": "fallback",
+      "versioned": false,
+      "transport_commit_required": false,
+      "notes": "Human uploads packet to Manus; bus.py ingest places it into BUS."
+    },
+    "blob_payload": {
+      "status": "experimental_payload_only",
+      "requires_pointer": true,
+      "notes": "Blob can hold payload but is not a discoverable queue by itself."
+    }
+  }
+}

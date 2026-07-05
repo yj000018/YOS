@@ -2,7 +2,7 @@
 
 > **yOS MPM — Mega Prompt Manager** (Inter-LLM Prompt Runtime & Relay System)
 > Manus Adapter — Packet type: `MPM`
-> Version: 1.5.0 — Patch: YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE-2026-07-05
+> Version: 1.6.0 — Patch: YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-2026-07-05
 
 ---
 
@@ -189,7 +189,44 @@ MPM/04_QUEUE/ready remains the canonical Git fallback queue.
 
 See: `02_ADAPTERS/mpm-bus-adapter.md` and `01_BACKBONE/BUS/00_PROTOCOLS/bus-mpm-bridge-protocol.md`
 
+---
 
+## First/Last Mile Integration (v1.6 — 2026-07-05)
+
+### First Mile — Manual Upload Bridge (current operational fallback)
+
+When user uploads an MP file to Manus:
+```bash
+bus.py ingest --domain mpm --file <uploaded_file_path>
+```
+This places the packet into `$YOS_BUS_RUNTIME_ROOT/inbox/mpm/` (or Git fallback).
+Then MP executes via BUS-first resolution above.
+
+### First Mile — Programmatic Write
+
+```bash
+bus.py write --domain mpm --file <path> [--backend direct_file|git]
+```
+
+### Last Mile — Fixed Path Report Read
+
+```bash
+bus.py latest-report
+# -> reads 01_BACKBONE/MPM/06_REPORTS/indexes/latest-mpr.json
+# -> emits latest_mp_id, latest_mpr_path, commit, updated_at
+
+bus.py report-pointer --domain mpm
+# -> emits BUS-friendly pointer for A&G consumption
+```
+
+### Backend Discovery
+
+```bash
+bus.py entry-backends    # list entry backend registry + active selection
+bus.py report-backends   # list report backend registry + rules
+```
+
+See: `01_BACKBONE/BUS/00_PROTOCOLS/bus-first-last-mile-protocol.md`
 
 ---
 

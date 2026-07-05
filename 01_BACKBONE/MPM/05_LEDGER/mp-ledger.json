@@ -228,6 +228,28 @@
       "commit": "eacd89b",
       "executed_at": "2026-07-05T09:55:15Z",
       "notes": "Sprint: patch TBD commit metadata for LOCAL-RUNTIME-OPTIMIZATION-GATE (6c086df). Sync latest-mpr.md from JSON. Already executed at eacd89b — stale ready file removed."
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE",
+      "title": "YOS BUS First/Last Mile Integration Gate",
+      "packet_code": "MPM",
+      "mode": "marathon",
+      "status": "executed_awaiting_architect_guardian_review",
+      "created_by": "ChatGPT / A&G",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executor": "Manus",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "guardian_required": true,
+      "risk_flags": [],
+      "auto_run_eligible": true,
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-REPORT-POINTER.md",
+      "branch": "main",
+      "commit": "pending_patch",
+      "executed_at": "2026-07-05T14:30:00Z",
+      "notes": "Marathon: implement BUS first-mile (write/ingest) and last-mile (latest-report/report-pointer) integration layer. bus.py v1.1.0. 15 new files. 3 patched. Both selftests pass."
     }
   ]
 }

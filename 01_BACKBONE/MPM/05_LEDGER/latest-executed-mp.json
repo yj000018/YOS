@@ -1,13 +1,13 @@
 {
   "$schema": "yos-mpm-latest-executed-mp-v1.0.0",
-  "latest_mp_id": "MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE",
-  "latest_title": "YOS BUS Direct File Runtime Probe Gate",
-  "latest_mode": "run",
+  "latest_mp_id": "MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE",
+  "latest_title": "YOS BUS First/Last Mile Integration Gate",
+  "latest_mode": "marathon",
   "latest_status": "executed_awaiting_architect_guardian_review",
   "latest_executor": "Manus",
-  "latest_canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE.md",
-  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md",
+  "latest_canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE.md",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE-REPORT.md",
   "branch": "main",
-  "commit": "915085c",
-  "updated_at": "2026-07-05T13:00:00Z"
+  "commit": "pending_patch",
+  "updated_at": "2026-07-05T14:30:00Z"
 }

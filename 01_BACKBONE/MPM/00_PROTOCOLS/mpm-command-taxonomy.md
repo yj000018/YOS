@@ -2,7 +2,7 @@
 
 > **yOS MPM — Mega Prompt Manager** (Inter-LLM Prompt Runtime & Relay System)
 > Source: `mpm-frontmatter-schema.json`
-> Version: 1.4.0 — Patch: MP-COMMAND-CANON-V2-2026-07-04
+> Version: 1.5.0 — Patch: YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE-2026-07-05
 
 ---
 
@@ -218,6 +218,26 @@ All MP/MPM runtime resolution occurs inside repo `yj000018/YOS`.
 **Legacy bootstrap:** `kap-control-plane` is fallback only — never default runtime.
 
 See: `07_BRANCHES/BRANCH-RUNTIME-POLICY.md`
+
+---
+
+## BUS-First Input Resolution (v1.5 — 2026-07-05)
+
+MP now supports BUS-first input resolution:
+
+```
+1. If $YOS_BUS_RUNTIME_ROOT is set: read $YOS_BUS_RUNTIME_ROOT/inbox/mpm/
+2. If exactly one valid MPM packet: claim it and execute.
+3. Else fallback to: 01_BACKBONE/MPM/04_QUEUE/ready/*.md
+4. Else fallback to Git BUS domain: 01_BACKBONE/BUS/04_DOMAINS/mpm/inbox/
+5. If none: report no ready MP.
+6. If multiple or risk_flags not empty: show micro-menu.
+```
+
+MPR still uses `latest-mpr.json` fast path (unchanged).
+MPM/04_QUEUE/ready remains the canonical Git fallback queue.
+
+See: `02_ADAPTERS/mpm-bus-adapter.md` and `01_BACKBONE/BUS/00_PROTOCOLS/bus-mpm-bridge-protocol.md`
 
 
 

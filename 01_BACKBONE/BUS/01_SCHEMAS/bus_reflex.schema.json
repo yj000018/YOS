@@ -1,0 +1,60 @@
+{
+  "$schema": "yos-bus-reflex-schema-v1.0.0",
+  "title": "YOS BUS Reflex Schema",
+  "description": "Schema for BUS reflex packets — automated reactions triggered by events, conditions, or thresholds.",
+  "version": "1.0.0",
+  "extends": "bus_packet.schema.json",
+  "type_value": "reflex",
+  "note": "Reflex packets are not yet activated. GitHub Actions integration is pending explicit gate approval.",
+  "required_fields": ["bus_packet_id", "domain", "type", "status", "created_by", "created_at", "trigger_event", "reflex_action"],
+  "fields": {
+    "bus_packet_id": {
+      "type": "string",
+      "description": "Unique BUS packet ID. Format: BUS-REF-{YYYYMMDD}-{DOMAIN}-{SLUG}"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["general", "mpm", "kap", "casatao", "kosmos", "yworld"]
+    },
+    "type": {
+      "type": "string",
+      "const": "reflex"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["inbox", "workspace", "outbox", "archive", "failed"]
+    },
+    "created_by": {"type": "string"},
+    "created_at": {"type": "string", "format": "iso8601"},
+    "trigger_event": {
+      "type": "string",
+      "description": "Event or condition that triggered this reflex."
+    },
+    "trigger_source": {
+      "type": "string",
+      "enum": ["github_action", "bus_event", "schedule", "manual", "threshold"],
+      "description": "Source of the trigger."
+    },
+    "reflex_action": {
+      "type": "string",
+      "description": "Action to take in response to the trigger."
+    },
+    "target_agent": {
+      "type": ["string", "null"],
+      "description": "Agent to notify or invoke."
+    },
+    "target_domain": {
+      "type": ["string", "null"],
+      "description": "BUS domain to route the reflex to."
+    },
+    "auto_execute": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this reflex can be auto-executed without human approval."
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

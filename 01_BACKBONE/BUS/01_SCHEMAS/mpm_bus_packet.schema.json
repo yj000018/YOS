@@ -1,0 +1,67 @@
+{
+  "$schema": "yos-mpm-bus-packet-schema-v1.0.0",
+  "title": "YOS MPM BUS Packet Schema",
+  "description": "Specialized BUS packet schema for MPM domain — Mega Prompt packets transported via BUS.",
+  "version": "1.0.0",
+  "extends": "bus_packet.schema.json",
+  "bus_domain": "mpm",
+  "packet_kind": "mpm_packet",
+  "required_fields": ["bus_packet_id", "domain", "type", "status", "created_by", "created_at", "mp_id", "mode", "mpm_payload_kind"],
+  "fields": {
+    "bus_packet_id": {
+      "type": "string",
+      "description": "Unique BUS packet ID. Format: BUS-MPM-{YYYYMMDD}-{MP_ID_SLUG}"
+    },
+    "domain": {
+      "type": "string",
+      "const": "mpm",
+      "description": "Always 'mpm' for MPM BUS packets."
+    },
+    "type": {
+      "type": "string",
+      "const": "mpm_packet"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["inbox", "workspace", "outbox", "archive", "failed"]
+    },
+    "created_by": {"type": "string"},
+    "created_at": {"type": "string", "format": "iso8601"},
+    "mp_id": {
+      "type": "string",
+      "description": "MPM packet ID. Format: MPM-{YYYYMMDD}-{SLUG} or MPC-/MPX-/MPG-/MPP-{YYYYMMDD}-{SLUG}"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["sprint", "run", "marathon"],
+      "description": "MPM execution mode."
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Risk flags. Non-empty = micro-menu required before execution."
+    },
+    "mpm_payload_kind": {
+      "type": "string",
+      "enum": ["inline_markdown", "path", "url", "blob_sha"],
+      "description": "How the MP content is delivered."
+    },
+    "payload": {
+      "type": ["object", "string"],
+      "description": "MP content inline or pointer to it."
+    },
+    "canonical_mp_path": {
+      "type": ["string", "null"],
+      "description": "Canonical path in YOS Git for this MP. e.g. 01_BACKBONE/MPM/04_QUEUE/ready/MPM-xxx.md"
+    },
+    "expected_mpr_path": {
+      "type": ["string", "null"],
+      "description": "Expected MPR path after execution. e.g. 01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-xxx-REPORT.md"
+    },
+    "auto_run_eligible": {
+      "type": "boolean",
+      "default": false,
+      "description": "True if this MP can auto-run without micro-menu (requires risk_flags empty and exactly one ready)."
+    }
+  }
+}

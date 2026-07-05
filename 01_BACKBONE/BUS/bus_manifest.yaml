@@ -1,0 +1,62 @@
+module: YOS BUS
+version: "1.0.0"
+canonical_path: "01_BACKBONE/BUS/"
+status: active
+integrated_from: "yj000018/yos-bus"
+legacy_head: "245818d"
+legacy_status: "dormant_since_2026-06-30"
+created_at: "2026-07-05T00:00:00Z"
+created_by: "MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE"
+
+doctrine:
+  bus: "Universal transport, operational memory, and inter-agent exchange layer."
+  mpm: "Specialized orchestration layer for Mega Prompts — a BUS domain/stream."
+  kap: "Knowledge Assimilation Pipeline — a BUS domain."
+  git: "Durable/auditable memory and versioning backend. Not the fast transport."
+  direct_file: "Preferred fast non-versioned transport backend."
+
+domains:
+  - general
+  - mpm
+  - kap
+  - casatao
+  - kosmos
+  - yworld
+
+runtime_backend_priority:
+  - direct_file
+  - manus_cloud
+  - git
+  - google_drive
+  - nas
+  - blob_payload
+
+lifecycle_stages:
+  - inbox
+  - workspace
+  - outbox
+  - archive
+  - dead_letter
+  - ack
+  - locks
+
+tools:
+  - path: "08_TOOLS/bus.py"
+    commands:
+      - status
+      - domains
+      - inbox
+      - claim
+      - validate
+      - runtime-paths
+
+schemas:
+  - "01_SCHEMAS/bus_packet.schema.json"
+  - "01_SCHEMAS/bus_task.schema.json"
+  - "01_SCHEMAS/bus_artifact.schema.json"
+  - "01_SCHEMAS/bus_decision.schema.json"
+  - "01_SCHEMAS/bus_reflex.schema.json"
+  - "01_SCHEMAS/mpm_bus_packet.schema.json"
+
+runtime_registry: "05_RUNTIME/runtime-registry.json"
+latest_event_index: "06_INDEXES/latest-bus-event.json"

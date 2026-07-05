@@ -1,0 +1,58 @@
+{
+  "$schema": "yos-bus-artifact-schema-v1.0.0",
+  "title": "YOS BUS Artifact Schema",
+  "description": "Schema for BUS artifact packets — completed outputs, reports, documents, or data produced by agents.",
+  "version": "1.0.0",
+  "extends": "bus_packet.schema.json",
+  "type_value": "artifact",
+  "required_fields": ["bus_packet_id", "domain", "type", "status", "created_by", "created_at", "artifact_title", "artifact_kind", "payload_kind", "payload"],
+  "fields": {
+    "bus_packet_id": {
+      "type": "string",
+      "description": "Unique BUS packet ID. Format: BUS-ART-{YYYYMMDD}-{DOMAIN}-{SLUG}"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["general", "mpm", "kap", "casatao", "kosmos", "yworld"]
+    },
+    "type": {
+      "type": "string",
+      "const": "artifact"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["inbox", "workspace", "outbox", "archive", "failed"]
+    },
+    "created_by": {"type": "string"},
+    "created_at": {"type": "string", "format": "iso8601"},
+    "artifact_title": {
+      "type": "string",
+      "description": "Human-readable artifact title."
+    },
+    "artifact_kind": {
+      "type": "string",
+      "enum": ["report", "document", "code", "data", "image", "audio", "video", "pointer", "other"],
+      "description": "Type of artifact produced."
+    },
+    "payload_kind": {
+      "type": "string",
+      "enum": ["inline", "path", "url", "blob_sha", "external_pointer"]
+    },
+    "payload": {
+      "type": ["object", "string"],
+      "description": "Artifact content or pointer to it."
+    },
+    "source_task_id": {
+      "type": ["string", "null"],
+      "description": "BUS task ID that produced this artifact."
+    },
+    "canonicalization_target": {
+      "type": ["string", "null"],
+      "description": "Target path in YOS Git for durable canonicalization."
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

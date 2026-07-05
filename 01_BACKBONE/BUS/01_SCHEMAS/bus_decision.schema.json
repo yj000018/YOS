@@ -1,0 +1,58 @@
+{
+  "$schema": "yos-bus-decision-schema-v1.0.0",
+  "title": "YOS BUS Decision Schema",
+  "description": "Schema for BUS decision packets — architectural decisions, approvals, rejections, or policy changes.",
+  "version": "1.0.0",
+  "extends": "bus_packet.schema.json",
+  "type_value": "decision",
+  "required_fields": ["bus_packet_id", "domain", "type", "status", "created_by", "created_at", "decision_title", "decision_body", "decision_outcome"],
+  "fields": {
+    "bus_packet_id": {
+      "type": "string",
+      "description": "Unique BUS packet ID. Format: BUS-DEC-{YYYYMMDD}-{DOMAIN}-{SLUG}"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["general", "mpm", "kap", "casatao", "kosmos", "yworld"]
+    },
+    "type": {
+      "type": "string",
+      "const": "decision"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["inbox", "workspace", "outbox", "archive", "failed"]
+    },
+    "created_by": {"type": "string"},
+    "created_at": {"type": "string", "format": "iso8601"},
+    "decision_title": {
+      "type": "string",
+      "description": "Short human-readable decision title."
+    },
+    "decision_body": {
+      "type": "string",
+      "description": "Full decision context, options considered, rationale."
+    },
+    "decision_outcome": {
+      "type": "string",
+      "enum": ["approved", "rejected", "deferred", "superseded", "pending"],
+      "description": "Final outcome of this decision."
+    },
+    "decided_by": {
+      "type": ["string", "null"],
+      "description": "Agent or human who made the decision."
+    },
+    "decided_at": {
+      "type": ["string", "null"],
+      "format": "iso8601"
+    },
+    "supersedes": {
+      "type": ["string", "null"],
+      "description": "BUS packet ID of a previous decision this supersedes."
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

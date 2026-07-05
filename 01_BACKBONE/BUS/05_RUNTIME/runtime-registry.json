@@ -1,0 +1,47 @@
+{
+  "$schema": "yos-bus-runtime-registry-v1.0.0",
+  "module": "YOS BUS",
+  "canonical_path": "01_BACKBONE/BUS/",
+  "runtime_root_env": "YOS_BUS_RUNTIME_ROOT",
+  "default_domain": "general",
+  "domains": ["general", "mpm", "kap", "casatao", "kosmos", "yworld"],
+  "backend_priority": ["direct_file", "manus_cloud", "git", "google_drive", "nas", "blob_payload"],
+  "backends": {
+    "direct_file": {
+      "status": "preferred",
+      "versioned": false,
+      "requires_git_commit_for_transport": false,
+      "description": "Fast filesystem-based inbox/workspace/outbox/archive runtime."
+    },
+    "manus_cloud": {
+      "status": "probe_required",
+      "versioned": false,
+      "requires_git_commit_for_transport": false,
+      "description": "Manus online workspace/server-like runtime if stable and addressable."
+    },
+    "git": {
+      "status": "fallback",
+      "versioned": true,
+      "requires_git_commit_for_transport": true,
+      "description": "Durable/auditable fallback transport through canonical YOS Git."
+    },
+    "google_drive": {
+      "status": "fallback",
+      "versioned": false,
+      "requires_git_commit_for_transport": false,
+      "description": "Cloud synced folder transport."
+    },
+    "nas": {
+      "status": "optional",
+      "versioned": false,
+      "requires_git_commit_for_transport": false,
+      "description": "NAS/N100/local network filesystem transport."
+    },
+    "blob_payload": {
+      "status": "experimental_payload_only",
+      "versioned": "object",
+      "requires_pointer": true,
+      "description": "Git blob can store payload content but is not a discoverable queue without a pointer."
+    }
+  }
+}

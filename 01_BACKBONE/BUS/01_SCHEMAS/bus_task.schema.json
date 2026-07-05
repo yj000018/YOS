@@ -1,0 +1,64 @@
+{
+  "$schema": "yos-bus-task-schema-v1.0.0",
+  "title": "YOS BUS Task Schema",
+  "description": "Schema for BUS task packets — actionable work items routed between agents.",
+  "version": "1.0.0",
+  "extends": "bus_packet.schema.json",
+  "type_value": "task",
+  "required_fields": ["bus_packet_id", "domain", "type", "status", "created_by", "created_at", "task_title", "task_description", "assigned_to"],
+  "fields": {
+    "bus_packet_id": {
+      "type": "string",
+      "description": "Unique BUS packet ID. Format: BUS-TASK-{YYYYMMDD}-{DOMAIN}-{SLUG}"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["general", "mpm", "kap", "casatao", "kosmos", "yworld"]
+    },
+    "type": {
+      "type": "string",
+      "const": "task"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["inbox", "workspace", "outbox", "archive", "failed"]
+    },
+    "created_by": {"type": "string"},
+    "created_at": {"type": "string", "format": "iso8601"},
+    "task_title": {
+      "type": "string",
+      "description": "Short human-readable task title."
+    },
+    "task_description": {
+      "type": "string",
+      "description": "Full task description and context."
+    },
+    "assigned_to": {
+      "type": ["string", "null"],
+      "description": "Target agent or LLM for this task. Null = unassigned."
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["critical", "high", "normal", "low"],
+      "default": "normal"
+    },
+    "due_at": {
+      "type": ["string", "null"],
+      "format": "iso8601",
+      "description": "Optional deadline."
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "List of bus_packet_ids this task depends on."
+    },
+    "output_expected": {
+      "type": ["string", "null"],
+      "description": "Expected output artifact or report path."
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "yos-bus-packet-schema-v1.0.0",
+  "title": "YOS BUS Packet Schema",
+  "description": "Universal schema for all BUS packets — tasks, artifacts, decisions, MPM packets, MPR pointers, events.",
+  "version": "1.0.0",
+  "required_fields": ["bus_packet_id", "domain", "type", "status", "created_by", "created_at", "payload"],
+  "fields": {
+    "bus_packet_id": {
+      "type": "string",
+      "description": "Unique identifier for this BUS packet. Format: BUS-{YYYYMMDD}-{DOMAIN}-{SLUG}",
+      "example": "BUS-20260705-MPM-FUSION-GATE"
+    },
+    "domain": {
+      "type": "string",
+      "enum": ["general", "mpm", "kap", "casatao", "kosmos", "yworld"],
+      "description": "BUS domain this packet belongs to."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["task", "artifact", "decision", "mpm_packet", "mpr_pointer", "event"],
+      "description": "Packet type."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["inbox", "workspace", "outbox", "archive", "failed"],
+      "description": "Current lifecycle stage of this packet."
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Agent or system that created this packet."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "iso8601",
+      "description": "Creation timestamp in ISO 8601 format."
+    },
+    "claimed_by": {
+      "type": ["string", "null"],
+      "description": "Agent that claimed this packet from inbox. Null if unclaimed."
+    },
+    "claimed_at": {
+      "type": ["string", "null"],
+      "format": "iso8601",
+      "description": "Timestamp when packet was claimed. Null if unclaimed."
+    },
+    "payload_kind": {
+      "type": "string",
+      "enum": ["inline", "path", "url", "blob_sha", "external_pointer"],
+      "description": "How the payload is delivered."
+    },
+    "payload": {
+      "type": ["object", "string"],
+      "description": "Packet payload. May be inline content or a pointer."
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Risk flags requiring human review before execution."
+    },
+    "canonicalization_target": {
+      "type": ["string", "null"],
+      "description": "Target path in YOS Git for durable canonicalization. Null if not yet canonicalized."
+    }
+  }
+}

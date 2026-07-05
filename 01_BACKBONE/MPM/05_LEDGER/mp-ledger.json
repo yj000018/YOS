@@ -1,8 +1,8 @@
 {
   "$schema": "yos-mpm-ledger-schema-v1.0.0",
   "system": "yOS MPM \u2014 Mega Prompt Manager",
-  "version": "1.2.3",
-  "last_updated": "2026-07-05T10:09:53.309344+00:00",
+  "version": "1.2.4",
+  "last_updated": "2026-07-05T12:00:00Z",
   "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
   "entries": [
     {
@@ -140,6 +140,28 @@
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-MPR-COMMIT-SUMMARY-MICROPATCH-REPORT-POINTER.md",
       "commit": "1471e9a",
       "guardian_required": true
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE",
+      "title": "YOS BUS / MPM Fusion and Direct Runtime Gate",
+      "packet_code": "MPM",
+      "mode": "marathon",
+      "status": "executed_awaiting_architect_guardian_review",
+      "created_by": "ChatGPT / A&G",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executor": "Manus",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "guardian_required": true,
+      "risk_flags": [],
+      "auto_run_eligible": true,
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE-REPORT-POINTER.md",
+      "branch": "main",
+      "commit": "pending_patch",
+      "executed_at": "2026-07-05T12:00:00Z",
+      "notes": "Marathon: BUS module created (~53 files). MPM domain defined. bus.py CLI created. MPM adapter + protocol patches v1.5.0. BUS validate: PASS_WITH_WARNINGS. MPM validate: PASS_WITH_WARNINGS."
     }
   ]
 }

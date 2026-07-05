@@ -1,0 +1,112 @@
+{
+  "$schema": "yos-agents-capabilities-registry-v1.0.0",
+  "version": "1.0.0",
+  "gate": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+  "updated_at": "2026-07-05T19:00:00Z",
+  "capabilities": [
+    {
+      "capability_id": "reasoning",
+      "name": "Reasoning",
+      "risk_level": "low",
+      "schema": "03_CAPABILITIES/reasoning.schema.json",
+      "agents": {
+        "chatgpt-ag": "proven",
+        "manus": "proven",
+        "claude": "proven",
+        "gemini": "proven",
+        "codex": "candidate"
+      }
+    },
+    {
+      "capability_id": "planning",
+      "name": "Planning",
+      "risk_level": "low",
+      "schema": "03_CAPABILITIES/planning.schema.json",
+      "agents": {
+        "chatgpt-ag": "proven",
+        "manus": "proven",
+        "claude": "proven",
+        "gemini": "candidate",
+        "codex": "candidate"
+      }
+    },
+    {
+      "capability_id": "coding",
+      "name": "Coding",
+      "risk_level": "medium",
+      "schema": "03_CAPABILITIES/coding.schema.json",
+      "agents": {
+        "chatgpt-ag": "proven",
+        "manus": "proven",
+        "claude": "proven",
+        "gemini": "candidate",
+        "codex": "proven"
+      }
+    },
+    {
+      "capability_id": "vision",
+      "name": "Vision",
+      "risk_level": "low",
+      "schema": "03_CAPABILITIES/vision.schema.json",
+      "agents": {
+        "chatgpt-ag": "proven",
+        "manus": "proven",
+        "claude": "candidate",
+        "gemini": "proven",
+        "codex": "unknown"
+      }
+    },
+    {
+      "capability_id": "filesystem",
+      "name": "Filesystem",
+      "risk_level": "high",
+      "schema": "03_CAPABILITIES/filesystem.schema.json",
+      "agents": {
+        "chatgpt-ag": "unsupported",
+        "manus": "proven",
+        "claude": "unsupported",
+        "gemini": "unsupported",
+        "codex": "candidate"
+      }
+    },
+    {
+      "capability_id": "api",
+      "name": "API",
+      "risk_level": "medium",
+      "schema": "03_CAPABILITIES/api.schema.json",
+      "agents": {
+        "chatgpt-ag": "candidate",
+        "manus": "proven",
+        "claude": "unknown",
+        "gemini": "unknown",
+        "codex": "candidate"
+      }
+    },
+    {
+      "capability_id": "memory",
+      "name": "Memory",
+      "risk_level": "medium",
+      "schema": "03_CAPABILITIES/memory.schema.json",
+      "agents": {
+        "chatgpt-ag": "candidate",
+        "manus": "proven",
+        "claude": "unknown",
+        "gemini": "unknown",
+        "codex": "unknown"
+      }
+    },
+    {
+      "capability_id": "execution",
+      "name": "Execution",
+      "risk_level": "critical",
+      "schema": "03_CAPABILITIES/execution.schema.json",
+      "agents": {
+        "chatgpt-ag": "unsupported",
+        "manus": "proven",
+        "claude": "unsupported",
+        "gemini": "unsupported",
+        "codex": "candidate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "yos-agents-trust-levels-registry-v1.0.0",
+  "version": "1.0.0",
+  "gate": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+  "updated_at": "2026-07-05T19:00:00Z",
+  "principle": "No agent receives corpus mutation, secret access, or automation deployment permission by default.",
+  "trust_levels": [
+    {
+      "level_id": "T0",
+      "name": "untrusted",
+      "description": "Unknown or unregistered agent. No permissions granted.",
+      "permissions": [],
+      "assigned_to": []
+    },
+    {
+      "level_id": "T1",
+      "name": "read_only",
+      "description": "Registered agent with read-only access to yOS artifacts.",
+      "permissions": ["read"],
+      "assigned_to": ["gemini", "codex"]
+    },
+    {
+      "level_id": "T2",
+      "name": "sandboxed_write",
+      "description": "Agent may write to sandboxed/ephemeral environments only. No corpus mutation.",
+      "permissions": ["read", "write_runtime"],
+      "assigned_to": ["claude"]
+    },
+    {
+      "level_id": "T3",
+      "name": "runtime_operator",
+      "description": "Agent may execute code, write to runtime, commit to Git. Cannot approve canonical gates.",
+      "permissions": ["read", "write_runtime", "write_git", "execute_code"],
+      "assigned_to": ["manus"]
+    },
+    {
+      "level_id": "T4",
+      "name": "canonical_writer",
+      "description": "Agent may modify canonical corpus with guardian oversight.",
+      "permissions": ["read", "write_runtime", "write_git", "execute_code", "modify_corpus"],
+      "assigned_to": []
+    },
+    {
+      "level_id": "T5",
+      "name": "guardian_approved",
+      "description": "Full trust. May approve canonical gates, access secrets, deploy automation.",
+      "permissions": ["read", "write_runtime", "write_git", "execute_code", "access_secrets", "modify_corpus", "create_automation", "approve_canonical"],
+      "assigned_to": ["chatgpt-ag", "yannick-jolliet"]
+    }
+  ],
+  "permission_definitions": {
+    "read": "Read any yOS artifact",
+    "write_runtime": "Write to runtime/sandbox filesystem",
+    "write_git": "Commit and push to Git repository",
+    "execute_code": "Execute code, shell commands, processes",
+    "access_secrets": "Access credentials, API keys, tokens",
+    "modify_corpus": "Modify canonical corpus files",
+    "create_automation": "Deploy automation workflows (n8n, cron, webhooks)",
+    "approve_canonical": "Approve canonical designation gates"
+  }
+}

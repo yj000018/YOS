@@ -4,11 +4,11 @@
 
 | Field | Value |
 |---|---|
-| Event ID | BUS-20260705-YARP-CONSTITUTION-PATCH |
-| Event Type | protocol_patch |
-| Domain | mpm |
+| Event ID | BUS-20260705-AGENTS-BACKBONE-CONSTITUTION |
+| Event Type | backbone_module_created |
+| Domain | general |
 | Status | executed |
-| MP ID | MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE |
-| YARP Constitution Version | v1.1.0 |
-| Files Patched | 3 |
-| Updated At | 2026-07-05T18:30:00Z |
+| MP ID | MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE |
+| AGENTS Module Version | v1.0.0-candidate |
+| Files Created | 35 |
+| Updated At | 2026-07-05T19:00:00Z |

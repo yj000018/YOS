@@ -1,0 +1,15 @@
+{
+  "$schema": "yos-agents-capability-schema-v1.0.0",
+  "capability_id": "coding",
+  "name": "Coding",
+  "description": "Code generation, debugging, refactoring, architecture design, test writing",
+  "input_types": ["text", "code", "specification", "error_trace"],
+  "output_types": ["code", "diff", "architecture_doc", "test_suite"],
+  "risk_level": "medium",
+  "requires_auth": false,
+  "requires_filesystem": true,
+  "requires_network": false,
+  "requires_human_confirmation": false,
+  "validated_status": "proven",
+  "notes": "Proven for Manus (sandbox execution), Claude, ChatGPT, Codex. Candidate for Gemini."
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "yos-agents-capability-schema-v1.0.0",
+  "capability_id": "execution",
+  "name": "Execution",
+  "description": "Run code, execute shell commands, manage processes, deploy artifacts, interact with OS",
+  "input_types": ["code", "shell_command", "script", "artifact"],
+  "output_types": ["stdout", "stderr", "exit_code", "artifact", "process_state"],
+  "risk_level": "critical",
+  "requires_auth": false,
+  "requires_filesystem": true,
+  "requires_network": true,
+  "requires_human_confirmation": false,
+  "validated_status": "proven",
+  "notes": "Proven for Manus (sandbox shell execution, Python, Node.js, git). Unsupported for ChatGPT, Claude, Gemini in standard mode. Candidate for Codex (via tools).",
+  "agent_specific": {
+    "manus": {
+      "status": "proven",
+      "runtimes": ["python3", "node", "bash", "git"],
+      "sandbox": true,
+      "persistent": true
+    },
+    "chatgpt": {
+      "status": "unsupported",
+      "note": "No direct execution. Indirect via task.create → Manus relay."
+    },
+    "claude": {
+      "status": "unsupported",
+      "note": "No direct execution in standard API mode."
+    }
+  }
+}

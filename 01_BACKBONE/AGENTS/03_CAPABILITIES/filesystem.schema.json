@@ -1,0 +1,31 @@
+{
+  "$schema": "yos-agents-capability-schema-v1.0.0",
+  "capability_id": "filesystem",
+  "name": "Filesystem",
+  "description": "Read/write files, navigate directories, manage artifacts, persist data across sessions",
+  "input_types": ["file_path", "directory_path", "file_content"],
+  "output_types": ["file", "directory_listing", "artifact"],
+  "risk_level": "high",
+  "requires_auth": false,
+  "requires_filesystem": true,
+  "requires_network": false,
+  "requires_human_confirmation": false,
+  "validated_status": "proven",
+  "notes": "Proven for Manus (/home/ubuntu/ persistent, /tmp/ ephemeral). Unsupported for ChatGPT, Claude, Gemini (no direct filesystem). Candidate for Codex (via tools).",
+  "agent_specific": {
+    "manus": {
+      "status": "proven",
+      "persistent_path": "/home/ubuntu/",
+      "ephemeral_path": "/tmp/",
+      "cross_session": true
+    },
+    "chatgpt": {
+      "status": "unsupported",
+      "note": "No direct filesystem access. Indirect via task.create → Manus relay."
+    },
+    "claude": {
+      "status": "unsupported",
+      "note": "No direct filesystem access in standard API mode."
+    }
+  }
+}

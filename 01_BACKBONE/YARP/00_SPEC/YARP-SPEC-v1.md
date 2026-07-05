@@ -179,12 +179,29 @@ MPR         ↔  latest-mpr.json (fixed pointer)
 
 ---
 
-## 7. Compatibility with BUS and MPM
+## 7. Compatibility with BUS, MPM, and AGENTS
 
-YARP is compatible with BUS and MPM by design:
+YARP is compatible with BUS, MPM, and AGENTS by design:
 
 - BUS `inbox/mpm/` = YARP EXECUTE_MP delivery point
 - BUS `outbox/mpm/` = YARP RESULT delivery point
 - MPM `mp-ledger.json` = YARP correlation registry
 - MPM `latest-mpr.json` = YARP RESULT fast-path pointer
 - MPM `mpm.py validate` = YARP governance check
+- AGENTS `agents.json` = YARP sender/receiver identity registry
+- AGENTS `capabilities.json` = YARP CAPABILITY_QUERY/RESPONSE source
+- AGENTS `trust-levels.json` = YARP envelope trust validation
+- AGENTS `04_ROUTING/ART/` = YARP target_agent selection
+
+---
+
+## 8. AGENTS Integration
+
+YARP uses AGENTS for:
+
+1. **Identity validation** — `sender_id` and `receiver_id` in YARP envelopes must match registered `agent_id` in `agents.json`
+2. **Trust validation** — `sender_trust_level` in YARP envelopes must match declared trust level in `trust-levels.json`
+3. **Capability negotiation** — `CAPABILITY_QUERY` / `CAPABILITY_RESPONSE` messages use `capabilities.json` as ground truth
+4. **Routing** — `target_agent` in `EXECUTE_MP` is resolved via `04_ROUTING/ART/`
+
+**AGENTS module:** `01_BACKBONE/AGENTS/` (gate: MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE)

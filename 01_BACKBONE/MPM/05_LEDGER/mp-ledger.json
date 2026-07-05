@@ -6,6 +6,22 @@
   "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
   "entries": [
     {
+      "mp_id": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+      "packet_code": "MPM",
+      "mode": "marathon",
+      "status": "executed_awaiting_architect_guardian_review",
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE-REPORT-POINTER.md",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "branch": "main",
+      "commit": "pending_patch",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executed_at": "2026-07-05T19:00:00Z",
+      "guardian_required": true
+    },
+    {
       "mp_id": "YOS-MONOREPO-CANONICAL-REORGANIZATION-GATE",
       "packet_code": "MPM",
       "mode": "marathon",

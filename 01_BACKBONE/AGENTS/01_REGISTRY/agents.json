@@ -1,0 +1,74 @@
+{
+  "$schema": "yos-agents-registry-v1.0.0",
+  "version": "1.0.0",
+  "gate": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+  "updated_at": "2026-07-05T19:00:00Z",
+  "agents": [
+    {
+      "agent_id": "chatgpt-ag",
+      "display_name": "ChatGPT — Architect & Guardian",
+      "agent_type": "llm",
+      "vendor": "OpenAI",
+      "runtime": "ChatGPT (web / API)",
+      "primary_roles": ["architect", "guardian"],
+      "trust_level": "T5",
+      "status": "registered",
+      "identity_card": "02_IDENTITIES/chatgpt.md"
+    },
+    {
+      "agent_id": "manus",
+      "display_name": "Manus",
+      "agent_type": "llm+executor",
+      "vendor": "Manus Team",
+      "runtime": "Manus Sandbox (Ubuntu 24.04)",
+      "primary_roles": ["executor", "orchestrator"],
+      "trust_level": "T3",
+      "status": "registered",
+      "identity_card": "02_IDENTITIES/manus.md"
+    },
+    {
+      "agent_id": "claude",
+      "display_name": "Claude (Anthropic)",
+      "agent_type": "llm",
+      "vendor": "Anthropic",
+      "runtime": "Claude API / Claude.ai",
+      "primary_roles": ["architect", "reviewer"],
+      "trust_level": "T2",
+      "status": "registered",
+      "identity_card": "02_IDENTITIES/claude.md"
+    },
+    {
+      "agent_id": "gemini",
+      "display_name": "Gemini (Google DeepMind)",
+      "agent_type": "llm",
+      "vendor": "Google DeepMind",
+      "runtime": "Gemini API / Google AI Studio",
+      "primary_roles": ["reviewer", "assimilator"],
+      "trust_level": "T1",
+      "status": "registered",
+      "identity_card": "02_IDENTITIES/gemini.md"
+    },
+    {
+      "agent_id": "codex",
+      "display_name": "Codex / OpenAI Agents",
+      "agent_type": "llm+executor",
+      "vendor": "OpenAI",
+      "runtime": "OpenAI Codex API / Agents SDK",
+      "primary_roles": ["executor"],
+      "trust_level": "T1",
+      "status": "registered",
+      "identity_card": "02_IDENTITIES/codex.md"
+    },
+    {
+      "agent_id": "yannick-jolliet",
+      "display_name": "Yannick Jolliet (Human Operator)",
+      "agent_type": "human",
+      "vendor": "human",
+      "runtime": "human",
+      "primary_roles": ["operator", "guardian"],
+      "trust_level": "T5",
+      "status": "registered",
+      "identity_card": null
+    }
+  ]
+}

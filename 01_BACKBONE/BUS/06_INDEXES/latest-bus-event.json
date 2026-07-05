@@ -1,11 +1,11 @@
 {
   "$schema": "yos-bus-latest-event-v1.0.0",
-  "event_id": "BUS-20260705-YARP-CONSTITUTION-PATCH",
-  "event_type": "protocol_patch",
-  "domain": "mpm",
+  "event_id": "BUS-20260705-AGENTS-BACKBONE-CONSTITUTION",
+  "event_type": "backbone_module_created",
+  "domain": "general",
   "status": "executed",
-  "mp_id": "MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE",
-  "yarp_constitution_version": "v1.1.0",
-  "files_patched": 3,
-  "updated_at": "2026-07-05T18:30:00Z"
+  "mp_id": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+  "agents_module_version": "v1.0.0-candidate",
+  "files_created": 35,
+  "updated_at": "2026-07-05T19:00:00Z"
 }

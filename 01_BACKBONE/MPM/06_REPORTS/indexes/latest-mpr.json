@@ -1,14 +1,14 @@
 {
   "$schema": "yos-mpm-latest-mpr-v1.0.0",
-  "latest_mp_id": "MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE",
-  "latest_mpr_id": "MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE-REPORT",
-  "latest_title": "YOS YARP Constitution Clarification Patch Gate",
-  "latest_mode": "sprint",
+  "latest_mp_id": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+  "latest_mpr_id": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE-REPORT",
+  "latest_title": "YOS Agents Backbone Constitution Gate",
+  "latest_mode": "marathon",
   "latest_status": "executed_awaiting_architect_guardian_review",
   "latest_executor": "Manus",
-  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE-REPORT.md",
-  "latest_log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE-REPORT-POINTER.md",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE-REPORT.md",
+  "latest_log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE-REPORT-POINTER.md",
   "branch": "main",
-  "commit": "5546463",
-  "updated_at": "2026-07-05T18:30:00Z"
+  "commit": "pending_patch",
+  "updated_at": "2026-07-05T19:00:00Z"
 }

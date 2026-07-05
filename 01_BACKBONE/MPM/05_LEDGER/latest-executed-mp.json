@@ -1,13 +1,10 @@
 {
   "$schema": "yos-mpm-latest-executed-mp-v1.0.0",
-  "latest_mp_id": "MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE",
-  "latest_title": "YOS YARP Constitution Clarification Patch Gate",
-  "latest_mode": "sprint",
+  "latest_mp_id": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+  "latest_mode": "marathon",
   "latest_status": "executed_awaiting_architect_guardian_review",
-  "latest_executor": "Manus",
-  "latest_canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE.md",
-  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE-REPORT.md",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE-REPORT.md",
   "branch": "main",
-  "commit": "5546463",
-  "updated_at": "2026-07-05T18:30:00Z"
+  "commit": "pending_patch",
+  "executed_at": "2026-07-05T19:00:00Z"
 }

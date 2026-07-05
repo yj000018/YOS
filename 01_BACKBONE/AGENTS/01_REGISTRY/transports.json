@@ -1,0 +1,76 @@
+{
+  "$schema": "yos-agents-transports-registry-v1.0.0",
+  "version": "1.0.0",
+  "gate": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
+  "updated_at": "2026-07-05T19:00:00Z",
+  "transports": [
+    {
+      "transport_id": "workspace_filesystem",
+      "name": "Workspace Filesystem",
+      "description": "Direct read/write to /home/ubuntu/ in Manus sandbox",
+      "status": "production_ready",
+      "agents": {
+        "manus": "proven"
+      },
+      "latency": "<1s",
+      "persistence": "cross_session"
+    },
+    {
+      "transport_id": "git",
+      "name": "Git (GitHub)",
+      "description": "Git commit/push to yj000018/YOS repository",
+      "status": "production_ready",
+      "agents": {
+        "manus": "proven"
+      },
+      "latency": "5-30s",
+      "persistence": "permanent"
+    },
+    {
+      "transport_id": "manus_api_task",
+      "name": "Manus API (task.create / sendMessage)",
+      "description": "ChatGPT → Manus via task.create or sendMessage",
+      "status": "production_candidate",
+      "agents": {
+        "chatgpt-ag": "proven",
+        "manus": "proven"
+      },
+      "latency": "30-120s",
+      "persistence": "session_scoped"
+    },
+    {
+      "transport_id": "manual_upload",
+      "name": "Manual Upload (file attachment)",
+      "description": "Human uploads file to Manus session",
+      "status": "production_ready",
+      "agents": {
+        "chatgpt-ag": "proven",
+        "yannick-jolliet": "proven"
+      },
+      "latency": "manual",
+      "persistence": "session_scoped"
+    },
+    {
+      "transport_id": "webhooks",
+      "name": "Webhooks",
+      "description": "Manus API webhooks for task lifecycle events",
+      "status": "production_candidate",
+      "agents": {
+        "manus": "candidate"
+      },
+      "latency": "near_realtime",
+      "persistence": "event_driven"
+    },
+    {
+      "transport_id": "mcp_bridge",
+      "name": "MCP Bridge",
+      "description": "Model Context Protocol server bridge",
+      "status": "candidate",
+      "agents": {
+        "manus": "candidate"
+      },
+      "latency": "unknown",
+      "persistence": "unknown"
+    }
+  ]
+}

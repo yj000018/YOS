@@ -1,0 +1,15 @@
+{
+  "$schema": "yos-agents-capability-schema-v1.0.0",
+  "capability_id": "planning",
+  "name": "Planning",
+  "description": "Decompose goals into tasks, sequence steps, manage dependencies, create execution plans",
+  "input_types": ["goal", "specification", "context_pack", "constraints"],
+  "output_types": ["task_plan", "execution_sequence", "dependency_graph"],
+  "risk_level": "low",
+  "requires_auth": false,
+  "requires_filesystem": false,
+  "requires_network": false,
+  "requires_human_confirmation": false,
+  "validated_status": "proven",
+  "notes": "Proven for ChatGPT (A&G — MP authoring), Manus (task plan tool), Claude (architectural planning). Candidate for Gemini, Codex."
+}

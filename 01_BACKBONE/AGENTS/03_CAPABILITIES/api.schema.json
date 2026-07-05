@@ -1,0 +1,15 @@
+{
+  "$schema": "yos-agents-capability-schema-v1.0.0",
+  "capability_id": "api",
+  "name": "API",
+  "description": "Call external APIs, parse responses, handle authentication, integrate third-party services",
+  "input_types": ["api_spec", "endpoint_url", "auth_token", "request_payload"],
+  "output_types": ["api_response", "structured_data", "error"],
+  "risk_level": "medium",
+  "requires_auth": true,
+  "requires_filesystem": false,
+  "requires_network": true,
+  "requires_human_confirmation": false,
+  "validated_status": "proven",
+  "notes": "Proven for Manus (HTTP requests via sandbox). Candidate for ChatGPT (via tools/plugins). Unknown for Claude, Gemini in standard mode."
+}

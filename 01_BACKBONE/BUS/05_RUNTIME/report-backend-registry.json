@@ -1,10 +1,13 @@
 {
-  "$schema": "yos-bus-report-backend-registry-v1.0.0",
+  "$schema": "yos-bus-report-backend-registry-v1.1.0",
   "canonical_last_mile": "MPR fast path",
   "fixed_latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/indexes/latest-mpr.json",
+  "census_gate": "MPM-20260705-YOS-MANUS-CONNECTIVITY-CENSUS-GATE",
   "preferred_order": [
     "latest_mpr_json",
     "bus_outbox_pointer",
+    "manus_webhook_push",
+    "manus_api_task_listMessages",
     "git_fetch_direct",
     "manual_paste"
   ],
@@ -12,6 +15,44 @@
     "No search by default.",
     "Read latest-mpr.json first.",
     "Then read latest_mpr_path.",
+    "If webhook configured: receive push notification on task_stopped event.",
+    "If API task: poll task.listMessages for structured MPR result.",
     "Only search if latest pointer is missing or corrupt."
-  ]
+  ],
+  "backends": {
+    "latest_mpr_json": {
+      "status": "production_ready",
+      "path": "01_BACKBONE/MPM/06_REPORTS/indexes/latest-mpr.json",
+      "notes": "Canonical fast path. Always read first."
+    },
+    "bus_outbox_pointer": {
+      "status": "production_ready",
+      "path": "/home/ubuntu/yos-bus-runtime/outbox/mpm/",
+      "notes": "BUS outbox — MPR placed here after completion."
+    },
+    "manus_webhook_push": {
+      "status": "production_candidate",
+      "endpoint": "POST /v2/webhook.create",
+      "events": ["task_created", "task_stopped"],
+      "probe_gate": "MPM-20260705-YOS-MANUS-CONNECTIVITY-CENSUS-GATE",
+      "notes": "Push notification when MPR ready. Requires public HTTPS endpoint. Excellent for last-mile."
+    },
+    "manus_api_task_listMessages": {
+      "status": "production_candidate",
+      "endpoint": "GET /v2/task.listMessages",
+      "structured_output": true,
+      "probe_gate": "MPM-20260705-YOS-MANUS-CONNECTIVITY-CENSUS-GATE",
+      "notes": "Poll task messages for MPR content. Use structured_output_schema for JSON result."
+    },
+    "git_fetch_direct": {
+      "status": "production_ready",
+      "repo": "yj000018/YOS",
+      "path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/",
+      "notes": "Reliable fallback. Read MPR directly from GitHub."
+    },
+    "manual_paste": {
+      "status": "operational_bridge",
+      "notes": "Human pastes MPR to ChatGPT. Current operational bridge."
+    }
+  }
 }

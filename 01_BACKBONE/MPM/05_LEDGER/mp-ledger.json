@@ -313,7 +313,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE-REPORT-POINTER.md",
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "adc5211",
       "executed_at": "2026-07-05T17:00:00Z",
       "notes": "Sprint: 9 capabilities verified. Proven: task_create, sendMessage, file_upload, attachment, conversation_continuation, auth, structured_output. Supported: webhooks. Unsupported direct: workspace_write, workspace_read. Recommended: Async Task Relay Pattern."
     }

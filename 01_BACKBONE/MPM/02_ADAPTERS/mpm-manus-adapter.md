@@ -43,3 +43,23 @@ All MP/MPM runtime resolution occurs inside repo `yj000018/YOS`.
 
 See: `07_BRANCHES/BRANCH-RUNTIME-POLICY.md`
 
+
+
+---
+
+## Optimized Local Runtime (v2 — 2026-07-05)
+
+**Canonical wording — apply to all executor contexts:**
+
+- `ready/*.md` is the **active queue signal** — physical presence triggers execution eligibility.
+- `mp-ledger.json` remains the **JSON-first registry/history/status source of truth**.
+- Executors with a local clone **batch all file writes** and push **one commit per MP execution**.
+- **GitHub online/API file-by-file mode** is fallback, not preferred.
+- `latest-mpr.json` is the **default fast path** for ChatGPT/Architect & Guardian MPR review.
+- **ChatGPT GitHub connector calls should be minimized** — Manus/local git is the preferred writer.
+- **Ledger backward compatibility:** if `ready/*.md` and ledger disagree, prefer physical `ready/*.md` for queue discovery, then reconcile ledger.
+
+**Local CLI:** `python 01_BACKBONE/MPM/08_TOOLS/mpm.py <command>`
+
+See: `08_TOOLS/README.md`
+

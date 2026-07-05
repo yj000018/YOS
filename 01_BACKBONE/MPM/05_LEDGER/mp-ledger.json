@@ -1,8 +1,8 @@
 {
   "$schema": "yos-mpm-ledger-schema-v1.0.0",
   "system": "yOS MPM \u2014 Mega Prompt Manager",
-  "version": "1.2.0",
-  "last_updated": "2026-07-05T00:00:00Z",
+  "version": "1.2.1",
+  "last_updated": "2026-07-05T09:36:19.665264+00:00",
   "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
   "entries": [
     {
@@ -42,7 +42,7 @@
       "packet_code": "MPM",
       "mode": "sprint",
       "status": "executed_awaiting_architect_guardian_review",
-      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01.md",
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01.md",
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01-REPORT-POINTER.md",
       "source_module": "MPM semi-auto transport validation",
@@ -95,6 +95,21 @@
       "commit": "pending_execution",
       "executed_at": null,
       "notes": "Final plain MP process test on canonical main runtime. Exactly one ready MP should auto-run without micro-menu."
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE",
+      "title": "YOS MPM Local Runtime Optimization Gate",
+      "mode": "marathon",
+      "status": "executed_awaiting_architect_guardian_review",
+      "created_by": "Manus",
+      "executor": "Manus",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executed_at": "2026-07-05T00:00:00Z",
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE.md",
+      "expected_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT-POINTER.md",
+      "commit": "TBD",
+      "guardian_required": true
     }
   ]
 }

@@ -35,3 +35,23 @@ guardian_decision: pending
 
 ## 5. Stop Condition
 After producing the output, stop.
+
+
+---
+
+## MP Runtime Resolution
+
+All MP/MPM runtime resolution occurs inside repo `yj000018/YOS`.
+
+| Command | Runtime |
+| :--- | :--- |
+| `MP` / `MP next` / `MP queue` | `yj000018/YOS @ main / 01_BACKBONE/MPM/` |
+| `MP branch=<name>` | `yj000018/YOS @ <name> / 01_BACKBONE/MPM/` |
+| `MP queue branch=<name>` | `yj000018/YOS @ <name> / 01_BACKBONE/MPM/` |
+
+**Default runtime:** `YOS/main/01_BACKBONE/MPM/`
+**Explicit branch runtime:** `YOS/<branch>/01_BACKBONE/MPM/`
+**Legacy bootstrap:** `kap-control-plane` is fallback only — never default runtime.
+
+See: `07_BRANCHES/BRANCH-RUNTIME-POLICY.md`
+

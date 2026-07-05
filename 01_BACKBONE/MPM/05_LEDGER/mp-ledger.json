@@ -2,7 +2,7 @@
   "$schema": "yos-mpm-ledger-schema-v1.0.0",
   "system": "yOS MPM \u2014 Mega Prompt Manager",
   "version": "1.2.1",
-  "last_updated": "2026-07-05T09:36:19.665264+00:00",
+  "last_updated": "2026-07-05T09:36:46.634507+00:00",
   "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
   "entries": [
     {
@@ -108,7 +108,7 @@
       "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE.md",
       "expected_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT-POINTER.md",
-      "commit": "TBD",
+      "commit": "6c086df",
       "guardian_required": true
     }
   ]

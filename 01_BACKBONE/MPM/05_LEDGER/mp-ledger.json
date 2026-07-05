@@ -159,7 +159,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-MPM-FUSION-AND-DIRECT-RUNTIME-GATE-REPORT-POINTER.md",
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "bce8abb",
       "executed_at": "2026-07-05T12:00:00Z",
       "notes": "Marathon: BUS module created (~53 files). MPM domain defined. bus.py CLI created. MPM adapter + protocol patches v1.5.0. BUS validate: PASS_WITH_WARNINGS. MPM validate: PASS_WITH_WARNINGS."
     }

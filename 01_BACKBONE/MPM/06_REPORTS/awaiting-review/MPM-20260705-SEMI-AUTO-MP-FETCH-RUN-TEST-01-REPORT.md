@@ -22,7 +22,7 @@ RISK FLAGS:            none
 CANONICAL MPR PATH:    01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-SEMI-AUTO-MP-FETCH-RUN-TEST-01-REPORT.md
 LEDGER UPDATED:        yes  (JSON first — mp-ledger.json updated before this MPR)
 QUEUE UPDATED:         yes  (packet copied to executed/, original preserved in ready/)
-COMMIT:                TBD — will be patched after final commit
+COMMIT:                0d304a6
 MAIN MODIFIED:         no
 READY FOR A&G REVIEW:  yes
 ```

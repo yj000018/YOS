@@ -181,7 +181,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-MPM-TRANSPORT-TEST-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-MPM-TRANSPORT-TEST-GATE-REPORT-POINTER.md",
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "3fa0c3d",
       "executed_at": "2026-07-05T12:30:00Z",
       "notes": "Sprint: BUS transport test validated. inbox->workspace->outbox lifecycle confirmed. bus.py claim apply: APPLIED. BUS validate: PASS_WITH_WARNINGS. MPM validate: PASS."
     }

@@ -7,7 +7,7 @@ status: executed_awaiting_architect_guardian_review
 executor: Manus
 guardian_required: true
 branch: main
-commit: pending_patch
+commit: 5546463
 executed_at: "2026-07-05T18:30:00Z"
 ---
 
@@ -17,7 +17,7 @@ executed_at: "2026-07-05T18:30:00Z"
 
 ```
 STATUS:                          EXECUTED_AWAITING_A_G_REVIEW
-COMMIT:                          pending_patch
+COMMIT:                          5546463
 CONSTITUTION_PATCHED:            yes (v1.0.0 → v1.1.0)
 IMMUTABLE_PRINCIPLES_ADDED:      yes (9 principles — "YARP defines meaning / BUS moves packets" added)
 HTTP_ANALOGY_ADDED:              yes (Article I + README)

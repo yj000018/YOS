@@ -1,7 +1,7 @@
 {
   "$schema": "yos-mpm-ledger-schema-v1.0.0",
-  "system": "yOS MPM — Mega Prompt Manager",
-  "version": "1.1.0",
+  "system": "yOS MPM \u2014 Mega Prompt Manager",
+  "version": "1.2.0",
   "last_updated": "2026-07-05T00:00:00Z",
   "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
   "entries": [
@@ -77,7 +77,7 @@
       "packet_code": "MPM",
       "title": "Just testing MP process",
       "mode": "sprint",
-      "status": "ready_for_execution",
+      "status": "executed_awaiting_architect_guardian_review",
       "created_by": "ChatGPT / MPX",
       "created_at": "2026-07-05T00:00:00Z",
       "executor": "Manus",
@@ -86,7 +86,7 @@
       "guardian_required": true,
       "risk_flags": [],
       "auto_run_eligible": true,
-      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-JUST-TESTING-MP-PROCESS.md",
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-JUST-TESTING-MP-PROCESS.md",
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-JUST-TESTING-MP-PROCESS-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-JUST-TESTING-MP-PROCESS-REPORT-POINTER.md",
       "source_module": "MPM main runtime validation",

@@ -1,7 +1,7 @@
 {
   "$schema": "yos-mpr-index-schema-v1.0.0",
   "system": "yOS MPM \u2014 Mega Prompt Manager",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "last_updated": "2026-07-05T00:00:00Z",
   "description": "Canonical index of all MPRs. JSON is source of truth. MPR-INDEX.md is a generated view.",
   "entries": [
@@ -35,6 +35,15 @@
       "canonical_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/YOS-MAIN-PR-MERGE-GATE-REPORT.md",
       "log_pointer": "08_LOGS/mpm-reports/YOS-MAIN-PR-MERGE-GATE-REPORT-POINTER.md",
       "commit": "20dc47f2a17a8ac143e4af096983c2061a63f96b",
+      "created_at": "2026-07-05T00:00:00Z"
+    },
+    {
+      "mpr_id": "MPM-20260705-JUST-TESTING-MP-PROCESS-REPORT",
+      "mp_id": "MPM-20260705-JUST-TESTING-MP-PROCESS",
+      "title": "Just testing MP process \u2014 MPR",
+      "status": "executed_awaiting_architect_guardian_review",
+      "canonical_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-JUST-TESTING-MP-PROCESS-REPORT.md",
+      "log_pointer": "08_LOGS/mpm-reports/MPM-20260705-JUST-TESTING-MP-PROCESS-REPORT-POINTER.md",
       "created_at": "2026-07-05T00:00:00Z"
     }
   ]

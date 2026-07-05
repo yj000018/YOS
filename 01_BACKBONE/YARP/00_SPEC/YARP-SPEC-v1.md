@@ -2,7 +2,8 @@
 
 > **Status:** candidate
 > **Gate:** MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE
-> **Constitution:** YARP-CONSTITUTION.md v1.0.0
+> **Constitution:** YARP-CONSTITUTION.md v1.1.0
+> **Amended by:** MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE
 
 ---
 

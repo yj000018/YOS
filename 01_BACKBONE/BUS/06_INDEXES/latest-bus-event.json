@@ -1,17 +1,11 @@
 {
   "$schema": "yos-bus-latest-event-v1.0.0",
-  "event_id": "BUS-20260705-YARP-CONSTITUTION",
-  "event_type": "protocol_constitution",
+  "event_id": "BUS-20260705-YARP-CONSTITUTION-PATCH",
+  "event_type": "protocol_patch",
   "domain": "mpm",
   "status": "executed",
-  "mp_id": "MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE",
-  "yarp_module_created": true,
-  "yarp_placement": "01_BACKBONE/YARP/",
-  "yarp_maturity": "candidate",
-  "files_created": 17,
-  "schemas_created": 7,
-  "spec_files_created": 9,
-  "message_types_defined": 13,
-  "transport_adapters_mapped": 8,
-  "updated_at": "2026-07-05T18:00:00Z"
+  "mp_id": "MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE",
+  "yarp_constitution_version": "v1.1.0",
+  "files_patched": 3,
+  "updated_at": "2026-07-05T18:30:00Z"
 }

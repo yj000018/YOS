@@ -4,15 +4,11 @@
 
 | Field | Value |
 |---|---|
-| Event ID | BUS-20260705-YARP-CONSTITUTION |
-| Event Type | protocol_constitution |
+| Event ID | BUS-20260705-YARP-CONSTITUTION-PATCH |
+| Event Type | protocol_patch |
 | Domain | mpm |
 | Status | executed |
-| MP ID | MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE |
-| YARP Module Created | yes |
-| YARP Placement | `01_BACKBONE/YARP/` |
-| YARP Maturity | candidate |
-| Files Created | 17 (9 spec + 7 schemas + 1 README) |
-| Message Types Defined | 13 |
-| Transport Adapters Mapped | 8 |
-| Updated At | 2026-07-05T18:00:00Z |
+| MP ID | MPM-20260705-YOS-YARP-CONSTITUTION-CLARIFICATION-PATCH-GATE |
+| YARP Constitution Version | v1.1.0 |
+| Files Patched | 3 |
+| Updated At | 2026-07-05T18:30:00Z |

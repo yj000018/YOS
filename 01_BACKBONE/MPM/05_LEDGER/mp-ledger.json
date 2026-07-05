@@ -162,6 +162,28 @@
       "commit": "bce8abb",
       "executed_at": "2026-07-05T12:00:00Z",
       "notes": "Marathon: BUS module created (~53 files). MPM domain defined. bus.py CLI created. MPM adapter + protocol patches v1.5.0. BUS validate: PASS_WITH_WARNINGS. MPM validate: PASS_WITH_WARNINGS."
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-BUS-MPM-TRANSPORT-TEST-GATE",
+      "title": "YOS BUS / MPM Transport Test Gate",
+      "packet_code": "MPM",
+      "mode": "sprint",
+      "status": "executed_awaiting_architect_guardian_review",
+      "created_by": "ChatGPT / A&G",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executor": "Manus",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "guardian_required": true,
+      "risk_flags": [],
+      "auto_run_eligible": true,
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-BUS-MPM-TRANSPORT-TEST-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-MPM-TRANSPORT-TEST-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-MPM-TRANSPORT-TEST-GATE-REPORT-POINTER.md",
+      "branch": "main",
+      "commit": "pending_patch",
+      "executed_at": "2026-07-05T12:30:00Z",
+      "notes": "Sprint: BUS transport test validated. inbox->workspace->outbox lifecycle confirmed. bus.py claim apply: APPLIED. BUS validate: PASS_WITH_WARNINGS. MPM validate: PASS."
     }
   ]
 }

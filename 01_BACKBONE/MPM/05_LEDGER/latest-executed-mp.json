@@ -1,13 +1,13 @@
 {
   "$schema": "yos-mpm-latest-executed-mp-v1.0.0",
-  "latest_mp_id": "MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE",
-  "latest_title": "YOS MPM Local Runtime Optimization Gate",
-  "latest_mode": "marathon",
+  "latest_mp_id": "MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH",
+  "latest_title": "YOS MPM Metadata TBD Micropatch",
+  "latest_mode": "sprint",
   "latest_status": "executed_awaiting_architect_guardian_review",
   "latest_executor": "Manus",
-  "latest_canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE.md",
-  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT.md",
+  "latest_canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH.md",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT.md",
   "branch": "main",
-  "commit": "6c086df",
-  "updated_at": "2026-07-05T00:00:00Z"
+  "commit": "TBD",
+  "updated_at": "2026-07-05T09:54:42.207972+00:00"
 }

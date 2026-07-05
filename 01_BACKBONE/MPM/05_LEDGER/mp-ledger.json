@@ -1,8 +1,8 @@
 {
   "$schema": "yos-mpm-ledger-schema-v1.0.0",
   "system": "yOS MPM \u2014 Mega Prompt Manager",
-  "version": "1.2.1",
-  "last_updated": "2026-07-05T09:36:46.634507+00:00",
+  "version": "1.2.2",
+  "last_updated": "2026-07-05T09:54:42.207341+00:00",
   "description": "Canonical MP execution ledger for yj000018/YOS. JSON is source of truth. mp-ledger.md is a generated view.",
   "entries": [
     {
@@ -109,6 +109,21 @@
       "expected_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT-POINTER.md",
       "commit": "6c086df",
+      "guardian_required": true
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH",
+      "title": "YOS MPM Metadata TBD Micropatch",
+      "mode": "sprint",
+      "status": "executed_awaiting_architect_guardian_review",
+      "created_by": "ChatGPT / MPX",
+      "executor": "Manus",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executed_at": "2026-07-05T00:00:00Z",
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH.md",
+      "expected_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT-POINTER.md",
+      "commit": "TBD",
       "guardian_required": true
     }
   ]

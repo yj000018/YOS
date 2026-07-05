@@ -1,11 +1,11 @@
 {
   "$schema": "yos-mpm-latest-mpr-v1.0.0",
-  "latest_mp_id": "MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE",
-  "latest_mpr_id": "MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT",
+  "latest_mp_id": "MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH",
+  "latest_mpr_id": "MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT",
   "latest_status": "executed_awaiting_architect_guardian_review",
-  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT.md",
-  "latest_log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-LOCAL-RUNTIME-OPTIMIZATION-GATE-REPORT-POINTER.md",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT.md",
+  "latest_log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MPM-METADATA-TBD-MICROPATCH-REPORT-POINTER.md",
   "branch": "main",
-  "commit": "6c086df",
-  "updated_at": "2026-07-05T00:00:00Z"
+  "commit": "TBD",
+  "updated_at": "2026-07-05T09:54:42.207777+00:00"
 }

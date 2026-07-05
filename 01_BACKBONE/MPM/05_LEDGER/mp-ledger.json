@@ -203,7 +203,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT-POINTER.md",
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "915085c",
       "executed_at": "2026-07-05T13:00:00Z",
       "notes": "Run: direct-file runtime probed at /tmp/yos-bus-runtime. init-runtime: 27 dirs. BUS validate: PASS. claim apply: ~43ms. Lifecycle complete. Runtime packet NOT committed."
     }

@@ -335,7 +335,7 @@
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE-REPORT.md",
       "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-AGENT-RELAY-PROTOCOL-CONSTITUTION-GATE-REPORT-POINTER.md",
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "98513cf",
       "executed_at": "2026-07-05T18:00:00Z",
       "notes": "Marathon: YARP v1.0.0-candidate created. 17 files: 9 spec + 7 schemas + 1 README. Placement: 01_BACKBONE/YARP/. 13 message types, 8 transport adapters, 5-layer architecture, Phase 0-4 migration plan. Maturity: candidate."
     }

@@ -23,10 +23,13 @@
       "notes": "Validated in direct-file runtime probe. Requires accessible runtime root."
     },
     "manus_workspace": {
-      "status": "probe_required",
+      "status": "candidate",
       "versioned": false,
       "transport_commit_required": false,
-      "notes": "Potential online Manus server/workspace transport. Must be probed."
+      "persistent_path": "/home/ubuntu/yos-bus-runtime",
+      "cross_session_persistence": "proven",
+      "probe_gate": "MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE",
+      "notes": "Manus sandbox /home/ubuntu/ persists across sessions. Lifecycle supported. Missing: ChatGPT direct write without manual upload."
     },
     "google_drive": {
       "status": "candidate",

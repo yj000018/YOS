@@ -1,0 +1,53 @@
+{
+  "$schema": "yos-bus-probe-result-v1.0.0",
+  "probe_id": "MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE",
+  "probe_date": "2026-07-05",
+  "backend_id": "manus_workspace",
+  "classification": "candidate",
+  "probe_a_filesystem": {
+    "available": true,
+    "path": "/home/ubuntu/",
+    "recommended_runtime_root": "/home/ubuntu/yos-bus-runtime",
+    "same_session_read_write": true,
+    "lifecycle_move_supported": true,
+    "cross_session_persistence_proven": true,
+    "evidence": [
+      "yos-monorepo persists from prior sessions (git log confirms)",
+      ".gitconfig modified 2026-07-02 (prior session)",
+      ".env modified 2026-07-01 (prior session)",
+      ".manus/ persists",
+      "Disk: 40GB root, 30GB free"
+    ]
+  },
+  "probe_b_mcp": {
+    "manus_mcp_cli_available": true,
+    "mcp_servers_configured": false,
+    "mcp_file_write_available": "unknown",
+    "mcp_file_read_available": "unknown",
+    "mcp_stable_addressing": "unknown",
+    "mcp_backend_status": "probe_required"
+  },
+  "probe_c_api": {
+    "manus_upload_file_available": true,
+    "cdn_upload_available": true,
+    "cdn_url_public": true,
+    "cdn_url_pattern": "files.manuscdn.com/user_upload_by_module/session_file/<session_id>/<random_id>.ext",
+    "cdn_persistence": "unknown_likely_session_scoped",
+    "manus_api_docs_found": true,
+    "manus_api_file_upload": true,
+    "manus_api_file_expiration": "48h",
+    "manus_api_workspace_write": false,
+    "manus_api_workspace_read": false,
+    "manus_api_stable_task_context": false,
+    "api_backend_status": "probe_required"
+  },
+  "self_test": {
+    "runtime_path": "/home/ubuntu/yos-bus-runtime",
+    "init_runtime": "pass",
+    "bus_validate": "PASS",
+    "lifecycle_test": "pass",
+    "claim_latency_ms": "~1ms (local FS)"
+  },
+  "upgrade_path": "Demonstrate ChatGPT direct write into /home/ubuntu/yos-bus-runtime/inbox/mpm/ via Manus API task.create + file attachment, or via configured MCP server",
+  "updated_at": "2026-07-05T15:30:00Z"
+}

@@ -4,15 +4,18 @@
 
 | Field | Value |
 |---|---|
-| Event ID | BUS-20260705-FIRST-LAST-MILE-INTEGRATION-GATE |
-| Event Type | first_last_mile_integration |
+| Event ID | BUS-20260705-MANUS-WORKSPACE-PROBE |
+| Event Type | backend_probe |
 | Domain | mpm |
 | Status | executed |
-| MP ID | MPM-20260705-YOS-BUS-FIRST-LAST-MILE-INTEGRATION-GATE |
-| BUS Version | 1.1.0 |
-| New Commands | ingest, write, latest-report, report-pointer, entry-backends, report-backends |
-| New Files | 15 |
-| Patched Files | 3 |
-| First Mile Selftest | pass |
-| Last Mile Selftest | pass |
-| Updated At | 2026-07-05T14:30:00Z |
+| MP ID | MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE |
+| Backend Probed | manus_workspace |
+| Classification | candidate |
+| Persistent Path | /home/ubuntu/yos-bus-runtime |
+| Cross-Session Persistence | proven |
+| Probe A (Filesystem) | pass |
+| Probe B (MCP) | probe_required |
+| Probe C (API) | probe_required |
+| Files Patched | 5 |
+| Probe Result Path | 01_BACKBONE/BUS/06_INDEXES/manus-workspace-probe-latest.json |
+| Updated At | 2026-07-05T15:30:00Z |

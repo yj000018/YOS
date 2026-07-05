@@ -14,10 +14,13 @@
       "description": "Fast filesystem-based inbox/workspace/outbox/archive runtime."
     },
     "manus_cloud": {
-      "status": "probe_required",
+      "status": "candidate",
       "versioned": false,
       "requires_git_commit_for_transport": false,
-      "description": "Manus online workspace/server-like runtime if stable and addressable."
+      "persistent_path": "/home/ubuntu/yos-bus-runtime",
+      "cross_session_persistence": "proven",
+      "probe_gate": "MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE",
+      "description": "Manus sandbox /home/ubuntu/ persists across sessions. Lifecycle supported. Missing: ChatGPT direct write without manual upload."
     },
     "git": {
       "status": "fallback",

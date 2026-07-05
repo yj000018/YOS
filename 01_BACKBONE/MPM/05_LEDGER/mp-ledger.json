@@ -250,6 +250,28 @@
       "commit": "8244928",
       "executed_at": "2026-07-05T14:30:00Z",
       "notes": "Marathon: implement BUS first-mile (write/ingest) and last-mile (latest-report/report-pointer) integration layer. bus.py v1.1.0. 15 new files. 3 patched. Both selftests pass."
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE",
+      "title": "YOS BUS Manus Workspace / MCP / API Probe Gate",
+      "packet_code": "MPM",
+      "mode": "run",
+      "status": "running",
+      "created_by": "ChatGPT / A&G",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executor": "Manus",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "guardian_required": true,
+      "risk_flags": [],
+      "auto_run_eligible": true,
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE-REPORT-POINTER.md",
+      "branch": "main",
+      "commit": "pending_patch",
+      "executed_at": "2026-07-05T15:30:00Z",
+      "notes": "Run: probed Manus workspace FS (candidate), MCP bridge (probe_required), API (probe_required). manus_workspace classified as candidate. /home/ubuntu persists cross-session proven."
     }
   ]
 }

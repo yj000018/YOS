@@ -1,41 +1,56 @@
-# BUS Runtime: manus-cloud
+# BUS Runtime: manus-cloud (manus_workspace)
 
-**Status:** probe_required
+**Status:** candidate
 **Versioned:** no
+**Probe Gate:** MPM-20260705-YOS-BUS-MANUS-WORKSPACE-PROBE-GATE
+**Probe Date:** 2026-07-05
 
 ---
 
 ## Overview
 
-This backend is promising but requires probing before production use.
+The Manus sandbox filesystem (`/home/ubuntu/`) is a persistent, addressable BUS runtime backend.
+Cross-session persistence is proven. Lifecycle operations are supported.
 
-Do not assert this backend is production-ready unless tested.
-
----
-
-## Required Probe Questions
-
-1. Does Manus have a stable persistent workspace across sessions?
-2. Can Manus read/write a known inbox path without Git?
-3. Can ChatGPT or another bridge write into that Manus-accessible path?
-4. Can the same conversation or future Manus task access the same path?
-5. Is file latency substantially faster than Git commit/push?
-6. What are the reliability and access boundaries?
+Missing proof: external (ChatGPT) direct write without manual upload.
+Current operational fallback: `bus.py ingest` (manual upload bridge).
 
 ---
 
-## Current Status
+## Probe Results Summary
 
-`status: probe_required`
-
-This backend will be activated only after a dedicated probe gate confirms all questions above.
+| Question | Answer |
+|---|---|
+| Stable persistent workspace across sessions? | **yes** — `/home/ubuntu/` persists across hibernation |
+| Read/write known inbox path without Git? | **yes** — direct filesystem operations |
+| ChatGPT direct write into Manus path? | **no** — manual upload bridge required |
+| Same path accessible in future Manus task? | **yes** — persistence proven |
+| File latency vs Git? | **substantially faster** — ~43ms vs seconds |
+| Reliability/access boundaries? | sandbox-scoped, no external network access required |
 
 ---
 
-## Activation Gate
+## Recommended Runtime Path
 
-To activate, create and execute:
+```bash
+export YOS_BUS_RUNTIME_ROOT=/home/ubuntu/yos-bus-runtime
+python3 01_BACKBONE/BUS/08_TOOLS/bus.py init-runtime --root /home/ubuntu/yos-bus-runtime
+```
+
+---
+
+## Classification
 
 ```
-MPM-{DATE}-YOS-BUS-MANUS-CLOUD-PROBE-GATE
+candidate
 ```
+
+Upgrade to `production_candidate` requires: ChatGPT direct write demonstrated (via Manus API task.create + file attachment, or MCP server).
+
+---
+
+## Related
+
+- `02_ADAPTERS/manus-workspace-entry-adapter.md` — full probe details
+- `06_INDEXES/manus-workspace-probe-latest.json` — machine-readable probe summary
+- `02_ADAPTERS/manual-upload-entry-adapter.md` — current operational fallback

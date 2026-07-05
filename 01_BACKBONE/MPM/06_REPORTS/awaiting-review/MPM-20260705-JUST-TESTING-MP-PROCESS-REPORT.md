@@ -25,7 +25,7 @@ CANONICAL MPR PATH:    01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-J
 LEDGER UPDATED:        yes  (JSON first — mp-ledger.json)
 QUEUE UPDATED:         yes  (packet moved to executed/)
 READY QUEUE CLEAN:     yes
-COMMIT:                TBD — patched after push
+COMMIT:                35ff513
 MAIN MODIFIED:         yes  (active runtime test on main)
 READY FOR A&G REVIEW:  yes
 ```

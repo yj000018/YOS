@@ -294,6 +294,28 @@
       "commit": "9ec42f8",
       "executed_at": "2026-07-05T16:00:00Z",
       "notes": "Marathon: complete census of 11 mechanisms. Canonical: workspace_filesystem. External write: manus_api_task. 6 protocol patches applied. Migration roadmap created."
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE",
+      "title": "YOS Manus API Capability Verification Gate",
+      "packet_code": "MPM",
+      "mode": "sprint",
+      "status": "running",
+      "created_by": "ChatGPT / A&G",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executor": "Manus",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "guardian_required": true,
+      "risk_flags": [],
+      "auto_run_eligible": true,
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE-REPORT-POINTER.md",
+      "branch": "main",
+      "commit": "pending_patch",
+      "executed_at": "2026-07-05T17:00:00Z",
+      "notes": "Sprint: 9 capabilities verified. Proven: task_create, sendMessage, file_upload, attachment, conversation_continuation, auth, structured_output. Supported: webhooks. Unsupported direct: workspace_write, workspace_read. Recommended: Async Task Relay Pattern."
     }
   ]
 }

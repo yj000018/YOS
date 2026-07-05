@@ -1,13 +1,13 @@
 {
   "$schema": "yos-mpm-latest-executed-mp-v1.0.0",
-  "latest_mp_id": "MPM-20260705-YOS-MANUS-CONNECTIVITY-CENSUS-GATE",
-  "latest_title": "YOS Manus Connectivity Census Gate",
-  "latest_mode": "marathon",
+  "latest_mp_id": "MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE",
+  "latest_title": "YOS Manus API Capability Verification Gate",
+  "latest_mode": "sprint",
   "latest_status": "executed_awaiting_architect_guardian_review",
   "latest_executor": "Manus",
-  "latest_canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MANUS-CONNECTIVITY-CENSUS-GATE.md",
-  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MANUS-CONNECTIVITY-CENSUS-GATE-REPORT.md",
+  "latest_canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE.md",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE-REPORT.md",
   "branch": "main",
-  "commit": "9ec42f8",
-  "updated_at": "2026-07-05T16:00:00Z"
+  "commit": "pending_patch",
+  "updated_at": "2026-07-05T17:00:00Z"
 }

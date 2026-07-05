@@ -1,0 +1,212 @@
+{
+  "$schema": "yos-bus-manus-api-capability-matrix-v1.0.0",
+  "census_gate": "MPM-20260705-YOS-MANUS-API-CAPABILITY-VERIFICATION-GATE",
+  "source": "openapi_v2.json + skills/manus-api/docs/v2/ (official Manus API docs)",
+  "verified_at": "2026-07-05T17:00:00Z",
+  "capabilities": {
+    "task_create": {
+      "question": "Can an external client create a task?",
+      "classification": "proven",
+      "endpoint": "POST /v2/task.create",
+      "auth": "x-manus-api-key header",
+      "oauth_scope": "create_task OR manage_all_tasks",
+      "request_fields": {
+        "message.content": "string or ContentPart[] — REQUIRED",
+        "message.connectors": "string[] — connector IDs",
+        "message.enable_skills": "string[] — skill IDs",
+        "message.force_skills": "string[] — skill IDs (forced invocation)",
+        "project_id": "string — optional, applies project instruction",
+        "locale": "string — output language",
+        "interactive_mode": "boolean — default false",
+        "hide_in_task_list": "boolean — default false (useful for automated tasks)",
+        "share_visibility": "private|team|public — default private",
+        "agent_profile": "manus-1.6|manus-1.6-lite|manus-1.6-max",
+        "title": "string — custom title",
+        "structured_output_schema": "JSON Schema object"
+      },
+      "response_fields": {
+        "task_id": "string",
+        "task_title": "string",
+        "task_url": "string",
+        "share_url": "string"
+      },
+      "notes": "Fully documented. hide_in_task_list=true ideal for automated BUS tasks. project_id enables project instruction injection."
+    },
+    "send_message": {
+      "question": "Can an external client send a message into an existing task?",
+      "classification": "proven",
+      "endpoint": "POST /v2/task.sendMessage",
+      "auth": "x-manus-api-key header",
+      "oauth_scope": "create_task OR manage_all_tasks",
+      "shortcut": "agent-default-main_task (IM agent main task)",
+      "request_fields": {
+        "task_id": "string — REQUIRED (or agent-default-main_task shortcut)",
+        "message": "Message object — REQUIRED",
+        "agent_profile": "string — optional, does not default to manus-1.6",
+        "structured_output_schema": "JSON Schema — arms schema for next finish"
+      },
+      "response_fields": {
+        "ok": "boolean",
+        "task_id": "string"
+      },
+      "notes": "Critical for BUS: can relay MP packet as message to existing Manus task. agent-default-main_task shortcut eliminates task ID lookup."
+    },
+    "file_upload": {
+      "question": "Can an external client upload and attach a file to a task?",
+      "classification": "proven",
+      "endpoint": "POST /v2/file.upload",
+      "auth": "x-manus-api-key header",
+      "flow": [
+        "1. POST /v2/file.upload with {filename} → get file_id + upload_url (presigned S3, expires 3min)",
+        "2. PUT upload_url with file bytes",
+        "3. File status: pending → uploaded",
+        "4. Use file_id in message.content ContentPart when calling task.create or task.sendMessage"
+      ],
+      "size_limits": {
+        "file_id": "512 MB max",
+        "file_url": "20 MB max (Manus downloads)",
+        "file_data": "20 MB max (inline base64)"
+      },
+      "attachment_count": "no hard limit",
+      "notes": "Full upload flow proven. file_id method supports up to 512MB. Alternative: file_url (Manus fetches) or file_data (base64 inline)."
+    },
+    "task_attachment": {
+      "question": "Can an external client attach a file to a task?",
+      "classification": "proven",
+      "methods": {
+        "file_id": "Upload via file.upload, attach file_id in ContentPart",
+        "file_url": "Pass URL directly — Manus downloads (20MB limit)",
+        "file_data": "Pass base64 inline (20MB limit)"
+      },
+      "content_part_schema": {
+        "type": "file",
+        "file_id": "string",
+        "file_url": "string",
+        "file_data": "string (base64)"
+      },
+      "notes": "Three attachment methods. file_id preferred for >20MB files. ContentPart array allows mixed text + files."
+    },
+    "workspace_write": {
+      "question": "Can an external client write directly into the persistent workspace (/home/ubuntu/)?",
+      "classification": "unsupported",
+      "evidence": "No API endpoint exists for direct filesystem write. file.upload writes to S3 CDN (not workspace). Manus agent writes to workspace during task execution only.",
+      "workaround": "task.create/sendMessage with instruction to write file to /home/ubuntu/yos-bus-runtime/inbox/mpm/ — Manus agent executes the write during task run.",
+      "workaround_classification": "supported (indirect)",
+      "notes": "CRITICAL BLOCKER for direct BUS write. Indirect write via task instruction is the only path."
+    },
+    "workspace_read": {
+      "question": "Can an external client read from the persistent workspace?",
+      "classification": "unsupported",
+      "evidence": "No API endpoint for direct filesystem read. task.listMessages can retrieve agent output messages and attachments (CDN URLs), but not raw filesystem files.",
+      "workaround": "task.create/sendMessage with instruction to read file and return content — Manus agent reads and returns in assistant_message.",
+      "workaround_classification": "supported (indirect)",
+      "notes": "Indirect read via task instruction is the only path. Structured output can return file content as JSON."
+    },
+    "conversation_continuation": {
+      "question": "Can the API trigger or continue work in an existing conversation?",
+      "classification": "proven",
+      "methods": {
+        "task_sendMessage": "Send follow-up to any task_id — continues execution",
+        "agent_default_main_task": "Shortcut for IM agent persistent conversation",
+        "waiting_reply": "task.sendMessage to reply when agent asks question (messageAskUser event)",
+        "confirm_action": "task.confirmAction for gmailSendAction, deployAction, etc."
+      },
+      "notes": "Full conversation continuation proven. agent-default-main_task = persistent IM agent thread. Can resume stopped tasks."
+    },
+    "auth_model": {
+      "question": "What authentication model is required?",
+      "classification": "proven",
+      "methods": {
+        "api_key": {
+          "header": "x-manus-api-key",
+          "scope": "full account access",
+          "rate_limit": "10 req/min for task.create",
+          "notes": "Simplest. No expiry. Recommended for server-to-server (ChatGPT → Manus)."
+        },
+        "oauth2": {
+          "grant_types": ["authorization_code", "client_credentials"],
+          "scopes": {
+            "create_task": "Create tasks, send messages, upload files — scoped to OAuth app",
+            "manage_all_tasks": "Full access to all user tasks"
+          },
+          "notes": "For third-party apps. create_task scope isolates tasks per OAuth app."
+        }
+      },
+      "recommended": "api_key for BUS integration (server-to-server, no user interaction required)"
+    },
+    "structured_output": {
+      "question": "Can the API receive structured JSON results from Manus?",
+      "classification": "proven",
+      "endpoint": "task.create or task.sendMessage with structured_output_schema",
+      "retrieval": {
+        "polling": "task.listMessages → structured_output_result event after task stops",
+        "webhook": "task_stopped event includes task_detail.structured_output"
+      },
+      "schema_constraints": "All object properties must be in required[], additionalProperties must be false",
+      "notes": "Excellent for MPR delivery. Manus can return MPR as structured JSON after task completion."
+    },
+    "webhooks": {
+      "question": "Can the API push notifications to an external endpoint?",
+      "classification": "supported",
+      "endpoint": "POST /v2/webhook.create",
+      "events": ["task_created", "task_stopped"],
+      "task_stopped_payload": {
+        "event_type": "task_stopped",
+        "task_detail.stop_reason": "finish|user_stopped|error",
+        "task_detail.structured_output": "present if schema was set"
+      },
+      "requirement": "public HTTPS endpoint",
+      "notes": "Ideal for last-mile MPR delivery. Eliminates polling. Requires external webhook receiver."
+    },
+    "rate_limits": {
+      "task_create": "10 req/min",
+      "other_endpoints": "not documented",
+      "notes": "10/min sufficient for MPM cadence (1-5 MPs/day)"
+    }
+  },
+  "blocking_limitations": [
+    {
+      "id": "BL-01",
+      "severity": "critical",
+      "description": "No direct workspace write API. External clients cannot write files directly to /home/ubuntu/.",
+      "workaround": "task.create/sendMessage with write instruction — Manus agent executes write during task run (async, ~30-60s latency).",
+      "impact": "BUS first-mile cannot be synchronous. Must accept async write pattern."
+    },
+    {
+      "id": "BL-02",
+      "severity": "critical",
+      "description": "No direct workspace read API. External clients cannot read /home/ubuntu/ files.",
+      "workaround": "task.create/sendMessage with read+return instruction. Or: structured_output to return file content as JSON.",
+      "impact": "BUS last-mile cannot be synchronous. Must accept async read pattern."
+    },
+    {
+      "id": "BL-03",
+      "severity": "medium",
+      "description": "file.upload writes to S3 CDN (not workspace). CDN URLs are public but not persistent workspace paths.",
+      "workaround": "Use file_id in task message — Manus agent can access CDN file and write to workspace.",
+      "impact": "file.upload alone is not sufficient for workspace write. Must combine with task instruction."
+    },
+    {
+      "id": "BL-04",
+      "severity": "low",
+      "description": "Rate limit: 10 task.create/min. Burst of MPs could hit limit.",
+      "workaround": "Queue MPs, send one at a time with 6s spacing.",
+      "impact": "Negligible for current MPM cadence."
+    }
+  ],
+  "recommended_bus_integration_pattern": {
+    "name": "Async Task Relay Pattern",
+    "description": "ChatGPT sends MP packet as message to Manus via task.sendMessage (agent-default-main_task). Manus agent writes packet to BUS inbox, executes MP, writes MPR to BUS outbox. ChatGPT polls task.listMessages or receives webhook for MPR.",
+    "sequence": [
+      "1. ChatGPT: POST /v2/task.sendMessage {task_id: 'agent-default-main_task', message: {content: '<MP packet content>'}}",
+      "2. Manus agent: receives message, writes to /home/ubuntu/yos-bus-runtime/inbox/mpm/<packet>.md",
+      "3. Manus agent: executes MP, writes MPR to /home/ubuntu/yos-bus-runtime/outbox/mpm/<mpr>.md",
+      "4a. ChatGPT: polls GET /v2/task.listMessages?task_id=agent-default-main_task for assistant_message with MPR",
+      "4b. OR: webhook push on task_stopped event with structured_output MPR"
+    ],
+    "latency": "30-120s (async task execution)",
+    "auth": "x-manus-api-key",
+    "eliminates": "manual file upload bridge",
+    "requires": "Manus agent trained to recognize MP packets and execute BUS write"
+  }
+}

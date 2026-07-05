@@ -8,7 +8,7 @@
 MP_ID:                           MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE
 MODE:                            marathon
 STATUS:                          executed_awaiting_a_g_review
-COMMIT:                          pending_patch
+COMMIT:                          0385844
 BRANCH:                          main
 EXECUTED_AT:                     2026-07-05T19:00:00Z
 EXECUTOR:                        Manus

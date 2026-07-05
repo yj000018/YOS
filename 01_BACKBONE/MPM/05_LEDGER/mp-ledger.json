@@ -16,7 +16,7 @@
       "target_llm": "Manus",
       "source_llm": "ChatGPT / A&G",
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "0385844",
       "created_at": "2026-07-05T00:00:00Z",
       "executed_at": "2026-07-05T19:00:00Z",
       "guardian_required": true

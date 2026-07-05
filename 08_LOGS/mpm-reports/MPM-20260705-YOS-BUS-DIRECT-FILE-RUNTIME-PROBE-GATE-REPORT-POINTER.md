@@ -1,0 +1,8 @@
+# MPR Pointer — MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE
+
+**MP ID:** MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE
+**MPR Path:** `01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md`
+**Status:** executed_awaiting_architect_guardian_review
+**Branch:** main
+**Commit:** pending_patch
+**Executed at:** 2026-07-05T13:00:00Z

@@ -1,0 +1,15 @@
+{
+  "$schema": "yos-bus-direct-file-probe-v1.0.0",
+  "probe_id": "MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE",
+  "probe_status": "validated_awaiting_a_g_review",
+  "runtime_root_tested": "/tmp/yos-bus-runtime",
+  "runtime_root_recommended_persistent": "/home/ubuntu/yos-bus-runtime",
+  "init_command": "python3 01_BACKBONE/BUS/08_TOOLS/bus.py init-runtime --root $YOS_BUS_RUNTIME_ROOT",
+  "dirs_created": 27,
+  "claim_latency_ms": 43,
+  "backend_active": "direct_file",
+  "bus_validate_result": "PASS",
+  "cross_session_note": "/tmp is ephemeral in Manus sandbox. Use /home/ubuntu/yos-bus-runtime for persistence.",
+  "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md",
+  "updated_at": "2026-07-05T13:00:00Z"
+}

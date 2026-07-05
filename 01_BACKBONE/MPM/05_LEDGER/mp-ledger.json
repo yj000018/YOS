@@ -184,6 +184,28 @@
       "commit": "3fa0c3d",
       "executed_at": "2026-07-05T12:30:00Z",
       "notes": "Sprint: BUS transport test validated. inbox->workspace->outbox lifecycle confirmed. bus.py claim apply: APPLIED. BUS validate: PASS_WITH_WARNINGS. MPM validate: PASS."
+    },
+    {
+      "mp_id": "MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE",
+      "title": "YOS BUS Direct File Runtime Probe Gate",
+      "packet_code": "MPM",
+      "mode": "run",
+      "status": "executed_awaiting_architect_guardian_review",
+      "created_by": "ChatGPT / A&G",
+      "created_at": "2026-07-05T00:00:00Z",
+      "executor": "Manus",
+      "target_llm": "Manus",
+      "source_llm": "ChatGPT / A&G",
+      "guardian_required": true,
+      "risk_flags": [],
+      "auto_run_eligible": true,
+      "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/executed/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE.md",
+      "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md",
+      "log_pointer_path": "08_LOGS/mpm-reports/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT-POINTER.md",
+      "branch": "main",
+      "commit": "pending_patch",
+      "executed_at": "2026-07-05T13:00:00Z",
+      "notes": "Run: direct-file runtime probed at /tmp/yos-bus-runtime. init-runtime: 27 dirs. BUS validate: PASS. claim apply: ~43ms. Lifecycle complete. Runtime packet NOT committed."
     }
   ]
 }

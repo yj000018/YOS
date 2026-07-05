@@ -1,12 +1,15 @@
 {
   "$schema": "yos-bus-latest-event-v1.0.0",
-  "event_id": "BUS-20260705-MPM-TRANSPORT-TEST",
-  "event_type": "transport_test",
+  "event_id": "BUS-20260705-DIRECT-FILE-RUNTIME-PROBE",
+  "event_type": "direct_file_runtime_probe",
   "domain": "mpm",
   "status": "validated_awaiting_a_g_review",
-  "test_packet_id": "BUS-MPM-TRANSPORT-TEST-20260705",
+  "test_packet_id": "BUS-DIRECT-FILE-MPM-TEST-20260705",
+  "runtime_root": "/tmp/yos-bus-runtime",
+  "backend_active": "direct_file",
   "claim_applied": true,
+  "claim_latency_ms": 43,
   "final_state": "outbox",
-  "canonical_report_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-MPM-TRANSPORT-TEST-GATE-REPORT.md",
-  "updated_at": "2026-07-05T12:30:00Z"
+  "canonical_report_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-BUS-DIRECT-FILE-RUNTIME-PROBE-GATE-REPORT.md",
+  "updated_at": "2026-07-05T13:00:00Z"
 }

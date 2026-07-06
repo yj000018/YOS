@@ -1,0 +1,122 @@
+{
+  "index_id": "MANUS-HISTORICAL-DISCOVERY-INDEX",
+  "version": "1.0.0",
+  "gate": "MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE",
+  "excavation_date": "2026-07-05",
+  "executor": "Manus",
+  "status": "v1.0.0_awaiting_ag_synthesis",
+  "coverage": {
+    "period": "2026-07-05",
+    "scope": "first_full_mpm_marathon_session",
+    "sources_excavated": 11,
+    "gates_covered": 16,
+    "pre_monorepo_coverage": "none_deferred"
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "type": "index",
+      "status": "complete"
+    },
+    {
+      "file": "DISCOVERY-MASTER-INDEX.md",
+      "type": "master_index",
+      "status": "complete",
+      "discoveries": 11,
+      "fulgurances": 15,
+      "emergence_events": 6,
+      "gates": 16,
+      "open_hypotheses": 8
+    },
+    {
+      "file": "DISCOVERY-GENEALOGY.md",
+      "type": "genealogy",
+      "status": "complete",
+      "nodes": 11
+    },
+    {
+      "file": "FULGURANCES-MASTER.md",
+      "type": "fulgurances",
+      "status": "complete",
+      "count": 15
+    },
+    {
+      "file": "EMERGENCE-EVENTS-MASTER.md",
+      "type": "emergence_events",
+      "status": "complete",
+      "count": 6
+    },
+    {
+      "file": "ONTOLOGY-OF-GENESIS-FRAGMENTS.md",
+      "type": "ontology",
+      "status": "complete",
+      "fragments": 8
+    },
+    {
+      "file": "EPISTEMOLOGY-OF-DISCOVERY-FRAGMENTS.md",
+      "type": "epistemology",
+      "status": "complete",
+      "fragments": 7
+    },
+    {
+      "file": "LIVING-ARCHITECTURE-FRAGMENTS.md",
+      "type": "living_architecture",
+      "status": "complete",
+      "fragments": 7
+    },
+    {
+      "file": "KOSMOS-YOS-RELATION-FRAGMENTS.md",
+      "type": "kosmos_relation",
+      "status": "hypothesis_heavy",
+      "fragments": 8,
+      "requires_ag_synthesis": true
+    },
+    {
+      "file": "CHRONICLES-CANDIDATE-PASSAGES.md",
+      "type": "chronicles_passages",
+      "status": "complete",
+      "passages": 7
+    },
+    {
+      "file": "OPEN-HYPOTHESES.md",
+      "type": "open_hypotheses",
+      "status": "complete",
+      "count": 8
+    },
+    {
+      "file": "manus_historical_discovery_index.json",
+      "type": "machine_index",
+      "status": "complete"
+    }
+  ],
+  "discoveries": [
+    {"id": "DISC-001", "title": "Transport ≠ Persistence", "status": "canonical"},
+    {"id": "DISC-002", "title": "BUS ≠ Protocol", "status": "canonical"},
+    {"id": "DISC-003", "title": "Protocol Requires Actors", "status": "canonical"},
+    {"id": "DISC-004", "title": "Trust is Explicit", "status": "canonical"},
+    {"id": "DISC-005", "title": "Capabilities are Declarative", "status": "canonical"},
+    {"id": "DISC-006", "title": "JSON is Primary", "status": "canonical"},
+    {"id": "DISC-007", "title": "Workspace Filesystem is Canonical Runtime", "status": "canonical"},
+    {"id": "DISC-008", "title": "/tmp is Ephemeral", "status": "canonical"},
+    {"id": "DISC-009", "title": "Async Task Relay Pattern", "status": "candidate"},
+    {"id": "DISC-010", "title": "Single Monorepo", "status": "canonical"},
+    {"id": "DISC-011", "title": "Backbone Topology", "status": "canonical"}
+  ],
+  "top_fulgurances": [
+    "YARP defines meaning. BUS moves packets.",
+    "JSON is primary. Markdown is audit.",
+    "Git is durable memory, not the protocol.",
+    "Trust is not inherited from vendor or runtime.",
+    "A capability declaration is a claim, not a proof.",
+    "Everything important to yOS must be findable in one clear place."
+  ],
+  "backbone_state_at_excavation": {
+    "modules": ["MPM", "KAP", "BUS", "YARP", "AGENTS", "GOVERNANCE", "ROUTING", "MEMORY", "SECURITY"],
+    "constituted": ["MPM", "KAP", "BUS", "YARP", "AGENTS"],
+    "placeholder": ["GOVERNANCE", "ROUTING", "MEMORY", "SECURITY"]
+  },
+  "next_excavation_gates": [
+    "MPM-{DATE}-YOS-CHRONICLES-PRE-MONOREPO-EXCAVATION-GATE",
+    "MPM-{DATE}-YOS-CHRONICLES-KOSMOS-DEFINITION-SYNTHESIS-GATE"
+  ]
+}

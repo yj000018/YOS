@@ -1,11 +1,8 @@
 {
-  "$schema": "yos-bus-latest-event-v1.0.0",
-  "event_id": "BUS-20260705-AGENTS-BACKBONE-CONSTITUTION",
-  "event_type": "backbone_module_created",
-  "domain": "general",
-  "status": "executed",
-  "mp_id": "MPM-20260705-YOS-AGENTS-BACKBONE-CONSTITUTION-GATE",
-  "agents_module_version": "v1.0.0-candidate",
-  "files_created": 35,
-  "updated_at": "2026-07-05T19:00:00Z"
+  "latest_bus_event_id": "BUS-CHRONICLES-EXCAVATION-20260705",
+  "latest_bus_event_type": "chronicles_excavation",
+  "latest_bus_event_domain": "general",
+  "latest_bus_event_gate": "MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE",
+  "latest_bus_event_at": "2026-07-05T22:00:00Z",
+  "latest_bus_event_commit": "pending_patch"
 }

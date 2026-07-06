@@ -7,7 +7,7 @@ status: executed_awaiting_architect_guardian_review
 executor: Manus
 guardian_required: true
 branch: main
-commit: pending_patch
+commit: c05dad1
 executed_at: "2026-07-05T22:00:00Z"
 canonical_mpr_path: 01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE-REPORT.md
 log_pointer_path: 08_LOGS/mpm-reports/MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE-REPORT-POINTER.md
@@ -21,7 +21,7 @@ log_pointer_path: 08_LOGS/mpm-reports/MPM-20260705-YOS-CHRONICLES-MANUS-HISTORIC
 STATUS:                          EXECUTED_AWAITING_A_G_REVIEW
 MODE:                            marathon
 BRANCH:                          main
-COMMIT:                          pending_patch
+COMMIT:                          c05dad1
 CHRONICLES_FOLDER_CREATED:       yes (00_META/CHRONICLES/MANUS-HISTORICAL-DISCOVERY/)
 FILES_CREATED:                   15 (12 + 3 discoveries/)
 SOURCES_EXCAVATED:               11

@@ -4,6 +4,6 @@
   "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE-REPORT.md",
   "latest_mpr_status": "executed_awaiting_architect_guardian_review",
   "latest_mpr_mode": "marathon",
-  "latest_mpr_commit": "pending_patch",
+  "latest_mpr_commit": "c05dad1",
   "latest_mpr_executed_at": "2026-07-05T22:00:00Z"
 }

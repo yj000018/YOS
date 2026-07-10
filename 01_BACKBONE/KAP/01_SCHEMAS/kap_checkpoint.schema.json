@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "kap_checkpoint.schema.json",
+  "title": "KAP Checkpoint",
+  "description": "Progress checkpoint for a KAP adapter run — enables resume after interruption",
+  "type": "object",
+  "required": ["checkpoint_id", "adapter_id", "source_id", "cursor", "created_at", "status"],
+  "properties": {
+    "checkpoint_id": {
+      "type": "string",
+      "description": "Unique checkpoint ID, e.g. CHK-openai-api-conversation-2026-07-05T23:00:00Z"
+    },
+    "adapter_id": {"type": "string"},
+    "source_id": {"type": "string"},
+    "cursor": {
+      "type": "string",
+      "description": "Opaque cursor string for resuming from this position"
+    },
+    "records_processed": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of records processed up to this checkpoint"
+    },
+    "created_at": {"type": "string", "format": "date-time"},
+    "status": {
+      "type": "string",
+      "enum": ["active", "superseded", "abandoned"],
+      "description": "active = current checkpoint; superseded = replaced by newer; abandoned = run was cancelled"
+    },
+    "run_id": {
+      "type": ["string", "null"],
+      "description": "Optional reference to the KAP run that created this checkpoint"
+    },
+    "notes": {"type": ["string", "null"]}
+  }
+}

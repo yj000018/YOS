@@ -4,5 +4,10 @@
   "latest_bus_event_domain": "general",
   "latest_bus_event_gate": "MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE",
   "latest_bus_event_at": "2026-07-05T22:00:00Z",
-  "latest_bus_event_commit": "c05dad1"
+  "latest_bus_event_commit": "c05dad1",
+  "event_id": "BUS-KAP-ADAPTER-CENSUS-20260705",
+  "event_type": "kap_adapter_census",
+  "timestamp": "2026-07-05T23:45:00Z",
+  "gate": "MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE",
+  "summary": "19 KAP adapters catalogued, 2 production_ready, 3 production_candidate"
 }

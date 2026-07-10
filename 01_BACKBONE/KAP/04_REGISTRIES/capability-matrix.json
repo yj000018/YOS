@@ -1,0 +1,116 @@
+{
+  "matrix_id": "kap-capability-matrix",
+  "version": "1.0.0",
+  "generated_at": "2026-07-05T23:30:00Z",
+  "gate": "MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE",
+  "summary": {
+    "total_adapters": 19,
+    "by_status": {
+      "production_ready": 2,
+      "production_candidate": 3,
+      "candidate": 1,
+      "probe_required": 8,
+      "unsupported": 5
+    },
+    "by_runtime_class": {
+      "class_a_api": 8,
+      "class_b_workspace": 6,
+      "class_c_consumer_ui": 5
+    },
+    "by_adapter_type": {
+      "conversation": 9,
+      "workspace": 5,
+      "repository": 1,
+      "file": 2,
+      "memory": 2,
+      "research": 3,
+      "evidence": 1
+    }
+  },
+  "production_ready_adapters": [
+    "git-repository-adapter",
+    "manus-workspace-adapter"
+  ],
+  "production_candidate_adapters": [
+    "manus-api-adapter",
+    "openai-api-conversation",
+    "notion-api-adapter"
+  ],
+  "recommended_stack": {
+    "primary_workspace": "manus-workspace-adapter",
+    "primary_transport": "git-repository-adapter",
+    "primary_relay": "manus-api-adapter",
+    "primary_memory": "notion-api-adapter",
+    "primary_llm": "openai-api-conversation",
+    "research": "perplexity-api-research"
+  },
+  "capability_matrix": {
+    "historical_backfill": {
+      "proven": ["git-repository-adapter"],
+      "candidate": ["manus-workspace-adapter", "manus-api-adapter", "notion-api-adapter", "google-drive-file-adapter", "mem0-memory-adapter"],
+      "unsupported": ["openai-api-conversation", "anthropic-api-conversation", "chatgpt-app-consumer", "claude-ai-consumer", "gemini-app-consumer", "grok-app-consumer", "perplexity-app-consumer"]
+    },
+    "continuous_capture": {
+      "proven": ["git-repository-adapter"],
+      "candidate": ["manus-workspace-adapter", "manus-api-adapter", "openai-api-conversation", "anthropic-api-conversation", "notion-api-adapter", "google-drive-file-adapter", "mem0-memory-adapter"],
+      "unsupported": ["chatgpt-app-consumer", "claude-ai-consumer", "gemini-app-consumer", "grok-app-consumer", "perplexity-app-consumer"]
+    },
+    "checkpoint": {
+      "proven": ["git-repository-adapter", "manus-workspace-adapter"],
+      "candidate": ["manus-api-adapter", "notion-api-adapter", "google-drive-file-adapter"],
+      "unsupported": ["openai-api-conversation", "anthropic-api-conversation", "chatgpt-app-consumer", "claude-ai-consumer", "gemini-app-consumer", "grok-app-consumer", "perplexity-app-consumer"]
+    },
+    "finalization": {
+      "proven": ["git-repository-adapter"],
+      "candidate": ["manus-workspace-adapter", "manus-api-adapter", "notion-api-adapter"],
+      "unsupported": ["openai-api-conversation", "anthropic-api-conversation", "chatgpt-app-consumer", "claude-ai-consumer", "gemini-app-consumer", "grok-app-consumer", "perplexity-app-consumer"]
+    }
+  },
+  "critical_gaps": [
+    {
+      "gap_id": "GAP-001",
+      "description": "ChatGPT App conversation history not accessible programmatically",
+      "affected_adapters": ["chatgpt-app-consumer"],
+      "workaround": "Manual JSON export via ChatGPT settings → import as exported_history",
+      "priority": "high"
+    },
+    {
+      "gap_id": "GAP-002",
+      "description": "Manus API key not configured — task.list/sendMessage blocked",
+      "affected_adapters": ["manus-api-adapter"],
+      "workaround": "Generate API key in Manus settings → add to env or yos-bus-runtime/config",
+      "priority": "high"
+    },
+    {
+      "gap_id": "GAP-003",
+      "description": "Notion API token not configured — memory store blocked",
+      "affected_adapters": ["notion-api-adapter"],
+      "workaround": "Create Notion integration → add NOTION_API_KEY to env",
+      "priority": "medium"
+    },
+    {
+      "gap_id": "GAP-004",
+      "description": "Google Drive auth flow incomplete — gws CLI requires OAuth credentials file",
+      "affected_adapters": ["google-drive-file-adapter"],
+      "workaround": "Run gws auth login or set GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE",
+      "priority": "medium"
+    },
+    {
+      "gap_id": "GAP-005",
+      "description": "No LLM API access for Anthropic, Gemini, xAI, Perplexity",
+      "affected_adapters": ["anthropic-api-conversation", "gemini-api-conversation", "xai-api-research", "perplexity-api-research"],
+      "workaround": "Configure API keys per provider",
+      "priority": "low"
+    }
+  ],
+  "probe_queue": [
+    "anthropic-api-conversation",
+    "gemini-api-conversation",
+    "xai-api-research",
+    "perplexity-api-research",
+    "mem0-memory-adapter",
+    "google-drive-file-adapter",
+    "claude-code-workspace",
+    "codex-workspace"
+  ]
+}

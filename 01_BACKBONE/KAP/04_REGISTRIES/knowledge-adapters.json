@@ -1,0 +1,859 @@
+{
+  "registry_id": "knowledge-adapters",
+  "version": "1.0.0",
+  "generated_at": "2026-07-05T23:00:00Z",
+  "gate": "MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE",
+  "adapters": [
+    {
+      "adapter_id": "openai-api-conversation",
+      "provider_or_runtime": "OpenAI",
+      "adapter_type": ["conversation"],
+      "runtime_class": "class_a_api",
+      "status": "production_candidate",
+      "auth_model": "api_key (x-api-key)",
+      "contract_methods": {
+        "discover_sources": "candidate",
+        "list_sessions": "unsupported",
+        "retrieve_session": "unsupported",
+        "retrieve_history": "unsupported",
+        "retrieve_delta": "unsupported",
+        "fetch_attachments": "candidate",
+        "checkpoint": "not_applicable",
+        "detect_finalization": "unsupported",
+        "finalize": "not_applicable",
+        "resume": "not_applicable",
+        "report_coverage": "candidate",
+        "health_check": "proven"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "candidate",
+        "checkpoint": "not_applicable",
+        "finalization": "unsupported"
+      },
+      "history_access": {
+        "provider_api_history": "unsupported",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "streaming",
+      "webhooks_events": false,
+      "rate_limits": "Tier-based: 500-10000 RPM depending on tier",
+      "known_limitations": [
+        "API does NOT expose ChatGPT App conversation history",
+        "No session list endpoint — API-created conversations only",
+        "No native finalization signal"
+      ],
+      "recommended_role": "New API-created sessions only; NOT for ChatGPT App history backfill",
+      "confidence": "high",
+      "notes": "OpenAI API proxy available in Manus sandbox (OPENAI_API_BASE). Proven health check."
+    },
+    {
+      "adapter_id": "anthropic-api-conversation",
+      "provider_or_runtime": "Anthropic",
+      "adapter_type": ["conversation"],
+      "runtime_class": "class_a_api",
+      "status": "probe_required",
+      "auth_model": "api_key (x-api-key)",
+      "contract_methods": {
+        "discover_sources": "unknown",
+        "list_sessions": "unsupported",
+        "retrieve_session": "unsupported",
+        "retrieve_history": "unsupported",
+        "retrieve_delta": "unsupported",
+        "fetch_attachments": "unknown",
+        "checkpoint": "not_applicable",
+        "detect_finalization": "unsupported",
+        "finalize": "not_applicable",
+        "resume": "not_applicable",
+        "report_coverage": "candidate",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "candidate",
+        "checkpoint": "not_applicable",
+        "finalization": "unsupported"
+      },
+      "history_access": {
+        "provider_api_history": "unsupported",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "streaming",
+      "webhooks_events": false,
+      "rate_limits": "Tier-based",
+      "known_limitations": [
+        "No API key configured in Manus sandbox",
+        "Claude.ai conversations NOT accessible via API",
+        "No session list endpoint"
+      ],
+      "recommended_role": "New API-created sessions only; NOT for Claude.ai history backfill",
+      "confidence": "medium",
+      "notes": "No ANTHROPIC_API_KEY in env. Requires separate key setup."
+    },
+    {
+      "adapter_id": "gemini-api-conversation",
+      "provider_or_runtime": "Google Gemini",
+      "adapter_type": ["conversation"],
+      "runtime_class": "class_a_api",
+      "status": "probe_required",
+      "auth_model": "api_key or OAuth2",
+      "contract_methods": {
+        "discover_sources": "unknown",
+        "list_sessions": "unknown",
+        "retrieve_session": "unknown",
+        "retrieve_history": "unknown",
+        "retrieve_delta": "unknown",
+        "fetch_attachments": "unknown",
+        "checkpoint": "unknown",
+        "detect_finalization": "unknown",
+        "finalize": "unknown",
+        "resume": "unknown",
+        "report_coverage": "unknown",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "unknown",
+        "continuous_capture": "unknown",
+        "checkpoint": "unknown",
+        "finalization": "unknown"
+      },
+      "history_access": {
+        "provider_api_history": "unknown",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "streaming",
+      "webhooks_events": false,
+      "rate_limits": "Tier-based",
+      "known_limitations": [
+        "No Gemini API key in env",
+        "Gemini CLI not installed",
+        "Gemini App history not accessible via API"
+      ],
+      "recommended_role": "probe_required before use",
+      "confidence": "low",
+      "notes": "GOOGLE_WORKSPACE_CLI_TOKEN available but for Drive/Sheets/Gmail, not Gemini."
+    },
+    {
+      "adapter_id": "xai-api-research",
+      "provider_or_runtime": "xAI / Grok",
+      "adapter_type": ["conversation", "research"],
+      "runtime_class": "class_a_api",
+      "status": "probe_required",
+      "auth_model": "api_key",
+      "contract_methods": {
+        "discover_sources": "unknown",
+        "list_sessions": "unknown",
+        "retrieve_session": "unknown",
+        "retrieve_history": "unknown",
+        "retrieve_delta": "unknown",
+        "fetch_attachments": "unknown",
+        "checkpoint": "unknown",
+        "detect_finalization": "unknown",
+        "finalize": "unknown",
+        "resume": "unknown",
+        "report_coverage": "unknown",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "unknown",
+        "continuous_capture": "unknown",
+        "checkpoint": "unknown",
+        "finalization": "unknown"
+      },
+      "history_access": {
+        "provider_api_history": "unknown",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "unknown",
+      "webhooks_events": false,
+      "rate_limits": "unknown",
+      "known_limitations": [
+        "No XAI_API_KEY in env",
+        "Grok App history not accessible via API"
+      ],
+      "recommended_role": "Research and web search; NOT for Grok App history",
+      "confidence": "low",
+      "notes": "probe_required — no credentials in sandbox"
+    },
+    {
+      "adapter_id": "perplexity-api-research",
+      "provider_or_runtime": "Perplexity",
+      "adapter_type": ["research", "evidence"],
+      "runtime_class": "class_a_api",
+      "status": "probe_required",
+      "auth_model": "api_key (Bearer)",
+      "contract_methods": {
+        "discover_sources": "not_applicable",
+        "list_sessions": "not_applicable",
+        "retrieve_session": "not_applicable",
+        "retrieve_history": "not_applicable",
+        "retrieve_delta": "not_applicable",
+        "fetch_attachments": "candidate",
+        "checkpoint": "not_applicable",
+        "detect_finalization": "not_applicable",
+        "finalize": "not_applicable",
+        "resume": "not_applicable",
+        "report_coverage": "not_applicable",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "not_applicable",
+        "checkpoint": "not_applicable",
+        "finalization": "not_applicable"
+      },
+      "history_access": {
+        "provider_api_history": "not_applicable",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "streaming",
+      "webhooks_events": false,
+      "rate_limits": "unknown",
+      "known_limitations": [
+        "No PERPLEXITY_API_KEY in env",
+        "Not a session-based adapter — on-demand research only"
+      ],
+      "recommended_role": "On-demand research and evidence retrieval; NOT for historical backfill",
+      "confidence": "medium",
+      "notes": "Dual role: Research + Evidence. probe_required — no credentials."
+    },
+    {
+      "adapter_id": "manus-workspace-adapter",
+      "provider_or_runtime": "Manus",
+      "adapter_type": ["workspace", "conversation"],
+      "runtime_class": "class_b_workspace",
+      "status": "production_ready",
+      "auth_model": "filesystem (no auth — native sandbox)",
+      "contract_methods": {
+        "discover_sources": "proven",
+        "list_sessions": "candidate",
+        "retrieve_session": "candidate",
+        "retrieve_history": "candidate",
+        "retrieve_delta": "candidate",
+        "fetch_attachments": "proven",
+        "checkpoint": "proven",
+        "detect_finalization": "candidate",
+        "finalize": "candidate",
+        "resume": "proven",
+        "report_coverage": "candidate",
+        "health_check": "proven"
+      },
+      "capture_modes": {
+        "historical_backfill": "candidate",
+        "continuous_capture": "candidate",
+        "checkpoint": "proven",
+        "finalization": "candidate"
+      },
+      "history_access": {
+        "provider_api_history": "not_applicable",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "proven",
+        "exported_history": "proven"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "polling",
+      "webhooks_events": false,
+      "rate_limits": "none (filesystem)",
+      "known_limitations": [
+        "Manus task history (194 tasks) requires Manus API key for list/retrieve",
+        "Consumer app sessions not accessible without API key",
+        "Workspace persists but sandbox hibernates"
+      ],
+      "recommended_role": "Primary workspace adapter — BUS inbox/outbox, MPR delivery, file exchange",
+      "confidence": "high",
+      "notes": "Proven: /home/ubuntu persists cross-session. yos-bus-runtime exists. Write/read/delete PASS."
+    },
+    {
+      "adapter_id": "manus-api-adapter",
+      "provider_or_runtime": "Manus API",
+      "adapter_type": ["conversation", "workspace"],
+      "runtime_class": "class_a_api",
+      "status": "production_candidate",
+      "auth_model": "api_key (x-manus-api-key) or OAuth2",
+      "contract_methods": {
+        "discover_sources": "candidate",
+        "list_sessions": "candidate",
+        "retrieve_session": "candidate",
+        "retrieve_history": "candidate",
+        "retrieve_delta": "candidate",
+        "fetch_attachments": "proven",
+        "checkpoint": "candidate",
+        "detect_finalization": "candidate",
+        "finalize": "candidate",
+        "resume": "candidate",
+        "report_coverage": "candidate",
+        "health_check": "proven"
+      },
+      "capture_modes": {
+        "historical_backfill": "candidate",
+        "continuous_capture": "candidate",
+        "checkpoint": "candidate",
+        "finalization": "candidate"
+      },
+      "history_access": {
+        "provider_api_history": "candidate",
+        "consumer_app_history": "candidate",
+        "workspace_history": "candidate",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "polling",
+      "webhooks_events": true,
+      "rate_limits": "10 req/min task.create; standard limits on others",
+      "known_limitations": [
+        "Requires Manus API key (not in env — must be generated by user)",
+        "task.list returns only API-created tasks by default",
+        "No direct workspace write — indirect via task instruction relay"
+      ],
+      "recommended_role": "ChatGPT→Manus relay; task history retrieval; structured output delivery",
+      "confidence": "high",
+      "notes": "RUNTIME_API_HOST=https://api.manus.im. API schema proven via openapi_v2.json."
+    },
+    {
+      "adapter_id": "claude-code-workspace",
+      "provider_or_runtime": "Claude Code (Anthropic)",
+      "adapter_type": ["workspace"],
+      "runtime_class": "class_b_workspace",
+      "status": "probe_required",
+      "auth_model": "filesystem + claude CLI",
+      "contract_methods": {
+        "discover_sources": "unknown",
+        "list_sessions": "unknown",
+        "retrieve_session": "unknown",
+        "retrieve_history": "unknown",
+        "retrieve_delta": "unknown",
+        "fetch_attachments": "unknown",
+        "checkpoint": "unknown",
+        "detect_finalization": "unknown",
+        "finalize": "unknown",
+        "resume": "unknown",
+        "report_coverage": "unknown",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "unknown",
+        "continuous_capture": "unknown",
+        "checkpoint": "unknown",
+        "finalization": "unknown"
+      },
+      "history_access": {
+        "provider_api_history": "not_applicable",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "unknown",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "unknown",
+      "webhooks_events": false,
+      "rate_limits": "unknown",
+      "known_limitations": [
+        "claude CLI not installed in Manus sandbox",
+        "Requires separate Claude Code environment"
+      ],
+      "recommended_role": "probe_required — not available in current Manus environment",
+      "confidence": "low",
+      "notes": "Not accessible from Manus sandbox. Probe in dedicated Claude Code environment."
+    },
+    {
+      "adapter_id": "codex-workspace",
+      "provider_or_runtime": "OpenAI Codex",
+      "adapter_type": ["workspace"],
+      "runtime_class": "class_b_workspace",
+      "status": "probe_required",
+      "auth_model": "unknown",
+      "contract_methods": {
+        "discover_sources": "unknown",
+        "list_sessions": "unknown",
+        "retrieve_session": "unknown",
+        "retrieve_history": "unknown",
+        "retrieve_delta": "unknown",
+        "fetch_attachments": "unknown",
+        "checkpoint": "unknown",
+        "detect_finalization": "unknown",
+        "finalize": "unknown",
+        "resume": "unknown",
+        "report_coverage": "unknown",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "unknown",
+        "continuous_capture": "unknown",
+        "checkpoint": "unknown",
+        "finalization": "unknown"
+      },
+      "history_access": {
+        "provider_api_history": "not_applicable",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "unknown",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "unknown",
+      "webhooks_events": false,
+      "rate_limits": "unknown",
+      "known_limitations": [
+        "codex CLI not installed in Manus sandbox",
+        "Codex workspace runtime unclear"
+      ],
+      "recommended_role": "probe_required",
+      "confidence": "low",
+      "notes": "Not accessible from Manus sandbox."
+    },
+    {
+      "adapter_id": "gemini-cli-workspace",
+      "provider_or_runtime": "Gemini CLI (Google)",
+      "adapter_type": ["workspace"],
+      "runtime_class": "class_b_workspace",
+      "status": "probe_required",
+      "auth_model": "unknown",
+      "contract_methods": {
+        "discover_sources": "unknown",
+        "list_sessions": "unknown",
+        "retrieve_session": "unknown",
+        "retrieve_history": "unknown",
+        "retrieve_delta": "unknown",
+        "fetch_attachments": "unknown",
+        "checkpoint": "unknown",
+        "detect_finalization": "unknown",
+        "finalize": "unknown",
+        "resume": "unknown",
+        "report_coverage": "unknown",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "unknown",
+        "continuous_capture": "unknown",
+        "checkpoint": "unknown",
+        "finalization": "unknown"
+      },
+      "history_access": {
+        "provider_api_history": "not_applicable",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "unknown",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "unknown",
+      "webhooks_events": false,
+      "rate_limits": "unknown",
+      "known_limitations": [
+        "gemini CLI not installed in Manus sandbox"
+      ],
+      "recommended_role": "probe_required",
+      "confidence": "low",
+      "notes": "Not accessible from Manus sandbox."
+    },
+    {
+      "adapter_id": "git-repository-adapter",
+      "provider_or_runtime": "Git / GitHub",
+      "adapter_type": ["repository"],
+      "runtime_class": "class_b_workspace",
+      "status": "production_ready",
+      "auth_model": "PAT (HTTPS) or SSH",
+      "contract_methods": {
+        "discover_sources": "proven",
+        "list_sessions": "proven",
+        "retrieve_session": "proven",
+        "retrieve_history": "proven",
+        "retrieve_delta": "proven",
+        "fetch_attachments": "proven",
+        "checkpoint": "proven",
+        "detect_finalization": "proven",
+        "finalize": "proven",
+        "resume": "proven",
+        "report_coverage": "proven",
+        "health_check": "proven"
+      },
+      "capture_modes": {
+        "historical_backfill": "proven",
+        "continuous_capture": "proven",
+        "checkpoint": "proven",
+        "finalization": "proven"
+      },
+      "history_access": {
+        "provider_api_history": "not_applicable",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "proven",
+        "exported_history": "proven"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "polling",
+      "webhooks_events": true,
+      "rate_limits": "5000 req/hr (GitHub API authenticated)",
+      "known_limitations": [
+        "GitHub connector not enabled (raw gh auth)",
+        "Large binary files require Git LFS"
+      ],
+      "recommended_role": "Primary repository adapter — durable memory, MPM queue, BUS transport",
+      "confidence": "high",
+      "notes": "git v2.43.0 installed. PAT in remote URL. Proven: 2 commits on 2026-07-05."
+    },
+    {
+      "adapter_id": "notion-api-adapter",
+      "provider_or_runtime": "Notion",
+      "adapter_type": ["file", "memory"],
+      "runtime_class": "class_a_api",
+      "status": "production_candidate",
+      "auth_model": "OAuth2 or Integration Token",
+      "contract_methods": {
+        "discover_sources": "candidate",
+        "list_sessions": "candidate",
+        "retrieve_session": "candidate",
+        "retrieve_history": "candidate",
+        "retrieve_delta": "candidate",
+        "fetch_attachments": "candidate",
+        "checkpoint": "candidate",
+        "detect_finalization": "candidate",
+        "finalize": "candidate",
+        "resume": "candidate",
+        "report_coverage": "candidate",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "candidate",
+        "continuous_capture": "candidate",
+        "checkpoint": "candidate",
+        "finalization": "candidate"
+      },
+      "history_access": {
+        "provider_api_history": "candidate",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "candidate",
+        "exported_history": "candidate"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "polling",
+      "webhooks_events": false,
+      "rate_limits": "3 req/sec average",
+      "known_limitations": [
+        "No NOTION_API_KEY in env (MCP not configured)",
+        "No native webhook — polling only",
+        "Rate limit: 3 req/sec"
+      ],
+      "recommended_role": "Memory store for structured knowledge, session summaries, project cards",
+      "confidence": "medium",
+      "notes": "notion_client package not installed. Requires token setup."
+    },
+    {
+      "adapter_id": "mem0-memory-adapter",
+      "provider_or_runtime": "Mem0",
+      "adapter_type": ["memory"],
+      "runtime_class": "class_a_api",
+      "status": "probe_required",
+      "auth_model": "api_key",
+      "contract_methods": {
+        "discover_sources": "unknown",
+        "list_sessions": "unknown",
+        "retrieve_session": "unknown",
+        "retrieve_history": "unknown",
+        "retrieve_delta": "unknown",
+        "fetch_attachments": "not_applicable",
+        "checkpoint": "unknown",
+        "detect_finalization": "not_applicable",
+        "finalize": "not_applicable",
+        "resume": "unknown",
+        "report_coverage": "unknown",
+        "health_check": "unknown"
+      },
+      "capture_modes": {
+        "historical_backfill": "candidate",
+        "continuous_capture": "candidate",
+        "checkpoint": "unknown",
+        "finalization": "not_applicable"
+      },
+      "history_access": {
+        "provider_api_history": "candidate",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "not_applicable",
+        "exported_history": "not_applicable"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "polling",
+      "webhooks_events": false,
+      "rate_limits": "unknown",
+      "known_limitations": [
+        "No MEM0_API_KEY in env",
+        "mem0 Python package not installed",
+        "MCP server not configured"
+      ],
+      "recommended_role": "Cross-session semantic memory retrieval",
+      "confidence": "low",
+      "notes": "probe_required — no credentials. MCP server available but not configured."
+    },
+    {
+      "adapter_id": "google-drive-file-adapter",
+      "provider_or_runtime": "Google Drive",
+      "adapter_type": ["file"],
+      "runtime_class": "class_a_api",
+      "status": "candidate",
+      "auth_model": "OAuth2 (GOOGLE_WORKSPACE_CLI_TOKEN)",
+      "contract_methods": {
+        "discover_sources": "candidate",
+        "list_sessions": "candidate",
+        "retrieve_session": "candidate",
+        "retrieve_history": "candidate",
+        "retrieve_delta": "candidate",
+        "fetch_attachments": "candidate",
+        "checkpoint": "candidate",
+        "detect_finalization": "candidate",
+        "finalize": "candidate",
+        "resume": "candidate",
+        "report_coverage": "candidate",
+        "health_check": "candidate"
+      },
+      "capture_modes": {
+        "historical_backfill": "candidate",
+        "continuous_capture": "candidate",
+        "checkpoint": "candidate",
+        "finalization": "candidate"
+      },
+      "history_access": {
+        "provider_api_history": "not_applicable",
+        "consumer_app_history": "not_applicable",
+        "workspace_history": "candidate",
+        "exported_history": "candidate"
+      },
+      "attachments_support": true,
+      "streaming_or_polling": "polling",
+      "webhooks_events": true,
+      "rate_limits": "1000 req/100sec per user",
+      "known_limitations": [
+        "GOOGLE_WORKSPACE_CLI_TOKEN set but GOOGLE_DRIVE_TOKEN not accessible as env var",
+        "gws CLI requires OAuth credentials file for auth",
+        "Drive API v3 — no native session concept"
+      ],
+      "recommended_role": "Export corpus ingestion, document file adapter",
+      "confidence": "medium",
+      "notes": "gws v0.22.3 installed. Token env var present. Auth flow needs validation."
+    },
+    {
+      "adapter_id": "chatgpt-app-consumer",
+      "provider_or_runtime": "ChatGPT App",
+      "adapter_type": ["conversation"],
+      "runtime_class": "class_c_consumer_ui",
+      "status": "unsupported",
+      "auth_model": "manual (browser only)",
+      "contract_methods": {
+        "discover_sources": "unsupported",
+        "list_sessions": "unsupported",
+        "retrieve_session": "unsupported",
+        "retrieve_history": "unsupported",
+        "retrieve_delta": "unsupported",
+        "fetch_attachments": "unsupported",
+        "checkpoint": "unsupported",
+        "detect_finalization": "unsupported",
+        "finalize": "unsupported",
+        "resume": "unsupported",
+        "report_coverage": "unsupported",
+        "health_check": "unsupported"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "unsupported",
+        "checkpoint": "unsupported",
+        "finalization": "unsupported"
+      },
+      "history_access": {
+        "provider_api_history": "unsupported",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "candidate"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "neither",
+      "webhooks_events": false,
+      "rate_limits": "not_applicable",
+      "known_limitations": [
+        "Class C — consumer UI only",
+        "No programmatic access to conversation history",
+        "Manual export only (JSON export via settings)"
+      ],
+      "recommended_role": "Manual export source only — NOT for production automation",
+      "confidence": "high",
+      "notes": "ChatGPT App conversations are NOT accessible via OpenAI API. Manual JSON export is the only path."
+    },
+    {
+      "adapter_id": "claude-ai-consumer",
+      "provider_or_runtime": "Claude.ai",
+      "adapter_type": ["conversation"],
+      "runtime_class": "class_c_consumer_ui",
+      "status": "unsupported",
+      "auth_model": "manual (browser only)",
+      "contract_methods": {
+        "discover_sources": "unsupported",
+        "list_sessions": "unsupported",
+        "retrieve_session": "unsupported",
+        "retrieve_history": "unsupported",
+        "retrieve_delta": "unsupported",
+        "fetch_attachments": "unsupported",
+        "checkpoint": "unsupported",
+        "detect_finalization": "unsupported",
+        "finalize": "unsupported",
+        "resume": "unsupported",
+        "report_coverage": "unsupported",
+        "health_check": "unsupported"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "unsupported",
+        "checkpoint": "unsupported",
+        "finalization": "unsupported"
+      },
+      "history_access": {
+        "provider_api_history": "unsupported",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "candidate"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "neither",
+      "webhooks_events": false,
+      "rate_limits": "not_applicable",
+      "known_limitations": ["Class C — consumer UI only", "No programmatic access"],
+      "recommended_role": "Manual export source only",
+      "confidence": "high",
+      "notes": "Class C. Descriptive only."
+    },
+    {
+      "adapter_id": "gemini-app-consumer",
+      "provider_or_runtime": "Gemini App",
+      "adapter_type": ["conversation"],
+      "runtime_class": "class_c_consumer_ui",
+      "status": "unsupported",
+      "auth_model": "manual (browser only)",
+      "contract_methods": {
+        "discover_sources": "unsupported",
+        "list_sessions": "unsupported",
+        "retrieve_session": "unsupported",
+        "retrieve_history": "unsupported",
+        "retrieve_delta": "unsupported",
+        "fetch_attachments": "unsupported",
+        "checkpoint": "unsupported",
+        "detect_finalization": "unsupported",
+        "finalize": "unsupported",
+        "resume": "unsupported",
+        "report_coverage": "unsupported",
+        "health_check": "unsupported"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "unsupported",
+        "checkpoint": "unsupported",
+        "finalization": "unsupported"
+      },
+      "history_access": {
+        "provider_api_history": "unsupported",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "candidate"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "neither",
+      "webhooks_events": false,
+      "rate_limits": "not_applicable",
+      "known_limitations": ["Class C — consumer UI only"],
+      "recommended_role": "Manual export source only",
+      "confidence": "high",
+      "notes": "Class C. Descriptive only."
+    },
+    {
+      "adapter_id": "grok-app-consumer",
+      "provider_or_runtime": "Grok App (xAI)",
+      "adapter_type": ["conversation"],
+      "runtime_class": "class_c_consumer_ui",
+      "status": "unsupported",
+      "auth_model": "manual (browser only)",
+      "contract_methods": {
+        "discover_sources": "unsupported",
+        "list_sessions": "unsupported",
+        "retrieve_session": "unsupported",
+        "retrieve_history": "unsupported",
+        "retrieve_delta": "unsupported",
+        "fetch_attachments": "unsupported",
+        "checkpoint": "unsupported",
+        "detect_finalization": "unsupported",
+        "finalize": "unsupported",
+        "resume": "unsupported",
+        "report_coverage": "unsupported",
+        "health_check": "unsupported"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "unsupported",
+        "checkpoint": "unsupported",
+        "finalization": "unsupported"
+      },
+      "history_access": {
+        "provider_api_history": "unsupported",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "candidate"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "neither",
+      "webhooks_events": false,
+      "rate_limits": "not_applicable",
+      "known_limitations": ["Class C — consumer UI only"],
+      "recommended_role": "Manual export source only",
+      "confidence": "high",
+      "notes": "Class C. Descriptive only."
+    },
+    {
+      "adapter_id": "perplexity-app-consumer",
+      "provider_or_runtime": "Perplexity App",
+      "adapter_type": ["research"],
+      "runtime_class": "class_c_consumer_ui",
+      "status": "unsupported",
+      "auth_model": "manual (browser only)",
+      "contract_methods": {
+        "discover_sources": "unsupported",
+        "list_sessions": "unsupported",
+        "retrieve_session": "unsupported",
+        "retrieve_history": "unsupported",
+        "retrieve_delta": "unsupported",
+        "fetch_attachments": "unsupported",
+        "checkpoint": "unsupported",
+        "detect_finalization": "unsupported",
+        "finalize": "unsupported",
+        "resume": "unsupported",
+        "report_coverage": "unsupported",
+        "health_check": "unsupported"
+      },
+      "capture_modes": {
+        "historical_backfill": "unsupported",
+        "continuous_capture": "unsupported",
+        "checkpoint": "unsupported",
+        "finalization": "unsupported"
+      },
+      "history_access": {
+        "provider_api_history": "unsupported",
+        "consumer_app_history": "unsupported",
+        "workspace_history": "not_applicable",
+        "exported_history": "candidate"
+      },
+      "attachments_support": false,
+      "streaming_or_polling": "neither",
+      "webhooks_events": false,
+      "rate_limits": "not_applicable",
+      "known_limitations": ["Class C — consumer UI only"],
+      "recommended_role": "Manual export source only",
+      "confidence": "high",
+      "notes": "Class C. Descriptive only."
+    }
+  ]
+}

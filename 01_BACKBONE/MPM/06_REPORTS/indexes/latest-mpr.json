@@ -1,9 +1,14 @@
 {
   "latest_mpr_id": "MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE-REPORT",
   "latest_mp_id": "MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE",
-  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-CHRONICLES-MANUS-HISTORICAL-DISCOVERY-EXCAVATION-GATE-REPORT.md",
+  "latest_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE-REPORT.md",
   "latest_mpr_status": "executed_awaiting_architect_guardian_review",
   "latest_mpr_mode": "marathon",
   "latest_mpr_commit": "c05dad1",
-  "latest_mpr_executed_at": "2026-07-05T22:00:00Z"
+  "latest_mpr_executed_at": "2026-07-05T22:00:00Z",
+  "mp_id": "MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE",
+  "mp_mode": "marathon",
+  "executed_at": "2026-07-05T23:45:00Z",
+  "commit": "pending_patch",
+  "status": "EXECUTED_AWAITING_A_G_REVIEW"
 }

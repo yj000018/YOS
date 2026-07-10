@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "knowledge_adapter.schema.json",
+  "title": "KAP Knowledge Adapter",
+  "description": "Descriptor for a KAP Knowledge Adapter — normalized interface to a knowledge source",
+  "type": "object",
+  "required": ["adapter_id", "provider_or_runtime", "adapter_type", "runtime_class", "status"],
+  "properties": {
+    "adapter_id": {
+      "type": "string",
+      "description": "Unique adapter identifier, e.g. openai-api-conversation"
+    },
+    "provider_or_runtime": {
+      "type": "string",
+      "description": "Provider brand or runtime name, e.g. OpenAI, Manus, Git"
+    },
+    "adapter_type": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["conversation", "workspace", "research", "repository", "memory", "file", "evidence"]
+      },
+      "description": "One or more adapter types from the canonical taxonomy"
+    },
+    "runtime_class": {
+      "type": "string",
+      "enum": ["class_a_api", "class_b_workspace", "class_c_consumer_ui"],
+      "description": "Runtime classification: A=API, B=Workspace, C=Consumer UI"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["production_ready", "production_candidate", "candidate", "probe_required", "unsupported"],
+      "description": "Overall adapter status"
+    },
+    "auth_model": {
+      "type": "string",
+      "description": "Authentication model, e.g. api_key, oauth2, none, filesystem"
+    },
+    "contract_methods": {
+      "type": "object",
+      "description": "Status of each contract method implementation",
+      "properties": {
+        "discover_sources": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "list_sessions": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "retrieve_session": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "retrieve_history": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "retrieve_delta": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "fetch_attachments": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "checkpoint": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "detect_finalization": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "finalize": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "resume": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "report_coverage": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]},
+        "health_check": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown", "not_applicable"]}
+      }
+    },
+    "capture_modes": {
+      "type": "object",
+      "properties": {
+        "historical_backfill": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]},
+        "continuous_capture": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]},
+        "checkpoint": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]},
+        "finalization": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]}
+      }
+    },
+    "history_access": {
+      "type": "object",
+      "properties": {
+        "provider_api_history": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]},
+        "consumer_app_history": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]},
+        "workspace_history": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]},
+        "exported_history": {"type": "string", "enum": ["proven", "candidate", "unsupported", "unknown"]}
+      }
+    },
+    "attachments_support": {"type": "boolean"},
+    "streaming_or_polling": {"type": "string", "enum": ["streaming", "polling", "both", "neither", "unknown"]},
+    "webhooks_events": {"type": "boolean"},
+    "rate_limits": {"type": "string"},
+    "known_limitations": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "recommended_role": {"type": "string"},
+    "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+    "notes": {"type": "string"}
+  }
+}

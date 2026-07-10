@@ -1,0 +1,24 @@
+{
+  "stretchy_version": "0.2",
+  "stretchy_url": "http://localhost:8771",
+  "params": {
+    "mesh_all_parts": true,
+    "rigging_method": "heuristic",
+    "dwpose_model_path": "/opt/yos/models/dw-ll_ucoco_384.onnx",
+    "export_formats": [
+      "stretch",
+      "live2d_json"
+    ],
+    "animation_preset": "idle"
+  },
+  "export": {
+    "stretch_path": "/home/ubuntu/eya_pipeline/output/eya.stretch",
+    "live2d_json_path": "/home/ubuntu/eya_pipeline/output/eya_live2d.json"
+  },
+  "notes": {
+    "stretch": "Format natif Stretchy Studio \u2014 pour sauvegarder le rig, le rouvrir, ajuster manuellement, tester les param\u00e8tres",
+    "live2d_json": "Format Live2D \u2014 pour importer dans Live2D Cubism Editor et faire de l'animation dynamique (expressions, physics, etc.)",
+    "rigging_heuristic": "Placement des joints par bounding box des layers \u2014 rapide, correct pour portrait de face",
+    "rigging_dwpose": "Placement par d\u00e9tection de pose IA \u2014 plus pr\u00e9cis, ~5-10 min CPU, n\u00e9cessite dw-ll_ucoco_384.onnx (129MB)"
+  }
+}

@@ -6,7 +6,7 @@ MP_ID:                           MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-A
 MP_MODE:                         marathon
 MP_STATUS:                       EXECUTED_AWAITING_A_G_REVIEW
 EXECUTED_AT:                     2026-07-05T23:45:00Z
-COMMIT:                          pending_patch
+COMMIT:                          25a0114
 BRANCH:                          main
 MANUS_AGENT:                     Manus
 GUARDIAN_REVIEW_STATUS:          awaiting

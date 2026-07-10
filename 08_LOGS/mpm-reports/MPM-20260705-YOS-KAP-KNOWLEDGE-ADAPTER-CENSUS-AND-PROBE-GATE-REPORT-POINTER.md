@@ -4,5 +4,5 @@
 **Gate:** MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE  
 **Mode:** marathon  
 **Executed:** 2026-07-05T23:45:00Z  
-**Commit:** pending_patch  
+**Commit:** 25a0114  
 **Status:** EXECUTED_AWAITING_A_G_REVIEW

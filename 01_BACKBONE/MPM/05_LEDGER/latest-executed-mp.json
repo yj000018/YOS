@@ -6,6 +6,6 @@
   "mp_id": "MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE",
   "mp_mode": "marathon",
   "executed_at": "2026-07-05T23:45:00Z",
-  "commit": "pending_patch",
+  "commit": "25a0114",
   "mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE-REPORT.md"
 }

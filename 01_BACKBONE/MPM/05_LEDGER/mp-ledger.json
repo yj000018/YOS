@@ -377,7 +377,7 @@
       "executor": "Manus",
       "guardian_required": true,
       "branch": "main",
-      "commit": "pending_patch",
+      "commit": "25a0114",
       "executed_at": "2026-07-05T23:45:00Z",
       "canonical_mp_path": "01_BACKBONE/MPM/04_QUEUE/ready/MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE.md",
       "canonical_mpr_path": "01_BACKBONE/MPM/06_REPORTS/awaiting-review/MPM-20260705-YOS-KAP-KNOWLEDGE-ADAPTER-CENSUS-AND-PROBE-GATE-REPORT.md",

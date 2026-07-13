@@ -7,7 +7,7 @@
 
 # 1. Purpose
 
-This document preserves how Y-OS concepts evolved. It prevents accidental duplication, premature renaming, and loss of rationale.
+This document preserves how Y-OS concepts evolved. It prevents accidental duplication, premature renaming, loss of rationale, and silent re-creation of rejected modules.
 
 A lineage entry may be:
 
@@ -25,7 +25,7 @@ A lineage entry may be:
 
 ```text
 OpenWebUI
-→ Y-Menu
+→ Y-Menu / yOS Client
 → Manus as current primary experience cockpit
 → Y-Nexus UI as future sovereign cockpit
 ```
@@ -34,6 +34,7 @@ Interpretation:
 
 - OpenWebUI = technical multi-model cockpit candidate;
 - Y-Menu = Y-OS shell/navigation concept;
+- yOS Client = broader cross-LLM client concept;
 - Manus = current preferred user-facing orchestration environment;
 - Y-Nexus UI = future sovereign system interface.
 
@@ -46,7 +47,7 @@ Interpretation:
 ```text
 Dispatcher / Intent Analyzer / Mission Builder
 → Y-ORC umbrella
-→ CRT + ART + Workflow Planning + Routing
+→ CRT + ART + Context Pack + Workflow Planning + Routing
 → Y-Nexus Control Plane hosting Y-ORC runtime
 ```
 
@@ -56,13 +57,13 @@ Recovered canonical formula:
 Y-ORC = CRT + ART + Workflow Planning + Routing
 ```
 
-**Current hypothesis:**
+Current reconciliation:
 
 - Y-Nexus = sovereign control boundary;
 - Y-ORC = orchestration runtime;
 - CRT = cognitive routing;
 - ART = action/resource routing;
-- Dispatcher, Intent Analyzer, Mission Builder = Y-ORC subfunctions unless independent implementation evidence exists.
+- Dispatcher, Intent Analyzer, and Mission Builder = Y-ORC subfunctions unless independent implementation evidence exists.
 
 ---
 
@@ -74,7 +75,7 @@ Context Builder
 → CCR / Context Compiler Runtime
 ```
 
-**Current reconciliation:**
+Current reconciliation:
 
 - Y-CTX decides relevance and context policy;
 - CCR compiles provider-ready runtime payloads;
@@ -86,16 +87,17 @@ Context Builder
 
 ```text
 Universal Collector
-→ LLM multi-provider collector concepts
+→ multi-provider LLM collector concepts
+→ browser-profile / Playwright collector
 → ARCH Collector
 ```
 
-ARCH Collector broadens the earlier collector into:
+ARCH Collector broadens earlier collector concepts into:
 
 - historical recovery;
 - continuous delta capture;
 - source completeness;
-- attachments and artifacts;
+- attachment and artifact capture;
 - append-only preservation;
 - multi-provider adapters.
 
@@ -106,8 +108,8 @@ ARCH Collector
 
 This is a functional split, not a rename:
 
-- Collector acquires;
-- Archaeology interprets history.
+- Collector acquires and preserves;
+- Archaeology interprets history and lineage.
 
 ---
 
@@ -127,14 +129,16 @@ The former photo domain becomes a vertical application or perceptual specializat
 ```text
 Memory OS
 → Y-MEM umbrella
-→ distributed memory architecture
+→ episodic + semantic + procedural + working memory
+→ Memory Gateway / Unified Memory API
+→ distributed architecture across KAP, ARCH, Context, and storage substrates
 ```
 
-Recovered memory functions:
+Recovered memory functions and components:
 
-- episodic;
-- semantic;
-- procedural;
+- episodic memory;
+- semantic memory;
+- procedural memory;
 - working memory;
 - Recall;
 - mem0;
@@ -147,7 +151,20 @@ Recovered memory functions:
 
 ---
 
-# 8. Registry lineage
+# 8. Knowledge lineage
+
+```text
+Memory graph / semantic memory
+→ K-cards and canonical semantic layer
+→ KAP knowledge architecture
+→ KAP Graph and provider adapters
+```
+
+KAP must remain separate from general reasoning.
+
+---
+
+# 9. Registry lineage
 
 ```text
 Tool Intelligence registry
@@ -170,7 +187,21 @@ Y-REG evolved toward a central registry for:
 
 ---
 
-# 9. Reasoning lineage
+# 10. Reader and client lineage
+
+```text
+yOS Client
+├── general cross-LLM client concept
+└── yOS Client for Obsidian
+       → Y-OS Reader
+       → yMD-OBS Reader
+```
+
+Exact final names and implementation sequence require repository verification.
+
+---
+
+# 11. Reasoning lineage
 
 Recovered candidate names:
 
@@ -184,17 +215,19 @@ RISE
 
 ---
 
-# 10. Action lineage
+# 12. Action lineage
 
 ```text
-Agency
+Intention
+→ Agency
 → ART routing
 → ACT execution
 ```
 
 These must not be collapsed:
 
-- Agency = capacity/decision to act;
+- Intention = chosen objective and commitment;
+- Agency = capacity and decision to act;
 - ART = route selection;
 - ACT = execution/effectuation.
 
@@ -202,17 +235,18 @@ ACT naming and exact runtime scope remain open.
 
 ---
 
-# 11. Growth lineage
+# 13. Growth lineage
 
 ```text
 Feedback loop
 → Learning loop
 → self-learning Y-OS
-→ capability lifecycle
+→ Y-CAP + Y-DEV + Y-REG lifecycle
+→ Capability Registry / performance memory
 → Growth Plane candidate
 ```
 
-Existing concepts that converge here:
+Existing concepts converging here:
 
 - Y-CAP;
 - Y-DEV;
@@ -222,29 +256,30 @@ Existing concepts that converge here:
 - routing calibration;
 - skill evolution;
 - pruning;
-- promotion/rollback;
-- Saraswati/learning role;
+- promotion and rollback;
+- Saraswati / learning role;
 - Memory Lifecycle;
-- cognitive graph evolution.
+- cognitive graph evolution;
+- LMP / daily distillation concepts.
 
 **Important:** Growth should consolidate existing functions rather than multiply modules.
 
 ---
 
-# 12. Validation lineage
+# 14. Validation lineage
 
 ```text
 Y-VAL proposal
 → rejected as standalone v1 module
 → validation gates embedded in Y-ORC / Y-DEV
-→ future governed promotion in Growth
+→ governed promotion and rollback in Growth
 ```
 
-Y-VAL must remain in the historical record to avoid accidental re-creation.
+Y-VAL remains in the historical record to prevent accidental re-creation.
 
 ---
 
-# 13. Storage lineage
+# 15. Storage lineage
 
 Recovered sequence:
 
@@ -252,7 +287,7 @@ Recovered sequence:
 2. Desire to migrate away from Notion.
 3. Obsidian + Git selected as canonical/local/versioned core.
 4. Supabase proposed as runtime cache/state.
-5. Notion retained because the working documentation system should not be disrupted prematurely.
+5. Notion retained because a working documentation system should not be disrupted prematurely.
 
 Current role hypothesis:
 
@@ -265,37 +300,43 @@ ARCH = immutable evidence
 KAP = canonical structured knowledge
 ```
 
----
-
-# 14. Client lineage
-
-```text
-yOS Client
-→ yOS Client for Obsidian
-→ Y-OS Reader
-→ yMD-OBS Reader
-```
-
-The exact naming and implementation sequence must be verified against repositories.
+This is a role separation, not necessarily a single replacement event.
 
 ---
 
-# 15. Ecosystem lineage
+# 16. Ecosystem lineage
 
 Concepts requiring careful separation:
 
-- Y-OS = cognitive operating system;
-- Memory OS = memory lifecycle subsystem;
-- YOUniverse = private/meta ecosystem;
-- Y World = public/ecosystem expression;
-- Universe = personal data/meta-profile substrate;
-- YSpace = separate concept requiring recovery;
-- KOSMOS = ontological/philosophical summit;
-- Chronicles = historical/reflexive bridge.
+```text
+KOSMOS = ontological and philosophical summit
+Y-OS = cognitive operating system
+Memory OS = memory lifecycle subsystem
+YOUniverse = private/meta ecosystem
+Y World = public ecosystem expression
+Universe = personal data and identity substrate candidate
+YSpace = separate concept requiring recovery
+Chronicles = historical and reflexive bridge
+```
 
 ---
 
-# 16. Lineage rules
+# 17. Historical organizational roles
+
+Recovered OVC mapping:
+
+- Krishna — strategy;
+- Ganesha — execution plan;
+- Brahma — architecture;
+- Hanuman — build;
+- Lakshmi — visibility;
+- Saraswati — learning.
+
+These are operational roles, not modules. They may map onto current planes and agents but must not be treated as system components without explicit evidence.
+
+---
+
+# 18. Lineage rules
 
 1. A newer name does not automatically erase an older architecture.
 2. Supersession requires explicit evidence.
@@ -303,3 +344,5 @@ Concepts requiring careful separation:
 4. Rejected modules remain recorded.
 5. Merges and splits require rationale.
 6. Canon promotion requires source-backed ownership and interfaces.
+7. Similar names are not separate modules unless their responsibilities differ materially.
+8. Missing evidence produces an `OPEN` item, not an invented component.

@@ -1,7 +1,7 @@
 # Y-OS Architecture Baseline v0.5
 
-**Status:** Working canon derived from the completed internal ChatGPT memory consolidation round.  
-**Purpose:** Provide a stable, explicit reading grid for the next evidence waves: GitHub, Manus, Markdown/Obsidian, Notion, other LLMs, then ARCH transcript reconciliation.  
+**Status:** Working canon derived from the completed internal ChatGPT memory consolidation round.
+**Purpose:** Provide a stable, explicit reading grid for the next evidence waves: GitHub, Manus, Markdown/Obsidian, Notion, other LLMs, then ARCH transcript reconciliation.
 **Authority level:** Provisional. This baseline guides investigation; it does not freeze the final Y-OS architecture.
 
 ## Governing rule

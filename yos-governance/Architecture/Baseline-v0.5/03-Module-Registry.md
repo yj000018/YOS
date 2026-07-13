@@ -30,8 +30,8 @@ No alias becomes a new module until a distinct responsibility is proven.
 
 ## 2.1 Manus
 
-**Plane:** Experience  
-**Status:** Operational external platform  
+**Plane:** Experience
+**Status:** Operational external platform
 **Mission:** Current preferred human cockpit and program-direction environment.
 
 **Owns**
@@ -54,8 +54,8 @@ No alias becomes a new module until a distinct responsibility is proven.
 
 ## 2.2 ChatGPT
 
-**Plane:** Experience  
-**Status:** Operational external platform  
+**Plane:** Experience
+**Status:** Operational external platform
 **Mission:** Architecture, reasoning, synthesis, conversation, multimodal work, voice, and image generation.
 
 **Strategic use**
@@ -74,8 +74,8 @@ Major outputs require ARCH recovery and durable artifact creation.
 
 ## 2.3 Claude / Claude Code
 
-**Plane:** Experience / execution interface  
-**Status:** Operational external platform  
+**Plane:** Experience / execution interface
+**Status:** Operational external platform
 **Mission:** Long-context analysis, textual challenge, code review, second engineering path, and independent critique.
 
 **Working doctrine**
@@ -86,24 +86,24 @@ Major outputs require ARCH recovery and durable artifact creation.
 
 ## 2.4 Gemini
 
-**Plane:** Experience  
-**Status:** Operational external platform  
+**Plane:** Experience
+**Status:** Operational external platform
 **Mission:** Google-native multimodality, Workspace integration, video, and specialized visual capabilities.
 
 ---
 
 ## 2.5 Grok
 
-**Plane:** Experience / Perception interface  
-**Status:** Operational external platform  
+**Plane:** Experience / Perception interface
+**Status:** Operational external platform
 **Mission:** Fast conversation, X-derived perception, heterodox reasoning, transformational and philosophical exploration.
 
 ---
 
 ## 2.6 OpenWebUI
 
-**Plane:** Experience  
-**Status:** Historical/technical cockpit candidate  
+**Plane:** Experience
+**Status:** Historical/technical cockpit candidate
 **Mission:** Self-hosted multi-model cockpit.
 
 **Open**
@@ -113,8 +113,8 @@ Whether it remains a technical substrate for Y-Nexus or a superseded primary-coc
 
 ## 2.7 Y-Menu
 
-**Plane:** Experience  
-**Status:** Conceptually defined; archived repository exists  
+**Plane:** Experience
+**Status:** Conceptually defined; archived repository exists
 **Mission:** Y-OS shell/navigation and cognitive orchestration interface.
 
 **Open**
@@ -124,16 +124,16 @@ Relationship to future Y-Nexus UI.
 
 ## 2.8 yOS Client
 
-**Plane:** Experience  
-**Status:** Historical concept  
+**Plane:** Experience
+**Status:** Historical concept
 **Mission:** General client layer across ChatGPT, Manus, Claude, Gemini, and future interfaces.
 
 ---
 
 ## 2.9 yOS Client for Obsidian / Y-OS Reader / yMD-OBS Reader
 
-**Plane:** Experience / Knowledge boundary  
-**Status:** Materially specified; implementation evidence pending  
+**Plane:** Experience / Knowledge boundary
+**Status:** Materially specified; implementation evidence pending
 **Mission:** Semantically interpret, display, navigate, and act on YMD, YMD-OBS, Markdown, and Obsidian content.
 
 **Known subcomponents**
@@ -148,8 +148,8 @@ Relationship to future Y-Nexus UI.
 
 ## 2.10 Y-Nexus UI
 
-**Plane:** Experience interface to Control  
-**Status:** Strategic target  
+**Plane:** Experience interface to Control
+**Status:** Strategic target
 **Mission:** Future sovereign Y-OS cockpit.
 
 **Must expose**
@@ -169,8 +169,8 @@ Relationship to future Y-Nexus UI.
 
 ## 3.1 Y-Nexus
 
-**Plane:** Control  
-**Status:** Strategic target; implementation unverified  
+**Plane:** Control
+**Status:** Strategic target; implementation unverified
 **Mission:** Sovereign control-plane boundary for jobs, policy, state, routing, permissions, budgets, and observability.
 
 **Owns**
@@ -191,8 +191,8 @@ Relationship to future Y-Nexus UI.
 
 ## 3.2 Y-ORC
 
-**Plane:** Control  
-**Status:** Strong historical canon; implementation claims exist  
+**Plane:** Control
+**Status:** Strong historical canon; implementation claims exist
 **Mission:** Operational orchestration runtime.
 
 **Recovered formula**
@@ -214,8 +214,8 @@ Y-ORC is likely the orchestration runtime inside Y-Nexus.
 
 ## 3.3 CRT — Cognitive Routing Table
 
-**Plane:** Control  
-**Status:** Strongly defined; runtime verification pending  
+**Plane:** Control
+**Status:** Strongly defined; runtime verification pending
 **Mission:** Choose who thinks and how.
 
 **Owns**
@@ -237,8 +237,8 @@ Y-ORC is likely the orchestration runtime inside Y-Nexus.
 
 ## 3.4 ART — Agent & Resource Routing Table
 
-**Plane:** Control  
-**Status:** Strongly defined; reportedly operational  
+**Plane:** Control
+**Status:** Strongly defined; reportedly operational
 **Mission:** Choose who or what acts and with which resources.
 
 **Owns**
@@ -262,8 +262,8 @@ Y-ORC is likely the orchestration runtime inside Y-Nexus.
 
 ## 3.5 Y-CTX
 
-**Plane:** Control  
-**Status:** Historical working canon  
+**Plane:** Control
+**Status:** Historical working canon
 **Mission:** Determine what context is relevant.
 
 **Owns**
@@ -277,8 +277,8 @@ Y-ORC is likely the orchestration runtime inside Y-Nexus.
 
 ## 3.6 CCR — Context Compiler Runtime
 
-**Plane:** Control  
-**Status:** Implementation claims for v1/v2; verification pending  
+**Plane:** Control
+**Status:** Implementation claims for v1/v2; verification pending
 **Mission:** Compile provider-ready runtime context.
 
 **Owns**
@@ -297,8 +297,8 @@ Y-CTX decides relevance. CCR compiles it.
 
 ## 3.7 MOP — Manus Orchestration Protocol
 
-**Plane:** Control / Experience boundary  
-**Status:** Defined; partial implementation claimed  
+**Plane:** Control / Experience boundary
+**Status:** Defined; partial implementation claimed
 **Mission:** Standardize mission, artifact, state, and validation exchange between Manus and Y-OS.
 
 **Working relation**
@@ -311,16 +311,16 @@ Y-CTX decides relevance. CCR compiles it.
 
 ## 3.8 Manus Bridge
 
-**Plane:** Control adapter  
-**Status:** Defined; implementation unverified  
+**Plane:** Control adapter
+**Status:** Defined; implementation unverified
 **Mission:** Connect Manus to Y-Nexus/Y-ORC through MOP.
 
 ---
 
 ## 3.9 Dispatcher / Intent Analyzer / Mission Builder
 
-**Plane:** Control  
-**Status:** Recovered concepts; module boundaries unresolved  
+**Plane:** Control
+**Status:** Recovered concepts; module boundaries unresolved
 **Mission:** Analyze request intent, resolve complexity, construct a mission, and prepare execution.
 
 **Anti-proliferation rule**
@@ -330,8 +330,8 @@ Treat as Y-ORC subfunctions until evidence proves independent services.
 
 ## 3.10 Y-REG
 
-**Plane:** Control with Growth interface  
-**Status:** Strong historical canon; reportedly operational  
+**Plane:** Control with Growth interface
+**Status:** Strong historical canon; reportedly operational
 **Mission:** Registry/catalogue of capabilities and activable objects.
 
 **Owns**
@@ -357,8 +357,8 @@ Treat as Y-ORC subfunctions until evidence proves independent services.
 
 ## 4.1 PIE — Perception Intelligence Engine
 
-**Plane:** Cognitive  
-**Status:** Current working canon  
+**Plane:** Cognitive
+**Status:** Current working canon
 **Mission:** Universal perceptual ingress.
 
 **Owns**
@@ -376,8 +376,8 @@ Treat as Y-ORC subfunctions until evidence proves independent services.
 
 ## 4.2 Knowledge function
 
-**Plane:** Cognitive  
-**Status:** Canonical function  
+**Plane:** Cognitive
+**Status:** Canonical function
 **Mission:** Make relevant structured knowledge available to cognition.
 
 **Primary system interface**
@@ -387,25 +387,25 @@ KAP.
 
 ## 4.3 Reasoning module
 
-**Plane:** Cognitive  
-**Status:** Required; final name open  
-**Historical candidates:** KRE, RIE, RISE  
+**Plane:** Cognitive
+**Status:** Required; final name open
+**Historical candidates:** KRE, RIE, RISE
 **Mission:** Inference, synthesis, judgment, planning, explanation, hypothesis formation.
 
 ---
 
 ## 4.4 Intention
 
-**Plane:** Cognitive  
-**Status:** Canonical function; standalone-module status open  
+**Plane:** Cognitive
+**Status:** Canonical function; standalone-module status open
 **Mission:** Transform understanding into goals, priorities, and commitments.
 
 ---
 
 ## 4.5 Agency
 
-**Plane:** Cognitive  
-**Status:** Canonical function  
+**Plane:** Cognitive
+**Status:** Canonical function
 **Mission:** Select and commit to actionable means.
 
 **Important**
@@ -415,8 +415,8 @@ Agency is not identical to ART. Agency is the functional capacity; ART is a rout
 
 ## 4.6 ACT
 
-**Plane:** Cognitive / Execution boundary  
-**Status:** Open  
+**Plane:** Cognitive / Execution boundary
+**Status:** Open
 **Mission:** Realize action through execution runtimes and effectors.
 
 **Open questions**
@@ -429,16 +429,16 @@ Agency is not identical to ART. Agency is the functional capacity; ART is a rout
 
 ## 4.7 Y-COM
 
-**Plane:** Cognitive or Knowledge  
-**Status:** Recovered name; insufficient definition  
+**Plane:** Cognitive or Knowledge
+**Status:** Recovered name; insufficient definition
 **Mission:** Unknown pending source recovery.
 
 ---
 
 ## 4.8 Cognitive Graph / KGC
 
-**Plane:** Cognitive / Knowledge boundary  
-**Status:** Implementation claims exist  
+**Plane:** Cognitive / Knowledge boundary
+**Status:** Implementation claims exist
 **Mission:** Move from document graph to concept-level cognitive graph with typed relationships and navigation.
 
 ---
@@ -447,8 +447,8 @@ Agency is not identical to ART. Agency is the functional capacity; ART is a rout
 
 ## 5.1 Y-MEM
 
-**Plane:** Knowledge  
-**Status:** Strong historical umbrella  
+**Plane:** Knowledge
+**Status:** Strong historical umbrella
 **Mission:** Memory and continuity.
 
 **Historical scope**
@@ -471,8 +471,8 @@ Whether Y-MEM remains an active umbrella or is decomposed across KAP, ARCH, Cont
 
 ## 5.2 Memory Gateway / Unified Memory API
 
-**Plane:** Knowledge interface  
-**Status:** Architecturally defined  
+**Plane:** Knowledge interface
+**Status:** Architecturally defined
 **Mission:** Unified access, routing, provenance, and retrieval across memory systems.
 
 **Known interface candidates**
@@ -484,24 +484,24 @@ Whether Y-MEM remains an active umbrella or is decomposed across KAP, ARCH, Cont
 
 ## 5.3 Recall
 
-**Plane:** Knowledge  
-**Status:** Historical component  
+**Plane:** Knowledge
+**Status:** Historical component
 **Mission:** Episodic/semantic ocean and source capture.
 
 ---
 
 ## 5.4 mem0
 
-**Plane:** Knowledge  
-**Status:** Historical/tactical component  
+**Plane:** Knowledge
+**Status:** Historical/tactical component
 **Mission:** Memory service for extracted user/project memories.
 
 ---
 
 ## 5.5 KAP
 
-**Plane:** Knowledge with Cognitive interface  
-**Status:** Current working canon; implementation partially verified through repository existence  
+**Plane:** Knowledge with Cognitive interface
+**Status:** Current working canon; implementation partially verified through repository existence
 **Mission:** Acquire, structure, resolve, and publish provenance-backed knowledge.
 
 **Owns**
@@ -522,8 +522,8 @@ Whether Y-MEM remains an active umbrella or is decomposed across KAP, ARCH, Cont
 
 ## 5.6 ARCH Collector
 
-**Plane:** Knowledge with Perception interface  
-**Status:** Designed; implementation pending/partial  
+**Plane:** Knowledge with Perception interface
+**Status:** Designed; implementation pending/partial
 **Mission:** Universal acquisition and preservation of LLM interactions, artifacts, attachments, versions, and deltas.
 
 **Owns**
@@ -539,16 +539,16 @@ Whether Y-MEM remains an active umbrella or is decomposed across KAP, ARCH, Cont
 
 ## 5.7 ARCH Archaeology
 
-**Plane:** Knowledge  
-**Status:** Designed  
+**Plane:** Knowledge
+**Status:** Designed
 **Mission:** Reconstruct concept lineage, decisions, contradictions, supersessions, and historical emergence.
 
 ---
 
 ## 5.8 Source Ledger
 
-**Plane:** Knowledge  
-**Status:** Required  
+**Plane:** Knowledge
+**Status:** Required
 **Mission:** Authoritative provenance registry.
 
 **Minimum fields**
@@ -568,8 +568,8 @@ Whether Y-MEM remains an active umbrella or is decomposed across KAP, ARCH, Cont
 
 ## 5.9 Artifact / Artifact Registry
 
-**Plane:** Knowledge / Control boundary  
-**Status:** Artifact is canonical; standalone registry status open  
+**Plane:** Knowledge / Control boundary
+**Status:** Artifact is canonical; standalone registry status open
 **Mission:** Durable truth object and its identity/location metadata.
 
 **Anti-proliferation rule**
@@ -579,57 +579,57 @@ Do not create a standalone registry until Y-REG, KAP, and Git responsibilities a
 
 ## 5.10 Context Packs
 
-**Plane:** Knowledge product consumed by Control  
-**Status:** Strong canon  
-**Modes:** FULL, COMPRESSED, MINIMAL  
+**Plane:** Knowledge product consumed by Control
+**Status:** Strong canon
+**Modes:** FULL, COMPRESSED, MINIMAL
 **Mission:** Explicit portable context for stateless or stateful agents.
 
 ---
 
 ## 5.11 Chronicles
 
-**Plane:** Knowledge  
-**Status:** Canonical  
+**Plane:** Knowledge
+**Status:** Canonical
 **Mission:** Reflective, historical memory of how Y-OS and KOSMOS evolve and affect one another.
 
 ---
 
 ## 5.12 Git
 
-**Plane:** Knowledge / implementation substrate  
-**Status:** Canonical source of durable implementation truth  
+**Plane:** Knowledge / implementation substrate
+**Status:** Canonical source of durable implementation truth
 **Mission:** Versioned code, architecture, ADRs, tests, and artifact history.
 
 ---
 
 ## 5.13 Obsidian
 
-**Plane:** Knowledge / Experience interface  
-**Status:** Canonical human interface in existing repository governance  
+**Plane:** Knowledge / Experience interface
+**Status:** Canonical human interface in existing repository governance
 **Mission:** Human-readable local Markdown memory and graph navigation.
 
 ---
 
 ## 5.14 Notion
 
-**Plane:** Knowledge / operational workspace  
-**Status:** Active, role unresolved  
+**Plane:** Knowledge / operational workspace
+**Status:** Active, role unresolved
 **Mission:** Documentation, structured operational pages, databases, staging, and publication.
 
 ---
 
 ## 5.15 Supabase
 
-**Plane:** Knowledge/runtime infrastructure  
-**Status:** Historical candidate  
+**Plane:** Knowledge/runtime infrastructure
+**Status:** Historical candidate
 **Mission:** Runtime cache/state, not philosophical source of truth.
 
 ---
 
 ## 5.16 Universe personal-data substrate
 
-**Plane:** Knowledge  
-**Status:** Recovered concept requiring separation from YOUniverse/Y World  
+**Plane:** Knowledge
+**Status:** Recovered concept requiring separation from YOUniverse/Y World
 **Mission:** Personal Meta-Profile OS, Personal Data Vault, Life Knowledge Graph, AI Context Engine, and user-owned data layer.
 
 ---
@@ -638,16 +638,16 @@ Do not create a standalone registry until Y-REG, KAP, and Git responsibilities a
 
 ## 6.1 Y-CAP — Capability Acquisition Protocol
 
-**Plane:** Growth  
-**Status:** Explicitly validated historical concept  
+**Plane:** Growth
+**Status:** Explicitly validated historical concept
 **Mission:** Acquire missing capabilities through discovery, evaluation, integration, and registration.
 
 ---
 
 ## 6.2 Y-DEV
 
-**Plane:** Growth / implementation interface  
-**Status:** Explicit historical module  
+**Plane:** Growth / implementation interface
+**Status:** Explicit historical module
 **Mission:** Build or adapt capabilities that do not yet exist.
 
 **Recovered dependency**
@@ -657,56 +657,56 @@ Y-DEV had to precede development of Y-REG in one historical sequence.
 
 ## 6.3 Outcome Capture
 
-**Plane:** Growth  
-**Status:** Required function  
+**Plane:** Growth
+**Status:** Required function
 **Mission:** Record what was requested, executed, produced, failed, cost, and approved.
 
 ---
 
 ## 6.4 Evaluation
 
-**Plane:** Growth  
-**Status:** Required function  
+**Plane:** Growth
+**Status:** Required function
 **Mission:** Compare intended and actual outcomes across quality, reliability, cost, speed, and compliance.
 
 ---
 
 ## 6.5 Performance Memory
 
-**Plane:** Growth  
-**Status:** Required function  
+**Plane:** Growth
+**Status:** Required function
 **Mission:** Retain empirical performance history for models, agents, tools, workflows, and capabilities.
 
 ---
 
 ## 6.6 Routing Calibration
 
-**Plane:** Growth  
-**Status:** Required function  
+**Plane:** Growth
+**Status:** Required function
 **Mission:** Improve CRT and ART routing from observed outcomes.
 
 ---
 
 ## 6.7 Capability Lifecycle
 
-**Plane:** Growth  
-**Status:** Required function  
+**Plane:** Growth
+**Status:** Required function
 **Mission:** Manage discovery, trial, validation, promotion, maturity, deprecation, and retirement.
 
 ---
 
 ## 6.8 Experimentation and Promotion
 
-**Plane:** Growth  
-**Status:** Required function  
+**Plane:** Growth
+**Status:** Required function
 **Mission:** Test improvements safely and promote only through explicit gates.
 
 ---
 
 ## 6.9 Y-VAL
 
-**Plane:** Historical proposal  
-**Status:** Rejected as standalone v1 module  
+**Plane:** Historical proposal
+**Status:** Rejected as standalone v1 module
 **Decision:** Validation gates remain embedded in Y-ORC / Y-DEV and later Growth governance.
 
 ---

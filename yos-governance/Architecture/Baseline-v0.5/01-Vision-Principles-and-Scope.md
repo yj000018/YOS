@@ -1,7 +1,7 @@
 # Y-OS Architecture Baseline v0.5
 ## 01 — Vision, Principles and Scope
 
-**Status:** Working canon derived from ChatGPT internal-memory consolidation.  
+**Status:** Working canon derived from ChatGPT internal-memory consolidation.
 **Purpose:** Provide a stable interpretive frame for GitHub, Manus, Obsidian/Markdown, Notion, and later LLM-source audits.
 
 ---

@@ -81,8 +81,8 @@ Keep all reported values distinct until proven equivalent.
 
 | Reported value | Current interpretation | Evidence state | Required reconciliation |
 |---:|---|---|---|
-| 194 | historical sessions and/or factsheets in earlier reports | ambiguous | define object type, date, source and deduplication rule |
-| 363 | Manus Memory Session metadata records | confirmed as metadata corpus reference | determine body/output coverage and overlap with 194 |
+| 194 | archived factsheets reported by the KAP pipeline | object type now resolved; uniqueness and source coverage unresolved | identify report files, factsheet IDs, source-session IDs and duplicates |
+| 363 | Manus Memory Session metadata records | confirmed metadata corpus reference | determine body/output coverage and overlap with the 194 factsheets |
 | 316 | Mem0 memories | confirmed signal/index corpus | map provenance back to durable sources; never treat as primary corpus |
 | 593 | entries across seven Notion databases | confirmed database-record aggregate | identify databases, record types and overlap with Manus sessions/factsheets |
 | 40 | currently owned GitHub repositories | current account census | reconcile with historical 41-entry placeholder registry |
@@ -215,3 +215,97 @@ Wave 2 is complete only when:
 ```
 
 The six lanes run in parallel, but consolidation occurs here after each evidence pass.
+
+## 8. Evidence Pass 1 — count semantics, capability recovery and inherited rules
+
+**Completed:** 2026-07-14  
+**Mode:** evidence consolidation into the existing control plane; no new framework created.
+
+### 8.1 Count semantics now established
+
+| Count | What the evidence actually says | What it does not prove | Current status |
+|---:|---|---|---|
+| 194 | A KAP pipeline report states that **194 factsheets were archived**. | It does not prove 194 unique Manus sessions, 194 complete source bodies, or full historical coverage. | `CONFIRMED_OBJECT_TYPE / COVERAGE_UNRESOLVED` |
+| 363 | The consolidated KAP acquisition commit states **363 Manus Memory Session metadata records**. | It does not prove that all 363 session bodies or outputs were acquired. | `METADATA_CONFIRMED / BODY_UNKNOWN` |
+| 316 | The same acquisition commit states **316 Mem0 memories**. | These are not equivalent to source sessions, factsheets, or canonical durable documents. | `INDEX_OR_ACTIVE_MEMORY / PROVENANCE_MAPPING_REQUIRED` |
+| 593 | The same acquisition commit states **593 entries across seven Notion databases**. | It does not prove 593 distinct knowledge objects or no overlap with sessions/factsheets. | `DATABASE_AGGREGATE / SCHEMA_AND_OVERLAP_REQUIRED` |
+| 40 | Current authenticated account census finds 40 owned repositories. | It does not automatically invalidate the former 41-entry registry, which included a placeholder for additional repositories. | `CURRENT_CENSUS / HISTORICAL_RECONCILIATION_REQUIRED` |
+
+### 8.2 The 194 versus 363 question is narrowed
+
+The earlier ambiguity is reduced:
+
+```text
+194 = archived factsheet representations
+363 = Manus Memory Session metadata representations
+```
+
+They are therefore not directly contradictory and must never be added together.
+
+The remaining unresolved relationship is an overlap problem:
+
+```text
+Manus session/task
+→ metadata record
+→ optional body/output capture
+→ optional normalized factsheet
+→ optional Notion/Mem0 representation
+```
+
+A plausible interpretation is that the 194 factsheets form a processed subset of, or overlap with, the 363 metadata records. This remains a hypothesis until identifiers are matched.
+
+Required deduplication keys:
+
+- Manus task/session ID;
+- factsheet ID;
+- source URL or platform object ID;
+- body/output checksum where available;
+- Notion page/database record ID;
+- Mem0 memory ID plus durable-source provenance.
+
+### 8.3 Recovered capability decisions — first pass
+
+| Capability | Recovered evidence | Reuse decision | Consolidation consequence |
+|---|---|---|---|
+| `memoriser` | Pushes content to the historical Y-OS Memory Inbox in Notion. | `REUSE_WITH_DESTINATION_UPDATE` | Preserve capture semantics; redirect durable authority toward Git/Markdown and treat Notion as operational projection where still useful. |
+| `hydrater` | Pulls context from Notion Memory for session injection. | `RECONCILE_WITH_LATER_DOCTRINE` | Preserve context-hydration concept; make source authority and provenance explicit rather than assuming Notion primacy. |
+| `memory-manager` | Persistent-memory orchestration. | `RECONCILE_WITH_LATER_DOCTRINE` | Recover contracts and boundaries before deciding current role across Git, Obsidian, Notion and active memory. |
+| `session-synthesis` | Skill contract plus `collect_session.py`, `generate_card.py`, `archive_to_notion.py`, API reference and template migrated into YOS. | `REUSE_WITH_DESTINATION_UPDATE` | Do not recreate collection/card generation. Separate synthesis from archival destination; preserve Git-first durable artifact. |
+| `summary` | Strategic session synthesis mode. | `REUSE_AS_IS` at capability level | Treat as an output mode, not a new memory architecture. |
+| `status` | Fast tactical checkpoint mode. | `REUSE_AS_IS` at capability level | Retain as lightweight operational state, distinct from durable synthesis. |
+| `dev` | Claude/Manus-era development engine capability. | `HISTORICAL_ONLY_PENDING_VALIDATION` | Preserve lineage; reassess against current coding agents before reuse. |
+
+### 8.4 Inherited KAP consolidation rules recovered
+
+The evolutionary merge architecture and contradiction/supersession policy already define rules that Wave 2 adopts rather than reimplements:
+
+1. Contradictions are information, not acquisition errors.
+2. Newer evidence does not automatically supersede older evidence.
+3. Implementation evidence outweighs an unexecuted plan.
+4. Formal gate decisions outweigh pre-gate positions.
+5. Superseded positions remain preserved and linked.
+6. Deduplication occurs at claim/representation level, not by deleting source artifacts.
+7. Same topic at different dates or maturity levels is evolution, not duplication.
+8. Human review remains required for implicit supersession and contested conclusions.
+
+### 8.5 Consolidated lane state after Pass 1
+
+| Lane | State | Result of this pass | Remaining blocker |
+|---|---|---|---|
+| W2-A Manus corpus boundary | `IN_PROGRESS` | Metadata corpus and factsheet corpus are now distinguished. | Match identifiers and classify body/output availability. |
+| W2-B Recovered capabilities | `IN_PROGRESS` | Seven skill/capability families classified at first pass. | Recover exact contracts, inputs, outputs and execution evidence. |
+| W2-C Count reconciliation | `ADVANCED` | Object types for 194, 363, 316 and 593 are separated. | Build overlap map and uniqueness proof. |
+| W2-D Pipeline lineage | `IN_PROGRESS` | Canonical processing stages retained. | Audit WP2-E1 through WP2-M7 completion reports at file level. |
+| W2-E Authority supersession | `IN_PROGRESS` | Destination changes identified for `memoriser`, `hydrater` and `session-synthesis`. | Date exact Notion→Git/Markdown/Obsidian transitions. |
+| W2-F Manus continuation | `DEFERRED_BY_DESIGN` | Scope already reduced to inaccessible surfaces and unresolved identifiers. | Complete lanes A–E before generating the final continuation package. |
+
+### 8.6 Next consolidated evidence pass
+
+The next pass remains inside this document and the Meta-Archaeology Register. It will:
+
+1. locate the exact report(s) behind the 194 archived factsheets;
+2. recover factsheet IDs and compare them with Manus session/task identifiers;
+3. classify the 363 session records as metadata-only, body-acquired, output-acquired, factsheet-processed or unknown;
+4. audit WP2-E1 through WP2-M7 completion boundaries;
+5. produce one delta list of genuinely missing work;
+6. exclude from the future Manus package everything already reproducible from Git.

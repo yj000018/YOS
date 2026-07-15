@@ -309,3 +309,113 @@ The next pass remains inside this document and the Meta-Archaeology Register. It
 4. audit WP2-E1 through WP2-M7 completion boundaries;
 5. produce one delta list of genuinely missing work;
 6. exclude from the future Manus package everything already reproducible from Git.
+
+## 9. Consolidation Map — single shared operating view
+
+**Mode:** MAP  
+**Rule:** one map, one control plane, no new parallel architecture.
+
+```text
+SOURCE SURFACES
+│
+├── Manus historical sessions / tasks
+│   ├── 363 metadata records confirmed
+│   ├── body coverage unknown
+│   ├── output coverage unknown
+│   └── 194 archived factsheets = processed representations, not a second corpus
+│
+├── Notion
+│   ├── 7 databases / 593 entries confirmed
+│   ├── 431 pages / 14,356 blocks / 793 extracted files recorded in M6C history
+│   └── overlap with Manus factsheets and session records unresolved
+│
+├── Mem0
+│   └── 316 memories = active/index layer, not durable source authority
+│
+├── Obsidian
+│   ├── Y-World snapshots: 17 → 229/235 notes depending source/date
+│   └── Ludivine: 1,842 notes discovered; content access remains separately governed
+│
+└── GitHub
+    ├── 40 currently owned repositories
+    ├── KAP acquisition and synthesis machinery
+    ├── YOS canonical backbone and migrated capabilities
+    └── prior archaeology, gates, reports, scripts and registries
+
+PROCESSING SPINE
+│
+Discovery
+→ Catalogue
+→ Metadata acquisition
+→ Body acquisition
+→ Output acquisition
+→ Normalization
+→ Fragment / claim extraction
+→ Factsheet processing
+→ Comparison / contradiction detection
+→ Thought-line synthesis
+→ Human validation
+→ Canonization
+
+CURRENT PROVEN COMPLETION BOUNDARIES
+│
+├── Manus: discovery + catalogue + metadata acquisition proven at scale
+│   └── body/output/factsheet coverage requires identifier-level mapping
+├── Notion: metadata and substantial block extraction proven
+│   └── normalization, overlap and synthesis completeness not proven
+├── Mem0: acquisition proven
+│   └── provenance back-linking incomplete
+├── Obsidian: topology and metadata discovery proven
+│   └── full authorized body assimilation incomplete
+└── GitHub: account census and broad evidence access proven
+    └── cross-repository synthesis still active
+
+REUSED CAPABILITIES
+│
+├── Capture: memoriser → preserve, destination update required
+├── Hydration: hydrater → preserve, authority model update required
+├── Persistent memory orchestration: memory-manager → reconcile
+├── Session card pipeline: session-synthesis → reuse scripts, detach from Notion-only archive
+├── Strategic synthesis: summary → reuse
+├── Tactical checkpoint: status → reuse
+└── Historical dev agent: dev → retain as lineage pending validation
+
+AUTHORITY EVOLUTION
+│
+Notion-primary memory
+→ JSON/runtime records + Notion operations
+→ Git/KAP durable authority
+→ Markdown/Obsidian human-readable exploitation layer
+→ Mem0 as active recall/index, never sole durable authority
+
+ONLY GENUINELY MISSING WORK
+│
+├── match Manus session IDs ↔ factsheet IDs ↔ Notion IDs ↔ Mem0 provenance
+├── classify 363 records by metadata/body/output/factsheet state
+├── establish uniqueness and overlap of the 194 factsheets
+├── audit exact WP2-E1 → WP2-M7 stopping points
+├── date source-authority transitions with decisions and implementation evidence
+└── package only inaccessible or unverifiable residue for future Manus execution
+```
+
+### 9.1 Convergence rule
+
+All evidence lanes converge into three outputs only:
+
+1. **Current Best Knowledge:** what is valid now, with provenance and confidence.
+2. **Evolution Ledger:** what changed, why, and what was superseded.
+3. **Minimal Continuation Package:** only what cannot be completed from existing Git evidence.
+
+Everything else is evidence feeding these outputs, not a new permanent subsystem.
+
+### 9.2 Map state
+
+| Zone | State | Interpretation |
+|---|---|---|
+| Source census | `ADVANCED` | Major surfaces and counts identified. |
+| Representation semantics | `ADVANCED` | Factsheets, metadata, memories and database entries are no longer conflated. |
+| Identifier overlap | `OPEN` | Principal blocker to exact coverage proof. |
+| Capability recovery | `ADVANCED` | Core session-processing capabilities recovered and classified. |
+| WP2 execution lineage | `OPEN` | Needs sprint-level completion-boundary audit. |
+| Authority supersession | `IN_PROGRESS` | Direction is clear; exact dates and decision evidence remain. |
+| Manus residue | `SHRINKING` | Restricted to inaccessible surfaces and unresolved proof gaps. |

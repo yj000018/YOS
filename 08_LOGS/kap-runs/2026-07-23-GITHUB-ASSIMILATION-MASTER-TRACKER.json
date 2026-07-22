@@ -1,0 +1,69 @@
+{
+  "schema": "yos-github-assimilation-tracker-v1.0",
+  "run_id": "KAP-GITHUB-ASSIMILATION-2026-07-23",
+  "status": "IN_PROGRESS",
+  "doctrine": "Assimilate before building",
+  "scope": {
+    "repository": "yj000018/YOS",
+    "target_coverage": 1.0,
+    "development_freeze": true,
+    "manus_usage": "exclusive-capability-only"
+  },
+  "audit_tracks": [
+    {"id": "T01", "name": "Meta, constitution, source-of-truth and migration", "status": "FIRST_PASS_COMPLETE"},
+    {"id": "T02", "name": "Backbone architecture and module boundaries", "status": "FIRST_PASS_COMPLETE"},
+    {"id": "T03", "name": "Agents, identities, capabilities, ART and CRT", "status": "FIRST_PASS_COMPLETE"},
+    {"id": "T04", "name": "YARP and BUS transport architecture", "status": "FIRST_PASS_COMPLETE"},
+    {"id": "T05", "name": "MPM orchestration runtime", "status": "FIRST_PASS_COMPLETE"},
+    {"id": "T06", "name": "KAP protocols, registries, runs and adapters", "status": "FIRST_PASS_COMPLETE"},
+    {"id": "T07", "name": "Governance and ADRs", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T08", "name": "Legacy agents and Manus skills", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T09", "name": "Automations, scripts, n8n and userscripts", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T10", "name": "Interfaces, YOS Shell, cockpit, browser, mobile and voice", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T11", "name": "Apps, products and prototypes", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T12", "name": "Y-WORLD knowledge domain and Obsidian assets", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T13", "name": "Source corpus, logs, migrations and archives", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T14", "name": "Duplicate, contradiction and lineage reconciliation", "status": "PENDING"},
+    {"id": "T15", "name": "Canonical topology and registry patch plan", "status": "PENDING"},
+    {"id": "T16", "name": "Final coverage proof and residual unknowns", "status": "PENDING"}
+  ],
+  "confirmed_findings": [
+    {
+      "id": "F001",
+      "severity": "HIGH",
+      "finding": "Root README and several 00_META maps describe the pre-reorganization topology and are stale relative to the current backbone."
+    },
+    {
+      "id": "F002",
+      "severity": "HIGH",
+      "finding": "AGENTS and YARP are first-class backbone modules in implemented candidate architectures but are absent from YOS-MODULE-REGISTRY v1.0 and the older repo map."
+    },
+    {
+      "id": "F003",
+      "severity": "HIGH",
+      "finding": "ART and CRT are routing submodules of AGENTS/04_ROUTING, not standalone backbone modules."
+    },
+    {
+      "id": "F004",
+      "severity": "MEDIUM",
+      "finding": "File-count claims conflict: root README says 915, pre-reorg inventory says 940; a fresh authoritative census is required."
+    },
+    {
+      "id": "F005",
+      "severity": "MEDIUM",
+      "finding": "KAP source registries contain substantial prior metadata assimilation, but the current YOS monorepo itself has not yet been fully registered and semantically classified as a source instance."
+    },
+    {
+      "id": "F006",
+      "severity": "MEDIUM",
+      "finding": "The KAP adapter census is useful but contains environment-specific status from Manus in July 2026 and must not be treated as timeless capability truth."
+    }
+  ],
+  "next_batch": [
+    "Governance and ADR deep audit",
+    "Legacy-to-canonical duplication census",
+    "YOS Shell and Manus interface lineage",
+    "Automations and userscripts implementation audit"
+  ],
+  "completion_rule": "Do not mark COMPLETE until every tracked top-level domain has an evidence-backed inventory, semantic classification, lineage decision, and explicit residual-unknown list."
+}

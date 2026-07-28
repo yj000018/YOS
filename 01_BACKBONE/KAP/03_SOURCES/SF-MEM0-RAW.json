@@ -1,0 +1,2659 @@
+[
+  {
+    "id": "ffc088cd-4570-483a-b845-2ce919b0b684",
+    "memory": "User defined the preferred yOS coding stack as Voice/iPhone → Lakshmi → Manus → GitHub → Cursor Background Agent → PR/build/deploy → TestFlight/iPhone review, outlining the end‑to‑end flow from voice command to iPhone review.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology",
+      "user_preferences",
+      "professional_details"
+    ],
+    "created_at": "2026-06-30T09:15:35-07:00",
+    "updated_at": "2026-07-01T00:55:37.160790-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 30,
+      "hour": 16,
+      "year": 2026,
+      "month": 6,
+      "minute": 15,
+      "quarter": 2,
+      "is_weekend": false,
+      "day_of_week": "tuesday",
+      "day_of_year": 181,
+      "week_of_year": 27
+    }
+  },
+  {
+    "id": "f014cb51-b72f-48ed-97d6-7dea663df02b",
+    "memory": "User clarified that in the yOS coding workflow Manus and Cursor function as complementary layers rather than competitors; Manus serves as systems architect, researcher, planner, autonomous execution manager, specification generator, and multi‑step project manager, while Cursor provides a repository‑aware coding environment handling implementation, refactoring, debugging, testing, PR and code‑quality workflow, especially for production maintenance.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-30T09:15:35-07:00",
+    "updated_at": "2026-07-01T00:55:37.160790-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 30,
+      "hour": 16,
+      "year": 2026,
+      "month": 6,
+      "minute": 15,
+      "quarter": 2,
+      "is_weekend": false,
+      "day_of_week": "tuesday",
+      "day_of_year": 181,
+      "week_of_year": 27
+    }
+  },
+  {
+    "id": "01d5f484-914a-4b71-9de7-749b667d6677",
+    "memory": "User tagged this tooling analysis with keywords: Cursor, Manus, yOS, mobile coding, iOS, vibe coding, AI coding workflow, and software architecture.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-30T09:15:35-07:00",
+    "updated_at": "2026-07-01T00:55:37.160790-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 30,
+      "hour": 16,
+      "year": 2026,
+      "month": 6,
+      "minute": 15,
+      "quarter": 2,
+      "is_weekend": false,
+      "day_of_week": "tuesday",
+      "day_of_year": 181,
+      "week_of_year": 27
+    }
+  },
+  {
+    "id": "5ef4b4e3-6f5c-48a8-8221-6f019fe6a942",
+    "memory": "User prefers using yOS with Lakshmi task management to model important future work as persistent initiatives rather than simple reminders, ensuring initiatives survive conversations, accumulate context, collect links, research, decisions, and can be restarted in any future session; the preferred initiative lifecycle is Idea → Incubating → Ready → Active Project → Archived, with Lakshmi acting as Chief of Staff managing durable initiatives, context, decisions, open questions, and next actions across time.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "user_preferences",
+      "technology"
+    ],
+    "created_at": "2026-06-30T09:15:34-07:00",
+    "updated_at": "2026-07-01T00:55:29.702023-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 30,
+      "hour": 16,
+      "year": 2026,
+      "month": 6,
+      "minute": 15,
+      "quarter": 2,
+      "is_weekend": false,
+      "day_of_week": "tuesday",
+      "day_of_year": 181,
+      "week_of_year": 27
+    }
+  },
+  {
+    "id": "869b5edc-6c04-4192-a473-e1ff024a8baa",
+    "memory": "User created a future initiative named \"Coding Architecture\" for yOS, currently incubating, described as a voice‑first, natural‑language‑driven software engineering stack. The initiative follows a lifecycle of Idea → Incubating → Ready → Active Project → Archived and can be summoned with phrases such as \"Coding Architecture\", \"Start the Coding Architecture project\", \"Resume the Coding Architecture initiative\", \"Cursor and Manus coding workflow\", \"voice‑first software factory\", \"vibe coding architecture\", or \"yOS coding stack\".",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-30T09:15:33-07:00",
+    "updated_at": "2026-07-01T00:55:22.487520-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 30,
+      "hour": 16,
+      "year": 2026,
+      "month": 6,
+      "minute": 15,
+      "quarter": 2,
+      "is_weekend": false,
+      "day_of_week": "tuesday",
+      "day_of_year": 181,
+      "week_of_year": 27
+    }
+  },
+  {
+    "id": "4254457e-b64e-4159-9668-39753ef77c74",
+    "memory": "User specified key components for the Coding Architecture initiative: Lakshmi as Chief of Staff/cognitive orchestrator; Manus as architect, researcher, planner, and autonomous execution manager; Cursor as code implementation and repository engineering layer; Cursor iOS as remote control surface for coding agents; Codex/ChatGPT mobile for quick coding control; GitHub as source of truth; CI/CD for automated build/test/deploy; TestFlight as iOS delivery target; and a future task manager in yOS. Tags include yOS, Lakshmi, Manus, Cursor, Codex, GitHub, CI/CD, TestFlight, iPhone, vibe coding, software factory. Source: ChatGPT session 2026‑06‑30.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-30T09:15:33-07:00",
+    "updated_at": "2026-07-01T00:55:22.487520-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 30,
+      "hour": 16,
+      "year": 2026,
+      "month": 6,
+      "minute": 15,
+      "quarter": 2,
+      "is_weekend": false,
+      "day_of_week": "tuesday",
+      "day_of_year": 181,
+      "week_of_year": 27
+    }
+  },
+  {
+    "id": "dfc476bb-a369-4b13-b97b-b24f3eb506a5",
+    "memory": "User standardized frontmatter for modules OPN-001 through OPN-013 (title and compile fields) on 2026-06-28.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "de457b0c-aab8-457e-850c-50c0fdbb3d18",
+    "memory": "User created f01_writing_brief_registry.yaml on 2026-06-28, defining a full schema for all nine F01 modules.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "c1c4446b-6279-4db6-887b-c3a49e4d42bd",
+    "memory": "User completed the End-of-F01 Hardening patch on 2026-06-28, committing hash 8eb1364 on branch phase-iii/1A-S4-endofF01-hardening, tagging phase-iii-1A-S4-endofF01-hardening in the repository github.com/yj000018/elysium-civilizational-ontology.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "9eb50b72-3fea-4f09-9add-a8de1340b2da",
+    "memory": "User updated f01_prose_draft_registry.yaml to version 1.1 on 2026-06-28, adding fields for canonical_flows, brief_file, and api_outputs.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "9d15bb7e-c57b-4e86-ac83-0d2a15aa07ce",
+    "memory": "User strengthened validate.py on 2026-06-28 to include ELYSIUM canonical checks, resulting in zero errors and zero warnings.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "7eb881f2-dd73-4da5-af89-6fb91e41ee61",
+    "memory": "User plans the next steps: Founder review of Opening modules OPN-008 to OPN-013 and global approval of Foundation 01.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "74038972-c060-4b5c-95b9-f4f2082ca74b",
+    "memory": "User reported the book status on 2026-06-28: Opening 13/13 DRAFT_0 with 10,884 words; Foundation 01 9/9 DRAFT_0 with 15,888 words; total 22 modules and about 26,772 words; F02 remains on hold and not started.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "milestones"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "55689034-dcff-408e-9740-efe372ac7be2",
+    "memory": "User applied a micro‑patch to module F01-000 on 2026-06-28, increasing the number of flows from six to seven and adding a Food flow with a word count of 1,617.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "technology",
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "46213884-29f7-4878-a0f8-76ac0d71cf5c",
+    "memory": "User generated a Founder Reader View file at BOOK/views/founder_reading/ELYSIUM_Draft_0_Opening_plus_F01_FounderReview.md, compiling 22 modules with approximately 21,960 words.",
+    "user_id": "yannick",
+    "metadata": {
+      "date": "2026-06-28",
+      "phase": "III-1A",
+      "project": "ELYSIUM",
+      "session_type": "End-of-F01-Hardening"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:52:20-07:00",
+    "updated_at": "2026-06-28T15:17:20.623939-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 52,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "254aa367-066e-4d6e-9cd7-1ec6c8e150ec",
+    "memory": "User reports that module F02 has not been started as of 2026‑06‑28 and is awaiting a Chief Architect sample review and authorization to begin work.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:31:35-07:00",
+    "updated_at": "2026-06-28T14:55:25.680938-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 31,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "141c2079-6f38-4c7e-9d6a-37ad6473e65e",
+    "memory": "User applied the End‑of‑F01 QA patch on 2026‑06‑28, standardizing frontmatter for the nine F01 modules, creating the file f01_prose_draft_registry.yaml, achieving validation with 0 errors and 0 warnings, committing hash 73e43b4 and tagging the change as end‑of‑f01‑qa‑metadata‑patch.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:31:35-07:00",
+    "updated_at": "2026-06-28T14:55:25.680938-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 31,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "9dd2514b-667b-4907-a9de-af4f3af7a826",
+    "memory": "User added a reveal_level of FRAMEWORK_PREVIEW to module OPN‑012 in the 2026-06-28 architecture patch.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:21:28-07:00",
+    "updated_at": "2026-06-28T14:46:00.301293-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "94f9765a-17d0-4285-904c-1f2c1951be2f",
+    "memory": "User resolved three validation warnings by creating F01 index.md files, achieving 0 errors and 0 warnings in the 2026-06-28 validation.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:21:28-07:00",
+    "updated_at": "2026-06-28T14:46:00.301293-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "84a4ce65-5cd4-4543-8ad1-80537fc66c54",
+    "memory": "User applied an ELYSIUM architecture patch on 2026-06-28 that reconciled the Opening movement structure to span MOV‑I through MOV‑V.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:21:28-07:00",
+    "updated_at": "2026-06-28T14:46:00.301293-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "5886f195-768a-4921-af6a-071fe5b50956",
+    "memory": "User recorded commit hash 29a4e0b for the architecture patch applied on 2026-06-28.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T12:21:28-07:00",
+    "updated_at": "2026-06-28T14:46:00.301293-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "3b723ab0-f0d6-4c6b-8a2a-36707a81d269",
+    "memory": "User noted that module F02 has not been started as of 2026-06-28.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T12:21:28-07:00",
+    "updated_at": "2026-06-28T14:46:00.301293-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "260cad00-d264-410c-bf36-3f1da548b764",
+    "memory": "User corrected module OPN‑009 to belong to MOV‑III as part of the 2026-06-28 architecture patch.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology",
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T12:21:28-07:00",
+    "updated_at": "2026-06-28T14:46:00.301293-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 19,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "ec689596-de58-416c-8679-b55ff32a21af",
+    "memory": "User completed the ELYSIUM Foundation 01 “Material Existence” DRAFT_0 on 2026‑06‑28, comprising nine modules F01‑000 through F01‑008 (Overview, Energy, Water, Habitat, Infrastructure, Mobility, Food, Materials, Synthesis) totaling 15,843 words, all 9/9 passing ChatGPT review with zero revisions, on branch phase‑iii/1A‑S4‑F01‑material‑existence and tag phase‑iii‑1A‑S4‑F01‑material‑existence‑draft0‑complete.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T09:15:03-07:00",
+    "updated_at": "2026-06-28T11:37:29.619335-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 16,
+      "year": 2026,
+      "month": 6,
+      "minute": 15,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "a3fa2240-9357-474f-b3d1-b82661f3a967",
+    "memory": "User completed the ELYSIUM Opening draft (DRAFT_0) on 2026-06-28, writing all 13 modules OPN-001 through OPN-013 totaling 10,447 words across five movements (MOV‑I to MOV‑V); the work resides on branch phase-iii/1A‑S4‑MOV‑III‑V‑opn009‑013, tagged phase‑iii‑1A‑S4‑MOV‑III‑V‑opening‑complete, all modules passed ChatGPT review and await Founder approval.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T08:33:38-07:00",
+    "updated_at": "2026-06-28T10:48:10.196738-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 15,
+      "year": 2026,
+      "month": 6,
+      "minute": 33,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "24b9ca70-0614-43d2-841d-67320109ae3b",
+    "memory": "User established a permanent ELYSIUM rule that any report, summary, or briefing intended for copying to another LLM (e.g., ChatGPT, Claude) must be delivered either in a single code block if short or as an attached .md file if long, and never as inline prose; this rule applies to all ELYSIUM and Y‑OS reports.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T08:11:13-07:00",
+    "updated_at": "2026-06-28T10:19:38.599836-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 15,
+      "year": 2026,
+      "month": 6,
+      "minute": 11,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "41a86ed9-7273-4815-90af-5778ac194ea4",
+    "memory": "User completed ELYSIUM Phase III‑1A‑S4‑008 on 2026‑06‑28, drafting Opening module OPN‑008 titled “Civilization as Metabolic Entity” (906 words), which passed ChatGPT review with zero revisions; commit c896496 on branch phase‑iii/1A‑S4‑008‑opn008‑claude‑prose, tag phase‑iii‑1A‑S4‑008‑opn008‑draft0, bringing the Opening series to 8 of 13 modules at DRAFT_0 and introducing the Five Classes of Civilizational Flows as a diagnostic viability criterion.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "milestones",
+      "technology"
+    ],
+    "created_at": "2026-06-28T07:53:17-07:00",
+    "updated_at": "2026-06-28T09:57:04.700700-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 14,
+      "year": 2026,
+      "month": 6,
+      "minute": 53,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "82a31ee5-0620-4b90-b522-e62e9454cd5d",
+    "memory": "User configured email forwarding on Spaceship on 28 June 2026 for both domains elysium-institute.org and elysiuminstitute.org, directing main@elysium-institute.org and main@elysiuminstitute.org to yannick.jolliet@gmail.com, and noted that both domains are active with the next step being DNS redirection to the website when developed",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "infrastructure",
+      "status": "done",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "technology",
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T07:43:02-07:00",
+    "updated_at": "2026-06-28T09:44:32.749807-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 14,
+      "year": 2026,
+      "month": 6,
+      "minute": 43,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "5e33d1cf-54e6-4790-a346-175eb930fc87",
+    "memory": "User's canonical yOS rule states that all domains are purchased through Spaceship.com, which offers .org registrations at $6.65 per year, renewals at $11.39 per year, and includes WHOIS privacy.",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "rule",
+      "project": "yOS",
+      "rule_id": "DOMAIN-REGISTRAR",
+      "category": "infrastructure"
+    },
+    "categories": [
+      "technology",
+      "user_preferences"
+    ],
+    "created_at": "2026-06-28T07:39:48-07:00",
+    "updated_at": "2026-06-28T09:41:01.772876-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 14,
+      "year": 2026,
+      "month": 6,
+      "minute": 39,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "67e5deef-31d8-445b-9774-0930fe1bc1b1",
+    "memory": "User purchased the domains elysium-institute.org (primary) and elysiuminstitute.org (typo protection) on 28 June 2026 via Spaceship.com for $6.65 each (27% off) with an annual renewal fee of $11.39; set up email forwarding from main@elysium-institute.org to yannick.jolliet@gmail.com and will configure site redirection once the website is developed",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "domain",
+      "project": "ELYSIUM",
+      "category": "infrastructure"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T07:39:45-07:00",
+    "updated_at": "2026-06-28T09:40:48.714773-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 14,
+      "year": 2026,
+      "month": 6,
+      "minute": 39,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "a5772245-b747-4374-b209-24a2bd8fdcc9",
+    "memory": "User completed ELYSIUM Phase III‑1A‑S4‑007 on 2026‑06‑28, finalizing Opening module OPN‑007 “The Machine Metaphor and Its Limits” (MOV‑III) as DRAFT_0 with 902 words, passing ChatGPT review, commit hash 31b4dfd; this brings 7 of 13 Opening modules to DRAFT_0 status, awaiting Founder approval before OPN‑008.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-007",
+      "module": "OPN-007",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T06:20:33-07:00",
+    "updated_at": "2026-06-28T08:07:14.183799-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 13,
+      "year": 2026,
+      "month": 6,
+      "minute": 20,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "de6fb821-18a4-417b-9bec-3c620b48ff0f",
+    "memory": "User recorded commit f6ca82a on branch phase‑iii/1A‑S4‑MOV‑II‑controlled‑auto, patching 12 files with validation reporting 0 errors.",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "patch_fact",
+      "phase": "III-1A-S4-MOV-II-patch",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T05:54:08-07:00",
+    "updated_at": "2026-06-28T07:38:59.200219-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 12,
+      "year": 2026,
+      "month": 6,
+      "minute": 54,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "be7fff44-3dbd-4990-b6fa-2908f77ff9be",
+    "memory": "User applied a micro‑patch to the ELYSIUM Opening MOV‑II, changing OPN‑006’s title from “The Hinge: From Critique to Metabolism” to “The Hinge: From Critique to Model”, and softened its ending, reserving the metabolic argument for OPN‑008.",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "patch_fact",
+      "phase": "III-1A-S4-MOV-II-patch",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T05:54:08-07:00",
+    "updated_at": "2026-06-28T07:38:59.200219-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 12,
+      "year": 2026,
+      "month": 6,
+      "minute": 54,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "49277438-a950-49f7-adad-5516e2f1d0e2",
+    "memory": "User corrected the Opening Part module count, confirming that the Opening consists of modules OPN‑001 through OPN‑013 (13 modules) rather than the previously stated 18 modules.",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "patch_fact",
+      "phase": "III-1A-S4-MOV-II-patch",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T05:54:08-07:00",
+    "updated_at": "2026-06-28T07:38:59.200219-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 12,
+      "year": 2026,
+      "month": 6,
+      "minute": 54,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "a9c0ba2e-e1d8-45f9-ae6d-048979654b1e",
+    "memory": "User indicates that MOV-III is ready to start once Founder approval is received",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-MOV-II",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T05:17:12-07:00",
+    "updated_at": "2026-06-28T07:05:09.136741-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 12,
+      "year": 2026,
+      "month": 6,
+      "minute": 17,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "857642fb-b8fc-4788-b5e0-58612a2a11a9",
+    "memory": "User reports that the Full Opening, comprising six modules totaling 4,609 words, is complete as DRAFT_0 and Founder approval is pending for all six modules",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-MOV-II",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T05:17:12-07:00",
+    "updated_at": "2026-06-28T07:05:09.136741-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 12,
+      "year": 2026,
+      "month": 6,
+      "minute": 17,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "2dcd2669-5b90-488d-881d-84bfb6f558e5",
+    "memory": "User completed Phase III-1A-S4-MOV-II via FSD Controlled Mode Level 2, finalizing OPN-004 “The Illusion of Silos” (776 words), OPN-005 “The Displacement Problem” (780 words), and OPN-006 “The Hinge: From Critique to Metabolism” (820 words), all as DRAFT_0, each passing ChatGPT review with zero revisions, on branch phase-iii/1A-S4-MOV-II-controlled-auto and tag phase-iii-1A-S4-MOV-II-draft0-complete",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-MOV-II",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T05:17:12-07:00",
+    "updated_at": "2026-06-28T07:05:09.136741-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 12,
+      "year": 2026,
+      "month": 6,
+      "minute": 17,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "da2983bb-0e4a-43b2-b11e-70b0e53b3c09",
+    "memory": "User provided a classic GitHub PAT for account yj000018 (Yannick) with token [REDACTED-PAT], full repository scope, no expiry, stored in /home/ubuntu/.git-credentials and /home/ubuntu/.user_env as GITHUB_PAT, and instructed it be used for all git push/pull operations in every Manus session without asking to regenerate.",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "credential",
+      "service": "github",
+      "permanent": true
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T04:58:41-07:00",
+    "updated_at": "2026-06-28T06:47:25.366568-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 58,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "f66fcd99-d0fb-4f97-a7c9-8005b025d2f4",
+    "memory": "User installed the yOS/FCS FSD Controlled Mode protocol version 0.1 on 2026-06-28, recorded commit hash 6782782 and tag yos-fcs-fsd-controlled-mode-protocol-v0.1.",
+    "user_id": "yannick",
+    "metadata": {
+      "project": "ELYSIUM",
+      "version": "v0.1",
+      "event_type": "fsd_protocol_installed"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T04:47:03-07:00",
+    "updated_at": "2026-06-28T06:39:11.763746-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 47,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "c9e6f325-b1e9-4fc9-b08b-1b87bd9c0d10",
+    "memory": "User specified mandatory stop gates for the FSD Controlled Mode, requiring critical modules OPN‑008 and OPN‑012 to halt progress, prohibiting silent fallback and disallowing any DRAFT_0 without a passing ChatGPT API review.",
+    "user_id": "yannick",
+    "metadata": {
+      "project": "ELYSIUM",
+      "version": "v0.1",
+      "event_type": "fsd_protocol_installed"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T04:47:03-07:00",
+    "updated_at": "2026-06-28T06:39:11.763746-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 47,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "748052be-4679-4b60-82bf-b7d09a7acf3d",
+    "memory": "User listed the protocol files for FSD Controlled Mode: FCS_FSD_CONTROLLED_MODE_PROTOCOL.md, fsd_controlled_mode_registry.yaml, FSD_CONTROLLED_RUN_TEMPLATE.md, and 07_YOS_PATTERN_LIBRARY/FSD_CONTROLLED_MODE_PROTOCOL.md.",
+    "user_id": "yannick",
+    "metadata": {
+      "project": "ELYSIUM",
+      "version": "v0.1",
+      "event_type": "fsd_protocol_installed"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T04:47:03-07:00",
+    "updated_at": "2026-06-28T06:39:11.763746-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 47,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "5cee6622-8093-4e2a-bbbb-50c2c7d5a3a6",
+    "memory": "User noted that pushing the FSD Controlled Mode protocol to GitHub is pending because a GitHub PAT was not available in the current session.",
+    "user_id": "yannick",
+    "metadata": {
+      "project": "ELYSIUM",
+      "version": "v0.1",
+      "event_type": "fsd_protocol_installed"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T04:47:03-07:00",
+    "updated_at": "2026-06-28T06:39:11.763746-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 47,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "1926dc32-9cf4-4e58-8665-fe820c9859c6",
+    "memory": "User recommended that MOV‑II modules OPN‑004 through OPN‑006 be the first Level 2 controlled scope after the operational completion of S4‑003.",
+    "user_id": "yannick",
+    "metadata": {
+      "project": "ELYSIUM",
+      "version": "v0.1",
+      "event_type": "fsd_protocol_installed"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T04:47:03-07:00",
+    "updated_at": "2026-06-28T06:39:11.763746-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 47,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "10f9d0a8-1b54-4a81-8c8e-63d0356be079",
+    "memory": "User defined autonomy levels 0‑4 for the FSD Controlled Mode, with Level 4 NOT AUTHORIZED; Manus may act autonomously only within an explicitly approved scope while Founder stays co‑pilot, ChatGPT remains Chief Architect, Claude remains prose engine, and Manus remains orchestrator.",
+    "user_id": "yannick",
+    "metadata": {
+      "project": "ELYSIUM",
+      "version": "v0.1",
+      "event_type": "fsd_protocol_installed"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T04:47:03-07:00",
+    "updated_at": "2026-06-28T06:39:11.763746-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 47,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "faa7806f-beaf-4d00-8499-d6e633e1637e",
+    "memory": "User drafted OPN-003 titled “Civilization as Patient” (814 words) via Claude opus-4-5 as part of ELYSIUM Phase III‑1A‑S4‑003, reviewed it with ChatGPT gpt-4o-2024-08-06, and committed the draft with hash 2588759 and tag phase-iii-1A-S4-003-opn003-claude-prose on 2026-06-28; OPN-004 was not started in this run.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-003",
+      "module": "OPN-003",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed",
+      "mov_i_status": "DRAFT_0_COMPLETE_PENDING_FOUNDER"
+    },
+    "categories": [
+      "professional_details",
+      "technology",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T04:20:43-07:00",
+    "updated_at": "2026-06-28T06:17:30.914111-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 20,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "e7d1016f-e698-4297-bfee-59171c391efb",
+    "memory": "MOV-I now has DRAFT_0 coverage for OPN-001, OPN-002, and OPN-003, with all three drafts pending Founder approval.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-003",
+      "module": "OPN-003",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed",
+      "mov_i_status": "DRAFT_0_COMPLETE_PENDING_FOUNDER"
+    },
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T04:20:43-07:00",
+    "updated_at": "2026-06-28T06:17:30.914111-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 20,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "7793fd5e-d7a4-4f32-9f66-941e1451e977",
+    "memory": "The review loop for OPN-003 involved one revision, reducing the word count from 926 to 814, after which the draft passed the review.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-003",
+      "module": "OPN-003",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed",
+      "mov_i_status": "DRAFT_0_COMPLETE_PENDING_FOUNDER"
+    },
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T04:20:43-07:00",
+    "updated_at": "2026-06-28T06:17:30.914111-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 20,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "4860064b-cb69-4c0e-b049-ff1be44b9dcf",
+    "memory": "S4-004 may commence once Founder authorization is received.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-003",
+      "module": "OPN-003",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed",
+      "mov_i_status": "DRAFT_0_COMPLETE_PENDING_FOUNDER"
+    },
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T04:20:43-07:00",
+    "updated_at": "2026-06-28T06:17:30.914111-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 20,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "02005e7d-583a-47a8-bdfe-e978b4c15107",
+    "memory": "OPN-003 closes MOV-I by converting the crisis convergence into a civilizational-patient diagnostic frame, opens from OPN-002’s final question, introduces a patient metaphor, highlights the diagnostic insufficiency of fragmented maps, and prepares the transition to MOV-II.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-003",
+      "module": "OPN-003",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed",
+      "mov_i_status": "DRAFT_0_COMPLETE_PENDING_FOUNDER"
+    },
+    "categories": [
+      "misc"
+    ],
+    "created_at": "2026-06-28T04:20:43-07:00",
+    "updated_at": "2026-06-28T06:17:30.914111-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 11,
+      "year": 2026,
+      "month": 6,
+      "minute": 20,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "9b03dd20-469e-45a7-a6c2-e7d0a776b94b",
+    "memory": "User had OPN-002 reviewed by ChatGPT gpt-4o-2024-08-06, which passed with no revisions, and the draft is pending Founder review while S4 proceeds one module at a time",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-002",
+      "module": "OPN-002",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:58:28-07:00",
+    "updated_at": "2026-06-28T06:01:27.511378-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 58,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "70b36b8e-a724-4458-ae3b-cce545678f8c",
+    "memory": "User drafted OPN-002 \"The Convergence of Crises\" (749 words) via Claude opus-4-5 as part of ELYSIUM Phase III-1A-S4-002, committing hash 3cddf44 on branch phase-iii/1A-S4-002-opn002-claude-prose with tag phase-iii-1A-S4-002-opn002-claude-prose; OPN-003 was not started in this run",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-002",
+      "module": "OPN-002",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:58:28-07:00",
+    "updated_at": "2026-06-28T06:01:27.511378-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 58,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "0272d49c-113a-4347-a8c8-7679e94e5a13",
+    "memory": "User notes that both OPN-001 and OPN-002 are in DRAFT_0 status awaiting Founder approval",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-002",
+      "module": "OPN-002",
+      "project": "ELYSIUM",
+      "event_type": "prose_draft_completed"
+    },
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T03:58:28-07:00",
+    "updated_at": "2026-06-28T06:01:27.511378-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 58,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "694ef6e1-1d36-4b21-9976-cfb29bafc43a",
+    "memory": "For OPN-001 \"The Felt Sense of Civilizational Malaise\", Claude opus-4-5 generated a 670-word DRAFT_0, which ChatGPT gpt-4o-2024-08-06 reviewed, passing all five beats and deeming the draft ready with no revisions needed.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-001",
+      "module": "OPN-001",
+      "status": "DRAFT_0",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:34:26-07:00",
+    "updated_at": "2026-06-28T05:45:21.580977-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 34,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "50c036de-c4e3-4f7e-aaaa-ce273026c8bb",
+    "memory": "The OPN-001 draft was committed with hash c284b4c, tagged phase-iii-1A-S4-001-OPN001-draft0, on branch phase-iii/1A-S4-001-opn001-claude-prose, and validation reported 0 errors and 0 warnings.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-001",
+      "module": "OPN-001",
+      "status": "DRAFT_0",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:34:26-07:00",
+    "updated_at": "2026-06-28T05:45:21.580977-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 34,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "46ae4b52-0ed8-4c7c-91fb-ed3f33ef12b1",
+    "memory": "User completed ELYSIUM Phase III-1A-S4-001 on June 28, 2026, marking the start of the Opening Part draft OPN-001.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-001",
+      "module": "OPN-001",
+      "status": "DRAFT_0",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "milestones",
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T03:34:26-07:00",
+    "updated_at": "2026-06-28T05:45:21.580977-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 34,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "43ef44b5-a2a9-43eb-86ce-9bb9d7170e66",
+    "memory": "Current status after the commit shows DRAFT count 6 and SCAFFOLDED count 99, and the draft awaits Founder approval before proceeding to OPN-002.",
+    "user_id": "yannick",
+    "metadata": {
+      "phase": "III-1A-S4-001",
+      "module": "OPN-001",
+      "status": "DRAFT_0",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:34:26-07:00",
+    "updated_at": "2026-06-28T05:45:21.580977-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 34,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "f121065c-ffc7-4e29-8dae-007cf25500f2",
+    "memory": "User updated registries to reflect the new assignments and titles for the Opening modules.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:21:36-07:00",
+    "updated_at": "2026-06-28T05:37:05.709135-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "d55378e9-7650-4ec8-b90c-42bb8f6ae997",
+    "memory": "User completed ELYSIUM Phase III-1A-S3-R2 on 2026-06-28, fixing review reader consistency before S4; validation reported 0 errors and 0 warnings; commit f66e7c2 tagged phase-iii-1A-S3-R2-review-reader-consistency-fix; no prose was written and Claude was not called; S4 remains blocked pending Founder approval.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T03:21:36-07:00",
+    "updated_at": "2026-06-28T05:37:05.709135-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "c8ae620e-c25e-42a1-adf0-0e975fe47cdb",
+    "memory": "User updated the seed text of OPN-013 to remove the Part I label and now invite the reader into the main journey of the book, the path through the Seven Foundations.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "misc"
+    ],
+    "created_at": "2026-06-28T03:21:36-07:00",
+    "updated_at": "2026-06-28T05:37:05.709135-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "b38d0d3d-16ac-4ab8-8e43-96a513f6843e",
+    "memory": "User patched the .gitignore file to protect API keys for safety.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:21:36-07:00",
+    "updated_at": "2026-06-28T05:37:05.709135-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "a82348cd-6c18-4b3e-abd9-95b60049bd36",
+    "memory": "User reassigned OPN-010 and OPN-011 to Movement IV (MOV‑IV) instead of Movement III (MOV‑III) in the Opening X‑Ray structure.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T03:21:36-07:00",
+    "updated_at": "2026-06-28T05:37:05.709135-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "69a217b1-c2c3-471f-a760-ebe2f3db5b24",
+    "memory": "User locked canonical titles: OPN-010 titled 'Why We Need a Civilizational Ontology' and OPN-011 titled 'The Three Scales'.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "misc"
+    ],
+    "created_at": "2026-06-28T03:21:36-07:00",
+    "updated_at": "2026-06-28T05:37:05.709135-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 21,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "8d520211-81b7-4c2c-b214-586e40ff16e6",
+    "memory": "User completed the ELYSIUM Phase III-1A-S3-R review: ChatGPT API (gpt-4o-2024-08-06) examined all 13 Opening Writing Briefs, approving and marking them READY (13/13) using 9,475 tokens; each brief now contains Chief Architect review sections with revised metadata, narrative architecture, and Claude S4 prompt seeds; the global review found no merges, splits, or moves; OPN-008 and OPN-012 were confirmed as CRITICAL; the FULL_REVEAL_LIGHT setting was locked.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:01:34-07:00",
+    "updated_at": "2026-06-28T05:24:06.248153-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 1,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "381f4275-c31a-4856-9a0f-3de41b5efe92",
+    "memory": "User recorded the changes in commit 299606a with tag phase-iii-1A-S3-R-opening-writing-briefs-reviewed, activated the OpenAI API key in the sandbox, and noted that the S4 gate remains pending Founder approval.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T03:01:34-07:00",
+    "updated_at": "2026-06-28T05:24:06.248153-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 10,
+      "year": 2026,
+      "month": 6,
+      "minute": 1,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "5c121629-4e39-430c-ac6a-3b1479513b41",
+    "memory": "User installed the yOS/FCS Multi-LLM Orchestration Protocol (document 21) on branch yos/fcs-multi-llm-orchestration-protocol, with commit hash 30bd90a and tag yos-fcs-multi-llm-orchestration-protocol-v0.1.",
+    "user_id": "yannick",
+    "metadata": {
+      "doc": "21",
+      "type": "protocol_install",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:43:46-07:00",
+    "updated_at": "2026-06-28T05:12:54.430672-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 43,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "21d7fd14-768f-45fc-9325-0f39b7787a03",
+    "memory": "User defined the Multi-LLM Orchestration Protocol so that Manus serves as the orchestration layer (not authoring), Founder provides intent once, Manus routes tasks between LLMs via API, ChatGPT API handles architecture, ontology alignment, coherence review, and writing briefs, Claude API handles prose writing, literary flow, voice, and revision, and Founder is consulted only at decision, approval, risk, or ambiguity gates; silent fallback is forbidden and copy‑paste minimization is a canonical rule.",
+    "user_id": "yannick",
+    "metadata": {
+      "doc": "21",
+      "type": "protocol_install",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:43:46-07:00",
+    "updated_at": "2026-06-28T05:12:54.430672-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 43,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "731ce77e-5a32-4951-8733-f130da1a1aa6",
+    "memory": "User completed ELYSIUM Phase III‑1A‑S3: generated 13 Opening Writing Briefs (OPN‑001 to OPN‑013), one per module based on X‑Ray v0.2 reviewed cards, targeting 9,600 words (range 8,200‑11,000), with no prose written and Claude not called; S4 has not started; the work is on branch phase‑iii/1A‑S3‑opening‑writing‑briefs (commit 5ba2a62, tag phase‑iii‑1A‑S3‑opening‑writing‑briefs) and validated with 0 errors and 0 warnings, status showing SCAFFOLDED 100, PLANNED 14, DRAFT 4, and is awaiting Founder and Chief Architect review before proceeding to S4.",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "completion_fact",
+      "phase": "III-1A-S3",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "technology",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T02:20:24-07:00",
+    "updated_at": "2026-06-28T04:58:45.548932-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 20,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "e1b530ef-6573-4192-a866-f26cc1f57790",
+    "memory": "Validation of the review patch reported 0 errors and 0 warnings.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "db79387c-0571-4eaf-abab-616f0cda92ab",
+    "memory": "The patch commit 0be6681 was recorded and the tag phase‑iii‑1A‑S2X‑R2‑opening‑xray‑review‑patch was created.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "d477c088-8978-4d6c-9046-2b9ef231d2d6",
+    "memory": "A Chief Architect Opening X‑Ray Review Patch was applied to all 13 Opening X‑Ray modules.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "a32dc49e-2090-48c5-9e2a-2996ed35790d",
+    "memory": "OPN‑006 was revised to include an explicit hinge transition from Movement II to Movement III.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "8e980009-e07f-43cc-b309-855322e69030",
+    "memory": "The Opening X‑Ray architecture was accepted as version 0.2, comprising a 4‑movement, 13‑module structure.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "86c53093-97af-4180-8172-8eb6f85c4985",
+    "memory": "English and French Opening X‑Ray Reader files were regenerated, now containing a Chief Architect decisions table.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "809bf007-1cd5-43ec-81c1-968ea3154674",
+    "memory": "OPN‑008 and OPN‑012 were designated as CRITICAL modules within the Opening X‑Ray layer.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "70cbca83-a165-447e-8548-01312ef61e56",
+    "memory": "Phase III-1A-S2X-R2 was completed on 2026-06-28, marking the second review iteration of the Opening X‑Ray layer; the changes were committed with hash 0be6681 and tagged phase‑iii‑1A‑S2X‑R2‑opening‑xray‑review‑patch.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "6f5e907f-66c2-4cb9-822f-7a124bcc5ffb",
+    "memory": "OPN‑009 was updated to describe five classes of civilizational flows, correcting the previous reference to five metabolic dimensions.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "220aa5df-b0c5-4a44-a815-5f9a009db225",
+    "memory": "The next step is Phase III‑1A‑S3 Writing Brief Generation, to be executed by ChatGPT together with the Founder, with no prose authored by Manus.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:48:57.426653-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "02e0919b-5790-4551-a831-140b8a0ad755",
+    "memory": "The module registry was upgraded to version 0.2 to incorporate the new OPN decisions.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T02:00:44-07:00",
+    "updated_at": "2026-06-28T04:47:35.876383-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 9,
+      "year": 2026,
+      "month": 6,
+      "minute": 0,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "b4bc447e-4b3b-4512-a585-3b6117fec5d3",
+    "memory": "User completed ELYSIUM Phase III‑1A‑S2X‑R, generating enriched Opening X‑Ray Reader files in English (1207 lines) and French (1192 lines), with validation showing 0 errors and 0 warnings; the changes were committed as f8425d9 and tagged phase‑iii‑1A‑S2X‑R‑opening‑xray‑reader‑enrichment",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "completion_fact",
+      "phase": "III-1A-S2X-R",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T01:23:55-07:00",
+    "updated_at": "2026-06-28T04:25:42.835647-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 8,
+      "year": 2026,
+      "month": 6,
+      "minute": 23,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "1c3262c2-6afe-49c4-b71c-7dcb56232400",
+    "memory": "User resolved the OPN‑012 structural decision as FULL_REVEAL_LIGHT, opting to name all seven Foundations, display the ascent logic, omit mini‑chapters, and preserve the Part II discovery",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "completion_fact",
+      "phase": "III-1A-S2X-R",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T01:23:55-07:00",
+    "updated_at": "2026-06-28T04:25:42.835647-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 8,
+      "year": 2026,
+      "month": 6,
+      "minute": 23,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "12444377-7b04-4ddd-b70a-f29a8f49091c",
+    "memory": "User plans a review of the enriched X‑Ray Readers by the Founder and the ChatGPT Chief Architect before proceeding to Phase III‑1A‑S3 Writing Brief Generation",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "completion_fact",
+      "phase": "III-1A-S2X-R",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-28T01:23:55-07:00",
+    "updated_at": "2026-06-28T04:25:42.835647-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 8,
+      "year": 2026,
+      "month": 6,
+      "minute": 23,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "01d423f5-ce73-4074-9440-88608cddf829",
+    "memory": "User created the generate_xray_reader.py script to produce the enriched X‑Ray Reader files",
+    "user_id": "yannick",
+    "metadata": {
+      "type": "completion_fact",
+      "phase": "III-1A-S2X-R",
+      "project": "ELYSIUM"
+    },
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T01:23:55-07:00",
+    "updated_at": "2026-06-28T04:25:42.835647-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 8,
+      "year": 2026,
+      "month": 6,
+      "minute": 23,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "2152baac-b5c4-4b53-89e4-f6de4fa98b27",
+    "memory": "User applied a micro-fix to the ELYSIUM/FCS Opening X‑Ray modules: added missing reader_promise metadata to the opening xray_modules index, restored validation to 0 errors and 0 warnings, and fixed a missing target field in PHASE_III_1A_S2X_XRAY_LAYER_REVIEW_REQUEST.md; the change is on branch phase-iii/fcs-microfix-xray-index-reader-promise, tagged fcs-microfix-xray-index-reader-promise, with commit hash a8781e2.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology",
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T01:04:43-07:00",
+    "updated_at": "2026-06-28T04:14:36.820534-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 8,
+      "year": 2026,
+      "month": 6,
+      "minute": 4,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "fed22adf-1a6f-49f6-a485-bba561a1a258",
+    "memory": "User describes the canonical publication pattern as Core Book plus an Atlas/Great Synthesis and a Practical Series/derivative formats.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T00:45:03-07:00",
+    "updated_at": "2026-06-28T04:03:10.156897-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 45,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "aae06463-c3dd-4532-8b77-b6190a7d9ae2",
+    "memory": "User notes the related Git branch is phase-iii/fcs-publication-family-architecture, the tag fcs-publication-family-architecture-v0.1, and the commit hash f1342e1.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:45:03-07:00",
+    "updated_at": "2026-06-28T04:03:10.156897-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 45,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "47b865b6-527f-467c-aead-d9ca4b580090",
+    "memory": "User states that FCS now treats publications as families rather than isolated books, establishing a publication architecture system where one source ontology can generate multiple publication forms.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:45:03-07:00",
+    "updated_at": "2026-06-28T04:03:10.156897-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 45,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "35782e69-49c4-4316-80e1-a65acace256d",
+    "memory": "For ELYSIUM, the core book is titled 'A Civilizational Ontology', accompanied by the atlas 'The Great Ontological Synthesis' containing over 130 world models, and a FIX IT practical series using the template See It / Name It / Map It / Fix It / Transform It with 16 possible volumes.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "entertainment"
+    ],
+    "created_at": "2026-06-28T00:45:03-07:00",
+    "updated_at": "2026-06-28T04:03:10.156897-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 45,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "2d6bda9c-cac2-4388-a5c2-5fdb35c82412",
+    "memory": "The Archetypal project follows the same pattern with a core book 'Archetypal Transformation' and a companion atlas 'The Great Archetypes Synthesis'.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T00:45:03-07:00",
+    "updated_at": "2026-06-28T04:03:10.156897-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 45,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "d289af0f-d3a0-43f5-9947-c6eb571a578d",
+    "memory": "User recorded the commit hash for this work as 22ea129.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "c2ca905e-537c-40bc-a47f-7c13a9a29af9",
+    "memory": "User generated two X‑Ray Reader export files, OPENING_XRAY_READER_EN.md and OPENING_XRAY_READER_FR.md.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "9ecb0188-b1dc-4bf8-aac0-1f1e3f52537e",
+    "memory": "User completed the ELYSIUM Phase III‑1A‑S2X: Opening X‑Ray Structural Layer, marking the phase as COMPLETE.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology",
+      "milestones"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "9acf9c64-47a1-495c-8c0e-78dd53e9ba6b",
+    "memory": "User noted a pending critical decision on whether OPN‑012 will be fully revealed or foreshadow the seven Foundations.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "misc"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "6948c1c7-91a6-478f-91a5-091c40a465a8",
+    "memory": "User recorded the Git branch for this work as phase‑iii/1A‑S2X‑opening‑xray‑structural‑layer.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology",
+      "professional_details"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "5da88a0e-9d8e-4edc-8d46-cd978a751cae",
+    "memory": "User defined four Movements for the Opening X‑Ray layer: MOV‑I (Malaise), MOV‑II (Silos), MOV‑III (Metabolism), and MOV‑IV (ELYSIUM Map).",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "35b68d5f-e844-4a01-a942-e8943842e489",
+    "memory": "User created thirteen X‑Ray sidecar cards labeled OPN‑001 through OPN‑013, each containing bilingual English‑French content.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "hobbies"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "1d8c2f88-dd87-4800-9b50-3d4a04e44533",
+    "memory": "User recorded the Git tag for this work as phase‑iii‑1A‑S2X‑opening‑xray‑structural‑layer.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "09aaf4ff-93bf-4ca4-bb10-fc6df74a4d12",
+    "memory": "User enforced a routing rule that Manus serves infrastructure only for this phase.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "00e9932a-96b0-436c-b305-bdd169e8d58d",
+    "memory": "All modules in the Opening X‑Ray layer are in XRAY_DRAFT status with prose not yet written.",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-28T00:28:47-07:00",
+    "updated_at": "2026-06-28T03:50:41.111070-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 7,
+      "year": 2026,
+      "month": 6,
+      "minute": 28,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "a95b387b-04cf-4a81-8ea4-0b1dce7016c7",
+    "memory": "User recorded that ELYSIUM Phase III-1A-S1 commit 4c0e488 was made on branch phase-iii/1A-S1-opening-macro-structure and tagged phase-iii-1A-S1-opening-macro-structure",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "professional_details",
+      "technology"
+    ],
+    "created_at": "2026-06-27T19:59:48-07:00",
+    "updated_at": "2026-06-28T00:01:09.719893-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 2,
+      "year": 2026,
+      "month": 6,
+      "minute": 59,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  },
+  {
+    "id": "9a2a26b6-0ee0-48a0-9450-235246853664",
+    "memory": "User reported that the validate.py script ran with 0 errors and 0 warnings",
+    "user_id": "yannick",
+    "metadata": {},
+    "categories": [
+      "technology"
+    ],
+    "created_at": "2026-06-27T19:59:48-07:00",
+    "updated_at": "2026-06-28T00:01:09.719893-07:00",
+    "expiration_date": null,
+    "structured_attributes": {
+      "day": 28,
+      "hour": 2,
+      "year": 2026,
+      "month": 6,
+      "minute": 59,
+      "quarter": 2,
+      "is_weekend": true,
+      "day_of_week": "sunday",
+      "day_of_year": 179,
+      "week_of_year": 26
+    }
+  }
+]

@@ -1,0 +1,8 @@
+# Raw export files (contain private conversation data — never commit)
+*.zip
+*.json
+*.jsonl
+conversations.json
+chatgpt_export*
+claude_export*
+gemini_export*

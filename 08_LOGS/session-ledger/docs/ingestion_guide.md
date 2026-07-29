@@ -36,40 +36,55 @@ python3 delta_sync.py --full    # Full rebuild
 
 ---
 
-## 2. ChatGPT (Manual Export — Semi-Automatic)
+## 2. ChatGPT (Cookie-Editor + requests — Semi-Automatic)
 
-**Method**: Manual data export from OpenAI, then automated ingestion script.
-**Frequency**: Monthly or on demand.
+**Method**: Export session cookies from browser via Cookie-Editor extension, then Python `requests` script calls ChatGPT's internal API. **No ZIP export, no Playwright, works with Team/Business accounts.**
+**Frequency**: Monthly or on demand (re-export cookies when they expire ~30 days).
 
-### Steps
-1. Go to https://chatgpt.com → Settings → Data controls → **Export data**
-2. Wait for email from OpenAI (usually 5-30 minutes)
-3. Download the ZIP file
-4. Run ingestion:
+### Why not the ZIP export?
+ChatGPT Team and Business accounts do not have the "Export data" option available in Settings. The Cookie-Editor approach is the only reliable method for these account types.
+
+### Why not Playwright?
+Playwright requires a full Chromium headless browser (~300MB RAM, slow startup). A Python `requests` script using the same cookies achieves identical results at 10x lower resource cost.
+
+### Setup (one-time, ~5 minutes)
+1. Install [Cookie-Editor](https://cookie-editor.com) in Chrome/Brave:
+   - Chrome: https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm
+2. Go to `https://chatgpt.com` (must be logged in)
+3. Click the Cookie-Editor icon in the toolbar
+4. Click **Export** → **Export as JSON**
+5. Save the JSON to the Cloud Computer: `~/yos/ledger/chatgpt_cookies.json`
+   (This file is gitignored — never commit cookies to Git)
+
+### Usage
 ```bash
-python3 scripts/ingest_chatgpt.py /path/to/chatgpt_export.zip
-# OR with extracted JSON:
-python3 scripts/ingest_chatgpt.py /path/to/conversations.json
+# Delta sync (recommended — only fetches new conversations)
+python3 scripts/ingest_chatgpt_cookies.py
+
+# Full rebuild (replaces all ChatGPT entries)
+python3 scripts/ingest_chatgpt_cookies.py --full
+
+# Preview without writing
+python3 scripts/ingest_chatgpt_cookies.py --dry-run
+
+# Custom cookie file path
+python3 scripts/ingest_chatgpt_cookies.py --cookies /path/to/cookies.json
 ```
 
-### Data Format
-The `conversations.json` file contains an array of conversation objects:
-```json
-[
-  {
-    "id": "conv_abc123",
-    "title": "My Conversation",
-    "create_time": 1720000000.0,
-    "update_time": 1720001000.0,
-    "mapping": { ... }  // Full message tree (not used in Ledger)
-  }
-]
-```
+### Cookie Renewal
+Cookies expire after ~30 days of inactivity. Signs of expiry: HTTP 401 error.
+Renewal: repeat the Cookie-Editor export steps above and overwrite `chatgpt_cookies.json`.
 
-### Notes
-- No API access for manually created conversations (only API-created ones have IDs)
-- The `mapping` field contains the full verbatim — used in Phase 2 (LMP processing)
-- Drop the ZIP in `ingestion/` folder (gitignored) before running the script
+### API Details (internal — may change)
+- Endpoint: `GET https://chatgpt.com/backend-api/conversations?offset=0&limit=100&order=updated`
+- Pagination: offset-based (same pattern as Manus)
+- Key cookie: `__Secure-next-auth.session-token` (the main auth token)
+- Rate limit: 1 req/0.5s is safe
+
+### Reusable Pattern
+This "Cookie-Editor + requests" pattern works for **any web app without a public API**:
+Perplexity, Claude web, Gemini, Notion (as fallback), etc.
+Always check for an `Authorization` header or session cookie in DevTools Network first.
 
 ---
 

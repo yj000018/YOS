@@ -4,10 +4,9 @@ on:
   pull_request:
     paths:
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk.py
-      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v2.py
-      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/audit_ledger_history.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v3.py
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/source/**
-      - 08_LOGS/session-ledger/data/master_ledger.csv
+      - data/master_ledger.csv
       - .github/workflows/chatgpt-239-crosswalk.yml
   workflow_dispatch:
 
@@ -28,43 +27,35 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.head_ref || github.ref_name }}
 
-      - name: Fetch all remote refs
-        run: git fetch --prune origin '+refs/heads/*:refs/remotes/origin/*'
+      - name: Verify distinct ledger paths
+        run: |
+          test -f data/master_ledger.csv
+          test -f 08_LOGS/session-ledger/data/master_ledger.csv
+          test "$(git hash-object data/master_ledger.csv)" != "$(git hash-object 08_LOGS/session-ledger/data/master_ledger.csv)"
 
-      - name: Audit every Git ledger version
-        run: python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/audit_ledger_history.py
-
-      - name: Build crosswalk
+      - name: Build crosswalk from committed ChatGPT ledger
         id: build
         shell: bash
         run: |
           set +e
-          python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v2.py
+          python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v3.py
           status=$?
           echo "status=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
-      - name: Commit generated evidence and cleanup
+      - name: Commit generated evidence
         run: |
           root=08_LOGS/session-ledger/reconciliation/chatgpt-239
           generated="$root/generated"
-          git rm -f --ignore-unmatch \
-            "$root/source/curated239.part01" \
-            "$root/source/compactjson.part00" \
-            "$root/source/compactjson.part01" \
-            "$root/source/compactjson.part02" \
-            "$root/source/compactjson.part04" \
-            "$root/source/minjson.part00" \
-            "$root/source/idonly.part01"
           if [ -d "$generated" ]; then
             git add -f "$generated"
           fi
           if git diff --cached --quiet; then
-            echo "No generated or cleanup changes"
+            echo "No generated changes"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "data(fusion): audit ChatGPT ledger and clean source transport"
+            git commit -m "data(fusion): crosswalk ChatGPT 239 against committed account ledger"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
 

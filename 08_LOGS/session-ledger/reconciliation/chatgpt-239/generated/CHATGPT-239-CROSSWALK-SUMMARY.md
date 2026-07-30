@@ -2,7 +2,7 @@
 document_id: CHATGPT-239-YOS-LEDGER-CROSSWALK-SUMMARY-v1.0
 document_type: evidence_summary
 status: active_evidence_not_canon
-generated_at: 2026-07-30T21:41:44+00:00
+generated_at: 2026-07-30T21:48:33+00:00
 canon_promotions: 0
 ---
 

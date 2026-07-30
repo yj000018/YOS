@@ -34,11 +34,10 @@ This register documents **canonical archiving decisions** for Y World projects, 
 
 ### 3. FFF (Future in Focus / FFF / Future Next cluster)
 - **Archive Type**: Deprecated Project
-- **Archive Status**: Extract Before Archive ⚠️
-- **Reason**: Candidate absorbed into Future News. Assets to extract before full archive.
-- **Review Need**: **Needs Extraction**
-- **Decision**: NOT FINAL. Merge into Future News confirmed in principle (Y-World Sorting Review v1), but **asset extraction not yet done**. Required: design assets, editorial structure, naming, content, data model.
-- **Action required**: Audit FFF/Future in Focus/Future Next repos/files before marking as fully archived.
+- **Archive Status**: ✅ Archived
+- **Reason**: Audit completed 2026-07-31. Empty shell — no assets found (no design, no editorial structure, no content). Absorbed into Future News (FN-001).
+- **Review Need**: None
+- **Decision**: Final. See `yos-related/experiments/future-news-project/MERGE-AUDIT-FFF.md`.
 
 ---
 
@@ -71,10 +70,10 @@ This register documents **canonical archiving decisions** for Y World projects, 
 
 ### 7. Future in Focus
 - **Archive Type**: Deprecated Project
-- **Archive Status**: Extract Before Archive ⚠️
-- **Reason**: Candidate absorbed into Future News. Assets to extract before full archive.
-- **Review Need**: **Needs Extraction**
-- **Decision**: See FFF entry above. Same cluster — audit required.
+- **Archive Status**: ✅ Archived
+- **Reason**: Audit completed 2026-07-31. Empty shell — Merge Map entry only, no standalone content. Absorbed into Future News (FN-001).
+- **Review Need**: None
+- **Decision**: Final. See `yos-related/experiments/future-news-project/MERGE-AUDIT-FFF.md`.
 
 ---
 
@@ -89,10 +88,10 @@ This register documents **canonical archiving decisions** for Y World projects, 
 
 ### 9. Future Next
 - **Archive Type**: Deprecated Project
-- **Archive Status**: Extract Before Archive ⚠️
-- **Reason**: Candidate absorbed into Future News. Assets to extract before full archive.
-- **Review Need**: **Needs Extraction**
-- **Decision**: See FFF entry above. Same cluster — audit required.
+- **Archive Status**: ✅ Archived
+- **Reason**: Audit completed 2026-07-31. Empty shell — tagline + domain brainstorm from 2023, no assets. Absorbed into Future News (FN-001).
+- **Review Need**: None
+- **Decision**: Final. See `yos-related/experiments/future-news-project/MERGE-AUDIT-FFF.md`.
 
 ---
 
@@ -109,7 +108,6 @@ This register documents **canonical archiving decisions** for Y World projects, 
 
 | Item | Action Required | Priority |
 | :--- | :--- | :---: |
-| FFF / Future in Focus / Future Next | Asset extraction before merge into Future News | Medium |
 | Live University | Verify content migration to YOUniversity was complete | Low |
 
 ---

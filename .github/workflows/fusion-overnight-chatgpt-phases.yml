@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           set +e
-          python3 01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/run_chatgpt_phases_v2.py
+          python3 01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/run_chatgpt_phases_v3.py
           status=$?
           echo "status=$status" >> "$GITHUB_OUTPUT"
           exit 0

@@ -1,0 +1,24 @@
+{
+  "canon_promotions": 0,
+  "coverage_counts": {},
+  "coverage_scope": {
+    "evidence_files_with_ledger_ids": 2,
+    "read_errors": [],
+    "scope": "committed_git_evidence_only",
+    "skipped_large_files": 0
+  },
+  "curated_ids_absent_from_ledger": [
+    "6a58ecce-0f74-83ed-a0d4-c023be2bc8c5",
+    "6a5de61f-9594-83eb-912e-979547fd8a49"
+  ],
+  "curated_ids_present_in_ledger": 237,
+  "curated_resolved_unique_ids": 239,
+  "curated_source_rows": 239,
+  "enriched_source_sha256": "7fa0caaee1f0a255834ec4c32cb6a33544137b2b16d5b19b777f56e31b192b02",
+  "generated_at": "2026-07-30T23:00:34+00:00",
+  "ledger_rows": 3060,
+  "ledger_sha256": "51417563521ecd21a19b444264353e6461b29413d68da3d2157f86cdbfaab4c0",
+  "ledger_unique_ids": 3060,
+  "status": "complete_audit_with_external_sources_out_of_scope",
+  "validation_passed": true
+}

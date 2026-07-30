@@ -3,7 +3,9 @@ name: Fusion Overnight ChatGPT Phases
 on:
   pull_request:
     paths:
-      - 01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/**
+      - 01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/run_chatgpt_phases.py
+      - 01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/run_chatgpt_phases_v3.py
+      - 01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/source/**
       - data/master_ledger.csv
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/**
       - .github/workflows/fusion-overnight-chatgpt-phases.yml

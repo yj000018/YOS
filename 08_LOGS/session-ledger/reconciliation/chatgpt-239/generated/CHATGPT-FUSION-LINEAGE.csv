@@ -1,0 +1,4 @@
+lineage_node,native_id,ledger_present,ledger_title,created_at,updated_at,identity_method,review_status
+ONE FUSION,6a5de467-6844-83eb-9a4f-849597c24605,True,☯️☯️☯️ FUSION2 2 ☯️☯️☯️,2026-07-20 09:03:44,2026-07-29 23:58:07,known_uuid_exact,verified_exact
+FUSION 1,6a62566a-9b14-83eb-90a9-83c700b9f331,True,🔀 FUSION 1 🔀,2026-07-23 17:59:37,2026-07-29 23:30:14,known_uuid_exact,verified_exact
+FUSION 2,6a6a769b-539c-83eb-83ea-834c83691bdb,True,🔀 FUSION 2 🔀,2026-07-29 21:54:43,2026-07-30 03:51:16,unique_exact_normalized_title_in_ledger,verified_ledger_identity

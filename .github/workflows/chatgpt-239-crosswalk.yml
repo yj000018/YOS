@@ -1,0 +1,70 @@
+name: ChatGPT 239 Ledger Crosswalk
+
+on:
+  pull_request:
+    paths:
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v3.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/reconcile_known_absent.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/source/**
+      - data/master_ledger.csv
+      - .github/workflows/chatgpt-239-crosswalk.yml
+  workflow_dispatch:
+
+concurrency:
+  group: chatgpt-239-crosswalk-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  crosswalk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Verify distinct ledger paths
+        run: |
+          test -f data/master_ledger.csv
+          test -f 08_LOGS/session-ledger/data/master_ledger.csv
+          test "$(git hash-object data/master_ledger.csv)" != "$(git hash-object 08_LOGS/session-ledger/data/master_ledger.csv)"
+
+      - name: Build crosswalk from committed ChatGPT ledger
+        id: build
+        shell: bash
+        run: |
+          set +e
+          python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v3.py
+          status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Analyze known UUIDs absent from ledger
+        run: python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/reconcile_known_absent.py
+
+      - name: Commit generated evidence
+        run: |
+          root=08_LOGS/session-ledger/reconciliation/chatgpt-239
+          generated="$root/generated"
+          if [ -d "$generated" ]; then
+            git add -f "$generated"
+          fi
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "data(fusion): complete ChatGPT 239 ledger crosswalk evidence"
+            git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          fi
+
+      - name: Enforce crosswalk validation
+        if: steps.build.outputs.status != '0'
+        run: |
+          echo "Crosswalk validation returned status ${{ steps.build.outputs.status }}"
+          exit "${{ steps.build.outputs.status }}"

@@ -1,0 +1,165 @@
+{
+  "blank_uuid_recovered": 3,
+  "blank_uuid_recovery": [
+    {
+      "candidate_count": 1,
+      "candidate_id": "",
+      "confidence": 0.995,
+      "created_delta_seconds": 0.741,
+      "method": "title_created_exact",
+      "recovered_id": "6a5aa6e9-2828-83eb-b29b-33f1f40f985a",
+      "review_status": "verified_recovered",
+      "title": "--GARDEN--",
+      "updated_delta_seconds": 739161.808
+    },
+    {
+      "candidate_count": 1,
+      "candidate_id": "",
+      "confidence": 1.0,
+      "created_delta_seconds": 0.992,
+      "method": "title_created_updated_exact",
+      "recovered_id": "6a40e4ba-1ef8-83eb-a2ae-180707ac95e8",
+      "review_status": "verified_recovered",
+      "title": "Animation vidéo Street View",
+      "updated_delta_seconds": 0.873
+    },
+    {
+      "candidate_count": 1,
+      "candidate_id": "",
+      "confidence": 1.0,
+      "created_delta_seconds": 0.456,
+      "method": "title_created_updated_exact",
+      "recovered_id": "6a42b14d-d0b8-83ed-9fc6-0d9c1bbe9c81",
+      "review_status": "verified_recovered",
+      "title": "Design logo Y",
+      "updated_delta_seconds": 0.924
+    }
+  ],
+  "blank_uuid_unresolved": 0,
+  "canon_promotions": 0,
+  "chatgpt_ledger_path": "data/master_ledger.csv",
+  "crosswalk_gate_status": "pass",
+  "fusion2": {
+    "candidate_count": 1,
+    "native_id": "6a6a769b-539c-83eb-83ea-834c83691bdb",
+    "status": "verified_unique_exact_title_in_ledger"
+  },
+  "fusion_title_candidates": [
+    {
+      "created_at": "2025-08-13 09:40:22",
+      "ledger_global_uid": "chatgpt_a931e16c-6688-8331-8457-01109a439cd0",
+      "normalized_title": "fusione del testo",
+      "source_id": "a931e16c-6688-8331-8457-01109a439cd0",
+      "title": "Fusione del testo",
+      "updated_at": "2025-08-13 14:38:26"
+    },
+    {
+      "created_at": "2025-08-18 07:51:24",
+      "ledger_global_uid": "chatgpt_1e47e570-dfe4-8329-b1fe-f0542e86e93b",
+      "normalized_title": "trouver les diffusions whatsapp",
+      "source_id": "1e47e570-dfe4-8329-b1fe-f0542e86e93b",
+      "title": "Trouver les diffusions WhatsApp",
+      "updated_at": "2025-08-18 08:39:47"
+    },
+    {
+      "created_at": "2025-10-18 12:17:19",
+      "ledger_global_uid": "chatgpt_68f3854f-60b4-832c-bb54-d2b4cecc8eb3",
+      "normalized_title": "confusion about filet mezzanine",
+      "source_id": "68f3854f-60b4-832c-bb54-d2b4cecc8eb3",
+      "title": "Confusion about \"filet mezzanine\"",
+      "updated_at": "2025-10-18 12:17:19"
+    },
+    {
+      "created_at": "2025-10-18 12:19:07",
+      "ledger_global_uid": "chatgpt_68f385bb-7820-832c-9c6c-6f706284613e",
+      "normalized_title": "fusion energy progress",
+      "source_id": "68f385bb-7820-832c-9c6c-6f706284613e",
+      "title": "Fusion Energy Progress",
+      "updated_at": "2025-10-18 12:19:07"
+    },
+    {
+      "created_at": "2025-10-22 11:36:26",
+      "ledger_global_uid": "chatgpt_68f8c1b4-b704-832d-8e6a-f11e42b13c09",
+      "normalized_title": "storyfusion co creation narrative",
+      "source_id": "68f8c1b4-b704-832d-8e6a-f11e42b13c09",
+      "title": "StoryFusion co-création narrative",
+      "updated_at": "2026-06-22 01:37:26"
+    },
+    {
+      "created_at": "2026-01-12 01:31:47",
+      "ledger_global_uid": "chatgpt_69644eff-18b4-8332-a6f3-5d3ac4d533f4",
+      "normalized_title": "fusion canonique yos",
+      "source_id": "69644eff-18b4-8332-a6f3-5d3ac4d533f4",
+      "title": "Fusion canonique yOS",
+      "updated_at": "2026-01-31 23:57:50"
+    },
+    {
+      "created_at": "2026-02-15 09:37:41",
+      "ledger_global_uid": "chatgpt_699193bf-2d8c-8327-b467-a48f5752f957",
+      "normalized_title": "fusion differents llm",
+      "source_id": "699193bf-2d8c-8327-b467-a48f5752f957",
+      "title": "FUSION différents LLM",
+      "updated_at": "2026-02-15 11:47:35"
+    },
+    {
+      "created_at": "2026-04-18 13:40:06",
+      "ledger_global_uid": "chatgpt_69e389b1-c0e4-832c-b1ed-8324755269c0",
+      "normalized_title": "reflexion spirituelle et diffusion",
+      "source_id": "69e389b1-c0e4-832c-b1ed-8324755269c0",
+      "title": "Réflexion spirituelle et diffusion",
+      "updated_at": "2026-04-18 16:26:24"
+    },
+    {
+      "created_at": "2026-05-15 02:43:01",
+      "ledger_global_uid": "chatgpt_6a068825-7168-8330-81a9-34361916720c",
+      "normalized_title": "fusion spacex tesla xai",
+      "source_id": "6a068825-7168-8330-81a9-34361916720c",
+      "title": "Fusion SpaceX Tesla xAI",
+      "updated_at": "2026-05-15 03:35:31"
+    },
+    {
+      "created_at": "2026-07-20 09:03:44",
+      "ledger_global_uid": "chatgpt_6a5de467-6844-83eb-9a4f-849597c24605",
+      "normalized_title": "fusion2 2",
+      "source_id": "6a5de467-6844-83eb-9a4f-849597c24605",
+      "title": "☯️☯️☯️ FUSION2 2 ☯️☯️☯️",
+      "updated_at": "2026-07-29 23:58:07"
+    },
+    {
+      "created_at": "2026-07-23 17:59:37",
+      "ledger_global_uid": "chatgpt_6a62566a-9b14-83eb-90a9-83c700b9f331",
+      "normalized_title": "fusion 1",
+      "source_id": "6a62566a-9b14-83eb-90a9-83c700b9f331",
+      "title": "🔀 FUSION 1 🔀",
+      "updated_at": "2026-07-29 23:30:14"
+    },
+    {
+      "created_at": "2026-07-29 21:54:43",
+      "ledger_global_uid": "chatgpt_6a6a769b-539c-83eb-83ea-834c83691bdb",
+      "normalized_title": "fusion 2",
+      "source_id": "6a6a769b-539c-83eb-83ea-834c83691bdb",
+      "title": "🔀 FUSION 2 🔀",
+      "updated_at": "2026-07-30 03:51:16"
+    }
+  ],
+  "generated_at": "2026-07-30T22:18:04+00:00",
+  "known_uuid_absent": 2,
+  "known_uuid_exact_matches": 234,
+  "ledger_blob_sha256": "51417563521ecd21a19b444264353e6461b29413d68da3d2157f86cdbfaab4c0",
+  "ledger_chatgpt_duplicate_ids": [],
+  "ledger_chatgpt_rows": 3060,
+  "ledger_chatgpt_unique_ids": 3060,
+  "ledger_commit": "ac472da1864f338c9ac36209ed02becd1d96d4f5",
+  "ledger_total_rows": 3060,
+  "ledger_usable_for_239_crosswalk": true,
+  "manus_ledger_path_kept_separate": "08_LOGS/session-ledger/data/master_ledger.csv",
+  "resolved_crosswalk_rows": 237,
+  "source_registry_blank_uuid_count": 3,
+  "source_registry_known_uuid_count": 236,
+  "source_registry_known_uuid_count_valid": true,
+  "source_registry_rows": 239,
+  "source_registry_rows_valid": true,
+  "source_registry_sha256": "aeb05f4aad05e039b14c694de893baa1b0a58fa8d279d5bc3d0462678e256b7c",
+  "source_registry_unique_known_uuid_count": 236,
+  "unresolved_crosswalk_rows": 2
+}

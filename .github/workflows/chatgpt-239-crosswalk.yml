@@ -44,20 +44,27 @@ jobs:
           echo "status=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
-      - name: Commit generated evidence
+      - name: Commit generated evidence and cleanup
         run: |
-          generated=08_LOGS/session-ledger/reconciliation/chatgpt-239/generated
-          if [ ! -d "$generated" ]; then
-            echo "No generated directory; build did not produce evidence"
-            exit 0
+          root=08_LOGS/session-ledger/reconciliation/chatgpt-239
+          generated="$root/generated"
+          git rm -f --ignore-unmatch \
+            "$root/source/curated239.part01" \
+            "$root/source/compactjson.part00" \
+            "$root/source/compactjson.part01" \
+            "$root/source/compactjson.part02" \
+            "$root/source/compactjson.part04" \
+            "$root/source/minjson.part00" \
+            "$root/source/idonly.part01"
+          if [ -d "$generated" ]; then
+            git add -f "$generated"
           fi
-          git add -f "$generated"
           if git diff --cached --quiet; then
-            echo "No generated changes"
+            echo "No generated or cleanup changes"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "data(fusion): audit and crosswalk ChatGPT ledger"
+            git commit -m "data(fusion): audit ChatGPT ledger and clean source transport"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
 

@@ -11,7 +11,7 @@
 
 Le cerveau reptilien de Y-OS (réflexes automatiques de session) repose actuellement sur le **system prompt Manus** qui dit `"lance yos-bootstrap"`. C'est semi-automatique : ça dépend que Manus obéisse aux instructions, pas d'un vrai trigger système.
 
-**Ce qui manque :** un client Y-OS qui s'exécute **avant** Manus et orchestre les triggers de session de façon garantie, indépendante du LLM.
+**Ce qui manque :** un client Y-OS qui s'exécute **avant** Manus et orchestre les triggers de session de façon garantie, indépendante du LLM. Ce client **est** le KERNEL matérialisé.
 
 ---
 
@@ -61,9 +61,9 @@ yos-client/
 
 ---
 
-## Intégration bootstrap actuelle (solution intermédiaire)
+## KERNEL actuel (solution intermédiaire)
 
-En attendant le client, le bootstrap Y-OS est renforcé dans le skill `yos-bootstrap` :
+En attendant le client, le KERNEL Y-OS est implémenté dans le skill `yos-bootstrap` :
 
 1. **System prompt Manus** → `"*** ALWAYS read skill yos-bootstrap at session start ***"`
 2. **yos-bootstrap skill** → Mem0 search + AGENTS.md CC + lazy tool loading (instruction)

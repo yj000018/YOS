@@ -1,0 +1,64 @@
+{
+  "blank_uuid_recovered": 0,
+  "blank_uuid_recovery": [
+    {
+      "candidate_count": 0,
+      "candidate_id": "",
+      "confidence": 0.0,
+      "created_delta_seconds": null,
+      "method": "no_deterministic_match",
+      "recovered_id": "",
+      "review_status": "unresolved",
+      "title": "--GARDEN--",
+      "updated_delta_seconds": null
+    },
+    {
+      "candidate_count": 0,
+      "candidate_id": "",
+      "confidence": 0.0,
+      "created_delta_seconds": null,
+      "method": "no_deterministic_match",
+      "recovered_id": "",
+      "review_status": "unresolved",
+      "title": "Animation vidéo Street View",
+      "updated_delta_seconds": null
+    },
+    {
+      "candidate_count": 0,
+      "candidate_id": "",
+      "confidence": 0.0,
+      "created_delta_seconds": null,
+      "method": "no_deterministic_match",
+      "recovered_id": "",
+      "review_status": "unresolved",
+      "title": "Design logo Y",
+      "updated_delta_seconds": null
+    }
+  ],
+  "blank_uuid_unresolved": 3,
+  "canon_promotions": 0,
+  "fusion2": {
+    "candidate_count": 0,
+    "native_id": "",
+    "status": "not_found"
+  },
+  "fusion_title_candidates": [],
+  "generated_at": "2026-07-30T21:41:44+00:00",
+  "known_uuid_absent": 236,
+  "known_uuid_exact_matches": 0,
+  "ledger_blob_sha256": "1076d8c4b7fceb8ebb2f07ec93828c4fd1f626bd474d055c4734f462803746c9",
+  "ledger_chatgpt_duplicate_ids": [],
+  "ledger_chatgpt_rows": 0,
+  "ledger_chatgpt_unique_ids": 0,
+  "ledger_commit": "9559ba4c3b73669c805af753fbc9fd9cbc27faa8",
+  "ledger_total_rows": 537,
+  "resolved_crosswalk_rows": 0,
+  "source_registry_blank_uuid_count": 3,
+  "source_registry_known_uuid_count": 236,
+  "source_registry_known_uuid_count_valid": true,
+  "source_registry_rows": 239,
+  "source_registry_rows_valid": true,
+  "source_registry_sha256": "aeb05f4aad05e039b14c694de893baa1b0a58fa8d279d5bc3d0462678e256b7c",
+  "source_registry_unique_known_uuid_count": 236,
+  "unresolved_crosswalk_rows": 239
+}

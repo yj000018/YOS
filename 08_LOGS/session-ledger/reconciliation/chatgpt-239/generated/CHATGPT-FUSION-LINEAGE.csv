@@ -1,0 +1,4 @@
+lineage_node,native_id,ledger_present,ledger_title,created_at,updated_at,identity_method,review_status
+ONE FUSION,6a5de467-6844-83eb-9a4f-849597c24605,False,,,,known_uuid_exact,unresolved
+FUSION 1,6a62566a-9b14-83eb-90a9-83c700b9f331,False,,,,known_uuid_exact,unresolved
+FUSION 2,,False,,,,not_found,unresolved

@@ -3,7 +3,9 @@ name: ChatGPT 239 Ledger Crosswalk
 on:
   pull_request:
     paths:
-      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/**
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v2.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/source/**
       - 08_LOGS/session-ledger/data/master_ledger.csv
       - .github/workflows/chatgpt-239-crosswalk.yml
   workflow_dispatch:
@@ -30,14 +32,19 @@ jobs:
         shell: bash
         run: |
           set +e
-          python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk.py
+          python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v2.py
           status=$?
           echo "status=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
       - name: Commit generated evidence
         run: |
-          git add -f 08_LOGS/session-ledger/reconciliation/chatgpt-239/generated
+          generated=08_LOGS/session-ledger/reconciliation/chatgpt-239/generated
+          if [ ! -d "$generated" ]; then
+            echo "No generated directory; build did not produce evidence"
+            exit 0
+          fi
+          git add -f "$generated"
           if git diff --cached --quiet; then
             echo "No generated changes"
           else

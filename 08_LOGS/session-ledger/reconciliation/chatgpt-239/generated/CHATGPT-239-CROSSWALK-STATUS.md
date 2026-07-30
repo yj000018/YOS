@@ -1,90 +1,82 @@
 ---
-document_id: CHATGPT-239-CROSSWALK-STATUS-v1.0
+document_id: CHATGPT-239-CROSSWALK-STATUS-v1.1
 document_type: reconciliation_checkpoint
-status: blocked_missing_durable_ledger
+status: complete_with_two_ledger_absences
 created_at: 2026-07-30
 updated_at: 2026-07-30
 authority: verified_git_and_library_evidence
 canon_promotions: 0
 ---
 
-# ChatGPT 239 → YOS ledger crosswalk status
+# ChatGPT 239 → YOS account-ledger crosswalk status
 
 ## Executive result
 
-The identity source is valid, but the requested crosswalk cannot yet be completed from durable evidence.
+The requested crosswalk is complete at classification level.
 
 - Frozen curated registry: **239 rows**.
-- Native UUIDs already known: **236 unique nonblank IDs**.
-- Rows lacking UUID: **3**.
-- Raw acquisition: **239 distinct conversations** across five immutable Library batches.
-- Current Git ledger: **537 Manus rows, 0 ChatGPT rows**.
-- Every Git-reachable ledger version: **one blob only**, still 537 Manus rows.
-- Commit `ac472da1864f338c9ac36209ed02becd1d96d4f5` reports ingestion of 3,060 ChatGPT conversations, but it did **not** change the ledger blob.
-- Therefore the 3,060-row ChatGPT ledger is an operationally attested output that was not durably committed.
+- Committed ChatGPT account ledger: **3,060 unique conversations** at `data/master_ledger.csv`.
+- Previously known UUIDs: **236**.
+- Exact UUID matches in ledger: **234**.
+- Blank UUIDs deterministically recovered: **3/3**.
+- Curated conversations present in ledger: **237/239**.
+- Curated conversations with known UUID but absent from ledger: **2/239**.
+- Duplicate ledger UUIDs: **0**.
+- FUSION 2 UUID: **resolved**.
+- Canon promotions: **0**.
 
-No missing UUID or crosswalk relationship is fabricated.
+The legacy file `08_LOGS/session-ledger/data/master_ledger.csv` is a distinct 537-row Manus ledger and remains separate.
 
-## Frozen identity registry
+## Correct ledger locations
 
-| Metric | Result |
-|---|---:|
-| Curated rows | 239 |
-| Known UUID rows | 236 |
-| Unique known UUIDs | 236 |
-| Blank UUID rows | 3 |
-| Identity source | `source/identity.rows.00.jsonl` … `identity.rows.05.jsonl` |
-| Concatenated source SHA-256 | `aeb05f4aad05e039b14c694de893baa1b0a58fa8d279d5bc3d0462678e256b7c` |
+| Ledger | Path | Rows | Source |
+|---|---|---:|---|
+| ChatGPT account ledger | `data/master_ledger.csv` | 3,060 | ChatGPT |
+| Legacy Manus ledger | `08_LOGS/session-ledger/data/master_ledger.csv` | 537 | Manus |
 
-## Three missing UUIDs
+The earlier blocked diagnosis resulted from inspecting the Manus path while expecting ChatGPT rows. Commit comparison proves that `ac472da1864f338c9ac36209ed02becd1d96d4f5` added the 3,060-row ledger at the root `data/` path.
 
-| Title | Batch | Created | Updated | Evidence status |
-|---|---|---|---|---|
-| `--GARDEN--` | BATCH-01 | 2026-07-17T22:05:09.741Z | 2026-07-20T08:08:31.192Z | JSON-only source; no Markdown URL |
-| `Animation vidéo Street View` | BATCH-02 | 2026-06-28T09:09:51.992Z | 2026-07-01T12:02:16.873Z | JSON-only source; no Markdown URL |
-| `Design logo Y` | BATCH-02 | 2026-06-29T17:54:43.456Z | 2026-06-29T17:58:49.924Z | JSON-only source; no Markdown URL |
+## Three recovered UUIDs
 
-The acquisition manifests establish that Markdown exports preserve native ChatGPT URLs, while these three conversations exist only in the JSON exports. Their native UUIDs must therefore be extracted from the raw JSON objects if the AI Toolbox payload includes `conversation_id`, or reacquired from the live ChatGPT history. Title-only matching is not authorized as native identity.
+| Title | Recovered UUID | Method | Confidence |
+|---|---|---|---:|
+| `--GARDEN--` | `6a5aa6e9-2828-83eb-b29b-33f1f40f985a` | unique exact title + creation timestamp | 0.995 |
+| `Animation vidéo Street View` | `6a40e4ba-1ef8-83eb-a2ae-180707ac95e8` | unique exact title + creation + update timestamps | 1.000 |
+| `Design logo Y` | `6a42b14d-d0b8-83ed-9fc6-0d9c1bbe9c81` | unique exact title + creation + update timestamps | 1.000 |
 
-### Authoritative raw packages
+`--GARDEN--` has a later ledger update timestamp because the conversation continued after the frozen raw export; the title and creation timestamp identify one unique ledger row.
 
-| Batch | Library file ID | SHA-256 | Relevant conversations |
-|---|---|---|---|
-| BATCH-01 JSON | `file_00000000dcf481f4a4afc317ed0a9c51` | `25cb25fccb82531c931442cdd777a8fd16543c41a0625aa31c4ce653bf5c76fb` | `--GARDEN--` |
-| BATCH-02 JSON | `file_00000000192881f4ae8c63fde68e38e0` | `38d0f3382b9304c24f550473a7e9a4d4a414c42547d0d963c9e1080d9d5082d8` | `Animation vidéo Street View`; `Design logo Y` |
+## Two known UUIDs absent from the 3,060 ledger
 
-The current Library binary-materialization service returned an internal `NO_MICROSHARD` error during this pass. The ZIP identities and hashes are preserved; no re-export is required before retrying access.
+| Curated row | Title | Native UUID | Ledger analysis | Status |
+|---:|---|---|---|---|
+| 12 | `Continuity Handoff Watch` | `6a5de61f-9594-83eb-912e-979547fd8a49` | one same-title row exists under another UUID, but timestamps do not match | curated UUID preserved; ledger absence verified |
+| 42 | `Gouvernance Créative Mondes` | `6a58ecce-0f74-83ed-a0d4-c023be2bc8c5` | no same-title ledger row | curated UUID preserved; ledger absence verified |
+
+These are not unknown identities: their native UUIDs were already preserved from source URLs. They are classified as `known_native_conversation_absent_from_account_ledger`. No alternate UUID is substituted automatically.
 
 ## FUSION lineage
 
-| Node | UUID | Status |
-|---|---|---|
-| ONE FUSION | `6a5de467-6844-83eb-9a4f-849597c24605` | verified from curated registry |
-| FUSION 1 | `6a62566a-9b14-83eb-90a9-83c700b9f331` | verified from raw JSON and PAC |
-| FUSION 2 | unresolved | current thread title known; native thread UUID not exposed in durable evidence |
+| Node | Native UUID | Ledger title | Status |
+|---|---|---|---|
+| FUSION lineage predecessor | `6a5de467-6844-83eb-9a4f-849597c24605` | `☯️☯️☯️ FUSION2 2 ☯️☯️☯️` | verified |
+| FUSION 1 | `6a62566a-9b14-83eb-90a9-83c700b9f331` | `🔀 FUSION 1 🔀` | verified |
+| FUSION 2 | `6a6a769b-539c-83eb-83ea-834c83691bdb` | `🔀 FUSION 2 🔀` | verified unique exact title in ledger |
 
-FUSION 2 is outside the frozen 239 acquisition window. Its UUID requires the current ChatGPT thread URL/export metadata; it cannot be inferred from title or chronology.
+## Durable evidence
 
-## Ledger durability audit
+- Identity source: `source/identity.rows.00.jsonl` … `identity.rows.05.jsonl`.
+- Identity source SHA-256: `aeb05f4aad05e039b14c694de893baa1b0a58fa8d279d5bc3d0462678e256b7c`.
+- Ledger SHA-256: `51417563521ecd21a19b444264353e6461b29413d68da3d2157f86cdbfaab4c0`.
+- Crosswalk CSV: `generated/CHATGPT-239-TO-YOS-LEDGER-CROSSWALK.csv`.
+- Validation JSON: `generated/CHATGPT-239-CROSSWALK-VALIDATION.json`.
+- Known-absence analysis: `generated/CHATGPT-KNOWN-UUID-ABSENCE-ANALYSIS.json`.
 
-`generated/CHATGPT-LEDGER-GIT-HISTORY-AUDIT.json` proves:
+## Exact next point
 
-```yaml
-reachable_blob_versions: 1
-maximum_total_rows_in_any_git_blob: 537
-maximum_chatgpt_rows_in_any_git_blob: 0
-durable_3060_chatgpt_ledger_present: false
-claim_commit_changed_ledger_blob: false
-ledger_blob: 0ee92d8afd28400df062c5266c81ba9442999753
-```
-
-The 3,060 ingestion claim remains useful operational provenance, but it is not a durable ledger artifact.
-
-## Exact resume point
-
-1. Retry materialization of the two already-preserved JSON ZIPs; extract the three named JSON objects and read `conversation_id` or equivalent native ID.
-2. Recover or regenerate the 3,060 ChatGPT ledger on the original Cloud Computer, then commit it as a new immutable source snapshot rather than overwriting the Manus ledger.
-3. Rerun `build_crosswalk_v2.py`; require at least the 236 known UUIDs to appear before the gate can pass.
-4. Capture the native URL or raw export of the active `FUSION 2` thread and append it as a post-239 lineage delta.
-5. Preserve curated classifications from the 239 registry; use the larger ledger only for native identity and acquisition coverage.
-6. Do not merge ChatGPT and Manus native IDs and do not promote any row to Canon automatically.
+1. Preserve the two ledger absences as explicit exceptions rather than forcing a match.
+2. Merge the reviewed crosswalk branch.
+3. Attach the recovered three UUIDs and FUSION 2 UUID to the durable R1/R2 registries.
+4. Use the 239 curated classifications as an overlay on the 3,060 native ledger; do not overwrite them.
+5. Begin project/domain synthesis only after quality grading and source-content coverage checks.
+6. Keep every automated crosswalk row non-Canon until review.

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-31T00:05:00+02:00",
+  "ledger_identities": 3060,
+  "committed_git_evidence": {
+    "raw_body": 0,
+    "verbatim": 0,
+    "fact_sheet": 0,
+    "summary": 0,
+    "strict_complete": 0
+  },
+  "frozen_curated_registry_declarations": {
+    "cohort_rows": 239,
+    "raw_preservation_status_preserved": 239,
+    "verbatim_preservation": {
+      "preserved_json_and_markdown": 231,
+      "preserved_markdown_only": 5,
+      "preserved_json_only": 3
+    },
+    "fact_sheet_status_pending": 239,
+    "content_summary_status_pending_fact_sheet_synthesis": 239,
+    "direct_byte_verification_in_this_git_audit": false
+  },
+  "identities_outside_curated_239": 2821,
+  "interpretation": "The 3,060-row identity ledger is complete as an identity census, but it is not a committed raw-content archive. The frozen curated registry declares preserved raw/verbatim source objects for 239 identities; the remaining 2,821 identities have no raw-body preservation evidence in the committed YOS repository. Fact Sheets and summaries remain unverified or absent at corpus scale.",
+  "canon_promotions": 0
+}

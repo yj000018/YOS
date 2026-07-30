@@ -5,6 +5,7 @@ on:
     paths:
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk.py
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v2.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/audit_ledger_history.py
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/source/**
       - 08_LOGS/session-ledger/data/master_ledger.csv
       - .github/workflows/chatgpt-239-crosswalk.yml
@@ -26,6 +27,12 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Fetch all remote refs
+        run: git fetch --prune origin '+refs/heads/*:refs/remotes/origin/*'
+
+      - name: Audit every Git ledger version
+        run: python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/audit_ledger_history.py
 
       - name: Build crosswalk
         id: build
@@ -50,11 +57,11 @@ jobs:
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "data(fusion): generate ChatGPT 239 ledger crosswalk"
+            git commit -m "data(fusion): audit and crosswalk ChatGPT ledger"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
 
-      - name: Enforce hard validation
+      - name: Enforce crosswalk validation
         if: steps.build.outputs.status != '0'
         run: |
           echo "Crosswalk validation returned status ${{ steps.build.outputs.status }}"

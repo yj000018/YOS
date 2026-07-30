@@ -14,12 +14,11 @@ EXPECTED_IDENTITY_SHA256 = "e94e9edbcbeef9b0078cc52e63c21c8a55d3a8276e8fd317c76c
 
 
 def load_identity_registry() -> tuple[list[dict[str, str]], bytes]:
-    parts = sorted((HERE / "source").glob("idonly.part*"))
-    expected_names = ["idonly.part00", "idonly.part01"]
-    if [path.name for path in parts] != expected_names:
-        raise RuntimeError(
-            f"identity source mismatch: {[path.name for path in parts]} != {expected_names}"
-        )
+    source = HERE / "source"
+    parts = [source / "minjson.part00", source / "idonly.part01"]
+    missing = [path.name for path in parts if not path.exists()]
+    if missing:
+        raise RuntimeError(f"missing identity fragments: {missing}")
     encoded = "".join(path.read_text(encoding="utf-8").strip() for path in parts)
     raw = zlib.decompress(base64.b64decode(encoded))
     digest = hashlib.sha256(raw).hexdigest()

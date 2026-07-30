@@ -5,6 +5,7 @@ on:
     paths:
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk.py
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/build_crosswalk_v3.py
+      - 08_LOGS/session-ledger/reconciliation/chatgpt-239/reconcile_known_absent.py
       - 08_LOGS/session-ledger/reconciliation/chatgpt-239/source/**
       - data/master_ledger.csv
       - .github/workflows/chatgpt-239-crosswalk.yml
@@ -43,6 +44,9 @@ jobs:
           echo "status=$status" >> "$GITHUB_OUTPUT"
           exit 0
 
+      - name: Analyze known UUIDs absent from ledger
+        run: python3 08_LOGS/session-ledger/reconciliation/chatgpt-239/reconcile_known_absent.py
+
       - name: Commit generated evidence
         run: |
           root=08_LOGS/session-ledger/reconciliation/chatgpt-239
@@ -55,7 +59,7 @@ jobs:
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "data(fusion): crosswalk ChatGPT 239 against committed account ledger"
+            git commit -m "data(fusion): complete ChatGPT 239 ledger crosswalk evidence"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
 

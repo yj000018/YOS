@@ -57,7 +57,19 @@ def main() -> int:
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     module.load_registry = load_identity_registry
-    return int(module.main())
+    core_status = int(module.main())
+    validation_path = HERE / "generated" / "CHATGPT-239-CROSSWALK-VALIDATION.json"
+    validation = json.loads(validation_path.read_text(encoding="utf-8"))
+    # A ledger with fewer than the 236 already-known UUIDs cannot be the intended
+    # ChatGPT corpus and must not yield a green identity crosswalk.
+    ledger_usable = validation.get("ledger_chatgpt_rows", 0) >= EXPECTED_KNOWN_IDS
+    validation["ledger_usable_for_239_crosswalk"] = ledger_usable
+    validation["crosswalk_gate_status"] = "pass" if ledger_usable and core_status == 0 else "blocked_missing_durable_ledger"
+    validation_path.write_text(
+        json.dumps(validation, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return 0 if core_status == 0 and ledger_usable else 4
 
 
 if __name__ == "__main__":

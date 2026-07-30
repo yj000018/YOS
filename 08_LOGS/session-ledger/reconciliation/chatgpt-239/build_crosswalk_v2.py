@@ -2,29 +2,36 @@
 """Transport-safe entrypoint for the ChatGPT-239 ledger crosswalk."""
 from __future__ import annotations
 
-import base64
 import hashlib
 import importlib.util
 import json
-import zlib
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-EXPECTED_IDENTITY_SHA256 = "e94e9edbcbeef9b0078cc52e63c21c8a55d3a8276e8fd317c76c65c073d8ba34"
+EXPECTED_JSONL_SHA256 = "aeb05f4aad05e039b14c694de893baa1b0a58fa8d279d5bc3d0462678e256b7c"
+EXPECTED_ROWS = 239
+EXPECTED_KNOWN_IDS = 236
 
 
 def load_identity_registry() -> tuple[list[dict[str, str]], bytes]:
-    source = HERE / "source"
-    parts = [source / "minjson.part00", source / "idonly.part01"]
-    missing = [path.name for path in parts if not path.exists()]
-    if missing:
-        raise RuntimeError(f"missing identity fragments: {missing}")
-    encoded = "".join(path.read_text(encoding="utf-8").strip() for path in parts)
-    raw = zlib.decompress(base64.b64decode(encoded))
+    parts = sorted((HERE / "source").glob("identity.rows.*.jsonl"))
+    expected_names = [f"identity.rows.{i:02d}.jsonl" for i in range(6)]
+    if [path.name for path in parts] != expected_names:
+        raise RuntimeError(
+            f"JSONL source mismatch: {[path.name for path in parts]} != {expected_names}"
+        )
+    raw = b"".join(path.read_bytes() for path in parts)
     digest = hashlib.sha256(raw).hexdigest()
-    if digest != EXPECTED_IDENTITY_SHA256:
-        raise RuntimeError(f"identity registry SHA mismatch: {digest}")
-    payload = json.loads(raw.decode("utf-8"))
+    if digest != EXPECTED_JSONL_SHA256:
+        raise RuntimeError(f"JSONL registry SHA mismatch: {digest}")
+    payload = [json.loads(line) for line in raw.decode("utf-8").splitlines() if line]
+    if len(payload) != EXPECTED_ROWS:
+        raise RuntimeError(f"row count mismatch: {len(payload)}")
+    if [item["row"] for item in payload] != list(range(1, EXPECTED_ROWS + 1)):
+        raise RuntimeError("row sequence mismatch")
+    if sum(bool(item.get("id")) for item in payload) != EXPECTED_KNOWN_IDS:
+        raise RuntimeError("known UUID count mismatch")
+
     rows: list[dict[str, str]] = []
     for item in payload:
         rows.append({

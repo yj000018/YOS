@@ -89,7 +89,7 @@ ok
 | Tags | yOS, systems-thinking, Manus |
 | Statut | Actif |
 | Priorité | Haute |
-| URL Notion | https://www.notion.so/[REDACTED:twilio-token] |
+| URL Notion | https://www.notion.so/32a35e218cf8810fa442e2104bbb71cb |
 
 ---
 

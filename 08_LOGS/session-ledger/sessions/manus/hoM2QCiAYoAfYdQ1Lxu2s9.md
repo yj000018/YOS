@@ -27,7 +27,7 @@ C'est donc un nouvel outil disponible pour iOS. Il faut donc une factsheet et d'
 ## First Response
 
 Factsheet créée et archivée dans Notion (⚙️ TECH — Technologie & Infra) :
-👉 https://app.notion.com/p/[REDACTED:twilio-token]
+👉 https://app.notion.com/p/38135e218cf88151ae88de35565bd84b
 
 ---
 
@@ -54,7 +54,7 @@ Pour les prochains outils, même workflow : je retrouve le template Notion exist
 > **User:** Help me test the Cloudflare connector and show me how to use its feature (e.g. show any data you fetched with it). Give me a brief about its capabilities.
 
 > **Manus:** Factsheet créée et archivée dans Notion (⚙️ TECH — Technologie & Infra) :
-👉 https://app.notion.com/p/[REDACTED:twilio-token]
+👉 https://app.notion.com/p/38135e218cf88151ae88de35565bd84b
 
 ---
 
@@ -78,7 +78,7 @@ Pour les prochains outils, même workflow : je retrouve le template Notion exist
 <summary>Expand full conversation (8 messages)</summary>
 
 **[1781616631299] MANUS:** Factsheet créée et archivée dans Notion (⚙️ TECH — Technologie & Infra) :
-👉 https://app.notion.com/p/[REDACTED:twilio-token]
+👉 https://app.notion.com/p/38135e218cf88151ae88de35565bd84b
 
 ---
 

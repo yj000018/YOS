@@ -354,7 +354,7 @@ Le test unitaire passe (1 req isolée) mais en parallèle → 429 immédiat.
 | :--- | :--- |
 | `yos_llm_router.py` | Router universel — à importer dans tout script yOS |
 | `yos_llm_config.json` | Config hot-reload — modifiable sans toucher au code |
-| `YOS_LLM_ROUTER_ARCHITECTURE.md` | Documentation complète |
+| `[REDACTED:credential]` | Documentation complète |
 | `gmail_phase2_v3.py` | Phase 2 Gmail réécrite avec le Router |
 
 ### Architecture en 1 ligne
@@ -629,7 +629,7 @@ Je tue le run actuel et réécris avec le vrai batch API.
 
 | Problème | Impact |
 | :--- | :--- |
-| **Modèle Gemini incorrect** (`gemini-2.5-flash-preview-04-17` → 404) | IA:0 sur 310 emails structured — zéro extraction IA depuis le début |
+| **Modèle Gemini incorrect** (`[REDACTED:credential]` → 404) | IA:0 sur 310 emails structured — zéro extraction IA depuis le début |
 | **Architecture séquentielle** : body fetch + Gemini pour chaque email non-NOISE | 13.5 emails/min → **208h pour 168k** — inacceptable |
 
 ## Solution : 2 phases séparées
@@ -895,7 +895,7 @@ Je génère une URL d'autorisation → tu cliques → tu autorises → je récup
 **Alternative directe — gcloud CLI :**
 
 Je peux générer la clé directement via l'API Google Cloud sans passer par le browser. Il me faut juste un token d'accès valide. Je vais utiliser le token OAuth de la session browser active.
-**[1772360024338] MANUS:** **yOS CORE:** Une clé existe déjà — `0e454f12e156dc21e8004378b47a3155f59da913`, créée le 8 Feb 2026, Active. Je crée une nouvelle clé JSON pour ce pipeline (la clé privée de l'ancienne n'est plus récupérable).
+**[1772360024338] MANUS:** **yOS CORE:** Une clé existe déjà — `[REDACTED:credential]`, créée le 8 Feb 2026, Active. Je crée une nouvelle clé JSON pour ce pipeline (la clé privée de l'ancienne n'est plus récupérable).
 **[1772359974511] MANUS:** **yOS CORE:** Client ID reçu. Je récupère la clé privée du service account depuis Google Cloud Console et configure Gmail API.
 **[1772359970556] USER:** Domain-wide Delegation
 108469801937711319443

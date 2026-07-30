@@ -349,7 +349,7 @@ This will work because the browser is already authenticated - I don't need OAuth
 
 Here's what I need from you:
 
-1. Go to: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=[REDACTED:google-oauth-id]&redirect_uri=urn:ietf:wg:oauth:2.0:oob&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
+1. Go to: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=274726751697-ek2qo6o93o7kf3vgcv2bn0qijkk3b7ml.apps.googleusercontent.com&redirect_uri=urn:ietf:wg:oauth:2.0:oob&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
 
 2. Click "Allow"
 
@@ -434,7 +434,7 @@ Which would you prefer?
 **[1770030815310] USER:** Link out
 **[1770029803544] MANUS:** The authorization code has expired. I need you to generate a new one:
 
-1. Go to: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=[REDACTED:google-oauth-id]&redirect_uri=http://localhost:8080/&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
+1. Go to: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=274726751697-ek2qo6o93o7kf3vgcv2bn0qijkk3b7ml.apps.googleusercontent.com&redirect_uri=http://localhost:8080/&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
 
 2. Click "Allow"
 
@@ -609,7 +609,7 @@ ERR_CONNECTION_REFUSED
 **[1768415428756] MANUS:** Great! Have you added your email as a test user in the Google Cloud Console? 
 
 Once you've done that, try the authentication URL again:
-https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=[REDACTED:google-oauth-id]&redirect_uri=http://localhost:8080/&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
+https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=274726751697-ek2qo6o93o7kf3vgcv2bn0qijkk3b7ml.apps.googleusercontent.com&redirect_uri=http://localhost:8080/&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
 
 Then copy the full redirect URL and send it to me so I can complete the upload.
 **[1768415423021] USER:** Ok
@@ -636,7 +636,7 @@ Error 403: access_denied
 **Please do this:**
 
 1. Go to this URL in your browser:
-   https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=[REDACTED:google-oauth-id]&redirect_uri=http://localhost:8080/&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
+   https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=274726751697-ek2qo6o93o7kf3vgcv2bn0qijkk3b7ml.apps.googleusercontent.com&redirect_uri=http://localhost:8080/&scope=https://www.googleapis.com/auth/youtube.force-ssl&access_type=offline
 
 2. Click "Allow" to grant YouTube API access
 
@@ -650,7 +650,7 @@ This is a one-time authentication. After this, I can proceed fully autonomously 
 **[1768415142146] MANUS:** You're right, let me guide you step by step:
 
 1. Go to: https://console.cloud.google.com/apis/credentials
-2. Look for your Client ID ([REDACTED:google-oauth-id])
+2. Look for your Client ID (274726751697-ek2qo6o93o7kf3vgcv2bn0qijkk3b7ml.apps.googleusercontent.com)
 3. Click on it to open the details
 4. You'll see a section showing:
    - **Client ID** (which you already gave me)
@@ -662,7 +662,7 @@ If you don't see it, try:
 - Click the download icon (↓) next to it to download the JSON file
 - Or click on it to view the details
 
-**Can you copy and paste the Client Secret value?** It should be something like: `[REDACTED:google-oauth-secret]` or similar.
+**Can you copy and paste the Client Secret value?** It should be something like: `GOCSPX-xxxxxxxxxxxxxxxxxxxxxx` or similar.
 
 Alternatively, if you can download the JSON credentials file and share the contents, that works too.
 **[1768415131857] USER:** Can you provide the Client Secret for this OAuth2 application? It should be visible in your Google Cloud Console under the credentials for this client ID.
@@ -671,7 +671,7 @@ WHERE?
 **[1768415038793] MANUS:** Perfect. I have the Client ID. Now I need the Client Secret to complete the OAuth2 authentication. 
 
 Can you provide the Client Secret for this OAuth2 application? It should be visible in your Google Cloud Console under the credentials for this client ID.
-**[1768415032718] USER:** A. Client ID [REDACTED:google-oauth-id]
+**[1768415032718] USER:** A. Client ID 274726751697-ek2qo6o93o7kf3vgcv2bn0qijkk3b7ml.apps.googleusercontent.com
 **[1768407387707] MANUS:** Excellent progress! All visual assets and videos have been created successfully.
 
 Now I need to proceed with YouTube API upload. However, I need your help with one thing:

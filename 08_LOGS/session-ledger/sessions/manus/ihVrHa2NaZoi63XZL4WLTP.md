@@ -259,7 +259,7 @@ Mais maintient mes midi faire et VI /UI-UX parfaite
       └─ 🌊🔥🌍🌬️✨ Ludivine & les Divines — Portail
 ```
 
-**URL** : https://www.notion.so/[REDACTED:twilio-token]
+**URL** : https://www.notion.so/3029339ad94981e7b6eade7f1d095669
 
 **Structure injectée**
 - Vision + callout
@@ -278,7 +278,7 @@ La page est dans ton workspace Manus Memory Hub, sous le projet existant.
 **[1770598431451] USER:** No access
 **[1770598120403] MANUS:** **Page créée**
 
-URL : https://www.notion.so/[REDACTED:twilio-token]
+URL : https://www.notion.so/3029339ad94981e7b6eade7f1d095669
 
 **Limites API Notion :**
 - ✅ Contenu structuré injecté

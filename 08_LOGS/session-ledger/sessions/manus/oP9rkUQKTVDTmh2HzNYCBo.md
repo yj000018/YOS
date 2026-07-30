@@ -210,7 +210,7 @@ ADD a solid paragraph describing key elements & positiining of each project, mat
 **[1779753841995] MANUS:** ✅ **Fiche projet créée dans Notion**
 
 **🎯 Projet — Les Petits Malins : Explorateur Archétypal**
-→ https://www.notion.so/[REDACTED:twilio-token]
+→ https://www.notion.so/36c35e218cf8818f8911eca22df1a68f
 
 Contenu archivé :
 - Vision + contexte + ressources (chemins fichiers, URLs, checkpoints)

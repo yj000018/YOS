@@ -368,7 +368,7 @@ Pense le système vraiment. Bien (aut...
 Toutes les actions exécutées :
 
 1. ✅ **Supprimé** tâches 3 et 6
-2. ✅ **Archivé** tâche 4 dans Notion → https://www.notion.so/[REDACTED:twilio-token]
+2. ✅ **Archivé** tâche 4 dans Notion → https://www.notion.so/3089339ad94981fa80efff01696413ca
 3. ✅ **Renommé** tâche 7 avec (Y)
 4. ✅ **Recréé** tâche 5 → https://manus.im/app/Q7TUpL9KFuEgH6RhHpw3h3
 

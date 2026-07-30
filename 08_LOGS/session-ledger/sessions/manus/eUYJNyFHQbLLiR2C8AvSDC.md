@@ -286,7 +286,7 @@ Ces pages ont du contenu substantiel dans Notion mais **aucun équivalent trouv�
 - 69 pages Notion déplacées dans "Migrées dans Git" ✅ (les 3 YOT-71/72/73 étaient déjà en corbeille — tu peux les restaurer manuellement si tu veux les déplacer aussi)
 - Source de vérité = Git, Notion = backup consultable
 
-**Page "Migrées dans Git" :** https://www.notion.so/[REDACTED:twilio-token]
+**Page "Migrées dans Git" :** https://www.notion.so/3ad35e218cf8814ab820d140a2b6b945
 **[1785428162678] MANUS:** OK parfait. Maintenant je déplace toutes les pages vers "Migrées dans Git"...
 **[1785428159465] USER:** Ai  fait restore
 **[1785428140203] MANUS:** Je restore la DB depuis la corbeille Notion...
@@ -308,10 +308,10 @@ En clair : Notion distingue le **data source** (collection de données, interrog
 ## Liens Notion directs
 
 **DB Tools Registry (en corbeille) :**
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/85f89b4e847d4cbea9310ffdf11b60f2
 
 **Page "Migrées dans Git" (active) :**
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/3ad35e218cf8814ab820d140a2b6b945
 
 ---
 

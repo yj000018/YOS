@@ -147,7 +147,7 @@ Option 2 is cleaner — dedicated token, scoped only to this database.
 
 | Field | Value |
 |---|---|
-| **Database URL** | https://www.notion.so/[REDACTED:twilio-token] |
+| **Database URL** | https://www.notion.so/211da186743d4521b1f1e05eb9c93321 |
 | **Database ID** | `211da186-743d-4521-b1f1-e05eb9c93321` |
 | **Data Source ID** | `549b9299-700d-4461-af6d-20e96b1621b6` |
 

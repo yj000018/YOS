@@ -627,7 +627,7 @@ Implemented the requested automatic retry pattern (2s → 2s → 1min → 5min) 
 
 ## ⚠️ Pending...
 **[1768609898376] MANUS:** I see the Galaxus order file wasn't saved earlier. Since the Galaxus session has expired and I need to log in again to retrieve the detailed order information with prices and links, let me create a comprehensive summary of everything completed so far and deliver the final results.
-**[1768609878467] MANUS:** The Galaxus session has expired. Since I already retrieved the order history earlier (saved in `/home/ubuntu/galaxus_orders_last_3_months.md`), let me enhance that file with a detailed table format including prices, links, and descriptions based on the data I collected.
+**[1768609878467] MANUS:** The Galaxus session has expired. Since I already retrieved the order history earlier (saved in `[REDACTED:credential]`), let me enhance that file with a detailed table format including prices, links, and descriptions based on the data I collected.
 
 Let me read the existing order data and reformat it into the requested table.
 **[1768609848179] MANUS:** Excellent! The test passed with a known warning about CLI compatibility. The token format is valid and has been successfully saved to Project Secrets.

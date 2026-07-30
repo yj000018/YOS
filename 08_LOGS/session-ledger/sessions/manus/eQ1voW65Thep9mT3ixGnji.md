@@ -80,19 +80,19 @@ Review the current Y World system and propose:
 
 Ou si tu veux que je parte directement sur une proposition basée sur ce que je connais de Y World, dis-moi **"go"** et je lance.
 
-> **Manus:** **Y World — Hub Notion** → https://app.notion.com/p/[REDACTED:twilio-token]
+> **Manus:** **Y World — Hub Notion** → https://app.notion.com/p/38835e218cf8813396fffb903c253105
 
 Liens directs des sous-pages clés :
 
 | Ressource | Lien |
 |-----------|------|
-| Node Registry (30 nœuds) | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Relationship Map | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Merge Map | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Quarantine | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Archive / Deprecated | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Visual Map v4 | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Sorting Review v1 | https://app.notion.com/p/[REDACTED:twilio-token] |
+| Node Registry (30 nœuds) | https://app.notion.com/p/e4a6a44568f1498c9b2162db7dfc3f56 |
+| Relationship Map | https://app.notion.com/p/d9810eb61c1f47c2a27e0a67620a23e0 |
+| Merge Map | https://app.notion.com/p/468c2c51eb4b419391b866ad1639dc8c |
+| Quarantine | https://app.notion.com/p/a6b50ee5d27e4121926fc9b07b71447c |
+| Archive / Deprecated | https://app.notion.com/p/3847249cefc04a439b12df8c29645045 |
+| Visual Map v4 | https://app.notion.com/p/38935e218cf8812181b4d1e33ad7834d |
+| Sorting Review v1 | https://app.notion.com/p/38935e218cf8814da743e51c32eac6b8 |
 | Quarantine Resolution Pack v1 | https://app.notion.com/p/38935e218cf8...
 
 ## Full Verbatim
@@ -114,25 +114,25 @@ Liens directs des sous-pages clés :
 
 Ou si tu veux que je parte directement sur une proposition basée sur ce que je connais de Y World, dis-moi **"go"** et je lance.
 **[1782341608167] USER:** Pas le hub notion mais le site web y-world présentant mon travail
-**[1782341323710] MANUS:** **Y World — Hub Notion** → https://app.notion.com/p/[REDACTED:twilio-token]
+**[1782341323710] MANUS:** **Y World — Hub Notion** → https://app.notion.com/p/38835e218cf8813396fffb903c253105
 
 Liens directs des sous-pages clés :
 
 | Ressource | Lien |
 |-----------|------|
-| Node Registry (30 nœuds) | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Relationship Map | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Merge Map | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Quarantine | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Archive / Deprecated | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Visual Map v4 | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Sorting Review v1 | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Quarantine Resolution Pack v1 | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Phase 4 Execution Brief | https://app.notion.com/p/[REDACTED:twilio-token] |
+| Node Registry (30 nœuds) | https://app.notion.com/p/e4a6a44568f1498c9b2162db7dfc3f56 |
+| Relationship Map | https://app.notion.com/p/d9810eb61c1f47c2a27e0a67620a23e0 |
+| Merge Map | https://app.notion.com/p/468c2c51eb4b419391b866ad1639dc8c |
+| Quarantine | https://app.notion.com/p/a6b50ee5d27e4121926fc9b07b71447c |
+| Archive / Deprecated | https://app.notion.com/p/3847249cefc04a439b12df8c29645045 |
+| Visual Map v4 | https://app.notion.com/p/38935e218cf8812181b4d1e33ad7834d |
+| Sorting Review v1 | https://app.notion.com/p/38935e218cf8814da743e51c32eac6b8 |
+| Quarantine Resolution Pack v1 | https://app.notion.com/p/38935e218cf8816b9b4efe6238039320 |
+| Phase 4 Execution Brief | https://app.notion.com/p/38935e218cf88160ad8cf41427146bcd |
 **[1782341310183] USER:** Link site yworld
 **[1782339141520] MANUS:** ## Y World — Phase 4 Execution Selection Brief ✅
 
-**Notion** → https://app.notion.com/p/[REDACTED:twilio-token]
+**Notion** → https://app.notion.com/p/38935e218cf88160ad8cf41427146bcd
 
 ---
 
@@ -197,7 +197,7 @@ Create a concise Phase 4 Execution Selection brief.
 **[1782338835153] MANUS:** Ce prompt est identique à la Phase 3 déjà exécutée dans cette session. Tout est déjà fait :
 
 - **Micro-corrections visuelles** → appliquées en Visual Map v3 puis v4 (9/9 corrections ✅)
-- **Quarantine Resolution Pack v1** → créé dans Notion → https://app.notion.com/p/[REDACTED:twilio-token]
+- **Quarantine Resolution Pack v1** → créé dans Notion → https://app.notion.com/p/38935e218cf8816b9b4efe6238039320
 - **Quarantine DB mise à jour** → Inner Compass, Mirror Mirror, OneSHIFT mis à jour ✅
 - **Hub mis à jour** → section Quarantine Resolution ajoutée ✅
 
@@ -369,8 +369,8 @@ Correct semantics:
 
 ### Liens
 
-- **Visual Map v1** → https://app.notion.com/p/[REDACTED:twilio-token]
-- **Hub** → https://app.notion.com/p/[REDACTED:twilio-token]
+- **Visual Map v1** → https://app.notion.com/p/38935e218cf8812181b4d1e33ad7834d
+- **Hub** → https://app.notion.com/p/38835e218cf8813396fffb903c253105
 - **PNG direct** → https://files.manuscdn.com/user_upload_by_module/session_file/310419663032381833/evyFKgDyPQddUuBV.png
 
 ---
@@ -394,13 +394,13 @@ Context:
 The Y World ontology system is already in Notion.
 
 Hub:
-https://app.notion.com/p/[REDACTED:twilio-token]
+https://app.notion.com/p/38835e218cf8813396fffb903c253105
 
 Relationship Map:
-https://app.notion.com/p/[REDACTED:twilio-token]
+https://app.notion.com/p/d9810eb61c1f47c2a27e0a67620a23e0
 
 Node Registry:
-https://app.notion.com/p/[REDACTED:twilio-token]
+https://app.notion.com/p/e4a6a44568f1498c9b2162db7dfc3f56
 
 Important rule:
 If a good visual map already exists, do not recreate it.
@@ -455,7 +455,7 @@ The diagram should show:
 
 ### Lien direct
 
-**Node Registry** → https://app.notion.com/p/[REDACTED:twilio-token]
+**Node Registry** → https://app.notion.com/p/e4a6a44568f1498c9b2162db7dfc3f56
 
 ---
 
@@ -470,13 +470,13 @@ The diagram should show:
 ## SYSTÈME EN PLACE (Notion)
 
 ### Hub central
-URL: https://app.notion.com/p/[REDACTED:twilio-token]
+URL: https://app.notion.com/p/38835e218cf8813396fffb903c253105
 Contient: liens vers les 5 bases + Sorting Review v1 + 12 fiches projet + section Phase 3
 
 ### 5 bases opérationnelles
 
 1. NODE REGISTRY (30 nœuds canoniques)
-   URL: https://app.notion.com/p/[REDACTED:twilio-token]
+   URL: https://app.notion.com/p/e4a6a44568f1498c9b2162db7dfc3f56
    Schéma: Name, Node ID, Type, Operational Role, Lifecycle Status, Maturity,
            Primary Family, Secondary Family, Layer, Essence, Canonical Formula,
            Canonical Decision, Aliases, Open Questions, Confidence, Visibility,
@@ -511,8 +511,8 @@ Contient: liens vers les 5 bases + Sorting Review v1 + 12 fiches projet + sectio
 
 | Fiche | Statut | Lien |
 |-------|--------|------|
-| Next Civ | ✅ Créée | https://app.notion.com/p/[REDACTED:twilio-token] |
-| Civilizational Awakening | ✅ Créée | https://app.notion.com/p/[REDACTED:twilio-token] |
+| Next Civ | ✅ Créée | https://app.notion.com/p/38935e218cf8814da743e51c32eac6b8 |
+| Civilizational Awakening | ✅ Créée | https://app.notion.com/p/38935e218cf881eb8ff9c74f7126cf24 |
 | Arche...
 **[1782336782951] MANUS:** Satellite maps complètes. Je passe aux 6 fiches projet manquantes.
 **[1782336588262] MANUS:** Audit terminé. Résultats :
@@ -645,7 +645,7 @@ For every requested object or step, apply this logic:
 
 ### 1. Lien direct
 
-**Y World — Sorting Review v1** → https://app.notion.com/p/[REDACTED:twilio-token]
+**Y World — Sorting Review v1** → https://app.notion.com/p/38935e218cf88117a9f2e60d5ea49766
 
 ---
 
@@ -738,11 +738,11 @@ Toutes les 4 bases Notion ont été remplies en totalité. Récap :
 
 ### Liens directs Notion
 
-- **Relationship Map** → https://app.notion.com/p/[REDACTED:twilio-token]
-- **Merge Map** → https://app.notion.com/p/[REDACTED:twilio-token]
-- **Quarantine** → https://app.notion.com/p/[REDACTED:twilio-token]
-- **Archive / Deprecated** → https://app.notion.com/p/[REDACTED:twilio-token]
-- **Hub** → https://app.notion.com/p/[REDACTED:twilio-token]
+- **Relationship Map** → https://app.notion.com/p/d9810eb61c1f47c2a27e0a67620a23e0
+- **Merge Map** → https://app.notion.com/p/468c2c51eb4b419391b866ad1639dc8c
+- **Quarantine** → https://app.notion.com/p/a6b50ee5d27e4121926fc9b07b71447c
+- **Archive / Deprecated** → https://app.notion.com/p/3847249cefc04a439b12df8c29645045
+- **Hub** → https://app.notion.com/p/38835e218cf8813396fffb903c253105
 
 ---
 

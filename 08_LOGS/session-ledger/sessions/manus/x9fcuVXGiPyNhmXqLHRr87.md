@@ -37,7 +37,7 @@ Tous les livrables de cette session sont conservés :
 - **Framework spirituel** : `/home/ubuntu/spiritual_library_framework.md`
 - **Templates multilingues** : `/home/ubuntu/multilingual_template_design.md`
 - **Roadmap 24 mois** : `/home/ubuntu/implementation_roadmap.md`
-- **Livrets PDF** : `[REDACTED:credential]`
+- **Livrets PDF** : `/home/ubuntu/spiritual-library-website/public/books/`
 - **Code source** : `/home/ubuntu/spiritual-library-website/`
 
 Prêt pour la prochaine session quand tu veux reprendre.
@@ -77,7 +77,7 @@ Tous les livrables de cette session sont conservés :
 - **Framework spirituel** : `/home/ubuntu/spiritual_library_framework.md`
 - **Templates multilingues** : `/home/ubuntu/multilingual_template_design.md`
 - **Roadmap 24 mois** : `/home/ubuntu/implementation_roadmap.md`
-- **Livrets PDF** : `[REDACTED:credential]`
+- **Livrets PDF** : `/home/ubuntu/spiritual-library-website/public/books/`
 - **Code source** : `/home/ubuntu/spiritual-library-website/`
 
 Prêt pour la prochaine session quand tu veux reprendre.
@@ -118,7 +118,7 @@ Tous les livrables de cette session sont conservés :
 - **Framework spirituel** : `/home/ubuntu/spiritual_library_framework.md`
 - **Templates multilingues** : `/home/ubuntu/multilingual_template_design.md`
 - **Roadmap 24 mois** : `/home/ubuntu/implementation_roadmap.md`
-- **Livrets PDF** : `[REDACTED:credential]`
+- **Livrets PDF** : `/home/ubuntu/spiritual-library-website/public/books/`
 - **Code source** : `/home/ubuntu/spiritual-library-website/`
 
 Prêt pour la prochaine session quand tu veux reprendre.

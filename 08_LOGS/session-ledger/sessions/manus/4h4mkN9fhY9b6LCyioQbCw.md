@@ -211,13 +211,13 @@ Toutes les clés générées aujourd'hui. Tu ajoutes ces 9 variables :
 |---|---|
 | `GITHUB_PAT` | `[REDACTED:github-pat]` |
 | `SUPABASE_ACCESS_TOKEN` | `[REDACTED:supabase-pat]` |
-| `MEM0_API_KEY` | `m0-AaySh4Tbbwf2DA5TpXzqcBJSiDnFRIlFrF695fJE` |
-| `EXA_API_KEY` | `c751e087-245c-43fd-bf28-cbeb8a3e83ce` |
+| `MEM0_API_KEY` | `[REDACTED:mem0-key]` |
+| `EXA_API_KEY` | `[REDACTED:uuid-key]` |
 | `RESEND_API_KEY` | `[REDACTED:resend-key]` |
 | `APIFY_API_TOKEN` | `[REDACTED:apify-token]` |
-| `UPSTASH_API_KEY` | `fd8b9407-a3bc-41cd-93d2-5c7e8b5b41eb` |
+| `UPSTASH_API_KEY` | `[REDACTED:uuid-key]` |
 | `ALGOLIA_APP_ID` | `U8TKDN7REU` |
-| `ALGOLIA_ADMIN_KEY` | `f5e428cd6bcd62ba261f73f84c28ad8c` |
+| `ALGOLIA_ADMIN_KEY` | `[REDACTED:algolia-key]` |
 
 Toutes sont dans 1Password (MAIN VAULT, tags `yOS`, `yOS-key`, `Manus`).
 
@@ -243,11 +243,11 @@ Voici la liste complète à ajouter dans **Manus → Settings → Custom APIs** 
 |---|---|
 | `GITHUB_PAT` | `[REDACTED:github-pat]` |
 | `SUPABASE_ACCESS_TOKEN` | `[REDACTED:supabase-pat]` |
-| `MEM0_API_KEY` | `m0-AaySh4Tbbwf2DA5TpXzqcBJSiDnFRIlFrF695fJE` |
+| `MEM0_API_KEY` | `[REDACTED:mem0-key]` |
 | `EXA_API_KEY` | `(clé Exa — voir ci-dessous)` |
 | `RESEND_API_KEY` | `[REDACTED:resend-key]` |
 | `APIFY_API_TOKEN` | `[REDACTED:apify-token]` |
-| `UPSTASH_API_KEY` | `fd8b9407-a3bc-41cd-93d2-5c7e8b5b41eb` |
+| `UPSTASH_API_KEY` | `[REDACTED:uuid-key]` |
 | `ALGOLIA_APP_ID` | `U8TKDN7REU` |
 | `ALGOLIA_ADMIN_KEY` | `(voir 1Password — Algolia yOS-ALGOLIA-2026-03)` |
 
@@ -275,7 +275,7 @@ Je passe à Telegram Bot et Exa/Resend/Apify maintenant.
 **[1772390388191] MANUS:** **Algolia — DONE.** Connecté, clés visibles directement (CAPTCHA résolu automatiquement). Clés récupérées :
 
 - **Application ID :** `U8TKDN7REU`
-- **Search API Key :** `89dfff939120cddd9c013f9c48b18287`
+- **Search API Key :** `[REDACTED:credential]`
 - **Admin API Key :** masquée — je la révèle maintenant
 **[1772390377189] MANUS:** Oui — exactement. Voici la vision complète.
 
@@ -402,7 +402,7 @@ Tu dois ajouter ces 4 variables dans **Manus → Settings → Secrets** :
 
 | Variable | Valeur |
 |---|---|
-| `UPSTASH_API_KEY` | `fd8b9407-a3bc-41cd-93d2-5c7e8b5b41eb` |
+| `UPSTASH_API_KEY` | `[REDACTED:uuid-key]` |
 | `GITH...
 **[1772389098329] MANUS:** Vault normalisé. 22 entrées ont déjà le tag `yOS` (le batch précédent avait fonctionné). 2 entrées `Zapier` et `Todoist` ont un format JSON invalide dans 1Password — probablement des entrées corrompues ou avec des caractères spéciaux. Je les ignore pour l'instant.
 
@@ -466,7 +466,7 @@ Quelle option ?
 
 | Service | Variable Manus | Valeur | Statut |
 |---|---|---|---|
-| Upstash (Context7) | `UPSTASH_API_KEY` | `fd8b9407-a3bc-41cd-93d2-5c7e8b5b41eb` | Prête |
+| Upstash (Context7) | `UPSTASH_API_KEY` | `[REDACTED:uuid-key]` | Prête |
 | GitHub PAT | `GITHUB_PAT` | `[REDACTED:github-pat]` | Prête |
 | Supabase | `SUPABASE_ACCESS_TOKEN` | `[REDACTED:supabase-pat]` | Prête |
 | Mem0 | `MEM0_API_KEY` | — | Bloqué — mot de passe Gmail |
@@ -477,7 +477,7 @@ Quelle option ?
 ### Action requise de ta part — 3 étapes
 
 **1. Manus Settings → Secrets** — Ajouter ces 3 variables :
-- `UPSTASH_API_KEY` = `fd8b9407-a3bc-41cd-93d2-5c7e8b5b41eb`
+- `UPSTASH_API_KEY` = `[REDACTED:uuid-key]`
 - `GITHUB_PAT` = `[REDACTED:github-pat]`
 - `SUPABASE_ACCESS_TOKEN` = `[REDACTED:supabase-pat]`
 

@@ -30,7 +30,7 @@ Mission: complete Gate G0 for the FUSION/MAP v2 reconstruction program.
 Sources and target:
 - Notion data source: 🗃️ Manus Memory — Sessions
 - Data source ID: collection://0720db9b-5e1d-41a2-bd0c-6721fe0dab94
-- Database URL: https://app.notion.com/p/[REDACTED:twilio-token]
+- Database URL: https://app.notion.com/p/5e51ded40b464a68acc24e90886a2499
 - GitHub repository: yj000018/new-to-be-merged
 - Existing branch ONLY: map/manus-notion-lfs-census-v1-20260721
 - Working directory in repo: 03_PACKAGES/lfs/manus-notion/
@@ -55,7 +55,7 @@ Mission: complete Gate G0 for the FUSION/MAP v2 reconstruction program.
 Sources and target:
 - Notion data source: 🗃️ Manus Memory — Sessions
 - Data source ID: collection://0720db9b-5e1d-41a2-bd0c-6721fe0dab94
-- Database URL: https://app.notion.com/p/[REDACTED:twilio-token]
+- Database URL: https://app.notion.com/p/5e51ded40b464a68acc24e90886a2499
 - GitHub repository: yj000018/new-to-be-merged
 - Existing branch ONLY: ...
 
@@ -75,7 +75,7 @@ Mission: complete Gate G0 for the FUSION/MAP v2 reconstruction program.
 Sources and target:
 - Notion data source: 🗃️ Manus Memory — Sessions
 - Data source ID: collection://0720db9b-5e1d-41a2-bd0c-6721fe0dab94
-- Database URL: https://app.notion.com/p/[REDACTED:twilio-token]
+- Database URL: https://app.notion.com/p/5e51ded40b464a68acc24e90886a2499
 - GitHub repository: yj000018/new-to-be-merged
 - Existing branch ONLY: map/manus-notion-lfs-census-v1-20260721
 - Working directory in repo: 03_PACKAGES/lfs/manus-notion/

@@ -27,7 +27,7 @@ C'est donc un nouvel outil disponible pour iOS. Il faut donc une factsheet et d'
 ## First Response
 
 Factsheet créée et publiée dans Notion sous **🔌 Y-OS — Registre Connecteurs Manus** :
-👉 https://app.notion.com/p/[REDACTED:twilio-token]
+👉 https://app.notion.com/p/38135e218cf881a8a54af354a1ad4008
 
 ---
 
@@ -54,7 +54,7 @@ Read AI est un **notetaker IA** (Zoom, Meet, Teams) qui expose ses données via 
 > **User:** Help me test the Read AI connector and show me how to use its feature (e.g. show any data you fetched with it). Give me a brief about its capabilities.
 
 > **Manus:** Factsheet créée et publiée dans Notion sous **🔌 Y-OS — Registre Connecteurs Manus** :
-👉 https://app.notion.com/p/[REDACTED:twilio-token]
+👉 https://app.notion.com/p/38135e218cf881a8a54af354a1ad4008
 
 ---
 
@@ -79,7 +79,7 @@ Read AI est un **notetaker IA** (Zoom, Meet, Teams) qui expose ses données via 
 <summary>Expand full conversation (8 messages)</summary>
 
 **[1781616517500] MANUS:** Factsheet créée et publiée dans Notion sous **🔌 Y-OS — Registre Connecteurs Manus** :
-👉 https://app.notion.com/p/[REDACTED:twilio-token]
+👉 https://app.notion.com/p/38135e218cf881a8a54af354a1ad4008
 
 ---
 

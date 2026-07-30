@@ -217,7 +217,7 @@ Deux options :
 
 Quelle option tu préfères ?
 **[1775854152846] MANUS:** Je charge la fiche session depuis Notion avant de structurer la suite.
-**[1775854149981] USER:** https://www.notion.so/[REDACTED:twilio-token] J'aimerais poursuivre de manière très approfondie cette session qui est résumé dans nos chaînes ici et qui consiste à identifier les sources d'information. faire en deux temps d'abord et ensuite les connecter comment
+**[1775854149981] USER:** https://www.notion.so/31435e218cf881e68f74e9e70444c7e3 J'aimerais poursuivre de manière très approfondie cette session qui est résumé dans nos chaînes ici et qui consiste à identifier les sources d'information. faire en deux temps d'abord et ensuite les connecter comment
 
 
 

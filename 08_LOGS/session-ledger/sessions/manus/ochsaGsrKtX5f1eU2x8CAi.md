@@ -138,7 +138,7 @@ Cette base (`ChatGPT conversations`) est ta base existante — elle a un schéma
 **Option 1 — Utiliser `Chat_Export_Sessions` (recommandé)**
 La base créée pour le pipeline, avec le schéma exact qu'il attend.
 ```
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/97ecdc13e4be409bacb0ef1040f8d0dc
 ```
 
 **Option 2 — Adapter le pipeline à ta base existante**
@@ -158,7 +158,7 @@ Si Option 2 : je lis le schéma...
 
 **`Chat_Export_Sessions`**
 ```
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/97ecdc13e4be409bacb0ef1040f8d0dc
 ```
 
 Dans les settings de chatgpt2notion → **Select database** → coller cette URL ou chercher `Chat_Export_Sessions`.

@@ -592,7 +592,7 @@ Le script userscript est le seul pont possible car il s'exécute **dans** le con
 **[1772102963583] MANUS:** Je structure d'abord l'architecture complète, puis je génère le schéma visuel.
 **[1772102945168] MANUS:** Architecture MMM en cours de génération — schéma visuel complet.
 **[1772102939514] USER:** J'ai l'air à une grande image qui est tout un schéma d'architecture qui montre de façon très visuelle et très jolie par architecture technique moche mais vraiment comme les grands building blocks de mmm notre gestion de mémoire multisession et multi LLM.  Je veux voir qu'il y a une partie front-end, on parle. Alors, on parle à un LLM ou on parle à manus ou on parle à ces deux LLM ou manus via notre interface.  de script avec une interface créée à la volée sur la page web de ces sites. Comment les processus d'archive et de passage de session de LLM à LLM et cetera, comment ça fonctionne. Donc on voit les blocs, des flèches, des explications. Donc on peut déclencher à la main avec l'interface de Tempermonkey qui est installé dans le browser Gear et Gear seulement sur iOS et qui est installé dans n'importe quel autre browser  via Tampermonkey plugin extension  Chrome ou sur Safari via UserScript qui est l'équivalent. Donc juste qu'on voit quelle est la couche qui permet l'interface manuel...
-**[1772102759536] MANUS:** La clé Pinecone est lue : `[REDACTED:credential]`
+**[1772102759536] MANUS:** La clé Pinecone est lue : `pcsk_5AENQi_UE1AioT6d57WtgA6eMz9SPBEL3d2LhSHyLMhW39cVuk83xnt4EH8wwfsmdMbLy3`
 
 Le timeout Fly.dev est un problème réseau temporaire. Je mémorise d'abord dans Notion, puis je réessaie le secret Fly.
 **[1772102694026] MANUS:** Je lis la clé Pinecone et je la mémorise dans Notion.

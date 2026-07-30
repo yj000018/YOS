@@ -209,8 +209,8 @@ Let me check how the Notion MCP expects page URIs and fix the integration.
 Page: /projects/30001?from_webdev=1
 User: {"id":30001,"openId":"XUtBRyntuDivNUcn7EZaAu","name":"Yannick Jolliet","email":"yannick.jolliet@gmail.com","loginMethod":"google","role":"admin","createdAt":"2026-02-07T11:04:41.000Z","updatedAt":"2026-02-07T11:31:19.000Z","lastSignedIn":"2026-02-07T11:31:20.000Z"}
 **Error Message:**
-Error 1: [API Mutation Error] Failed to import Notion page: Notion MCP error: Command failed: manus-mcp-cli resource read notion://[REDACTED:twilio-token] --server notion
-Error: failed to read resource: MCP error -32602: Resource notion://[REDACTED:twilio-token] not found
+Error 1: [API Mutation Error] Failed to import Notion page: Notion MCP error: Command failed: manus-mcp-cli resource read notion://300931e13340819a973cc02932fadbf2 --server notion
+Error: failed to read resource: MCP error -32602: Resource notion://300931e13340819a973cc02932fadbf2 not found
 Usage:
   manus-mcp-cli resource read [uri] [flags]
 
@@ -220,7 +220,7 @@ Flags:
 Global Flags:
   -s, --server string   specify the server name
 Time: 2026-02-07T11:31:44.441Z (Europe/Zurich)
-TRPCClientError: Failed to import Notion page: Notion MCP error: Command failed: manus-mcp-cli resource read notion://[REDACTED:twilio-token] --se...
+TRPCClientError: Failed to import Notion page: Notion MCP error: Command failed: manus-mcp-cli resource read notion://300931e13340819a973cc02932fadbf2 --se...
 **[1770463528766] MANUS:** ## ✅ Notion URL Validation Fixed
 
 I've fixed the Notion URL validation issue. The system now accepts all valid Notion URL formats including those with query parameters, workspace prefixes, and both 32-character hex IDs and UUID formats. The validation has been relaxed to extract page IDs from any URL containing "notion.so", making it compatible with all standard Notion sharing formats.

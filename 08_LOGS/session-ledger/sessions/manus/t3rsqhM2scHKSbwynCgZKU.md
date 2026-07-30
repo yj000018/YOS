@@ -30,10 +30,10 @@ Garde en mémoire ces capabilities et use cases, comme pour tous les autres outi
 Tout est en place dans Notion. Voici le récap :
 
 **Factsheet Tally** — Architecture Hub
-→ https://app.notion.com/p/[REDACTED:twilio-token]
+→ https://app.notion.com/p/38635e218cf88126b435cc2a88b8a748
 
 **Entrée Tools Registry** (🗂️ Y-OS Tools Registry v2)
-→ https://app.notion.com/p/[REDACTED:twilio-token]
+→ https://app.notion.com/p/38635e218cf88162880fda0147acb164
 
 **Ce qui a été archivé :**
 
@@ -62,10 +62,10 @@ Garde en mémoire ces capabilities et use cases, comme pour tous les autres outi
 > **Manus:** Tout est en place dans Notion. Voici le récap :
 
 **Factsheet Tally** — Architecture Hub
-→ https://app.notion.com/p/[REDACTED:twilio-token]
+→ https://app.notion.com/p/38635e218cf88126b435cc2a88b8a748
 
 **Entrée Tools Registry** (🗂️ Y-OS Tools Registry v2)
-→ https://app.notion.com/p/[REDACTED:twilio-token]
+→ https://app.notion.com/p/38635e218cf88162880fda0147acb164
 
 **Ce qui a été archivé :**
 
@@ -92,10 +92,10 @@ Pour les prochains outils, même protocole : test → factsheet → Registry + p
 **[1782041575355] MANUS:** Tout est en place dans Notion. Voici le récap :
 
 **Factsheet Tally** — Architecture Hub
-→ https://app.notion.com/p/[REDACTED:twilio-token]
+→ https://app.notion.com/p/38635e218cf88126b435cc2a88b8a748
 
 **Entrée Tools Registry** (🗂️ Y-OS Tools Registry v2)
-→ https://app.notion.com/p/[REDACTED:twilio-token]
+→ https://app.notion.com/p/38635e218cf88162880fda0147acb164
 
 **Ce qui a été archivé :**
 

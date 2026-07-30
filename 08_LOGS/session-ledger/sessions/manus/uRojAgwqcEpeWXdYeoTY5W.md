@@ -779,7 +779,7 @@ Corrections v6.2 : FileManager local (pas iCloud), notification d'erreur avant t
 
 **Priorité 2 — Documentation**
 - Page Scripts Y-OS mise à jour mais checkpoint non livré après refonte
-- Doc architecture `YOS-MEMORY-BRIDGE-ARCHITECTURE.md` poussée sur GitHub — à valider
+- Doc architecture `[REDACTED:credential]` poussée sur GitHub — à valider
 
 **Priorité 3 — Infrastructure**
 - Service Account 1P opérationnel → à documenter dans la doc architecture
@@ -908,7 +908,7 @@ Un Service Account Token 1Password ressemble à ceci :
 
 C'est un JWT long encodé en base64 (commence par `ops_eyJ...`).
 
-Ce que tu m'as donné (`A3-QX3KKV-52VDEA-X6NEN-XFBT4-A5W2F-QRQ4B`) ressemble à une **Secret Key 1Password** (format compte), pas à un Service Account Token.
+Ce que tu m'as donné (`[REDACTED:credential]`) ressemble à une **Secret Key 1Password** (format compte), pas à un Service Account Token.
 
 **Pour créer le bon token :**
 

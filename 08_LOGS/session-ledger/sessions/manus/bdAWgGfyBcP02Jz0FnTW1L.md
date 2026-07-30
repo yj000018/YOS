@@ -443,7 +443,7 @@ CEO (toi)
 ✅ Activity timeline  
 
 **3. Notion Integration**  
-🔗 https://www.notion.so/[REDACTED:twilio-token]  
+🔗 https://www.notion.so/0edf80ddf7a64b97a67f5c108582c08e  
 ✅ Agent Registry (11 agents)  
 ✅ Security Access Methods  
 ✅ Workflows (prêt)  
@@ -772,7 +772,7 @@ CEO (toi)
 
 ## Notion
 
-**Créé** : https://www.notion.so/[REDACTED:twilio-token]
+**Créé** : https://www.notion.so/3089339ad949817cbc5df95159f6c700
 
 ---
 

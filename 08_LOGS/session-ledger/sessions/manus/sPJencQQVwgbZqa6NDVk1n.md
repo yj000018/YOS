@@ -454,7 +454,7 @@ Je crée un système interactif avec tree local.
 **[1770841638323] USER:** Le son est extrêmement lent. Peut-être on crée au manipule cette structure seulement sous forme de tree ici dans notre programme manus et seulement lorsqu'il y a un commit, alors on fait un transfert vers la machine.  Essayons ça seulement ici, crée à la volée update le tree, montre-moi les changements sur le tree directement à la volée.
 **[1770841570399] MANUS:** ## ✅ Structure Créée dans Notion
 
-**URL :** https://www.notion.so/[REDACTED:twilio-token]
+**URL :** https://www.notion.so/3049339ad9498126ba42e98cb9de03cb
 
 **39 pages créées :**
 - 1 page principale (Test Universe)
@@ -673,7 +673,7 @@ Equivalent sur Tana pour visualization moindmap?
 
 **1. Création hiérarchie Notion via Manus MCP**
 - ✅ Page créée avec structure H1/H2/H3
-- URL : https://www.notion.so/[REDACTED:twilio-token]
+- URL : https://www.notion.so/3049339ad94981118a7dd27569797254
 
 **2. Outils mindmap pour Notion**
 - ✅ Recherche complète
@@ -734,7 +734,7 @@ Mindmap.so (visualisation)
 
 **Page créée :**
 - Titre : "Test Hiérarchie Manus"
-- URL : https://www.notion.so/[REDACTED:twilio-token]
+- URL : https://www.notion.so/3049339ad94981118a7dd27569797254
 - Structure : 2 niveaux (H1, H2, H3)
 
 **Je passe à la recherche d'outils mindmap pour Notion.**

@@ -250,13 +250,13 @@ Voici **uniquement les clés AI/API pertinentes** pour Manus (doublons et clés 
 |:---|:---|
 | `ANTHROPIC_API_KEY` | `sk-<redacted>AA` |
 | `APIFY_API_KEY` | `[REDACTED:apify-token]` |
-| `ALGOLIA_API_KEY` | `f5e428cd6bcd62ba261f73f84c28ad8c` |
-| `COHERE_API_KEY` | `Pge9h8mzF3q0PSgy6l20v3mylJgBUUsh929DYWk2` |
+| `ALGOLIA_API_KEY` | `[REDACTED:algolia-key]` |
+| `COHERE_API_KEY` | `[REDACTED:cohere-key]` |
 | `DEEPSEEK_API_KEY` | `[REDACTED:api-key]` |
-| `ELEVENLABS_API_KEY` | `[REDACTED:credential]` |
-| `EXA_API_KEY` | `aeb0a764-dfca-4180-8bc7-5b981ba9691f` |
-| `FAL_AI_API_KEY` | `49b9d777-30f8-4e78-87b5-42b2cdb52d57:d6064acd3bacc9549a09c95c6d43bb91` |
-| `FIRECRAWL_API_KEY` | `4933664f76a641ba8031178136da1581` |
+| `ELEVENLABS_API_KEY` | `[REDACTED:elevenlabs-key]` |
+| `EXA_API_KEY` | `[REDACTED:uuid-key]` |
+| `FAL_AI_API_KEY` | `[REDACTED:uuid-key]:d6064acd3bacc9549a09c95c6d43bb91` |
+| `FIRECRAWL_API_KEY` | `[REDACTED:credential]` |
 | `FLY_IO_TOKEN` | `FlyV1 fm2_lJPECAAAAAAAEd/IxBBYBu+qI5aFD6oNnX9PLImnwrVodHRwczovL2FwaS5mbHkuaW8vdjGUAJLOABbZoh8Lk7lodHRwczovL2FwaS5mbHkuaW8vYWFhL3YxxDyWPsZOKzGfRLka2j0JkASfsIF+AxXj4YvDmAJjKjqgO...
 **[1772671364402] MANUS:** 548 items dans le MAIN VAULT — l'extraction item par item est trop lente (1 appel API par item). Je change de stratégie : filtrer uniquement les items API/clés avant d'extraire les valeurs.
 **[1772671249760] MANUS:** Sandbox reset. Relance de l'extraction complète du MAIN VAULT...
@@ -267,16 +267,16 @@ Voici **uniquement les clés AI/API pertinentes** pour Manus (doublons et clés 
 | Variable Manus | Valeur complète |
 |:---|:---|
 | `APIFY_API_KEY` | `[REDACTED:apify-token]` |
-| `ELEVENLABS_API_KEY` | `[REDACTED:credential]` |
-| `FIRECRAWL_API_KEY` | `4933664f76a641ba8031178136da1581` |
+| `ELEVENLABS_API_KEY` | `[REDACTED:elevenlabs-key]` |
+| `FIRECRAWL_API_KEY` | `[REDACTED:credential]` |
 | `HUGGINGFACE_API_KEY` | `[REDACTED:huggingface-token]` |
-| `PINECONE_API_KEY` | `[REDACTED:credential]` |
+| `PINECONE_API_KEY` | `[REDACTED:pinecone-key]` |
 | `YOS_NOTION_SECRET_KEY` | `[REDACTED:notion-token]` |
 | `STABILITY_AI_API_KEY` | `[REDACTED:api-key]` |
 | `DEEPSEEK_API_KEY` | `[REDACTED:api-key]` |
-| `COHERE_API_KEY` | `Pge9h8mzF3q0PSgy6l20v3mylJgBUUsh929DYWk2` |
+| `COHERE_API_KEY` | `[REDACTED:cohere-key]` |
 | `NOTION_API_KEY` | `[REDACTED:notion-token]` |
-| `FAL_AI_API_KEY` | `49b9d777-30f8-4e78-87b5-42b2cdb52d57:d6064acd3bacc9549a09c95c6d43bb91` |
+| `FAL_AI_API_KEY` | `[REDACTED:uuid-key]:d6064acd3bacc9549a09c95c6d43bb91` |
 | `MANUS_API_KEY` | `sk-TEKE...
 **[1772580208843] MANUS:** Extraction des valeurs complètes depuis 1Password en cours...
 **[1772579953483] USER:** Donnes moi ici tableau avec nom clef à ajouter et valeur fleur clef

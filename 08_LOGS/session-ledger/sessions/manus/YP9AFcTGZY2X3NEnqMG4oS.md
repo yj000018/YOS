@@ -187,7 +187,7 @@ Je soumets, tu confirmes en 1 clic. Ça prend 30 secondes.
 
 Ou dans une session interactive (non planifiée), dis-moi "active Context7, Mem0, Supabase, Perplexity" — je soumets la suggestion et tu confirmes en 1 clic.
 
-Le registre Notion a été mis à jour avec les recommandations. Le rapport RADAR-MCP 15 Juin 2026 est publié sous TECH : https://app.notion.com/p/[REDACTED:twilio-token]
+Le registre Notion a été mis à jour avec les recommandations. Le rapport RADAR-MCP 15 Juin 2026 est publié sous TECH : https://app.notion.com/p/38035e218cf8817ca235cf5e684b94bf
 **[1781508653996] MANUS:** Session planifiée — confirmation manuelle requise pour Supabase + Perplexity. Mise à jour du registre Notion en cours.
 **[1781508649400] USER:** [Auto-reply] Please continue the task based on current context, proceed if you are on track. Do not ask the same question repeatedly.
 **[1781508649302] MANUS:** Les deux connecteurs ont été soumis pour activation mais la confirmation a été refusée automatiquement (probablement une restriction de la session planifiée).

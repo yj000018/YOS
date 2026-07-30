@@ -428,7 +428,7 @@ This is my idea for autogen of cartoon strips etc about evolution pof the world 
 
 IDEA attachée
 
-I want o levegrare this excellent framework described here https://www.skool.com/ai-mate/classroom/2f5c64dd?md=[REDACTED:twilio-token]
+I want o levegrare this excellent framework described here https://www.skool.com/ai-mate/classroom/2f5c64dd?md=c80ffbbde0b44b148b29ed7b1e95e343
 to auto gen & publish 5 video a dday
 
 Read through it, look at all steps, take into account attached files, and create table  about what you DO FOR ME MOST OF THE SETUOP? use his detailed guidebook with all the steps he mentions, transpose it into  a table, groped by phases, and categorised, and assess for each step: doable by you Manus automatically (fully, partially) or best ot do manually. Aseess manual work time needed and customiazation needed to adapt to MY idea GEN5

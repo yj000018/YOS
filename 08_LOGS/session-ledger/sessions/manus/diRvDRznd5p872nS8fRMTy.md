@@ -34,7 +34,7 @@ Rempli avec ex de données fictive interview et programme doc pour radio “Radi
 ## ✨ Ce qui a été fait
 
 **1. Page principale redesignée en mini-site web**
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/2f29339ad94981a598dbe6c863dcada9
 
 La page principale a été **complètement transformée** avec :
 - 📊 Sections visuelles bien délimitées (emoji + descriptions)
@@ -44,7 +44,7 @@ La page principale a été **complètement transformée** avec :
 
 **2. Bases de données remplies avec données fictives**
 
-**Base Épisodes** (5 épisodes) : https://www.notion.so/[REDACTED:twilio-token]
+**Base Épisodes** (5 épisodes) : https://www.notion.so/82580921c2d541df9c4503874be00e6e
 - Épisode 1 : Le silence qui parle (Solo, Publié)
 - Épisode 2 : Méditer dans le quotidien avec Marie Dubois (Interview, Publié)
 - Épisode 3 : Qui suis-je après la carrière avec Jean-Pierre Martin (Interview, Enregistré)
@@ -69,7 +69,7 @@ Rempli avec ex de données fictive interview et programme doc pour radio “Radi
 ## ✨ Ce qui a été fait
 
 **1. Page principale redesignée en mini-site web**
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/2f29339ad94981a598dbe6c863dcada9
 
 La page principale a été **complètement transformée** avec :
 - 📊 Sections visuelles bien délimitées (emoji + descriptions)
@@ -79,7 +79,7 @@ La page principale a été **complètement transformée** avec :
 
 **2. Bases de données remplies avec données fictives**
 
-**Base Épisodes** (5 épisodes) : https://www.notion.so/[REDACTED:twilio-token]
+**Base Épisodes** (5 épisodes) : https://www.notion.so/82580921c2d541df9c4503874be00e6e
 - Épisode 1 : Le silence qui parle (Solo, Publié)
 - Épisode 2 : Méditer dans le quotidien avec Marie Dubois (Interview, Publié)
 - Épisode 3 : Qui suis-je après la carrière avec Jean-Pierre Martin ...
@@ -102,7 +102,7 @@ Je commence tout de suite !
 ## ✨ Ce qui a été fait
 
 **1. Page principale redesignée en mini-site web**
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/2f29339ad94981a598dbe6c863dcada9
 
 La page principale a été **complètement transformée** avec :
 - 📊 Sections visuelles bien délimitées (emoji + descriptions)
@@ -112,7 +112,7 @@ La page principale a été **complètement transformée** avec :
 
 **2. Bases de données remplies avec données fictives**
 
-**Base Épisodes** (5 épisodes) : https://www.notion.so/[REDACTED:twilio-token]
+**Base Épisodes** (5 épisodes) : https://www.notion.so/82580921c2d541df9c4503874be00e6e
 - Épisode 1 : Le silence qui parle (Solo, Publié)
 - Épisode 2 : Méditer dans le quotidien avec Marie Dubois (Interview, Publié)
 - Épisode 3 : Qui suis-je après la carrière avec Jean-Pierre Martin (Interview, Enregistré)
@@ -139,19 +139,19 @@ J'ai créé l'intégralité de votre structure Notion selon vos spécifications.
 
 Commencez par cette page qui centralise tout :
 **🎙️ Espace Notion – Radio Retraite**
-https://www.notion.so/[REDACTED:twilio-token]
+https://www.notion.so/2f29339ad94981a598dbe6c863dcada9
 
 ## ✅ Ce qui a été créé
 
 **Bases de données :**
-- **Épisodes** (avec template modèle inclus) : https://www.notion.so/[REDACTED:twilio-token]
-- **Invités** : https://www.notion.so/[REDACTED:twilio-token]
+- **Épisodes** (avec template modèle inclus) : https://www.notion.so/82580921c2d541df9c4503874be00e6e
+- **Invités** : https://www.notion.so/38a53907221742dd8383d5b69045572a
 
 **Pages structurées :**
-- **Brain – Vision & Idées** : https://www.notion.so/[REDACTED:twilio-token]
-- **Ressources de la Radio Retraite** (publique) : https://www.notion.so/[REDACTED:twilio-token]
-- **Parcours Retraite Initiatique – Back-office** : https://www.notion.so/[REDACTED:twilio-token]
-- **Routine Hebdo – Radio** : https://www.notion.so/[REDACTED:twilio-token]
+- **Brain – Vision & Idées** : https://www.notion.so/2f29339ad94981aebd58f80df2bfb5dc
+- **Ressources de la Radio Retraite** (publique) : https://www.notion.so/2f29339ad9498149a2fdec5e75e9d786
+- **Parcours Retraite Initiatique – Back-office** : https://www.notion.so/2f29339ad949815faed7c354e5b70020
+- **Routine Hebdo – Radio** : https://www.notion.so/2f29339ad94981da85f5f6c15c3fb137
 - **Modèle Description ...
 **[1769298110131] MANUS:** Parfait ! J'ai bien compris votre projet. Vous souhaitez créer un **espace Notion complet pour une radio "Retraite"** avec :
 

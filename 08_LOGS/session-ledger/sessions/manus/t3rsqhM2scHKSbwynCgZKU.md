@@ -1,11 +1,21 @@
 ---
-id: t3rsqhM2scHKSbwynCgZKU
+id: "t3rsqhM2scHKSbwynCgZKU"
 title: "[✓] Tally MCP Connector — Test, Capability Brief & Notion Onboarding"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["Tally", "MCP Connector", "Test", "Notion", "Tools Registry", "Fact Sheet", "Automation"]
 summary: ""
+executive_summary: "The Tally MCP Connector has been successfully documented in a comprehensive Notion Factsheet and integrated into the Y-OS Tools Registry, establishing a standardized protocol for future tool onboarding."
+context_and_intent: "The user requested to document the capabilities and use cases of the Tally MCP Connector, storing this information in Notion using a standardized 'Fact Sheet' structure, and integrating it with other tools in the Y-OS Tools Registry."
+what_was_done: "The Tally MCP Connector's capabilities and use cases were documented in a dedicated Notion Factsheet, which includes details like status, category, tool type, authentication, pricing, and workarounds from a live test. An entry for Tally was also created in the Y-OS Tools Registry v2."
+outputs_produced: [{"description": "Detailed documentation of Tally MCP Connector in Architecture Hub, covering 6 standard sections and workarounds from live testing.", "name": "Factsheet Tally", "type": "Notion Page"}, {"description": "Entry for Tally MCP Connector in the Y-OS Tools Registry v2, including status, category, tool type, authentication, and pricing.", "name": "Entrée Tools Registry", "type": "Notion Page"}]
+key_decisions: ["A standardized protocol for onboarding new tools (test, factsheet creation, and registry entry in Notion) has been established and will be followed for all future tools."]
+lessons_learned: {"discoveries": ["Workarounds identified during the live test were incorporated into the Factsheet."], "failed_or_suboptimal": [], "worked_well": ["The standardized protocol (test -> factsheet -> Registry + Notion page) proved effective for documenting and integrating new tools.", "The Factsheet's 6-section structure (Synthèse, Executive Summary, Capacités, Limites/Bugs, Pricing, Intégrations Y-OS) is comprehensive."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: ["Continue to apply the established protocol (test -> factsheet -> Registry + Notion page) for onboarding all future tools."]
 url: "https://manus.im/app/task/t3rsqhM2scHKSbwynCgZKU"
 ---
 

@@ -1,11 +1,21 @@
 ---
-id: 3LlE0NGSBHd76UQVWYKMss
+id: "3LlE0NGSBHd76UQVWYKMss"
 title: "How to Test and Use the Mobbin Connector Features"
 date: "2026-07-22"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "Mobbin Connector"]
 tags: ["mobbin", "connector", "testing", "ui/ux", "api_integration", "subscription_required"]
 summary: "Tested Mobbin connector features, identified API tools, and found a paid Mobbin account is required for full data."
+executive_summary: "The session focused on testing the Mobbin connector. The assistant explored its capabilities, identified available tools, and attempted live data queries. However, a critical blocker was discovered: full functionality, specifically image retrieval, requires a paid Mobbin Pro account. The assistant provided a capabilities brief, listed the tools, and offered recommendations, prompting the user for next steps regarding account access or alternative UI/UX exploration."
+context_and_intent: "The user wanted to test the Mobbin connector, see its features in action by fetching data, and receive a brief overview of its capabilities."
+what_was_done: "The assistant explored the Mobbin MCP connector, listed its available tools, analyzed their capabilities, and attempted to perform live queries. It identified that a paid Mobbin Pro account is required for full functionality, specifically for image retrieval, which blocked the demonstration of data fetching."
+outputs_produced: [{"description": "A comprehensive overview of the Mobbin connector's functionalities.", "name": "Brief complet des capacités", "type": "document"}, {"description": "A list of the specific tools available through the Mobbin connector.", "name": "Liste des outils (search_screens, search_flows, search_sections)", "type": "list"}, {"description": "Suggestions for how to proceed given the identified blocker.", "name": "Recommandations", "type": "document"}]
+key_decisions: ["The assistant identified that a paid Mobbin Pro account is necessary for the connector to fully function and retrieve data."]
+lessons_learned: {"discoveries": ["The Mobbin connector offers tools such as 'search_screens', 'search_flows', and 'search_sections'.", "Full data retrieval, particularly images, from the Mobbin connector is contingent on having a paid Mobbin Pro subscription."], "failed_or_suboptimal": ["The assistant was unable to demonstrate data fetching (e.g., images) due to the lack of a connected paid Mobbin account."], "worked_well": ["The assistant successfully explored the connector's capabilities and identified its available tools.", "The assistant provided a clear explanation of the blocker and proposed next steps."]}
+challenges_and_blockers: ["Access to the Mobbin Connector Platform (MCP) requires a paid Mobbin Pro account (minimum $10/month).", "The inability to access a paid Mobbin account blocked the retrieval of images during live queries."]
+open_questions: ["Does the user have a paid Mobbin account to connect?", "Does the user want to explore another approach for UI/UX analysis?"]
+next_steps: ["The user needs to confirm if they have a paid Mobbin account to connect.", "The user needs to decide if they wish to explore an alternative approach for UI/UX analysis if a paid Mobbin account is not available."]
 url: "https://manus.im/app/task/3LlE0NGSBHd76UQVWYKMss"
 ---
 

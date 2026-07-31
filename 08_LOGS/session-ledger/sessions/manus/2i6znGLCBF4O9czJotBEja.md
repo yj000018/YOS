@@ -1,11 +1,21 @@
 ---
-id: 2i6znGLCBF4O9czJotBEja
+id: "2i6znGLCBF4O9czJotBEja"
 title: "[✓] Architecture Y-OS : échec n8n Manus Cloud, pivot vers N100 Lambda + Capabilities Map"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "N100 Lambda", "Capabilities Map", "n8n", "Home Assistant"]
 tags: []
 summary: ""
+executive_summary: "The session started with the user attempting to access their N100 server, but the assistant identified a Manus Cloud Computer GCP instance instead. The N100 was not connected, and instructions were provided for its setup. The session title indicates a prior failure with n8n on Manus Cloud and a pivot towards N100 Lambda and a Capabilities Map, which the user then prompted for."
+context_and_intent: "The user's initial intent was to access their N100 server, believing it was connected, and inquired about the impact of a WiFi change. The broader context, as per the session title, involves a strategic pivot from a failed n8n Manus Cloud architecture to N100 Lambda and the development of a Capabilities Map for applications/SaaS."
+what_was_done: "The assistant identified the currently connected device as a Manus Cloud Computer GCP, not the N100. It provided detailed specifications of the GCP instance and clarified that the N100 Lambda was not connected. Instructions were given on how to install the Manus Desktop Client on the N100 and connect it to the session. The assistant also confirmed that a WiFi change would not prevent the Manus client from reconnecting. The user then initiated a request for a \"complete Excalibur architecture trace of apps/SaaS\"."
+outputs_produced: [{"description": "Identification and specifications of the Manus Cloud Computer GCP instance.", "name": "Device Identification", "type": "Information"}, {"description": "Steps to install Manus Desktop Client and connect the N100 Lambda.", "name": "N100 Connection Instructions", "type": "Instructions"}]
+key_decisions: ["The decision to pivot from n8n Manus Cloud architecture to N100 Lambda and a Capabilities Map (as indicated by the session title).", "The implicit decision to proceed with connecting the N100 and then tracing the architecture."]
+lessons_learned: {"discoveries": ["The connected device was a Manus Cloud Computer GCP, not the N100.", "The GCP instance had 3.8 GB RAM, possibly an upgrade.", "The Manus client automatically handles WiFi changes and reconnects."], "failed_or_suboptimal": ["The n8n Manus Cloud architecture previously failed.", "The N100 was not connected as expected by the user."], "worked_well": ["The assistant accurately identified the connected device and its specifications.", "The assistant provided clear instructions for connecting the N100.", "The Manus client's automatic reconnection feature for WiFi changes is a positive aspect."]}
+challenges_and_blockers: ["User initially mistook the connected device (Manus Cloud Computer GCP) for their N100 server.", "The N100 Lambda was not connected to the session, requiring manual setup.", "A prior architecture using n8n on Manus Cloud had failed, necessitating a pivot."]
+open_questions: ["Was the RAM upgrade on the GCP instance intentional or a surprise?", "Will the user proceed with planning the N100 client installation with the assistant?"]
+next_steps: ["The user needs to install the Manus Desktop Client on their N100 server.", "The user needs to connect the N100 to the Manus session.", "The assistant offered to plan the N100 client installation.", "The user requested a \"complete Excalibur architecture trace of apps/SaaS\", which is the next task."]
 url: "https://manus.im/app/task/2i6znGLCBF4O9czJotBEja"
 ---
 

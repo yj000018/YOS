@@ -1,11 +1,21 @@
 ---
-id: jHeC4WPRLQMcHBF2wx96YA
+id: "jHeC4WPRLQMcHBF2wx96YA"
 title: "[✓] Problème d'installation/confirmation d'action sur iOS"
 date: "2026-03-03"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["iOS", "browser", "UX", "bug", "payment", "Manus app", "flow interruption"]
 summary: "User reports flow interruption on iOS due to Manus app's browser confirmation popup during payment, seeking a smoother experience."
+executive_summary: "A user is frustrated by a persistent browser confirmation prompt on iOS during payment, which interrupts their workflow. They seek solutions to bypass this prompt, either by defaulting to the current browser, allowing a desktop switch, or permanently disabling the question."
+context_and_intent: "The user is experiencing a recurring interruption during the iOS payment process where the assistant prompts them about browser usage. The user's intent is to streamline this process by either having the assistant automatically use the default browser, allowing a seamless switch to desktop, or providing an option to permanently disable the prompt."
+what_was_done: "The user reported a persistent issue with the iOS payment flow being interrupted by a browser confirmation prompt. They articulated their frustration and proposed several potential solutions or asked for clarification on existing options to bypass or manage this interruption. The assistant acknowledged the issue and initiated a technical explanation."
+outputs_produced: [{"description": "The assistant acknowledges the user's complaint and begins to explain the technical reality of the situation.", "name": "First Response", "type": "Assistant Message"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: ["Recurring interruption in the iOS payment flow due to a browser confirmation prompt.", "Disruption of user workflow and perceived inefficiency."]
+open_questions: ["Does the user have any choice regarding the browser prompt?", "Can the user resume the process from a desktop?", "Is it possible for the assistant to automatically use the default browser on iOS without asking?", "Can the assistant be configured to never ask the browser question again?", "Can the assistant recommend switching to a desktop browser for speed, and would it make a difference?", "Does using the current iOS browser versus a desktop browser make a difference in the payment flow?"]
+next_steps: ["Assistant to provide a technical explanation for the current behavior.", "Explore options for automatic default browser usage on iOS.", "Investigate possibility of a 'never ask again' option for the browser prompt.", "Evaluate if a desktop browser offers a significant performance advantage for payments."]
 url: "https://manus.im/app/task/jHeC4WPRLQMcHBF2wx96YA"
 ---
 

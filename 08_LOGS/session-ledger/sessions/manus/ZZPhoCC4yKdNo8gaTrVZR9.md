@@ -1,11 +1,21 @@
 ---
-id: ZZPhoCC4yKdNo8gaTrVZR9
+id: "ZZPhoCC4yKdNo8gaTrVZR9"
 title: "Audit Legacy Fact Sheets and Verbatim Preservation Task"
 date: "2026-07-21"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Manus", "MAP v2", "FUSION", "Legacy Fact Sheets"]
 tags: ["Audit", "Legacy Data", "Data Preservation"]
 summary: ""
+executive_summary: "The session initiated a read-only audit (Gate G1) for the FUSION/MAP v2 reconstruction program, focusing on legacy Fact Sheets and verbatim preservation. The core task involves building a reproducible stratified sample of at least 30 records from Notion, based on multiple criteria. The audit has been launched."
+context_and_intent: "To conduct a read-only audit (Gate G1) of legacy Fact Sheets and verbatim preservation for the FUSION/MAP v2 reconstruction program, using parallel processing. The audit targets Notion data and a specific GitHub branch, without altering any existing data or creating new branches."
+what_was_done: "The audit G1 was launched in read-only mode on Notion, with sampling initiated. The task involves building a reproducible stratified sample of at least 30 records, stratified by Project, Depth, Length, Language, date range, UID presence/absence, and suspected duplicates, including landmark records."
+outputs_produced: [{"description": "A reproducible stratified sample of at least 30 records from Notion, covering various criteria for the audit.", "name": "Stratified Sample of Records", "type": "Data Sample"}]
+key_decisions: ["Use parallel processing (Wide Research) for the audit.", "Perform a read-only audit on Notion, without altering pages or creating new branches.", "Build a reproducible stratified sample of at least 30 records.", "Stratify the sample across Project, Depth, Length, Language, date range, UID presence/missing, and suspected duplicates.", "Include all landmark records if the total is manageable."]
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: ["Complete the reproducible stratified sampling of at least 30 records.", "Analyze the sampled records as part of the audit of legacy Fact Sheets and verbatim preservation.", "Address the condition for including landmark records (explain if total is not manageable)."]
 url: "https://manus.im/app/task/ZZPhoCC4yKdNo8gaTrVZR9"
 ---
 

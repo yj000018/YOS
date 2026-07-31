@@ -1,0 +1,57 @@
+{
+  "schema_version": "fusion-manus-validation/v1",
+  "repo": "/home/ubuntu/yos",
+  "git_head": "6f60c8f681a0ce8c29d9ec2a7dd3dcb1928a52f9",
+  "expected_count": 564,
+  "factsheets": {
+    "file_count": 564,
+    "valid_frontmatter": 564,
+    "unique_native_ids": 564,
+    "duplicate_native_ids": 0,
+    "verbatim_nonempty": 564,
+    "index_path": "/home/ubuntu/yos/08_LOGS/session-ledger/sessions/manus/INDEX.md",
+    "index_link_count": 564,
+    "index_missing_files": 0,
+    "index_orphan_files": 0
+  },
+  "master_ledger": {
+    "path": "/home/ubuntu/yos/08_LOGS/session-ledger/data/master_ledger_manus.json",
+    "sha256": "3a1b2b5b3121614b1822d21fa1158710e66c196e5236623f54808e11caf3bf2f",
+    "parse_ok": true,
+    "record_count": 564,
+    "unique_id_count": 564,
+    "duplicate_id_count": 0,
+    "id_key_counts": {
+      "session_id": 564
+    }
+  },
+  "api_task_list": {
+    "path": "/home/ubuntu/yos/08_LOGS/session-ledger/api_task_list_full.json",
+    "sha256": "9c6a7f7445d987b4f4070eb39dfd2a8026e01de99c86c9d03c872070e2a9ad94",
+    "parse_ok": true,
+    "record_count": 564,
+    "unique_id_count": 564,
+    "duplicate_id_count": 0,
+    "id_key_counts": {
+      "id": 564
+    }
+  },
+  "three_way": {
+    "union_ids": 564,
+    "matched_all": 564,
+    "exceptions": 0
+  },
+  "kap": {
+    "path": "/home/ubuntu/KAP",
+    "available": true,
+    "markdown_files_with_native_id": 0,
+    "unique_task_ids": 0,
+    "duplicate_task_ids": 0
+  },
+  "issues": {
+    "errors": 0,
+    "warnings": 0,
+    "total": 0
+  },
+  "certificate": "M1_ACQUISITION_COMPLETE"
+}

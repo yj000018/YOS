@@ -361,7 +361,7 @@ Je génère le Tana Paste pendant que tu cherches sur Mac ?
 **[1773870245917] MANUS:** C'est le même token que dans 1Password — celui qui retourne "not valid for this endpoint". Le problème : l'API Input requiert un **Workspace Token**, pas un Personal Token. La doc dit "Tokens are assigned per workspace" — c'est différent des Personal Tokens.
 
 Je vais tester avec le bon endpoint pour les Personal Tokens — Tana a un endpoint Local API/MCP différent. Je teste maintenant.
-**[1773870237012] USER:** eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50SWQiOiJ5YW5uaWNrX2pvbGxpZXRAZ21haWxfY29tIiwiY3JlYXRlZCI6MTc3MDkxNzk0MDA0OSwidG9rZW5JZCI6Ilp3emw1ZkxFc0IxMSIsInR5cGUiOiJwZXJzb25hbCJ9.3zliA5f6G8UanBkNCu8K9U3OK7-7Xwi4WWv3WIB6e5A
+**[1773870237012] USER:** [REDACTED-JWT]
 **[1773870186323] MANUS:** Parfait — c'est exactement ce qu'il faut. Je vois un token existant `eyJ0e...B6e5A` créé le 12 février. C'est un **Personal Token** — compatible avec l'API Input.
 
 Clique **Copy** sur ce token et envoie-le moi. Je lance l'import complet immédiatement.

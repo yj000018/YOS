@@ -1,13 +1,12 @@
 ---
-session_id: 7BScHyk7bMPR69aq2nyW9j
+id: 7BScHyk7bMPR69aq2nyW9j
 title: "[✓] Deploy GPT-Manus Command Bridge Script with Automated Logging"
-date: 2026-01-06 02:15 UTC
-url: https://manus.im/app/sessions/7BScHyk7bMPR69aq2nyW9j
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "GPT-Manus"]
+tags: ["Deploy", "Command Bridge"]
+summary: ""
+url: "https://manus.im/app/task/7BScHyk7bMPR69aq2nyW9j"
 ---
 
 # [✓] Deploy GPT-Manus Command Bridge Script with Automated Logging

@@ -1,13 +1,12 @@
 ---
-session_id: lMztvgu67W1kF6KjuyVgna
+id: lMztvgu67W1kF6KjuyVgna
 title: "[✓] Creating Context Injection Skill (@ctx) for Project Development"
-date: 2026-03-30 05:14 UTC
-url: https://manus.im/app/sessions/lMztvgu67W1kF6KjuyVgna
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 13
-processed: true
+date: "2026-03-30"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "DAYLOG", "YOS-MMM", "LMP"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/lMztvgu67W1kF6KjuyVgna"
 ---
 
 # [✓] Creating Context Injection Skill (@ctx) for Project Development

@@ -1,13 +1,12 @@
 ---
-session_id: HtIJYpJJbMwFBudNbebP0S
+id: HtIJYpJJbMwFBudNbebP0S
 title: "Testing and Using Agent Opus Connector Features"
-date: 2026-07-22 22:34 UTC
-url: https://manus.im/app/sessions/HtIJYpJJbMwFBudNbebP0S
-project_id: imd9BRqHPV68nZkKkiUtWT
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-07-22"
+importance: 3
+projects: ["Y-OS"]
+tags: ["agent opus", "connector", "testing", "integration", "video generation", "data fetching"]
+summary: "Testing and using the Agent Opus connector to fetch account data, image models, styles, and voices for video generation."
+url: "https://manus.im/app/task/HtIJYpJJbMwFBudNbebP0S"
 ---
 
 # Testing and Using Agent Opus Connector Features

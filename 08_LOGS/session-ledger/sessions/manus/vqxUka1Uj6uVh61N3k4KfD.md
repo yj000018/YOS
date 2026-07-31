@@ -1,13 +1,12 @@
 ---
-session_id: vqxUka1Uj6uVh61N3k4KfD
+id: vqxUka1Uj6uVh61N3k4KfD
 title: "[✓] Fusion et Amélioration de Deux Skills AI pour Archivage"
-date: 2026-03-26 18:12 UTC
-url: https://manus.im/app/sessions/vqxUka1Uj6uVh61N3k4KfD
-project_id: none
-user_messages: 10
-assistant_messages: 18
-total_messages: 48
-processed: true
+date: "2026-03-26"
+importance: 3
+projects: ["Y-OS", "Memory Pipeline"]
+tags: ["archive", "AI skill", "Notion", "memory management", "workflow", "automation"]
+summary: ""
+url: "https://manus.im/app/task/vqxUka1Uj6uVh61N3k4KfD"
 ---
 
 # [✓] Fusion et Amélioration de Deux Skills AI pour Archivage

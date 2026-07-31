@@ -1,13 +1,12 @@
 ---
-session_id: kuYcm7Bpganrqg9hcmcNEx
+id: kuYcm7Bpganrqg9hcmcNEx
 title: "[✓] Deciphering Handwritten Notes and Setting Up LUDIVINE Project Memory"
-date: 2026-02-08 15:00 UTC
-url: https://manus.im/app/sessions/kuYcm7Bpganrqg9hcmcNEx
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 7
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: ["LUDIVINE", "Y-OS"]
+tags: ["handwritten notes", "transcription", "memory system", "Notion", "knowledge management"]
+summary: ""
+url: "https://manus.im/app/task/kuYcm7Bpganrqg9hcmcNEx"
 ---
 
 # [✓] Deciphering Handwritten Notes and Setting Up LUDIVINE Project Memory

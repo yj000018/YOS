@@ -1,13 +1,12 @@
 ---
-session_id: wMEhD9bZivhTv6jfQwxDDD
+id: wMEhD9bZivhTv6jfQwxDDD
 title: "[✓] Building Real-Time Crypto News Dashboard with Live Market Data"
-date: 2025-09-26 23:40 UTC
-url: https://manus.im/app/sessions/wMEhD9bZivhTv6jfQwxDDD
-project_id: none
-user_messages: 5
-assistant_messages: 10
-total_messages: 24
-processed: true
+date: "2025-09-26"
+importance: 3
+projects: ["Y-OS"]
+tags: ["crypto", "dashboard", "real-time data", "market analysis", "news"]
+summary: "Building and updating a real-time crypto news dashboard with live market data, headlines, and market sentiment."
+url: "https://manus.im/app/task/wMEhD9bZivhTv6jfQwxDDD"
 ---
 
 # [✓] Building Real-Time Crypto News Dashboard with Live Market Data

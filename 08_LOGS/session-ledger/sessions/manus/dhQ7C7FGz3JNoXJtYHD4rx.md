@@ -1,13 +1,12 @@
 ---
-session_id: dhQ7C7FGz3JNoXJtYHD4rx
+id: dhQ7C7FGz3JNoXJtYHD4rx
 title: "[✓] 100 Luxe Models: Comprehensive Spa & Whirlpool Research with Interactive Selection"
-date: 2025-09-15 08:48 UTC
-url: https://manus.im/app/sessions/dhQ7C7FGz3JNoXJtYHD4rx
-project_id: none
-user_messages: 17
-assistant_messages: 34
-total_messages: 264
-processed: true
+date: "2025-09-15"
+importance: 3
+projects: []
+tags: ["Spa", "Whirlpool", "Research", "Interactive Selection", "Luxe Models", "Product Comparison"]
+summary: "Comprehensive research and interactive compilation of 100 luxe spa and whirlpool models with advanced filters and recommendations."
+url: "https://manus.im/app/task/dhQ7C7FGz3JNoXJtYHD4rx"
 ---
 
 # [✓] 100 Luxe Models: Comprehensive Spa & Whirlpool Research with Interactive Selection

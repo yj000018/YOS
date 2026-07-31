@@ -1,13 +1,12 @@
 ---
-session_id: 5mWN7ieWw67ohHvoUCZZT6
+id: 5mWN7ieWw67ohHvoUCZZT6
 title: "[✓] YouTube Watch History Analyzer App Development and Deployment"
-date: 2025-09-29 21:47 UTC
-url: https://manus.im/app/sessions/5mWN7ieWw67ohHvoUCZZT6
-project_id: none
-user_messages: 3
-assistant_messages: 11
-total_messages: 29
-processed: true
+date: "2025-09-29"
+importance: 3
+projects: []
+tags: ["YouTube", "Watch History", "AI", "App Development", "Deployment", "Data Analysis", "Summarization"]
+summary: "Developed and deployed a YouTube Watch History Analyzer app that uses AI to summarize and categorize videos from Google Takeout."
+url: "https://manus.im/app/task/5mWN7ieWw67ohHvoUCZZT6"
 ---
 
 # [✓] YouTube Watch History Analyzer App Development and Deployment

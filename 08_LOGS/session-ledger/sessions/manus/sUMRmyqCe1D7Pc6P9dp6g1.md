@@ -1,13 +1,12 @@
 ---
-session_id: sUMRmyqCe1D7Pc6P9dp6g1
+id: sUMRmyqCe1D7Pc6P9dp6g1
 title: "Regrouper des sessions similaires avec historique et contenu croisé"
-date: 2026-02-15 02:17 UTC
-url: https://manus.im/app/sessions/sUMRmyqCe1D7Pc6P9dp6g1
-project_id: none
-user_messages: 37
-assistant_messages: 70
-total_messages: 184
-processed: true
+date: "2026-02-15"
+importance: 3
+projects: ["Y-OS"]
+tags: ["script", "JavaScript", "Black Friday", "Cyber Monday", "suppression", "gestion de sessions", "interface utilisateur"]
+summary: "Création d'un script JavaScript pour identifier et surligner visuellement les sessions Black Friday/Cyber Monday afin de les supprimer."
+url: "https://manus.im/app/task/sUMRmyqCe1D7Pc6P9dp6g1"
 ---
 
 # Regrouper des sessions similaires avec historique et contenu croisé

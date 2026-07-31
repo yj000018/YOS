@@ -1,13 +1,12 @@
 ---
-session_id: kJCPEhZvAv7MdJHsYshpCE
+id: kJCPEhZvAv7MdJHsYshpCE
 title: "[✓] Manus to Notion Session Export PoC - Multi-mode Export System"
-date: 2026-03-16 01:30 UTC
-url: https://manus.im/app/sessions/kJCPEhZvAv7MdJHsYshpCE
-project_id: none
-user_messages: 7
-assistant_messages: 15
-total_messages: 37
-processed: true
+date: "2026-03-16"
+importance: 3
+projects: ["Manus", "Notion", "Manus to Notion Exporter"]
+tags: ["PoC", "Export System", "Multi-mode Export", "Verbatim"]
+summary: ""
+url: "https://manus.im/app/task/kJCPEhZvAv7MdJHsYshpCE"
 ---
 
 # [✓] Manus to Notion Session Export PoC - Multi-mode Export System

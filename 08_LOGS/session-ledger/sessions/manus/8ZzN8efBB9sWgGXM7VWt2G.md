@@ -1,13 +1,12 @@
 ---
-session_id: 8ZzN8efBB9sWgGXM7VWt2G
+id: 8ZzN8efBB9sWgGXM7VWt2G
 title: "[✓] Testing and Using the Invideo Connector Features"
-date: 2025-12-29 04:34 UTC
-url: https://manus.im/app/sessions/8ZzN8efBB9sWgGXM7VWt2G
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 4
-processed: true
+date: "2025-12-29"
+importance: 2
+projects: ["Y-OS"]
+tags: ["Invideo", "Connector", "Testing", "AI Video Generation", "Script-to-Video", "Automation"]
+summary: "Testing and demonstrating the Invideo AI-powered video generation connector, focusing on script-to-video automation features."
+url: "https://manus.im/app/task/8ZzN8efBB9sWgGXM7VWt2G"
 ---
 
 # [✓] Testing and Using the Invideo Connector Features

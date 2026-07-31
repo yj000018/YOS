@@ -1,13 +1,12 @@
 ---
-session_id: idLfSMpEy4y9uwm3WWSfjb
-title: "YOS Scripts "
-date: 2026-02-25 13:24 UTC
-url: https://manus.im/app/sessions/idLfSMpEy4y9uwm3WWSfjb
-project_id: none
-user_messages: 164
-assistant_messages: 259
-total_messages: 670
-processed: true
+id: idLfSMpEy4y9uwm3WWSfjb
+title: "YOS Scripts"
+date: "2026-02-25"
+importance: 3
+projects: ["YOS", "MMM", "YOS Archiver / Hub", "FINE", "RELAVANCE.AI"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/idLfSMpEy4y9uwm3WWSfjb"
 ---
 
 # YOS Scripts 

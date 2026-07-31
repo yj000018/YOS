@@ -1,13 +1,12 @@
 ---
-session_id: 2jpS92znY1borhds4jaxZ3
+id: 2jpS92znY1borhds4jaxZ3
 title: "(Partager les sessions via lien de synthèse globale)"
-date: 2026-07-31
-url: https://manus.im/app/2jpS92znY1borhds4jaxZ3
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 149
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: []
+tags: ["session management", "sharing", "synthesis", "platform feature"]
+summary: ""
+url: "https://manus.im/app/task/2jpS92znY1borhds4jaxZ3"
 ---
 
 # (Partager les sessions via lien de synthèse globale)

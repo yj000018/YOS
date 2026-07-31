@@ -1,13 +1,12 @@
 ---
-session_id: ufMn2ofajUAXFixiXi8PKR
+id: ufMn2ofajUAXFixiXi8PKR
 title: "[✓] ClawBridge Desktop Automation Agent Installation and Configuration"
-date: 2026-03-27 15:25 UTC
-url: https://manus.im/app/sessions/ufMn2ofajUAXFixiXi8PKR
-project_id: none
-user_messages: 18
-assistant_messages: 30
-total_messages: 75
-processed: true
+date: "2026-03-27"
+importance: 3
+projects: ["ClawBridge", "OpenClaw"]
+tags: ["Desktop Automation", "Web Automation", "AI Agent", "Installation", "Configuration", "API Keys"]
+summary: ""
+url: "https://manus.im/app/task/ufMn2ofajUAXFixiXi8PKR"
 ---
 
 # [✓] ClawBridge Desktop Automation Agent Installation and Configuration

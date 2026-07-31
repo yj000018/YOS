@@ -1,13 +1,12 @@
 ---
-session_id: t3rsqhM2scHKSbwynCgZKU
+id: t3rsqhM2scHKSbwynCgZKU
 title: "[✓] Tally MCP Connector — Test, Capability Brief & Notion Onboarding"
-date: 2026-06-16 09:07 UTC
-url: https://manus.im/app/sessions/t3rsqhM2scHKSbwynCgZKU
-project_id: none
-user_messages: 4
-assistant_messages: 7
-total_messages: 19
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Tally", "MCP Connector", "Test", "Notion", "Tools Registry", "Fact Sheet", "Automation"]
+summary: ""
+url: "https://manus.im/app/task/t3rsqhM2scHKSbwynCgZKU"
 ---
 
 # [✓] Tally MCP Connector — Test, Capability Brief & Notion Onboarding

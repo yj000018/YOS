@@ -1,13 +1,12 @@
 ---
-session_id: rj62GnPvxUOx9XqKn9Oja1
+id: rj62GnPvxUOx9XqKn9Oja1
 title: "[✓] macOS App Audit & Cleanup — M4 Mac / 1071 Apps Triage"
-date: 2026-05-11 19:07 UTC
-url: https://manus.im/app/sessions/rj62GnPvxUOx9XqKn9Oja1
-project_id: KkbgmW9PGcVHXCkPhWbV2q
-user_messages: 26
-assistant_messages: 41
-total_messages: 129
-processed: true
+date: "2026-05-11"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Mac App Index", "Jarvis", "Notion"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/rj62GnPvxUOx9XqKn9Oja1"
 ---
 
 # [✓] macOS App Audit & Cleanup — M4 Mac / 1071 Apps Triage

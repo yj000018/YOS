@@ -1,13 +1,12 @@
 ---
-session_id: a9sENjEWPAGT1L9SgnzT4V
+id: a9sENjEWPAGT1L9SgnzT4V
 title: "[✓] Comparison Analysis: Sintra AI vs Y-OS Team for Cognitive Architecture"
-date: 2026-03-03 00:27 UTC
-url: https://manus.im/app/sessions/a9sENjEWPAGT1L9SgnzT4V
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 9
-processed: true
+date: "2026-03-03"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Sintra AI", "Cognitive Architecture", "AI Agents", "Comparison", "OS Cognitif", "AI Employees", "System Architecture"]
+summary: "Analyse comparative de Sintra AI (agents métier packagés) et Y-OS (OS cognitif modulaire) pour l'architecture cognitive."
+url: "https://manus.im/app/task/a9sENjEWPAGT1L9SgnzT4V"
 ---
 
 # [✓] Comparison Analysis: Sintra AI vs Y-OS Team for Cognitive Architecture

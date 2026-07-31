@@ -1,13 +1,12 @@
 ---
-session_id: eak6dAJxZKruhgQhMUhTHh
+id: eak6dAJxZKruhgQhMUhTHh
 title: "[✓] Pulse Challenge App - Complete Project Brief & Development"
-date: 2026-04-07 07:58 UTC
-url: https://manus.im/app/sessions/eak6dAJxZKruhgQhMUhTHh
-project_id: BvaDD4T2s54TsyQCiJo8Xw
-user_messages: 6
-assistant_messages: 15
-total_messages: 32
-processed: true
+date: "2026-04-07"
+importance: 3
+projects: ["Pulse Challenge App", "Y-OS"]
+tags: ["Project Brief", "App Development"]
+summary: ""
+url: "https://manus.im/app/task/eak6dAJxZKruhgQhMUhTHh"
 ---
 
 # [✓] Pulse Challenge App - Complete Project Brief & Development

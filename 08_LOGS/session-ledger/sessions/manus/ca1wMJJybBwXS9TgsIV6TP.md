@@ -1,13 +1,12 @@
 ---
-session_id: ca1wMJJybBwXS9TgsIV6TP
+id: ca1wMJJybBwXS9TgsIV6TP
 title: "[✓] Y-OS Subscription Cleanup — CHF 5,293 audited, 54% reduction achieved"
-date: 2026-06-18 23:33 UTC
-url: https://manus.im/app/sessions/ca1wMJJybBwXS9TgsIV6TP
-project_id: none
-user_messages: 3
-assistant_messages: 9
-total_messages: 20
-processed: true
+date: "2026-06-18"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "CasaTAO", "PKM/Memory"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/ca1wMJJybBwXS9TgsIV6TP"
 ---
 
 # [✓] Y-OS Subscription Cleanup — CHF 5,293 audited, 54% reduction achieved

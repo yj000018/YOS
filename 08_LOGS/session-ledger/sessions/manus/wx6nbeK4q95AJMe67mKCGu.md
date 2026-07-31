@@ -1,13 +1,12 @@
 ---
-session_id: wx6nbeK4q95AJMe67mKCGu
+id: wx6nbeK4q95AJMe67mKCGu
 title: "[✓] Universal Selector Architecture - Multi-Session Archive System"
-date: 2026-03-02 23:11 UTC
-url: https://manus.im/app/sessions/wx6nbeK4q95AJMe67mKCGu
-project_id: none
-user_messages: 20
-assistant_messages: 50
-total_messages: 109
-processed: true
+date: "2026-03-02"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Universal Selector", "Multi-Session Archive System", "Manus Memory Hub", "LLM Memory Pipeline", "Fransai Basic", "Mac Bridge", "Trace Excalidraw", "Manus API Integration", "Blueprint ONE", "RADAR-MCP", "ODYSSEY", "RELAVANCE.AI", "Dual-Layer Archite"]
+tags: ["Architecture", "Universal Selector"]
+summary: ""
+url: "https://manus.im/app/task/wx6nbeK4q95AJMe67mKCGu"
 ---
 
 # [✓] Universal Selector Architecture - Multi-Session Archive System

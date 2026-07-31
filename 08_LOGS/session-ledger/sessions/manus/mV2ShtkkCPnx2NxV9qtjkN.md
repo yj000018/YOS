@@ -1,13 +1,12 @@
 ---
-session_id: mV2ShtkkCPnx2NxV9qtjkN
+id: mV2ShtkkCPnx2NxV9qtjkN
 title: "[✓] Cryptocurrency Market Analysis and Price Predictions for 2025-2026"
-date: 2025-07-28 02:29 UTC
-url: https://manus.im/app/sessions/mV2ShtkkCPnx2NxV9qtjkN
-project_id: none
-user_messages: 2
-assistant_messages: 2
-total_messages: 37
-processed: true
+date: "2025-07-28"
+importance: 3
+projects: []
+tags: ["Cryptocurrency", "Market Analysis", "Price Prediction", "Raoul Pal", "BTC", "ETH", "XRP", "SOL"]
+summary: "Analyse du marché des cryptomonnaies (BTC, ETH, XRP, SOL) et prévisions de prix pour 2025-2026, incluant les insights de Raoul Pal."
+url: "https://manus.im/app/task/mV2ShtkkCPnx2NxV9qtjkN"
 ---
 
 # [✓] Cryptocurrency Market Analysis and Price Predictions for 2025-2026

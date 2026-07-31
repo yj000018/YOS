@@ -1,13 +1,12 @@
 ---
-session_id: bFZYJHNF9xsmqDiiktTnGD
+id: bFZYJHNF9xsmqDiiktTnGD
 title: "[✓] GRAVIS Scooter Price Comparison Dashboard Development and Vendor Research"
-date: 2025-06-25 04:03 UTC
-url: https://manus.im/app/sessions/bFZYJHNF9xsmqDiiktTnGD
-project_id: none
-user_messages: 11
-assistant_messages: 23
-total_messages: 252
-processed: true
+date: "2025-06-25"
+importance: 3
+projects: ["GRAVIS"]
+tags: ["Scooter", "Price Comparison", "Dashboard Development", "Vendor Research", "Email Collection"]
+summary: "Développement d'un tableau de bord de comparaison de prix pour scooters GRAVIS et recherche de vendeurs non-britanniques."
+url: "https://manus.im/app/task/bFZYJHNF9xsmqDiiktTnGD"
 ---
 
 # [✓] GRAVIS Scooter Price Comparison Dashboard Development and Vendor Research

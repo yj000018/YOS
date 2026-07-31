@@ -1,13 +1,12 @@
 ---
-session_id: hoM2QCiAYoAfYdQ1Lxu2s9
+id: hoM2QCiAYoAfYdQ1Lxu2s9
 title: "[✓] Cloudflare MCP Connector — Live Test & Y-OS Factsheet"
-date: 2026-06-16 08:53 UTC
-url: https://manus.im/app/sessions/hoM2QCiAYoAfYdQ1Lxu2s9
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Cloudflare", "MCP Connector", "Live Test", "Factsheet"]
+summary: ""
+url: "https://manus.im/app/task/hoM2QCiAYoAfYdQ1Lxu2s9"
 ---
 
 # [✓] Cloudflare MCP Connector — Live Test & Y-OS Factsheet

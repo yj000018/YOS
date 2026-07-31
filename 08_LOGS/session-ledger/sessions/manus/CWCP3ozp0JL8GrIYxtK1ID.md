@@ -1,13 +1,12 @@
 ---
-session_id: CWCP3ozp0JL8GrIYxtK1ID
+id: CWCP3ozp0JL8GrIYxtK1ID
 title: "[✓] Create TEAM - Relevance AI Email Management System Deployment"
-date: 2026-01-04 23:41 UTC
-url: https://manus.im/app/sessions/CWCP3ozp0JL8GrIYxtK1ID
-project_id: none
-user_messages: 167
-assistant_messages: 316
-total_messages: 768
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "yOS Nexus", "Y-COO", "Y-PA"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/CWCP3ozp0JL8GrIYxtK1ID"
 ---
 
 # [✓] Create TEAM - Relevance AI Email Management System Deployment

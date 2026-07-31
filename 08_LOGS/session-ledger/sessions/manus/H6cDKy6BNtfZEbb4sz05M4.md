@@ -1,13 +1,12 @@
 ---
-session_id: H6cDKy6BNtfZEbb4sz05M4
+id: H6cDKy6BNtfZEbb4sz05M4
 title: "CREATE Y-TEAM"
-date: 2026-01-04 04:52 UTC
-url: https://manus.im/app/sessions/H6cDKy6BNtfZEbb4sz05M4
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 7
-assistant_messages: 13
-total_messages: 44
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "AI Agent Team", "Relevance AI", "PRÉCIPITATION"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/H6cDKy6BNtfZEbb4sz05M4"
 ---
 
 # CREATE Y-TEAM

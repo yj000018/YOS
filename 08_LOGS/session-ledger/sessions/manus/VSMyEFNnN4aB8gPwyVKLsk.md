@@ -1,13 +1,12 @@
 ---
-session_id: VSMyEFNnN4aB8gPwyVKLsk
+id: VSMyEFNnN4aB8gPwyVKLsk
 title: "Différences entre Claude et Cloud Work pour iOS"
-date: 2026-02-23 19:02 UTC
-url: https://manus.im/app/sessions/VSMyEFNnN4aB8gPwyVKLsk
-project_id: none
-user_messages: 12
-assistant_messages: 18
-total_messages: 53
-processed: true
+date: "2026-02-23"
+importance: 3
+projects: ["Y-OS", "Manus", "Manus Browser", "MCP Playwright"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/VSMyEFNnN4aB8gPwyVKLsk"
 ---
 
 # Différences entre Claude et Cloud Work pour iOS

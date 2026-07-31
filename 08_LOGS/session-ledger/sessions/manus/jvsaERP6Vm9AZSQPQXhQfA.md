@@ -1,13 +1,12 @@
 ---
-session_id: jvsaERP6Vm9AZSQPQXhQfA
+id: jvsaERP6Vm9AZSQPQXhQfA
 title: "[✓] /memoriser Skill — Live Demo & First Production Push to yOS Notion Memory Inbox"
-date: 2026-04-26 06:31 UTC
-url: https://manus.im/app/sessions/jvsaERP6Vm9AZSQPQXhQfA
-project_id: none
-user_messages: 1
-assistant_messages: 6
-total_messages: 9
-processed: true
+date: "2026-04-26"
+importance: 3
+projects: ["Y-OS", "Memory Pipeline", "ODYSSEY"]
+tags: ["architecture", "memory", "decision", "research", "skill", "notion"]
+summary: ""
+url: "https://manus.im/app/task/jvsaERP6Vm9AZSQPQXhQfA"
 ---
 
 # [✓] /memoriser Skill — Live Demo & First Production Push to yOS Notion Memory Inbox

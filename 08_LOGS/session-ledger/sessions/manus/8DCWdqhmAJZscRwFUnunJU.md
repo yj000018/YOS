@@ -1,13 +1,12 @@
 ---
-session_id: 8DCWdqhmAJZscRwFUnunJU
+id: 8DCWdqhmAJZscRwFUnunJU
 title: "[✓] Protocole de fusion de sessions ChatGPT redondantes - MVP fonctionnel"
-date: 2026-03-14 10:03 UTC
-url: https://manus.im/app/sessions/8DCWdqhmAJZscRwFUnunJU
-project_id: none
-user_messages: 6
-assistant_messages: 10
-total_messages: 30
-processed: true
+date: "2026-03-14"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "YOS-MMM", "Session Navigator", "Session Synthesizer"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/8DCWdqhmAJZscRwFUnunJU"
 ---
 
 # [✓] Protocole de fusion de sessions ChatGPT redondantes - MVP fonctionnel

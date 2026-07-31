@@ -1,13 +1,12 @@
 ---
-session_id: jCc414xZnW6HRD2QZOrfeZ
+id: jCc414xZnW6HRD2QZOrfeZ
 title: "[✓] YOS Architecture MVP Roadmap + Manus Cloud Computer Evaluation"
-date: 2026-05-04 19:56 UTC
-url: https://manus.im/app/sessions/jCc414xZnW6HRD2QZOrfeZ
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 13
-processed: true
+date: "2026-05-04"
+importance: 3
+projects: ["Y-OS"]
+tags: ["YOS Architecture", "MVP Roadmap", "Manus Cloud Computer", "Evaluation"]
+summary: ""
+url: "https://manus.im/app/task/jCc414xZnW6HRD2QZOrfeZ"
 ---
 
 # [✓] YOS Architecture MVP Roadmap + Manus Cloud Computer Evaluation

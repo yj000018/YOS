@@ -1,13 +1,12 @@
 ---
-session_id: 43ON8tw7meQ2k3tqomfrJ5
+id: 43ON8tw7meQ2k3tqomfrJ5
 title: "[✓] Google Drive Full Reorganization — MyDrive Architecture & Triage"
-date: 2026-05-04 16:20 UTC
-url: https://manus.im/app/sessions/43ON8tw7meQ2k3tqomfrJ5
-project_id: none
-user_messages: 9
-assistant_messages: 25
-total_messages: 50
-processed: true
+date: "2026-05-04"
+importance: 3
+projects: ["Y-OS", "CasaTAO"]
+tags: ["Google Drive", "File Management", "Infrastructure", "Digital Organization", "Triage"]
+summary: ""
+url: "https://manus.im/app/task/43ON8tw7meQ2k3tqomfrJ5"
 ---
 
 # [✓] Google Drive Full Reorganization — MyDrive Architecture & Triage

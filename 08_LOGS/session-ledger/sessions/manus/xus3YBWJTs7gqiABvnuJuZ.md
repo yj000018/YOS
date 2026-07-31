@@ -1,13 +1,12 @@
 ---
-session_id: xus3YBWJTs7gqiABvnuJuZ
+id: xus3YBWJTs7gqiABvnuJuZ
 title: "[✓] Semrush MCP Connector — Test & Factsheet Y-OS"
-date: 2026-06-16 09:56 UTC
-url: https://manus.im/app/sessions/xus3YBWJTs7gqiABvnuJuZ
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Semrush MCP", "Factsheet", "Test", "API", "Pricing", "Notion", "iOS", "Connector", "Technology", "Infrastructure"]
+summary: "Test et création d'une factsheet Semrush MCP pour Y-OS, couvrant capacités, limites, pricing et intégration, archivée dans Notion."
+url: "https://manus.im/app/task/xus3YBWJTs7gqiABvnuJuZ"
 ---
 
 # [✓] Semrush MCP Connector — Test & Factsheet Y-OS

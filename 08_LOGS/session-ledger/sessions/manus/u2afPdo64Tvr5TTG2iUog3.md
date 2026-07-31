@@ -1,13 +1,12 @@
 ---
-session_id: u2afPdo64Tvr5TTG2iUog3
+id: u2afPdo64Tvr5TTG2iUog3
 title: "[✓] Chalet Housewarming Invitation Website Creation and Deployment"
-date: 2025-08-16 19:31 UTC
-url: https://manus.im/app/sessions/u2afPdo64Tvr5TTG2iUog3
-project_id: none
-user_messages: 4
-assistant_messages: 7
-total_messages: 54
-processed: true
+date: "2025-08-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["website", "deployment", "invitation", "housewarming", "chalet", "web service", "permanent deployment"]
+summary: ""
+url: "https://manus.im/app/task/u2afPdo64Tvr5TTG2iUog3"
 ---
 
 # [✓] Chalet Housewarming Invitation Website Creation and Deployment

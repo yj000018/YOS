@@ -1,13 +1,12 @@
 ---
-session_id: gN8Y4HpT43wuANHzWg6v17
+id: gN8Y4HpT43wuANHzWg6v17
 title: "[✓] Création d'une vitrine interactive pour agence immobilière"
-date: 2026-01-01 11:12 UTC
-url: https://manus.im/app/sessions/gN8Y4HpT43wuANHzWg6v17
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 12
-processed: true
+date: "2026-01-01"
+importance: 3
+projects: []
+tags: ["vitrine interactive", "agence immobilière", "immobilier", "consulting", "business plan", "AI", "solution digitale", "marketing", "présentation", "DIY", "clé en main"]
+summary: "Définition d'une vitrine interactive pour agence immobilière, incluant analyse de solutions, business plan et intégration d'IA."
+url: "https://manus.im/app/task/gN8Y4HpT43wuANHzWg6v17"
 ---
 
 # [✓] Création d'une vitrine interactive pour agence immobilière

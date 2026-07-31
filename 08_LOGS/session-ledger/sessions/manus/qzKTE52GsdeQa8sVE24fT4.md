@@ -1,13 +1,12 @@
 ---
-session_id: qzKTE52GsdeQa8sVE24fT4
+id: qzKTE52GsdeQa8sVE24fT4
 title: "[✓] Architecture mémoire Y-OS : Knowledge Recall natif vs Memory Management Yannick"
-date: 2026-03-03 09:06 UTC
-url: https://manus.im/app/sessions/qzKTE52GsdeQa8sVE24fT4
-project_id: none
-user_messages: 104
-assistant_messages: 140
-total_messages: 436
-processed: true
+date: "2026-03-03"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "MMM", "KOR", "SSA", "Archive Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/qzKTE52GsdeQa8sVE24fT4"
 ---
 
 # [✓] Architecture mémoire Y-OS : Knowledge Recall natif vs Memory Management Yannick

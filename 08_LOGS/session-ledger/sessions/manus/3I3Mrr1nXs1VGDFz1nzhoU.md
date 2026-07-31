@@ -1,13 +1,12 @@
 ---
-session_id: 3I3Mrr1nXs1VGDFz1nzhoU
+id: 3I3Mrr1nXs1VGDFz1nzhoU
 title: "[✓] Best Price Search for Livasia Thai Cushion with Swiss Delivery"
-date: 2026-01-25 17:17 UTC
-url: https://manus.im/app/sessions/3I3Mrr1nXs1VGDFz1nzhoU
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 7
-processed: true
+date: "2026-01-25"
+importance: 3
+projects: []
+tags: ["shopping", "price comparison", "product search", "swiss delivery", "livasia"]
+summary: ""
+url: "https://manus.im/app/task/3I3Mrr1nXs1VGDFz1nzhoU"
 ---
 
 # [✓] Best Price Search for Livasia Thai Cushion with Swiss Delivery

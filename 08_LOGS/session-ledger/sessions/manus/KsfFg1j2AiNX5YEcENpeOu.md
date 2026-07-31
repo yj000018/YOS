@@ -1,13 +1,12 @@
 ---
-session_id: KsfFg1j2AiNX5YEcENpeOu
+id: KsfFg1j2AiNX5YEcENpeOu
 title: "[✓] Testing Vercel MCP Connector Integration and Feature Exploration"
-date: 2026-03-31 21:15 UTC
-url: https://manus.im/app/sessions/KsfFg1j2AiNX5YEcENpeOu
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-03-31"
+importance: 2
+projects: ["Y-OS"]
+tags: ["Testing", "Vercel", "MCP Connector", "Integration", "Feature Exploration", "Domain Management", "Cloud Computing", "AI Gateway"]
+summary: "Testing Vercel MCP connector integration, exploring features, checking Y-OS domains, and retrieving Fluid Compute/AI Gateway docs."
+url: "https://manus.im/app/task/KsfFg1j2AiNX5YEcENpeOu"
 ---
 
 # [✓] Testing Vercel MCP Connector Integration and Feature Exploration

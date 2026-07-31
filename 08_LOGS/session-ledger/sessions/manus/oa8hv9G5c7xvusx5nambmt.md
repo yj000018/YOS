@@ -1,13 +1,12 @@
 ---
-session_id: oa8hv9G5c7xvusx5nambmt
+id: oa8hv9G5c7xvusx5nambmt
 title: "[✓] AI Micro-Cell Execution Protocol & Restaurant Booking"
-date: 2026-01-04 02:01 UTC
-url: https://manus.im/app/sessions/oa8hv9G5c7xvusx5nambmt
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 12
-assistant_messages: 23
-total_messages: 63
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS", "AI Micro-Cell Execution Protocol", "Restaurant Booking"]
+tags: ["AI"]
+summary: ""
+url: "https://manus.im/app/task/oa8hv9G5c7xvusx5nambmt"
 ---
 
 # [✓] AI Micro-Cell Execution Protocol & Restaurant Booking

@@ -1,13 +1,12 @@
 ---
-session_id: f327wsFMTg4YUVXSRJzQ7n
+id: f327wsFMTg4YUVXSRJzQ7n
 title: "[✓] Knowledge Base Migration: 16 Core Manus Entries Setup"
-date: 2026-03-06 23:13 UTC
-url: https://manus.im/app/sessions/f327wsFMTg4YUVXSRJzQ7n
-project_id: none
-user_messages: 5
-assistant_messages: 9
-total_messages: 27
-processed: true
+date: "2026-03-06"
+importance: 3
+projects: ["Y-OS", "Manus", "Mem0", "Manus Memory Hub", "RELAVANCE.AI"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/f327wsFMTg4YUVXSRJzQ7n"
 ---
 
 # [✓] Knowledge Base Migration: 16 Core Manus Entries Setup

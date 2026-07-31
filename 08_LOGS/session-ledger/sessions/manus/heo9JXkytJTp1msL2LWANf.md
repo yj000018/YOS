@@ -1,13 +1,12 @@
 ---
-session_id: heo9JXkytJTp1msL2LWANf
+id: heo9JXkytJTp1msL2LWANf
 title: "[✓] -- yOS FULL STACK --"
-date: 2026-06-30 10:08 UTC
-url: https://manus.im/app/sessions/heo9JXkytJTp1msL2LWANf
-project_id: none
-user_messages: 12
-assistant_messages: 68
-total_messages: 152
-processed: true
+date: "2026-06-30"
+importance: 3
+projects: ["Y-OS", "Y-OS Reader"]
+tags: ["Y-OS Full Stack"]
+summary: ""
+url: "https://manus.im/app/task/heo9JXkytJTp1msL2LWANf"
 ---
 
 # [✓] -- yOS FULL STACK --

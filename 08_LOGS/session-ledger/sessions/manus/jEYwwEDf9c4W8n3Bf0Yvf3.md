@@ -1,13 +1,12 @@
 ---
-session_id: jEYwwEDf9c4W8n3Bf0Yvf3
+id: jEYwwEDf9c4W8n3Bf0Yvf3
 title: "Ajouter un dossier à 'Mon Ordinateur' dans Manus"
-date: 2026-07-05 10:52 UTC
-url: https://manus.im/app/sessions/jEYwwEDf9c4W8n3Bf0Yvf3
-project_id: Gz25LHGt5xFF4hEghRYUQL
-user_messages: 2
-assistant_messages: 2
-total_messages: 8
-processed: true
+date: "2026-07-05"
+importance: 3
+projects: ["Y-OS", "Manus"]
+tags: ["gestion de fichiers", "accès local", "Mac", "filesystem", "configuration", "Mac Bridge"]
+summary: ""
+url: "https://manus.im/app/task/jEYwwEDf9c4W8n3Bf0Yvf3"
 ---
 
 # Ajouter un dossier à "Mon Ordinateur" dans Manus

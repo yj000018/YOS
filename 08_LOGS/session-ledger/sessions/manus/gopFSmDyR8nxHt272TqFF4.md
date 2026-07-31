@@ -1,13 +1,12 @@
 ---
-session_id: gopFSmDyR8nxHt272TqFF4
+id: gopFSmDyR8nxHt272TqFF4
 title: "[✓] AI Creation Tools Comprehensive Market Analysis & Interactive Explorer"
-date: 2025-08-17 21:52 UTC
-url: https://manus.im/app/sessions/gopFSmDyR8nxHt272TqFF4
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 69
-processed: true
+date: "2025-08-17"
+importance: 3
+projects: []
+tags: ["AI", "Tools", "Market Analysis", "Generative AI", "Content Creation"]
+summary: ""
+url: "https://manus.im/app/task/gopFSmDyR8nxHt272TqFF4"
 ---
 
 # [✓] AI Creation Tools Comprehensive Market Analysis & Interactive Explorer

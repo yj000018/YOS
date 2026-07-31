@@ -1,13 +1,12 @@
 ---
-session_id: sLXBWULRsu2AqcV8E3JA6v
+id: sLXBWULRsu2AqcV8E3JA6v
 title: "[✓] Creating a Dashboard Showing Global Progress Across Indicators"
-date: 2025-07-07 15:18 UTC
-url: https://manus.im/app/sessions/sLXBWULRsu2AqcV8E3JA6v
-project_id: none
-user_messages: 8
-assistant_messages: 14
-total_messages: 178
-processed: true
+date: "2025-07-07"
+importance: 4
+projects: ["YOUniverse", "Y-OS", "Progrès Humain 360°"]
+tags: ["Dashboard", "Progress", "Indicators", "Data Visualization", "Civilizational Transition", "Flagship App"]
+summary: "Development of Progrès Humain 360°, a flagship interactive dashboard visualizing global civilizational progress."
+url: "https://manus.im/app/task/sLXBWULRsu2AqcV8E3JA6v"
 ---
 
 # [✓] Creating a Dashboard Showing Global Progress Across Indicators

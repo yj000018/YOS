@@ -1,13 +1,12 @@
 ---
-session_id: eJVbbAxRvZuu984ijSJcAm
+id: eJVbbAxRvZuu984ijSJcAm
 title: "[✓] n8n Multilingual Message Translation Workflow Creation"
-date: 2025-06-28 15:13 UTC
-url: https://manus.im/app/sessions/eJVbbAxRvZuu984ijSJcAm
-project_id: none
-user_messages: 5
-assistant_messages: 6
-total_messages: 39
-processed: true
+date: "2025-06-28"
+importance: 3
+projects: ["Telegram Interface"]
+tags: ["n8n", "Translation", "Workflow", "Automation", "Telegram", "WhatsApp", "DeepL"]
+summary: ""
+url: "https://manus.im/app/task/eJVbbAxRvZuu984ijSJcAm"
 ---
 
 # [✓] n8n Multilingual Message Translation Workflow Creation

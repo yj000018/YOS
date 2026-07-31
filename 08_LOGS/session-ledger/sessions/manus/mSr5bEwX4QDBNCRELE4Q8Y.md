@@ -1,13 +1,12 @@
 ---
-session_id: mSr5bEwX4QDBNCRELE4Q8Y
+id: mSr5bEwX4QDBNCRELE4Q8Y
 title: "[✓] Calendly MCP — Test Live & Factsheet Capability Assessment"
-date: 2026-06-16 09:17 UTC
-url: https://manus.im/app/sessions/mSr5bEwX4QDBNCRELE4Q8Y
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Calendly", "Factsheet", "Capability Assessment", "API Integration", "Notion", "Tool Assessment", "Y-OS Architecture"]
+summary: "Live test and capability assessment of Calendly MCP, generating a detailed factsheet for Y-OS architecture in Notion."
+url: "https://manus.im/app/task/mSr5bEwX4QDBNCRELE4Q8Y"
 ---
 
 # [✓] Calendly MCP — Test Live & Factsheet Capability Assessment

@@ -1,13 +1,12 @@
 ---
-session_id: xhrCWHJhHgXvcT9doXxKnz
+id: xhrCWHJhHgXvcT9doXxKnz
 title: "[✓] Site web Ludivine - Navigation mobile et optimisation performances"
-date: 2026-02-08 09:27 UTC
-url: https://manus.im/app/sessions/xhrCWHJhHgXvcT9doXxKnz
-project_id: nSfXw9MBovFvxuTvtUQyy4
-user_messages: 295
-assistant_messages: 488
-total_messages: 1173
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: ["Ludivine", "Y-OS", "Manus", "Notion Memory", "Communauté Ludivine"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/xhrCWHJhHgXvcT9doXxKnz"
 ---
 
 # [✓] Site web Ludivine - Navigation mobile et optimisation performances

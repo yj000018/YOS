@@ -1,13 +1,12 @@
 ---
-session_id: k6ZXtvpuGCd4ZHVtMMcdmH
+id: k6ZXtvpuGCd4ZHVtMMcdmH
 title: "[✓] YMD Ultimate Compatibility Test — Results Matrix Manus 1.6 iOS"
-date: 2026-07-31
-url: https://manus.im/app/k6ZXtvpuGCd4ZHVtMMcdmH
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 13
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["YMD", "Y-OS"]
+tags: ["Compatibility Test", "Results Matrix", "Manus 1.6", "iOS", "Testing"]
+summary: ""
+url: "https://manus.im/app/task/k6ZXtvpuGCd4ZHVtMMcdmH"
 ---
 
 # [✓] YMD Ultimate Compatibility Test — Results Matrix Manus 1.6 iOS

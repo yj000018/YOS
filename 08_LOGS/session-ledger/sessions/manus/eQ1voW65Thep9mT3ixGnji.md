@@ -1,13 +1,12 @@
 ---
-session_id: eQ1voW65Thep9mT3ixGnji
+id: eQ1voW65Thep9mT3ixGnji
 title: "[✓] eQ1voW65Thep9mT3ixGnji"
-date: 2026-06-23 15:15 UTC
-url: https://manus.im/app/sessions/eQ1voW65Thep9mT3ixGnji
-project_id: none
-user_messages: 12
-assistant_messages: 68
-total_messages: 117
-processed: true
+date: "2026-06-23"
+importance: 3
+projects: ["Y-World", "ODYSSEY", "WiP", "Saathi", "Y-OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/eQ1voW65Thep9mT3ixGnji"
 ---
 
 # [✓] eQ1voW65Thep9mT3ixGnji

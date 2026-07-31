@@ -1,13 +1,12 @@
 ---
-session_id: RSzecGh7nhKX7GRQLB24Ks
+id: RSzecGh7nhKX7GRQLB24Ks
 title: "[✓] MailerLite MCP Connector — Live Test & Y-OS Factsheet Production"
-date: 2026-06-16 11:24 UTC
-url: https://manus.im/app/sessions/RSzecGh7nhKX7GRQLB24Ks
-project_id: none
-user_messages: 3
-assistant_messages: 8
-total_messages: 15
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "MailerLite MCP Connector"]
+tags: ["MailerLite", "Connector", "Factsheet", "API Integration", "Live Test"]
+summary: ""
+url: "https://manus.im/app/task/RSzecGh7nhKX7GRQLB24Ks"
 ---
 
 # [✓] MailerLite MCP Connector — Live Test & Y-OS Factsheet Production

@@ -1,13 +1,12 @@
 ---
-session_id: n4NbfAoYYvq2FobfPv9qTW
+id: n4NbfAoYYvq2FobfPv9qTW
 title: "[✓] YOUniverse Project Introduction & Gmail Processing Architecture"
-date: 2026-02-27 09:18 UTC
-url: https://manus.im/app/sessions/n4NbfAoYYvq2FobfPv9qTW
-project_id: none
-user_messages: 119
-assistant_messages: 219
-total_messages: 526
-processed: true
+date: "2026-02-27"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Manus", "Notion Memory", "Mem0", "n8n"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/n4NbfAoYYvq2FobfPv9qTW"
 ---
 
 # [✓] YOUniverse Project Introduction & Gmail Processing Architecture

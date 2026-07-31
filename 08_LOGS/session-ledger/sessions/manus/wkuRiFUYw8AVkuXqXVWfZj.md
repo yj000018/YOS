@@ -1,13 +1,12 @@
 ---
-session_id: wkuRiFUYw8AVkuXqXVWfZj
+id: wkuRiFUYw8AVkuXqXVWfZj
 title: "(Demo Examples for Manus Session-Synthesizer Skill)"
-date: 2026-07-31
-url: https://manus.im/app/wkuRiFUYw8AVkuXqXVWfZj
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 92
-corpus: missing_26
+date: "2026-07-31"
+importance: 2
+projects: []
+tags: ["demo", "test", "manus_skill", "empty_content"]
+summary: "Session de démonstration pour la compétence Manus Session-Synthesizer, sans contenu exploitable."
+url: "https://manus.im/app/task/wkuRiFUYw8AVkuXqXVWfZj"
 ---
 
 # (Demo Examples for Manus Session-Synthesizer Skill)

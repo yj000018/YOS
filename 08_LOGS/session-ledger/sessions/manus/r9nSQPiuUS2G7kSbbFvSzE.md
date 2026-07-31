@@ -1,13 +1,12 @@
 ---
-session_id: r9nSQPiuUS2G7kSbbFvSzE
+id: r9nSQPiuUS2G7kSbbFvSzE
 title: "[✓] Granola Connector Test & Factsheet Creation – Y-OS Tool Hub"
-date: 2026-06-16 08:48 UTC
-url: https://manus.im/app/sessions/r9nSQPiuUS2G7kSbbFvSzE
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Granola", "Connector", "Factsheet", "Tool Analysis", "Documentation", "iOS", "API", "Test"]
+summary: ""
+url: "https://manus.im/app/task/r9nSQPiuUS2G7kSbbFvSzE"
 ---
 
 # [✓] Granola Connector Test & Factsheet Creation – Y-OS Tool Hub

@@ -1,13 +1,12 @@
 ---
-session_id: aXilUAezi5Oc1XnmShaMGv
+id: aXilUAezi5Oc1XnmShaMGv
 title: "[✓] WHY NOT? Label Video Creation - Autonomous Production with Full Authorization"
-date: 2026-01-09 23:20 UTC
-url: https://manus.im/app/sessions/aXilUAezi5Oc1XnmShaMGv
-project_id: none
-user_messages: 6
-assistant_messages: 14
-total_messages: 36
-processed: true
+date: "2026-01-09"
+importance: 3
+projects: ["WHY NOT?", "LABEL", "YOUniverse", "Y World", "12 Pillars of Civilization"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/aXilUAezi5Oc1XnmShaMGv"
 ---
 
 # [✓] WHY NOT? Label Video Creation - Autonomous Production with Full Authorization

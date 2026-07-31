@@ -1,13 +1,12 @@
 ---
-session_id: FeZeM7gpLl0uYBklTXrV0n
+id: FeZeM7gpLl0uYBklTXrV0n
 title: "[✓] Wrike MCP Connector OAuth Authentication Troubleshooting"
-date: 2026-01-06 00:10 UTC
-url: https://manus.im/app/sessions/FeZeM7gpLl0uYBklTXrV0n
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "Wrike MCP Connector"]
+tags: ["Wrike", "OAuth", "Authentication", "Troubleshooting", "Connector", "API"]
+summary: "Troubleshooting OAuth authentication for the Wrike MCP Connector, resolving 401 Unauthorized errors."
+url: "https://manus.im/app/task/FeZeM7gpLl0uYBklTXrV0n"
 ---
 
 # [✓] Wrike MCP Connector OAuth Authentication Troubleshooting

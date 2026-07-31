@@ -1,13 +1,12 @@
 ---
-session_id: lCjRharsywf5KW61s5KT7m
+id: lCjRharsywf5KW61s5KT7m
 title: "[✓] Comparative analysis of French health insurance offers (PS1230/PS1330 vs Malakoff)"
-date: 2025-07-24 17:52 UTC
-url: https://manus.im/app/sessions/lCjRharsywf5KW61s5KT7m
-project_id: none
-user_messages: 11
-assistant_messages: 16
-total_messages: 176
-processed: true
+date: "2025-07-24"
+importance: 3
+projects: []
+tags: ["assurance santé", "mutuelle", "comparaison", "tarifs", "extrapolation", "Harmonie Mutuelle", "Malakoff", "PS1230", "PS1330", "finance personnelle"]
+summary: "Analyse comparative et extrapolation des tarifs d'offres d'assurance santé françaises pour une femme de 78 ans à Divonne."
+url: "https://manus.im/app/task/lCjRharsywf5KW61s5KT7m"
 ---
 
 # [✓] Comparative analysis of French health insurance offers (PS1230/PS1330 vs Malakoff)

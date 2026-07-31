@@ -1,13 +1,12 @@
 ---
-session_id: diRvDRznd5p872nS8fRMTy
+id: diRvDRznd5p872nS8fRMTy
 title: "[✓] Création espace Notion complet pour Radio Robi Retreat"
-date: 2026-01-24 23:41 UTC
-url: https://manus.im/app/sessions/diRvDRznd5p872nS8fRMTy
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-01-24"
+importance: 3
+projects: ["Y-OS", "Notion"]
+tags: ["Notion", "Radio Robi Retreat"]
+summary: ""
+url: "https://manus.im/app/task/diRvDRznd5p872nS8fRMTy"
 ---
 
 # [✓] Création espace Notion complet pour Radio Robi Retreat

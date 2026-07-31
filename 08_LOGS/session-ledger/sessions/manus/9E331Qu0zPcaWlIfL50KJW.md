@@ -1,13 +1,12 @@
 ---
-session_id: 9E331Qu0zPcaWlIfL50KJW
+id: 9E331Qu0zPcaWlIfL50KJW
 title: "[✓] Building Odyssey Web App: Manus vs Claude Opus Performance Showdown"
-date: 2026-03-30 22:29 UTC
-url: https://manus.im/app/sessions/9E331Qu0zPcaWlIfL50KJW
-project_id: BvaDD4T2s54TsyQCiJo8Xw
-user_messages: 9
-assistant_messages: 18
-total_messages: 42
-processed: true
+date: "2026-03-30"
+importance: 3
+projects: ["Odyssey", "Y-OS", "YOUniverse", "Manus", "LLM Memory Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/9E331Qu0zPcaWlIfL50KJW"
 ---
 
 # [✓] Building Odyssey Web App: Manus vs Claude Opus Performance Showdown

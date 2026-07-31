@@ -1,13 +1,12 @@
 ---
-session_id: mw3vz3JceM7VLibPHy6g9f
+id: mw3vz3JceM7VLibPHy6g9f
 title: "[✓] GPT-Manus Bridge Script Setup and Command Protocol Definition"
-date: 2026-01-06 01:55 UTC
-url: https://manus.im/app/sessions/mw3vz3JceM7VLibPHy6g9f
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["GPT-Manus Bridge"]
+tags: ["ChatGPT", "Relevance AI", "Automation", "Command Protocol", "Integration", "Scripting", "AI"]
+summary: ""
+url: "https://manus.im/app/task/mw3vz3JceM7VLibPHy6g9f"
 ---
 
 # [✓] GPT-Manus Bridge Script Setup and Command Protocol Definition

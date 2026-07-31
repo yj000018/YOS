@@ -1,13 +1,12 @@
 ---
-session_id: f22TED7JFFC2vvAUmL7mqN
+id: f22TED7JFFC2vvAUmL7mqN
 title: "Create and Deploy Website for Human Awakening Lab Project"
-date: 2025-07-12 21:57 UTC
-url: https://manus.im/app/sessions/f22TED7JFFC2vvAUmL7mqN
-project_id: none
-user_messages: 24
-assistant_messages: 36
-total_messages: 318
-processed: true
+date: "2025-07-12"
+importance: 3
+projects: ["YOUniverse", "Human Awakening Lab", "Planetary Transformation Ecosystem"]
+tags: ["website deployment"]
+summary: ""
+url: "https://manus.im/app/task/f22TED7JFFC2vvAUmL7mqN"
 ---
 
 # Create and Deploy Website for Human Awakening Lab Project

@@ -1,13 +1,12 @@
 ---
-session_id: txqxr1o4roAXQC412pN934
+id: txqxr1o4roAXQC412pN934
 title: "[✓] yOS Voice Gateway v1 — PWA car-mode ElevenLabs + Manus API déployée Vercel"
-date: 2026-06-19 22:38 UTC
-url: https://manus.im/app/sessions/txqxr1o4roAXQC412pN934
-project_id: none
-user_messages: 18
-assistant_messages: 79
-total_messages: 147
-processed: true
+date: "2026-06-19"
+importance: 3
+projects: ["Y-OS", "Manus", "yOS Voice Gateway", "YOUniverse"]
+tags: ["Voice Gateway", "PWA", "car-mode"]
+summary: ""
+url: "https://manus.im/app/task/txqxr1o4roAXQC412pN934"
 ---
 
 # [✓] yOS Voice Gateway v1 — PWA car-mode ElevenLabs + Manus API déployée Vercel

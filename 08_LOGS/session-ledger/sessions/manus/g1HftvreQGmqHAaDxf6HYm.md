@@ -1,13 +1,12 @@
 ---
-session_id: g1HftvreQGmqHAaDxf6HYm
+id: g1HftvreQGmqHAaDxf6HYm
 title: "[✓] Best AI Platforms for Multimedia Creation and Investment Analysis"
-date: 2025-10-02 16:06 UTC
-url: https://manus.im/app/sessions/g1HftvreQGmqHAaDxf6HYm
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 9
-processed: true
+date: "2025-10-02"
+importance: 3
+projects: ["Y-OS"]
+tags: ["AI", "Multimedia", "Platforms", "Investment", "Analysis", "Video", "Image", "3D"]
+summary: ""
+url: "https://manus.im/app/task/g1HftvreQGmqHAaDxf6HYm"
 ---
 
 # [✓] Best AI Platforms for Multimedia Creation and Investment Analysis

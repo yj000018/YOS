@@ -1,13 +1,12 @@
 ---
-session_id: u2xgKfU2PmxnYs3zJe9qKF
+id: u2xgKfU2PmxnYs3zJe9qKF
 title: "[✓] Recherche presse de relieur vintage — budget 100–250 CHF, Suisse"
-date: 2026-05-29 16:43 UTC
-url: https://manus.im/app/sessions/u2xgKfU2PmxnYs3zJe9qKF
-project_id: none
-user_messages: 44
-assistant_messages: 60
-total_messages: 190
-processed: true
+date: "2026-05-29"
+importance: 3
+projects: []
+tags: ["reliure", "presse", "vintage", "achat", "papier", "amazon"]
+summary: ""
+url: "https://manus.im/app/task/u2xgKfU2PmxnYs3zJe9qKF"
 ---
 
 # [✓] Recherche presse de relieur vintage — budget 100–250 CHF, Suisse

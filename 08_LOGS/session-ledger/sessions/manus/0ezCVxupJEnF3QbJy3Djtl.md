@@ -1,13 +1,12 @@
 ---
-session_id: 0ezCVxupJEnF3QbJy3Djtl
+id: 0ezCVxupJEnF3QbJy3Djtl
 title: "[✓] Testing Playwright Web Automation Connector Features"
-date: 2025-10-25 22:39 UTC
-url: https://manus.im/app/sessions/0ezCVxupJEnF3QbJy3Djtl
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 5
-processed: true
+date: "2025-10-25"
+importance: 2
+projects: ["Y-OS", "Playwright Connector"]
+tags: ["testing", "playwright", "web automation", "connector", "infrastructure"]
+summary: "Testing the Playwright web automation connector features and capabilities within Y-OS."
+url: "https://manus.im/app/task/0ezCVxupJEnF3QbJy3Djtl"
 ---
 
 # [✓] Testing Playwright Web Automation Connector Features

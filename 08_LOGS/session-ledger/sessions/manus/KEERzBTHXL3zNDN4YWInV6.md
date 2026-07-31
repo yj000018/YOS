@@ -1,13 +1,12 @@
 ---
-session_id: KEERzBTHXL3zNDN4YWInV6
+id: KEERzBTHXL3zNDN4YWInV6
 title: "[✓] Replicate API Testing and Demo Script Development"
-date: 2026-02-27 22:12 UTC
-url: https://manus.im/app/sessions/KEERzBTHXL3zNDN4YWInV6
-project_id: none
-user_messages: 1
-assistant_messages: 4
-total_messages: 9
-processed: true
+date: "2026-02-27"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Replicate API", "API Testing", "Demo Script Development", "API Integration", "Billing Handling"]
+summary: "Tested Replicate API, developed a comprehensive demo script, and implemented graceful handling for billing-related API responses."
+url: "https://manus.im/app/task/KEERzBTHXL3zNDN4YWInV6"
 ---
 
 # [✓] Replicate API Testing and Demo Script Development

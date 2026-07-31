@@ -1,13 +1,12 @@
 ---
-session_id: WVXPSvxgNuSR9UegBK5m6C
+id: WVXPSvxgNuSR9UegBK5m6C
 title: "[✓] Gmail Receipt Scanning Access Issues and Credential Management"
-date: 2026-02-15 12:53 UTC
-url: https://manus.im/app/sessions/WVXPSvxgNuSR9UegBK5m6C
-project_id: none
-user_messages: 7
-assistant_messages: 10
-total_messages: 31
-processed: true
+date: "2026-02-15"
+importance: 3
+projects: ["Y-OS", "ROI-OS", "YOS-MMM"]
+tags: ["Gmail", "Receipts", "Credentials", "Access", "API"]
+summary: ""
+url: "https://manus.im/app/task/WVXPSvxgNuSR9UegBK5m6C"
 ---
 
 # [✓] Gmail Receipt Scanning Access Issues and Credential Management

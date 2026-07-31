@@ -1,13 +1,12 @@
 ---
-session_id: vze1ZecWzMEPoZZ8cbkUJT
+id: vze1ZecWzMEPoZZ8cbkUJT
 title: "Exécuter le fichier MPX et produire les rapports demandés"
-date: 2026-07-31
-url: https://manus.im/app/vze1ZecWzMEPoZZ8cbkUJT
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 25
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: []
+tags: ["MPX", "rapports", "execution"]
+summary: "Exécution d'un fichier MPX et production des rapports demandés."
+url: "https://manus.im/app/task/vze1ZecWzMEPoZZ8cbkUJT"
 ---
 
 # Exécuter le fichier MPX et produire les rapports demandés

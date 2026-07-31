@@ -1,13 +1,12 @@
 ---
-session_id: X8vGmarpyICeYeOQsgOYrE
+id: X8vGmarpyICeYeOQsgOYrE
 title: "yOS and System Memory Management Basics"
-date: 2026-01-31 03:27 UTC
-url: https://manus.im/app/sessions/X8vGmarpyICeYeOQsgOYrE
-project_id: none
-user_messages: 57
-assistant_messages: 85
-total_messages: 247
-processed: true
+date: "2026-01-31"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "RELAVANCE.AI", "Y-Memory Core"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/X8vGmarpyICeYeOQsgOYrE"
 ---
 
 # yOS and System Memory Management Basics

@@ -1,13 +1,12 @@
 ---
-session_id: gA3sPuq8Gn3FWc51BYRCgj
+id: gA3sPuq8Gn3FWc51BYRCgj
 title: "[✓] FIX Collection Website Development - Complete Implementation"
-date: 2025-07-25 23:28 UTC
-url: https://manus.im/app/sessions/gA3sPuq8Gn3FWc51BYRCgj
-project_id: none
-user_messages: 19
-assistant_messages: 39
-total_messages: 254
-processed: true
+date: "2025-07-25"
+importance: 3
+projects: ["FIX Collection Website Development", "Y World", "YOUniverse"]
+tags: ["Website Development"]
+summary: ""
+url: "https://manus.im/app/task/gA3sPuq8Gn3FWc51BYRCgj"
 ---
 
 # [✓] FIX Collection Website Development - Complete Implementation

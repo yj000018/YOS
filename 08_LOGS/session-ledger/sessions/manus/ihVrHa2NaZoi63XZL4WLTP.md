@@ -1,13 +1,12 @@
 ---
-session_id: ihVrHa2NaZoi63XZL4WLTP
+id: ihVrHa2NaZoi63XZL4WLTP
 title: "[✓] Ludivine Website Integration Project — Content Structure & Design Rollback"
-date: 2026-02-09 00:40 UTC
-url: https://manus.im/app/sessions/ihVrHa2NaZoi63XZL4WLTP
-project_id: none
-user_messages: 9
-assistant_messages: 20
-total_messages: 51
-processed: true
+date: "2026-02-09"
+importance: 3
+projects: ["Ludivine", "Ludivine Website", "Y-OS", "YOUniverse", "Manus"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/ihVrHa2NaZoi63XZL4WLTP"
 ---
 
 # [✓] Ludivine Website Integration Project — Content Structure & Design Rollback

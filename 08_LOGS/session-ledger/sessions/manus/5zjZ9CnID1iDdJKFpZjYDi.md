@@ -1,13 +1,12 @@
 ---
-session_id: 5zjZ9CnID1iDdJKFpZjYDi
+id: 5zjZ9CnID1iDdJKFpZjYDi
 title: "[✓] Shopify MCP Connector — Live Test & Factsheet Production"
-date: 2026-06-16 11:08 UTC
-url: https://manus.im/app/sessions/5zjZ9CnID1iDdJKFpZjYDi
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Shopify", "Connector", "Factsheet", "API", "GraphQL", "Integration", "E-commerce"]
+summary: ""
+url: "https://manus.im/app/task/5zjZ9CnID1iDdJKFpZjYDi"
 ---
 
 # [✓] Shopify MCP Connector — Live Test & Factsheet Production

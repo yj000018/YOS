@@ -1,13 +1,12 @@
 ---
-session_id: 8drq1sGM4QANh2AfDCZZeG
+id: 8drq1sGM4QANh2AfDCZZeG
 title: "[✓] YOUnuversity.life: Personalized Learning App Project with Replit"
-date: 2025-09-25 19:12 UTC
-url: https://manus.im/app/sessions/8drq1sGM4QANh2AfDCZZeG
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 8
-processed: true
+date: "2025-09-25"
+importance: 3
+projects: ["YOUnuversity.life", "Y World manifesto", "AI Coach", "Core Engine", "Adaptation Engine"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/8drq1sGM4QANh2AfDCZZeG"
 ---
 
 # [✓] YOUnuversity.life: Personalized Learning App Project with Replit

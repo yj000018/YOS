@@ -1,13 +1,12 @@
 ---
-session_id: kjQuMR9gE1QJYse3YPXJrp
+id: kjQuMR9gE1QJYse3YPXJrp
 title: "[✓] Création simulation 3D tiny planet interactive pour Spline"
-date: 2025-10-30 12:55 UTC
-url: https://manus.im/app/sessions/kjQuMR9gE1QJYse3YPXJrp
-project_id: none
-user_messages: 11
-assistant_messages: 17
-total_messages: 46
-processed: true
+date: "2025-10-30"
+importance: 3
+projects: ["Tiny Planet System", "Y-OS", "YOUniverse", "Spline 3D", "Tiny Planet Web App"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/kjQuMR9gE1QJYse3YPXJrp"
 ---
 
 # [✓] Création simulation 3D tiny planet interactive pour Spline

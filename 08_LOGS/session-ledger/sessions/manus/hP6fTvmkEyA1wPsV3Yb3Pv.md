@@ -1,13 +1,12 @@
 ---
-session_id: hP6fTvmkEyA1wPsV3Yb3Pv
+id: hP6fTvmkEyA1wPsV3Yb3Pv
 title: "[✓] Research for Foldable Wheelchair Ramps for 20-step Staircase"
-date: 2025-07-05 16:53 UTC
-url: https://manus.im/app/sessions/hP6fTvmkEyA1wPsV3Yb3Pv
-project_id: none
-user_messages: 1
-assistant_messages: 1
-total_messages: 3
-processed: true
+date: "2025-07-05"
+importance: 3
+projects: []
+tags: ["Recherche", "Fauteuil roulant", "Rampes", "Accessibilité", "Temu"]
+summary: ""
+url: "https://manus.im/app/task/hP6fTvmkEyA1wPsV3Yb3Pv"
 ---
 
 # [✓] Research for Foldable Wheelchair Ramps for 20-step Staircase

@@ -1,13 +1,12 @@
 ---
-session_id: aGZvAv2ubgQVZFoJhLmGra
+id: aGZvAv2ubgQVZFoJhLmGra
 title: "[✓] Logo Design Concept for Future News App"
-date: 2026-04-04 13:38 UTC
-url: https://manus.im/app/sessions/aGZvAv2ubgQVZFoJhLmGra
-project_id: none
-user_messages: 52
-assistant_messages: 132
-total_messages: 272
-processed: true
+date: "2026-04-04"
+importance: 3
+projects: []
+tags: ["Logo Design", "Animation", "Remotion", "News App", "Sound Design", "Branding"]
+summary: ""
+url: "https://manus.im/app/task/aGZvAv2ubgQVZFoJhLmGra"
 ---
 
 # [✓] Logo Design Concept for Future News App

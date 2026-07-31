@@ -1,13 +1,12 @@
 ---
-session_id: uAcKGitfFfpYxd2xtQb1Ze
+id: uAcKGitfFfpYxd2xtQb1Ze
 title: "[✓] Shopping for HomePod Mini and Standard - Comparing Prices and Options"
-date: 2025-11-26 00:31 UTC
-url: https://manus.im/app/sessions/uAcKGitfFfpYxd2xtQb1Ze
-project_id: none
-user_messages: 9
-assistant_messages: 14
-total_messages: 39
-processed: true
+date: "2025-11-26"
+importance: 3
+projects: []
+tags: ["shopping", "homepod", "apple", "ricardo", "occasion"]
+summary: ""
+url: "https://manus.im/app/task/uAcKGitfFfpYxd2xtQb1Ze"
 ---
 
 # [✓] Shopping for HomePod Mini and Standard - Comparing Prices and Options

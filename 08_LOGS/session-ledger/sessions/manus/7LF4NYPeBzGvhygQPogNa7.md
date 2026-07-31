@@ -1,13 +1,12 @@
 ---
-session_id: 7LF4NYPeBzGvhygQPogNa7
+id: 7LF4NYPeBzGvhygQPogNa7
 title: "[✓] Real Estate Valuation: Divonne-les-Bains Apartment Analysis"
-date: 2025-07-27 08:42 UTC
-url: https://manus.im/app/sessions/7LF4NYPeBzGvhygQPogNa7
-project_id: none
-user_messages: 4
-assistant_messages: 5
-total_messages: 16
-processed: true
+date: "2025-07-27"
+importance: 3
+projects: []
+tags: ["Real Estate Valuation", "Divonne-les-Bains", "Apartment Analysis", "Market Analysis", "Local Market"]
+summary: "Analyse et évaluation du prix au m2 d'un appartement à Divonne-les-Bains, avec recherche de données de marché ultra-locales."
+url: "https://manus.im/app/task/7LF4NYPeBzGvhygQPogNa7"
 ---
 
 # [✓] Real Estate Valuation: Divonne-les-Bains Apartment Analysis

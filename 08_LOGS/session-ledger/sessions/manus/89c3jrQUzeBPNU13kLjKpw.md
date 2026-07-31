@@ -1,13 +1,12 @@
 ---
-session_id: 89c3jrQUzeBPNU13kLjKpw
+id: 89c3jrQUzeBPNU13kLjKpw
 title: "[✓] Inner Compass - Full-Stack Spiritual Guidance App Development"
-date: 2026-01-02 03:36 UTC
-url: https://manus.im/app/sessions/89c3jrQUzeBPNU13kLjKpw
-project_id: NsUBejjCJaeUbbWMxr8dye
-user_messages: 12
-assistant_messages: 30
-total_messages: 66
-processed: true
+date: "2026-01-02"
+importance: 3
+projects: ["Inner Compass", "Y World", "YOUniverse", "Human Awakening", "Heartbeat", "Y-OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/89c3jrQUzeBPNU13kLjKpw"
 ---
 
 # [✓] Inner Compass - Full-Stack Spiritual Guidance App Development

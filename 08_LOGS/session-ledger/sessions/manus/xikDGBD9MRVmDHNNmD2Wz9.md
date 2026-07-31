@@ -1,13 +1,12 @@
 ---
-session_id: xikDGBD9MRVmDHNNmD2Wz9
-title: " 'FIX' Collection"
-date: 2025-07-23 08:14 UTC
-url: https://manus.im/app/sessions/xikDGBD9MRVmDHNNmD2Wz9
-project_id: none
-user_messages: 41
-assistant_messages: 79
-total_messages: 658
-processed: true
+id: xikDGBD9MRVmDHNNmD2Wz9
+title: "'FIX' Collection"
+date: "2025-07-23"
+importance: 3
+projects: ["Y World Ecosystem", "-Y-", ",\n    ", ",\n    ", ",\n    "]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/xikDGBD9MRVmDHNNmD2Wz9"
 ---
 
 #  "FIX" Collection

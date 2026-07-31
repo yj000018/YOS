@@ -1,13 +1,12 @@
 ---
-session_id: tLseCUAUZuxp9lgTL4Wycc
+id: tLseCUAUZuxp9lgTL4Wycc
 title: "[✓] YOS Client — Cherry Picker Tampermonkey v1.0 : Design & Livraison"
-date: 2026-04-28 09:34 UTC
-url: https://manus.im/app/sessions/tLseCUAUZuxp9lgTL4Wycc
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 13
-processed: true
+date: "2026-04-28"
+importance: 3
+projects: ["YOS Client", "Cherry Picker", "YOUniverse", "Y World"]
+tags: ["Tampermonkey", "Client", "v1.0", "Design", "Delivery", "Cognitive Infrastructure", "Tool", "Development"]
+summary: "Design and delivery of YOS Client's Cherry Picker Tampermonkey v1.0, a tool for the Y World / YOUniverse ecosystem."
+url: "https://manus.im/app/task/tLseCUAUZuxp9lgTL4Wycc"
 ---
 
 # [✓] YOS Client — Cherry Picker Tampermonkey v1.0 : Design & Livraison

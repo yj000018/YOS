@@ -1,13 +1,12 @@
 ---
-session_id: zb8XEuBqIgru6vDYFMqFnd
+id: zb8XEuBqIgru6vDYFMqFnd
 title: "[✓] Design of Intelligent LLM Router Skill for Optimal Model Selection"
-date: 2026-02-08 15:47 UTC
-url: https://manus.im/app/sessions/zb8XEuBqIgru6vDYFMqFnd
-project_id: none
-user_messages: 5
-assistant_messages: 10
-total_messages: 27
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "LLM Router Skill"]
+tags: ["LLM"]
+summary: ""
+url: "https://manus.im/app/task/zb8XEuBqIgru6vDYFMqFnd"
 ---
 
 # [✓] Design of Intelligent LLM Router Skill for Optimal Model Selection

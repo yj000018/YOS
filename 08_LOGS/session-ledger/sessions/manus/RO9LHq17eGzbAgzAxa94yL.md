@@ -1,13 +1,12 @@
 ---
-session_id: RO9LHq17eGzbAgzAxa94yL
+id: RO9LHq17eGzbAgzAxa94yL
 title: "[✓] Senior Residences Research Dashboard Deployment & Metrics"
-date: 2025-07-11 22:32 UTC
-url: https://manus.im/app/sessions/RO9LHq17eGzbAgzAxa94yL
-project_id: none
-user_messages: 2
-assistant_messages: 7
-total_messages: 32
-processed: true
+date: "2025-07-11"
+importance: 3
+projects: ["Y-OS", "Senior Residences Research Dashboard"]
+tags: ["deployment", "metrics"]
+summary: ""
+url: "https://manus.im/app/task/RO9LHq17eGzbAgzAxa94yL"
 ---
 
 # [✓] Senior Residences Research Dashboard Deployment & Metrics

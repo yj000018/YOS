@@ -1,13 +1,12 @@
 ---
-session_id: ckELUy5Agzv5xzjJhaHydW
+id: ckELUy5Agzv5xzjJhaHydW
 title: "[✓] session-synthesis Skill — Live Demo & Pipeline Validation (5 sessions)"
-date: 2026-06-21 12:14 UTC
-url: https://manus.im/app/sessions/ckELUy5Agzv5xzjJhaHydW
-project_id: none
-user_messages: 1
-assistant_messages: 5
-total_messages: 8
-processed: true
+date: "2026-06-21"
+importance: 3
+projects: ["Y-OS", "session-synthesis"]
+tags: ["session-synthesis", "Live Demo"]
+summary: ""
+url: "https://manus.im/app/task/ckELUy5Agzv5xzjJhaHydW"
 ---
 
 # [✓] session-synthesis Skill — Live Demo & Pipeline Validation (5 sessions)

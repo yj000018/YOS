@@ -1,13 +1,12 @@
 ---
-session_id: mGszqo8xMk4A6ZApuBS5Yv
+id: mGszqo8xMk4A6ZApuBS5Yv
 title: "[✓] iOS Voice Brain Dump — App Evaluation & Tana Setup Attempt"
-date: 2026-05-14 10:37 UTC
-url: https://manus.im/app/sessions/mGszqo8xMk4A6ZApuBS5Yv
-project_id: none
-user_messages: 11
-assistant_messages: 19
-total_messages: 49
-processed: true
+date: "2026-05-14"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Manus", "Y World"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/mGszqo8xMk4A6ZApuBS5Yv"
 ---
 
 # [✓] iOS Voice Brain Dump — App Evaluation & Tana Setup Attempt

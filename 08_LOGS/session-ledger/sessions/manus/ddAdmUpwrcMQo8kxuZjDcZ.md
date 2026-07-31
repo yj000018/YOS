@@ -1,13 +1,12 @@
 ---
-session_id: ddAdmUpwrcMQo8kxuZjDcZ
+id: ddAdmUpwrcMQo8kxuZjDcZ
 title: "[✓] Test & Factsheet du connecteur MCP Twilio Documentation"
-date: 2026-06-16 10:57 UTC
-url: https://manus.im/app/sessions/ddAdmUpwrcMQo8kxuZjDcZ
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Test", "Factsheet", "Twilio", "MCP", "Documentation", "API", "Connector", "Integration"]
+summary: "Test et création d'une factsheet pour le connecteur Twilio Documentation MCP, intégré à Y-OS pour l'extraction de schémas API."
+url: "https://manus.im/app/task/ddAdmUpwrcMQo8kxuZjDcZ"
 ---
 
 # [✓] Test & Factsheet du connecteur MCP Twilio Documentation

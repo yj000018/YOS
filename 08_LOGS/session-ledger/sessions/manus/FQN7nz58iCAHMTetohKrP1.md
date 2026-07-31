@@ -1,13 +1,12 @@
 ---
-session_id: FQN7nz58iCAHMTetohKrP1
+id: FQN7nz58iCAHMTetohKrP1
 title: "[✓] Isomorphic Labs — Accès au capital privé via marchés secondaires"
-date: 2026-05-27 21:43 UTC
-url: https://manus.im/app/sessions/FQN7nz58iCAHMTetohKrP1
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-27"
+importance: 3
+projects: []
+tags: ["Isomorphic Labs", "capital privé", "marchés secondaires", "private equity", "AI drug discovery"]
+summary: "Identification de plateformes pour acheter des actions privées d'Isomorphic Labs (AI drug discovery) sur les marchés secondaires."
+url: "https://manus.im/app/task/FQN7nz58iCAHMTetohKrP1"
 ---
 
 # [✓] Isomorphic Labs — Accès au capital privé via marchés secondaires

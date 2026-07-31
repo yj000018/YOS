@@ -1,13 +1,12 @@
 ---
-session_id: aVdOH4P4EyQnExg6hKG4gM
+id: aVdOH4P4EyQnExg6hKG4gM
 title: "[✓] Tana Graph Visualizer Architecture: MCP vs REST Server Analysis"
-date: 2026-03-21 23:12 UTC
-url: https://manus.im/app/sessions/aVdOH4P4EyQnExg6hKG4gM
-project_id: none
-user_messages: 106
-assistant_messages: 157
-total_messages: 489
-processed: true
+date: "2026-03-21"
+importance: 3
+projects: ["Tana Graph Visualizer", "Y-OS", "YOUniverse"]
+tags: ["Architecture"]
+summary: ""
+url: "https://manus.im/app/task/aVdOH4P4EyQnExg6hKG4gM"
 ---
 
 # [✓] Tana Graph Visualizer Architecture: MCP vs REST Server Analysis

@@ -1,13 +1,12 @@
 ---
-session_id: mrjW3PWgpY7ULdxL42EWnq
+id: mrjW3PWgpY7ULdxL42EWnq
 title: "[✓] Envoi urgent email Clinique La Bernoise — renouvellement ordonnance + Sativex"
-date: 2026-05-11 08:13 UTC
-url: https://manus.im/app/sessions/mrjW3PWgpY7ULdxL42EWnq
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 14
-processed: true
+date: "2026-05-11"
+importance: 3
+projects: []
+tags: ["email", "urgent", "ordonnance", "sativex", "sante"]
+summary: ""
+url: "https://manus.im/app/task/mrjW3PWgpY7ULdxL42EWnq"
 ---
 
 # [✓] Envoi urgent email Clinique La Bernoise — renouvellement ordonnance + Sativex

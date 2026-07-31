@@ -1,13 +1,12 @@
 ---
-session_id: xYfkaWVkhqW0KoaTa4I01v
+id: xYfkaWVkhqW0KoaTa4I01v
 title: "[✓] Automatic Mac Accessibility Keyboard Generator Development"
-date: 2026-04-01 22:28 UTC
-url: https://manus.im/app/sessions/xYfkaWVkhqW0KoaTa4I01v
-project_id: none
-user_messages: 4
-assistant_messages: 7
-total_messages: 21
-processed: true
+date: "2026-04-01"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Générateur claviers", "Manus", "Notion Memory"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/xYfkaWVkhqW0KoaTa4I01v"
 ---
 
 # [✓] Automatic Mac Accessibility Keyboard Generator Development

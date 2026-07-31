@@ -1,13 +1,12 @@
 ---
-session_id: SGz9yWxSdhYvn5FNZ8Npk3
+id: SGz9yWxSdhYvn5FNZ8Npk3
 title: "Digital Archaeology Audit for Yannick Jolliet"
-date: 2026-07-16 11:09 UTC
-url: https://manus.im/app/sessions/SGz9yWxSdhYvn5FNZ8Npk3
-project_id: Ki9H3UCZSSaUwCR7bn46tv
-user_messages: 3
-assistant_messages: 4
-total_messages: 15
-processed: true
+date: "2026-07-16"
+importance: 3
+projects: ["Digital Archaeology Audit"]
+tags: ["digital archaeology", "audit", "public sources", "digital footprint", "Wayback Machine", "domains", "websites"]
+summary: ""
+url: "https://manus.im/app/task/SGz9yWxSdhYvn5FNZ8Npk3"
 ---
 
 # Digital Archaeology Audit for Yannick Jolliet

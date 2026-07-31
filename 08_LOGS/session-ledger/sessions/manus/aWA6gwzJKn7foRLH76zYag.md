@@ -1,13 +1,12 @@
 ---
-session_id: aWA6gwzJKn7foRLH76zYag
+id: aWA6gwzJKn7foRLH76zYag
 title: "[✓] Deploy GPT-Manus Command Bridge with Automated Polling & Logging"
-date: 2026-01-06 02:05 UTC
-url: https://manus.im/app/sessions/aWA6gwzJKn7foRLH76zYag
-project_id: none
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-01-06"
+importance: 4
+projects: ["Y-OS", "GPT-Manus Command Bridge", "Relevance AI"]
+tags: ["deployment", "automation", "GPT", "integration", "logging", "scripting", "polling", "cron"]
+summary: "Deployed a GPT-Manus command bridge script for automated polling of ChatGPT commands and execution on Relevance AI, with logging."
+url: "https://manus.im/app/task/aWA6gwzJKn7foRLH76zYag"
 ---
 
 # [✓] Deploy GPT-Manus Command Bridge with Automated Polling & Logging

@@ -1,13 +1,12 @@
 ---
-session_id: 794JkesNXidjY9S2rvQLF2
+id: 794JkesNXidjY9S2rvQLF2
 title: "Comment gérer les Tree et les consolider?"
-date: 2026-07-31
-url: https://manus.im/app/794JkesNXidjY9S2rvQLF2
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 12
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: []
+tags: ["Tree management", "Data consolidation", "Knowledge organization"]
+summary: ""
+url: "https://manus.im/app/task/794JkesNXidjY9S2rvQLF2"
 ---
 
 # Comment gérer les Tree et les consolider?

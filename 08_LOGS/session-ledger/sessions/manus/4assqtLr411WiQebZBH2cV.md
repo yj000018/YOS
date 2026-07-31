@@ -1,13 +1,12 @@
 ---
-session_id: 4assqtLr411WiQebZBH2cV
+id: 4assqtLr411WiQebZBH2cV
 title: "[✓] MindMap Conversationnel POC v1→v2 — Build & Deploy Y-OS"
-date: 2026-04-20 12:52 UTC
-url: https://manus.im/app/sessions/4assqtLr411WiQebZBH2cV
-project_id: none
-user_messages: 6
-assistant_messages: 22
-total_messages: 40
-processed: true
+date: "2026-04-20"
+importance: 3
+projects: ["Y-OS", "MindMap Conversationnel POC", "LLM Memory Pipeline", "Notion \\", ",\n    "]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/4assqtLr411WiQebZBH2cV"
 ---
 
 # [✓] MindMap Conversationnel POC v1→v2 — Build & Deploy Y-OS

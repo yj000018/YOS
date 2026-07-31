@@ -1,13 +1,12 @@
 ---
-session_id: 9HEjZRonQFjKRJjovhvm6z
+id: 9HEjZRonQFjKRJjovhvm6z
 title: "[✓] Briefing Stratégique IA Hebdomadaire — Semaine 12-17 Mai 2026"
-date: 2026-05-17 09:00 UTC
-url: https://manus.im/app/sessions/9HEjZRonQFjKRJjovhvm6z
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 4
-assistant_messages: 5
-total_messages: 15
-processed: true
+date: "2026-05-17"
+importance: 3
+projects: ["Y-OS"]
+tags: ["IA", "Stratégie", "Veille", "Briefing"]
+summary: ""
+url: "https://manus.im/app/task/9HEjZRonQFjKRJjovhvm6z"
 ---
 
 # [✓] Briefing Stratégique IA Hebdomadaire — Semaine 12-17 Mai 2026

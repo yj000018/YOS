@@ -1,13 +1,12 @@
 ---
-session_id: V9LttHiasuvfSnNliR8lmR
+id: V9LttHiasuvfSnNliR8lmR
 title: "Petite Librairie Divine"
-date: 2025-06-28 13:53 UTC
-url: https://manus.im/app/sessions/V9LttHiasuvfSnNliR8lmR
-project_id: none
-user_messages: 11
-assistant_messages: 25
-total_messages: 178
-processed: true
+date: "2025-06-28"
+importance: 3
+projects: ["Y World", "YOUniverse", "Lumina Universalis", "Petite Librairie Divine"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/V9LttHiasuvfSnNliR8lmR"
 ---
 
 # Petite Librairie Divine

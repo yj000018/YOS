@@ -1,13 +1,12 @@
 ---
-session_id: UsD6gyGXXspWFuW5woLgkm
+id: UsD6gyGXXspWFuW5woLgkm
 title: "[✓] How to Run and Schedule LLM Knowledge Distillation Pipeline"
-date: 2026-04-09 03:01 UTC
-url: https://manus.im/app/sessions/UsD6gyGXXspWFuW5woLgkm
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-04-09"
+importance: 3
+projects: ["Y-OS", "LLM Knowledge Distillation Pipeline", "Notion Integration"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/UsD6gyGXXspWFuW5woLgkm"
 ---
 
 # [✓] How to Run and Schedule LLM Knowledge Distillation Pipeline

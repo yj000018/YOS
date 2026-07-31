@@ -1,13 +1,12 @@
 ---
-session_id: 3dQDL8hfPEfhAXCfMTGQ9p
+id: 3dQDL8hfPEfhAXCfMTGQ9p
 title: "[✓] YOS v2 OpenWebUI Deployment with Cognitive Pipeline Architecture"
-date: 2026-03-06 18:15 UTC
-url: https://manus.im/app/sessions/3dQDL8hfPEfhAXCfMTGQ9p
-project_id: none
-user_messages: 11
-assistant_messages: 68
-total_messages: 104
-processed: true
+date: "2026-03-06"
+importance: 3
+projects: ["Y-OS", "OpenWebUI", "Cognitive Pipeline Architecture", "CRT", "ART"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/3dQDL8hfPEfhAXCfMTGQ9p"
 ---
 
 # [✓] YOS v2 OpenWebUI Deployment with Cognitive Pipeline Architecture

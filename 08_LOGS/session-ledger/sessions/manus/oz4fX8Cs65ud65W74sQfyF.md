@@ -1,13 +1,12 @@
 ---
-session_id: oz4fX8Cs65ud65W74sQfyF
+id: oz4fX8Cs65ud65W74sQfyF
 title: "[✓] Luxury Interior Spa & Bathtub Research - 180x180cm Max Specifications"
-date: 2025-09-14 23:25 UTC
-url: https://manus.im/app/sessions/oz4fX8Cs65ud65W74sQfyF
-project_id: none
-user_messages: 4
-assistant_messages: 5
-total_messages: 110
-processed: true
+date: "2025-09-14"
+importance: 3
+projects: []
+tags: ["spa", "baignoire", "luxe", "design", "recherche"]
+summary: ""
+url: "https://manus.im/app/task/oz4fX8Cs65ud65W74sQfyF"
 ---
 
 # [✓] Luxury Interior Spa & Bathtub Research - 180x180cm Max Specifications

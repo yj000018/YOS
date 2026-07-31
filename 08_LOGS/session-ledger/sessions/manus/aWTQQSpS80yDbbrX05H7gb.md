@@ -1,13 +1,12 @@
 ---
-session_id: aWTQQSpS80yDbbrX05H7gb
+id: aWTQQSpS80yDbbrX05H7gb
 title: "[✓] Sentry MCP Connector — Capability Test & Live Org Validation"
-date: 2026-05-04 12:20 UTC
-url: https://manus.im/app/sessions/aWTQQSpS80yDbbrX05H7gb
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-04"
+importance: 2
+projects: ["Y-OS", "Sentry MCP Connector"]
+tags: ["Sentry", "Connector", "Testing", "Validation", "Capabilities", "yos-00", "AI", "Seer"]
+summary: "Testing and validating the Sentry MCP connector's capabilities with live data for the `yos-00` organization, including AI features."
+url: "https://manus.im/app/task/aWTQQSpS80yDbbrX05H7gb"
 ---
 
 # [✓] Sentry MCP Connector — Capability Test & Live Org Validation

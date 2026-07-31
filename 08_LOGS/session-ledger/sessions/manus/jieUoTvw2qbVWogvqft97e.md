@@ -1,13 +1,12 @@
 ---
-session_id: jieUoTvw2qbVWogvqft97e
+id: jieUoTvw2qbVWogvqft97e
 title: "[✓] Capture LeWeb Paris 2026 — Intégration GCal / Notion / HubSpot"
-date: 2026-05-14 17:07 UTC
-url: https://manus.im/app/sessions/jieUoTvw2qbVWogvqft97e
-project_id: jipiV8WJS6hyCh9FW2MTLU
-user_messages: 3
-assistant_messages: 9
-total_messages: 15
-processed: true
+date: "2026-05-14"
+importance: 3
+projects: ["Y-OS"]
+tags: ["event capture", "integration", "Google Calendar", "Notion"]
+summary: ""
+url: "https://manus.im/app/task/jieUoTvw2qbVWogvqft97e"
 ---
 
 # [✓] Capture LeWeb Paris 2026 — Intégration GCal / Notion / HubSpot

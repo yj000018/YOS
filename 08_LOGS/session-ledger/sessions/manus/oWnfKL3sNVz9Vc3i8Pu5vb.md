@@ -1,13 +1,12 @@
 ---
-session_id: oWnfKL3sNVz9Vc3i8Pu5vb
+id: oWnfKL3sNVz9Vc3i8Pu5vb
 title: "[✓] Sourcing KSP Yack N972(H) — neuf/occasion, options livraison CH/FR/IT"
-date: 2026-06-21 05:52 UTC
-url: https://manus.im/app/sessions/oWnfKL3sNVz9Vc3i8Pu5vb
-project_id: none
-user_messages: 21
-assistant_messages: 36
-total_messages: 96
-processed: true
+date: "2026-06-21"
+importance: 3
+projects: []
+tags: ["sourcing", "KSP Yack N972(H)", "fauteuil roulant"]
+summary: ""
+url: "https://manus.im/app/task/oWnfKL3sNVz9Vc3i8Pu5vb"
 ---
 
 # [✓] Sourcing KSP Yack N972(H) — neuf/occasion, options livraison CH/FR/IT

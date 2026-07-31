@@ -1,13 +1,12 @@
 ---
-session_id: t2yeAHSDoiWDSCRsukRezV
+id: t2yeAHSDoiWDSCRsukRezV
 title: "[✓] Recherche et Catalogue des Top 20 Maisons de Luxe à Bali (Vente/Location)"
-date: 2025-10-16 14:27 UTC
-url: https://manus.im/app/sessions/t2yeAHSDoiWDSCRsukRezV
-project_id: none
-user_messages: 5
-assistant_messages: 10
-total_messages: 18
-processed: true
+date: "2025-10-16"
+importance: 3
+projects: ["CasaTAO"]
+tags: ["immobilier", "luxe", "bali", "catalogue", "web-generation"]
+summary: ""
+url: "https://manus.im/app/task/t2yeAHSDoiWDSCRsukRezV"
 ---
 
 # [✓] Recherche et Catalogue des Top 20 Maisons de Luxe à Bali (Vente/Location)

@@ -1,13 +1,12 @@
 ---
-session_id: 2ba5PqupTG9SAcgJAAsCog
+id: 2ba5PqupTG9SAcgJAAsCog
 title: "[✓] Research Ficus Giant Plants: Online vs Physical Swiss Retailers"
-date: 2026-01-31 20:45 UTC
-url: https://manus.im/app/sessions/2ba5PqupTG9SAcgJAAsCog
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 17
-processed: true
+date: "2026-01-31"
+importance: 3
+projects: []
+tags: ["ficus", "plants", "retailers", "Switzerland", "garden center", "online shopping", "delivery", "research"]
+summary: "Researching Swiss online and physical retailers for large ficus plants, including availability, delivery, and pricing."
+url: "https://manus.im/app/task/2ba5PqupTG9SAcgJAAsCog"
 ---
 
 # [✓] Research Ficus Giant Plants: Online vs Physical Swiss Retailers

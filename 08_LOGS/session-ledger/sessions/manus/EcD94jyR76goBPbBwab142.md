@@ -1,13 +1,12 @@
 ---
-session_id: EcD94jyR76goBPbBwab142
+id: EcD94jyR76goBPbBwab142
 title: "Testing and Demonstrating mem0 API Features"
-date: 2026-07-28 00:15 UTC
-url: https://manus.im/app/sessions/EcD94jyR76goBPbBwab142
-project_id: imd9BRqHPV68nZkKkiUtWT
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-07-28"
+importance: 3
+projects: ["Y-OS", "Memory Pipeline"]
+tags: ["mem0", "API testing", "demo script", "semantic search", "memory management"]
+summary: ""
+url: "https://manus.im/app/task/EcD94jyR76goBPbBwab142"
 ---
 
 # Testing and Demonstrating mem0 API Features

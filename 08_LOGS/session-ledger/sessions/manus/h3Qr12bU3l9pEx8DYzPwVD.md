@@ -1,13 +1,12 @@
 ---
-session_id: h3Qr12bU3l9pEx8DYzPwVD
+id: h3Qr12bU3l9pEx8DYzPwVD
 title: "[✓] Gmail MCP Connector — Live Test & Capabilities Brief"
-date: 2026-06-05 20:36 UTC
-url: https://manus.im/app/sessions/h3Qr12bU3l9pEx8DYzPwVD
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 10
-processed: true
+date: "2026-06-05"
+importance: 3
+projects: ["Y-OS", "Gmail Connector", "Memory Pipeline"]
+tags: ["Gmail", "Connector", "Live Test", "Capabilities", "Email Management", "Integration"]
+summary: ""
+url: "https://manus.im/app/task/h3Qr12bU3l9pEx8DYzPwVD"
 ---
 
 # [✓] Gmail MCP Connector — Live Test & Capabilities Brief

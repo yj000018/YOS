@@ -1,13 +1,12 @@
 ---
-session_id: EuLUcuUPiFyQiETmDQqyxb
+id: EuLUcuUPiFyQiETmDQqyxb
 title: "[✓] How to Create a PopClip Extension for Text-Based Chat"
-date: 2026-04-06 00:18 UTC
-url: https://manus.im/app/sessions/EuLUcuUPiFyQiETmDQqyxb
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 11
-processed: true
+date: "2026-04-06"
+importance: 3
+projects: ["PopClip Extension", "Y-OS", "Y World", "YOUniverse", "Spiritual Library"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/EuLUcuUPiFyQiETmDQqyxb"
 ---
 
 # [✓] How to Create a PopClip Extension for Text-Based Chat

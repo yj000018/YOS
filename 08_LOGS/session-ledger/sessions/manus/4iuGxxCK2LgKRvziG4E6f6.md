@@ -1,13 +1,12 @@
 ---
-session_id: 4iuGxxCK2LgKRvziG4E6f6
+id: 4iuGxxCK2LgKRvziG4E6f6
 title: "[✓] LMP ChatGPT — Backup Playwright Delta-Sync vers Notion (bloqué: login)"
-date: 2026-05-11 16:20 UTC
-url: https://manus.im/app/sessions/4iuGxxCK2LgKRvziG4E6f6
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 30
-assistant_messages: 53
-total_messages: 146
-processed: true
+date: "2026-05-11"
+importance: 3
+projects: ["Memory Pipeline", "Y-OS"]
+tags: ["LMP", "ChatGPT"]
+summary: ""
+url: "https://manus.im/app/task/4iuGxxCK2LgKRvziG4E6f6"
 ---
 
 # [✓] LMP ChatGPT — Backup Playwright Delta-Sync vers Notion (bloqué: login)

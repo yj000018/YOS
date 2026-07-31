@@ -1,13 +1,12 @@
 ---
-session_id: siKg3EzWAXJ7wXXXFqzEaQ
+id: siKg3EzWAXJ7wXXXFqzEaQ
 title: "[✓] Manus Memory Cleanup Procedure and Profile Enhancement"
-date: 2026-03-06 22:31 UTC
-url: https://manus.im/app/sessions/siKg3EzWAXJ7wXXXFqzEaQ
-project_id: none
-user_messages: 26
-assistant_messages: 34
-total_messages: 111
-processed: true
+date: "2026-03-06"
+importance: 4
+projects: ["Y-OS", "Manus", "Memory Pipeline"]
+tags: ["memory", "profile", "personalization", "optimization", "AI", "cleanup"]
+summary: "Optimisation du profil utilisateur Manus par fusion de données et procédure de nettoyage de la mémoire."
+url: "https://manus.im/app/task/siKg3EzWAXJ7wXXXFqzEaQ"
 ---
 
 # [✓] Manus Memory Cleanup Procedure and Profile Enhancement

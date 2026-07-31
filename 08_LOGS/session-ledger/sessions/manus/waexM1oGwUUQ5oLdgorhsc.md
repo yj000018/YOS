@@ -1,13 +1,12 @@
 ---
-session_id: waexM1oGwUUQ5oLdgorhsc
+id: waexM1oGwUUQ5oLdgorhsc
 title: "[✓] Create n8n Account and Setup Basic Webhook Workflow"
-date: 2025-10-25 21:54 UTC
-url: https://manus.im/app/sessions/waexM1oGwUUQ5oLdgorhsc
-project_id: none
-user_messages: 4
-assistant_messages: 52
-total_messages: 63
-processed: true
+date: "2025-10-25"
+importance: 3
+projects: []
+tags: ["n8n", "webhook", "automation", "account setup", "cloud integration"]
+summary: "Created an n8n Cloud account and set up a basic webhook-triggered workflow for future automation."
+url: "https://manus.im/app/task/waexM1oGwUUQ5oLdgorhsc"
 ---
 
 # [✓] Create n8n Account and Setup Basic Webhook Workflow

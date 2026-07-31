@@ -1,13 +1,12 @@
 ---
-session_id: RVwUUaEXycQuUNYX62g8Br
+id: RVwUUaEXycQuUNYX62g8Br
 title: "[✓] Mem0 Memory Architecture Analysis and Y-OS Stack Integration"
-date: 2026-03-02 04:22 UTC
-url: https://manus.im/app/sessions/RVwUUaEXycQuUNYX62g8Br
-project_id: none
-user_messages: 21
-assistant_messages: 40
-total_messages: 108
-processed: true
+date: "2026-03-02"
+importance: 5
+projects: ["Y-OS", "Memory Pipeline", "Manus-core"]
+tags: ["Mem0", "Memory Architecture", "Y-OS Stack", "Integration", "Architecture", "Workflows", "Ingestion", "Retrieval"]
+summary: "Analyse de l'architecture mémoire Mem0 et son intégration dans le stack Y-OS, incluant principes et workflows."
+url: "https://manus.im/app/task/RVwUUaEXycQuUNYX62g8Br"
 ---
 
 # [✓] Mem0 Memory Architecture Analysis and Y-OS Stack Integration

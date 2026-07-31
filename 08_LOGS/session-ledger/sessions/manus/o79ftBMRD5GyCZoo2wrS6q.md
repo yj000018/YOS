@@ -1,13 +1,12 @@
 ---
-session_id: o79ftBMRD5GyCZoo2wrS6q
+id: o79ftBMRD5GyCZoo2wrS6q
 title: "youniverse"
-date: 2025-09-28 01:31 UTC
-url: https://manus.im/app/sessions/o79ftBMRD5GyCZoo2wrS6q
-project_id: none
-user_messages: 56
-assistant_messages: 110
-total_messages: 261
-processed: true
+date: "2025-09-28"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Manus", "AI Analysis Engine", "Mem0", "Tiny Planet"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/o79ftBMRD5GyCZoo2wrS6q"
 ---
 
 # youniverse

@@ -1,13 +1,12 @@
 ---
-session_id: QzX8DtxWuQekAPBmMAzCeD
+id: QzX8DtxWuQekAPBmMAzCeD
 title: "[✓] Army Monitor Telegram Setup + Formulaire VBS 33.001 Dommage CHF 200"
-date: 2026-05-04 10:05 UTC
-url: https://manus.im/app/sessions/QzX8DtxWuQekAPBmMAzCeD
-project_id: ENbrMceTr2iFFx3puHhb2r
-user_messages: 14
-assistant_messages: 24
-total_messages: 56
-processed: true
+date: "2026-05-04"
+importance: 3
+projects: ["Telegram Interface"]
+tags: ["Telegram", "Army Monitor", "Formulaire", "VBS", "Dommage", "Profil", "Mem0", "Manus"]
+summary: ""
+url: "https://manus.im/app/task/QzX8DtxWuQekAPBmMAzCeD"
 ---
 
 # [✓] Army Monitor Telegram Setup + Formulaire VBS 33.001 Dommage CHF 200

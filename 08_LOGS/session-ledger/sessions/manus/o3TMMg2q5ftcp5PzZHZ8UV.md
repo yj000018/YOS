@@ -1,13 +1,12 @@
 ---
-session_id: o3TMMg2q5ftcp5PzZHZ8UV
+id: o3TMMg2q5ftcp5PzZHZ8UV
 title: "[✓] Chrome Extension for Amazon Product Comparison with CleanMyMac Design"
-date: 2025-10-25 23:20 UTC
-url: https://manus.im/app/sessions/o3TMMg2q5ftcp5PzZHZ8UV
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 8
-processed: true
+date: "2025-10-25"
+importance: 3
+projects: ["Chrome Extension", "Amazon Product Comparison"]
+tags: ["Chrome Extension", "Amazon", "Product Comparison", "UI Design", "CleanMyMac"]
+summary: ""
+url: "https://manus.im/app/task/o3TMMg2q5ftcp5PzZHZ8UV"
 ---
 
 # [✓] Chrome Extension for Amazon Product Comparison with CleanMyMac Design

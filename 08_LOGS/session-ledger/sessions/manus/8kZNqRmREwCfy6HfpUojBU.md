@@ -1,13 +1,12 @@
 ---
-session_id: 8kZNqRmREwCfy6HfpUojBU
+id: 8kZNqRmREwCfy6HfpUojBU
 title: "[✓] 3D Pool Model Generation from Architectural Plans - Taormina Project"
-date: 2025-07-07 19:05 UTC
-url: https://manus.im/app/sessions/8kZNqRmREwCfy6HfpUojBU
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 27
-processed: true
+date: "2025-07-07"
+importance: 3
+projects: ["Taormina Project"]
+tags: ["3D Model", "Pool Design", "Architectural Plans", "Rendering", "Measurements", "Taormina"]
+summary: "Génération d'un modèle 3D réaliste de piscine à partir de plans architecturaux pour le projet Taormina, avec mesures précises et rendu."
+url: "https://manus.im/app/task/8kZNqRmREwCfy6HfpUojBU"
 ---
 
 # [✓] 3D Pool Model Generation from Architectural Plans - Taormina Project

@@ -1,13 +1,12 @@
 ---
-session_id: 70jZ0O6YJTMDEWsTALSOqj
+id: 70jZ0O6YJTMDEWsTALSOqj
 title: "[✓] File Organizer Skill Demo: Downloads Folder Organization"
-date: 2026-01-29 02:33 UTC
-url: https://manus.im/app/sessions/70jZ0O6YJTMDEWsTALSOqj
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-01-29"
+importance: 3
+projects: ["Y-OS"]
+tags: ["file organization", "skill demo", "downloads folder", "automation", "cleanup", "productivity"]
+summary: "Demonstration of the file-organizer skill, successfully cleaning and structuring a Downloads folder, removing duplicates and archiving."
+url: "https://manus.im/app/task/70jZ0O6YJTMDEWsTALSOqj"
 ---
 
 # [✓] File Organizer Skill Demo: Downloads Folder Organization

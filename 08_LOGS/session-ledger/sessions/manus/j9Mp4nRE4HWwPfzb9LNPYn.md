@@ -1,13 +1,12 @@
 ---
-session_id: j9Mp4nRE4HWwPfzb9LNPYn
+id: j9Mp4nRE4HWwPfzb9LNPYn
 title: "[✓] Research Collection: Essential Resources for AI, Robotics & Future Energy"
-date: 2025-07-01 00:13 UTC
-url: https://manus.im/app/sessions/j9Mp4nRE4HWwPfzb9LNPYn
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 64
-processed: true
+date: "2025-07-01"
+importance: 3
+projects: []
+tags: ["Research", "Resource Collection", "AI", "Robotics", "Future Energy"]
+summary: ""
+url: "https://manus.im/app/task/j9Mp4nRE4HWwPfzb9LNPYn"
 ---
 
 # [✓] Research Collection: Essential Resources for AI, Robotics & Future Energy

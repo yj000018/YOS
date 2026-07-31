@@ -1,13 +1,12 @@
 ---
-session_id: oRwFLRNS4J43kt0Z9ivqoP
+id: oRwFLRNS4J43kt0Z9ivqoP
 title: "[✓] Recherche logement Quimper centre-ville — alertes email multi-plateformes"
-date: 2026-04-22 21:44 UTC
-url: https://manus.im/app/sessions/oRwFLRNS4J43kt0Z9ivqoP
-project_id: none
-user_messages: 5
-assistant_messages: 9
-total_messages: 23
-processed: true
+date: "2026-04-22"
+importance: 3
+projects: []
+tags: ["logement", "Quimper", "alertes", "immobilier"]
+summary: ""
+url: "https://manus.im/app/task/oRwFLRNS4J43kt0Z9ivqoP"
 ---
 
 # [✓] Recherche logement Quimper centre-ville — alertes email multi-plateformes

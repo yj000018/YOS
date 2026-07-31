@@ -1,13 +1,12 @@
 ---
-session_id: ro6nnUlGCFw531yXplmnj3
+id: ro6nnUlGCFw531yXplmnj3
 title: "[✓] YOS Optimizer v2.1 Upgrade + Raphaël Silva Outreach + Y-World Inventory"
-date: 2026-05-27 03:45 UTC
-url: https://manus.im/app/sessions/ro6nnUlGCFw531yXplmnj3
-project_id: none
-user_messages: 6
-assistant_messages: 11
-total_messages: 31
-processed: true
+date: "2026-05-27"
+importance: 3
+projects: ["Y-OS Optimizer", "Y-World Inventory", "YOUniverse", "Y-OS", "LLM Router"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/ro6nnUlGCFw531yXplmnj3"
 ---
 
 # [✓] YOS Optimizer v2.1 Upgrade + Raphaël Silva Outreach + Y-World Inventory

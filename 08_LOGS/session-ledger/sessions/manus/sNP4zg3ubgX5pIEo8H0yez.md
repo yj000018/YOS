@@ -1,13 +1,12 @@
 ---
-session_id: sNP4zg3ubgX5pIEo8H0yez
+id: sNP4zg3ubgX5pIEo8H0yez
 title: "[✓] ClaudeAI Chat Export Analysis - Bulk Notion Database Enhancement"
-date: 2026-03-26 23:49 UTC
-url: https://manus.im/app/sessions/sNP4zg3ubgX5pIEo8H0yez
-project_id: none
-user_messages: 7
-assistant_messages: 18
-total_messages: 32
-processed: true
+date: "2026-03-26"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Notion", "ClaudeAI", "API", "Data Processing", "Knowledge Management", "Automation"]
+summary: ""
+url: "https://manus.im/app/task/sNP4zg3ubgX5pIEo8H0yez"
 ---
 
 # [✓] ClaudeAI Chat Export Analysis - Bulk Notion Database Enhancement

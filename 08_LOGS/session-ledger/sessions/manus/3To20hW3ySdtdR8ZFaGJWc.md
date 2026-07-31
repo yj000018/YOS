@@ -1,13 +1,12 @@
 ---
-session_id: 3To20hW3ySdtdR8ZFaGJWc
+id: 3To20hW3ySdtdR8ZFaGJWc
 title: "[✓] YOUniverse v5 — Full Rebuild from Scratch with Mobile Fixes"
-date: 2026-07-31
-url: https://manus.im/app/3To20hW3ySdtdR8ZFaGJWc
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 62
-corpus: missing_26
+date: "2026-07-31"
+importance: 4
+projects: ["YOUniverse"]
+tags: ["rebuild", "mobile", "fixes", "v5"]
+summary: "YOUniverse v5 rebuilt from scratch with mobile fixes."
+url: "https://manus.im/app/task/3To20hW3ySdtdR8ZFaGJWc"
 ---
 
 # [✓] YOUniverse v5 — Full Rebuild from Scratch with Mobile Fixes

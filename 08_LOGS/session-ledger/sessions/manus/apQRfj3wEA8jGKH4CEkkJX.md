@@ -1,13 +1,12 @@
 ---
-session_id: apQRfj3wEA8jGKH4CEkkJX
+id: apQRfj3wEA8jGKH4CEkkJX
 title: "[✓] Plaud MCP Connector — Test & Factsheet v1 (Registre Connecteurs)"
-date: 2026-06-16 08:57 UTC
-url: https://manus.im/app/sessions/apQRfj3wEA8jGKH4CEkkJX
-project_id: none
-user_messages: 3
-assistant_messages: 8
-total_messages: 15
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Plaud MCP", "Factsheet", "Connecteur", "Test", "iOS", "Notion", "API", "Registre Connecteurs"]
+summary: ""
+url: "https://manus.im/app/task/apQRfj3wEA8jGKH4CEkkJX"
 ---
 
 # [✓] Plaud MCP Connector — Test & Factsheet v1 (Registre Connecteurs)

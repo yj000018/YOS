@@ -1,13 +1,12 @@
 ---
-session_id: tFuGHiBj1yHNaxHh1LPsQQ
+id: tFuGHiBj1yHNaxHh1LPsQQ
 title: "(Pas d'accès aux tasks passées ici?)"
-date: 2026-07-31
-url: https://manus.im/app/tFuGHiBj1yHNaxHh1LPsQQ
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 149
-corpus: missing_26
+date: "2026-07-31"
+importance: 1
+projects: []
+tags: ["manus", "accès", "tasks", "problème", "données manquantes"]
+summary: "Session Manus sans contenu ni messages, interrogeant l'accès aux tâches passées, avec un corpus manquant."
+url: "https://manus.im/app/task/tFuGHiBj1yHNaxHh1LPsQQ"
 ---
 
 # (Pas d'accès aux tasks passées ici?)

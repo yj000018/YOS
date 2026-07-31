@@ -1,13 +1,12 @@
 ---
-session_id: xow8GC3ixlnzx7ciKUnbMq
+id: xow8GC3ixlnzx7ciKUnbMq
 title: "[✓] Testing and Capability Analysis of Vercel MCP Connector"
-date: 2026-04-05 21:38 UTC
-url: https://manus.im/app/sessions/xow8GC3ixlnzx7ciKUnbMq
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-04-05"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Vercel", "Connector", "Testing", "Capability Analysis", "MCP", "Tools", "Documentation", "Deployment", "AI Gateway", "Edge Functions"]
+summary: ""
+url: "https://manus.im/app/task/xow8GC3ixlnzx7ciKUnbMq"
 ---
 
 # [✓] Testing and Capability Analysis of Vercel MCP Connector

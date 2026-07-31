@@ -1,13 +1,12 @@
 ---
-session_id: oJCPiy9Tq5T2eTZhKqPEJA
+id: oJCPiy9Tq5T2eTZhKqPEJA
 title: "[✓] Ynot.cafe Development: Provocative Ideas Discussion Platform"
-date: 2026-03-10 11:39 UTC
-url: https://manus.im/app/sessions/oJCPiy9Tq5T2eTZhKqPEJA
-project_id: none
-user_messages: 31
-assistant_messages: 54
-total_messages: 127
-processed: true
+date: "2026-03-10"
+importance: 3
+projects: ["Ynot.cafe", "YOUniverse", "Y-OS", "Fransai Basic"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/oJCPiy9Tq5T2eTZhKqPEJA"
 ---
 
 # [✓] Ynot.cafe Development: Provocative Ideas Discussion Platform

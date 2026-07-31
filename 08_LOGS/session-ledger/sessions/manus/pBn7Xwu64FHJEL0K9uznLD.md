@@ -1,13 +1,12 @@
 ---
-session_id: pBn7Xwu64FHJEL0K9uznLD
+id: pBn7Xwu64FHJEL0K9uznLD
 title: "[✓] Testing Airtable Connector and Exploring Its Features"
-date: 2026-01-04 05:12 UTC
-url: https://manus.im/app/sessions/pBn7Xwu64FHJEL0K9uznLD
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS", "Airtable Connector"]
+tags: ["Airtable", "Connector", "Testing", "Database", "Data Management"]
+summary: ""
+url: "https://manus.im/app/task/pBn7Xwu64FHJEL0K9uznLD"
 ---
 
 # [✓] Testing Airtable Connector and Exploring Its Features

@@ -1,13 +1,12 @@
 ---
-session_id: 54jo58nTMkrYX4E2Wot6Mh
+id: 54jo58nTMkrYX4E2Wot6Mh
 title: "[✓] GPT-Manus Command Bridge Script Deployment and Automation Setup"
-date: 2026-01-06 01:52 UTC
-url: https://manus.im/app/sessions/54jo58nTMkrYX4E2Wot6Mh
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["GPT-Manus Command Bridge"]
+tags: ["GPT", "Automation", "Scripting"]
+summary: ""
+url: "https://manus.im/app/task/54jo58nTMkrYX4E2Wot6Mh"
 ---
 
 # [✓] GPT-Manus Command Bridge Script Deployment and Automation Setup

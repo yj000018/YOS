@@ -1,13 +1,12 @@
 ---
-session_id: k4GMjRqLyhcX2cxz9UMHyw
+id: k4GMjRqLyhcX2cxz9UMHyw
 title: "[✓] BTC Price Analysis Based on Raoul Pal's 6-Week Market Views"
-date: 2025-09-29 23:04 UTC
-url: https://manus.im/app/sessions/k4GMjRqLyhcX2cxz9UMHyw
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 4
-processed: true
+date: "2025-09-29"
+importance: 3
+projects: []
+tags: ["BTC", "Bitcoin", "Raoul Pal", "Market Analysis", "Price Targets", "Crypto", "Macro"]
+summary: "Analyse des vues de Raoul Pal sur le marché pour estimer les objectifs de prix mensuels du BTC sur 15 mois."
+url: "https://manus.im/app/task/k4GMjRqLyhcX2cxz9UMHyw"
 ---
 
 # [✓] BTC Price Analysis Based on Raoul Pal's 6-Week Market Views

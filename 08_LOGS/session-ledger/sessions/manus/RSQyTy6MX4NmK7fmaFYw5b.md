@@ -1,13 +1,12 @@
 ---
-session_id: RSQyTy6MX4NmK7fmaFYw5b
+id: RSQyTy6MX4NmK7fmaFYw5b
 title: "[✓] Media & Crea — Multi-Project Context Handoff and Status Sync"
-date: 2026-03-02 05:02 UTC
-url: https://manus.im/app/sessions/RSQyTy6MX4NmK7fmaFYw5b
-project_id: dFVGvbFJ9iR4NUEgVDwBzH
-user_messages: 2
-assistant_messages: 2
-total_messages: 8
-processed: true
+date: "2026-03-02"
+importance: 3
+projects: ["Ludivine", "Memory Pipeline"]
+tags: ["Media & Crea", "Multi-Project", "Status Sync", "GIF Creation", "PDF Translation", "Memory System", "Notion", "API Quota", "Uploads"]
+summary: ""
+url: "https://manus.im/app/task/RSQyTy6MX4NmK7fmaFYw5b"
 ---
 
 # [✓] Media & Crea — Multi-Project Context Handoff and Status Sync

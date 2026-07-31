@@ -1,13 +1,12 @@
 ---
-session_id: fEmDWmQE6dTLdbzEpa5fg6
+id: fEmDWmQE6dTLdbzEpa5fg6
 title: "[✓] Création événements Calendar Valais + Inventaire Y World 27 éléments"
-date: 2026-04-28 08:48 UTC
-url: https://manus.im/app/sessions/fEmDWmQE6dTLdbzEpa5fg6
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 21
-processed: true
+date: "2026-04-28"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "CasaTAO", "Memory OS", "Civilizational Awakening"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/fEmDWmQE6dTLdbzEpa5fg6"
 ---
 
 # [✓] Création événements Calendar Valais + Inventaire Y World 27 éléments

@@ -1,13 +1,12 @@
 ---
-session_id: mtc6nziBFnzb1OpZOXE1Od
+id: mtc6nziBFnzb1OpZOXE1Od
 title: "[✓] Réorganisation complète Google Drive EIA / Roberta Scuderi"
-date: 2026-05-07 15:46 UTC
-url: https://manus.im/app/sessions/mtc6nziBFnzb1OpZOXE1Od
-project_id: YoYEqM8vWbNajPZ6hor8KR
-user_messages: 17
-assistant_messages: 28
-total_messages: 71
-processed: true
+date: "2026-05-07"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Google Drive", "rclone", "cloud synchronization", "data organization", "toolbox", "OneDrive", "pCloud"]
+summary: ""
+url: "https://manus.im/app/task/mtc6nziBFnzb1OpZOXE1Od"
 ---
 
 # [✓] Réorganisation complète Google Drive EIA / Roberta Scuderi

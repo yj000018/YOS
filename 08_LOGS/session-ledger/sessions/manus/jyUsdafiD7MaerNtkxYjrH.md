@@ -1,13 +1,12 @@
 ---
-session_id: jyUsdafiD7MaerNtkxYjrH
+id: jyUsdafiD7MaerNtkxYjrH
 title: "[✓] Best Domain Name Ideas for Spirituality Site"
-date: 2026-02-17 18:42 UTC
-url: https://manus.im/app/sessions/jyUsdafiD7MaerNtkxYjrH
-project_id: YoYEqM8vWbNajPZ6hor8KR
-user_messages: 2
-assistant_messages: 3
-total_messages: 9
-processed: true
+date: "2026-02-17"
+importance: 3
+projects: []
+tags: ["domain names", "spirituality", "website", "branding", "eya", "eia", "recommendations"]
+summary: "Generated and recommended available domain names for a new spirituality website using 'eia' or 'eya' keywords."
+url: "https://manus.im/app/task/jyUsdafiD7MaerNtkxYjrH"
 ---
 
 # [✓] Best Domain Name Ideas for Spirituality Site

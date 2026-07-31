@@ -1,13 +1,12 @@
 ---
-session_id: IscmW4QpsVSSWXpC19QBcp
+id: IscmW4QpsVSSWXpC19QBcp
 title: "[✓] Extraction Worldchanging — OCR scraping Archive.org (647 ressources)"
-date: 2026-05-18 22:00 UTC
-url: https://manus.im/app/sessions/IscmW4QpsVSSWXpC19QBcp
-project_id: gGoVizty5NhxjYoKGXZqqW
-user_messages: 44
-assistant_messages: 89
-total_messages: 193
-processed: true
+date: "2026-05-18"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Y World", "PRÉCIPITATION", "OneSHIFT"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/IscmW4QpsVSSWXpC19QBcp"
 ---
 
 # [✓] Extraction Worldchanging — OCR scraping Archive.org (647 ressources)

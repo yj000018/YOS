@@ -1,13 +1,12 @@
 ---
-session_id: BLNnVBGbhjx7CjjgBfCtAX
+id: BLNnVBGbhjx7CjjgBfCtAX
 title: "[✓] Testing Wix Connector Capabilities and Documentation"
-date: 2026-01-04 05:32 UTC
-url: https://manus.im/app/sessions/BLNnVBGbhjx7CjjgBfCtAX
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Wix Connector"]
+tags: ["Wix", "Connector", "Testing", "Documentation", "API", "Site Management", "E-commerce", "Integration"]
+summary: ""
+url: "https://manus.im/app/task/BLNnVBGbhjx7CjjgBfCtAX"
 ---
 
 # [✓] Testing Wix Connector Capabilities and Documentation

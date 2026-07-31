@@ -1,13 +1,12 @@
 ---
-session_id: Rb7rz7t4VVZmmStOdNpQwd
+id: Rb7rz7t4VVZmmStOdNpQwd
 title: "Testing and Using Wireflow Connector Features"
-date: 2026-07-22 22:34 UTC
-url: https://manus.im/app/sessions/Rb7rz7t4VVZmmStOdNpQwd
-project_id: imd9BRqHPV68nZkKkiUtWT
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-07-22"
+importance: 2
+projects: ["Y-OS"]
+tags: ["wireflow", "connector", "testing", "workflow_automation", "AI_models", "tool_integration"]
+summary: "Testing and exploring the Wireflow connector's features within Manus, including workflow execution and AI model access."
+url: "https://manus.im/app/task/Rb7rz7t4VVZmmStOdNpQwd"
 ---
 
 # Testing and Using Wireflow Connector Features

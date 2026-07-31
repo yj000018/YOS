@@ -1,13 +1,12 @@
 ---
-session_id: ojQ4rmY2A225updJjVUn4N
+id: ojQ4rmY2A225updJjVUn4N
 title: "[✓] Demo of /hydrater Skill — 3 Real yOS Projects Across All Depth Modes"
-date: 2026-04-26 06:38 UTC
-url: https://manus.im/app/sessions/ojQ4rmY2A225updJjVUn4N
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-04-26"
+importance: 3
+projects: ["Y-OS", "7d LIFE", "yOS Memory Architecture", "Ludivine"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/ojQ4rmY2A225updJjVUn4N"
 ---
 
 # [✓] Demo of /hydrater Skill — 3 Real yOS Projects Across All Depth Modes

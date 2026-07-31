@@ -1,13 +1,12 @@
 ---
-session_id: x9fcuVXGiPyNhmXqLHRr87
+id: x9fcuVXGiPyNhmXqLHRr87
 title: "[✓] Divine Spiritual Library — Trilingual Booklet Series Project Launch"
-date: 2025-06-28 11:04 UTC
-url: https://manus.im/app/sessions/x9fcuVXGiPyNhmXqLHRr87
-project_id: none
-user_messages: 10
-assistant_messages: 19
-total_messages: 228
-processed: true
+date: "2025-06-28"
+importance: 3
+projects: ["Divine Spiritual Library", "YOUniverse", "Y World"]
+tags: ["Project Launch"]
+summary: ""
+url: "https://manus.im/app/task/x9fcuVXGiPyNhmXqLHRr87"
 ---
 
 # [✓] Divine Spiritual Library — Trilingual Booklet Series Project Launch

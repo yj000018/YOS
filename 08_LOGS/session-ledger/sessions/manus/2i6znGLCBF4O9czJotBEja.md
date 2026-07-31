@@ -1,13 +1,12 @@
 ---
-session_id: 2i6znGLCBF4O9czJotBEja
+id: 2i6znGLCBF4O9czJotBEja
 title: "[✓] Architecture Y-OS : échec n8n Manus Cloud, pivot vers N100 Lambda + Capabilities Map"
-date: 2026-06-16 11:19 UTC
-url: https://manus.im/app/sessions/2i6znGLCBF4O9czJotBEja
-project_id: none
-user_messages: 5
-assistant_messages: 15
-total_messages: 28
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "N100 Lambda", "Capabilities Map", "n8n", "Home Assistant"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/2i6znGLCBF4O9czJotBEja"
 ---
 
 # [✓] Architecture Y-OS : échec n8n Manus Cloud, pivot vers N100 Lambda + Capabilities Map

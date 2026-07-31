@@ -1,13 +1,12 @@
 ---
-session_id: E6RHu1gBwkPCNUSwbstBmM
+id: E6RHu1gBwkPCNUSwbstBmM
 title: "[✓] Human Awakening Lab Website Deployment with Unified Architecture"
-date: 2025-07-13 23:18 UTC
-url: https://manus.im/app/sessions/E6RHu1gBwkPCNUSwbstBmM
-project_id: none
-user_messages: 8
-assistant_messages: 19
-total_messages: 148
-processed: true
+date: "2025-07-13"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Human Awakening Lab", "Écosystème de Transformation Planétaire"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/E6RHu1gBwkPCNUSwbstBmM"
 ---
 
 # [✓] Human Awakening Lab Website Deployment with Unified Architecture

@@ -1,13 +1,12 @@
 ---
-session_id: hTmzKAnEq9yaaNVUdYgmSP
+id: hTmzKAnEq9yaaNVUdYgmSP
 title: "[✓] Création d'un mindmap interactif avec génération IA dynamique"
-date: 2025-07-14 18:20 UTC
-url: https://manus.im/app/sessions/hTmzKAnEq9yaaNVUdYgmSP
-project_id: none
-user_messages: 11
-assistant_messages: 17
-total_messages: 131
-processed: true
+date: "2025-07-14"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Mindmap interactif", "Génération IA dynamique"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/hTmzKAnEq9yaaNVUdYgmSP"
 ---
 
 # [✓] Création d'un mindmap interactif avec génération IA dynamique

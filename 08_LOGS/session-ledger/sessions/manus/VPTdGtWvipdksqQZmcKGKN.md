@@ -1,13 +1,12 @@
 ---
-session_id: VPTdGtWvipdksqQZmcKGKN
+id: VPTdGtWvipdksqQZmcKGKN
 title: "[✓] Insider Monkey Newsletter Analysis - Market Intelligence & Investment Insights"
-date: 2026-01-06 00:38 UTC
-url: https://manus.im/app/sessions/VPTdGtWvipdksqQZmcKGKN
-project_id: none
-user_messages: 0
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: []
+tags: ["Market Intelligence", "Investment Insights", "Newsletter Analysis", "Dividend Stocks"]
+summary: ""
+url: "https://manus.im/app/task/VPTdGtWvipdksqQZmcKGKN"
 ---
 
 # [✓] Insider Monkey Newsletter Analysis - Market Intelligence & Investment Insights

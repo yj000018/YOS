@@ -1,13 +1,12 @@
 ---
-session_id: nuRRRbRPj57FPEXv8Xns82
+id: nuRRRbRPj57FPEXv8Xns82
 title: "[✓] Integration of Lemlist via MCP for personalized outreach campaigns"
-date: 2026-02-27 09:37 UTC
-url: https://manus.im/app/sessions/nuRRRbRPj57FPEXv8Xns82
-project_id: none
-user_messages: 3
-assistant_messages: 4
-total_messages: 15
-processed: true
+date: "2026-02-27"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Lemlist", "MCP", "Integration", "Outreach", "Marketing"]
+summary: "Recherche et confirmation d'un MCP officiel Lemlist pour une intégration fluide dans l'écosystème Y-OS pour les campagnes d'outreach personnalisées."
+url: "https://manus.im/app/task/nuRRRbRPj57FPEXv8Xns82"
 ---
 
 # [✓] Integration of Lemlist via MCP for personalized outreach campaigns

@@ -1,13 +1,12 @@
 ---
-session_id: XW4B36bzpwKuvb1ycGZCd7
+id: XW4B36bzpwKuvb1ycGZCd7
 title: "[✓] Greek Style Interior Redesign: Party Bus to Mediterranean Oasis"
-date: 2025-10-25 22:46 UTC
-url: https://manus.im/app/sessions/XW4B36bzpwKuvb1ycGZCd7
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 17
-processed: true
+date: "2025-10-25"
+importance: 3
+projects: []
+tags: ["interior design", "website creation", "deployment", "home decor", "greek style"]
+summary: ""
+url: "https://manus.im/app/task/XW4B36bzpwKuvb1ycGZCd7"
 ---
 
 # [✓] Greek Style Interior Redesign: Party Bus to Mediterranean Oasis

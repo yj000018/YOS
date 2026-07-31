@@ -1,13 +1,12 @@
 ---
-session_id: eklT1DKlHdGsa801dBEluy
+id: eklT1DKlHdGsa801dBEluy
 title: "[✓] Y-WORLD Vault Deployment — Obsidian Setup, Git Sync & Lovable Site Prompt"
-date: 2026-05-28 18:53 UTC
-url: https://manus.im/app/sessions/eklT1DKlHdGsa801dBEluy
-project_id: bL6ZPrH59xoaYXxY8HVdxZ
-user_messages: 133
-assistant_messages: 275
-total_messages: 621
-processed: true
+date: "2026-05-28"
+importance: 3
+projects: ["Y-OS", "Y-WORLD"]
+tags: ["deployment", "Obsidian", "Git", "website", "navigation", "caching", "debugging", "setup", "knowledge management"]
+summary: "Déploiement du Y-WORLD Vault, configuration d'Obsidian et Git Sync, et débogage de la navigation du site web."
+url: "https://manus.im/app/task/eklT1DKlHdGsa801dBEluy"
 ---
 
 # [✓] Y-WORLD Vault Deployment — Obsidian Setup, Git Sync & Lovable Site Prompt

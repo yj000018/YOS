@@ -1,13 +1,12 @@
 ---
-session_id: tiqh9SnI0VMirKsuNmYFTi
+id: tiqh9SnI0VMirKsuNmYFTi
 title: "[✓] Apify MCP Connector — Test Live & Factsheet Y-OS"
-date: 2026-06-16 11:10 UTC
-url: https://manus.im/app/sessions/tiqh9SnI0VMirKsuNmYFTi
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Apify", "MCP Connector", "Factsheet", "Live Test", "Integration", "Notion"]
+summary: ""
+url: "https://manus.im/app/task/tiqh9SnI0VMirKsuNmYFTi"
 ---
 
 # [✓] Apify MCP Connector — Test Live & Factsheet Y-OS

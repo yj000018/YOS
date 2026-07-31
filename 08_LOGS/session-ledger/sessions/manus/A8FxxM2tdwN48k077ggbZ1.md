@@ -1,13 +1,12 @@
 ---
-session_id: A8FxxM2tdwN48k077ggbZ1
+id: A8FxxM2tdwN48k077ggbZ1
 title: "[✓] Magic Patterns MCP — Live Test & Y-OS Tool Factsheet"
-date: 2026-06-16 11:16 UTC
-url: https://manus.im/app/sessions/A8FxxM2tdwN48k077ggbZ1
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Magic Patterns", "Factsheet", "Tool Analysis", "Prototyping", "UI/UX", "API", "iOS", "Notion", "Live Test"]
+summary: "Création d'une factsheet détaillée pour Magic Patterns MCP, un outil de prototypage UI pour iOS, testé en live pour Y-OS."
+url: "https://manus.im/app/task/A8FxxM2tdwN48k077ggbZ1"
 ---
 
 # [✓] Magic Patterns MCP — Live Test & Y-OS Tool Factsheet

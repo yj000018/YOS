@@ -1,13 +1,12 @@
 ---
-session_id: 3wBmMTpwM55vGjWxrmsSEP
+id: 3wBmMTpwM55vGjWxrmsSEP
 title: "[✓] Domain Strategy Research: o-n-e Extensions for Umbrella Brand"
-date: 2026-03-07 00:27 UTC
-url: https://manus.im/app/sessions/3wBmMTpwM55vGjWxrmsSEP
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 16
-processed: true
+date: "2026-03-07"
+importance: 4
+projects: ["YOUniverse", "Y-OS", "Memory Pipeline", "O-N-E", "Fransai Basic", "Spiritual Library", "RELAVANCE.AI", "ODYSSEY"]
+tags: ["Domain Strategy", "Branding", "Ecosystem Mapping", "Infrastructure", "Unification", "Y-OS", "YOUniverse"]
+summary: "Research on O-N-E domain strategy to unify the Y World / YOUniverse ecosystem and its 22 major entities."
+url: "https://manus.im/app/task/3wBmMTpwM55vGjWxrmsSEP"
 ---
 
 # [✓] Domain Strategy Research: o-n-e Extensions for Umbrella Brand

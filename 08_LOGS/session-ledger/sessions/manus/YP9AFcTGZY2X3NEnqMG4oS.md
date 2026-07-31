@@ -1,13 +1,12 @@
 ---
-session_id: YP9AFcTGZY2X3NEnqMG4oS
+id: YP9AFcTGZY2X3NEnqMG4oS
 title: "[✓] Veille MCP Bimensuelle Juin 2026 — Activation Context7, Mem0, Supabase, Perplexity"
-date: 2026-06-15 07:04 UTC
-url: https://manus.im/app/sessions/YP9AFcTGZY2X3NEnqMG4oS
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 9
-assistant_messages: 16
-total_messages: 40
-processed: true
+date: "2026-06-15"
+importance: 3
+projects: ["Y-OS", "Manus"]
+tags: ["MCP", "Veille", "Activation", "Installation", "Connectors", "Custom MCP"]
+summary: ""
+url: "https://manus.im/app/task/YP9AFcTGZY2X3NEnqMG4oS"
 ---
 
 # [✓] Veille MCP Bimensuelle Juin 2026 — Activation Context7, Mem0, Supabase, Perplexity

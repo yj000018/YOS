@@ -1,13 +1,12 @@
 ---
-session_id: bT7srwVDo4EPasPbu8VwRn
+id: bT7srwVDo4EPasPbu8VwRn
 title: "[✓] Testing Webflow Connector and Creating Photo Gallery Website"
-date: 2026-01-02 06:44 UTC
-url: https://manus.im/app/sessions/bT7srwVDo4EPasPbu8VwRn
-project_id: none
-user_messages: 3
-assistant_messages: 5
-total_messages: 14
-processed: true
+date: "2026-01-02"
+importance: 3
+projects: []
+tags: ["Webflow", "Connector", "Photo Gallery", "Website", "Lumina"]
+summary: ""
+url: "https://manus.im/app/task/bT7srwVDo4EPasPbu8VwRn"
 ---
 
 # [✓] Testing Webflow Connector and Creating Photo Gallery Website

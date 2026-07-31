@@ -1,13 +1,12 @@
 ---
-session_id: ObYehwPJTigJMtnDUMuSjs
+id: ObYehwPJTigJMtnDUMuSjs
 title: "[✓] Testing HubSpot Connector Authentication and Feature Overview"
-date: 2026-01-04 05:47 UTC
-url: https://manus.im/app/sessions/ObYehwPJTigJMtnDUMuSjs
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS"]
+tags: ["HubSpot", "Connector", "Authentication", "Testing", "CRM", "MCP"]
+summary: "Testing and overview of the HubSpot connector's authentication and CRM management capabilities for the Y-OS system."
+url: "https://manus.im/app/task/ObYehwPJTigJMtnDUMuSjs"
 ---
 
 # [✓] Testing HubSpot Connector Authentication and Feature Overview

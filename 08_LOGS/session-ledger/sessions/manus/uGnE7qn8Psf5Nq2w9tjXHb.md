@@ -1,13 +1,12 @@
 ---
-session_id: uGnE7qn8Psf5Nq2w9tjXHb
+id: uGnE7qn8Psf5Nq2w9tjXHb
 title: "[✓] Roblox Spiritual Game → App Archétypes/Tarot Business Case 1–3 ans"
-date: 2026-05-31 16:21 UTC
-url: https://manus.im/app/sessions/uGnE7qn8Psf5Nq2w9tjXHb
-project_id: none
-user_messages: 82
-assistant_messages: 117
-total_messages: 350
-processed: true
+date: "2026-05-31"
+importance: 3
+projects: ["Roblox Spiritual Game", "App Archétypes", "Tarot Business Case", "YOUniverse"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/uGnE7qn8Psf5Nq2w9tjXHb"
 ---
 
 # [✓] Roblox Spiritual Game → App Archétypes/Tarot Business Case 1–3 ans

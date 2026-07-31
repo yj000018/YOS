@@ -1,13 +1,12 @@
 ---
-session_id: byu5qo7d2cdCZfjRDbsLYA
+id: byu5qo7d2cdCZfjRDbsLYA
 title: "(Exporter toutes les sessions dans Manus pour un transcript complet)"
-date: 2026-07-31
-url: https://manus.im/app/byu5qo7d2cdCZfjRDbsLYA
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 22
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: []
+tags: ["Manus", "Export", "Administration"]
+summary: ""
+url: "https://manus.im/app/task/byu5qo7d2cdCZfjRDbsLYA"
 ---
 
 # (Exporter toutes les sessions dans Manus pour un transcript complet)

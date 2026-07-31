@@ -1,13 +1,12 @@
 ---
-session_id: naHZGoQUxD4fR9wQf1NHvG
+id: naHZGoQUxD4fR9wQf1NHvG
 title: "[✓] Architecture client Y-OS sur Manus : Tampermonkey + Side Panel intelligent"
-date: 2026-05-11 16:17 UTC
-url: https://manus.im/app/sessions/naHZGoQUxD4fR9wQf1NHvG
-project_id: none
-user_messages: 61
-assistant_messages: 93
-total_messages: 276
-processed: true
+date: "2026-05-11"
+importance: 3
+projects: ["Y-OS", "Manus", "YOUniverse", "Notion", "Mem0", "Memory Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/naHZGoQUxD4fR9wQf1NHvG"
 ---
 
 # [✓] Architecture client Y-OS sur Manus : Tampermonkey + Side Panel intelligent

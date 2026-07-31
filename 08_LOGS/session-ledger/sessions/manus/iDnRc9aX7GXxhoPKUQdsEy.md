@@ -1,13 +1,12 @@
 ---
-session_id: iDnRc9aX7GXxhoPKUQdsEy
+id: iDnRc9aX7GXxhoPKUQdsEy
 title: "(Manus Sessions Manager Skill)"
-date: 2026-07-31
-url: https://manus.im/app/iDnRc9aX7GXxhoPKUQdsEy
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 106
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: []
+tags: ["Manus", "Session Management", "Skill", "Empty Session", "System Event"]
+summary: ""
+url: "https://manus.im/app/task/iDnRc9aX7GXxhoPKUQdsEy"
 ---
 
 # (Manus Sessions Manager Skill)

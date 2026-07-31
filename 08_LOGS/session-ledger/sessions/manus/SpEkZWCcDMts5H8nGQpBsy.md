@@ -1,13 +1,12 @@
 ---
-session_id: SpEkZWCcDMts5H8nGQpBsy
+id: SpEkZWCcDMts5H8nGQpBsy
 title: "[✓] Execute GPT-Manus Command Bridge Script with Automated Polling"
-date: 2026-01-06 01:41 UTC
-url: https://manus.im/app/sessions/SpEkZWCcDMts5H8nGQpBsy
-project_id: none
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-01-06"
+importance: 5
+projects: ["Y-OS", "Manus", "GPT-Manus Command Bridge"]
+tags: ["automation", "scripting", "integration", "ChatGPT", "Relevance AI", "command bridge", "polling", "logging", "infrastructure", "AI", "LLM", "development"]
+summary: "Created, executed, and automated a GPT-Manus command bridge script to poll ChatGPT for commands and execute them on Relevance AI with logging."
+url: "https://manus.im/app/task/SpEkZWCcDMts5H8nGQpBsy"
 ---
 
 # [✓] Execute GPT-Manus Command Bridge Script with Automated Polling

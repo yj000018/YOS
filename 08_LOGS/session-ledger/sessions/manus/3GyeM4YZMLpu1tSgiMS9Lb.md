@@ -1,13 +1,12 @@
 ---
-session_id: 3GyeM4YZMLpu1tSgiMS9Lb
+id: 3GyeM4YZMLpu1tSgiMS9Lb
 title: "[✓] Accessing ChatGPT Agent from Europe: VPN Issues and Alternatives"
-date: 2025-07-25 05:05 UTC
-url: https://manus.im/app/sessions/3GyeM4YZMLpu1tSgiMS9Lb
-project_id: none
-user_messages: 2
-assistant_messages: 2
-total_messages: 29
-processed: true
+date: "2025-07-25"
+importance: 3
+projects: ["Y-OS"]
+tags: ["ChatGPT", "VPN", "AI", "Europe", "OpenAI", "Mistral AI"]
+summary: ""
+url: "https://manus.im/app/task/3GyeM4YZMLpu1tSgiMS9Lb"
 ---
 
 # [✓] Accessing ChatGPT Agent from Europe: VPN Issues and Alternatives

@@ -1,13 +1,12 @@
 ---
-session_id: c1RZU2jVkaQwDxPB3iVKMQ
+id: c1RZU2jVkaQwDxPB3iVKMQ
 title: "[✓] Pinecone Vector DB Selection & PoC for yOS Memory System"
-date: 2026-02-22 01:42 UTC
-url: https://manus.im/app/sessions/c1RZU2jVkaQwDxPB3iVKMQ
-project_id: none
-user_messages: 11
-assistant_messages: 20
-total_messages: 53
-processed: true
+date: "2026-02-22"
+importance: 5
+projects: ["Y-OS", "Memory System", "Memory Pipeline"]
+tags: ["Pinecone", "Vector Database", "PoC", "RAG", "Memory", "Canon", "Notion", "Architecture", "Embedding"]
+summary: "Selection and PoC of Pinecone as the canonical vector database for the yOS Memory System (RAG), a critical architectural decision."
+url: "https://manus.im/app/task/c1RZU2jVkaQwDxPB3iVKMQ"
 ---
 
 # [✓] Pinecone Vector DB Selection & PoC for yOS Memory System

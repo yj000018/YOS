@@ -1,13 +1,12 @@
 ---
-session_id: 55CEot0bwHbqRgwPNusfj3
+id: 55CEot0bwHbqRgwPNusfj3
 title: "[✓] Y-OS Universe 3D Interface — Context Recovery & Handoff Summary"
-date: 2026-07-31
-url: https://manus.im/app/55CEot0bwHbqRgwPNusfj3
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 11
-corpus: missing_26
+date: "2026-07-31"
+importance: 4
+projects: ["YOUniverse", "Y-OS"]
+tags: ["3D Interface", "Context Recovery", "Handoff", "Summary"]
+summary: "Summary of context recovery and handoff for the Y-OS Universe 3D interface."
+url: "https://manus.im/app/task/55CEot0bwHbqRgwPNusfj3"
 ---
 
 # [✓] Y-OS Universe 3D Interface — Context Recovery & Handoff Summary

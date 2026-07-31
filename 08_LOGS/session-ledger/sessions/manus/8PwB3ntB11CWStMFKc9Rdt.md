@@ -1,13 +1,12 @@
 ---
-session_id: 8PwB3ntB11CWStMFKc9Rdt
+id: 8PwB3ntB11CWStMFKc9Rdt
 title: "[✓] Testing Hugging Face Connector and 3D AI Model Comparison"
-date: 2026-01-02 05:49 UTC
-url: https://manus.im/app/sessions/8PwB3ntB11CWStMFKc9Rdt
-project_id: none
-user_messages: 4
-assistant_messages: 9
-total_messages: 21
-processed: true
+date: "2026-01-02"
+importance: 3
+projects: ["Y-OS"]
+tags: ["hugging face", "3d", "ai", "generative ai", "model comparison", "connector", "testing"]
+summary: ""
+url: "https://manus.im/app/task/8PwB3ntB11CWStMFKc9Rdt"
 ---
 
 # [✓] Testing Hugging Face Connector and 3D AI Model Comparison

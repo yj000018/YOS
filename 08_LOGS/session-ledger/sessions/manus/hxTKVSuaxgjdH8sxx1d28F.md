@@ -1,13 +1,12 @@
 ---
-session_id: hxTKVSuaxgjdH8sxx1d28F
+id: hxTKVSuaxgjdH8sxx1d28F
 title: "[✓] Y-OS Manus Session Consolidation & Infrastructure Hygiene"
-date: 2026-05-02 01:45 UTC
-url: https://manus.im/app/sessions/hxTKVSuaxgjdH8sxx1d28F
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 53
-assistant_messages: 123
-total_messages: 282
-processed: true
+date: "2026-05-02"
+importance: 3
+projects: ["Y-OS", "Manus", "Y World", "YOUniverse", "EYA", "EIA"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/hxTKVSuaxgjdH8sxx1d28F"
 ---
 
 # [✓] Y-OS Manus Session Consolidation & Infrastructure Hygiene

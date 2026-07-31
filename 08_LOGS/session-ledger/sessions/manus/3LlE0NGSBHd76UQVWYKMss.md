@@ -1,13 +1,12 @@
 ---
-session_id: 3LlE0NGSBHd76UQVWYKMss
+id: 3LlE0NGSBHd76UQVWYKMss
 title: "How to Test and Use the Mobbin Connector Features"
-date: 2026-07-22 22:25 UTC
-url: https://manus.im/app/sessions/3LlE0NGSBHd76UQVWYKMss
-project_id: imd9BRqHPV68nZkKkiUtWT
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-07-22"
+importance: 3
+projects: ["Y-OS", "Mobbin Connector"]
+tags: ["mobbin", "connector", "testing", "ui/ux", "api_integration", "subscription_required"]
+summary: "Tested Mobbin connector features, identified API tools, and found a paid Mobbin account is required for full data."
+url: "https://manus.im/app/task/3LlE0NGSBHd76UQVWYKMss"
 ---
 
 # How to Test and Use the Mobbin Connector Features

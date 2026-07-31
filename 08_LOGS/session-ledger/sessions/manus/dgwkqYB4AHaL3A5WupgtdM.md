@@ -1,13 +1,12 @@
 ---
-session_id: dgwkqYB4AHaL3A5WupgtdM
+id: dgwkqYB4AHaL3A5WupgtdM
 title: "[✓] Ananda Clinic — Luxury Brochure, Slide Deck & Website Production"
-date: 2026-04-13 16:02 UTC
-url: https://manus.im/app/sessions/dgwkqYB4AHaL3A5WupgtdM
-project_id: none
-user_messages: 27
-assistant_messages: 37
-total_messages: 102
-processed: true
+date: "2026-04-13"
+importance: 3
+projects: ["Ananda Clinic", "Ananda", "YOUniverse"]
+tags: ["website production"]
+summary: ""
+url: "https://manus.im/app/task/dgwkqYB4AHaL3A5WupgtdM"
 ---
 
 # [✓] Ananda Clinic — Luxury Brochure, Slide Deck & Website Production

@@ -1,13 +1,12 @@
 ---
-session_id: va3RMP4NbVSr8muFTxZsXn
+id: va3RMP4NbVSr8muFTxZsXn
 title: "[✓] ONEshift — Import OneNote vers Manus pour analyse et dev plateforme"
-date: 2026-05-13 22:38 UTC
-url: https://manus.im/app/sessions/va3RMP4NbVSr8muFTxZsXn
-project_id: none
-user_messages: 28
-assistant_messages: 38
-total_messages: 116
-processed: true
+date: "2026-05-13"
+importance: 3
+projects: ["ONEshift", "ACT", "YOUniverse", "Y-OS", "Ludivine"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/va3RMP4NbVSr8muFTxZsXn"
 ---
 
 # [✓] ONEshift — Import OneNote vers Manus pour analyse et dev plateforme

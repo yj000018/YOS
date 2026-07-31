@@ -1,13 +1,12 @@
 ---
-session_id: nKzZxfKPnx3UdcU86gwPxC
+id: nKzZxfKPnx3UdcU86gwPxC
 title: "[✓] Comparative Analysis: ASN International vs Bupa & Cigna Health Insurance"
-date: 2025-09-19 07:37 UTC
-url: https://manus.im/app/sessions/nKzZxfKPnx3UdcU86gwPxC
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 8
-processed: true
+date: "2025-09-19"
+importance: 3
+projects: []
+tags: ["Health Insurance", "Comparative Analysis", "Website", "Deployment", "International"]
+summary: ""
+url: "https://manus.im/app/task/nKzZxfKPnx3UdcU86gwPxC"
 ---
 
 # [✓] Comparative Analysis: ASN International vs Bupa & Cigna Health Insurance

@@ -1,13 +1,12 @@
 ---
-session_id: j9cSPPx9xjFd156thfS53Q
+id: j9cSPPx9xjFd156thfS53Q
 title: "[✓] Testing Instagram Creator Marketplace Connector and Features"
-date: 2026-03-18 18:42 UTC
-url: https://manus.im/app/sessions/j9cSPPx9xjFd156thfS53Q
-project_id: none
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-03-18"
+importance: 3
+projects: ["Y-OS", "Instagram Creator Marketplace Connector"]
+tags: ["instagram", "creator marketplace", "connector", "api integration", "testing", "meta"]
+summary: ""
+url: "https://manus.im/app/task/j9cSPPx9xjFd156thfS53Q"
 ---
 
 # [✓] Testing Instagram Creator Marketplace Connector and Features

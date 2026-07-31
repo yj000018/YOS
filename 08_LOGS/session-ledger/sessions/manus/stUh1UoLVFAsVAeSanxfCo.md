@@ -1,13 +1,12 @@
 ---
-session_id: stUh1UoLVFAsVAeSanxfCo
+id: stUh1UoLVFAsVAeSanxfCo
 title: "[✓] Italian Spiritual Vocal Music Generation + Manus Capability Audit"
-date: 2026-04-29 19:16 UTC
-url: https://manus.im/app/sessions/stUh1UoLVFAsVAeSanxfCo
-project_id: none
-user_messages: 5
-assistant_messages: 8
-total_messages: 25
-processed: true
+date: "2026-04-29"
+importance: 3
+projects: ["Y-OS", "Manus"]
+tags: ["Manus Desktop", "macOS"]
+summary: ""
+url: "https://manus.im/app/task/stUh1UoLVFAsVAeSanxfCo"
 ---
 
 # [✓] Italian Spiritual Vocal Music Generation + Manus Capability Audit

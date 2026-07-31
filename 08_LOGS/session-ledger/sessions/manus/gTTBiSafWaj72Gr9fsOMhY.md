@@ -1,13 +1,12 @@
 ---
-session_id: gTTBiSafWaj72Gr9fsOMhY
+id: gTTBiSafWaj72Gr9fsOMhY
 title: "[✓] Create Chat Mode Transition Skill"
-date: 2026-04-04 12:19 UTC
-url: https://manus.im/app/sessions/gTTBiSafWaj72Gr9fsOMhY
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 10
-processed: true
+date: "2026-04-04"
+importance: 3
+projects: ["Y-OS"]
+tags: ["skill", "chat mode", "agent mode", "transition", "context transfer", "skill-creator"]
+summary: ""
+url: "https://manus.im/app/task/gTTBiSafWaj72Gr9fsOMhY"
 ---
 
 # [✓] Create Chat Mode Transition Skill

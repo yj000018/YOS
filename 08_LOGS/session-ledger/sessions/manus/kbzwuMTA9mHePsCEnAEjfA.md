@@ -1,13 +1,12 @@
 ---
-session_id: kbzwuMTA9mHePsCEnAEjfA
+id: kbzwuMTA9mHePsCEnAEjfA
 title: "[✓] Chandika Maha Lakshmi — Complete Course + Murti Sourcing (18-Armed Form)"
-date: 2026-04-18 12:58 UTC
-url: https://manus.im/app/sessions/kbzwuMTA9mHePsCEnAEjfA
-project_id: none
-user_messages: 15
-assistant_messages: 21
-total_messages: 54
-processed: true
+date: "2026-04-18"
+importance: 3
+projects: []
+tags: ["Hinduism", "Lakshmi", "Durga", "Murti", "Iconography", "Chandika", "Ashtadasha"]
+summary: "Analysis of iconographic distinctions between Durga and 18-armed Mahalakshmi Chandika for murti sourcing."
+url: "https://manus.im/app/task/kbzwuMTA9mHePsCEnAEjfA"
 ---
 
 # [✓] Chandika Maha Lakshmi — Complete Course + Murti Sourcing (18-Armed Form)

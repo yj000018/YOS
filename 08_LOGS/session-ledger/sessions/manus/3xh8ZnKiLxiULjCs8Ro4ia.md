@@ -1,13 +1,12 @@
 ---
-session_id: 3xh8ZnKiLxiULjCs8Ro4ia
+id: 3xh8ZnKiLxiULjCs8Ro4ia
 title: "[✓] CP Skill Refactoring: 9-Mode Menu → CP Core v3.0 (3-Function Architecture)"
-date: 2026-06-29 21:05 UTC
-url: https://manus.im/app/sessions/3xh8ZnKiLxiULjCs8Ro4ia
-project_id: none
-user_messages: 7
-assistant_messages: 14
-total_messages: 34
-processed: true
+date: "2026-06-29"
+importance: 3
+projects: ["CP", "CSE"]
+tags: ["CP Skill Refactoring", "CP Core v3.0", "3-Function Architecture", "Continuity Pack"]
+summary: ""
+url: "https://manus.im/app/task/3xh8ZnKiLxiULjCs8Ro4ia"
 ---
 
 # [✓] CP Skill Refactoring: 9-Mode Menu → CP Core v3.0 (3-Function Architecture)

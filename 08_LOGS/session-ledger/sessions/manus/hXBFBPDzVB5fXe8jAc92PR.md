@@ -1,13 +1,12 @@
 ---
-session_id: hXBFBPDzVB5fXe8jAc92PR
+id: hXBFBPDzVB5fXe8jAc92PR
 title: "[✓] Ahrefs MCP Connector — Test Live & Factsheet Y-OS"
-date: 2026-06-16 08:44 UTC
-url: https://manus.im/app/sessions/hXBFBPDzVB5fXe8jAc92PR
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Ahrefs", "MCP Connector", "Factsheet", "Notion", "API", "SEO", "Tool Assessment", "Documentation", "Live Test", "Content Strategy", "Brand Radar IA", "Audit automatisé"]
+summary: "Factsheet détaillée pour Ahrefs MCP Connector, incluant tests live, capacités techniques, cas d'usage business et limites, sur Notion."
+url: "https://manus.im/app/task/hXBFBPDzVB5fXe8jAc92PR"
 ---
 
 # [✓] Ahrefs MCP Connector — Test Live & Factsheet Y-OS

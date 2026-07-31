@@ -1,13 +1,12 @@
 ---
-session_id: VxAQQGcvirHjgBHmUjMwFh
+id: VxAQQGcvirHjgBHmUjMwFh
 title: "[✓] Army Reply Monitor — Run quotidien Gmail (05/05/2026) — 0 réponse"
-date: 2026-05-05 10:05 UTC
-url: https://manus.im/app/sessions/VxAQQGcvirHjgBHmUjMwFh
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-05"
+importance: 3
+projects: ["Y-OS", "Army Reply Monitor"]
+tags: ["automation", "monitoring", "email", "gmail", "slack", "daily_run"]
+summary: ""
+url: "https://manus.im/app/task/VxAQQGcvirHjgBHmUjMwFh"
 ---
 
 # [✓] Army Reply Monitor — Run quotidien Gmail (05/05/2026) — 0 réponse

@@ -1,13 +1,12 @@
 ---
-session_id: 3sWZb2zDTXbkDGxbd2E5iR
+id: 3sWZb2zDTXbkDGxbd2E5iR
 title: "[✓] Veille MCP bimensuelle Y-OS — RADAR-MCP 15 avril 2026"
-date: 2026-04-15 07:06 UTC
-url: https://manus.im/app/sessions/3sWZb2zDTXbkDGxbd2E5iR
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-04-15"
+importance: 3
+projects: ["Y-OS", "Memory Pipeline"]
+tags: ["veille", "MCP", "RADAR-MCP", "TECH-ARCHI", "architecture"]
+summary: ""
+url: "https://manus.im/app/task/3sWZb2zDTXbkDGxbd2E5iR"
 ---
 
 # [✓] Veille MCP bimensuelle Y-OS — RADAR-MCP 15 avril 2026

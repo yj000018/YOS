@@ -1,13 +1,12 @@
 ---
-session_id: nWFVwj2cg3gQNf8cxHfXzV
+id: nWFVwj2cg3gQNf8cxHfXzV
 title: "[✓] Creating 1Password Entry for House Key Security Code"
-date: 2025-11-05 16:01 UTC
-url: https://manus.im/app/sessions/nWFVwj2cg3gQNf8cxHfXzV
-project_id: none
-user_messages: 4
-assistant_messages: 7
-total_messages: 18
-processed: true
+date: "2025-11-05"
+importance: 3
+projects: []
+tags: ["1Password", "security", "house key", "dormakaba"]
+summary: ""
+url: "https://manus.im/app/task/nWFVwj2cg3gQNf8cxHfXzV"
 ---
 
 # [✓] Creating 1Password Entry for House Key Security Code

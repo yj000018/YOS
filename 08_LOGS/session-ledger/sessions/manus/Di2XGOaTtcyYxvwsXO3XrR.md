@@ -1,13 +1,12 @@
 ---
-session_id: Di2XGOaTtcyYxvwsXO3XrR
+id: Di2XGOaTtcyYxvwsXO3XrR
 title: "[✓] Créer une liste des 100 derniers éléments du clipboard Mac"
-date: 2026-03-02 03:09 UTC
-url: https://manus.im/app/sessions/Di2XGOaTtcyYxvwsXO3XrR
-project_id: none
-user_messages: 67
-assistant_messages: 99
-total_messages: 320
-processed: true
+date: "2026-03-02"
+importance: 3
+projects: ["YOUniverse", "Y World", "Mac Bridge", "Tailscale", "Manus API Integration", "Context7 MCP"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/Di2XGOaTtcyYxvwsXO3XrR"
 ---
 
 # [✓] Créer une liste des 100 derniers éléments du clipboard Mac

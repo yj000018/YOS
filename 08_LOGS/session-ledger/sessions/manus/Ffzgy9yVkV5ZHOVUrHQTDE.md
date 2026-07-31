@@ -1,13 +1,12 @@
 ---
-session_id: Ffzgy9yVkV5ZHOVUrHQTDE
+id: Ffzgy9yVkV5ZHOVUrHQTDE
 title: "[✓] Demo and Testing of /llm-router Skill Integration"
-date: 2026-02-08 15:50 UTC
-url: https://manus.im/app/sessions/Ffzgy9yVkV5ZHOVUrHQTDE
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: ["Y-OS", "LLM Router"]
+tags: ["demo", "testing", "skill integration", "AI routing"]
+summary: ""
+url: "https://manus.im/app/task/Ffzgy9yVkV5ZHOVUrHQTDE"
 ---
 
 # [✓] Demo and Testing of /llm-router Skill Integration

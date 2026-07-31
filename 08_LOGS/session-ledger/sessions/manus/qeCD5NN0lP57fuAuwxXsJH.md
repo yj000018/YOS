@@ -1,13 +1,12 @@
 ---
-session_id: qeCD5NN0lP57fuAuwxXsJH
+id: qeCD5NN0lP57fuAuwxXsJH
 title: "[✓] Cloudinary Asset MCP — Test Live & Factsheet Y-OS"
-date: 2026-06-16 10:51 UTC
-url: https://manus.im/app/sessions/qeCD5NN0lP57fuAuwxXsJH
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Cloudinary", "Factsheet", "DAM", "MCP", "iOS", "Asset Management", "Cloud", "Test Live"]
+summary: ""
+url: "https://manus.im/app/task/qeCD5NN0lP57fuAuwxXsJH"
 ---
 
 # [✓] Cloudinary Asset MCP — Test Live & Factsheet Y-OS

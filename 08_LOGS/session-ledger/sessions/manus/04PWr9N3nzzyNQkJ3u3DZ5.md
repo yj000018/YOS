@@ -1,13 +1,12 @@
 ---
-session_id: 04PWr9N3nzzyNQkJ3u3DZ5
+id: 04PWr9N3nzzyNQkJ3u3DZ5
 title: "[✓] OCR Analysis and LLM Router Creation for Manuscript Transcription"
-date: 2026-02-08 15:14 UTC
-url: https://manus.im/app/sessions/04PWr9N3nzzyNQkJ3u3DZ5
-project_id: iLuFWy8LyLjaV5LJCBQgrd
-user_messages: 10
-assistant_messages: 16
-total_messages: 44
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: ["Y-OS"]
+tags: ["OCR Analysis", "LLM Router", "Manuscript Transcription", "Transcription", "AI", "Knowledge Consolidation", "Cosmology", "Notion"]
+summary: ""
+url: "https://manus.im/app/task/04PWr9N3nzzyNQkJ3u3DZ5"
 ---
 
 # [✓] OCR Analysis and LLM Router Creation for Manuscript Transcription

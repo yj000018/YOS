@@ -1,13 +1,12 @@
 ---
-session_id: eMEq9eb4Nr7YwGPGMKmBpQ
+id: eMEq9eb4Nr7YwGPGMKmBpQ
 title: "[✓] Klaviyo MCP Connector Test & Campaign Send — API Quirks & Y-OS Learning Gap"
-date: 2026-06-15 09:37 UTC
-url: https://manus.im/app/sessions/eMEq9eb4Nr7YwGPGMKmBpQ
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 109
-assistant_messages: 214
-total_messages: 514
-processed: true
+date: "2026-06-15"
+importance: 3
+projects: ["Y-OS", "Klaviyo"]
+tags: ["Connectors", "OAuth"]
+summary: ""
+url: "https://manus.im/app/task/eMEq9eb4Nr7YwGPGMKmBpQ"
 ---
 
 # [✓] Klaviyo MCP Connector Test & Campaign Send — API Quirks & Y-OS Learning Gap

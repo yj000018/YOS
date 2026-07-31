@@ -1,13 +1,12 @@
 ---
-session_id: 4Izws9fmO2uq0KkufyAAUl
+id: 4Izws9fmO2uq0KkufyAAUl
 title: "[✓] Troubleshooting Temu Shopping Cart Access and Login Issues"
-date: 2025-08-07 02:52 UTC
-url: https://manus.im/app/sessions/4Izws9fmO2uq0KkufyAAUl
-project_id: none
-user_messages: 4
-assistant_messages: 8
-total_messages: 52
-processed: true
+date: "2025-08-07"
+importance: 3
+projects: []
+tags: ["Temu", "Troubleshooting", "Login", "E-commerce"]
+summary: ""
+url: "https://manus.im/app/task/4Izws9fmO2uq0KkufyAAUl"
 ---
 
 # [✓] Troubleshooting Temu Shopping Cart Access and Login Issues

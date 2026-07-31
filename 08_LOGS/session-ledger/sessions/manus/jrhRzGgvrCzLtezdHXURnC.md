@@ -1,13 +1,12 @@
 ---
-session_id: jrhRzGgvrCzLtezdHXURnC
+id: jrhRzGgvrCzLtezdHXURnC
 title: "[✓] AI Book Cover Creator - Design App Development for Weavy Platform"
-date: 2026-01-19 02:04 UTC
-url: https://manus.im/app/sessions/jrhRzGgvrCzLtezdHXURnC
-project_id: none
-user_messages: 27
-assistant_messages: 56
-total_messages: 131
-processed: true
+date: "2026-01-19"
+importance: 3
+projects: ["AI Book Cover Creator", "Weavy Platform", "YOUniverse", "Y-OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/jrhRzGgvrCzLtezdHXURnC"
 ---
 
 # [✓] AI Book Cover Creator - Design App Development for Weavy Platform

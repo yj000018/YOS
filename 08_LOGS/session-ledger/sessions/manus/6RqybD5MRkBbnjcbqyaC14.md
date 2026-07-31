@@ -1,13 +1,12 @@
 ---
-session_id: 6RqybD5MRkBbnjcbqyaC14
+id: 6RqybD5MRkBbnjcbqyaC14
 title: "[✓] Auto-trigger du skill program-os-orchestrator via frontmatter et yos-optimizer"
-date: 2026-06-27 18:45 UTC
-url: https://manus.im/app/sessions/6RqybD5MRkBbnjcbqyaC14
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-06-27"
+importance: 3
+projects: ["Y-OS", "program-os-orchestrator", "yos-optimizer", "dev"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/6RqybD5MRkBbnjcbqyaC14"
 ---
 
 # [✓] Auto-trigger du skill program-os-orchestrator via frontmatter et yos-optimizer

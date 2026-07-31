@@ -1,13 +1,12 @@
 ---
-session_id: 7qllxeyYdPftti8bY7MG8y
+id: 7qllxeyYdPftti8bY7MG8y
 title: "[✓] Création trifold A4 paysage pour Tania — accompagnatrice de vie"
-date: 2026-04-10 17:46 UTC
-url: https://manus.im/app/sessions/7qllxeyYdPftti8bY7MG8y
-project_id: none
-user_messages: 2
-assistant_messages: 8
-total_messages: 15
-processed: true
+date: "2026-04-10"
+importance: 3
+projects: []
+tags: ["design graphique", "trifold", "A4", "accompagnement de vie", "marketing", "prestation externe", "PPTX", "PDF"]
+summary: "Création d'un dépliant trifold A4 pour Tania, accompagnatrice de vie, avec structure, palette et fichiers PPTX/PDF."
+url: "https://manus.im/app/task/7qllxeyYdPftti8bY7MG8y"
 ---
 
 # [✓] Création trifold A4 paysage pour Tania — accompagnatrice de vie

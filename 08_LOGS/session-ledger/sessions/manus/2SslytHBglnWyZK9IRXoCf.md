@@ -1,13 +1,12 @@
 ---
-session_id: 2SslytHBglnWyZK9IRXoCf
+id: 2SslytHBglnWyZK9IRXoCf
 title: "[✓] Customs Non-Receipt Claim Letter – Order PK26001553 (1987 EUR)"
-date: 2026-05-31 08:54 UTC
-url: https://manus.im/app/sessions/2SslytHBglnWyZK9IRXoCf
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 18
-processed: true
+date: "2026-05-31"
+importance: 3
+projects: []
+tags: ["administration", "customs", "claim", "refund", "letter", "personal"]
+summary: "Drafted a customs non-receipt claim letter for order PK26001553 (1987 EUR) to request a full refund due to customs issues."
+url: "https://manus.im/app/task/2SslytHBglnWyZK9IRXoCf"
 ---
 
 # [✓] Customs Non-Receipt Claim Letter – Order PK26001553 (1987 EUR)

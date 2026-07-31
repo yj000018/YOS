@@ -1,13 +1,12 @@
 ---
-session_id: bKkf0rNfXBAPN51Ji4v9BE
+id: bKkf0rNfXBAPN51Ji4v9BE
 title: "[✓] General Coupon Website Creation with Ambiguous Requirements"
-date: 2025-10-25 22:43 UTC
-url: https://manus.im/app/sessions/bKkf0rNfXBAPN51Ji4v9BE
-project_id: none
-user_messages: 3
-assistant_messages: 5
-total_messages: 13
-processed: true
+date: "2025-10-25"
+importance: 3
+projects: []
+tags: ["coupon", "deals", "website creation", "e-commerce", "deployment"]
+summary: ""
+url: "https://manus.im/app/task/bKkf0rNfXBAPN51Ji4v9BE"
 ---
 
 # [✓] General Coupon Website Creation with Ambiguous Requirements

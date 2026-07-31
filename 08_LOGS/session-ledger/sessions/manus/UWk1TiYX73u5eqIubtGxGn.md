@@ -1,13 +1,12 @@
 ---
-session_id: UWk1TiYX73u5eqIubtGxGn
+id: UWk1TiYX73u5eqIubtGxGn
 title: "[✓] N100 Home Server Registration & Role Assignment in Y-OS"
-date: 2026-06-21 13:45 UTC
-url: https://manus.im/app/sessions/UWk1TiYX73u5eqIubtGxGn
-project_id: GeNvwGBvdyBGDN65g2zTEp
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-06-21"
+importance: 3
+projects: ["Y-OS", "HOME AUTOMATION", "DOMUS"]
+tags: ["N100"]
+summary: ""
+url: "https://manus.im/app/task/UWk1TiYX73u5eqIubtGxGn"
 ---
 
 # [✓] N100 Home Server Registration & Role Assignment in Y-OS

@@ -1,13 +1,12 @@
 ---
-session_id: 3Yv7GFcYy8RdphgDnqFD8t
+id: 3Yv7GFcYy8RdphgDnqFD8t
 title: "[✓] Anthropic API Demo & YOT-5 Fact Sheet Update — Y-OS Tools Registry"
-date: 2026-06-17 13:27 UTC
-url: https://manus.im/app/sessions/3Yv7GFcYy8RdphgDnqFD8t
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 10
-processed: true
+date: "2026-06-17"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Anthropic API", "Claude", "Fact Sheet", "Tools Registry", "API Demo", "Update", "YOT-5"]
+summary: "Démonstration et mise à jour de la fact sheet d'Anthropic Claude (YOT-5) dans le Y-OS Tools Registry, incluant des tests API."
+url: "https://manus.im/app/task/3Yv7GFcYy8RdphgDnqFD8t"
 ---
 
 # [✓] Anthropic API Demo & YOT-5 Fact Sheet Update — Y-OS Tools Registry

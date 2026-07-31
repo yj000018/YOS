@@ -1,13 +1,12 @@
 ---
-session_id: qmXNu7Ov2IYJsScj8MASuO
+id: qmXNu7Ov2IYJsScj8MASuO
 title: "[✓] Premium Photography Website Build Request"
-date: 2025-10-25 22:45 UTC
-url: https://manus.im/app/sessions/qmXNu7Ov2IYJsScj8MASuO
-project_id: none
-user_messages: 2
-assistant_messages: 2
-total_messages: 7
-processed: true
+date: "2025-10-25"
+importance: 3
+projects: []
+tags: ["website_build", "photography", "gallery", "user_request", "design_analysis"]
+summary: ""
+url: "https://manus.im/app/task/qmXNu7Ov2IYJsScj8MASuO"
 ---
 
 # [✓] Premium Photography Website Build Request

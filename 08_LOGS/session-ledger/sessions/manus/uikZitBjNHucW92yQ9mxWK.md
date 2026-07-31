@@ -1,13 +1,12 @@
 ---
-session_id: uikZitBjNHucW92yQ9mxWK
+id: uikZitBjNHucW92yQ9mxWK
 title: "[✓] Équipe AI Architecture + Module collapseReflections TM v1.3.0"
-date: 2026-05-05 22:39 UTC
-url: https://manus.im/app/sessions/uikZitBjNHucW92yQ9mxWK
-project_id: none
-user_messages: 6
-assistant_messages: 11
-total_messages: 31
-processed: true
+date: "2026-05-05"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Y-OS UI Client", "collapseReflections TM"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/uikZitBjNHucW92yQ9mxWK"
 ---
 
 # [✓] Équipe AI Architecture + Module collapseReflections TM v1.3.0

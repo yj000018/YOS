@@ -1,13 +1,12 @@
 ---
-session_id: ZdOhlGMOmrTqprOli50Y6k
+id: ZdOhlGMOmrTqprOli50Y6k
 title: "[✓] Install fast-navigation v2.0 skill and enforce via yos-optimizer"
-date: 2026-05-31 08:04 UTC
-url: https://manus.im/app/sessions/ZdOhlGMOmrTqprOli50Y6k
-project_id: none
-user_messages: 3
-assistant_messages: 5
-total_messages: 14
-processed: true
+date: "2026-05-31"
+importance: 3
+projects: ["Y-OS", "yos-optimizer"]
+tags: ["fast-navigation", "skill", "web", "browsing", "scraping", "workflow"]
+summary: ""
+url: "https://manus.im/app/task/ZdOhlGMOmrTqprOli50Y6k"
 ---
 
 # [✓] Install fast-navigation v2.0 skill and enforce via yos-optimizer

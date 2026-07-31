@@ -1,13 +1,12 @@
 ---
-session_id: 7zuZiNTPbx5QC9396CTRzX
+id: 7zuZiNTPbx5QC9396CTRzX
 title: "(Comment relier les sessions pour éviter les silos?)"
-date: 2026-07-31
-url: https://manus.im/app/7zuZiNTPbx5QC9396CTRzX
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 82
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["Y-OS"]
+tags: ["organisation", "sessions", "silos", "intégration", "architecture"]
+summary: ""
+url: "https://manus.im/app/task/7zuZiNTPbx5QC9396CTRzX"
 ---
 
 # (Comment relier les sessions pour éviter les silos?)

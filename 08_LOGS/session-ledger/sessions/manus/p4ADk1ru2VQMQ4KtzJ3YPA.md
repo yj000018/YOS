@@ -1,13 +1,12 @@
 ---
-session_id: p4ADk1ru2VQMQ4KtzJ3YPA
+id: p4ADk1ru2VQMQ4KtzJ3YPA
 title: "[✓] Test & Configuration du connecteur PASTE MCP — Blocage réseau localhost"
-date: 2026-06-02 12:11 UTC
-url: https://manus.im/app/sessions/p4ADk1ru2VQMQ4KtzJ3YPA
-project_id: none
-user_messages: 4
-assistant_messages: 5
-total_messages: 13
-processed: true
+date: "2026-06-02"
+importance: 3
+projects: ["Y-OS", "PASTE MCP"]
+tags: ["test", "configuration", "connector", "network", "troubleshooting", "integration"]
+summary: "Test et configuration du connecteur PASTE MCP, avec diagnostic d'un blocage réseau localhost dans le sandbox Manus."
+url: "https://manus.im/app/task/p4ADk1ru2VQMQ4KtzJ3YPA"
 ---
 
 # [✓] Test & Configuration du connecteur PASTE MCP — Blocage réseau localhost

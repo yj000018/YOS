@@ -1,13 +1,12 @@
 ---
-session_id: tk3pPkma9hD2byUeETthw7
+id: tk3pPkma9hD2byUeETthw7
 title: "[✓] Projet ONE - Domain Name Research and O-N-E.space Registration"
-date: 2026-02-11 04:41 UTC
-url: https://manus.im/app/sessions/tk3pPkma9hD2byUeETthw7
-project_id: none
-user_messages: 21
-assistant_messages: 41
-total_messages: 102
-processed: true
+date: "2026-02-11"
+importance: 3
+projects: ["ONE", "O-N-E.space", "ONEshift", "YOUniverse", "Y-OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/tk3pPkma9hD2byUeETthw7"
 ---
 
 # [✓] Projet ONE - Domain Name Research and O-N-E.space Registration

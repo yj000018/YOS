@@ -1,13 +1,12 @@
 ---
-session_id: crL8NecCt4HQXVH2kKsQyn
+id: crL8NecCt4HQXVH2kKsQyn
 title: "[✓] Generating Galaxy JSON and Visualizing with Three.js"
-date: 2026-03-06 00:16 UTC
-url: https://manus.im/app/sessions/crL8NecCt4HQXVH2kKsQyn
-project_id: none
-user_messages: 10
-assistant_messages: 152
-total_messages: 183
-processed: true
+date: "2026-03-06"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Galaxy Navigator", "ONEshift", "YOULIVE", "Universe"]
+tags: ["Galaxy", "JSON", "Visualization"]
+summary: ""
+url: "https://manus.im/app/task/crL8NecCt4HQXVH2kKsQyn"
 ---
 
 # [✓] Generating Galaxy JSON and Visualizing with Three.js

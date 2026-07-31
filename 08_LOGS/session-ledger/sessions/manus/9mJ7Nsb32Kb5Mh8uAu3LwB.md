@@ -1,13 +1,12 @@
 ---
-session_id: 9mJ7Nsb32Kb5Mh8uAu3LwB
+id: 9mJ7Nsb32Kb5Mh8uAu3LwB
 title: "[✓] Recherche baignoire balnéo avec jets de massage - Analyse comparative"
-date: 2026-02-14 11:43 UTC
-url: https://manus.im/app/sessions/9mJ7Nsb32Kb5Mh8uAu3LwB
-project_id: none
-user_messages: 25
-assistant_messages: 44
-total_messages: 115
-processed: true
+date: "2026-02-14"
+importance: 3
+projects: []
+tags: ["baignoire balnéo", "hydromassage", "analyse comparative", "SPATEC", "STELLA"]
+summary: "Analyse comparative détaillée de baignoires balnéo (SPATEC NOVA, STELLA IMASSAGE) pour évaluer les jets de massage et la puissance des pompes."
+url: "https://manus.im/app/task/9mJ7Nsb32Kb5Mh8uAu3LwB"
 ---
 
 # [✓] Recherche baignoire balnéo avec jets de massage - Analyse comparative

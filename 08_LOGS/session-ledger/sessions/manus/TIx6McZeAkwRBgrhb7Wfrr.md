@@ -1,13 +1,12 @@
 ---
-session_id: TIx6McZeAkwRBgrhb7Wfrr
+id: TIx6McZeAkwRBgrhb7Wfrr
 title: "[✓] Y-OS TamperMonkey Webclient pour Manus.im — Plan + Script v1.1"
-date: 2026-05-04 20:24 UTC
-url: https://manus.im/app/sessions/TIx6McZeAkwRBgrhb7Wfrr
-project_id: none
-user_messages: 41
-assistant_messages: 83
-total_messages: 194
-processed: true
+date: "2026-05-04"
+importance: 3
+projects: ["Y-OS", "Y-OS Manus Client", "Manus.im", "Project Navigator", "YOUniverse"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/TIx6McZeAkwRBgrhb7Wfrr"
 ---
 
 # [✓] Y-OS TamperMonkey Webclient pour Manus.im — Plan + Script v1.1

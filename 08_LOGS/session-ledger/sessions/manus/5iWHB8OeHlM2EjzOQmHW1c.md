@@ -1,13 +1,12 @@
 ---
-session_id: 5iWHB8OeHlM2EjzOQmHW1c
+id: 5iWHB8OeHlM2EjzOQmHW1c
 title: "[✓] Automating GPT-Manus Command Bridge with MCP Server Exposure"
-date: 2026-01-06 00:52 UTC
-url: https://manus.im/app/sessions/5iWHB8OeHlM2EjzOQmHW1c
-project_id: none
-user_messages: 30
-assistant_messages: 36
-total_messages: 127
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Manus", "MCP", "GPT-Manus Command Bridge"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/5iWHB8OeHlM2EjzOQmHW1c"
 ---
 
 # [✓] Automating GPT-Manus Command Bridge with MCP Server Exposure

@@ -1,13 +1,12 @@
 ---
-session_id: taDlWzPizeeiDzCyd1pG0o
+id: taDlWzPizeeiDzCyd1pG0o
 title: "[✓] Apple HomePod Mini Purchase Request with Technical Issues"
-date: 2025-11-26 13:40 UTC
-url: https://manus.im/app/sessions/taDlWzPizeeiDzCyd1pG0o
-project_id: none
-user_messages: 2
-assistant_messages: 1
-total_messages: 10
-processed: true
+date: "2025-11-26"
+importance: 3
+projects: []
+tags: ["Apple", "HomePod Mini", "achat", "logistique", "recherche produit"]
+summary: ""
+url: "https://manus.im/app/task/taDlWzPizeeiDzCyd1pG0o"
 ---
 
 # [✓] Apple HomePod Mini Purchase Request with Technical Issues

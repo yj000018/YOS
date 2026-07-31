@@ -1,13 +1,12 @@
 ---
-session_id: 3kMXhtPnTgqF4WnU1A2ibw
+id: 3kMXhtPnTgqF4WnU1A2ibw
 title: "[✓] Cost Analysis and Plan Optimization for Manus Subscription"
-date: 2026-02-25 14:08 UTC
-url: https://manus.im/app/sessions/3kMXhtPnTgqF4WnU1A2ibw
-project_id: none
-user_messages: 11
-assistant_messages: 15
-total_messages: 56
-processed: true
+date: "2026-02-25"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "ai-portfolio-cms", "ludivine"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/3kMXhtPnTgqF4WnU1A2ibw"
 ---
 
 # [✓] Cost Analysis and Plan Optimization for Manus Subscription

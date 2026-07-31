@@ -1,13 +1,12 @@
 ---
-session_id: YwyPBBuKtnmXLz0MNq0ZQ1
+id: YwyPBBuKtnmXLz0MNq0ZQ1
 title: "[✓] Manus Skills Catalog Discovery and Curation"
-date: 2026-01-29 02:17 UTC
-url: https://manus.im/app/sessions/YwyPBBuKtnmXLz0MNq0ZQ1
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 9
-processed: true
+date: "2026-01-29"
+importance: 4
+projects: ["Y-OS", "Manus"]
+tags: ["Skills", "Catalog", "Discovery", "Curation", "AI Agent", "Knowledge Management", "Guide Generation", "Repositories", "Internet Search"]
+summary: "Discovery and curation of a comprehensive Manus AI agent skills catalog from GitHub repositories, generating a personalized guide."
+url: "https://manus.im/app/task/YwyPBBuKtnmXLz0MNq0ZQ1"
 ---
 
 # [✓] Manus Skills Catalog Discovery and Curation

@@ -1,13 +1,12 @@
 ---
-session_id: WNvA8dDiCQDoNyXvayumt9
+id: WNvA8dDiCQDoNyXvayumt9
 title: "[✓] Veille MCP bimensuelle Y-OS : radar technologique et signaux émergents"
-date: 2026-03-15 08:05 UTC
-url: https://manus.im/app/sessions/WNvA8dDiCQDoNyXvayumt9
-project_id: none
-user_messages: 1
-assistant_messages: 6
-total_messages: 11
-processed: true
+date: "2026-03-15"
+importance: 3
+projects: ["Y-OS"]
+tags: ["veille", "MCP", "technologie", "radar technologique"]
+summary: ""
+url: "https://manus.im/app/task/WNvA8dDiCQDoNyXvayumt9"
 ---
 
 # [✓] Veille MCP bimensuelle Y-OS : radar technologique et signaux émergents

@@ -1,13 +1,12 @@
 ---
-session_id: aXmtSiUc9LDFxAg98NZSjh
+id: aXmtSiUc9LDFxAg98NZSjh
 title: "[✓] Développement CareGlyph : interface visuelle clinique par glyphes"
-date: 2026-04-02 09:42 UTC
-url: https://manus.im/app/sessions/aXmtSiUc9LDFxAg98NZSjh
-project_id: none
-user_messages: 3
-assistant_messages: 25
-total_messages: 36
-processed: true
+date: "2026-04-02"
+importance: 3
+projects: ["CareGlyph", "Y-OS", "YOUniverse"]
+tags: ["CareGlyph"]
+summary: ""
+url: "https://manus.im/app/task/aXmtSiUc9LDFxAg98NZSjh"
 ---
 
 # [✓] Développement CareGlyph : interface visuelle clinique par glyphes

@@ -1,13 +1,12 @@
 ---
-session_id: 73hnoBd0jBJzcAsbUJGuVW
+id: 73hnoBd0jBJzcAsbUJGuVW
 title: "[✓] Instagram MCP Connector — Live Test & Capability Brief"
-date: 2026-05-04 12:21 UTC
-url: https://manus.im/app/sessions/73hnoBd0jBJzcAsbUJGuVW
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-05-04"
+importance: 3
+projects: ["Y-OS", "Instagram MCP Connector"]
+tags: ["instagram", "connector", "mcp", "test", "live_data", "social_media", "analytics", "data_fetching"]
+summary: "Live test and capability brief of the Instagram MCP Connector, successfully fetching account info, posts, and insights."
+url: "https://manus.im/app/task/73hnoBd0jBJzcAsbUJGuVW"
 ---
 
 # [✓] Instagram MCP Connector — Live Test & Capability Brief

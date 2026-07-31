@@ -1,13 +1,12 @@
 ---
-session_id: w7FNbCWIuWV2n4cRacCMpg
+id: w7FNbCWIuWV2n4cRacCMpg
 title: "[✓] Civilization Awakening — Next.js editorial site build from Notion P0 content"
-date: 2026-06-06 01:00 UTC
-url: https://manus.im/app/sessions/w7FNbCWIuWV2n4cRacCMpg
-project_id: none
-user_messages: 40
-assistant_messages: 101
-total_messages: 215
-processed: true
+date: "2026-06-06"
+importance: 3
+projects: ["Civilization Awakening", "YOUniverse", "Thinkers", "Essays", "Y-OS", "Memory OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/w7FNbCWIuWV2n4cRacCMpg"
 ---
 
 # [✓] Civilization Awakening — Next.js editorial site build from Notion P0 content
@@ -468,8 +467,8 @@ Depuis le checkpoint précédent : locale wiring complet (EN/FR/IT actif sur tou
 **[1780738814581] MANUS:** DOMPurify intégré ✓. Ajout des flags `status: draft` + `ai_generated: true` dans les frontmatters essays/thinkers + SEO meta basique...
 **[1780738760901] MANUS:** ✅ Push réussi — **https://github.com/yj000018/civilizational-awakening** — 356 objets, branch `main`. Cleanup critique en cours (Formspree env var, SEO, content flags)...
 **[1780738746296] MANUS:** Token valide ✅ — push bloqué par GitHub Secret Scanning : `.project-config.json` contient des credentials AWS Manus. Je supprime ce fichier du commit et repousse...
-**[1780738709918] MANUS:** Vu — le token correct est `[REDACTED-GITHUB_TOKEN]` (le `0` était un `O` dans ma lecture précédente). Test en cours...
-**[1780738620369] MANUS:** Le token `[REDACTED-GITHUB_TOKEN]` retourne "Bad credentials" — il y a probablement une erreur de frappe ou un caractère manquant. 
+**[1780738709918] MANUS:** Vu — le token correct est `ghp_PZalt6Au2hYRrmMnFR0XU0awfw2XXe3CT0FC` (le `0` était un `O` dans ma lecture précédente). Test en cours...
+**[1780738620369] MANUS:** Le token `ghp_PZalt6Au2hYRrmMnFR0xU0awfw2XXe3CT0FCG` retourne "Bad credentials" — il y a probablement une erreur de frappe ou un caractère manquant. 
 
 Peux-tu me renvoyer le token exact depuis GitHub ? Il doit commencer par `ghp_` et faire ~40 caractères. Tu peux aussi le coller directement depuis la page GitHub Settings → Tokens.
 **[1780738595444] MANUS:** Token reçu. Push en cours...

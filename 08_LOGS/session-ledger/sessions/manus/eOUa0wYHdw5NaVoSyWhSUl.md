@@ -1,13 +1,12 @@
 ---
-session_id: eOUa0wYHdw5NaVoSyWhSUl
+id: eOUa0wYHdw5NaVoSyWhSUl
 title: "[✓] [EIA] Credo — Page Web Rose/Or & Archivage Notion"
-date: 2026-03-26 11:46 UTC
-url: https://manus.im/app/sessions/eOUa0wYHdw5NaVoSyWhSUl
-project_id: none
-user_messages: 4
-assistant_messages: 11
-total_messages: 26
-processed: true
+date: "2026-03-26"
+importance: 3
+projects: ["EIA"]
+tags: ["Notion", "Archivage", "Credo", "Page Web", "Design", "Organisation", "Site Architecture"]
+summary: ""
+url: "https://manus.im/app/task/eOUa0wYHdw5NaVoSyWhSUl"
 ---
 
 # [✓] [EIA] Credo — Page Web Rose/Or & Archivage Notion

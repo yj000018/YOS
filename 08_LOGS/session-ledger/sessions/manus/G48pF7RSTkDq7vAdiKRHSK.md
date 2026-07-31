@@ -1,13 +1,12 @@
 ---
-session_id: G48pF7RSTkDq7vAdiKRHSK
+id: G48pF7RSTkDq7vAdiKRHSK
 title: "Parallel Processing for GitHub Repository Assimilation Audit"
-date: 2026-07-22 22:05 UTC
-url: https://manus.im/app/sessions/G48pF7RSTkDq7vAdiKRHSK
-project_id: Ki9H3UCZSSaUwCR7bn46tv
-user_messages: 1
-assistant_messages: 1
-total_messages: 6
-processed: true
+date: "2026-07-22"
+importance: 3
+projects: ["Y-OS"]
+tags: ["parallel processing", "GitHub", "assimilation audit", "multi-agent", "source reconciliation", "knowledge assimilation", "YOS Core", "Manus"]
+summary: ""
+url: "https://manus.im/app/task/G48pF7RSTkDq7vAdiKRHSK"
 ---
 
 # Parallel Processing for GitHub Repository Assimilation Audit

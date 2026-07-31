@@ -1,13 +1,12 @@
 ---
-session_id: 4r2BMnrrdXvp6ArGKbic3c
+id: 4r2BMnrrdXvp6ArGKbic3c
 title: "[✓] Army Reply Monitor — Run quotidien Gmail (07/05/2026) — 0 réponse détectée"
-date: 2026-05-07 10:03 UTC
-url: https://manus.im/app/sessions/4r2BMnrrdXvp6ArGKbic3c
-project_id: ENbrMceTr2iFFx3puHhb2r
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-07"
+importance: 3
+projects: ["Army Reply Monitor", "Y-OS"]
+tags: ["monitoring", "automation", "gmail", "daily_run", "no_results", "slack_notification", "email_processing", "swiss_authorities"]
+summary: "Daily run of the Army Reply Monitor to check Gmail for responses from 9 Swiss military/aviation authorities; no replies detected."
+url: "https://manus.im/app/task/4r2BMnrrdXvp6ArGKbic3c"
 ---
 
 # [✓] Army Reply Monitor — Run quotidien Gmail (07/05/2026) — 0 réponse détectée

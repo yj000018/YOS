@@ -1,13 +1,12 @@
 ---
-session_id: uHVfSba3Kjq7QKdJQtL1H3
+id: uHVfSba3Kjq7QKdJQtL1H3
 title: "[✓] BTC ETH Cycle Analysis: Expert Predictions and Portfolio Strategy to 2029"
-date: 2025-09-21 02:16 UTC
-url: https://manus.im/app/sessions/uHVfSba3Kjq7QKdJQtL1H3
-project_id: none
-user_messages: 8
-assistant_messages: 16
-total_messages: 39
-processed: true
+date: "2025-09-21"
+importance: 3
+projects: []
+tags: ["Crypto", "BTC", "ETH", "Portfolio Strategy", "Market Analysis", "Investment", "Predictions", "Altcoins", "Financial Planning", "Market Cycles"]
+summary: "Crypto portfolio strategy and market cycle analysis for BTC, ETH, and altcoins, with predictions and investment plan until 2029."
+url: "https://manus.im/app/task/uHVfSba3Kjq7QKdJQtL1H3"
 ---
 
 # [✓] BTC ETH Cycle Analysis: Expert Predictions and Portfolio Strategy to 2029

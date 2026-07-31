@@ -1,13 +1,12 @@
 ---
-session_id: daeudExIPugij3TsQs6cOr
+id: daeudExIPugij3TsQs6cOr
 title: "[✓] Y-OS Skill Action Layer (SAL) v1 — Keyboard Design & Manus API Integration"
-date: 2026-06-19 00:11 UTC
-url: https://manus.im/app/sessions/daeudExIPugij3TsQs6cOr
-project_id: none
-user_messages: 15
-assistant_messages: 31
-total_messages: 79
-processed: true
+date: "2026-06-19"
+importance: 3
+projects: ["Y-OS", "KAP", "Manus", "Memory Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/daeudExIPugij3TsQs6cOr"
 ---
 
 # [✓] Y-OS Skill Action Layer (SAL) v1 — Keyboard Design & Manus API Integration

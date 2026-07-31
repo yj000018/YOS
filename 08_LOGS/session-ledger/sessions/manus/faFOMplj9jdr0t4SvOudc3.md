@@ -1,13 +1,12 @@
 ---
-session_id: faFOMplj9jdr0t4SvOudc3
+id: faFOMplj9jdr0t4SvOudc3
 title: "[✓] Real Estate Analysis Guide for Divonne-les-Bains Property Sale"
-date: 2025-07-22 16:16 UTC
-url: https://manus.im/app/sessions/faFOMplj9jdr0t4SvOudc3
-project_id: none
-user_messages: 10
-assistant_messages: 23
-total_messages: 232
-processed: true
+date: "2025-07-22"
+importance: 3
+projects: []
+tags: ["web development", "bug fix", "frontend", "UI/UX", "responsive design", "iOS compatibility", "real estate"]
+summary: "Correction d'un site web d'analyse immobilière (Divonne-les-Bains) : résolution de bugs d'affichage, navigation et compatibilité iOS."
+url: "https://manus.im/app/task/faFOMplj9jdr0t4SvOudc3"
 ---
 
 # [✓] Real Estate Analysis Guide for Divonne-les-Bains Property Sale

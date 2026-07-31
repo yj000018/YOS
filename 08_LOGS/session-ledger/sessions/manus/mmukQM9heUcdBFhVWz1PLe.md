@@ -1,13 +1,12 @@
 ---
-session_id: mmukQM9heUcdBFhVWz1PLe
+id: mmukQM9heUcdBFhVWz1PLe
 title: "[✓] Comparison of n8n, Opal, MindStudio for AI IT Professionals"
-date: 2025-08-31 23:35 UTC
-url: https://manus.im/app/sessions/mmukQM9heUcdBFhVWz1PLe
-project_id: none
-user_messages: 1
-assistant_messages: 1
-total_messages: 31
-processed: true
+date: "2025-08-31"
+importance: 3
+projects: []
+tags: ["AI", "IT Professionals", "Platform Comparison", "n8n", "Opal", "MindStudio", "Automation", "Integration", "Workflow", "Features", "Pricing", "Architecture", "Scalability", "Security"]
+summary: "Detailed comparison of n8n, Opal, and MindStudio platforms, focusing on features, AI capabilities, architecture, and pricing for AI IT professionals."
+url: "https://manus.im/app/task/mmukQM9heUcdBFhVWz1PLe"
 ---
 
 # [✓] Comparison of n8n, Opal, MindStudio for AI IT Professionals

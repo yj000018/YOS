@@ -1,13 +1,12 @@
 ---
-session_id: 8tBPTbvN1p7UscgbGZpBx6
+id: 8tBPTbvN1p7UscgbGZpBx6
 title: "Sessions Manu’s cleanup"
-date: 2026-07-29 00:48 UTC
-url: https://manus.im/app/sessions/8tBPTbvN1p7UscgbGZpBx6
-project_id: none
-user_messages: 88
-assistant_messages: 234
-total_messages: 469
-processed: true
+date: "2026-07-29"
+importance: 3
+projects: ["Y-OS"]
+tags: ["session management", "data collection", "API", "batch processing", "scrapping", "indexation", "cleanup", "fact sheets"]
+summary: "Session focused on finding, indexing, and cleaning up old Manus sessions, confirming API v2 for batch processing fact sheets."
+url: "https://manus.im/app/task/8tBPTbvN1p7UscgbGZpBx6"
 ---
 
 # Sessions Manu’s cleanup

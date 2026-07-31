@@ -1,13 +1,12 @@
 ---
-session_id: SMctwKXZJWN6cXdYNG3FYR
+id: SMctwKXZJWN6cXdYNG3FYR
 title: "Interactive Prototype for Y-CC Conversational Launcher"
-date: 2026-07-22 10:22 UTC
-url: https://manus.im/app/sessions/SMctwKXZJWN6cXdYNG3FYR
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 9
-total_messages: 12
-processed: true
+date: "2026-07-22"
+importance: 3
+projects: ["Y-OS", "Y-CC", "Ariane"]
+tags: ["prototype", "ui/ux", "conversational-ai", "launcher", "command-center", "nlp", "data-visualization", "multilingual", "responsive-design", "y-reg", "workflow", "ai-tools"]
+summary: ""
+url: "https://manus.im/app/task/SMctwKXZJWN6cXdYNG3FYR"
 ---
 
 # Interactive Prototype for Y-CC Conversational Launcher

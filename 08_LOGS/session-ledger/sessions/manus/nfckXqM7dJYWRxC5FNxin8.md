@@ -1,13 +1,12 @@
 ---
-session_id: nfckXqM7dJYWRxC5FNxin8
+id: nfckXqM7dJYWRxC5FNxin8
 title: "[✓] Recherche exhaustive appartement adapté fauteuil roulant Divonne-les-Bains"
-date: 2025-07-04 22:40 UTC
-url: https://manus.im/app/sessions/nfckXqM7dJYWRxC5FNxin8
-project_id: none
-user_messages: 7
-assistant_messages: 11
-total_messages: 100
-processed: true
+date: "2025-07-04"
+importance: 3
+projects: []
+tags: ["immobilier", "recherche logement", "accessibilité", "fauteuil roulant", "Divonne-les-Bains", "alertes", "CAGI", "Excel", "colocation", "IA"]
+summary: "Recherche exhaustive et configuration d'alertes pour un appartement adapté fauteuil roulant à Divonne-les-Bains, incluant un tableau Excel."
+url: "https://manus.im/app/task/nfckXqM7dJYWRxC5FNxin8"
 ---
 
 # [✓] Recherche exhaustive appartement adapté fauteuil roulant Divonne-les-Bains

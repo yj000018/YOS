@@ -1,13 +1,12 @@
 ---
-session_id: s4U4vnZcgvzJJrxMDJFHyk
+id: s4U4vnZcgvzJJrxMDJFHyk
 title: "[✓] Grok API Testing and Demo Script Development"
-date: 2026-01-25 00:24 UTC
-url: https://manus.im/app/sessions/s4U4vnZcgvzJJrxMDJFHyk
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 7
-processed: true
+date: "2026-01-25"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Grok API", "API Testing", "Demo Script", "Documentation", "AI", "LLM", "Text Generation"]
+summary: ""
+url: "https://manus.im/app/task/s4U4vnZcgvzJJrxMDJFHyk"
 ---
 
 # [✓] Grok API Testing and Demo Script Development

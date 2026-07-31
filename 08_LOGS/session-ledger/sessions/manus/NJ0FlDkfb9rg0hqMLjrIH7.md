@@ -1,13 +1,12 @@
 ---
-session_id: NJ0FlDkfb9rg0hqMLjrIH7
+id: NJ0FlDkfb9rg0hqMLjrIH7
 title: "[✓] Nouvelle Civilisation — 3 idées fondatrices + inventaire Y World"
-date: 2026-05-12 21:05 UTC
-url: https://manus.im/app/sessions/NJ0FlDkfb9rg0hqMLjrIH7
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 12
-processed: true
+date: "2026-05-12"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Nouvelle Civilisation", "Legal System (AI-driven)", "Learning System"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/NJ0FlDkfb9rg0hqMLjrIH7"
 ---
 
 # [✓] Nouvelle Civilisation — 3 idées fondatrices + inventaire Y World

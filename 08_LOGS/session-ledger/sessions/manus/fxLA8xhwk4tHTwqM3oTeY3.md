@@ -1,13 +1,12 @@
 ---
-session_id: fxLA8xhwk4tHTwqM3oTeY3
+id: fxLA8xhwk4tHTwqM3oTeY3
 title: "Tagging IA Raindrop via REST API for 500 Bookmarks"
-date: 2026-07-30 00:05 UTC
-url: https://manus.im/app/sessions/fxLA8xhwk4tHTwqM3oTeY3
-project_id: none
-user_messages: 8
-assistant_messages: 15
-total_messages: 34
-processed: true
+date: "2026-07-30"
+importance: 3
+projects: ["YOUniverse", "Y-OS"]
+tags: ["AI Tagging", "Raindrop", "REST API"]
+summary: ""
+url: "https://manus.im/app/task/fxLA8xhwk4tHTwqM3oTeY3"
 ---
 
 # Tagging IA Raindrop via REST API for 500 Bookmarks

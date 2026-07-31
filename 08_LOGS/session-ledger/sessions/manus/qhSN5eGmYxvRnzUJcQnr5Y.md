@@ -1,13 +1,12 @@
 ---
-session_id: qhSN5eGmYxvRnzUJcQnr5Y
+id: qhSN5eGmYxvRnzUJcQnr5Y
 title: "[✓] ASE Agentic Story Engine - Architecture and Mobile UX Refinements"
-date: 2026-02-24 01:22 UTC
-url: https://manus.im/app/sessions/qhSN5eGmYxvRnzUJcQnr5Y
-project_id: none
-user_messages: 83
-assistant_messages: 284
-total_messages: 505
-processed: true
+date: "2026-02-24"
+importance: 3
+projects: ["ASE Agentic Story Engine"]
+tags: ["ASE", "Agentic Story Engine", "Architecture", "Mobile UX"]
+summary: ""
+url: "https://manus.im/app/task/qhSN5eGmYxvRnzUJcQnr5Y"
 ---
 
 # [✓] ASE Agentic Story Engine - Architecture and Mobile UX Refinements

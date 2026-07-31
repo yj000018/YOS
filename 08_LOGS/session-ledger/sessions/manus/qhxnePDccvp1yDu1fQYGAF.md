@@ -1,13 +1,12 @@
 ---
-session_id: qhxnePDccvp1yDu1fQYGAF
+id: qhxnePDccvp1yDu1fQYGAF
 title: "[✓] Cost-optimized relocation: 15 boxes + furniture from Sicily to Switzerland"
-date: 2025-10-07 21:58 UTC
-url: https://manus.im/app/sessions/qhxnePDccvp1yDu1fQYGAF
-project_id: none
-user_messages: 11
-assistant_messages: 20
-total_messages: 48
-processed: true
+date: "2025-10-07"
+importance: 3
+projects: []
+tags: ["relocation", "shipping", "logistics", "cost optimization", "van transport", "international move", "Sicily", "Switzerland", "furniture", "boxes"]
+summary: "Cost-optimized relocation of 15 boxes and furniture from Sicily to Switzerland, identifying a man-with-van service."
+url: "https://manus.im/app/task/qhxnePDccvp1yDu1fQYGAF"
 ---
 
 # [✓] Cost-optimized relocation: 15 boxes + furniture from Sicily to Switzerland

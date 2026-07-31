@@ -1,13 +1,12 @@
 ---
-session_id: tYRM2AHeCWLuGePiuFGTnB
+id: tYRM2AHeCWLuGePiuFGTnB
 title: "[✓] OneShift Interactive Platform - Vision to Prototype Implementation"
-date: 2025-11-12 19:42 UTC
-url: https://manus.im/app/sessions/tYRM2AHeCWLuGePiuFGTnB
-project_id: none
-user_messages: 4
-assistant_messages: 13
-total_messages: 27
-processed: true
+date: "2025-11-12"
+importance: 3
+projects: ["OneShift", "Y-OS", "YOUniverse", "KAP", "Three.js"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/tYRM2AHeCWLuGePiuFGTnB"
 ---
 
 # [✓] OneShift Interactive Platform - Vision to Prototype Implementation

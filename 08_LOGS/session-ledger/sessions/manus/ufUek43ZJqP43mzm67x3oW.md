@@ -1,13 +1,12 @@
 ---
-session_id: ufUek43ZJqP43mzm67x3oW
+id: ufUek43ZJqP43mzm67x3oW
 title: "App d'IA pour visualisation et gestion de projets"
-date: 2026-02-26 20:17 UTC
-url: https://manus.im/app/sessions/ufUek43ZJqP43mzm67x3oW
-project_id: none
-user_messages: 17
-assistant_messages: 24
-total_messages: 80
-processed: true
+date: "2026-02-26"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "ODYSSEY", "PRÉCIPITATION", "OneSHIFT"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/ufUek43ZJqP43mzm67x3oW"
 ---
 
 # App d'IA pour visualisation et gestion de projets

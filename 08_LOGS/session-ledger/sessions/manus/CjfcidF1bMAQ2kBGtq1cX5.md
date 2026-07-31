@@ -1,13 +1,12 @@
 ---
-session_id: CjfcidF1bMAQ2kBGtq1cX5
+id: CjfcidF1bMAQ2kBGtq1cX5
 title: "[✓] Y-OS Reader MVP A.1 — Build, Patch & Local Archival"
-date: 2026-06-05 23:57 UTC
-url: https://manus.im/app/sessions/CjfcidF1bMAQ2kBGtq1cX5
-project_id: none
-user_messages: 33
-assistant_messages: 55
-total_messages: 143
-processed: true
+date: "2026-06-05"
+importance: 3
+projects: ["Y-OS", "Y-OS Reader", "Y-OS Client for Obsidian", "YMD"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/CjfcidF1bMAQ2kBGtq1cX5"
 ---
 
 # [✓] Y-OS Reader MVP A.1 — Build, Patch & Local Archival
@@ -873,7 +872,7 @@ Push réussi. Tag créé sur remote.
 **MVP C : non démarré. Aucune feature ajoutée.**
 **[1780779899533] MANUS:** Test et push en cours.
 **[1780779894116] USER:** ghp*****Uz
-**[1780779687348] MANUS:** Le PAT `[REDACTED-GITHUB_TOKEN]` retourne **401 Bad credentials** — il est invalide ou expiré.\n\nDeux causes possibles :\n1. Le token a été copié avec un caractère manquant/extra\n2. Il a été révoqué ou n'a jamais été activé\n\nPour générer un PAT classique valide :\nhttps://github.com/settings/tokens/new\n\n- **Note:** `ghp_` = classic PAT (scopes: `repo` = full access)\n- Coche `repo` → **Full control of private repositories**\n- Expiration : 90 jours minimum\n\nColle le token complet ici et je push immédiatement.
+**[1780779687348] MANUS:** Le PAT `ghp_PZalt6Au2hYRrmMnFR0XU0awfw2XXe3CT0FC` retourne **401 Bad credentials** — il est invalide ou expiré.\n\nDeux causes possibles :\n1. Le token a été copié avec un caractère manquant/extra\n2. Il a été révoqué ou n'a jamais été activé\n\nPour générer un PAT classique valide :\nhttps://github.com/settings/tokens/new\n\n- **Note:** `ghp_` = classic PAT (scopes: `repo` = full access)\n- Coche `repo` → **Full control of private repositories**\n- Expiration : 90 jours minimum\n\nColle le token complet ici et je push immédiatement.
 **[1780779667543] MANUS:** PAT reçu — test write access et push MVP B immédiat.
 **[1780779662860] USER:** PAT ghp*****FC
 **[1780779340373] MANUS:** ## Y-OS Reader MVP B — Archival Complete ✅

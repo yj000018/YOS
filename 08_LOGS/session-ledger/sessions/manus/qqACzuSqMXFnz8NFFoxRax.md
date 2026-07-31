@@ -1,13 +1,12 @@
 ---
-session_id: qqACzuSqMXFnz8NFFoxRax
+id: qqACzuSqMXFnz8NFFoxRax
 title: "[✓] Crypto Investment Strategy: De-dollarization, AI Disruption & Market Outlook"
-date: 2025-07-28 22:27 UTC
-url: https://manus.im/app/sessions/qqACzuSqMXFnz8NFFoxRax
-project_id: none
-user_messages: 10
-assistant_messages: 12
-total_messages: 76
-processed: true
+date: "2025-07-28"
+importance: 3
+projects: ["Y-OS", "ROI-OS"]
+tags: ["crypto", "investment", "strategy", "risk management", "de-dollarization", "AI"]
+summary: ""
+url: "https://manus.im/app/task/qqACzuSqMXFnz8NFFoxRax"
 ---
 
 # [✓] Crypto Investment Strategy: De-dollarization, AI Disruption & Market Outlook

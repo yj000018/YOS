@@ -1,13 +1,12 @@
 ---
-session_id: 4MwXLWemys4u3Pt3S2yh8E
+id: 4MwXLWemys4u3Pt3S2yh8E
 title: "(Why can't I see or move sessions between projects?)"
-date: 2026-07-31
-url: https://manus.im/app/4MwXLWemys4u3Pt3S2yh8E
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 24
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["Y-OS"]
+tags: ["session management", "troubleshooting", "platform issue", "UI/UX"]
+summary: "Troubleshooting an issue preventing the user from seeing or moving sessions between projects within the Manus platform."
+url: "https://manus.im/app/task/4MwXLWemys4u3Pt3S2yh8E"
 ---
 
 # (Why can't I see or move sessions between projects?)

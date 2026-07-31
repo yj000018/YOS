@@ -1,13 +1,12 @@
 ---
-session_id: nfuwJ4dnUYjQZDW9zKxzJ1
+id: nfuwJ4dnUYjQZDW9zKxzJ1
 title: "[✓] Méta-framework ONE — Synthèse holistique & inventaire 29 projets Y World"
-date: 2026-06-14 11:23 UTC
-url: https://manus.im/app/sessions/nfuwJ4dnUYjQZDW9zKxzJ1
-project_id: none
-user_messages: 5
-assistant_messages: 13
-total_messages: 28
-processed: true
+date: "2026-06-14"
+importance: 3
+projects: ["ONE", "YOUniverse", "Civilizational Awakening", "Ludivine", "Visual Reality"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/nfuwJ4dnUYjQZDW9zKxzJ1"
 ---
 
 # [✓] Méta-framework ONE — Synthèse holistique & inventaire 29 projets Y World

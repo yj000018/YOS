@@ -1,13 +1,12 @@
 ---
-session_id: 9dt2qNPVmQAVLITBDBZTbE
+id: 9dt2qNPVmQAVLITBDBZTbE
 title: "[✓] MCP Server Configuration Guidance - Notion SSE Integration"
-date: 2026-03-31 21:11 UTC
-url: https://manus.im/app/sessions/9dt2qNPVmQAVLITBDBZTbE
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-03-31"
+importance: 3
+projects: ["Y-OS", "MCP"]
+tags: ["Configuration", "Notion", "SSE", "Integration", "Server"]
+summary: "Guidance on configuring an MCP server for Notion SSE integration, explaining the process via Manus settings."
+url: "https://manus.im/app/task/9dt2qNPVmQAVLITBDBZTbE"
 ---
 
 # [✓] MCP Server Configuration Guidance - Notion SSE Integration

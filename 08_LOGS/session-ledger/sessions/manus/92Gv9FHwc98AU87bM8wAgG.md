@@ -1,13 +1,12 @@
 ---
-session_id: 92Gv9FHwc98AU87bM8wAgG
+id: 92Gv9FHwc98AU87bM8wAgG
 title: "[✓] yOS Continuity Protocol v2 — Portable Cross-LLM Context Transfer Skill & Repo"
-date: 2026-06-29 11:12 UTC
-url: https://manus.im/app/sessions/92Gv9FHwc98AU87bM8wAgG
-project_id: none
-user_messages: 1
-assistant_messages: 8
-total_messages: 21
-processed: true
+date: "2026-06-29"
+importance: 3
+projects: ["Y-OS", "Continuity Protocol"]
+tags: ["Continuity Protocol"]
+summary: ""
+url: "https://manus.im/app/task/92Gv9FHwc98AU87bM8wAgG"
 ---
 
 # [✓] yOS Continuity Protocol v2 — Portable Cross-LLM Context Transfer Skill & Repo

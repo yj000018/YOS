@@ -1,13 +1,12 @@
 ---
-session_id: 2N3nJyaZv5nmDVPsjUk1fm
+id: 2N3nJyaZv5nmDVPsjUk1fm
 title: "[✓] Comparatif oxymètres compatibles Apple Health — Amazon & Galaxus"
-date: 2026-05-11 07:33 UTC
-url: https://manus.im/app/sessions/2N3nJyaZv5nmDVPsjUk1fm
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 8
-processed: true
+date: "2026-05-11"
+importance: 3
+projects: []
+tags: ["oxymètre", "Apple Health", "comparatif", "santé", "shopping"]
+summary: ""
+url: "https://manus.im/app/task/2N3nJyaZv5nmDVPsjUk1fm"
 ---
 
 # [✓] Comparatif oxymètres compatibles Apple Health — Amazon & Galaxus

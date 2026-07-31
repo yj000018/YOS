@@ -1,13 +1,12 @@
 ---
-session_id: jtHWYzWUPhRAcc2ET59oNH
+id: jtHWYzWUPhRAcc2ET59oNH
 title: "[✓] XR Copilot MVP Development - Full Flutter App Architecture"
-date: 2026-03-14 22:13 UTC
-url: https://manus.im/app/sessions/jtHWYzWUPhRAcc2ET59oNH
-project_id: none
-user_messages: 9
-assistant_messages: 14
-total_messages: 41
-processed: true
+date: "2026-03-14"
+importance: 3
+projects: ["XR Copilot", "Y-OS", "CasaTAO"]
+tags: ["XR"]
+summary: ""
+url: "https://manus.im/app/task/jtHWYzWUPhRAcc2ET59oNH"
 ---
 
 # [✓] XR Copilot MVP Development - Full Flutter App Architecture

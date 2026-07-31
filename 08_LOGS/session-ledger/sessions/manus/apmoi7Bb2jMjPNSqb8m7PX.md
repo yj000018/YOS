@@ -1,13 +1,12 @@
 ---
-session_id: apmoi7Bb2jMjPNSqb8m7PX
+id: apmoi7Bb2jMjPNSqb8m7PX
 title: "[✓] Canonical Memory Management: Inter-Session Memory and Task Organization"
-date: 2026-02-25 03:04 UTC
-url: https://manus.im/app/sessions/apmoi7Bb2jMjPNSqb8m7PX
-project_id: none
-user_messages: 5
-assistant_messages: 7
-total_messages: 20
-processed: true
+date: "2026-02-25"
+importance: 5
+projects: ["Y-OS", "Memory Pipeline"]
+tags: ["memory management", "API key", "configuration", "sandbox", "credentials", "task organization", "session management", "infrastructure"]
+summary: "Discussed canonical Manus API key management, inter-session memory, and task organization, including renaming sessions."
+url: "https://manus.im/app/task/apmoi7Bb2jMjPNSqb8m7PX"
 ---
 
 # [✓] Canonical Memory Management: Inter-Session Memory and Task Organization

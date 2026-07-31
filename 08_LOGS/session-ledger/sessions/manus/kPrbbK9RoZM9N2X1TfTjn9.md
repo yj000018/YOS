@@ -1,13 +1,12 @@
 ---
-session_id: kPrbbK9RoZM9N2X1TfTjn9
+id: kPrbbK9RoZM9N2X1TfTjn9
 title: "[✓] RevenueCat MCP — Test Live & Production Factsheet Y-OS"
-date: 2026-06-16 08:47 UTC
-url: https://manus.im/app/sessions/kPrbbK9RoZM9N2X1TfTjn9
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["RevenueCat", "Factsheet", "iOS", "IAP", "Integration", "Testing", "API", "Pricing"]
+summary: ""
+url: "https://manus.im/app/task/kPrbbK9RoZM9N2X1TfTjn9"
 ---
 
 # [✓] RevenueCat MCP — Test Live & Production Factsheet Y-OS

@@ -1,13 +1,12 @@
 ---
-session_id: qfcMk89BKWHHWcZI7tbfYM
+id: qfcMk89BKWHHWcZI7tbfYM
 title: "[✓] Create Complete MAGIC AI YouTube Channel with Full Automation"
-date: 2026-01-14 16:07 UTC
-url: https://manus.im/app/sessions/qfcMk89BKWHHWcZI7tbfYM
-project_id: TgKTXckuquNUhNTpf6cTbh
-user_messages: 28
-assistant_messages: 51
-total_messages: 142
-processed: true
+date: "2026-01-14"
+importance: 3
+projects: ["MAGIC AI", "Y-OS", "YOUniverse", "Y World", "Manus", "Notion Memory"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/qfcMk89BKWHHWcZI7tbfYM"
 ---
 
 # [✓] Create Complete MAGIC AI YouTube Channel with Full Automation

@@ -1,13 +1,12 @@
 ---
-session_id: u1Y1Rj2CLx4MPR5OWsHBbg
+id: u1Y1Rj2CLx4MPR5OWsHBbg
 title: "[✓] Real Estate Valuation Analysis for Annecy Apartment Purchase"
-date: 2025-07-27 20:39 UTC
-url: https://manus.im/app/sessions/u1Y1Rj2CLx4MPR5OWsHBbg
-project_id: none
-user_messages: 3
-assistant_messages: 4
-total_messages: 67
-processed: true
+date: "2025-07-27"
+importance: 3
+projects: []
+tags: ["real estate", "valuation", "Annecy", "apartment purchase", "negotiation", "report optimization", "market analysis"]
+summary: "Analyse de la valorisation d'un appartement à Annecy pour achat, avec optimisation du rapport pour négociation."
+url: "https://manus.im/app/task/u1Y1Rj2CLx4MPR5OWsHBbg"
 ---
 
 # [✓] Real Estate Valuation Analysis for Annecy Apartment Purchase

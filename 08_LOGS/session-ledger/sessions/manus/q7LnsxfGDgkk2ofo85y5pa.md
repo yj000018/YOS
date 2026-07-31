@@ -1,13 +1,12 @@
 ---
-session_id: q7LnsxfGDgkk2ofo85y5pa
+id: q7LnsxfGDgkk2ofo85y5pa
 title: "[✓] LAYOFF Web App MVP Development - Full Build & Deployment"
-date: 2026-04-04 17:40 UTC
-url: https://manus.im/app/sessions/q7LnsxfGDgkk2ofo85y5pa
-project_id: none
-user_messages: 2
-assistant_messages: 11
-total_messages: 21
-processed: true
+date: "2026-04-04"
+importance: 3
+projects: ["LAYOFF", "Segmented Unit-Grid", "Grid Engine", "BEFORE→LOSS→AFTER Protocol"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/q7LnsxfGDgkk2ofo85y5pa"
 ---
 
 # [✓] LAYOFF Web App MVP Development - Full Build & Deployment

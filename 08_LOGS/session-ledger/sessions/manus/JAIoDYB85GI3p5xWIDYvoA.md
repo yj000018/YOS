@@ -1,13 +1,12 @@
 ---
-session_id: JAIoDYB85GI3p5xWIDYvoA
+id: JAIoDYB85GI3p5xWIDYvoA
 title: "[✓] Quick Manus Functionality Test — Service Degradation Detected"
-date: 2026-05-12 22:28 UTC
-url: https://manus.im/app/sessions/JAIoDYB85GI3p5xWIDYvoA
-project_id: none
-user_messages: 5
-assistant_messages: 5
-total_messages: 20
-processed: true
+date: "2026-05-12"
+importance: 2
+projects: []
+tags: ["test", "manus", "functionality", "degradation", "error"]
+summary: "Quick test of Manus functionality encountering service degradation and processing errors."
+url: "https://manus.im/app/task/JAIoDYB85GI3p5xWIDYvoA"
 ---
 
 # [✓] Quick Manus Functionality Test — Service Degradation Detected

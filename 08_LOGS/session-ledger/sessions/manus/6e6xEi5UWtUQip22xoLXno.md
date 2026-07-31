@@ -1,13 +1,12 @@
 ---
-session_id: 6e6xEi5UWtUQip22xoLXno
+id: 6e6xEi5UWtUQip22xoLXno
 title: "[✓] GPT-Manus Command Bridge Script Implementation and Automation"
-date: 2026-01-06 02:03 UTC
-url: https://manus.im/app/sessions/6e6xEi5UWtUQip22xoLXno
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "GPT-Manus"]
+tags: ["Automation", "AI Integration"]
+summary: ""
+url: "https://manus.im/app/task/6e6xEi5UWtUQip22xoLXno"
 ---
 
 # [✓] GPT-Manus Command Bridge Script Implementation and Automation

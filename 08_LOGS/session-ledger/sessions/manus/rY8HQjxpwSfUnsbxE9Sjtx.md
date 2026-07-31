@@ -1,13 +1,12 @@
 ---
-session_id: rY8HQjxpwSfUnsbxE9Sjtx
+id: rY8HQjxpwSfUnsbxE9Sjtx
 title: "[✓] Build AI-Powered Iris Analysis Web App"
-date: 2025-06-26 08:11 UTC
-url: https://manus.im/app/sessions/rY8HQjxpwSfUnsbxE9Sjtx
-project_id: none
-user_messages: 5
-assistant_messages: 11
-total_messages: 104
-processed: true
+date: "2025-06-26"
+importance: 3
+projects: ["IrisInsight Pro", "Y-OS", "YOUniverse", "Manus Memory"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/rY8HQjxpwSfUnsbxE9Sjtx"
 ---
 
 # [✓] Build AI-Powered Iris Analysis Web App

@@ -1,13 +1,12 @@
 ---
-session_id: oCYmEbSzsUPmQ4i9sGK1Tg
+id: oCYmEbSzsUPmQ4i9sGK1Tg
 title: "[✓] ChatGPT Memory Management: Testing OCR Extraction Methods"
-date: 2026-01-21 02:04 UTC
-url: https://manus.im/app/sessions/oCYmEbSzsUPmQ4i9sGK1Tg
-project_id: none
-user_messages: 28
-assistant_messages: 51
-total_messages: 135
-processed: true
+date: "2026-01-21"
+importance: 3
+projects: ["Y-OS", "Memory Pipeline"]
+tags: ["ChatGPT", "Memory Management", "OCR", "Extraction", "iOS", "Screenshots", "Testing"]
+summary: ""
+url: "https://manus.im/app/task/oCYmEbSzsUPmQ4i9sGK1Tg"
 ---
 
 # [✓] ChatGPT Memory Management: Testing OCR Extraction Methods

@@ -1,13 +1,12 @@
 ---
-session_id: xktJvp14iJLbSHyA27NY1S
+id: xktJvp14iJLbSHyA27NY1S
 title: "[✓] Desktop File Organization by Semantic Groups"
-date: 2026-03-30 22:16 UTC
-url: https://manus.im/app/sessions/xktJvp14iJLbSHyA27NY1S
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 10
-processed: true
+date: "2026-03-30"
+importance: 3
+projects: ["CasaTAO"]
+tags: ["desktop organization", "file management", "cleanup", "system hygiene", "semantic grouping"]
+summary: "Desktop files reorganized into semantic groups, deleting junk for a clean, structured workspace."
+url: "https://manus.im/app/task/xktJvp14iJLbSHyA27NY1S"
 ---
 
 # [✓] Desktop File Organization by Semantic Groups

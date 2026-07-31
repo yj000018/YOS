@@ -1,13 +1,12 @@
 ---
-session_id: 7y07A8G6RtivnjGw8VEeEV
+id: 7y07A8G6RtivnjGw8VEeEV
 title: "[✓] Where to Define Secrets in Manus Environment"
-date: 2026-01-06 00:43 UTC
-url: https://manus.im/app/sessions/7y07A8G6RtivnjGw8VEeEV
-project_id: none
-user_messages: 9
-assistant_messages: 12
-total_messages: 37
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "Manus"]
+tags: ["secrets", "environment variables", "API key", "configuration", "shell", "setup"]
+summary: "Session to define and access secrets (like OpenAI API key and USERNAME) within the Manus (Y-OS) environment."
+url: "https://manus.im/app/task/7y07A8G6RtivnjGw8VEeEV"
 ---
 
 # [✓] Where to Define Secrets in Manus Environment
@@ -29,7 +28,7 @@ echo $openai_api_key
 ✅ **Result:**
 
 ```
-[REDACTED-OPENAI_STYLE]
+sk-TAzvC7pbDsuUEe2hpzdTdr
 ```
 
 Your OpenAI API key is available and ready to use!
@@ -45,7 +44,7 @@ Your OpenAI API key is available and ready to use!
 > **Manus:** ✅ **Result:**
 
 ```
-[REDACTED-OPENAI_STYLE]
+sk-TAzvC7pbDsuUEe2hpzdTdr
 ```
 
 Your OpenAI API key is available and ready to use!
@@ -60,7 +59,7 @@ Your OpenAI API key is available and ready to use!
 **[1767660665956] MANUS:** ✅ **Result:**
 
 ```
-[REDACTED-OPENAI_STYLE]
+sk-TAzvC7pbDsuUEe2hpzdTdr
 ```
 
 Your OpenAI API key is available and ready to use!

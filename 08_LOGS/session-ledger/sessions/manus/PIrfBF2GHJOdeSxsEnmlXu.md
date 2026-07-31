@@ -1,13 +1,12 @@
 ---
-session_id: PIrfBF2GHJOdeSxsEnmlXu
+id: PIrfBF2GHJOdeSxsEnmlXu
 title: "[✓] Fritz!Box + Deco XE75 Mesh + Sonos — Architecture & Reset Setup"
-date: 2026-05-18 10:34 UTC
-url: https://manus.im/app/sessions/PIrfBF2GHJOdeSxsEnmlXu
-project_id: none
-user_messages: 3
-assistant_messages: 4
-total_messages: 13
-processed: true
+date: "2026-05-18"
+importance: 3
+projects: []
+tags: ["Fritz!Box", "Deco XE75", "Sonos", "Network Architecture", "WiFi Mesh", "Home Network", "Setup", "Troubleshooting"]
+summary: "Configuration et architecture réseau optimale pour Fritz!Box, Deco XE75 Mesh et Sonos, incluant reset et meilleures pratiques."
+url: "https://manus.im/app/task/PIrfBF2GHJOdeSxsEnmlXu"
 ---
 
 # [✓] Fritz!Box + Deco XE75 Mesh + Sonos — Architecture & Reset Setup

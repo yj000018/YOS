@@ -1,13 +1,12 @@
 ---
-session_id: pLPgfmlI0IReosi2sLWFA3
+id: pLPgfmlI0IReosi2sLWFA3
 title: "[✓] Real Estate Marketing Package Creation for Divonne-les-Bains Apartment"
-date: 2025-09-07 11:33 UTC
-url: https://manus.im/app/sessions/pLPgfmlI0IReosi2sLWFA3
-project_id: none
-user_messages: 3
-assistant_messages: 8
-total_messages: 94
-processed: true
+date: "2025-09-07"
+importance: 3
+projects: []
+tags: ["Real Estate", "Marketing", "Website Development", "React", "Tailwind CSS"]
+summary: ""
+url: "https://manus.im/app/task/pLPgfmlI0IReosi2sLWFA3"
 ---
 
 # [✓] Real Estate Marketing Package Creation for Divonne-les-Bains Apartment

@@ -1,13 +1,12 @@
 ---
-session_id: 7udzXMgwAjxz9atq7Vb5ZC
+id: 7udzXMgwAjxz9atq7Vb5ZC
 title: "[✓] Defining the Subscription Management Module for Y-Finance-Manager"
-date: 2026-01-21 01:28 UTC
-url: https://manus.im/app/sessions/7udzXMgwAjxz9atq7Vb5ZC
-project_id: none
-user_messages: 10
-assistant_messages: 17
-total_messages: 51
-processed: true
+date: "2026-01-21"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Y-Finance-Manager", "Subscription Management Module", "Subscription Tracker"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/7udzXMgwAjxz9atq7Vb5ZC"
 ---
 
 # [✓] Defining the Subscription Management Module for Y-Finance-Manager

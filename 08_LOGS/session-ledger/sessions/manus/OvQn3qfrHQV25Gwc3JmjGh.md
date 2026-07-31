@@ -1,13 +1,12 @@
 ---
-session_id: OvQn3qfrHQV25Gwc3JmjGh
+id: OvQn3qfrHQV25Gwc3JmjGh
 title: "[✓] Fix Python script for 360° to Gaussian Splatting in Metashape Pro (macOS)"
-date: 2026-05-03 12:28 UTC
-url: https://manus.im/app/sessions/OvQn3qfrHQV25Gwc3JmjGh
-project_id: none
-user_messages: 33
-assistant_messages: 47
-total_messages: 159
-processed: true
+date: "2026-05-03"
+importance: 3
+projects: ["YOUniverse", "Y-OS"]
+tags: ["Gaussian Splatting", "Metashape Pro", "Python", "3D", "macOS"]
+summary: ""
+url: "https://manus.im/app/task/OvQn3qfrHQV25Gwc3JmjGh"
 ---
 
 # [✓] Fix Python script for 360° to Gaussian Splatting in Metashape Pro (macOS)

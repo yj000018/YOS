@@ -1,13 +1,12 @@
 ---
-session_id: kBG9vuDP6LTHEHkQ4bDheB
+id: kBG9vuDP6LTHEHkQ4bDheB
 title: "[✓] Future NEWS - Complete Journal Redesign and Mobile Optimization"
-date: 2026-04-04 18:50 UTC
-url: https://manus.im/app/sessions/kBG9vuDP6LTHEHkQ4bDheB
-project_id: none
-user_messages: 43
-assistant_messages: 126
-total_messages: 232
-processed: true
+date: "2026-04-04"
+importance: 3
+projects: ["Future News", "Y Media", "Futura", "The Four Routes", "The Horizon System"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/kBG9vuDP6LTHEHkQ4bDheB"
 ---
 
 # [✓] Future NEWS - Complete Journal Redesign and Mobile Optimization

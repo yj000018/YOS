@@ -1,13 +1,12 @@
 ---
-session_id: b5pWAZ1mDtauVmHphud1G7
+id: b5pWAZ1mDtauVmHphud1G7
 title: "[✓] b5pWAZ1mDtauVmHphud1G7"
-date: 2026-06-11 22:00 UTC
-url: https://manus.im/app/sessions/b5pWAZ1mDtauVmHphud1G7
-project_id: none
-user_messages: 174
-assistant_messages: 480
-total_messages: 1129
-processed: true
+date: "2026-06-11"
+importance: 3
+projects: ["Y-OS", "Y-OS Execution Nodes", "y-os-doctrine", "yOS-Mac-Bridge"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/b5pWAZ1mDtauVmHphud1G7"
 ---
 
 # [✓] b5pWAZ1mDtauVmHphud1G7

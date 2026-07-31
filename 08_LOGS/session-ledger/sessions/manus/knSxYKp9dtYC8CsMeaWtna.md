@@ -1,13 +1,12 @@
 ---
-session_id: knSxYKp9dtYC8CsMeaWtna
+id: knSxYKp9dtYC8CsMeaWtna
 title: "[✓] Y-LLM Exporter — Implementation Mining Audit v2.0 (7 repos, 4 providers)"
-date: 2026-06-11 00:22 UTC
-url: https://manus.im/app/sessions/knSxYKp9dtYC8CsMeaWtna
-project_id: none
-user_messages: 11
-assistant_messages: 22
-total_messages: 51
-processed: true
+date: "2026-06-11"
+importance: 3
+projects: ["Y-LLM Exporter", "Y-OS", "YOUniverse", "LLM Memory Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/knSxYKp9dtYC8CsMeaWtna"
 ---
 
 # [✓] Y-LLM Exporter — Implementation Mining Audit v2.0 (7 repos, 4 providers)

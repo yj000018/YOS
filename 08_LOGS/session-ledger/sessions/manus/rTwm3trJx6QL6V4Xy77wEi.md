@@ -1,13 +1,12 @@
 ---
-session_id: rTwm3trJx6QL6V4Xy77wEi
+id: rTwm3trJx6QL6V4Xy77wEi
 title: "[✓] Demo Examples for Manus /status Skill"
-date: 2026-03-26 18:30 UTC
-url: https://manus.im/app/sessions/rTwm3trJx6QL6V4Xy77wEi
-project_id: none
-user_messages: 1
-assistant_messages: 0
-total_messages: 4
-processed: true
+date: "2026-03-26"
+importance: 3
+projects: ["Y-OS", "Manus"]
+tags: ["skill", "status", "demo", "testing", "AI assistant"]
+summary: ""
+url: "https://manus.im/app/task/rTwm3trJx6QL6V4Xy77wEi"
 ---
 
 # [✓] Demo Examples for Manus /status Skill

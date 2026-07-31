@@ -1,13 +1,12 @@
 ---
-session_id: fEBhZ9H8zf3WDNBwB19qaB
+id: fEBhZ9H8zf3WDNBwB19qaB
 title: "[✓] Y Symbolism Research Project"
-date: 2026-02-07 02:08 UTC
-url: https://manus.im/app/sessions/fEBhZ9H8zf3WDNBwB19qaB
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 19
-processed: true
+date: "2026-02-07"
+importance: 3
+projects: ["Y Symbolism Research Project", "Y World", "YOUniverse"]
+tags: ["Symbolism"]
+summary: ""
+url: "https://manus.im/app/task/fEBhZ9H8zf3WDNBwB19qaB"
 ---
 
 # [✓] Y Symbolism Research Project

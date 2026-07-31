@@ -1,13 +1,12 @@
 ---
-session_id: UKkoBuNd3niz8UZWgmlZWc
+id: UKkoBuNd3niz8UZWgmlZWc
 title: "[✓] Mindly comme référence UX pour YOUniverse — Navigation radiale & Spline 3D"
-date: 2026-05-03 16:53 UTC
-url: https://manus.im/app/sessions/UKkoBuNd3niz8UZWgmlZWc
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-03"
+importance: 4
+projects: ["YOUniverse", "Y-OS"]
+tags: ["Mindly", "UX", "UI", "Navigation radiale", "Spline 3D", "Architecture 3D", "OS cognitif", "Data Schema", "API", "Notion", "n8n"]
+summary: "Analyse de Mindly comme référence UX (navigation radiale, Spline 3D) pour l'architecture de YOUniverse et l'OS cognitif."
+url: "https://manus.im/app/task/UKkoBuNd3niz8UZWgmlZWc"
 ---
 
 # [✓] Mindly comme référence UX pour YOUniverse — Navigation radiale & Spline 3D

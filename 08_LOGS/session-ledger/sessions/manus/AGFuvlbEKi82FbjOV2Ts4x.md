@@ -1,13 +1,12 @@
 ---
-session_id: AGFuvlbEKi82FbjOV2Ts4x
+id: AGFuvlbEKi82FbjOV2Ts4x
 title: "[✓] Y-Downloads Shelf — macOS SwiftUI Menu-Bar App for Recent Downloads"
-date: 2026-06-30 21:24 UTC
-url: https://manus.im/app/sessions/AGFuvlbEKi82FbjOV2Ts4x
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-06-30"
+importance: 3
+projects: ["Y-Downloads Shelf"]
+tags: ["macOS", "SwiftUI", "Menu Bar App", "Downloads", "File Management", "Productivity", "Utility"]
+summary: ""
+url: "https://manus.im/app/task/AGFuvlbEKi82FbjOV2Ts4x"
 ---
 
 # [✓] Y-Downloads Shelf — macOS SwiftUI Menu-Bar App for Recent Downloads

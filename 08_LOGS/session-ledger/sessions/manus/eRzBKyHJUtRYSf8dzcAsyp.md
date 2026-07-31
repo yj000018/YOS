@@ -1,13 +1,12 @@
 ---
-session_id: eRzBKyHJUtRYSf8dzcAsyp
+id: eRzBKyHJUtRYSf8dzcAsyp
 title: "[✓] Abbé Pierre Sexual Abuse Scandal - Comprehensive Investigation Report"
-date: 2025-08-19 18:51 UTC
-url: https://manus.im/app/sessions/eRzBKyHJUtRYSf8dzcAsyp
-project_id: none
-user_messages: 18
-assistant_messages: 18
-total_messages: 118
-processed: true
+date: "2025-08-19"
+importance: 3
+projects: []
+tags: ["Abbé Pierre", "Scandal", "Investigation", "Report", "Translation", "German"]
+summary: "Comprehensive investigation report on the Abbé Pierre sexual abuse scandal, including German translation."
+url: "https://manus.im/app/task/eRzBKyHJUtRYSf8dzcAsyp"
 ---
 
 # [✓] Abbé Pierre Sexual Abuse Scandal - Comprehensive Investigation Report

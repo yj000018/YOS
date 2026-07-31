@@ -1,13 +1,12 @@
 ---
-session_id: oBEbRVxteyAT48ozvhvMJk
+id: oBEbRVxteyAT48ozvhvMJk
 title: "[✓] Building AI Agent Orchestrator: Manus-MiniMax Collaboration PoC"
-date: 2025-08-17 21:16 UTC
-url: https://manus.im/app/sessions/oBEbRVxteyAT48ozvhvMJk
-project_id: none
-user_messages: 4
-assistant_messages: 5
-total_messages: 55
-processed: true
+date: "2025-08-17"
+importance: 3
+projects: ["Manus"]
+tags: ["AI Agent Orchestrator", "Manus", "MiniMax", "n8n workflow", "PoC", "Task Routing"]
+summary: ""
+url: "https://manus.im/app/task/oBEbRVxteyAT48ozvhvMJk"
 ---
 
 # [✓] Building AI Agent Orchestrator: Manus-MiniMax Collaboration PoC

@@ -1,13 +1,12 @@
 ---
-session_id: 6puTVfwYbScGmmQZ3EMoEj
+id: 6puTVfwYbScGmmQZ3EMoEj
 title: "[✓] Content Mate v2.0 — Déploiement n100 & Architecture Affiliate-First"
-date: 2026-05-10 00:13 UTC
-url: https://manus.im/app/sessions/6puTVfwYbScGmmQZ3EMoEj
-project_id: none
-user_messages: 98
-assistant_messages: 118
-total_messages: 392
-processed: true
+date: "2026-05-10"
+importance: 3
+projects: ["Content Mate v2.0", "Y-OS", "YOUniverse", "ACE", "REP Engine"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/6puTVfwYbScGmmQZ3EMoEj"
 ---
 
 # [✓] Content Mate v2.0 — Déploiement n100 & Architecture Affiliate-First

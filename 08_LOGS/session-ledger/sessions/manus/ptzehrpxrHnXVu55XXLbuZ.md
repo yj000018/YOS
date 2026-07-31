@@ -1,13 +1,12 @@
 ---
-session_id: ptzehrpxrHnXVu55XXLbuZ
+id: ptzehrpxrHnXVu55XXLbuZ
 title: "[✓] Démonstration du skill tool-router Y-OS — matrice de routage par domaine"
-date: 2026-05-02 00:20 UTC
-url: https://manus.im/app/sessions/ptzehrpxrHnXVu55XXLbuZ
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-02"
+importance: 3
+projects: ["Y-OS"]
+tags: ["tool-router", "routage", "matrice"]
+summary: ""
+url: "https://manus.im/app/task/ptzehrpxrHnXVu55XXLbuZ"
 ---
 
 # [✓] Démonstration du skill tool-router Y-OS — matrice de routage par domaine

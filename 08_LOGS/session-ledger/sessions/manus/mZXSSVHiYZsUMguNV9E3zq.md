@@ -1,13 +1,12 @@
 ---
-session_id: mZXSSVHiYZsUMguNV9E3zq
+id: mZXSSVHiYZsUMguNV9E3zq
 title: "[✓] Installation spa Caprice — fondation plots réglables et logistique livraison"
-date: 2026-05-10 17:32 UTC
-url: https://manus.im/app/sessions/mZXSSVHiYZsUMguNV9E3zq
-project_id: none
-user_messages: 19
-assistant_messages: 24
-total_messages: 77
-processed: true
+date: "2026-05-10"
+importance: 3
+projects: []
+tags: ["spa", "installation", "logistique", "météo", "fondation", "livraison", "plots"]
+summary: ""
+url: "https://manus.im/app/task/mZXSSVHiYZsUMguNV9E3zq"
 ---
 
 # [✓] Installation spa Caprice — fondation plots réglables et logistique livraison

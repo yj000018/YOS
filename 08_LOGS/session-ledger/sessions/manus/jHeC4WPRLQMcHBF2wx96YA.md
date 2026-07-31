@@ -1,13 +1,12 @@
 ---
-session_id: jHeC4WPRLQMcHBF2wx96YA
+id: jHeC4WPRLQMcHBF2wx96YA
 title: "[✓] Problème d'installation/confirmation d'action sur iOS"
-date: 2026-03-03 08:35 UTC
-url: https://manus.im/app/sessions/jHeC4WPRLQMcHBF2wx96YA
-project_id: none
-user_messages: 3
-assistant_messages: 3
-total_messages: 12
-processed: true
+date: "2026-03-03"
+importance: 3
+projects: ["Y-OS"]
+tags: ["iOS", "browser", "UX", "bug", "payment", "Manus app", "flow interruption"]
+summary: "User reports flow interruption on iOS due to Manus app's browser confirmation popup during payment, seeking a smoother experience."
+url: "https://manus.im/app/task/jHeC4WPRLQMcHBF2wx96YA"
 ---
 
 # [✓] Problème d'installation/confirmation d'action sur iOS

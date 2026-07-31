@@ -1,13 +1,12 @@
 ---
-session_id: zmUhvvY3yzvNjTB2WKZyVy
+id: zmUhvvY3yzvNjTB2WKZyVy
 title: "[✓] XRP Risk Analysis and Interactive Dashboard Development"
-date: 2025-07-22 22:41 UTC
-url: https://manus.im/app/sessions/zmUhvvY3yzvNjTB2WKZyVy
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 75
-processed: true
+date: "2025-07-22"
+importance: 3
+projects: ["XRP Risk Analysis", "Interactive Dashboard Development"]
+tags: ["Cryptocurrency", "Risk Analysis"]
+summary: ""
+url: "https://manus.im/app/task/zmUhvvY3yzvNjTB2WKZyVy"
 ---
 
 # [✓] XRP Risk Analysis and Interactive Dashboard Development

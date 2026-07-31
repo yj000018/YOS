@@ -1,13 +1,12 @@
 ---
-session_id: vwYQbGeR4C1DoWwBF5McsY
+id: vwYQbGeR4C1DoWwBF5McsY
 title: "[✓] Private Equity Price Predictions Analysis: SpaceX, OpenAI, X.ai, Epic Games"
-date: 2025-07-28 01:27 UTC
-url: https://manus.im/app/sessions/vwYQbGeR4C1DoWwBF5McsY
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 52
-processed: true
+date: "2025-07-28"
+importance: 3
+projects: []
+tags: ["Private Equity", "Price Prediction", "Valuation Analysis", "SpaceX", "OpenAI", "X.ai", "Epic Games", "SolidLight", "Financial Analysis"]
+summary: "Analysis and prediction of private equity valuations for SpaceX, OpenAI, X.ai, Epic Games, and SolidLight."
+url: "https://manus.im/app/task/vwYQbGeR4C1DoWwBF5McsY"
 ---
 
 # [✓] Private Equity Price Predictions Analysis: SpaceX, OpenAI, X.ai, Epic Games

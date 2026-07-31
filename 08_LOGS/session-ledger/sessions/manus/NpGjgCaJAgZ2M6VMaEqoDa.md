@@ -1,13 +1,12 @@
 ---
-session_id: NpGjgCaJAgZ2M6VMaEqoDa
+id: NpGjgCaJAgZ2M6VMaEqoDa
 title: "[✓] Profile Memory Check - Understanding Manus Context"
-date: 2026-02-23 12:56 UTC
-url: https://manus.im/app/sessions/NpGjgCaJAgZ2M6VMaEqoDa
-project_id: none
-user_messages: 1
-assistant_messages: 1
-total_messages: 4
-processed: true
+date: "2026-02-23"
+importance: 3
+projects: ["Y-OS", "Memory"]
+tags: ["memory", "profile", "context"]
+summary: ""
+url: "https://manus.im/app/task/NpGjgCaJAgZ2M6VMaEqoDa"
 ---
 
 # [✓] Profile Memory Check - Understanding Manus Context

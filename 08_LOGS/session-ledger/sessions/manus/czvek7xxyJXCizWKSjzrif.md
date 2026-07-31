@@ -1,13 +1,12 @@
 ---
-session_id: czvek7xxyJXCizWKSjzrif
+id: czvek7xxyJXCizWKSjzrif
 title: "[✓] Fireflies MCP Integration Setup - Browser Connectivity Issues"
-date: 2026-02-02 16:31 UTC
-url: https://manus.im/app/sessions/czvek7xxyJXCizWKSjzrif
-project_id: none
-user_messages: 9
-assistant_messages: 17
-total_messages: 45
-processed: true
+date: "2026-02-02"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Fireflies", "MCP Integration", "Browser Connectivity", "API Key", "OAuth", "Setup"]
+summary: ""
+url: "https://manus.im/app/task/czvek7xxyJXCizWKSjzrif"
 ---
 
 # [✓] Fireflies MCP Integration Setup - Browser Connectivity Issues

@@ -1,13 +1,12 @@
 ---
-session_id: BW2JkcEVrc2lsQp2kXT6WT
+id: BW2JkcEVrc2lsQp2kXT6WT
 title: "[✓] Diagnostic skill credit-optimizer — MCP server absent vs version Gumroad"
-date: 2026-05-26 01:22 UTC
-url: https://manus.im/app/sessions/BW2JkcEVrc2lsQp2kXT6WT
-project_id: none
-user_messages: 3
-assistant_messages: 5
-total_messages: 14
-processed: true
+date: "2026-05-26"
+importance: 3
+projects: ["Y-OS", "credit-optimizer"]
+tags: ["skill", "MCP server", "Gumroad", "diagnostic", "troubleshooting", "configuration"]
+summary: ""
+url: "https://manus.im/app/task/BW2JkcEVrc2lsQp2kXT6WT"
 ---
 
 # [✓] Diagnostic skill credit-optimizer — MCP server absent vs version Gumroad

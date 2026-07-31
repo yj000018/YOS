@@ -1,13 +1,12 @@
 ---
-session_id: fBp5U8X4djsSbCVBP9jHr5
+id: fBp5U8X4djsSbCVBP9jHr5
 title: "[✓] Y-OS Proto Tana Import + Architecture ngrok Full-Mac Control Panel"
-date: 2026-03-14 03:18 UTC
-url: https://manus.im/app/sessions/fBp5U8X4djsSbCVBP9jHr5
-project_id: none
-user_messages: 12
-assistant_messages: 22
-total_messages: 63
-processed: true
+date: "2026-03-14"
+importance: 3
+projects: ["Y-OS", "Tana Import", "Full-Mac Control Panel"]
+tags: ["Y-OS", "Tana"]
+summary: ""
+url: "https://manus.im/app/task/fBp5U8X4djsSbCVBP9jHr5"
 ---
 
 # [✓] Y-OS Proto Tana Import + Architecture ngrok Full-Mac Control Panel

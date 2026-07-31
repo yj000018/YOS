@@ -1,13 +1,12 @@
 ---
-session_id: tKc7RDPcyqDCX5yW9qm7WP
+id: tKc7RDPcyqDCX5yW9qm7WP
 title: "[✓] Shopping App Development Prompt for Replit"
-date: 2025-09-22 23:14 UTC
-url: https://manus.im/app/sessions/tKc7RDPcyqDCX5yW9qm7WP
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 4
-processed: true
+date: "2025-09-22"
+importance: 3
+projects: []
+tags: ["Shopping App", "Replit", "Prompt Engineering", "Product Comparison", "E-commerce", "AI"]
+summary: "Generated a comprehensive, structured prompt for Replit to develop an AI-powered shopping comparison app with European sourcing."
+url: "https://manus.im/app/task/tKc7RDPcyqDCX5yW9qm7WP"
 ---
 
 # [✓] Shopping App Development Prompt for Replit

@@ -1,13 +1,12 @@
 ---
-session_id: Z8oFYFwzuRyu7nkgAVAeUa
+id: Z8oFYFwzuRyu7nkgAVAeUa
 title: "[✓] Flux API Testing and Demo Script Development"
-date: 2026-04-05 23:33 UTC
-url: https://manus.im/app/sessions/Z8oFYFwzuRyu7nkgAVAeUa
-project_id: none
-user_messages: 4
-assistant_messages: 10
-total_messages: 24
-processed: true
+date: "2026-04-05"
+importance: 3
+projects: ["Y-OS", "Flux API"]
+tags: ["api-testing", "demo-scripts", "image-editing", "pricing", "bfl-api"]
+summary: ""
+url: "https://manus.im/app/task/Z8oFYFwzuRyu7nkgAVAeUa"
 ---
 
 # [✓] Flux API Testing and Demo Script Development

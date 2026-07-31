@@ -1,13 +1,12 @@
 ---
-session_id: bHmlKOQLsco40ruSmqwlB9
+id: bHmlKOQLsco40ruSmqwlB9
 title: "[✓] Portfolio tracker app with Musk investments explanation"
-date: 2026-04-01 22:17 UTC
-url: https://manus.im/app/sessions/bHmlKOQLsco40ruSmqwlB9
-project_id: none
-user_messages: 3
-assistant_messages: 7
-total_messages: 16
-processed: true
+date: "2026-04-01"
+importance: 3
+projects: ["Y-OS", "Portfolio Tracker App"]
+tags: ["portfolio", "tracker", "finance", "investments", "marketing", "explanation", "UX"]
+summary: ""
+url: "https://manus.im/app/task/bHmlKOQLsco40ruSmqwlB9"
 ---
 
 # [✓] Portfolio tracker app with Musk investments explanation

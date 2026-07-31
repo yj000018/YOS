@@ -1,13 +1,12 @@
 ---
-session_id: U9m6iXqOGdW0qWnWCuc597
+id: U9m6iXqOGdW0qWnWCuc597
 title: "[✓] Installation Credit Optimizer v5 — Skill + MCP Server Manus"
-date: 2026-05-26 00:46 UTC
-url: https://manus.im/app/sessions/U9m6iXqOGdW0qWnWCuc597
-project_id: none
-user_messages: 20
-assistant_messages: 32
-total_messages: 91
-processed: true
+date: "2026-05-26"
+importance: 3
+projects: ["Y-OS", "Manus", "Credit Optimizer", "Fast Navigation", "Memory Pipeline", "YOUniverse"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/U9m6iXqOGdW0qWnWCuc597"
 ---
 
 # [✓] Installation Credit Optimizer v5 — Skill + MCP Server Manus

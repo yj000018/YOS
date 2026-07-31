@@ -1,13 +1,12 @@
 ---
-session_id: YcIw9mFUabFXScWwXJdKRM
+id: YcIw9mFUabFXScWwXJdKRM
 title: "(API permet de déplacer sessions/tâches entre projets automatiquement?)"
-date: 2026-07-31
-url: https://manus.im/app/YcIw9mFUabFXScWwXJdKRM
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 4
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["Y-OS"]
+tags: ["API", "automation", "project management", "task management"]
+summary: ""
+url: "https://manus.im/app/task/YcIw9mFUabFXScWwXJdKRM"
 ---
 
 # (API permet de déplacer sessions/tâches entre projets automatiquement?)

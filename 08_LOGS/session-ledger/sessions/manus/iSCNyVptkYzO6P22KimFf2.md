@@ -1,13 +1,12 @@
 ---
-session_id: iSCNyVptkYzO6P22KimFf2
+id: iSCNyVptkYzO6P22KimFf2
 title: "[✓] Transcription & réécriture éditoriale — Exposé oral hindouisme/bouddhisme (10 audios WhatsApp)"
-date: 2026-05-07 22:44 UTC
-url: https://manus.im/app/sessions/iSCNyVptkYzO6P22KimFf2
-project_id: none
-user_messages: 15
-assistant_messages: 27
-total_messages: 74
-processed: true
+date: "2026-05-07"
+importance: 3
+projects: ["YOUniverse"]
+tags: ["transcription", "editorial", "hindouisme", "bouddhisme", "non-dualité", "traduction"]
+summary: ""
+url: "https://manus.im/app/task/iSCNyVptkYzO6P22KimFf2"
 ---
 
 # [✓] Transcription & réécriture éditoriale — Exposé oral hindouisme/bouddhisme (10 audios WhatsApp)

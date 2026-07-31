@@ -1,13 +1,12 @@
 ---
-session_id: 2SRbXNcAfAcpAgiySc1x2m
+id: 2SRbXNcAfAcpAgiySc1x2m
 title: "[✓] Read AI MCP Connector — Test Live & Factsheet Y-OS"
-date: 2026-06-16 09:03 UTC
-url: https://manus.im/app/sessions/2SRbXNcAfAcpAgiySc1x2m
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "MCP Connector"]
+tags: ["AI", "Connector", "Factsheet", "Testing", "API Integration", "Documentation"]
+summary: ""
+url: "https://manus.im/app/task/2SRbXNcAfAcpAgiySc1x2m"
 ---
 
 # [✓] Read AI MCP Connector — Test Live & Factsheet Y-OS

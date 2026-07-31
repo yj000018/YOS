@@ -1,13 +1,12 @@
 ---
-session_id: 1Veq8K61axBlX24dMPnVgF
+id: 1Veq8K61axBlX24dMPnVgF
 title: "[✓] Taskade MCP Connector — Test Live & Factsheet Y-OS"
-date: 2026-06-16 10:49 UTC
-url: https://manus.im/app/sessions/1Veq8K61axBlX24dMPnVgF
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Factsheet", "Taskade", "MCP Connector", "Tool Analysis", "API Integration", "Live Test", "Notion", "Multi-Agent Architecture", "Automation", "AI Agents", "Limitations", "Interdependencies"]
+summary: "Création et test live d'une factsheet détaillée pour le Taskade MCP Connector, analysant ses capacités, limites et interdépendances pour l'architecture Y-OS."
+url: "https://manus.im/app/task/1Veq8K61axBlX24dMPnVgF"
 ---
 
 # [✓] Taskade MCP Connector — Test Live & Factsheet Y-OS

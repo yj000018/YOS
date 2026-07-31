@@ -1,13 +1,12 @@
 ---
-session_id: nUGXBtL8d1iGx6VDqK7Rf6
+id: nUGXBtL8d1iGx6VDqK7Rf6
 title: "[✓] Google Calendar MCP Connector — Test Live & Factsheet Y-OS"
-date: 2026-06-16 09:39 UTC
-url: https://manus.im/app/sessions/nUGXBtL8d1iGx6VDqK7Rf6
-project_id: none
-user_messages: 2
-assistant_messages: 2
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "MCP", "yos-optimizer"]
+tags: ["Google Calendar", "Connector", "Test", "Factsheet", "API", "Capabilities", "Documentation", "iOS", "Notion", "Metadata"]
+summary: "Testing and documenting the Google Calendar MCP Connector, exploring its API, capabilities, and creating a factsheet for Y-OS."
+url: "https://manus.im/app/task/nUGXBtL8d1iGx6VDqK7Rf6"
 ---
 
 # [✓] Google Calendar MCP Connector — Test Live & Factsheet Y-OS

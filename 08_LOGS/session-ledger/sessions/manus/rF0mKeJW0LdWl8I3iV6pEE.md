@@ -1,13 +1,12 @@
 ---
-session_id: rF0mKeJW0LdWl8I3iV6pEE
+id: rF0mKeJW0LdWl8I3iV6pEE
 title: "[✓] HARPA AI Extension Integration with yOS"
-date: 2026-03-01 19:01 UTC
-url: https://manus.im/app/sessions/rF0mKeJW0LdWl8I3iV6pEE
-project_id: none
-user_messages: 11
-assistant_messages: 20
-total_messages: 65
-processed: true
+date: "2026-03-01"
+importance: 3
+projects: ["Y-OS", "HARPA AI Integration"]
+tags: ["HARPA AI", "Integration", "Chrome Extension", "API", "Webhook", "Troubleshooting", "AI", "n8n", "Manus", "Architecture"]
+summary: "Integration of HARPA AI Chrome extension with yOS, diagnosing webhook callback issues due to HARPA's active Chrome requirement."
+url: "https://manus.im/app/task/rF0mKeJW0LdWl8I3iV6pEE"
 ---
 
 # [✓] HARPA AI Extension Integration with yOS

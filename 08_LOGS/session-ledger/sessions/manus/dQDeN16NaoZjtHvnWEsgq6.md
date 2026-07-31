@@ -1,13 +1,12 @@
 ---
-session_id: dQDeN16NaoZjtHvnWEsgq6
+id: dQDeN16NaoZjtHvnWEsgq6
 title: "[✓] Ordering snow gear for Tao the Maltese: full-body suit and booties"
-date: 2026-02-20 12:36 UTC
-url: https://manus.im/app/sessions/dQDeN16NaoZjtHvnWEsgq6
-project_id: none
-user_messages: 5
-assistant_messages: 7
-total_messages: 22
-processed: true
+date: "2026-02-20"
+importance: 3
+projects: []
+tags: ["shopping", "dog", "pet", "Tao", "snow gear", "Maltese", "Galaxus"]
+summary: ""
+url: "https://manus.im/app/task/dQDeN16NaoZjtHvnWEsgq6"
 ---
 
 # [✓] Ordering snow gear for Tao the Maltese: full-body suit and booties

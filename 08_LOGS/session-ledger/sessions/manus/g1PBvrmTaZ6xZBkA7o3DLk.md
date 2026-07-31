@@ -1,13 +1,12 @@
 ---
-session_id: g1PBvrmTaZ6xZBkA7o3DLk
+id: g1PBvrmTaZ6xZBkA7o3DLk
 title: "[✓] PE AI Deal Radar MVP — Build & Y World Inventory Extraction"
-date: 2026-04-27 07:59 UTC
-url: https://manus.im/app/sessions/g1PBvrmTaZ6xZBkA7o3DLk
-project_id: none
-user_messages: 2
-assistant_messages: 9
-total_messages: 21
-processed: true
+date: "2026-04-27"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Y World", "PE AI Deal Radar MVP", "Y World Inventory Extraction"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/g1PBvrmTaZ6xZBkA7o3DLk"
 ---
 
 # [✓] PE AI Deal Radar MVP — Build & Y World Inventory Extraction

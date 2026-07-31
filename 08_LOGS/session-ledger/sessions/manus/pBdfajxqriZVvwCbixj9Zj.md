@@ -1,13 +1,12 @@
 ---
-session_id: pBdfajxqriZVvwCbixj9Zj
+id: pBdfajxqriZVvwCbixj9Zj
 title: "[✓] AllTrails Connector — Live Test & Y-OS Factsheet Publication"
-date: 2026-06-16 08:59 UTC
-url: https://manus.im/app/sessions/pBdfajxqriZVvwCbixj9Zj
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 10
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "AllTrails Connector"]
+tags: ["AllTrails", "Connector", "Live Test", "Factsheet", "Publication", "Notion"]
+summary: ""
+url: "https://manus.im/app/task/pBdfajxqriZVvwCbixj9Zj"
 ---
 
 # [✓] AllTrails Connector — Live Test & Y-OS Factsheet Publication

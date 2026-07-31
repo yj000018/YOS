@@ -1,13 +1,12 @@
 ---
-session_id: D8FKXMef6jca23h6LWGZDR
+id: D8FKXMef6jca23h6LWGZDR
 title: "[✓] Veille MCP bimensuelle Y-OS + 4 missions stratégiques post-veille"
-date: 2026-05-15 07:05 UTC
-url: https://manus.im/app/sessions/D8FKXMef6jca23h6LWGZDR
-project_id: ENbrMceTr2iFFx3puHhb2r
-user_messages: 2
-assistant_messages: 11
-total_messages: 20
-processed: true
+date: "2026-05-15"
+importance: 3
+projects: ["Y-OS"]
+tags: ["veille", "MCP", "stratégie", "outils", "Docfork", "Context7", "marketing automation"]
+summary: ""
+url: "https://manus.im/app/task/D8FKXMef6jca23h6LWGZDR"
 ---
 
 # [✓] Veille MCP bimensuelle Y-OS + 4 missions stratégiques post-veille

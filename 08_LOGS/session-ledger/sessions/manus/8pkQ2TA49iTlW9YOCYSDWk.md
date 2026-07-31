@@ -1,13 +1,12 @@
 ---
-session_id: 8pkQ2TA49iTlW9YOCYSDWk
+id: 8pkQ2TA49iTlW9YOCYSDWk
 title: "[✓] Email Review and n8n Instance Access Session"
-date: 2025-10-25 22:43 UTC
-url: https://manus.im/app/sessions/8pkQ2TA49iTlW9YOCYSDWk
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 9
-processed: true
+date: "2025-10-25"
+importance: 3
+projects: ["Y-OS"]
+tags: ["n8n", "email", "account management", "automation"]
+summary: ""
+url: "https://manus.im/app/task/8pkQ2TA49iTlW9YOCYSDWk"
 ---
 
 # [✓] Email Review and n8n Instance Access Session

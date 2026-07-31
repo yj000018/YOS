@@ -1,13 +1,12 @@
 ---
-session_id: 3WCYm9PhVd4w5CABsYT3Bf
+id: 3WCYm9PhVd4w5CABsYT3Bf
 title: "[✓] GPT-Manus API Bridge Integration for Command Execution"
-date: 2026-01-06 01:43 UTC
-url: https://manus.im/app/sessions/3WCYm9PhVd4w5CABsYT3Bf
-project_id: none
-user_messages: 9
-assistant_messages: 20
-total_messages: 47
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "GPT-Manus API Bridge"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/3WCYm9PhVd4w5CABsYT3Bf"
 ---
 
 # [✓] GPT-Manus API Bridge Integration for Command Execution

@@ -1,13 +1,12 @@
 ---
-session_id: sQi7mnzUTFLpSfPpZYMqQr
+id: sQi7mnzUTFLpSfPpZYMqQr
 title: "[✓] Building CasaTAO Guesthouse Website on Replit"
-date: 2026-01-03 00:59 UTC
-url: https://manus.im/app/sessions/sQi7mnzUTFLpSfPpZYMqQr
-project_id: none
-user_messages: 3
-assistant_messages: 13
-total_messages: 26
-processed: true
+date: "2026-01-03"
+importance: 4
+projects: ["CasaTAO"]
+tags: ["Website", "Replit", "Guesthouse", "Full-stack", "Authentication", "Guest Portal", "Admin Dashboard", "Role-based Access Control", "Vitest Tests", "Content Management", "French Language"]
+summary: "Built a complete full-stack CasaTAO guesthouse website on Replit with authentication, guest portal, admin dashboard, and tests."
+url: "https://manus.im/app/task/sQi7mnzUTFLpSfPpZYMqQr"
 ---
 
 # [✓] Building CasaTAO Guesthouse Website on Replit

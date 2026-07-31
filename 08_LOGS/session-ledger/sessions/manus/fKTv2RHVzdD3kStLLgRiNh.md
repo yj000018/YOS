@@ -1,13 +1,12 @@
 ---
-session_id: fKTv2RHVzdD3kStLLgRiNh
+id: fKTv2RHVzdD3kStLLgRiNh
 title: "[✓] GPT-Manus Command Bridge Script Setup and Automation"
-date: 2026-01-06 01:54 UTC
-url: https://manus.im/app/sessions/fKTv2RHVzdD3kStLLgRiNh
-project_id: none
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "Manus", "GPT-Manus Command Bridge"]
+tags: ["GPT", "Automation", "Scripting", "Integration", "ChatGPT", "Relevance AI", "Cron Job", "Command Bridge"]
+summary: "Created and automated a GPT-Manus command bridge script to poll ChatGPT for commands and execute them hourly on Relevance AI."
+url: "https://manus.im/app/task/fKTv2RHVzdD3kStLLgRiNh"
 ---
 
 # [✓] GPT-Manus Command Bridge Script Setup and Automation

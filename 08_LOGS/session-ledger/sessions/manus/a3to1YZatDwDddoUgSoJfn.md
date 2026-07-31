@@ -1,13 +1,12 @@
 ---
-session_id: a3to1YZatDwDddoUgSoJfn
+id: a3to1YZatDwDddoUgSoJfn
 title: "[✓] EasyDubs Clone - Translation and Voice Generation App"
-date: 2025-07-03 06:30 UTC
-url: https://manus.im/app/sessions/a3to1YZatDwDddoUgSoJfn
-project_id: none
-user_messages: 6
-assistant_messages: 12
-total_messages: 195
-processed: true
+date: "2025-07-03"
+importance: 3
+projects: ["Y-OS"]
+tags: ["deployment", "translation", "voice generation", "app development", "bug fixing", "VoiceTranslate Pro"]
+summary: ""
+url: "https://manus.im/app/task/a3to1YZatDwDddoUgSoJfn"
 ---
 
 # [✓] EasyDubs Clone - Translation and Voice Generation App

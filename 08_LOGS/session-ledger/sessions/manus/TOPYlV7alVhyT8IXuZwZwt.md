@@ -1,13 +1,12 @@
 ---
-session_id: TOPYlV7alVhyT8IXuZwZwt
+id: TOPYlV7alVhyT8IXuZwZwt
 title: "[✓] Comprehensive App Organization and AI Tools Integration Setup"
-date: 2026-03-30 22:26 UTC
-url: https://manus.im/app/sessions/TOPYlV7alVhyT8IXuZwZwt
-project_id: none
-user_messages: 34
-assistant_messages: 58
-total_messages: 153
-processed: true
+date: "2026-03-30"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Screenpipe", "App Taxonomy", "LMP", "Workspaces"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/TOPYlV7alVhyT8IXuZwZwt"
 ---
 
 # [✓] Comprehensive App Organization and AI Tools Integration Setup

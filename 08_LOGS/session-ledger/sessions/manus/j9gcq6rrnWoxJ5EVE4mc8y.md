@@ -1,13 +1,12 @@
 ---
-session_id: j9gcq6rrnWoxJ5EVE4mc8y
+id: j9gcq6rrnWoxJ5EVE4mc8y
 title: "[✓] YOS Manus Language v1.2: Transcript Tag System Implementation"
-date: 2026-02-09 01:18 UTC
-url: https://manus.im/app/sessions/j9gcq6rrnWoxJ5EVE4mc8y
-project_id: none
-user_messages: 22
-assistant_messages: 44
-total_messages: 110
-processed: true
+date: "2026-02-09"
+importance: 3
+projects: ["Y-OS", "Manus Language v1.2", "Y World", "YOUniverse", "Notion Journal"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/j9gcq6rrnWoxJ5EVE4mc8y"
 ---
 
 # [✓] YOS Manus Language v1.2: Transcript Tag System Implementation

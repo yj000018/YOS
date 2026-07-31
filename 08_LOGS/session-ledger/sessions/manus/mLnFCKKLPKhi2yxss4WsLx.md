@@ -1,13 +1,12 @@
 ---
-session_id: mLnFCKKLPKhi2yxss4WsLx
+id: mLnFCKKLPKhi2yxss4WsLx
 title: "[✓] Y-OS — Skill Summary : Synthèse Interactive de Conversations"
-date: 2026-03-16 13:02 UTC
-url: https://manus.im/app/sessions/mLnFCKKLPKhi2yxss4WsLx
-project_id: none
-user_messages: 9
-assistant_messages: 16
-total_messages: 43
-processed: true
+date: "2026-03-16"
+importance: 3
+projects: ["Y-OS", "YOS-MMM"]
+tags: ["skill", "summary", "conversations", "archive", "memory", "SSA"]
+summary: ""
+url: "https://manus.im/app/task/mLnFCKKLPKhi2yxss4WsLx"
 ---
 
 # [✓] Y-OS — Skill Summary : Synthèse Interactive de Conversations

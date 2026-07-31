@@ -1,13 +1,12 @@
 ---
-session_id: 4x35KXx0QzBWjLJT5g6ZXb
+id: 4x35KXx0QzBWjLJT5g6ZXb
 title: "[✓] Testing monday.com Connector Integration and Feature Exploration"
-date: 2026-01-04 06:02 UTC
-url: https://manus.im/app/sessions/4x35KXx0QzBWjLJT5g6ZXb
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS"]
+tags: ["monday.com", "connector", "integration", "testing", "MCP", "feature exploration"]
+summary: "Testing and exploring the monday.com connector integration and its features within the Y-OS platform."
+url: "https://manus.im/app/task/4x35KXx0QzBWjLJT5g6ZXb"
 ---
 
 # [✓] Testing monday.com Connector Integration and Feature Exploration

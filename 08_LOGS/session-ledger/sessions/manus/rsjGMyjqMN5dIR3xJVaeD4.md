@@ -1,13 +1,12 @@
 ---
-session_id: rsjGMyjqMN5dIR3xJVaeD4
+id: rsjGMyjqMN5dIR3xJVaeD4
 title: "[✓] Manus Desktop Demo and Y-OS Tool Intelligence Layer Development"
-date: 2026-03-25 11:03 UTC
-url: https://manus.im/app/sessions/rsjGMyjqMN5dIR3xJVaeD4
-project_id: none
-user_messages: 10
-assistant_messages: 20
-total_messages: 50
-processed: true
+date: "2026-03-25"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Manus Desktop Demo", "Y-OS Tool Intelligence Layer", "Notion Tools Registry"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/rsjGMyjqMN5dIR3xJVaeD4"
 ---
 
 # [✓] Manus Desktop Demo and Y-OS Tool Intelligence Layer Development

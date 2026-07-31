@@ -1,13 +1,12 @@
 ---
-session_id: nkKLus7LfwTsg2NeCDPwM7
+id: nkKLus7LfwTsg2NeCDPwM7
 title: "[✓] Whirlpool Bathtub Structural Analysis and Product Research"
-date: 2026-02-04 09:29 UTC
-url: https://manus.im/app/sessions/nkKLus7LfwTsg2NeCDPwM7
-project_id: none
-user_messages: 18
-assistant_messages: 32
-total_messages: 82
-processed: true
+date: "2026-02-04"
+importance: 3
+projects: []
+tags: ["bathtub", "whirlpool", "structural analysis", "product research", "home improvement"]
+summary: ""
+url: "https://manus.im/app/task/nkKLus7LfwTsg2NeCDPwM7"
 ---
 
 # [✓] Whirlpool Bathtub Structural Analysis and Product Research

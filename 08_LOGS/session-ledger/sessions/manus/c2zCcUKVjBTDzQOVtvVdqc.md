@@ -1,13 +1,12 @@
 ---
-session_id: c2zCcUKVjBTDzQOVtvVdqc
+id: c2zCcUKVjBTDzQOVtvVdqc
 title: "[✓] c2zCcUKVjBTDzQOVtvVdqc"
-date: 2026-04-20 18:32 UTC
-url: https://manus.im/app/sessions/c2zCcUKVjBTDzQOVtvVdqc
-project_id: none
-user_messages: 6
-assistant_messages: 8
-total_messages: 27
-processed: true
+date: "2026-04-20"
+importance: 3
+projects: ["Y-OS"]
+tags: ["OpenAI", "investissement", "analyse financière", "stratégie IA", "concurrence IA", "recommandation"]
+summary: ""
+url: "https://manus.im/app/task/c2zCcUKVjBTDzQOVtvVdqc"
 ---
 
 # [✓] c2zCcUKVjBTDzQOVtvVdqc

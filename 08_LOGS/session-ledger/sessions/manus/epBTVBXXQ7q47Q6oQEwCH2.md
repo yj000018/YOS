@@ -1,13 +1,12 @@
 ---
-session_id: epBTVBXXQ7q47Q6oQEwCH2
+id: epBTVBXXQ7q47Q6oQEwCH2
 title: "[✓] YOUniverse — Matrice 7 Chakras × 343 Sources & Mind Map Interactif"
-date: 2026-04-10 20:49 UTC
-url: https://manus.im/app/sessions/epBTVBXXQ7q47Q6oQEwCH2
-project_id: none
-user_messages: 10
-assistant_messages: 17
-total_messages: 41
-processed: true
+date: "2026-04-10"
+importance: 4
+projects: ["YOUniverse"]
+tags: ["Mind Map", "Data Visualization", "Data Sources", "Chakras", "Data Collection", "JSON", "Source Annotation", "Data Origin"]
+summary: "Génération d'une matrice 7 Chakras x 343 sources et d'un mind map interactif pour YOUniverse, avec visualisation JSON."
+url: "https://manus.im/app/task/epBTVBXXQ7q47Q6oQEwCH2"
 ---
 
 # [✓] YOUniverse — Matrice 7 Chakras × 343 Sources & Mind Map Interactif

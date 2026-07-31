@@ -1,13 +1,12 @@
 ---
-session_id: qp8iu2scpTBqwznwmFmbA7
+id: qp8iu2scpTBqwznwmFmbA7
 title: "[✓] Research of Sicilian architects for luxury home renovation in Castelmola"
-date: 2025-10-14 16:06 UTC
-url: https://manus.im/app/sessions/qp8iu2scpTBqwznwmFmbA7
-project_id: none
-user_messages: 5
-assistant_messages: 15
-total_messages: 30
-processed: true
+date: "2025-10-14"
+importance: 3
+projects: ["Y-OS"]
+tags: ["research", "architects", "Sicily", "luxury home", "renovation", "website", "recommendation"]
+summary: ""
+url: "https://manus.im/app/task/qp8iu2scpTBqwznwmFmbA7"
 ---
 
 # [✓] Research of Sicilian architects for luxury home renovation in Castelmola

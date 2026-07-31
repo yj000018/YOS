@@ -1,13 +1,12 @@
 ---
-session_id: QdDhLd8dsEb8HCIX0TY4RR
+id: QdDhLd8dsEb8HCIX0TY4RR
 title: "Best Chrome Extension for Managing Multiple Tabs"
-date: 2026-07-29 13:17 UTC
-url: https://manus.im/app/sessions/QdDhLd8dsEb8HCIX0TY4RR
-project_id: Gz25LHGt5xFF4hEghRYUQL
-user_messages: 6
-assistant_messages: 8
-total_messages: 24
-processed: true
+date: "2026-07-29"
+importance: 3
+projects: ["Y-OS"]
+tags: ["chrome-extension", "tab-management", "browser-comparison"]
+summary: ""
+url: "https://manus.im/app/task/QdDhLd8dsEb8HCIX0TY4RR"
 ---
 
 # Best Chrome Extension for Managing Multiple Tabs

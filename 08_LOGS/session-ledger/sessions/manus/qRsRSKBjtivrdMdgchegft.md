@@ -1,13 +1,12 @@
 ---
-session_id: qRsRSKBjtivrdMdgchegft
+id: qRsRSKBjtivrdMdgchegft
 title: "[✓] Otter.ai MCP Connector — Test Live & Factsheet Production"
-date: 2026-06-16 09:00 UTC
-url: https://manus.im/app/sessions/qRsRSKBjtivrdMdgchegft
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "MCP Connector"]
+tags: ["Otter.ai", "Factsheet", "Knowledge Retrieval", "API", "Test"]
+summary: ""
+url: "https://manus.im/app/task/qRsRSKBjtivrdMdgchegft"
 ---
 
 # [✓] Otter.ai MCP Connector — Test Live & Factsheet Production

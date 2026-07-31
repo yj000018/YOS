@@ -1,13 +1,12 @@
 ---
-session_id: OHmkWqO0xMTa4c4If0DedZ
+id: OHmkWqO0xMTa4c4If0DedZ
 title: "(Chrome Extension to Track and Display Manus Sessions)"
-date: 2026-07-31
-url: https://manus.im/app/OHmkWqO0xMTa4c4If0DedZ
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 8
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Chrome Extension", "Manus", "Tracking", "Display", "Tool"]
+summary: ""
+url: "https://manus.im/app/task/OHmkWqO0xMTa4c4If0DedZ"
 ---
 
 # (Chrome Extension to Track and Display Manus Sessions)

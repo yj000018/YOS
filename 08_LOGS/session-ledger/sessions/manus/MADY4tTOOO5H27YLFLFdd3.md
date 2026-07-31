@@ -1,13 +1,12 @@
 ---
-session_id: MADY4tTOOO5H27YLFLFdd3
+id: MADY4tTOOO5H27YLFLFdd3
 title: "[✓] Generate JSON for n8n Workflow to Create LearnWorlds Course"
-date: 2025-06-29 02:41 UTC
-url: https://manus.im/app/sessions/MADY4tTOOO5H27YLFLFdd3
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 30
-processed: true
+date: "2025-06-29"
+importance: 3
+projects: []
+tags: ["n8n", "LearnWorlds", "automation", "workflow", "API", "JSON", "course creation", "integration"]
+summary: "Generated a valid n8n workflow JSON for automating LearnWorlds course creation, including documentation and technical design."
+url: "https://manus.im/app/task/MADY4tTOOO5H27YLFLFdd3"
 ---
 
 # [✓] Generate JSON for n8n Workflow to Create LearnWorlds Course

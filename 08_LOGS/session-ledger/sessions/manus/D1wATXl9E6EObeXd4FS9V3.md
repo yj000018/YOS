@@ -1,13 +1,12 @@
 ---
-session_id: D1wATXl9E6EObeXd4FS9V3
+id: D1wATXl9E6EObeXd4FS9V3
 title: "[✓] Lettre bang supersonique — PDF bilingue FR/DE + workflow Gmail monitoring"
-date: 2026-05-01 09:39 UTC
-url: https://manus.im/app/sessions/D1wATXl9E6EObeXd4FS9V3
-project_id: none
-user_messages: 5
-assistant_messages: 14
-total_messages: 29
-processed: true
+date: "2026-05-01"
+importance: 3
+projects: ["Y-OS", "Gmail Monitoring", "Email Automation"]
+tags: ["email", "automation", "workflow", "Gmail", "PDF", "notification", "monitoring", "document generation"]
+summary: ""
+url: "https://manus.im/app/task/D1wATXl9E6EObeXd4FS9V3"
 ---
 
 # [✓] Lettre bang supersonique — PDF bilingue FR/DE + workflow Gmail monitoring

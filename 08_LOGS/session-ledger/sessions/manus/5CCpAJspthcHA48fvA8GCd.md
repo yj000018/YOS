@@ -1,13 +1,12 @@
 ---
-session_id: 5CCpAJspthcHA48fvA8GCd
+id: 5CCpAJspthcHA48fvA8GCd
 title: "[✓] Visual Reality Studio — Build itératif webapp prompt-builder IA (v1→v3)"
-date: 2026-05-16 17:42 UTC
-url: https://manus.im/app/sessions/5CCpAJspthcHA48fvA8GCd
-project_id: none
-user_messages: 14
-assistant_messages: 33
-total_messages: 65
-processed: true
+date: "2026-05-16"
+importance: 3
+projects: ["Visual Reality Studio", "Y-OS", "Manus Memory", "YOUniverse", "Daylog"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/5CCpAJspthcHA48fvA8GCd"
 ---
 
 # [✓] Visual Reality Studio — Build itératif webapp prompt-builder IA (v1→v3)

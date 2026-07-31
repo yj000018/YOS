@@ -1,13 +1,12 @@
 ---
-session_id: EdUHTwnqlM3zJVWkenqEe8
+id: EdUHTwnqlM3zJVWkenqEe8
 title: "[✓] Test Archive Attendance and Session Navigation Fusion"
-date: 2026-03-21 22:49 UTC
-url: https://manus.im/app/sessions/EdUHTwnqlM3zJVWkenqEe8
-project_id: none
-user_messages: 4
-assistant_messages: 9
-total_messages: 21
-processed: true
+date: "2026-03-21"
+importance: 3
+projects: ["Y-OS", "Memory Hub"]
+tags: ["test", "archive", "fusion"]
+summary: ""
+url: "https://manus.im/app/task/EdUHTwnqlM3zJVWkenqEe8"
 ---
 
 # [✓] Test Archive Attendance and Session Navigation Fusion

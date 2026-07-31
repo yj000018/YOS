@@ -1,13 +1,12 @@
 ---
-session_id: eHanjUt8wZNCYT7KUCRuPP
+id: eHanjUt8wZNCYT7KUCRuPP
 title: "Organiser sessions manus avec projets, tags ou dossiers"
-date: 2026-02-15 19:10 UTC
-url: https://manus.im/app/sessions/eHanjUt8wZNCYT7KUCRuPP
-project_id: none
-user_messages: 64
-assistant_messages: 113
-total_messages: 286
-processed: true
+date: "2026-02-15"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Manus", "Session Navigator", "Memory Manager"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/eHanjUt8wZNCYT7KUCRuPP"
 ---
 
 # Organiser sessions manus avec projets, tags ou dossiers

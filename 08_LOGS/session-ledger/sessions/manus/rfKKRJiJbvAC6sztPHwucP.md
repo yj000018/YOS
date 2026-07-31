@@ -1,13 +1,12 @@
 ---
-session_id: rfKKRJiJbvAC6sztPHwucP
+id: rfKKRJiJbvAC6sztPHwucP
 title: "[✓] Building KNOWN - Civilisation 3.0 Web App"
-date: 2025-12-08 01:02 UTC
-url: https://manus.im/app/sessions/rfKKRJiJbvAC6sztPHwucP
-project_id: none
-user_messages: 4
-assistant_messages: 9
-total_messages: 25
-processed: true
+date: "2025-12-08"
+importance: 3
+projects: ["KNOWN", "YOUniverse", "Y-OS", "Human 3.0", "AI Companions", "Impact Dashboard", "Roles Framework", "Biophilic Futurism"]
+tags: ["KNOWN", "Civilisation 3.0", "Web App", "YOUniverse", "Y-OS"]
+summary: ""
+url: "https://manus.im/app/task/rfKKRJiJbvAC6sztPHwucP"
 ---
 
 # [✓] Building KNOWN - Civilisation 3.0 Web App

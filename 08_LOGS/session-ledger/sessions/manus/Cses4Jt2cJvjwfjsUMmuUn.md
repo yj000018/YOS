@@ -1,13 +1,12 @@
 ---
-session_id: Cses4Jt2cJvjwfjsUMmuUn
+id: Cses4Jt2cJvjwfjsUMmuUn
 title: "Freeze Manus–Notion Registry for G0 Reconstruction"
-date: 2026-07-21 21:09 UTC
-url: https://manus.im/app/sessions/Cses4Jt2cJvjwfjsUMmuUn
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 1
-total_messages: 4
-processed: true
+date: "2026-07-21"
+importance: 3
+projects: ["Y-OS", "Manus", "MAP v2", "FUSION"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/Cses4Jt2cJvjwfjsUMmuUn"
 ---
 
 # Freeze Manus–Notion Registry for G0 Reconstruction

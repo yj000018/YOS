@@ -1,13 +1,12 @@
 ---
-session_id: 3F8WiDO5NFaWza6jShaMpV
+id: 3F8WiDO5NFaWza6jShaMpV
 title: "[✓] Cyclisme en Sicile : planification d'itinéraire et conseils de voyage"
-date: 2025-06-13 02:37 UTC
-url: https://manus.im/app/sessions/3F8WiDO5NFaWza6jShaMpV
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 34
-processed: true
+date: "2025-06-13"
+importance: 3
+projects: []
+tags: ["cyclisme", "voyage", "Sicile", "planification", "camping", "itinéraire"]
+summary: "Planification détaillée d'un itinéraire cyclable en Sicile, incluant campings, transport en train et conseils de voyage."
+url: "https://manus.im/app/task/3F8WiDO5NFaWza6jShaMpV"
 ---
 
 # [✓] Cyclisme en Sicile : planification d'itinéraire et conseils de voyage

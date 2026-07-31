@@ -1,13 +1,12 @@
 ---
-session_id: 7sSq2pnxVuovIRFVcD2xmh
+id: 7sSq2pnxVuovIRFVcD2xmh
 title: "[✓] Create animated transparent GIF monkey jumping in water"
-date: 2026-02-08 16:03 UTC
-url: https://manus.im/app/sessions/7sSq2pnxVuovIRFVcD2xmh
-project_id: iLuFWy8LyLjaV5LJCBQgrd
-user_messages: 3
-assistant_messages: 7
-total_messages: 19
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: ["Manus"]
+tags: ["gif_generation", "video_generation", "chromakey", "ffmpeg", "llm_router", "gemini_veo"]
+summary: ""
+url: "https://manus.im/app/task/7sSq2pnxVuovIRFVcD2xmh"
 ---
 
 # [✓] Create animated transparent GIF monkey jumping in water

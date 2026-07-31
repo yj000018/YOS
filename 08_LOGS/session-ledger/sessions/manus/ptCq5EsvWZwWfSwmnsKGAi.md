@@ -1,13 +1,12 @@
 ---
-session_id: ptCq5EsvWZwWfSwmnsKGAi
+id: ptCq5EsvWZwWfSwmnsKGAi
 title: "[✓] Fireflies MCP Connector — Live Test & Y-OS Factsheet v1"
-date: 2026-06-16 08:49 UTC
-url: https://manus.im/app/sessions/ptCq5EsvWZwWfSwmnsKGAi
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Fireflies MCP Connector", "Factsheet", "Live Test", "Tool Integration", "Capabilities", "Limits", "Lessons Learned", "API Access", "Multi-Agents Hub", "iOS"]
+summary: ""
+url: "https://manus.im/app/task/ptCq5EsvWZwWfSwmnsKGAi"
 ---
 
 # [✓] Fireflies MCP Connector — Live Test & Y-OS Factsheet v1

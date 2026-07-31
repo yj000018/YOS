@@ -1,13 +1,12 @@
 ---
-session_id: ZZPhoCC4yKdNo8gaTrVZR9
+id: ZZPhoCC4yKdNo8gaTrVZR9
 title: "Audit Legacy Fact Sheets and Verbatim Preservation Task"
-date: 2026-07-21 21:09 UTC
-url: https://manus.im/app/sessions/ZZPhoCC4yKdNo8gaTrVZR9
-project_id: Ki9H3UCZSSaUwCR7bn46tv
-user_messages: 1
-assistant_messages: 1
-total_messages: 4
-processed: true
+date: "2026-07-21"
+importance: 3
+projects: ["Manus", "MAP v2", "FUSION", "Legacy Fact Sheets"]
+tags: ["Audit", "Legacy Data", "Data Preservation"]
+summary: ""
+url: "https://manus.im/app/task/ZZPhoCC4yKdNo8gaTrVZR9"
 ---
 
 # Audit Legacy Fact Sheets and Verbatim Preservation Task

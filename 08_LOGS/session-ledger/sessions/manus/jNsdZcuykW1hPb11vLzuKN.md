@@ -1,13 +1,12 @@
 ---
-session_id: jNsdZcuykW1hPb11vLzuKN
+id: jNsdZcuykW1hPb11vLzuKN
 title: "[✓] High-End Electric SUV Purchase Decision: 2025 vs 2026 Models Analysis"
-date: 2025-07-23 23:47 UTC
-url: https://manus.im/app/sessions/jNsdZcuykW1hPb11vLzuKN
-project_id: none
-user_messages: 4
-assistant_messages: 6
-total_messages: 53
-processed: true
+date: "2025-07-23"
+importance: 3
+projects: []
+tags: ["electric SUV", "car comparison", "purchase decision", "web deployment", "vehicle analysis"]
+summary: "Analyse comparative de SUV électriques haut de gamme (2025 vs 2026) et déploiement de l'analyse sous forme de site web interactif."
+url: "https://manus.im/app/task/jNsdZcuykW1hPb11vLzuKN"
 ---
 
 # [✓] High-End Electric SUV Purchase Decision: 2025 vs 2026 Models Analysis

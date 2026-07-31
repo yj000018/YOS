@@ -1,13 +1,12 @@
 ---
-session_id: 6V4cCKQoKVTkkApzrqHqi4
+id: 6V4cCKQoKVTkkApzrqHqi4
 title: "[✓] VoixItalia: French-to-Italian voice translation app with emotional fidelity"
-date: 2026-03-10 18:44 UTC
-url: https://manus.im/app/sessions/6V4cCKQoKVTkkApzrqHqi4
-project_id: none
-user_messages: 21
-assistant_messages: 65
-total_messages: 138
-processed: true
+date: "2026-03-10"
+importance: 3
+projects: ["VoixItalia", "Y World", "YOUniverse", "Y-OS", "Manus"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/6V4cCKQoKVTkkApzrqHqi4"
 ---
 
 # [✓] VoixItalia: French-to-Italian voice translation app with emotional fidelity

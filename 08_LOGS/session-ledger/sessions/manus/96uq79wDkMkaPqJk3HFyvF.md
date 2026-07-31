@@ -1,13 +1,12 @@
 ---
-session_id: 96uq79wDkMkaPqJk3HFyvF
+id: 96uq79wDkMkaPqJk3HFyvF
 title: "[✓] Army Reply Monitor — Surveillance quotidienne autorités suisses (03/05/2026)"
-date: 2026-05-03 10:04 UTC
-url: https://manus.im/app/sessions/96uq79wDkMkaPqJk3HFyvF
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-03"
+importance: 3
+projects: ["Army Reply Monitor"]
+tags: ["Y-OS", "monitoring", "email", "automatisation", "suisse", "armée", "aéronautique", "quotidien"]
+summary: "Daily Y-OS monitor for replies from Swiss military/aeronautical authorities; no new replies found regarding supersonic incident."
+url: "https://manus.im/app/task/96uq79wDkMkaPqJk3HFyvF"
 ---
 
 # [✓] Army Reply Monitor — Surveillance quotidienne autorités suisses (03/05/2026)

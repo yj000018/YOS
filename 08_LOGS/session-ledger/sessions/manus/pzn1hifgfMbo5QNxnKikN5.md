@@ -1,13 +1,12 @@
 ---
-session_id: pzn1hifgfMbo5QNxnKikN5
+id: pzn1hifgfMbo5QNxnKikN5
 title: "[✓] YouTube Premium Optimization Strategy - Duo Plan Analysis for French Users"
-date: 2025-08-31 11:04 UTC
-url: https://manus.im/app/sessions/pzn1hifgfMbo5QNxnKikN5
-project_id: none
-user_messages: 8
-assistant_messages: 14
-total_messages: 67
-processed: true
+date: "2025-08-31"
+importance: 3
+projects: []
+tags: ["YouTube Premium", "Duo Plan", "France", "Configuration", "Optimization Strategy"]
+summary: "Guide to configure YouTube Premium Duo Plan for French users, including Google account settings and access links."
+url: "https://manus.im/app/task/pzn1hifgfMbo5QNxnKikN5"
 ---
 
 # [✓] YouTube Premium Optimization Strategy - Duo Plan Analysis for French Users

@@ -1,13 +1,12 @@
 ---
-session_id: iEMtCBXfxbmHaihbQ94hn4
+id: iEMtCBXfxbmHaihbQ94hn4
 title: "test-probe"
-date: 2026-07-31
-url: https://manus.im/app/iEMtCBXfxbmHaihbQ94hn4
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 196
-corpus: missing_26
+date: "2026-07-31"
+importance: 2
+projects: []
+tags: ["test", "probe", "no_content"]
+summary: "A test-probe session with no recorded user or assistant messages, likely for technical testing or exploration."
+url: "https://manus.im/app/task/iEMtCBXfxbmHaihbQ94hn4"
 ---
 
 # test-probe

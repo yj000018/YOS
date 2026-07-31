@@ -1,13 +1,12 @@
 ---
-session_id: uRojAgwqcEpeWXdYeoTY5W
+id: uRojAgwqcEpeWXdYeoTY5W
 title: "yOS Team & RADAR"
-date: 2026-02-26 15:35 UTC
-url: https://manus.im/app/sessions/uRojAgwqcEpeWXdYeoTY5W
-project_id: none
-user_messages: 234
-assistant_messages: 373
-total_messages: 1015
-processed: true
+date: "2026-02-26"
+importance: 3
+projects: ["Y-OS", "Y World / YOUniverse", "Memory Bridge", "Webhook Fly.io", "Scriptable iOS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/uRojAgwqcEpeWXdYeoTY5W"
 ---
 
 # yOS Team & RADAR

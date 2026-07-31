@@ -1,13 +1,12 @@
 ---
-session_id: AMDfUbOQxO5nPO8WEFWXz8
+id: AMDfUbOQxO5nPO8WEFWXz8
 title: "[✓] MDMA-Oneness Journey Program: Full-Stack Web App Development"
-date: 2025-12-22 23:36 UTC
-url: https://manus.im/app/sessions/AMDfUbOQxO5nPO8WEFWXz8
-project_id: DeoQgC2KePiJrzHGH5xGYa
-user_messages: 4
-assistant_messages: 15
-total_messages: 32
-processed: true
+date: "2025-12-22"
+importance: 3
+projects: ["MDMA-Oneness Journey Program", "Y World", "YOUniverse", "Manus app", "Y-OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/AMDfUbOQxO5nPO8WEFWXz8"
 ---
 
 # [✓] MDMA-Oneness Journey Program: Full-Stack Web App Development

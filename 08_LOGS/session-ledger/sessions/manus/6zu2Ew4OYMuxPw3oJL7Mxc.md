@@ -1,13 +1,12 @@
 ---
-session_id: 6zu2Ew4OYMuxPw3oJL7Mxc
+id: 6zu2Ew4OYMuxPw3oJL7Mxc
 title: "[✓] Intégration Screenpipe + ActivityWatch comme briques Y-OS + Inventaire Y World"
-date: 2026-04-21 20:49 UTC
-url: https://manus.im/app/sessions/6zu2Ew4OYMuxPw3oJL7Mxc
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 12
-processed: true
+date: "2026-04-21"
+importance: 3
+projects: ["Y-OS", "Screenpipe", "ActivityWatch", "Y World", "YOUniverse", "Manus"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/6zu2Ew4OYMuxPw3oJL7Mxc"
 ---
 
 # [✓] Intégration Screenpipe + ActivityWatch comme briques Y-OS + Inventaire Y World

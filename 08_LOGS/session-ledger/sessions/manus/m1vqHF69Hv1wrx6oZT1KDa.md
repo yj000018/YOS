@@ -1,13 +1,12 @@
 ---
-session_id: m1vqHF69Hv1wrx6oZT1KDa
+id: m1vqHF69Hv1wrx6oZT1KDa
 title: "[✓] Property Sales Campaign to Multinational Companies - Massive Email Outreach"
-date: 2025-10-08 12:03 UTC
-url: https://manus.im/app/sessions/m1vqHF69Hv1wrx6oZT1KDa
-project_id: none
-user_messages: 63
-assistant_messages: 127
-total_messages: 340
-processed: true
+date: "2025-10-08"
+importance: 3
+projects: []
+tags: ["sales campaign", "email outreach", "B2B", "linkedin strategy", "reporting", "deliverables"]
+summary: "Successful massive email outreach campaign for property sales to multinational companies, including LinkedIn strategy and detailed reporting."
+url: "https://manus.im/app/task/m1vqHF69Hv1wrx6oZT1KDa"
 ---
 
 # [✓] Property Sales Campaign to Multinational Companies - Massive Email Outreach

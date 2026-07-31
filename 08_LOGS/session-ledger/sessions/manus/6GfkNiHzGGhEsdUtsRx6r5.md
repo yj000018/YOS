@@ -1,13 +1,12 @@
 ---
-session_id: 6GfkNiHzGGhEsdUtsRx6r5
+id: 6GfkNiHzGGhEsdUtsRx6r5
 title: "Weekly MyMind Monitoring Schedule Setup"
-date: 2026-07-28 12:40 UTC
-url: https://manus.im/app/sessions/6GfkNiHzGGhEsdUtsRx6r5
-project_id: deP744efwf6gY4e7rA8M7C
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-07-28"
+importance: 3
+projects: ["YOS-MMM", "Y-OS"]
+tags: ["MyMind", "Monitoring", "Schedule", "Automation", "API", "MCP", "Veille", "Cron", "GitHub", "X"]
+summary: "Setup of a weekly automated schedule to monitor MyMind API/MCP developments and report on their impact on Y-OS."
+url: "https://manus.im/app/task/6GfkNiHzGGhEsdUtsRx6r5"
 ---
 
 # Weekly MyMind Monitoring Schedule Setup

@@ -1,13 +1,12 @@
 ---
-session_id: 7xdrZcMPMn3YwZ2bK3nE43
+id: 7xdrZcMPMn3YwZ2bK3nE43
 title: "[✓] Manus MMM v2.0 Demo: Complete Memory Management Infrastructure"
-date: 2026-03-04 22:05 UTC
-url: https://manus.im/app/sessions/7xdrZcMPMn3YwZ2bK3nE43
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 13
-processed: true
+date: "2026-03-04"
+importance: 3
+projects: ["YOS-MMM", "YOUniverse", "Y World", "Memory Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/7xdrZcMPMn3YwZ2bK3nE43"
 ---
 
 # [✓] Manus MMM v2.0 Demo: Complete Memory Management Infrastructure

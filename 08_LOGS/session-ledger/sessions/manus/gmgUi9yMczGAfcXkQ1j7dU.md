@@ -1,13 +1,12 @@
 ---
-session_id: gmgUi9yMczGAfcXkQ1j7dU
+id: gmgUi9yMczGAfcXkQ1j7dU
 title: "[✓] Spline comme moteur front-end Y-OS : audit automatisation et architecture paramétrique"
-date: 2026-04-10 00:00 UTC
-url: https://manus.im/app/sessions/gmgUi9yMczGAfcXkQ1j7dU
-project_id: none
-user_messages: 83
-assistant_messages: 143
-total_messages: 337
-processed: true
+date: "2026-04-10"
+importance: 3
+projects: ["Y-OS", "Spline", "YOUniverse", "Spiritual Library", "Human Awakening Lab"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/gmgUi9yMczGAfcXkQ1j7dU"
 ---
 
 # [✓] Spline comme moteur front-end Y-OS : audit automatisation et architecture paramétrique

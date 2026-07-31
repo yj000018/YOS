@@ -1,13 +1,12 @@
 ---
-session_id: bmCwmavumTuqF7dGqwUW8o
+id: bmCwmavumTuqF7dGqwUW8o
 title: "[✓] YouTube Video Analysis: Smart Money Stock Picks Verification"
-date: 2025-07-28 18:04 UTC
-url: https://manus.im/app/sessions/bmCwmavumTuqF7dGqwUW8o
-project_id: none
-user_messages: 1
-assistant_messages: 1
-total_messages: 16
-processed: true
+date: "2025-07-28"
+importance: 3
+projects: []
+tags: ["YouTube Analysis", "Stock Picks", "Smart Money", "Investment", "Financial Analysis", "Verification", "SEC Filings", "Value Investing", "Market Analysis"]
+summary: "Analyse et vérification d'une vidéo YouTube sur les choix d'actions du 'Smart Money', confirmant une haute précision."
+url: "https://manus.im/app/task/bmCwmavumTuqF7dGqwUW8o"
 ---
 
 # [✓] YouTube Video Analysis: Smart Money Stock Picks Verification

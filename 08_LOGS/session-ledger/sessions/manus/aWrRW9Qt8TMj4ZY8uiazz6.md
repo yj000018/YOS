@@ -1,13 +1,12 @@
 ---
-session_id: aWrRW9Qt8TMj4ZY8uiazz6
+id: aWrRW9Qt8TMj4ZY8uiazz6
 title: "(Memory & Project NAV)"
-date: 2026-07-31
-url: https://manus.im/app/aWrRW9Qt8TMj4ZY8uiazz6
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 152
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["Memory Pipeline", "Y-OS"]
+tags: ["memory", "project_navigation", "Y-OS"]
+summary: ""
+url: "https://manus.im/app/task/aWrRW9Qt8TMj4ZY8uiazz6"
 ---
 
 # (Memory & Project NAV)

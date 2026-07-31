@@ -1,13 +1,12 @@
 ---
-session_id: WsOPQRnUAXFEeVO6NksdDY
+id: WsOPQRnUAXFEeVO6NksdDY
 title: "[✓] Browser Stack Y-OS : Migration Dia → Brave + Side Copilot & Tab Management"
-date: 2026-05-14 11:17 UTC
-url: https://manus.im/app/sessions/WsOPQRnUAXFEeVO6NksdDY
-project_id: none
-user_messages: 34
-assistant_messages: 41
-total_messages: 139
-processed: true
+date: "2026-05-14"
+importance: 3
+projects: ["Y-OS", "Browser Stack Y-OS", "Jarvis Y-OS", "YOUniverse", "Manus Agent"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/WsOPQRnUAXFEeVO6NksdDY"
 ---
 
 # [✓] Browser Stack Y-OS : Migration Dia → Brave + Side Copilot & Tab Management

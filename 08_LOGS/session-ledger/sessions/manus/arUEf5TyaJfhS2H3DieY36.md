@@ -1,13 +1,12 @@
 ---
-session_id: arUEf5TyaJfhS2H3DieY36
+id: arUEf5TyaJfhS2H3DieY36
 title: "[✓] Tesla Q4 2025 Sales Analysis and Tech News Briefing Summary"
-date: 2026-01-06 00:38 UTC
-url: https://manus.im/app/sessions/arUEf5TyaJfhS2H3DieY36
-project_id: none
-user_messages: 0
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: []
+tags: ["Tesla", "Sales Analysis", "Tech News", "Samsung", "Meta", "Acquisition"]
+summary: "Summary of Tesla Q4 2025 sales, Samsung Galaxy Z Trifold phone, and Meta's acquisition of Manus AI."
+url: "https://manus.im/app/task/arUEf5TyaJfhS2H3DieY36"
 ---
 
 # [✓] Tesla Q4 2025 Sales Analysis and Tech News Briefing Summary

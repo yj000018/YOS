@@ -1,13 +1,12 @@
 ---
-session_id: 830cH2fx315Vwk2vZ6POcq
+id: 830cH2fx315Vwk2vZ6POcq
 title: "[✓] Testing and Demonstrating Firecrawl Connector Features"
-date: 2026-01-04 05:31 UTC
-url: https://manus.im/app/sessions/830cH2fx315Vwk2vZ6POcq
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Firecrawl", "Connector", "Web Scraping", "Data Extraction", "Testing", "Integration"]
+summary: ""
+url: "https://manus.im/app/task/830cH2fx315Vwk2vZ6POcq"
 ---
 
 # [✓] Testing and Demonstrating Firecrawl Connector Features

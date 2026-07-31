@@ -1,13 +1,12 @@
 ---
-session_id: tbv4KZLIK835GortPcEmj5
+id: tbv4KZLIK835GortPcEmj5
 title: "[✓] Top 5 Wireless Microphones for YouTubers – 2026 Comparison"
-date: 2026-05-10 18:48 UTC
-url: https://manus.im/app/sessions/tbv4KZLIK835GortPcEmj5
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-10"
+importance: 3
+projects: []
+tags: ["microphones", "wireless", "youtubers", "comparison", "tech review", "product guide"]
+summary: ""
+url: "https://manus.im/app/task/tbv4KZLIK835GortPcEmj5"
 ---
 
 # [✓] Top 5 Wireless Microphones for YouTubers – 2026 Comparison

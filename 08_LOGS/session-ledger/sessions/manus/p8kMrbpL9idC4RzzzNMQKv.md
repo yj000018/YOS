@@ -1,13 +1,12 @@
 ---
-session_id: p8kMrbpL9idC4RzzzNMQKv
+id: p8kMrbpL9idC4RzzzNMQKv
 title: "[✓] EYA Platform — Mega-Prompt Lovable v3 Final (Cherry Blossoms + Paywall + Trilingue)"
-date: 2026-05-02 12:46 UTC
-url: https://manus.im/app/sessions/p8kMrbpL9idC4RzzzNMQKv
-project_id: YoYEqM8vWbNajPZ6hor8KR
-user_messages: 13
-assistant_messages: 18
-total_messages: 52
-processed: true
+date: "2026-05-02"
+importance: 3
+projects: ["EYA Platform", "Lovable"]
+tags: ["mega-prompt", "finalization", "trilingue", "i18n"]
+summary: ""
+url: "https://manus.im/app/task/p8kMrbpL9idC4RzzzNMQKv"
 ---
 
 # [✓] EYA Platform — Mega-Prompt Lovable v3 Final (Cherry Blossoms + Paywall + Trilingue)

@@ -1,13 +1,12 @@
 ---
-session_id: c3F2ex1qKPMxk1CNLcMuPP
+id: c3F2ex1qKPMxk1CNLcMuPP
 title: "[✓] Bitly MCP Connector — Live Test & Factsheet Publication"
-date: 2026-06-15 11:16 UTC
-url: https://manus.im/app/sessions/c3F2ex1qKPMxk1CNLcMuPP
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-15"
+importance: 3
+projects: ["Y-OS", "Bitly MCP Connector"]
+tags: ["bitly", "connector"]
+summary: ""
+url: "https://manus.im/app/task/c3F2ex1qKPMxk1CNLcMuPP"
 ---
 
 # [✓] Bitly MCP Connector — Live Test & Factsheet Publication

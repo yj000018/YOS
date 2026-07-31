@@ -1,13 +1,12 @@
 ---
-session_id: baAN1J7u248tAG4G7uzDY5
+id: baAN1J7u248tAG4G7uzDY5
 title: "...mymind.com : API/MCP ?"
-date: 2026-07-29 21:38 UTC
-url: https://manus.im/app/sessions/baAN1J7u248tAG4G7uzDY5
-project_id: deP744efwf6gY4e7rA8M7C
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-07-29"
+importance: 3
+projects: ["Y-OS"]
+tags: ["MyMind", "API", "MCP", "veille technologique", "monitoring", "Raycast", "PyPI", "GitHub", "Python", "CLI", "Raindrop", "schedule"]
+summary: "Setup of a weekly tech watch for MyMind API/MCP, confirming an official private API via Raycast and a community PyPI package."
+url: "https://manus.im/app/task/baAN1J7u248tAG4G7uzDY5"
 ---
 
 # ...mymind.com : API/MCP ?

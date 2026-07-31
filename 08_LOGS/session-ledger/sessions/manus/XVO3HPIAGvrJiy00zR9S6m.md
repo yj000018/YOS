@@ -1,13 +1,12 @@
 ---
-session_id: XVO3HPIAGvrJiy00zR9S6m
+id: XVO3HPIAGvrJiy00zR9S6m
 title: "[✓] Roberta GDrive access check — sandbox credential injection diagnostic"
-date: 2026-05-07 15:44 UTC
-url: https://manus.im/app/sessions/XVO3HPIAGvrJiy00zR9S6m
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-07"
+importance: 3
+projects: []
+tags: ["GDrive", "access", "sandbox", "credentials", "diagnostic", "troubleshooting", "integration", "rclone"]
+summary: "Diagnostic session to troubleshoot GDrive access in a sandbox environment, identifying a credential injection issue."
+url: "https://manus.im/app/task/XVO3HPIAGvrJiy00zR9S6m"
 ---
 
 # [✓] Roberta GDrive access check — sandbox credential injection diagnostic

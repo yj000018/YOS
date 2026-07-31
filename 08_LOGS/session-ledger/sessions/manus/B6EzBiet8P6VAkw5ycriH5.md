@@ -1,13 +1,12 @@
 ---
-session_id: B6EzBiet8P6VAkw5ycriH5
+id: B6EzBiet8P6VAkw5ycriH5
 title: "[✓] Setup contrôle total Mac via Manus Desktop Client + audit 666 apps"
-date: 2026-05-30 19:22 UTC
-url: https://manus.im/app/sessions/B6EzBiet8P6VAkw5ycriH5
-project_id: GeNvwGBvdyBGDN65g2zTEp
-user_messages: 143
-assistant_messages: 231
-total_messages: 613
-processed: true
+date: "2026-05-30"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Manus"]
+tags: ["Mac", "Tailscale", "Security", "Infrastructure", "System Control", "App Management"]
+summary: ""
+url: "https://manus.im/app/task/B6EzBiet8P6VAkw5ycriH5"
 ---
 
 # [✓] Setup contrôle total Mac via Manus Desktop Client + audit 666 apps

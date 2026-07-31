@@ -1,13 +1,12 @@
 ---
-session_id: ZvZNvvZnsT42rAFn4aMoHa
+id: ZvZNvvZnsT42rAFn4aMoHa
 title: "[✓] GPT-Manus Command Bridge Script Setup with Hourly Automation"
-date: 2026-01-06 01:44 UTC
-url: https://manus.im/app/sessions/ZvZNvvZnsT42rAFn4aMoHa
-project_id: none
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "GPT-Manus"]
+tags: ["AI", "GPT", "Automation", "Scripting", "Integration", "Command Bridge", "Logging"]
+summary: ""
+url: "https://manus.im/app/task/ZvZNvvZnsT42rAFn4aMoHa"
 ---
 
 # [✓] GPT-Manus Command Bridge Script Setup with Hourly Automation

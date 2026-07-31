@@ -1,13 +1,12 @@
 ---
-session_id: e8zwq5xLPjTJp7J3tv23p7
+id: e8zwq5xLPjTJp7J3tv23p7
 title: "[✓] KAP"
-date: 2026-07-31
-url: https://manus.im/app/e8zwq5xLPjTJp7J3tv23p7
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 300
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["KAP"]
+tags: ["KAP"]
+summary: ""
+url: "https://manus.im/app/task/e8zwq5xLPjTJp7J3tv23p7"
 ---
 
 # [✓] KAP

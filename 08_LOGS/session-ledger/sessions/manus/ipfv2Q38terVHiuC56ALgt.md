@@ -1,13 +1,12 @@
 ---
-session_id: ipfv2Q38terVHiuC56ALgt
+id: ipfv2Q38terVHiuC56ALgt
 title: "[✓] GPT-Manus Command Bridge Script Deployment for Relevance AI Integration"
-date: 2026-01-06 02:16 UTC
-url: https://manus.im/app/sessions/ipfv2Q38terVHiuC56ALgt
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS"]
+tags: ["GPT-Manus", "Command Bridge", "Relevance AI", "Integration", "Deployment", "Automation", "Scripting"]
+summary: ""
+url: "https://manus.im/app/task/ipfv2Q38terVHiuC56ALgt"
 ---
 
 # [✓] GPT-Manus Command Bridge Script Deployment for Relevance AI Integration

@@ -1,13 +1,12 @@
 ---
-session_id: hBbEdH0Z6oN5AN9eBzg24s
+id: hBbEdH0Z6oN5AN9eBzg24s
 title: "[✓] Escapade romantique 3 lacs Neuchâtel/Morat/Bienne — itinéraire 2-3 jours"
-date: 2026-05-29 20:30 UTC
-url: https://manus.im/app/sessions/hBbEdH0Z6oN5AN9eBzg24s
-project_id: none
-user_messages: 21
-assistant_messages: 37
-total_messages: 95
-processed: true
+date: "2026-05-29"
+importance: 3
+projects: []
+tags: ["escapade romantique", "itinéraire", "lacs suisses", "thermes", "PDF generation", "voyage", "planification"]
+summary: "Planification détaillée d'une escapade romantique de 2-3 jours autour des lacs de Neuchâtel, Morat et Bienne, incluant thermes et génération de PDF."
+url: "https://manus.im/app/task/hBbEdH0Z6oN5AN9eBzg24s"
 ---
 
 # [✓] Escapade romantique 3 lacs Neuchâtel/Morat/Bienne — itinéraire 2-3 jours

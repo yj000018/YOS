@@ -1,13 +1,12 @@
 ---
-session_id: mW7oKFSY9xsVSSsauQe2wJ
+id: mW7oKFSY9xsVSSsauQe2wJ
 title: "[✓] SplatKing → Vast.ai → Nerfstudio Gaussian Splatting POC Pipeline"
-date: 2026-05-05 17:18 UTC
-url: https://manus.im/app/sessions/mW7oKFSY9xsVSSsauQe2wJ
-project_id: none
-user_messages: 26
-assistant_messages: 94
-total_messages: 166
-processed: true
+date: "2026-05-05"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Manus", "SplatKing", "CorbeauSplat"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/mW7oKFSY9xsVSSsauQe2wJ"
 ---
 
 # [✓] SplatKing → Vast.ai → Nerfstudio Gaussian Splatting POC Pipeline

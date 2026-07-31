@@ -1,13 +1,12 @@
 ---
-session_id: a2MPXJiDZSV12FnGpZFtiD
+id: a2MPXJiDZSV12FnGpZFtiD
 title: "[✓] Product Research: WOCA Wood Care Products Shipping to Switzerland"
-date: 2025-11-22 13:19 UTC
-url: https://manus.im/app/sessions/a2MPXJiDZSV12FnGpZFtiD
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 9
-processed: true
+date: "2025-11-22"
+importance: 3
+projects: []
+tags: ["Product Research", "WOCA", "Wood Care", "Shipping", "Switzerland", "Price Comparison", "Shopping", "Holzpunkt", "Savings"]
+summary: "Research and comparison of WOCA wood care product prices and shipping to Switzerland, identifying Holzpunkt as the best option."
+url: "https://manus.im/app/task/a2MPXJiDZSV12FnGpZFtiD"
 ---
 
 # [✓] Product Research: WOCA Wood Care Products Shipping to Switzerland

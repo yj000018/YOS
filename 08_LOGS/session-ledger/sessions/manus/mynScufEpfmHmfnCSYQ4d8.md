@@ -1,13 +1,12 @@
 ---
-session_id: mynScufEpfmHmfnCSYQ4d8
+id: mynScufEpfmHmfnCSYQ4d8
 title: "Tagging Unlabeled Raindrop Bookmarks with Gemini Flash"
-date: 2026-07-29 00:01 UTC
-url: https://manus.im/app/sessions/mynScufEpfmHmfnCSYQ4d8
-project_id: deP744efwf6gY4e7rA8M7C
-user_messages: 26
-assistant_messages: 53
-total_messages: 111
-processed: true
+date: "2026-07-29"
+importance: 3
+projects: ["Y-OS", "Raindrop", "COP", "Collector the Universe"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/mynScufEpfmHmfnCSYQ4d8"
 ---
 
 # Tagging Unlabeled Raindrop Bookmarks with Gemini Flash

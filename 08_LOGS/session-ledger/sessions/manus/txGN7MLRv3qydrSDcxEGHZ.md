@@ -1,13 +1,12 @@
 ---
-session_id: txGN7MLRv3qydrSDcxEGHZ
+id: txGN7MLRv3qydrSDcxEGHZ
 title: "[✓] Design and Develop Holistic Health Web App with Testing"
-date: 2025-12-08 01:44 UTC
-url: https://manus.im/app/sessions/txGN7MLRv3qydrSDcxEGHZ
-project_id: none
-user_messages: 5
-assistant_messages: 8
-total_messages: 24
-processed: true
+date: "2025-12-08"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Manus Memory", "Mem0", "Health Coach App"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/txGN7MLRv3qydrSDcxEGHZ"
 ---
 
 # [✓] Design and Develop Holistic Health Web App with Testing

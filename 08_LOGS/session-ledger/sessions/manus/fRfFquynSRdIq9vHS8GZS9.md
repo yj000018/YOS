@@ -1,13 +1,12 @@
 ---
-session_id: fRfFquynSRdIq9vHS8GZS9
+id: fRfFquynSRdIq9vHS8GZS9
 title: "[✓] ElevenLabs API Testing and Feature Demonstration"
-date: 2026-04-05 22:14 UTC
-url: https://manus.im/app/sessions/fRfFquynSRdIq9vHS8GZS9
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 8
-processed: true
+date: "2026-04-05"
+importance: 2
+projects: ["Y-OS"]
+tags: ["ElevenLabs", "API", "Testing", "TTS", "STT", "Voice AI", "Python"]
+summary: "Exploration and testing of ElevenLabs API, demonstrating TTS, STT, and voice features with a Python demo script and artifacts."
+url: "https://manus.im/app/task/fRfFquynSRdIq9vHS8GZS9"
 ---
 
 # [✓] ElevenLabs API Testing and Feature Demonstration

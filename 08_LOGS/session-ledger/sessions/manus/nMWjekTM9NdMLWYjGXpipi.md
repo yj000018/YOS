@@ -1,13 +1,12 @@
 ---
-session_id: nMWjekTM9NdMLWYjGXpipi
+id: nMWjekTM9NdMLWYjGXpipi
 title: "[✓] Mem0 Integration, Factsheet & AI Libraries Evaluation for Y-OS"
-date: 2026-06-15 09:05 UTC
-url: https://manus.im/app/sessions/nMWjekTM9NdMLWYjGXpipi
-project_id: none
-user_messages: 23
-assistant_messages: 32
-total_messages: 96
-processed: true
+date: "2026-06-15"
+importance: 3
+projects: ["Y-OS", "Mem0", "YOUniverse", "Y World"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/nMWjekTM9NdMLWYjGXpipi"
 ---
 
 # [✓] Mem0 Integration, Factsheet & AI Libraries Evaluation for Y-OS

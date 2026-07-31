@@ -1,13 +1,12 @@
 ---
-session_id: xXj0ErdOO86eqmPfAPMq3q
+id: xXj0ErdOO86eqmPfAPMq3q
 title: "[✓] Make Connector Authentication Testing and Setup Guidance"
-date: 2026-01-04 04:55 UTC
-url: https://manus.im/app/sessions/xXj0ErdOO86eqmPfAPMq3q
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-04"
+importance: 3
+projects: ["Y-OS", "Make Connector"]
+tags: ["Make", "Connector", "Authentication", "Testing", "Setup", "Integration", "OAuth", "On demand scenarios"]
+summary: "Testing and setting up the Make connector, troubleshooting an OAuth authentication issue, and guiding on 'On demand' scenarios."
+url: "https://manus.im/app/task/xXj0ErdOO86eqmPfAPMq3q"
 ---
 
 # [✓] Make Connector Authentication Testing and Setup Guidance

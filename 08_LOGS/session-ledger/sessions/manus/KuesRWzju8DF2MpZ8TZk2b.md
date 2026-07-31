@@ -1,13 +1,12 @@
 ---
-session_id: KuesRWzju8DF2MpZ8TZk2b
+id: KuesRWzju8DF2MpZ8TZk2b
 title: "[✓] GPT-Manus Command Bridge Script Deployment and Configuration"
-date: 2026-01-06 02:11 UTC
-url: https://manus.im/app/sessions/KuesRWzju8DF2MpZ8TZk2b
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 2
-assistant_messages: 7
-total_messages: 15
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["GPT-Manus Bridge", "Y-OS", "Manus Memory", "Mem0", "LMP"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/KuesRWzju8DF2MpZ8TZk2b"
 ---
 
 # [✓] GPT-Manus Command Bridge Script Deployment and Configuration

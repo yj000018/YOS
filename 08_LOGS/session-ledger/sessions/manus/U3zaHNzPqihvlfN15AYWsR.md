@@ -1,13 +1,12 @@
 ---
-session_id: U3zaHNzPqihvlfN15AYWsR
+id: U3zaHNzPqihvlfN15AYWsR
 title: "[✓] Comprehensive Luxury Concierge Business Analysis & Website Development"
-date: 2025-08-16 02:55 UTC
-url: https://manus.im/app/sessions/U3zaHNzPqihvlfN15AYWsR
-project_id: none
-user_messages: 9
-assistant_messages: 15
-total_messages: 132
-processed: true
+date: "2025-08-16"
+importance: 3
+projects: ["Luxury Concierge Business Website"]
+tags: ["website development", "business analysis", "luxury concierge"]
+summary: ""
+url: "https://manus.im/app/task/U3zaHNzPqihvlfN15AYWsR"
 ---
 
 # [✓] Comprehensive Luxury Concierge Business Analysis & Website Development

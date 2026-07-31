@@ -1,13 +1,12 @@
 ---
-session_id: zrkMu8YuWmC9xCqWONH6sL
-title: "eYa "
-date: 2026-07-07 21:32 UTC
-url: https://manus.im/app/sessions/zrkMu8YuWmC9xCqWONH6sL
-project_id: YoYEqM8vWbNajPZ6hor8KR
-user_messages: 215
-assistant_messages: 588
-total_messages: 1145
-processed: true
+id: zrkMu8YuWmC9xCqWONH6sL
+title: "eYa"
+date: "2026-07-07"
+importance: 3
+projects: ["eYa"]
+tags: ["refactoring", "video loops", "crossfade", "mobile", "deployment", "engine", "clips", "sequencing", "architecture"]
+summary: "Refactoring the eYa clip loop engine for mobile, improving sequencing, crossfades, and addressing idle state issues."
+url: "https://manus.im/app/task/zrkMu8YuWmC9xCqWONH6sL"
 ---
 
 # eYa 

@@ -1,13 +1,12 @@
 ---
-session_id: vDg18tSxBn8uhj1MHXmVCv
+id: vDg18tSxBn8uhj1MHXmVCv
 title: "[✓] ClickUp Connector Testing and Task Creation"
-date: 2026-01-02 05:46 UTC
-url: https://manus.im/app/sessions/vDg18tSxBn8uhj1MHXmVCv
-project_id: none
-user_messages: 4
-assistant_messages: 7
-total_messages: 19
-processed: true
+date: "2026-01-02"
+importance: 3
+projects: ["Y-OS"]
+tags: ["ClickUp", "Connector", "Testing", "Task Creation", "Integration", "Tooling"]
+summary: ""
+url: "https://manus.im/app/task/vDg18tSxBn8uhj1MHXmVCv"
 ---
 
 # [✓] ClickUp Connector Testing and Task Creation

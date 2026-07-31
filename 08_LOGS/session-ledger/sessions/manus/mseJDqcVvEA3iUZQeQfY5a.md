@@ -1,13 +1,12 @@
 ---
-session_id: mseJDqcVvEA3iUZQeQfY5a
+id: mseJDqcVvEA3iUZQeQfY5a
 title: "[✓] Meta Ads Audit (No Data) + Meta Marketing MCP Factsheet Creation"
-date: 2026-06-16 08:44 UTC
-url: https://manus.im/app/sessions/mseJDqcVvEA3iUZQeQfY5a
-project_id: none
-user_messages: 2
-assistant_messages: 7
-total_messages: 16
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "Meta Marketing MCP"]
+tags: ["meta ads", "meta marketing"]
+summary: ""
+url: "https://manus.im/app/task/mseJDqcVvEA3iUZQeQfY5a"
 ---
 
 # [✓] Meta Ads Audit (No Data) + Meta Marketing MCP Factsheet Creation

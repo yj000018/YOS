@@ -1,13 +1,12 @@
 ---
-session_id: mrH2xeyN8aNbrwRammWTWC
+id: mrH2xeyN8aNbrwRammWTWC
 title: "Y-Team"
-date: 2026-01-31 23:35 UTC
-url: https://manus.im/app/sessions/mrH2xeyN8aNbrwRammWTWC
-project_id: none
-user_messages: 63
-assistant_messages: 110
-total_messages: 253
-processed: true
+date: "2026-01-31"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "App Méditation Y-OS", "Buddhi", "Brahma"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/mrH2xeyN8aNbrwRammWTWC"
 ---
 
 # Y-Team

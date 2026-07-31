@@ -1,13 +1,12 @@
 ---
-session_id: u2BK4rDPr9vMJ11adVHd3H
+id: u2BK4rDPr9vMJ11adVHd3H
 title: "[✓] Smart Glasses 2026 — Veille marché Apple/Meta + Import France"
-date: 2026-05-13 23:25 UTC
-url: https://manus.im/app/sessions/u2BK4rDPr9vMJ11adVHd3H
-project_id: none
-user_messages: 4
-assistant_messages: 8
-total_messages: 22
-processed: true
+date: "2026-05-13"
+importance: 3
+projects: []
+tags: ["Smart Glasses", "Veille marché", "Apple", "Meta", "Import", "France", "Prix", "Douane", "TVA", "Europe", "US"]
+summary: "Market research on Smart Glasses (Apple/Meta) and detailed cost analysis for importing Meta Ray-Ban Display to France."
+url: "https://manus.im/app/task/u2BK4rDPr9vMJ11adVHd3H"
 ---
 
 # [✓] Smart Glasses 2026 — Veille marché Apple/Meta + Import France

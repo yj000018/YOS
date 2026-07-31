@@ -1,13 +1,12 @@
 ---
-session_id: hevmjCngJp7M8xI7nSf1n4
+id: hevmjCngJp7M8xI7nSf1n4
 title: "Designing Telegram as a Universal Inbox for yOS"
-date: 2026-07-31
-url: https://manus.im/app/hevmjCngJp7M8xI7nSf1n4
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 6
-corpus: missing_26
+date: "2026-07-31"
+importance: 4
+projects: ["Y-OS", "Telegram Interface"]
+tags: ["Telegram", "Inbox", "Design", "Integration", "Y-OS"]
+summary: "Designing Telegram as a universal inbox to streamline communication and data flow for Y-OS."
+url: "https://manus.im/app/task/hevmjCngJp7M8xI7nSf1n4"
 ---
 
 # Designing Telegram as a Universal Inbox for yOS

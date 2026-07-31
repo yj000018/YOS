@@ -1,13 +1,12 @@
 ---
-session_id: Q7TUpL9KFuEgH6RhHpw3h3
+id: Q7TUpL9KFuEgH6RhHpw3h3
 title: "[✓] Gmail Receipt Processing - Access Method Discussion"
-date: 2026-02-15 18:02 UTC
-url: https://manus.im/app/sessions/Q7TUpL9KFuEgH6RhHpw3h3
-project_id: none
-user_messages: 3
-assistant_messages: 5
-total_messages: 16
-processed: true
+date: "2026-02-15"
+importance: 3
+projects: ["YOUniverse", "Y World"]
+tags: ["Gmail", "receipts", "expense management", "automation", "access methods"]
+summary: ""
+url: "https://manus.im/app/task/Q7TUpL9KFuEgH6RhHpw3h3"
 ---
 
 # [✓] Gmail Receipt Processing - Access Method Discussion

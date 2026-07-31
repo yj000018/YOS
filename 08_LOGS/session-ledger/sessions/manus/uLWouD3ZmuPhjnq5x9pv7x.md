@@ -1,13 +1,12 @@
 ---
-session_id: uLWouD3ZmuPhjnq5x9pv7x
+id: uLWouD3ZmuPhjnq5x9pv7x
 title: "[✓] iOS Browser Extension Prompt Issue - Product Feedback Request"
-date: 2026-02-20 12:40 UTC
-url: https://manus.im/app/sessions/uLWouD3ZmuPhjnq5x9pv7x
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 11
-processed: true
+date: "2026-02-20"
+importance: 3
+projects: ["YOUniverse"]
+tags: ["iOS", "feedback", "product issue", "browser extension", "prompting", "Manus"]
+summary: ""
+url: "https://manus.im/app/task/uLWouD3ZmuPhjnq5x9pv7x"
 ---
 
 # [✓] iOS Browser Extension Prompt Issue - Product Feedback Request

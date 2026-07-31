@@ -1,13 +1,12 @@
 ---
-session_id: M2P6DnaUrp98aZYw1YAczk
+id: M2P6DnaUrp98aZYw1YAczk
 title: "[✓] OpenClaw Installation & Setup vs Manus Comparison"
-date: 2026-02-02 18:15 UTC
-url: https://manus.im/app/sessions/M2P6DnaUrp98aZYw1YAczk
-project_id: none
-user_messages: 47
-assistant_messages: 93
-total_messages: 230
-processed: true
+date: "2026-02-02"
+importance: 3
+projects: ["Y-OS", "OpenClaw"]
+tags: ["OpenClaw", "Installation"]
+summary: ""
+url: "https://manus.im/app/task/M2P6DnaUrp98aZYw1YAczk"
 ---
 
 # [✓] OpenClaw Installation & Setup vs Manus Comparison

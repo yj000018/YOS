@@ -1,13 +1,12 @@
 ---
-session_id: khSqjVKctV43omUPZCqieu
+id: khSqjVKctV43omUPZCqieu
 title: "Blitzkrieg Strategy for Selling Apartment in Divonne-les-Bains"
-date: 2026-02-19 17:20 UTC
-url: https://manus.im/app/sessions/khSqjVKctV43omUPZCqieu
-project_id: none
-user_messages: 51
-assistant_messages: 76
-total_messages: 203
-processed: true
+date: "2026-02-19"
+importance: 3
+projects: ["Y-OS", "ROI-OS"]
+tags: ["real estate", "sales strategy", "marketing", "api development", "bug fixing"]
+summary: ""
+url: "https://manus.im/app/task/khSqjVKctV43omUPZCqieu"
 ---
 
 # Blitzkrieg Strategy for Selling Apartment in Divonne-les-Bains

@@ -1,13 +1,12 @@
 ---
-session_id: oyxDQppkB8EeX1Zkv2JA9h
+id: oyxDQppkB8EeX1Zkv2JA9h
 title: "[✓] ANANDAZ Home Automation Cockpit MVP Development"
-date: 2026-03-14 00:58 UTC
-url: https://manus.im/app/sessions/oyxDQppkB8EeX1Zkv2JA9h
-project_id: none
-user_messages: 7
-assistant_messages: 22
-total_messages: 48
-processed: true
+date: "2026-03-14"
+importance: 3
+projects: ["ANANDAZ Home Automation Cockpit", "ANANDAZ Spatial Twin", "Y-OS", "YOUniverse"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/oyxDQppkB8EeX1Zkv2JA9h"
 ---
 
 # [✓] ANANDAZ Home Automation Cockpit MVP Development

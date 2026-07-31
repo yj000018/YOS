@@ -1,13 +1,12 @@
 ---
-session_id: ZOVkLz9Rx8vghg6lnFLuoG
+id: ZOVkLz9Rx8vghg6lnFLuoG
 title: "[✓] Création de Site Web Original et Interactif avec EYA"
-date: 2026-02-17 22:15 UTC
-url: https://manus.im/app/sessions/ZOVkLz9Rx8vghg6lnFLuoG
-project_id: YoYEqM8vWbNajPZ6hor8KR
-user_messages: 40
-assistant_messages: 63
-total_messages: 169
-processed: true
+date: "2026-02-17"
+importance: 3
+projects: ["EYA", "YOUniverse", "Roberta"]
+tags: ["Site Web"]
+summary: ""
+url: "https://manus.im/app/task/ZOVkLz9Rx8vghg6lnFLuoG"
 ---
 
 # [✓] Création de Site Web Original et Interactif avec EYA

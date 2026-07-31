@@ -1,13 +1,12 @@
 ---
-session_id: 6oDLavWYMYRkJvN9rKcnCH
+id: 6oDLavWYMYRkJvN9rKcnCH
 title: "[✓] 6oDLavWYMYRkJvN9rKcnCH"
-date: 2026-03-10 02:13 UTC
-url: https://manus.im/app/sessions/6oDLavWYMYRkJvN9rKcnCH
-project_id: GeNvwGBvdyBGDN65g2zTEp
-user_messages: 212
-assistant_messages: 286
-total_messages: 987
-processed: true
+date: "2026-03-10"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "ANANDAZ-PC", "Ubuntu", "Y World"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/6oDLavWYMYRkJvN9rKcnCH"
 ---
 
 # [✓] 6oDLavWYMYRkJvN9rKcnCH

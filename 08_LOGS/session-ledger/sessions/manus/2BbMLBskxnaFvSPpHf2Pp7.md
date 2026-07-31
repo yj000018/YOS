@@ -1,13 +1,12 @@
 ---
-session_id: 2BbMLBskxnaFvSPpHf2Pp7
+id: 2BbMLBskxnaFvSPpHf2Pp7
 title: "[✓] Monitoring WiFi & Internet continu 24h — Setup Fritz!Box WiFi 6 + N100"
-date: 2026-05-08 17:06 UTC
-url: https://manus.im/app/sessions/2BbMLBskxnaFvSPpHf2Pp7
-project_id: none
-user_messages: 6
-assistant_messages: 9
-total_messages: 27
-processed: true
+date: "2026-05-08"
+importance: 3
+projects: ["Y-OS"]
+tags: ["monitoring", "wifi", "internet", "network", "fritzbox", "n100", "24h", "report", "setup"]
+summary: ""
+url: "https://manus.im/app/task/2BbMLBskxnaFvSPpHf2Pp7"
 ---
 
 # [✓] Monitoring WiFi & Internet continu 24h — Setup Fritz!Box WiFi 6 + N100

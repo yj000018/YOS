@@ -1,13 +1,12 @@
 ---
-session_id: XN6cAR8wbtbZc3ysKV8BNX
+id: XN6cAR8wbtbZc3ysKV8BNX
 title: "How to Find Swiss vs. Algeria Soccer Replay/Live?"
-date: 2026-07-03 18:48 UTC
-url: https://manus.im/app/sessions/XN6cAR8wbtbZc3ysKV8BNX
-project_id: Gz25LHGt5xFF4hEghRYUQL
-user_messages: 2
-assistant_messages: 4
-total_messages: 12
-processed: true
+date: "2026-07-03"
+importance: 3
+projects: ["Y-OS"]
+tags: ["sports", "football", "replay", "RTS", "My Browser", "search"]
+summary: "User requested a direct link to the Swiss vs. Algeria soccer replay on RTS, which Manus provided using My Browser."
+url: "https://manus.im/app/task/XN6cAR8wbtbZc3ysKV8BNX"
 ---
 
 # How to Find Swiss vs. Algeria Soccer Replay/Live?

@@ -1,13 +1,12 @@
 ---
-session_id: amfsURjxw2rQEZhVErPu9Z
+id: amfsURjxw2rQEZhVErPu9Z
 title: "[✓] Patine noire foie de soufre — Nataraja extérieur & Parvati intérieur"
-date: 2026-05-12 10:16 UTC
-url: https://manus.im/app/sessions/amfsURjxw2rQEZhVErPu9Z
-project_id: none
-user_messages: 23
-assistant_messages: 34
-total_messages: 91
-processed: true
+date: "2026-05-12"
+importance: 3
+projects: []
+tags: ["patine", "cire", "renaissance wax", "foie de soufre", "restauration", "achat", "amazon", "nataraja", "parvati"]
+summary: "Analyse et comparaison des prix de la cire Renaissance Wax et du foie de soufre pour patine et restauration d'objets."
+url: "https://manus.im/app/task/amfsURjxw2rQEZhVErPu9Z"
 ---
 
 # [✓] Patine noire foie de soufre — Nataraja extérieur & Parvati intérieur

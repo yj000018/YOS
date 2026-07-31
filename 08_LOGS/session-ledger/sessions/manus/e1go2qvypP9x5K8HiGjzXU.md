@@ -1,13 +1,12 @@
 ---
-session_id: e1go2qvypP9x5K8HiGjzXU
+id: e1go2qvypP9x5K8HiGjzXU
 title: "[✓] LLM Router Skill v1.1 — OpenRouter + Kimi K2.6 + Provider Pricing Strategy"
-date: 2026-06-25 16:56 UTC
-url: https://manus.im/app/sessions/e1go2qvypP9x5K8HiGjzXU
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-06-25"
+importance: 3
+projects: ["Y-OS"]
+tags: ["LLM Router", "Skill Update", "OpenRouter", "Kimi K2.6", "Pricing Strategy"]
+summary: ""
+url: "https://manus.im/app/task/e1go2qvypP9x5K8HiGjzXU"
 ---
 
 # [✓] LLM Router Skill v1.1 — OpenRouter + Kimi K2.6 + Provider Pricing Strategy

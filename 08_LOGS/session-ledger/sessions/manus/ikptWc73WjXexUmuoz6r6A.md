@@ -1,13 +1,12 @@
 ---
-session_id: ikptWc73WjXexUmuoz6r6A
+id: ikptWc73WjXexUmuoz6r6A
 title: "[✓] Test & Factsheet du connecteur Mem MCP pour Y-OS"
-date: 2026-06-16 09:18 UTC
-url: https://manus.im/app/sessions/ikptWc73WjXexUmuoz6r6A
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Mem MCP", "connector", "factsheet", "testing", "API integration"]
+summary: ""
+url: "https://manus.im/app/task/ikptWc73WjXexUmuoz6r6A"
 ---
 
 # [✓] Test & Factsheet du connecteur Mem MCP pour Y-OS

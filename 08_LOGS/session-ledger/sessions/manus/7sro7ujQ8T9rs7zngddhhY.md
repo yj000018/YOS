@@ -1,13 +1,12 @@
 ---
-session_id: 7sro7ujQ8T9rs7zngddhhY
+id: 7sro7ujQ8T9rs7zngddhhY
 title: "Ariane - Visual Memory Studio (VMS)"
-date: 2026-07-18 09:16 UTC
-url: https://manus.im/app/sessions/7sro7ujQ8T9rs7zngddhhY
-project_id: none
-user_messages: 9
-assistant_messages: 11
-total_messages: 36
-processed: true
+date: "2026-07-18"
+importance: 3
+projects: ["Ariane", "Visual Memory Studio"]
+tags: ["Ariane Seed", "VMS"]
+summary: ""
+url: "https://manus.im/app/task/7sro7ujQ8T9rs7zngddhhY"
 ---
 
 # Ariane - Visual Memory Studio (VMS)

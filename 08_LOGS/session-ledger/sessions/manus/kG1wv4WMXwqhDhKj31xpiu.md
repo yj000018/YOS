@@ -1,13 +1,12 @@
 ---
-session_id: kG1wv4WMXwqhDhKj31xpiu
+id: kG1wv4WMXwqhDhKj31xpiu
 title: "[✓] VIVI MVP Build + yOS Memory Inbox — Voice & Vision Interface v0.1"
-date: 2026-04-25 18:04 UTC
-url: https://manus.im/app/sessions/kG1wv4WMXwqhDhKj31xpiu
-project_id: none
-user_messages: 26
-assistant_messages: 86
-total_messages: 161
-processed: true
+date: "2026-04-25"
+importance: 3
+projects: ["Y-OS", "Memory Pipeline", "VIVI"]
+tags: ["MVP", "Architecture", "Memory", "Inbox", "Voice Interface", "Vision Interface"]
+summary: ""
+url: "https://manus.im/app/task/kG1wv4WMXwqhDhKj31xpiu"
 ---
 
 # [✓] VIVI MVP Build + yOS Memory Inbox — Voice & Vision Interface v0.1

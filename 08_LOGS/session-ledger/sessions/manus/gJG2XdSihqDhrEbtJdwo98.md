@@ -1,13 +1,12 @@
 ---
-session_id: gJG2XdSihqDhrEbtJdwo98
+id: gJG2XdSihqDhrEbtJdwo98
 title: "[✓] Creating Image Variants with 7 Subtle Differences and Animated GIFs"
-date: 2026-01-02 05:23 UTC
-url: https://manus.im/app/sessions/gJG2XdSihqDhrEbtJdwo98
-project_id: none
-user_messages: 7
-assistant_messages: 13
-total_messages: 32
-processed: true
+date: "2026-01-02"
+importance: 3
+projects: []
+tags: ["Image Variants", "Animated GIFs", "Subtle Differences", "Image Manipulation", "Visual Guide", "Spot the Difference"]
+summary: "Created image variants with 7 subtle differences and animated GIFs for a 'spot the difference' game."
+url: "https://manus.im/app/task/gJG2XdSihqDhrEbtJdwo98"
 ---
 
 # [✓] Creating Image Variants with 7 Subtle Differences and Animated GIFs

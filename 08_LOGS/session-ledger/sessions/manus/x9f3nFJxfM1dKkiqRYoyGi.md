@@ -1,13 +1,12 @@
 ---
-session_id: x9f3nFJxfM1dKkiqRYoyGi
+id: x9f3nFJxfM1dKkiqRYoyGi
 title: "[✓] Automatisation écran projection avec solution domotique Shelly"
-date: 2026-02-15 02:16 UTC
-url: https://manus.im/app/sessions/x9f3nFJxfM1dKkiqRYoyGi
-project_id: none
-user_messages: 24
-assistant_messages: 37
-total_messages: 112
-processed: true
+date: "2026-02-15"
+importance: 3
+projects: ["CasaTAO", "Y-OS"]
+tags: ["domotique", "automatisation", "Shelly", "1Password", "CLI", "credentials"]
+summary: ""
+url: "https://manus.im/app/task/x9f3nFJxfM1dKkiqRYoyGi"
 ---
 
 # [✓] Automatisation écran projection avec solution domotique Shelly

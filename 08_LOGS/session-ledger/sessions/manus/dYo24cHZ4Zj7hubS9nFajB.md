@@ -1,13 +1,12 @@
 ---
-session_id: dYo24cHZ4Zj7hubS9nFajB
+id: dYo24cHZ4Zj7hubS9nFajB
 title: "[✓] Optimizing Investments Between V1 and V2 Strategies"
-date: 2025-08-07 10:19 UTC
-url: https://manus.im/app/sessions/dYo24cHZ4Zj7hubS9nFajB
-project_id: none
-user_messages: 1
-assistant_messages: 1
-total_messages: 11
-processed: true
+date: "2025-08-07"
+importance: 3
+projects: []
+tags: ["Investissement", "Stratégie Financière", "Crypto", "Optimisation", "Analyse Financière", "Rendement"]
+summary: "Analyse comparative des stratégies d'investissement V1 et V2, montrant que V2 avec réinvestissement crypto génère un gain de 2,2M€."
+url: "https://manus.im/app/task/dYo24cHZ4Zj7hubS9nFajB"
 ---
 
 # [✓] Optimizing Investments Between V1 and V2 Strategies

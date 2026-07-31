@@ -1,13 +1,12 @@
 ---
-session_id: wn1AMXyuZsnyq9mYzmb9Fi
+id: wn1AMXyuZsnyq9mYzmb9Fi
 title: "[✓] Van Rental and Transport Options Sicily to Haute-Nendaz Analysis"
-date: 2025-09-29 17:24 UTC
-url: https://manus.im/app/sessions/wn1AMXyuZsnyq9mYzmb9Fi
-project_id: none
-user_messages: 4
-assistant_messages: 5
-total_messages: 10
-processed: true
+date: "2025-09-29"
+importance: 1
+projects: []
+tags: ["transport", "logistics", "moving", "van rental", "shipping", "personal"]
+summary: "Analysis of transport options (van rental, movers, shipping) for moving 2m³ of boxes from Sicily to Haute-Nendaz, Switzerland."
+url: "https://manus.im/app/task/wn1AMXyuZsnyq9mYzmb9Fi"
 ---
 
 # [✓] Van Rental and Transport Options Sicily to Haute-Nendaz Analysis

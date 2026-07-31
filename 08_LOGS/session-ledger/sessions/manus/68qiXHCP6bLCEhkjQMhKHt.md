@@ -1,13 +1,12 @@
 ---
-session_id: 68qiXHCP6bLCEhkjQMhKHt
+id: 68qiXHCP6bLCEhkjQMhKHt
 title: "[✓] Introduction to Jam Connector Testing and Capabilities"
-date: 2026-01-02 06:23 UTC
-url: https://manus.im/app/sessions/68qiXHCP6bLCEhkjQMhKHt
-project_id: none
-user_messages: 2
-assistant_messages: 2
-total_messages: 8
-processed: true
+date: "2026-01-02"
+importance: 2
+projects: ["Y-OS", "Jam Connector"]
+tags: ["Testing", "Integration", "Jam Connector", "Debugging", "Data Fetching", "MCP Server"]
+summary: "Introduction and testing of the Jam connector's capabilities for fetching recording data (video, events, logs, network)."
+url: "https://manus.im/app/task/68qiXHCP6bLCEhkjQMhKHt"
 ---
 
 # [✓] Introduction to Jam Connector Testing and Capabilities

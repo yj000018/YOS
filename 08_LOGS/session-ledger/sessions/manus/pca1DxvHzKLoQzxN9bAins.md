@@ -1,13 +1,12 @@
 ---
-session_id: pca1DxvHzKLoQzxN9bAins
+id: pca1DxvHzKLoQzxN9bAins
 title: "ARCH"
-date: 2026-07-12 10:26 UTC
-url: https://manus.im/app/sessions/pca1DxvHzKLoQzxN9bAins
-project_id: Ki9H3UCZSSaUwCR7bn46tv
-user_messages: 1
-assistant_messages: 3
-total_messages: 9
-processed: true
+date: "2026-07-12"
+importance: 3
+projects: ["Y-OS", "KAP", "Archaeology", "Collector"]
+tags: ["architecture", "design", "review", "planning", "infrastructure", "ChatGPT"]
+summary: ""
+url: "https://manus.im/app/task/pca1DxvHzKLoQzxN9bAins"
 ---
 
 # ARCH

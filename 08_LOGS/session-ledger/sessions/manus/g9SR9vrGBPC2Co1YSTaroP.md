@@ -1,13 +1,12 @@
 ---
-session_id: g9SR9vrGBPC2Co1YSTaroP
+id: g9SR9vrGBPC2Co1YSTaroP
 title: "[✓] Insurance Options for Rehabilitation Coverage in France"
-date: 2025-07-12 09:53 UTC
-url: https://manus.im/app/sessions/g9SR9vrGBPC2Co1YSTaroP
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 63
-processed: true
+date: "2025-07-12"
+importance: 3
+projects: []
+tags: ["assurance santé", "réhabilitation", "France", "Suisse", "sécurité sociale", "mutuelle"]
+summary: ""
+url: "https://manus.im/app/task/g9SR9vrGBPC2Co1YSTaroP"
 ---
 
 # [✓] Insurance Options for Rehabilitation Coverage in France

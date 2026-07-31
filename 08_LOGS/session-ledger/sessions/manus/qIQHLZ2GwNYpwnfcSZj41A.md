@@ -1,13 +1,12 @@
 ---
-session_id: qIQHLZ2GwNYpwnfcSZj41A
+id: qIQHLZ2GwNYpwnfcSZj41A
 title: "[✓] Ngrok Account Creation for Development Environment"
-date: 2025-10-25 23:39 UTC
-url: https://manus.im/app/sessions/qIQHLZ2GwNYpwnfcSZj41A
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 4
-processed: true
+date: "2025-10-25"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Ngrok", "Account Creation", "Development Environment", "Infrastructure"]
+summary: "Created an Ngrok account for the Y-OS development environment."
+url: "https://manus.im/app/task/qIQHLZ2GwNYpwnfcSZj41A"
 ---
 
 # [✓] Ngrok Account Creation for Development Environment

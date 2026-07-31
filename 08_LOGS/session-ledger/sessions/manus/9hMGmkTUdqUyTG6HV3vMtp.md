@@ -1,13 +1,12 @@
 ---
-session_id: 9hMGmkTUdqUyTG6HV3vMtp
+id: 9hMGmkTUdqUyTG6HV3vMtp
 title: "[✓] Flux MCP Connector — Test live, cartographie & factsheet Y-OS"
-date: 2026-06-15 09:08 UTC
-url: https://manus.im/app/sessions/9hMGmkTUdqUyTG6HV3vMtp
-project_id: none
-user_messages: 3
-assistant_messages: 7
-total_messages: 16
-processed: true
+date: "2026-06-15"
+importance: 3
+projects: ["Y-OS"]
+tags: ["media", "design", "vision", "connector", "factsheet", "testing", "tooling"]
+summary: ""
+url: "https://manus.im/app/task/9hMGmkTUdqUyTG6HV3vMtp"
 ---
 
 # [✓] Flux MCP Connector — Test live, cartographie & factsheet Y-OS

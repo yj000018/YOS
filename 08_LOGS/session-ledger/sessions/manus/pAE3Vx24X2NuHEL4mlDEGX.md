@@ -1,13 +1,12 @@
 ---
-session_id: pAE3Vx24X2NuHEL4mlDEGX
+id: pAE3Vx24X2NuHEL4mlDEGX
 title: "[✓] Completing ChatGPT Memory Archive and Cleanup Process"
-date: 2026-03-06 19:38 UTC
-url: https://manus.im/app/sessions/pAE3Vx24X2NuHEL4mlDEGX
-project_id: none
-user_messages: 2
-assistant_messages: 8
-total_messages: 14
-processed: true
+date: "2026-03-06"
+importance: 3
+projects: ["Y-OS", "Memory Pipeline"]
+tags: ["ChatGPT", "Memory Management", "Archive", "Cleanup", "AI Integration", "Notion"]
+summary: ""
+url: "https://manus.im/app/task/pAE3Vx24X2NuHEL4mlDEGX"
 ---
 
 # [✓] Completing ChatGPT Memory Archive and Cleanup Process

@@ -1,13 +1,12 @@
 ---
-session_id: erkiojauCF3uKnbBwpJpW4
+id: erkiojauCF3uKnbBwpJpW4
 title: "[✓] YOS Memory Boot Sector: Building Cross-Session Memory System"
-date: 2026-03-20 10:07 UTC
-url: https://manus.im/app/sessions/erkiojauCF3uKnbBwpJpW4
-project_id: none
-user_messages: 4
-assistant_messages: 9
-total_messages: 23
-processed: true
+date: "2026-03-20"
+importance: 3
+projects: ["Y-OS", "YOS Memory Boot Sector", "Cross-Session Memory System", "Y-OS MMM"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/erkiojauCF3uKnbBwpJpW4"
 ---
 
 # [✓] YOS Memory Boot Sector: Building Cross-Session Memory System

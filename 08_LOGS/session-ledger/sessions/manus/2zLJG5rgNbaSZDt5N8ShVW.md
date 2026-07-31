@@ -1,13 +1,12 @@
 ---
-session_id: 2zLJG5rgNbaSZDt5N8ShVW
+id: 2zLJG5rgNbaSZDt5N8ShVW
 title: "[✓] Y-OS Voice Interface — Full Build + Y World Inventory Extraction"
-date: 2026-04-26 10:39 UTC
-url: https://manus.im/app/sessions/2zLJG5rgNbaSZDt5N8ShVW
-project_id: none
-user_messages: 3
-assistant_messages: 10
-total_messages: 23
-processed: true
+date: "2026-04-26"
+importance: 3
+projects: ["Y-OS", "Voice Interface", "Y World", "YOUniverse", "CasaTAO"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/2zLJG5rgNbaSZDt5N8ShVW"
 ---
 
 # [✓] Y-OS Voice Interface — Full Build + Y World Inventory Extraction

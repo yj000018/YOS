@@ -1,13 +1,12 @@
 ---
-session_id: rKxbiP97g2QEA4mkgPoPcu
+id: rKxbiP97g2QEA4mkgPoPcu
 title: "[✓] Recherche monte-escalier LiftKar d'occasion en France/Suisse"
-date: 2025-11-16 14:20 UTC
-url: https://manus.im/app/sessions/rKxbiP97g2QEA4mkgPoPcu
-project_id: none
-user_messages: 3
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2025-11-16"
+importance: 3
+projects: []
+tags: ["monte-escalier", "LiftKar", "occasion", "recherche", "comparaison", "France", "Suisse", "Ricardo"]
+summary: "Recherche et comparaison de monte-escaliers LiftKar d'occasion en France/Suisse pour trouver les meilleures offres."
+url: "https://manus.im/app/task/rKxbiP97g2QEA4mkgPoPcu"
 ---
 
 # [✓] Recherche monte-escalier LiftKar d'occasion en France/Suisse

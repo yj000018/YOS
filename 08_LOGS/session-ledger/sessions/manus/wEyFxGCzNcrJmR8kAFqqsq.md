@@ -1,13 +1,12 @@
 ---
-session_id: wEyFxGCzNcrJmR8kAFqqsq
+id: wEyFxGCzNcrJmR8kAFqqsq
 title: "[✓] CP Core v0.1 — Manus Skill Install & GitHub Canonicalization"
-date: 2026-06-29 21:42 UTC
-url: https://manus.im/app/sessions/wEyFxGCzNcrJmR8kAFqqsq
-project_id: none
-user_messages: 20
-assistant_messages: 40
-total_messages: 115
-processed: true
+date: "2026-06-29"
+importance: 3
+projects: ["Y-OS", "Manus", "CP Core", "Micro-Menu", "Task Registry", "Y-Hub"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/wEyFxGCzNcrJmR8kAFqqsq"
 ---
 
 # [✓] CP Core v0.1 — Manus Skill Install & GitHub Canonicalization

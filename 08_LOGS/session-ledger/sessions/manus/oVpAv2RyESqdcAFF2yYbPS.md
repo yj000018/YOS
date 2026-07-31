@@ -1,13 +1,12 @@
 ---
-session_id: oVpAv2RyESqdcAFF2yYbPS
+id: oVpAv2RyESqdcAFF2yYbPS
 title: "[✓] Recherche immobilière PMR Bretagne - Aide vente/achat/location"
-date: 2025-10-08 17:57 UTC
-url: https://manus.im/app/sessions/oVpAv2RyESqdcAFF2yYbPS
-project_id: none
-user_messages: 128
-assistant_messages: 223
-total_messages: 518
-processed: true
+date: "2025-10-08"
+importance: 3
+projects: []
+tags: ["immobilier", "PMR", "Bretagne", "location", "PDF", "recherche"]
+summary: "Génération d'un PDF listant 12 biens immobiliers à louer en Bretagne, dont 2 compatibles PMR, avec détails et liens."
+url: "https://manus.im/app/task/oVpAv2RyESqdcAFF2yYbPS"
 ---
 
 # [✓] Recherche immobilière PMR Bretagne - Aide vente/achat/location

@@ -1,13 +1,12 @@
 ---
-session_id: MnMTOh37Pesg2uzkTRPog2
+id: MnMTOh37Pesg2uzkTRPog2
 title: "[✓] Home Automation System — Architecture & Documentation Setup (Anandaz)"
-date: 2026-06-18 20:34 UTC
-url: https://manus.im/app/sessions/MnMTOh37Pesg2uzkTRPog2
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 15
-processed: true
+date: "2026-06-18"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Home Automation System", "Anandaz", "Manus"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/MnMTOh37Pesg2uzkTRPog2"
 ---
 
 # [✓] Home Automation System — Architecture & Documentation Setup (Anandaz)

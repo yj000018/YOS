@@ -1,13 +1,12 @@
 ---
-session_id: BmLf95sfAFL6fbgXVreXCc
+id: BmLf95sfAFL6fbgXVreXCc
 title: "[✓] PoC eLink.io API — Curation top 10 liens procès OpenAI/Musk"
-date: 2026-05-17 17:40 UTC
-url: https://manus.im/app/sessions/BmLf95sfAFL6fbgXVreXCc
-project_id: none
-user_messages: 5
-assistant_messages: 8
-total_messages: 23
-processed: true
+date: "2026-05-17"
+importance: 3
+projects: ["Y-OS"]
+tags: ["PoC", "eLink.io API", "Curation", "OpenAI", "Musk", "Perplexity"]
+summary: ""
+url: "https://manus.im/app/task/BmLf95sfAFL6fbgXVreXCc"
 ---
 
 # [✓] PoC eLink.io API — Curation top 10 liens procès OpenAI/Musk

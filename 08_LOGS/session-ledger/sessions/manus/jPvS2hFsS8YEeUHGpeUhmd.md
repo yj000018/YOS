@@ -1,13 +1,12 @@
 ---
-session_id: jPvS2hFsS8YEeUHGpeUhmd
+id: jPvS2hFsS8YEeUHGpeUhmd
 title: "[✓] Plugin ChatGPT→Notion : taxonomie conversations + analyse marché + dev initié"
-date: 2026-03-06 02:21 UTC
-url: https://manus.im/app/sessions/jPvS2hFsS8YEeUHGpeUhmd
-project_id: none
-user_messages: 19
-assistant_messages: 35
-total_messages: 85
-processed: true
+date: "2026-03-06"
+importance: 3
+projects: ["Plugin ChatGPT→Notion"]
+tags: ["ChatGPT", "Notion", "Plugin", "Extension"]
+summary: ""
+url: "https://manus.im/app/task/jPvS2hFsS8YEeUHGpeUhmd"
 ---
 
 # [✓] Plugin ChatGPT→Notion : taxonomie conversations + analyse marché + dev initié

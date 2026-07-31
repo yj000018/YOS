@@ -1,13 +1,12 @@
 ---
-session_id: Mv7ARCumKZ6hp2cwKL68cB
+id: Mv7ARCumKZ6hp2cwKL68cB
 title: "[✓] Metabophytol prix CH + analyse efficacité + freins poids Yannick (ordonnance)"
-date: 2026-05-04 10:37 UTC
-url: https://manus.im/app/sessions/Mv7ARCumKZ6hp2cwKL68cB
-project_id: none
-user_messages: 4
-assistant_messages: 9
-total_messages: 21
-processed: true
+date: "2026-05-04"
+importance: 3
+projects: []
+tags: ["santé", "médicaments", "perte de poids", "cholestérol", "triglycérides", "Metabophytol", "Sativex", "Pregabalin"]
+summary: ""
+url: "https://manus.im/app/task/Mv7ARCumKZ6hp2cwKL68cB"
 ---
 
 # [✓] Metabophytol prix CH + analyse efficacité + freins poids Yannick (ordonnance)

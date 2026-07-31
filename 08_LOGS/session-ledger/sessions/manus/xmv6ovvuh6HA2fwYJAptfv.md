@@ -1,13 +1,12 @@
 ---
-session_id: xmv6ovvuh6HA2fwYJAptfv
+id: xmv6ovvuh6HA2fwYJAptfv
 title: "[✓] Testing Notion Connector and Exploring Its Features"
-date: 2026-02-27 08:27 UTC
-url: https://manus.im/app/sessions/xmv6ovvuh6HA2fwYJAptfv
-project_id: none
-user_messages: 3
-assistant_messages: 4
-total_messages: 11
-processed: true
+date: "2026-02-27"
+importance: 2
+projects: ["Y-OS", "Notion Connector"]
+tags: ["notion", "connector", "testing", "integration", "api", "features", "demo"]
+summary: "Successful testing and exploration of the Notion connector's core functionalities, including live data read/write operations."
+url: "https://manus.im/app/task/xmv6ovvuh6HA2fwYJAptfv"
 ---
 
 # [✓] Testing Notion Connector and Exploring Its Features

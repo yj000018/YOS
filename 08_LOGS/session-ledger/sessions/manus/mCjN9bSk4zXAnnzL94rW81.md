@@ -1,13 +1,12 @@
 ---
-session_id: mCjN9bSk4zXAnnzL94rW81
+id: mCjN9bSk4zXAnnzL94rW81
 title: "Comment implémenter ce processus pour ROI OS ?"
-date: 2026-07-31
-url: https://manus.im/app/mCjN9bSk4zXAnnzL94rW81
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 20
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["ROI-OS"]
+tags: ["ROI-OS", "implémentation", "processus", "Y-OS"]
+summary: "Discussion sur l'implémentation d'un processus spécifique pour le projet ROI OS."
+url: "https://manus.im/app/task/mCjN9bSk4zXAnnzL94rW81"
 ---
 
 # Comment implémenter ce processus pour ROI OS ?

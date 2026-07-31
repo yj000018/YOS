@@ -1,13 +1,12 @@
 ---
-session_id: fUFHzxPWob4hZ5BKpsrgzt
+id: fUFHzxPWob4hZ5BKpsrgzt
 title: "[✓] GPT-Manus Command Bridge Script Implementation with Automated Logging"
-date: 2026-01-06 02:06 UTC
-url: https://manus.im/app/sessions/fUFHzxPWob4hZ5BKpsrgzt
-project_id: none
-user_messages: 1
-assistant_messages: 5
-total_messages: 8
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "Manus", "GPT-Manus"]
+tags: ["Automation"]
+summary: ""
+url: "https://manus.im/app/task/fUFHzxPWob4hZ5BKpsrgzt"
 ---
 
 # [✓] GPT-Manus Command Bridge Script Implementation with Automated Logging

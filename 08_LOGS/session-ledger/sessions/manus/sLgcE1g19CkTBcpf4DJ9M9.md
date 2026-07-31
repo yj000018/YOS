@@ -1,13 +1,12 @@
 ---
-session_id: sLgcE1g19CkTBcpf4DJ9M9
+id: sLgcE1g19CkTBcpf4DJ9M9
 title: "[✓] Migration Scrivener → Obsidian : Vault Ludivine (série 5 éléments)"
-date: 2026-06-01 15:32 UTC
-url: https://manus.im/app/sessions/sLgcE1g19CkTBcpf4DJ9M9
-project_id: none
-user_messages: 134
-assistant_messages: 191
-total_messages: 500
-processed: true
+date: "2026-06-01"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Ludivine", "Site Ludivine", "Cosmologie"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/sLgcE1g19CkTBcpf4DJ9M9"
 ---
 
 # [✓] Migration Scrivener → Obsidian : Vault Ludivine (série 5 éléments)

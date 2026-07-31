@@ -1,13 +1,12 @@
 ---
-session_id: oP9rkUQKTVDTmh2HzNYCBo
+id: oP9rkUQKTVDTmh2HzNYCBo
 title: "[✓] Les Petits Malins — Architecture 108 cartes archétypales tarot/constellation"
-date: 2026-04-28 22:31 UTC
-url: https://manus.im/app/sessions/oP9rkUQKTVDTmh2HzNYCBo
-project_id: none
-user_messages: 77
-assistant_messages: 164
-total_messages: 347
-processed: true
+date: "2026-04-28"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Les Petits Malins", "Les Archétypes Universels"]
+tags: ["architecture", "archétypes", "tarot", "constellation", "white paper", "research", "Human Awakening"]
+summary: ""
+url: "https://manus.im/app/task/oP9rkUQKTVDTmh2HzNYCBo"
 ---
 
 # [✓] Les Petits Malins — Architecture 108 cartes archétypales tarot/constellation

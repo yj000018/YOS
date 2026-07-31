@@ -1,13 +1,12 @@
 ---
-session_id: 6CYPKfH8LVdirYL4vrBRoe
+id: 6CYPKfH8LVdirYL4vrBRoe
 title: "[✓] Y-Menu v0 — Construction, déploiement GitHub et installation skill Manus"
-date: 2026-05-23 13:50 UTC
-url: https://manus.im/app/sessions/6CYPKfH8LVdirYL4vrBRoe
-project_id: o6UZWvrbKd9HiBNNnCtVVm
-user_messages: 222
-assistant_messages: 342
-total_messages: 934
-processed: true
+date: "2026-05-23"
+importance: 3
+projects: ["Y-Menu v0", "Y-OS", "YOUniverse", "Manus", "yos-optimizer"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/6CYPKfH8LVdirYL4vrBRoe"
 ---
 
 # [✓] Y-Menu v0 — Construction, déploiement GitHub et installation skill Manus

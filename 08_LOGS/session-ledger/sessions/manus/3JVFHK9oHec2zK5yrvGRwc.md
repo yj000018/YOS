@@ -1,13 +1,12 @@
 ---
-session_id: 3JVFHK9oHec2zK5yrvGRwc
+id: 3JVFHK9oHec2zK5yrvGRwc
 title: "[✓] Best Fully Electric Luxury SUV with Long Range"
-date: 2025-07-28 15:57 UTC
-url: https://manus.im/app/sessions/3JVFHK9oHec2zK5yrvGRwc
-project_id: none
-user_messages: 8
-assistant_messages: 14
-total_messages: 199
-processed: true
+date: "2025-07-28"
+importance: 3
+projects: []
+tags: ["Electric Vehicles", "SUV", "Automotive Comparison", "Luxury Cars", "Volvo EX90"]
+summary: "Comparison of best fully electric luxury SUVs (Volvo EX90, Polestar 3, BMW iX, Lucid Gravity) focusing on range, features, and service networks."
+url: "https://manus.im/app/task/3JVFHK9oHec2zK5yrvGRwc"
 ---
 
 # [✓] Best Fully Electric Luxury SUV with Long Range

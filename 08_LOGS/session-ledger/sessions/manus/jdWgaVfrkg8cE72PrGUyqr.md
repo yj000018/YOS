@@ -1,13 +1,12 @@
 ---
-session_id: jdWgaVfrkg8cE72PrGUyqr
+id: jdWgaVfrkg8cE72PrGUyqr
 title: "[✓] Generate AYUTO! PDF #1 for Vision-Impaired Father"
-date: 2026-03-12 11:47 UTC
-url: https://manus.im/app/sessions/jdWgaVfrkg8cE72PrGUyqr
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 13
-processed: true
+date: "2026-03-12"
+importance: 3
+projects: ["Y-OS", "AYUTO!", "LLM Memory Pipeline", "Fransai Basic", "Tools Registry & Routing"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/jdWgaVfrkg8cE72PrGUyqr"
 ---
 
 # [✓] Generate AYUTO! PDF #1 for Vision-Impaired Father

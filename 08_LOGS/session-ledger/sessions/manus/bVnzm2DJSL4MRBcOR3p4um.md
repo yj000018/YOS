@@ -1,13 +1,12 @@
 ---
-session_id: bVnzm2DJSL4MRBcOR3p4um
+id: bVnzm2DJSL4MRBcOR3p4um
 title: "[✓] YOS LLM Router Skill Architecture Design Session"
-date: 2026-02-08 15:16 UTC
-url: https://manus.im/app/sessions/bVnzm2DJSL4MRBcOR3p4um
-project_id: none
-user_messages: 5
-assistant_messages: 8
-total_messages: 25
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: ["YOS LLM Router", "Y-OS", "YOUniverse", "Y World", "Notion"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/bVnzm2DJSL4MRBcOR3p4um"
 ---
 
 # [✓] YOS LLM Router Skill Architecture Design Session

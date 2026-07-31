@@ -1,13 +1,12 @@
 ---
-session_id: cFmtvvXTw3E3ib6QRANId7
+id: cFmtvvXTw3E3ib6QRANId7
 title: "Create Cinematic 9:16 Product-Launch Video with Agent Opus"
-date: 2026-07-31
-url: https://manus.im/app/cFmtvvXTw3E3ib6QRANId7
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 11
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: []
+tags: ["video creation", "product launch", "marketing", "AI agent"]
+summary: "Création d'une vidéo de lancement produit cinématique 9:16 avec l'aide d'Agent Opus."
+url: "https://manus.im/app/task/cFmtvvXTw3E3ib6QRANId7"
 ---
 
 # Create Cinematic 9:16 Product-Launch Video with Agent Opus

@@ -1,13 +1,12 @@
 ---
-session_id: wAAkU1XVLuGLQYh4B7YnUM
+id: wAAkU1XVLuGLQYh4B7YnUM
 title: "[✓] Fact-Check: YouTube Video on Whale AI Communication Research (Project CETI)"
-date: 2026-05-09 22:43 UTC
-url: https://manus.im/app/sessions/wAAkU1XVLuGLQYh4B7YnUM
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-09"
+importance: 3
+projects: []
+tags: ["Fact-Check", "AI", "Whale Communication", "Project CETI", "Research", "Science", "Marine Biology"]
+summary: "Fact-check of a YouTube video discussing Project CETI's AI research into whale communication, confirming its authenticity and claims."
+url: "https://manus.im/app/task/wAAkU1XVLuGLQYh4B7YnUM"
 ---
 
 # [✓] Fact-Check: YouTube Video on Whale AI Communication Research (Project CETI)

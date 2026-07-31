@@ -1,13 +1,12 @@
 ---
-session_id: df5kcKomKhBLk6sBTMUVkm
+id: df5kcKomKhBLk6sBTMUVkm
 title: "[✓] Pergola automation motorization system design and cost optimization"
-date: 2025-07-04 16:23 UTC
-url: https://manus.im/app/sessions/df5kcKomKhBLk6sBTMUVkm
-project_id: none
-user_messages: 5
-assistant_messages: 6
-total_messages: 81
-processed: true
+date: "2025-07-04"
+importance: 3
+projects: []
+tags: ["pergola", "automation", "motorization", "cost optimization", "design", "smart home"]
+summary: "Design and cost optimization for a pergola motorization system, proposing a hybrid 3+3 configuration to reduce costs by 53%."
+url: "https://manus.im/app/task/df5kcKomKhBLk6sBTMUVkm"
 ---
 
 # [✓] Pergola automation motorization system design and cost optimization

@@ -1,13 +1,12 @@
 ---
-session_id: AjOgTEkEdljcMPjApqeFDu
+id: AjOgTEkEdljcMPjApqeFDu
 title: "[✓] Mac /Applications Audit — Intel-only App Isolation + Finder Slowness Diagnosis"
-date: 2026-05-11 18:06 UTC
-url: https://manus.im/app/sessions/AjOgTEkEdljcMPjApqeFDu
-project_id: KkbgmW9PGcVHXCkPhWbV2q
-user_messages: 19
-assistant_messages: 37
-total_messages: 95
-processed: true
+date: "2026-05-11"
+importance: 3
+projects: ["Y-OS"]
+tags: ["macOS", "performance", "troubleshooting", "system maintenance", "app audit", "Finder", "Spotlight"]
+summary: ""
+url: "https://manus.im/app/task/AjOgTEkEdljcMPjApqeFDu"
 ---
 
 # [✓] Mac /Applications Audit — Intel-only App Isolation + Finder Slowness Diagnosis

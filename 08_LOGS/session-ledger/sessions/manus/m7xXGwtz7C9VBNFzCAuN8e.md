@@ -1,13 +1,12 @@
 ---
-session_id: m7xXGwtz7C9VBNFzCAuN8e
+id: m7xXGwtz7C9VBNFzCAuN8e
 title: "[✓] Fathom MCP Connector — Test Live & Factsheet Y-OS"
-date: 2026-06-16 09:00 UTC
-url: https://manus.im/app/sessions/m7xXGwtz7C9VBNFzCAuN8e
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Fathom MCP", "Factsheet", "Meeting Intelligence", "Transcription", "Tool Assessment", "API Integration", "AI Features"]
+summary: ""
+url: "https://manus.im/app/task/m7xXGwtz7C9VBNFzCAuN8e"
 ---
 
 # [✓] Fathom MCP Connector — Test Live & Factsheet Y-OS

@@ -1,13 +1,12 @@
 ---
-session_id: bBG8wMmjHeFDE5E2u6gPx6
+id: bBG8wMmjHeFDE5E2u6gPx6
 title: "[✓] Debugging 302 Issue"
-date: 2026-01-06 02:04 UTC
-url: https://manus.im/app/sessions/bBG8wMmjHeFDE5E2u6gPx6
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS"]
+tags: ["debugging", "HTTP 302", "redirect", "troubleshooting", "test environment"]
+summary: "Debugging an HTTP 302 redirect issue, creating a comprehensive debug package and a test environment."
+url: "https://manus.im/app/task/bBG8wMmjHeFDE5E2u6gPx6"
 ---
 
 # [✓] Debugging 302 Issue

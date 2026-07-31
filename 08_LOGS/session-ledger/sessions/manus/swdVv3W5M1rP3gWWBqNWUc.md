@@ -1,13 +1,12 @@
 ---
-session_id: swdVv3W5M1rP3gWWBqNWUc
+id: swdVv3W5M1rP3gWWBqNWUc
 title: "[✓] FinDash Phase 0 — Google Sheets Financial Dashboard Skeleton Build"
-date: 2026-05-26 23:33 UTC
-url: https://manus.im/app/sessions/swdVv3W5M1rP3gWWBqNWUc
-project_id: none
-user_messages: 54
-assistant_messages: 174
-total_messages: 308
-processed: true
+date: "2026-05-26"
+importance: 3
+projects: ["Y-OS", "FinDash", "YOUniverse", "Daylog", "LMP"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/swdVv3W5M1rP3gWWBqNWUc"
 ---
 
 # [✓] FinDash Phase 0 — Google Sheets Financial Dashboard Skeleton Build

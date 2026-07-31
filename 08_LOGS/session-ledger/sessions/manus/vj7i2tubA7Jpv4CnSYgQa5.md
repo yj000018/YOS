@@ -1,13 +1,12 @@
 ---
-session_id: vj7i2tubA7Jpv4CnSYgQa5
+id: vj7i2tubA7Jpv4CnSYgQa5
 title: "COGNITIVE & AGENT ROUTERS"
-date: 2026-02-24 20:10 UTC
-url: https://manus.im/app/sessions/vj7i2tubA7Jpv4CnSYgQa5
-project_id: none
-user_messages: 53
-assistant_messages: 96
-total_messages: 216
-processed: true
+date: "2026-02-24"
+importance: 5
+projects: ["Y-OS", "YOUniverse", "CAR", "COR", "AER", "CRT", "ART"]
+tags: ["Cognitive Infrastructure", "Agent Infrastructure", "Routing", "Y-OS Architecture", "Resilience"]
+summary: "Session focused on developing Cognitive & Agent Routers (CAR) as a central, high-maturity infrastructure module for Y-OS routing and resilience."
+url: "https://manus.im/app/task/vj7i2tubA7Jpv4CnSYgQa5"
 ---
 
 # COGNITIVE & AGENT ROUTERS

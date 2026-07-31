@@ -1,13 +1,12 @@
 ---
-session_id: qVq4T1ktzgp8AGvB4csEvM
+id: qVq4T1ktzgp8AGvB4csEvM
 title: "[✓] YOUniverse MVP1 Development & Tana Integration"
-date: 2026-03-18 10:51 UTC
-url: https://manus.im/app/sessions/qVq4T1ktzgp8AGvB4csEvM
-project_id: none
-user_messages: 13
-assistant_messages: 33
-total_messages: 72
-processed: true
+date: "2026-03-18"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "youOS", "ONE", "FIX", "LUDIVINE"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/qVq4T1ktzgp8AGvB4csEvM"
 ---
 
 # [✓] YOUniverse MVP1 Development & Tana Integration

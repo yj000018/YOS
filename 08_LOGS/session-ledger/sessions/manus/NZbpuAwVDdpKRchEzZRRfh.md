@@ -1,13 +1,12 @@
 ---
-session_id: NZbpuAwVDdpKRchEzZRRfh
+id: NZbpuAwVDdpKRchEzZRRfh
 title: "[✓] Deploy Unified Planetary Transformation Ecosystem Website"
-date: 2025-07-22 20:33 UTC
-url: https://manus.im/app/sessions/NZbpuAwVDdpKRchEzZRRfh
-project_id: none
-user_messages: 2
-assistant_messages: 7
-total_messages: 51
-processed: true
+date: "2025-07-22"
+importance: 3
+projects: ["Écosystème de Transformation Planétaire", "Human Awakening Lab", "HAL", "Human Evolution Trilogy"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/NZbpuAwVDdpKRchEzZRRfh"
 ---
 
 # [✓] Deploy Unified Planetary Transformation Ecosystem Website

@@ -1,13 +1,12 @@
 ---
-session_id: jcSpm9oczPTvJdRg8vWzoW
+id: jcSpm9oczPTvJdRg8vWzoW
 title: "[✓] User Inquiry About Student and Nonprofit Pricing Discounts"
-date: 2026-01-31 10:26 UTC
-url: https://manus.im/app/sessions/jcSpm9oczPTvJdRg8vWzoW
-project_id: none
-user_messages: 1
-assistant_messages: 1
-total_messages: 4
-processed: true
+date: "2026-01-31"
+importance: 1
+projects: []
+tags: ["pricing", "discounts", "student", "nonprofit", "customer support", "Manus AI"]
+summary: "User inquired about student/nonprofit discounts for Manus AI and was redirected to the help page."
+url: "https://manus.im/app/task/jcSpm9oczPTvJdRg8vWzoW"
 ---
 
 # [✓] User Inquiry About Student and Nonprofit Pricing Discounts

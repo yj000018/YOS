@@ -1,13 +1,12 @@
 ---
-session_id: eiELwVzyYrFZABqmqVeX7R
+id: eiELwVzyYrFZABqmqVeX7R
 title: "[✓] Veille MCP Bimensuelle Y-OS — Rapport 1er Juillet 2026 (TECH-ARCHI)"
-date: 2026-07-01 07:01 UTC
-url: https://manus.im/app/sessions/eiELwVzyYrFZABqmqVeX7R
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 8
-total_messages: 11
-processed: true
+date: "2026-07-01"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Veille", "MCP", "TECH", "TECH-ARCHI", "Manus", "KMM", "CORE"]
+summary: ""
+url: "https://manus.im/app/task/eiELwVzyYrFZABqmqVeX7R"
 ---
 
 # [✓] Veille MCP Bimensuelle Y-OS — Rapport 1er Juillet 2026 (TECH-ARCHI)

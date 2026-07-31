@@ -1,13 +1,12 @@
 ---
-session_id: kvEhKUVeJCmUZ2cNuhJssm
+id: kvEhKUVeJCmUZ2cNuhJssm
 title: "[✓] Biweekly MCP Technology Watch for Y-OS Architecture"
-date: 2026-04-01 07:01 UTC
-url: https://manus.im/app/sessions/kvEhKUVeJCmUZ2cNuhJssm
-project_id: Gz25LHGt5xFF4hEghRYUQL
-user_messages: 1
-assistant_messages: 4
-total_messages: 9
-processed: true
+date: "2026-04-01"
+importance: 3
+projects: ["Y-OS", "KMM", "CORE", "TECH", "FIN", "CREA", "DEV"]
+tags: ["MCP"]
+summary: ""
+url: "https://manus.im/app/task/kvEhKUVeJCmUZ2cNuhJssm"
 ---
 
 # [✓] Biweekly MCP Technology Watch for Y-OS Architecture

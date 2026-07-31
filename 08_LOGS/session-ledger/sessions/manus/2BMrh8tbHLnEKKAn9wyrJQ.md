@@ -1,13 +1,12 @@
 ---
-session_id: 2BMrh8tbHLnEKKAn9wyrJQ
+id: 2BMrh8tbHLnEKKAn9wyrJQ
 title: "[✓] Y-OS Capture Session — Universal Semantic Input Router via Manus"
-date: 2026-05-14 13:12 UTC
-url: https://manus.im/app/sessions/2BMrh8tbHLnEKKAn9wyrJQ
-project_id: none
-user_messages: 17
-assistant_messages: 29
-total_messages: 78
-processed: true
+date: "2026-05-14"
+importance: 3
+projects: ["Y-OS", "Manus", "YOUniverse", "Y World", "Y Life", "Tana"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/2BMrh8tbHLnEKKAn9wyrJQ"
 ---
 
 # [✓] Y-OS Capture Session — Universal Semantic Input Router via Manus

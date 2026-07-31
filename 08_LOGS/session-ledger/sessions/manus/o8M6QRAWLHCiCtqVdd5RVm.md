@@ -1,13 +1,12 @@
 ---
-session_id: o8M6QRAWLHCiCtqVdd5RVm
+id: o8M6QRAWLHCiCtqVdd5RVm
 title: "[✓] Creating meaningful WhatsApp group acronym for mother's support network"
-date: 2025-08-13 23:21 UTC
-url: https://manus.im/app/sessions/o8M6QRAWLHCiCtqVdd5RVm
-project_id: none
-user_messages: 2
-assistant_messages: 2
-total_messages: 9
-processed: true
+date: "2025-08-13"
+importance: 3
+projects: []
+tags: ["WhatsApp", "acronym", "support network", "family", "personal assistant"]
+summary: "Generated meaningful WhatsApp group acronyms and names for a mother's support network, including personalized options for Maïta."
+url: "https://manus.im/app/task/o8M6QRAWLHCiCtqVdd5RVm"
 ---
 
 # [✓] Creating meaningful WhatsApp group acronym for mother's support network

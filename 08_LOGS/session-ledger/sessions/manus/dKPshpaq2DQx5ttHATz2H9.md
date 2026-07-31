@@ -1,13 +1,12 @@
 ---
-session_id: dKPshpaq2DQx5ttHATz2H9
+id: dKPshpaq2DQx5ttHATz2H9
 title: "[✓] Building AI-Powered Idea2MVP Platform: From Concept to Deployment"
-date: 2025-09-22 18:12 UTC
-url: https://manus.im/app/sessions/dKPshpaq2DQx5ttHATz2H9
-project_id: none
-user_messages: 30
-assistant_messages: 64
-total_messages: 153
-processed: true
+date: "2025-09-22"
+importance: 3
+projects: ["AI-Powered Idea2MVP Platform", "Y World", "YOUniverse", "Y-OS"]
+tags: ["AI", "Idea2MVP", "Platform Development"]
+summary: ""
+url: "https://manus.im/app/task/dKPshpaq2DQx5ttHATz2H9"
 ---
 
 # [✓] Building AI-Powered Idea2MVP Platform: From Concept to Deployment

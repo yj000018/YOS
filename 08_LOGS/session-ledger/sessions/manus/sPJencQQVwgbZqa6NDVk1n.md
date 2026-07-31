@@ -1,13 +1,12 @@
 ---
-session_id: sPJencQQVwgbZqa6NDVk1n
+id: sPJencQQVwgbZqa6NDVk1n
 title: "[✓] Knowledge Management Tree System with Local State Management"
-date: 2026-02-11 12:08 UTC
-url: https://manus.im/app/sessions/sPJencQQVwgbZqa6NDVk1n
-project_id: none
-user_messages: 29
-assistant_messages: 60
-total_messages: 143
-processed: true
+date: "2026-02-11"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Eldo", "Spline 3D Mindmap"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/sPJencQQVwgbZqa6NDVk1n"
 ---
 
 # [✓] Knowledge Management Tree System with Local State Management

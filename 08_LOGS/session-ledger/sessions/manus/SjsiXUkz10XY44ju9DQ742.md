@@ -1,13 +1,12 @@
 ---
-session_id: SjsiXUkz10XY44ju9DQ742
+id: SjsiXUkz10XY44ju9DQ742
 title: "[✓] Fractal Content Studio Overview"
-date: 2026-06-27 23:28 UTC
-url: https://manus.im/app/sessions/SjsiXUkz10XY44ju9DQ742
-project_id: 9Jn9dnhtjDL8ERjyijv5Fj
-user_messages: 11
-assistant_messages: 22
-total_messages: 59
-processed: true
+date: "2026-06-27"
+importance: 3
+projects: ["ELYSIUM", "Y-OS", "FCS"]
+tags: ["Handoff", "Production", "Architecture", "Ontology"]
+summary: ""
+url: "https://manus.im/app/task/SjsiXUkz10XY44ju9DQ742"
 ---
 
 # [✓] Fractal Content Studio Overview

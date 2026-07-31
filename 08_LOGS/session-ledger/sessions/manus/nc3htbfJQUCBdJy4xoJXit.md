@@ -1,13 +1,12 @@
 ---
-session_id: nc3htbfJQUCBdJy4xoJXit
+id: nc3htbfJQUCBdJy4xoJXit
 title: "[✓] Manus Share Link Extractor — Cross-Session Context Injection Fix"
-date: 2026-05-07 00:30 UTC
-url: https://manus.im/app/sessions/nc3htbfJQUCBdJy4xoJXit
-project_id: none
-user_messages: 4
-assistant_messages: 6
-total_messages: 20
-processed: true
+date: "2026-05-07"
+importance: 3
+projects: ["Y-OS"]
+tags: ["manus-extract", "scripting", "tooling", "context injection", "cross-session", "clipboard", "fix"]
+summary: ""
+url: "https://manus.im/app/task/nc3htbfJQUCBdJy4xoJXit"
 ---
 
 # [✓] Manus Share Link Extractor — Cross-Session Context Injection Fix

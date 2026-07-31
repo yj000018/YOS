@@ -1,13 +1,12 @@
 ---
-session_id: fU1zkNuCZfgVrcebgnRe3d
+id: fU1zkNuCZfgVrcebgnRe3d
 title: "[✓] SATVA Life Dashboard - Holistic Life Management Platform Design"
-date: 2026-03-05 16:25 UTC
-url: https://manus.im/app/sessions/fU1zkNuCZfgVrcebgnRe3d
-project_id: none
-user_messages: 5
-assistant_messages: 14
-total_messages: 33
-processed: true
+date: "2026-03-05"
+importance: 3
+projects: ["SATVA", "Y-OS", "YOUniverse", "Y World", "TERRA"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/fU1zkNuCZfgVrcebgnRe3d"
 ---
 
 # [✓] SATVA Life Dashboard - Holistic Life Management Platform Design

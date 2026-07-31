@@ -1,13 +1,12 @@
 ---
-session_id: fYbnJ7sd0KLDlpoilBSZ9Q
+id: fYbnJ7sd0KLDlpoilBSZ9Q
 title: "[✓] OneShift ChangeMakers Vault — Ecosystem Mapping & Strategic Visibility Plan"
-date: 2026-05-27 22:27 UTC
-url: https://manus.im/app/sessions/fYbnJ7sd0KLDlpoilBSZ9Q
-project_id: none
-user_messages: 9
-assistant_messages: 20
-total_messages: 49
-processed: true
+date: "2026-05-27"
+importance: 3
+projects: ["OneShift", "Y-OS", "YOUniverse", "ChangeMakers Community", "12 Pillars of New Society"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/fYbnJ7sd0KLDlpoilBSZ9Q"
 ---
 
 # [✓] OneShift ChangeMakers Vault — Ecosystem Mapping & Strategic Visibility Plan

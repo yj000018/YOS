@@ -1,13 +1,12 @@
 ---
-session_id: gRiC6nzszp5T2KxHS9NxP5
+id: gRiC6nzszp5T2KxHS9NxP5
 title: "Parallel Processing for Public Footprint Intelligence on Yannick Jolliet"
-date: 2026-07-15 01:35 UTC
-url: https://manus.im/app/sessions/gRiC6nzszp5T2KxHS9NxP5
-project_id: Ki9H3UCZSSaUwCR7bn46tv
-user_messages: 5
-assistant_messages: 11
-total_messages: 31
-processed: true
+date: "2026-07-15"
+importance: 3
+projects: ["Y-OS", "YOS Archiver"]
+tags: ["public footprint", "data collection", "verification", "archiving", "Yannick Jolliet"]
+summary: ""
+url: "https://manus.im/app/task/gRiC6nzszp5T2KxHS9NxP5"
 ---
 
 # Parallel Processing for Public Footprint Intelligence on Yannick Jolliet

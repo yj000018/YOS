@@ -1,13 +1,12 @@
 ---
-session_id: v5e19qsh5tydAeTSzGAyF6
+id: v5e19qsh5tydAeTSzGAyF6
 title: "[✓] Wolfram MCP Connector — Test Live & Factsheet Y-OS"
-date: 2026-06-16 08:58 UTC
-url: https://manus.im/app/sessions/v5e19qsh5tydAeTSzGAyF6
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS", "Wolfram MCP Connector"]
+tags: ["Wolfram MCP", "Connector", "Factsheet", "Live Test", "API", "Notion", "iOS", "Integration", "Capabilities", "Pricing"]
+summary: "Factsheet creation for Wolfram MCP Connector, covering live testing, capabilities, limits, pricing, and Y-OS integration."
+url: "https://manus.im/app/task/v5e19qsh5tydAeTSzGAyF6"
 ---
 
 # [✓] Wolfram MCP Connector — Test Live & Factsheet Y-OS

@@ -1,13 +1,12 @@
 ---
-session_id: X5Brx7wrCbCdqqmGWXct6c
+id: X5Brx7wrCbCdqqmGWXct6c
 title: "[✓] GPT-Manus Command Bridge Deployment for Relevance AI Integration"
-date: 2026-01-06 01:48 UTC
-url: https://manus.im/app/sessions/X5Brx7wrCbCdqqmGWXct6c
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "GPT-Manus"]
+tags: ["AI", "Automation", "ChatGPT", "Command Bridge"]
+summary: ""
+url: "https://manus.im/app/task/X5Brx7wrCbCdqqmGWXct6c"
 ---
 
 # [✓] GPT-Manus Command Bridge Deployment for Relevance AI Integration

@@ -1,13 +1,12 @@
 ---
-session_id: pg6ZnyWM2ietp9foDzh2qz
+id: pg6ZnyWM2ietp9foDzh2qz
 title: "[✓] Archiver Agent for Task Management with Batch Operations"
-date: 2026-02-15 17:37 UTC
-url: https://manus.im/app/sessions/pg6ZnyWM2ietp9foDzh2qz
-project_id: none
-user_messages: 12
-assistant_messages: 22
-total_messages: 58
-processed: true
+date: "2026-02-15"
+importance: 3
+projects: ["YOUniverse", "Y-OS", "Mem0", "yOS Memory", "Request Meta-Processor"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/pg6ZnyWM2ietp9foDzh2qz"
 ---
 
 # [✓] Archiver Agent for Task Management with Batch Operations

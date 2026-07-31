@@ -1,13 +1,12 @@
 ---
-session_id: 3LfvuB5pqiAnVGccKMWGdx
+id: 3LfvuB5pqiAnVGccKMWGdx
 title: "Parallel Processing for Manus–Notion Identity and Duplicate Analysis"
-date: 2026-07-21 21:09 UTC
-url: https://manus.im/app/sessions/3LfvuB5pqiAnVGccKMWGdx
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 1
-total_messages: 4
-processed: true
+date: "2026-07-21"
+importance: 3
+projects: ["Manus", "Notion", "MAP v2", "FUSION", "Y-OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/3LfvuB5pqiAnVGccKMWGdx"
 ---
 
 # Parallel Processing for Manus–Notion Identity and Duplicate Analysis

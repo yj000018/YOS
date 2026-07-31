@@ -1,13 +1,12 @@
 ---
-session_id: oTUmbMW66scKL6VBzyHRBB
+id: oTUmbMW66scKL6VBzyHRBB
 title: "[✓] Setting up Automated Development Skill for Complex Coding Tasks"
-date: 2026-03-30 04:52 UTC
-url: https://manus.im/app/sessions/oTUmbMW66scKL6VBzyHRBB
-project_id: none
-user_messages: 4
-assistant_messages: 9
-total_messages: 26
-processed: true
+date: "2026-03-30"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Manus", "Memory Pipeline", "3D Mind Map"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/oTUmbMW66scKL6VBzyHRBB"
 ---
 
 # [✓] Setting up Automated Development Skill for Complex Coding Tasks

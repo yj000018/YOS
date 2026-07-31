@@ -1,13 +1,12 @@
 ---
-session_id: 5qDezar9f7eW95tmpbJEoT
+id: 5qDezar9f7eW95tmpbJEoT
 title: "[✓] Army Reply Monitor — Aucune réponse détectée (06/05/2026)"
-date: 2026-05-06 10:02 UTC
-url: https://manus.im/app/sessions/5qDezar9f7eW95tmpbJEoT
-project_id: ENbrMceTr2iFFx3puHhb2r
-user_messages: 1
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-05-06"
+importance: 3
+projects: ["Y-OS", "Army Reply Monitor"]
+tags: ["monitoring", "email automation", "gmail", "slack", "daily task", "swiss authorities"]
+summary: ""
+url: "https://manus.im/app/task/5qDezar9f7eW95tmpbJEoT"
 ---
 
 # [✓] Army Reply Monitor — Aucune réponse détectée (06/05/2026)

@@ -1,13 +1,12 @@
 ---
-session_id: qHAQ5UXJm9X8paT8nTvHAg
+id: qHAQ5UXJm9X8paT8nTvHAg
 title: "[✓] Les Petits Malins — PoC Pipeline BD IA (tRPC + Compositor + Bible)"
-date: 2026-04-27 08:57 UTC
-url: https://manus.im/app/sessions/qHAQ5UXJm9X8paT8nTvHAg
-project_id: none
-user_messages: 6
-assistant_messages: 20
-total_messages: 44
-processed: true
+date: "2026-04-27"
+importance: 3
+projects: ["Les Petits Malins", "Pipeline IA", "Compositor", "Bible de Série", "Y-OS"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/qHAQ5UXJm9X8paT8nTvHAg"
 ---
 
 # [✓] Les Petits Malins — PoC Pipeline BD IA (tRPC + Compositor + Bible)

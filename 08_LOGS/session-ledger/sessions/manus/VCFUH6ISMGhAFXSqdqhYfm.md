@@ -1,13 +1,12 @@
 ---
-session_id: VCFUH6ISMGhAFXSqdqhYfm
+id: VCFUH6ISMGhAFXSqdqhYfm
 title: "[✓] yOS Core Architecture Definition & Telegram Voice Bot Planning"
-date: 2026-02-22 19:34 UTC
-url: https://manus.im/app/sessions/VCFUH6ISMGhAFXSqdqhYfm
-project_id: none
-user_messages: 13
-assistant_messages: 21
-total_messages: 64
-processed: true
+date: "2026-02-22"
+importance: 3
+projects: ["yOS", "Telegram Voice Bot", "Manus", "Skills", "Notion", "Pinecone"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/VCFUH6ISMGhAFXSqdqhYfm"
 ---
 
 # [✓] yOS Core Architecture Definition & Telegram Voice Bot Planning

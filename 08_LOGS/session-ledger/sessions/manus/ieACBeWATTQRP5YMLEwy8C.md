@@ -1,13 +1,12 @@
 ---
-session_id: ieACBeWATTQRP5YMLEwy8C
+id: ieACBeWATTQRP5YMLEwy8C
 title: "[✓] Stratégie éditoriale Civilisation Cognitive — Plateformes, Stack & Naming"
-date: 2026-05-08 16:13 UTC
-url: https://manus.im/app/sessions/ieACBeWATTQRP5YMLEwy8C
-project_id: none
-user_messages: 32
-assistant_messages: 53
-total_messages: 137
-processed: true
+date: "2026-05-08"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Civilisation Cognitive"]
+tags: ["stratégie"]
+summary: ""
+url: "https://manus.im/app/task/ieACBeWATTQRP5YMLEwy8C"
 ---
 
 # [✓] Stratégie éditoriale Civilisation Cognitive — Plateformes, Stack & Naming

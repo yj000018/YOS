@@ -1,13 +1,12 @@
 ---
-session_id: h2V8nEM8AFn2kDExPYvrSY
+id: h2V8nEM8AFn2kDExPYvrSY
 title: "[✓] French Comic Series on Technological Society Evolution for Adults"
-date: 2025-08-29 16:30 UTC
-url: https://manus.im/app/sessions/h2V8nEM8AFn2kDExPYvrSY
-project_id: none
-user_messages: 3
-assistant_messages: 5
-total_messages: 67
-processed: true
+date: "2025-08-29"
+importance: 3
+projects: []
+tags: ["BD", "comics", "French", "adults", "societal evolution", "AI", "green energy", "quantum computing", "automated transport", "ethics", "education"]
+summary: "Génération de BD éducatives françaises pour adultes sur l'évolution sociétale (IA, énergie verte, éthique) sur 25 ans."
+url: "https://manus.im/app/task/h2V8nEM8AFn2kDExPYvrSY"
 ---
 
 # [✓] French Comic Series on Technological Society Evolution for Adults

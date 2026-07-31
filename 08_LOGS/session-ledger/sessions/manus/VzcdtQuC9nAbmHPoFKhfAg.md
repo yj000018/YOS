@@ -1,13 +1,12 @@
 ---
-session_id: VzcdtQuC9nAbmHPoFKhfAg
+id: VzcdtQuC9nAbmHPoFKhfAg
 title: "[✓] AI News Digest: Major Platform Updates and Industry Developments"
-date: 2026-02-08 13:17 UTC
-url: https://manus.im/app/sessions/VzcdtQuC9nAbmHPoFKhfAg
-project_id: none
-user_messages: 0
-assistant_messages: 2
-total_messages: 5
-processed: true
+date: "2026-02-08"
+importance: 3
+projects: []
+tags: ["AI", "news", "digest", "industry updates", "platform updates", "summary"]
+summary: "Comprehensive summary of major AI news and industry developments from an email, including platform updates and funding rounds."
+url: "https://manus.im/app/task/VzcdtQuC9nAbmHPoFKhfAg"
 ---
 
 # [✓] AI News Digest: Major Platform Updates and Industry Developments

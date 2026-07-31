@@ -1,13 +1,12 @@
 ---
-session_id: oePh5BFG4QC8bXVdUcq3J2
+id: oePh5BFG4QC8bXVdUcq3J2
 title: "[✓] Y-OS Logo SVG Generation + Custom Font Exploration"
-date: 2026-06-29 17:56 UTC
-url: https://manus.im/app/sessions/oePh5BFG4QC8bXVdUcq3J2
-project_id: none
-user_messages: 6
-assistant_messages: 9
-total_messages: 26
-processed: true
+date: "2026-06-29"
+importance: 3
+projects: ["Y-OS"]
+tags: ["SVG", "Logo", "Custom Font", "Font Design", "Graphic Design", "Design Tools"]
+summary: "Exploration d'outils pour générer le logo Y-OS en SVG et créer une police custom basée sur son style."
+url: "https://manus.im/app/task/oePh5BFG4QC8bXVdUcq3J2"
 ---
 
 # [✓] Y-OS Logo SVG Generation + Custom Font Exploration

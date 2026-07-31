@@ -1,13 +1,12 @@
 ---
-session_id: 22SSVyvuI5kQQAve6J5QKP
-title: "Security agent "
-date: 2026-02-14 14:00 UTC
-url: https://manus.im/app/sessions/22SSVyvuI5kQQAve6J5QKP
-project_id: none
-user_messages: 50
-assistant_messages: 96
-total_messages: 253
-processed: true
+id: 22SSVyvuI5kQQAve6J5QKP
+title: "Security agent"
+date: "2026-02-14"
+importance: 5
+projects: ["Y-OS"]
+tags: ["security", "access management", "OnePassword", "API keys", "credentials", "frequency management", "infrastructure"]
+summary: "Defining the Y-OS security agent's role in managing access frequencies, credentials, and API keys via OnePassword for critical services."
+url: "https://manus.im/app/task/22SSVyvuI5kQQAve6J5QKP"
 ---
 
 # Security agent 

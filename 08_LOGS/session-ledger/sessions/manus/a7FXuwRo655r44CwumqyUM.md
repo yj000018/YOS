@@ -1,13 +1,12 @@
 ---
-session_id: a7FXuwRo655r44CwumqyUM
+id: a7FXuwRo655r44CwumqyUM
 title: "[✓] Terminal command copy-paste assistance for Gemini chat"
-date: 2026-03-22 13:59 UTC
-url: https://manus.im/app/sessions/a7FXuwRo655r44CwumqyUM
-project_id: none
-user_messages: 1
-assistant_messages: 3
-total_messages: 6
-processed: true
+date: "2026-03-22"
+importance: 3
+projects: []
+tags: ["macOS", "Terminal", "Scripting", "Tailscale", "Assistance", "Gemini"]
+summary: "Generated a macOS shell script to clean up Tailscale, assisting with commands from a Gemini chat."
+url: "https://manus.im/app/task/a7FXuwRo655r44CwumqyUM"
 ---
 
 # [✓] Terminal command copy-paste assistance for Gemini chat

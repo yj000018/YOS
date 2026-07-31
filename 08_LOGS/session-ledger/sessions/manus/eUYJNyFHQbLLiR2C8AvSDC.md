@@ -1,13 +1,12 @@
 ---
-session_id: eUYJNyFHQbLLiR2C8AvSDC
+id: eUYJNyFHQbLLiR2C8AvSDC
 title: "Testing and Using Raindrop Connector Features"
-date: 2026-07-28 06:21 UTC
-url: https://manus.im/app/sessions/eUYJNyFHQbLLiR2C8AvSDC
-project_id: imd9BRqHPV68nZkKkiUtWT
-user_messages: 39
-assistant_messages: 85
-total_messages: 195
-processed: true
+date: "2026-07-28"
+importance: 3
+projects: ["Y-OS", "Y World", "KERNEL", "Ledger", "Memory Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/eUYJNyFHQbLLiR2C8AvSDC"
 ---
 
 # Testing and Using Raindrop Connector Features

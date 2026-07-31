@@ -1,13 +1,12 @@
 ---
-session_id: FudLaWsGZDkzVlhQB9gjD4
+id: FudLaWsGZDkzVlhQB9gjD4
 title: "[✓] Personal Color Analysis Website with Custom Fashion Illustrations"
-date: 2026-01-01 18:02 UTC
-url: https://manus.im/app/sessions/FudLaWsGZDkzVlhQB9gjD4
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 14
-processed: true
+date: "2026-01-01"
+importance: 3
+projects: []
+tags: ["Personal Color Analysis", "Website Generation", "Fashion", "AI", "Image Analysis", "Custom Illustrations"]
+summary: "Creation of a personal color analysis website with custom fashion illustrations, detailed analysis, and recommendations."
+url: "https://manus.im/app/task/FudLaWsGZDkzVlhQB9gjD4"
 ---
 
 # [✓] Personal Color Analysis Website with Custom Fashion Illustrations

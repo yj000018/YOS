@@ -1,13 +1,12 @@
 ---
-session_id: W7fZWV0J8odEeegDnmodCh
+id: W7fZWV0J8odEeegDnmodCh
 title: "[✓] Testing HeyGen AI Avatar Video Generation with French Poetry"
-date: 2025-11-26 13:39 UTC
-url: https://manus.im/app/sessions/W7fZWV0J8odEeegDnmodCh
-project_id: none
-user_messages: 6
-assistant_messages: 19
-total_messages: 36
-processed: true
+date: "2025-11-26"
+importance: 2
+projects: ["Y-OS"]
+tags: ["HeyGen", "AI Avatar", "Video Generation", "French Poetry", "Testing", "Avatar"]
+summary: "Testing HeyGen AI for generating avatar videos to recite French poetry, focusing on selecting a female avatar."
+url: "https://manus.im/app/task/W7fZWV0J8odEeegDnmodCh"
 ---
 
 # [✓] Testing HeyGen AI Avatar Video Generation with French Poetry

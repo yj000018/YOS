@@ -1,13 +1,12 @@
 ---
-session_id: 97Ag6C55sbBoDZp5vKmEUA
+id: 97Ag6C55sbBoDZp5vKmEUA
 title: "How to Demo the /yos-cop Skill for Manus?"
-date: 2026-07-31
-url: https://manus.im/app/97Ag6C55sbBoDZp5vKmEUA
-source: manus_api_v2
-user_messages: 0
-assistant_messages: 0
-total_messages: 29
-corpus: missing_26
+date: "2026-07-31"
+importance: 3
+projects: ["Y-OS", "Manus"]
+tags: ["demo", "skill", "yos-cop", "Y-OS", "Manus"]
+summary: "Démonstration de la compétence /yos-cop pour la plateforme Manus."
+url: "https://manus.im/app/task/97Ag6C55sbBoDZp5vKmEUA"
 ---
 
 # How to Demo the /yos-cop Skill for Manus?

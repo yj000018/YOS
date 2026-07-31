@@ -1,13 +1,12 @@
 ---
-session_id: ioCQWM8EkX7cNs5WNUN1fR
+id: ioCQWM8EkX7cNs5WNUN1fR
 title: "[✓] Testing Playwright MCP Connector and Web Automation Features"
-date: 2025-12-29 04:40 UTC
-url: https://manus.im/app/sessions/ioCQWM8EkX7cNs5WNUN1fR
-project_id: none
-user_messages: 1
-assistant_messages: 5
-total_messages: 7
-processed: true
+date: "2025-12-29"
+importance: 2
+projects: ["MCP Connector"]
+tags: ["testing", "playwright", "web automation", "browser automation", "data extraction", "screenshots"]
+summary: "Testing Playwright MCP connector for web automation, demonstrating data extraction, navigation, and screenshot capabilities."
+url: "https://manus.im/app/task/ioCQWM8EkX7cNs5WNUN1fR"
 ---
 
 # [✓] Testing Playwright MCP Connector and Web Automation Features

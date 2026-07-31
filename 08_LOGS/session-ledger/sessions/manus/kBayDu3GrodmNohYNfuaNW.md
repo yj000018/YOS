@@ -1,13 +1,12 @@
 ---
-session_id: kBayDu3GrodmNohYNfuaNW
+id: kBayDu3GrodmNohYNfuaNW
 title: "[✓] Creation of bird ambiance meditation audio on slowing down"
-date: 2026-03-21 12:19 UTC
-url: https://manus.im/app/sessions/kBayDu3GrodmNohYNfuaNW
-project_id: none
-user_messages: 1
-assistant_messages: 8
-total_messages: 11
-processed: true
+date: "2026-03-21"
+importance: 3
+projects: []
+tags: ["meditation", "audio generation", "relaxation", "birds", "slow living"]
+summary: "Creation of a bird ambiance meditation audio focused on slowing down, relaxation, and letting go."
+url: "https://manus.im/app/task/kBayDu3GrodmNohYNfuaNW"
 ---
 
 # [✓] Creation of bird ambiance meditation audio on slowing down

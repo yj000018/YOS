@@ -1,13 +1,12 @@
 ---
-session_id: E4On9Cc51voDTaa5tuK5Cd
+id: E4On9Cc51voDTaa5tuK5Cd
 title: "[✓] Building yOS Voice Telegram Bot with Manus Integration"
-date: 2026-02-22 21:21 UTC
-url: https://manus.im/app/sessions/E4On9Cc51voDTaa5tuK5Cd
-project_id: none
-user_messages: 27
-assistant_messages: 50
-total_messages: 134
-processed: true
+date: "2026-02-22"
+importance: 3
+projects: ["Y-OS", "Telegram Interface", "Memory Pipeline", "Manus"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/E4On9Cc51voDTaa5tuK5Cd"
 ---
 
 # [✓] Building yOS Voice Telegram Bot with Manus Integration

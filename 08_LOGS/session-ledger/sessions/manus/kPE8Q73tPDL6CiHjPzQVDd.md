@@ -1,13 +1,12 @@
 ---
-session_id: kPE8Q73tPDL6CiHjPzQVDd
+id: kPE8Q73tPDL6CiHjPzQVDd
 title: "[✓] Memory Access Discovery - System Understanding vs Persistent Context"
-date: 2026-02-23 12:57 UTC
-url: https://manus.im/app/sessions/kPE8Q73tPDL6CiHjPzQVDd
-project_id: none
-user_messages: 3
-assistant_messages: 4
-total_messages: 15
-processed: true
+date: "2026-02-23"
+importance: 5
+projects: ["Y-OS", "Memory Pipeline"]
+tags: ["memory", "persistent context", "inter-session", "Notion", "authentication", "system understanding", "diagnostic"]
+summary: "Diagnostic et résolution des problèmes d'accès à la mémoire inter-session et de contexte persistant via Notion pour Y-OS."
+url: "https://manus.im/app/task/kPE8Q73tPDL6CiHjPzQVDd"
 ---
 
 # [✓] Memory Access Discovery - System Understanding vs Persistent Context

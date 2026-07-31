@@ -1,13 +1,12 @@
 ---
-session_id: qDA41r2E22chzn2dV42hpk
+id: qDA41r2E22chzn2dV42hpk
 title: "[✓] L'Aube d'une Nouvelle Humanité — Book Scaffold & Interactive Website"
-date: 2025-06-30 02:59 UTC
-url: https://manus.im/app/sessions/qDA41r2E22chzn2dV42hpk
-project_id: none
-user_messages: 12
-assistant_messages: 24
-total_messages: 159
-processed: true
+date: "2025-06-30"
+importance: 3
+projects: ["L'Aube d'une Nouvelle Humanité", "Interactive Website", "Y World", "YOUniverse"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/qDA41r2E22chzn2dV42hpk"
 ---
 
 # [✓] L'Aube d'une Nouvelle Humanité — Book Scaffold & Interactive Website

@@ -1,13 +1,12 @@
 ---
-session_id: np8E6Ws2QGBB6apicWiRjx
+id: np8E6Ws2QGBB6apicWiRjx
 title: "[✓] ChatGPT vs Manus: Value Proposition for Non-Technical Power Users"
-date: 2026-01-31 09:07 UTC
-url: https://manus.im/app/sessions/np8E6Ws2QGBB6apicWiRjx
-project_id: none
-user_messages: 1
-assistant_messages: 5
-total_messages: 11
-processed: true
+date: "2026-01-31"
+importance: 3
+projects: ["Y-OS", "Manus"]
+tags: ["ChatGPT", "Value Proposition", "Autonomous Agent", "Non-Technical Users", "Workflow Automation", "Memory"]
+summary: ""
+url: "https://manus.im/app/task/np8E6Ws2QGBB6apicWiRjx"
 ---
 
 # [✓] ChatGPT vs Manus: Value Proposition for Non-Technical Power Users

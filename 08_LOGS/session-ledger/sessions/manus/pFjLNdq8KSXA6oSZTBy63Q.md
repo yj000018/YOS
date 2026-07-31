@@ -1,13 +1,12 @@
 ---
-session_id: pFjLNdq8KSXA6oSZTBy63Q
+id: pFjLNdq8KSXA6oSZTBy63Q
 title: "[✓] pFjLNdq8KSXA6oSZTBy63Q"
-date: 2026-06-21 18:59 UTC
-url: https://manus.im/app/sessions/pFjLNdq8KSXA6oSZTBy63Q
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-21"
+importance: 3
+projects: ["Y World", "yOS", "YOUniverse", "EIA", "DOMUS", "GEN5"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/pFjLNdq8KSXA6oSZTBy63Q"
 ---
 
 # [✓] pFjLNdq8KSXA6oSZTBy63Q

@@ -1,13 +1,12 @@
 ---
-session_id: QfjsJkRSp7npwwFZYkXRM4
+id: QfjsJkRSp7npwwFZYkXRM4
 title: "[✓] GPT-Manus Command Bridge Setup for Relevance AI Integration"
-date: 2026-01-06 02:08 UTC
-url: https://manus.im/app/sessions/QfjsJkRSp7npwwFZYkXRM4
-project_id: 9GjP3A95mkVdcWbXKJmQQX
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-01-06"
+importance: 3
+projects: ["Y-OS", "Manus", "GPT-Manus", "Relevance AI Integration"]
+tags: ["GPT-Manus", "Command Bridge", "Relevance AI"]
+summary: ""
+url: "https://manus.im/app/task/QfjsJkRSp7npwwFZYkXRM4"
 ---
 
 # [✓] GPT-Manus Command Bridge Setup for Relevance AI Integration

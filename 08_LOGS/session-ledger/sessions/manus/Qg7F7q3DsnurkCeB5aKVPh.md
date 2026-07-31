@@ -1,13 +1,12 @@
 ---
-session_id: Qg7F7q3DsnurkCeB5aKVPh
+id: Qg7F7q3DsnurkCeB5aKVPh
 title: "[✓] Linear MCP Connector Testing and Capability Assessment"
-date: 2026-01-04 06:11 UTC
-url: https://manus.im/app/sessions/Qg7F7q3DsnurkCeB5aKVPh
-project_id: none
-user_messages: 1
-assistant_messages: 4
-total_messages: 7
-processed: true
+date: "2026-01-04"
+importance: 2
+projects: ["Y-OS"]
+tags: ["Linear", "connector", "testing", "MCP", "capabilities", "report"]
+summary: "Testing and assessing the capabilities of the Linear MCP connector, including data fetching and report generation."
+url: "https://manus.im/app/task/Qg7F7q3DsnurkCeB5aKVPh"
 ---
 
 # [✓] Linear MCP Connector Testing and Capability Assessment

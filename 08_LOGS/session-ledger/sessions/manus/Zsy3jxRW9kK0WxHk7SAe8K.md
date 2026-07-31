@@ -1,13 +1,12 @@
 ---
-session_id: Zsy3jxRW9kK0WxHk7SAe8K
+id: Zsy3jxRW9kK0WxHk7SAe8K
 title: "[✓] Real Estate Valuation Analysis - Divonne-les-Bains Property"
-date: 2025-07-27 09:38 UTC
-url: https://manus.im/app/sessions/Zsy3jxRW9kK0WxHk7SAe8K
-project_id: none
-user_messages: 22
-assistant_messages: 36
-total_messages: 167
-processed: true
+date: "2025-07-27"
+importance: 3
+projects: []
+tags: ["Real Estate", "Valuation", "Divonne-les-Bains", "Property Analysis", "Negotiation", "Renovation Costs"]
+summary: "Analyse détaillée de l'évaluation immobilière d'une propriété à Divonne-les-Bains, incluant contradictions et estimation finale."
+url: "https://manus.im/app/task/Zsy3jxRW9kK0WxHk7SAe8K"
 ---
 
 # [✓] Real Estate Valuation Analysis - Divonne-les-Bains Property

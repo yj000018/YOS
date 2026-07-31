@@ -1,13 +1,12 @@
 ---
-session_id: Wpy1JPtmQ0MzbZtVY6SDO1
+id: Wpy1JPtmQ0MzbZtVY6SDO1
 title: "[✓] Testing Remote MCP Connector and Capabilities Overview"
-date: 2026-03-31 21:16 UTC
-url: https://manus.im/app/sessions/Wpy1JPtmQ0MzbZtVY6SDO1
-project_id: none
-user_messages: 2
-assistant_messages: 3
-total_messages: 9
-processed: true
+date: "2026-03-31"
+importance: 3
+projects: ["Y-OS", "Remote MCP Connector", "MCP"]
+tags: ["Testing"]
+summary: ""
+url: "https://manus.im/app/task/Wpy1JPtmQ0MzbZtVY6SDO1"
 ---
 
 # [✓] Testing Remote MCP Connector and Capabilities Overview

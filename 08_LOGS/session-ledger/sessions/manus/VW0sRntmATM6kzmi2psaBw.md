@@ -1,13 +1,12 @@
 ---
-session_id: VW0sRntmATM6kzmi2psaBw
+id: VW0sRntmATM6kzmi2psaBw
 title: "[✓] Réservation séjour anniversaire Impérial Palace Annecy"
-date: 2026-01-02 14:33 UTC
-url: https://manus.im/app/sessions/VW0sRntmATM6kzmi2psaBw
-project_id: none
-user_messages: 18
-assistant_messages: 34
-total_messages: 96
-processed: true
+date: "2026-01-02"
+importance: 3
+projects: []
+tags: ["reservation", "travel", "personal", "hotel", "anniversary"]
+summary: ""
+url: "https://manus.im/app/task/VW0sRntmATM6kzmi2psaBw"
 ---
 
 # [✓] Réservation séjour anniversaire Impérial Palace Annecy

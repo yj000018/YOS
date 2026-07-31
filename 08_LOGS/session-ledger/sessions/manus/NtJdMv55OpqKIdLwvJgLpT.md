@@ -1,13 +1,12 @@
 ---
-session_id: NtJdMv55OpqKIdLwvJgLpT
+id: NtJdMv55OpqKIdLwvJgLpT
 title: "[✓] Build site EIA — Blog wall + Paywall spirituel sur Lovable"
-date: 2026-04-30 01:09 UTC
-url: https://manus.im/app/sessions/NtJdMv55OpqKIdLwvJgLpT
-project_id: none
-user_messages: 38
-assistant_messages: 64
-total_messages: 174
-processed: true
+date: "2026-04-30"
+importance: 3
+projects: ["EIA", "Lovable"]
+tags: ["site building", "paywall", "blog", "Lovable platform", "BYOK", "API integration", "OpenAI", "cost optimization", "subscription model"]
+summary: "Discussion on building the EIA site with a blog and spiritual paywall on Lovable, focusing on BYOK for unlimited API usage and cost."
+url: "https://manus.im/app/task/NtJdMv55OpqKIdLwvJgLpT"
 ---
 
 # [✓] Build site EIA — Blog wall + Paywall spirituel sur Lovable

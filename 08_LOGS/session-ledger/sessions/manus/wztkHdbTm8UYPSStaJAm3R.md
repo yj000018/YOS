@@ -1,13 +1,12 @@
 ---
-session_id: wztkHdbTm8UYPSStaJAm3R
+id: wztkHdbTm8UYPSStaJAm3R
 title: "[✓] YANTRA MVP Development: Comprehensive Social Marketing Automation System"
-date: 2026-03-07 00:21 UTC
-url: https://manus.im/app/sessions/wztkHdbTm8UYPSStaJAm3R
-project_id: none
-user_messages: 5
-assistant_messages: 12
-total_messages: 31
-processed: true
+date: "2026-03-07"
+importance: 3
+projects: ["YANTRA", "Y-OS", "YOUniverse"]
+tags: ["MVP"]
+summary: ""
+url: "https://manus.im/app/task/wztkHdbTm8UYPSStaJAm3R"
 ---
 
 # [✓] YANTRA MVP Development: Comprehensive Social Marketing Automation System

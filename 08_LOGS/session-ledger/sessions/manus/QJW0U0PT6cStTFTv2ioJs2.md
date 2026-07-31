@@ -1,13 +1,12 @@
 ---
-session_id: QJW0U0PT6cStTFTv2ioJs2
+id: QJW0U0PT6cStTFTv2ioJs2
 title: "Comment organiser et nettoyer ce disque efficacement?"
-date: 2026-07-05 10:54 UTC
-url: https://manus.im/app/sessions/QJW0U0PT6cStTFTv2ioJs2
-project_id: GeNvwGBvdyBGDN65g2zTEp
-user_messages: 24
-assistant_messages: 42
-total_messages: 100
-processed: true
+date: "2026-07-05"
+importance: 3
+projects: ["Y-OS"]
+tags: ["nettoyage", "organisation", "disque", "stockage", "doublons", "espace"]
+summary: ""
+url: "https://manus.im/app/task/QJW0U0PT6cStTFTv2ioJs2"
 ---
 
 # Comment organiser et nettoyer ce disque efficacement?

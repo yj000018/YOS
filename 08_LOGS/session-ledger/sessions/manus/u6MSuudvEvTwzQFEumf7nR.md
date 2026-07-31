@@ -1,13 +1,12 @@
 ---
-session_id: u6MSuudvEvTwzQFEumf7nR
+id: u6MSuudvEvTwzQFEumf7nR
 title: "[✓] How to Create a 3-Minute Video on Blue Cats"
-date: 2025-10-25 23:18 UTC
-url: https://manus.im/app/sessions/u6MSuudvEvTwzQFEumf7nR
-project_id: none
-user_messages: 1
-assistant_messages: 2
-total_messages: 4
-processed: true
+date: "2025-10-25"
+importance: 2
+projects: []
+tags: ["video generation", "creative content", "cats"]
+summary: "User requested a 3-minute video about blue cats; Manus confirmed generation of video clips."
+url: "https://manus.im/app/task/u6MSuudvEvTwzQFEumf7nR"
 ---
 
 # [✓] How to Create a 3-Minute Video on Blue Cats

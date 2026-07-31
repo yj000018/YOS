@@ -1,13 +1,12 @@
 ---
-session_id: oteQiU3FpUwpqBWQPwLu4e
+id: oteQiU3FpUwpqBWQPwLu4e
 title: "[✓] Samsung The Frame — Fixation murale ultra-plate avec tilt et swivel"
-date: 2026-05-10 07:31 UTC
-url: https://manus.im/app/sessions/oteQiU3FpUwpqBWQPwLu4e
-project_id: GeNvwGBvdyBGDN65g2zTEp
-user_messages: 23
-assistant_messages: 32
-total_messages: 99
-processed: true
+date: "2026-05-10"
+importance: 3
+projects: ["Samsung The Frame", "Petites Annonces"]
+tags: ["HARDWARE", "Samsung The Frame", "Fixation murale", "tilt"]
+summary: ""
+url: "https://manus.im/app/task/oteQiU3FpUwpqBWQPwLu4e"
 ---
 
 # [✓] Samsung The Frame — Fixation murale ultra-plate avec tilt et swivel

@@ -1,13 +1,12 @@
 ---
-session_id: f9RxRnk79D3Z18Sl9I90cO
+id: f9RxRnk79D3Z18Sl9I90cO
 title: "[✓] Miro MCP Connector — Live Test & Factsheet Creation (Y-OS)"
-date: 2026-06-16 11:26 UTC
-url: https://manus.im/app/sessions/f9RxRnk79D3Z18Sl9I90cO
-project_id: none
-user_messages: 2
-assistant_messages: 6
-total_messages: 12
-processed: true
+date: "2026-06-16"
+importance: 3
+projects: ["Y-OS"]
+tags: ["Miro", "MCP Connector", "Factsheet", "Tool Integration"]
+summary: ""
+url: "https://manus.im/app/task/f9RxRnk79D3Z18Sl9I90cO"
 ---
 
 # [✓] Miro MCP Connector — Live Test & Factsheet Creation (Y-OS)

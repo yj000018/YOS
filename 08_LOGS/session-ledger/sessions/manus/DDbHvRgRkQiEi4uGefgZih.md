@@ -1,13 +1,12 @@
 ---
-session_id: DDbHvRgRkQiEi4uGefgZih
+id: DDbHvRgRkQiEi4uGefgZih
 title: "[✓] Webapp Factory: Multi-layer Pipeline with Next.js, Sanity & v0"
-date: 2026-04-07 15:09 UTC
-url: https://manus.im/app/sessions/DDbHvRgRkQiEi4uGefgZih
-project_id: none
-user_messages: 24
-assistant_messages: 59
-total_messages: 125
-processed: true
+date: "2026-04-07"
+importance: 3
+projects: ["Y-OS", "YOUniverse", "Pulse", "Manus", "Notion Memory", "Mem0"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/DDbHvRgRkQiEi4uGefgZih"
 ---
 
 # [✓] Webapp Factory: Multi-layer Pipeline with Next.js, Sanity & v0

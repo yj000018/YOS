@@ -1,13 +1,12 @@
 ---
-session_id: cxVhUQ3Cu937dAwZd4Vyn5
+id: cxVhUQ3Cu937dAwZd4Vyn5
 title: "[✓] 7d LIFE Coaching App: From Presentation Request to Functional Beta"
-date: 2025-12-08 00:59 UTC
-url: https://manus.im/app/sessions/cxVhUQ3Cu937dAwZd4Vyn5
-project_id: none
-user_messages: 4
-assistant_messages: 7
-total_messages: 23
-processed: true
+date: "2025-12-08"
+importance: 3
+projects: ["7d LIFE App", "Daylog", "EYA", "Y-OS", "Integral Vision"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/cxVhUQ3Cu937dAwZd4Vyn5"
 ---
 
 # [✓] 7d LIFE Coaching App: From Presentation Request to Functional Beta

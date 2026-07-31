@@ -1,13 +1,12 @@
 ---
-session_id: sFS6j73tgStr66oeGLvkxR
+id: sFS6j73tgStr66oeGLvkxR
 title: "[✓] Testing Perplexity & Anthropic APIs + 12-Domain Future Framework Design"
-date: 2026-01-30 23:12 UTC
-url: https://manus.im/app/sessions/sFS6j73tgStr66oeGLvkxR
-project_id: none
-user_messages: 3
-assistant_messages: 6
-total_messages: 17
-processed: true
+date: "2026-01-30"
+importance: 3
+projects: ["Y-OS", "YOUniverse"]
+tags: ["API Testing", "AI", "Perplexity", "Anthropic", "Framework Design", "Conceptual Design"]
+summary: ""
+url: "https://manus.im/app/task/sFS6j73tgStr66oeGLvkxR"
 ---
 
 # [✓] Testing Perplexity & Anthropic APIs + 12-Domain Future Framework Design

@@ -1,13 +1,12 @@
 ---
-session_id: 46JsiUQwcZCv3KDBYSe48N
+id: 46JsiUQwcZCv3KDBYSe48N
 title: "[✓] Manus Enhancer — Tampermonkey Script + GitHub Setup + Task Audit"
-date: 2026-05-02 01:51 UTC
-url: https://manus.im/app/sessions/46JsiUQwcZCv3KDBYSe48N
-project_id: none
-user_messages: 12
-assistant_messages: 22
-total_messages: 54
-processed: true
+date: "2026-05-02"
+importance: 3
+projects: ["Manus Enhancer", "Y-OS", "K-Rules", "LLM Knowledge Distillation Pipeline"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/46JsiUQwcZCv3KDBYSe48N"
 ---
 
 # [✓] Manus Enhancer — Tampermonkey Script + GitHub Setup + Task Audit

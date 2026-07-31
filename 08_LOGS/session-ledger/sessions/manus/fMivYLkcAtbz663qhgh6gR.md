@@ -1,13 +1,12 @@
 ---
-session_id: fMivYLkcAtbz663qhgh6gR
+id: fMivYLkcAtbz663qhgh6gR
 title: "[✓] PEV — Private Equities Valuation App Build & Y World Inventory"
-date: 2026-05-15 02:36 UTC
-url: https://manus.im/app/sessions/fMivYLkcAtbz663qhgh6gR
-project_id: none
-user_messages: 3
-assistant_messages: 11
-total_messages: 22
-processed: true
+date: "2026-05-15"
+importance: 3
+projects: ["Private Equities Valuation App", "YOUniverse", "Y-OS", "Memory Pipeline", "Y-Composite Methodology"]
+tags: []
+summary: ""
+url: "https://manus.im/app/task/fMivYLkcAtbz663qhgh6gR"
 ---
 
 # [✓] PEV — Private Equities Valuation App Build & Y World Inventory

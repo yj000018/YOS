@@ -1,13 +1,12 @@
 ---
-session_id: bvaxSvcRrUPMPwiXumqVHL
+id: bvaxSvcRrUPMPwiXumqVHL
 title: "[✓] Senior Housing Website for Annecy Area with Services Directory"
-date: 2025-07-12 18:19 UTC
-url: https://manus.im/app/sessions/bvaxSvcRrUPMPwiXumqVHL
-project_id: none
-user_messages: 2
-assistant_messages: 5
-total_messages: 154
-processed: true
+date: "2025-07-12"
+importance: 3
+projects: []
+tags: ["web development", "bug fixing", "React", "JavaScript", "SPA", "routing", "security", "senior housing", "Annecy", "services directory", "deployment"]
+summary: "Correction de bugs (liens, JS, React, routing, sécurité) et déploiement d'un site web pour l'hébergement senior à Annecy."
+url: "https://manus.im/app/task/bvaxSvcRrUPMPwiXumqVHL"
 ---
 
 # [✓] Senior Housing Website for Annecy Area with Services Directory

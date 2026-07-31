@@ -1,11 +1,21 @@
 ---
-id: 73hnoBd0jBJzcAsbUJGuVW
+id: "73hnoBd0jBJzcAsbUJGuVW"
 title: "[✓] Instagram MCP Connector — Live Test & Capability Brief"
 date: "2026-05-04"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "Instagram MCP Connector"]
 tags: ["instagram", "connector", "mcp", "test", "live_data", "social_media", "analytics", "data_fetching"]
 summary: "Live test and capability brief of the Instagram MCP Connector, successfully fetching account info, posts, and insights."
+executive_summary: "The Instagram MCP Connector was successfully tested, confirming all 4 tools are operational and connected to the specified business account @yannick_jolliet. The session demonstrated its capabilities by fetching live account information, a list of 7 posts, and detailed insights for 2 specific posts."
+context_and_intent: "The user wanted to test the Instagram connector, see its features in action by fetching data, and receive a brief about its capabilities."
+what_was_done: "The assistant connected to the Instagram Business account @yannick_jolliet, confirmed the connector's live status and operational tools, and then performed live data fetches for account information, a list of 7 posts, and detailed insights for 2 specific posts to demonstrate its capabilities."
+outputs_produced: [{"description": "Confirmation that the Instagram MCP Connector is live and all 4 tools are operational, connected to @yannick_jolliet.", "name": "Connector Status Report", "type": "report"}, {"description": "Live fetched account information for @yannick_jolliet, including username, display name, followers, following, and total posts.", "name": "Account Info", "type": "data_table"}, {"description": "Live fetched list of 7 posts, including type, likes, comments, and date for each.", "name": "Post List", "type": "data_table"}, {"description": "Live fetched insights for 2 specific posts (Post #1 and Post #4), including reach, views, likes, comments, and shares.", "name": "Post Insights", "type": "data_table"}]
+key_decisions: []
+lessons_learned: {"discoveries": ["The Instagram MCP Connector can fetch detailed post insights including reach, views, likes, comments, and shares for individual posts."], "failed_or_suboptimal": [], "worked_well": ["The Instagram MCP Connector is live and all 4 of its tools are operational.", "The connector successfully connected to the specified Instagram Business account (@yannick_jolliet).", "The connector successfully fetched live account information (username, display name, followers, following, total posts).", "The connector successfully fetched a list of 7 posts with their type, likes, comments, and date.", "The connector successfully fetched detailed insights for 2 specific posts."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/73hnoBd0jBJzcAsbUJGuVW"
 ---
 

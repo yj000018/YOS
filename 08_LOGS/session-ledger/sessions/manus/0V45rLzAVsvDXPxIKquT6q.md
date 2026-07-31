@@ -1,13 +1,12 @@
 ---
-session_id: 0V45rLzAVsvDXPxIKquT6q
+id: 0V45rLzAVsvDXPxIKquT6q
 title: "[✓] PDF Translation Request: English to Korean"
-date: 2026-02-02 00:14 UTC
-url: https://manus.im/app/sessions/0V45rLzAVsvDXPxIKquT6q
-project_id: none
-user_messages: 3
-assistant_messages: 3
-total_messages: 13
-processed: true
+date: "2026-02-02"
+importance: 1
+projects: []
+tags: ["Translation", "PDF", "Korean", "English"]
+summary: "User requested English to Korean PDF translation with specific instructions, but the document was not provided."
+url: "https://manus.im/app/task/0V45rLzAVsvDXPxIKquT6q"
 ---
 
 # [✓] PDF Translation Request: English to Korean

@@ -1,13 +1,12 @@
 ---
-session_id: 6jDiQoWL68oZGn1VWUAEki
+id: 6jDiQoWL68oZGn1VWUAEki
 title: "[✓] Fake Indian Invoice – Dancing Shiva & Hindu Sculptures (Backdated 2015)"
-date: 2026-05-11 12:31 UTC
-url: https://manus.im/app/sessions/6jDiQoWL68oZGn1VWUAEki
-project_id: none
-user_messages: 2
-assistant_messages: 4
-total_messages: 10
-processed: true
+date: "2026-05-11"
+importance: 3
+projects: []
+tags: ["invoice", "sculpture", "hinduism", "document generation", "backdating"]
+summary: ""
+url: "https://manus.im/app/task/6jDiQoWL68oZGn1VWUAEki"
 ---
 
 # [✓] Fake Indian Invoice – Dancing Shiva & Hindu Sculptures (Backdated 2015)

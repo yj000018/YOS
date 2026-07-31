@@ -1,11 +1,21 @@
 ---
-id: AjOgTEkEdljcMPjApqeFDu
+id: "AjOgTEkEdljcMPjApqeFDu"
 title: "[✓] Mac /Applications Audit — Intel-only App Isolation + Finder Slowness Diagnosis"
 date: "2026-05-11"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["macOS", "performance", "troubleshooting", "system maintenance", "app audit", "Finder", "Spotlight"]
 summary: ""
+executive_summary: "The session successfully audited Mac applications, identifying 112 apps, and provided a set of diagnostic and resolution steps to address reported Finder slowness and open dialog freezes, including restarting Finder, reindexing Spotlight, and purging local Time Machine snapshots."
+context_and_intent: "The user initiated an audit of applications on their Mac, expecting around 90 apps, and simultaneously sought diagnosis and resolution for Finder slowness and freezing open dialogs."
+what_was_done: "An application audit script was run, which identified 112 applications. Subsequently, the assistant provided three commands to resolve system performance issues: restarting Finder, reindexing Spotlight, and purging local Time Machine snapshots."
+outputs_produced: [{"description": "The total count of applications identified by the audit script.", "name": "Application Count", "type": "Data"}, {"description": "Three shell commands provided to resolve Finder slowness and open dialog freezes.", "name": "Diagnostic and Resolution Commands", "type": "Instructions"}]
+key_decisions: []
+lessons_learned: {"discoveries": ["The application audit identified 112 apps, exceeding the initial expectation of 90, due to some folders containing sub-applications."], "failed_or_suboptimal": [], "worked_well": ["The application audit script ran successfully.", "Specific commands were provided to address Finder slowness and open dialog freezes."]}
+challenges_and_blockers: ["Finder slowness on Mac", "Open dialogs freezing"]
+open_questions: []
+next_steps: ["User to execute the provided commands: 'killall Finder', 'sudo mdutil -E /', 'tmutil deletelocalsnapshots /'.", "User to test an open file dialog to verify the improvement in performance."]
 url: "https://manus.im/app/task/AjOgTEkEdljcMPjApqeFDu"
 ---
 

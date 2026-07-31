@@ -1,11 +1,21 @@
 ---
-id: jieUoTvw2qbVWogvqft97e
+id: "jieUoTvw2qbVWogvqft97e"
 title: "[✓] Capture LeWeb Paris 2026 — Intégration GCal / Notion / HubSpot"
 date: "2026-05-14"
-importance: 3
+importance: "3"
+depth_score: "minor"
 projects: ["Y-OS"]
 tags: ["event capture", "integration", "Google Calendar", "Notion"]
 summary: ""
+executive_summary: "The AI successfully captured details for the 'LeWeb Paris 2026' conference, extracting structured information and generating a Google Calendar event for easy integration. The session title indicated a broader integration goal (Notion, HubSpot) which was not fully addressed in the initial response."
+context_and_intent: "The user's intent was to capture event details for the 'LeWeb Paris 2026' conference, specifically for integration with Google Calendar, Notion, and HubSpot. The AI focused on extracting event and contact information."
+what_was_done: "The AI processed the request to capture event details for 'LeWeb Paris 2026'. It extracted key information such as title, date, time, location, URL, speakers, and theme. Subsequently, it generated a Google Calendar event in .ics format and provided a direct link for adding the event to Google Calendar."
+outputs_produced: [{"description": "Extracted details for LeWeb Paris 2026 including title, date, time, location, URL, speakers, and theme.", "name": "Structured Event Data", "type": "Structured Data"}, {"description": "An .ics file for direct import into Google Calendar.", "name": "Google Calendar .ics file", "type": "Calendar Event File"}, {"description": "A URL to directly add the LeWeb Paris 2026 event to Google Calendar.", "name": "Google Calendar Direct Add Link", "type": "Calendar Integration Link"}]
+key_decisions: ["The AI decided to extract structured event data.", "The AI decided to generate Google Calendar outputs (.ics file and direct add link)."]
+lessons_learned: {"discoveries": ["The AI successfully identified and extracted all relevant event details from the input, including title, date, time, location, URL, speakers, and theme."], "failed_or_suboptimal": ["The initial response only provided Google Calendar outputs, not Notion or HubSpot integrations, despite these being mentioned in the session title. This suggests an incomplete fulfillment of the broader request."], "worked_well": ["Structured data extraction was accurate and comprehensive for the event details.", "Direct calendar integration via .ics file and a direct link worked effectively.", "The AI reported a high confidence score (98/100) for the capture."]}
+challenges_and_blockers: []
+open_questions: ["Why were Notion and HubSpot integrations not explicitly mentioned or generated in the first response, despite being in the session title?"]
+next_steps: ["The user would proceed with importing the event into Google Calendar.", "Further interaction would be needed to address Notion and HubSpot integrations."]
 url: "https://manus.im/app/task/jieUoTvw2qbVWogvqft97e"
 ---
 

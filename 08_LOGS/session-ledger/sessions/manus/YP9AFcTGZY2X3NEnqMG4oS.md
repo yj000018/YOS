@@ -1,11 +1,21 @@
 ---
-id: YP9AFcTGZY2X3NEnqMG4oS
+id: "YP9AFcTGZY2X3NEnqMG4oS"
 title: "[✓] Veille MCP Bimensuelle Juin 2026 — Activation Context7, Mem0, Supabase, Perplexity"
 date: "2026-06-15"
-importance: 3
+importance: "3"
+depth_score: "minor"
 projects: ["Y-OS", "Manus"]
 tags: ["MCP", "Veille", "Activation", "Installation", "Connectors", "Custom MCP"]
 summary: ""
+executive_summary: "The session provided clear instructions on how to install five non-native MCPs (Exa Search, Mesh, OrgX, WhisperGraph, DecisionNode) as Custom MCPs in Manus. The response detailed the installation method, specific commands (npx or Docker), and required API keys or accounts for each."
+context_and_intent: "The user wanted to understand how to activate or install specific MCPs: Exa Search, Mesh (Clay), OrgX, WhisperGraph, and DecisionNode, within the Manus platform."
+what_was_done: "The assistant clarified that the requested MCPs are not native to Manus and must be installed as Custom MCPs. It then provided a general method for adding Custom MCPs through Manus settings and a detailed table for each MCP, including its type, installation command (npx or Docker), and any necessary API keys or accounts."
+outputs_produced: [{"description": "A table detailing the installation method (Custom MCP), specific npx or Docker commands, and required API keys or accounts for Exa Search, Mesh (Clay), OrgX, WhisperGraph, and DecisionNode MCPs.", "name": "Custom MCP Installation Guide", "type": "Instructions/Documentation"}]
+key_decisions: []
+lessons_learned: {"discoveries": ["Exa Search, Mesh (Clay), OrgX, WhisperGraph, and DecisionNode are not native Manus MCPs.", "Custom MCPs can be installed via 'Manus → Settings → Connectors → + Add → Custom MCP'.", "Specific npx commands and API keys are required for most custom MCP installations, while WhisperGraph MCP is self-hosted via Docker."], "failed_or_suboptimal": [], "worked_well": ["The assistant provided a clear, structured response with a table format, making the installation instructions easy to follow.", "The response directly addressed the user's query by differentiating native vs. custom MCPs and providing detailed steps."]}
+challenges_and_blockers: ["The requested MCPs (Exa Search, Mesh, OrgX, WhisperGraph, DecisionNode) are not natively available in Manus and require custom installation."]
+open_questions: []
+next_steps: ["The user can proceed to install the specified Custom MCPs by following the provided instructions and commands."]
 url: "https://manus.im/app/task/YP9AFcTGZY2X3NEnqMG4oS"
 ---
 

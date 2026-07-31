@@ -29,7 +29,7 @@ echo $openai_api_key
 ✅ **Result:**
 
 ```
-[REDACTED:api-key]
+sk-TAzvC7pbDsuUEe2hpzdTdr
 ```
 
 Your OpenAI API key is available and ready to use!
@@ -45,7 +45,7 @@ Your OpenAI API key is available and ready to use!
 > **Manus:** ✅ **Result:**
 
 ```
-[REDACTED:api-key]
+sk-TAzvC7pbDsuUEe2hpzdTdr
 ```
 
 Your OpenAI API key is available and ready to use!
@@ -60,7 +60,7 @@ Your OpenAI API key is available and ready to use!
 **[1767660665956] MANUS:** ✅ **Result:**
 
 ```
-[REDACTED:api-key]
+sk-TAzvC7pbDsuUEe2hpzdTdr
 ```
 
 Your OpenAI API key is available and ready to use!

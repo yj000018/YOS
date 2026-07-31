@@ -157,7 +157,7 @@ Un utilisateur (`turbosmooth`) recommande fortement **Lichtfeld Studio nightly (
 Il te faut [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) installé. Si c'est déjà le cas :
 
 ```bash
-python train.py -s /Users/yannickjolliet/Downloads/360-3D --model_path [REDACTED:token]
+python train.py -s /Users/yannickjolliet/Downloads/360-3D --model_path /Users/yannickjolliet/Downloads/360-3D/output
 ```
 
 **Si tu n'as pas encore gaussian-splatting installé**, dis-le moi — l'installation sur Mac M-series est spécifique (pas de CUDA natif, il faut passer par une autre route).
@@ -345,7 +345,7 @@ yannickjolliet@MacBook-Air-5 ~ %
 C'est là qu'il faut installer. Dans le Terminal :
 
 ```bash
-/Applications/MetashapePro.app/Contents/Frameworks/Python.framework/Versions/3.12/bin/python3.12 -m pip install numpy opencv-python --target "[REDACTED:token] Support/Agisoft/Metashape Pro/user-packages-py312/lib/python3.12/site-packages"
+/Applications/MetashapePro.app/Contents/Frameworks/Python.framework/Versions/3.12/bin/python3.12 -m pip install numpy opencv-python --target "/Users/yannickjolliet/Library/Application Support/Agisoft/Metashape Pro/user-packages-py312/lib/python3.12/site-packages"
 ```
 **[1777827983453] USER:** import sys
 print(sys.path)
@@ -378,7 +378,7 @@ print(result.stdout)
 sys.path.insert(0, '/Users/yannickjolliet/Library/Python/3.12/lib/python/site-packages')
 import numpy
 print(numpy.__version__)
-[REDACTED:token]
+---------------------------------------------------------------------------
 ModuleNotFoundError                       Traceback (most recent call last)
 Cell In[1], line 3
       1 import sys

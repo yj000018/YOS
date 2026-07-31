@@ -359,7 +359,7 @@ df -h /
 **Si le disque est structurellement plein** (Mac Air 256GB souvent saturé), option alternative : télécharger le modèle Sharp sur un disque externe ou NAS, puis pointer `TORCH_HOME` dessus :
 
 ```bash
-export [REDACTED:token]
+export TORCH_HOME=/Volumes/MonDisque/torch_cache
 python3.11 main.py
 ```
 

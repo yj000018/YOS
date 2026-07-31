@@ -779,7 +779,7 @@ Corrections v6.2 : FileManager local (pas iCloud), notification d'erreur avant t
 
 **Priorité 2 — Documentation**
 - Page Scripts Y-OS mise à jour mais checkpoint non livré après refonte
-- Doc architecture `[REDACTED:credential]` poussée sur GitHub — à valider
+- Doc architecture `YOS-MEMORY-BRIDGE-ARCHITECTURE.md` poussée sur GitHub — à valider
 
 **Priorité 3 — Infrastructure**
 - Service Account 1P opérationnel → à documenter dans la doc architecture
@@ -823,7 +823,7 @@ Je commence par quoi : **parseur ChatGPT iOS** ou autre ?
 | **Base URL** | `https://my.1password.com` |
 | **Note / Description** | `1Password Service Account for Y-OS vault access via op CLI` |
 | **Secret name** | `OP_SERVICE_ACCOUNT_TOKEN` |
-| **Secret value** | `[REDACTED:1password-sat]
+| **Secret value** | `[REDACTED:1password_sat]...
 **[1772389966323] USER:** done, easy
 **[1772389944688] MANUS:** Dans l'interface Manus, clique sur ton avatar/profil en haut à droite → **Settings** → colonne gauche : **Personalization** → section **Connectors** ou **Integrations**.
 
@@ -903,12 +903,12 @@ stocke via Manus Custom API connector : sous OP_SERVICE_ACCOUNT_TOKEN ?? pas plu
 Un Service Account Token 1Password ressemble à ceci :
 
 ```
-[REDACTED:token]
+[REDACTED:1password_sat]
 ```
 
 C'est un JWT long encodé en base64 (commence par `ops_eyJ...`).
 
-Ce que tu m'as donné (`[REDACTED:credential]`) ressemble à une **Secret Key 1Password** (format compte), pas à un Service Account Token.
+Ce que tu m'as donné (`A3-QX3KKV-52VDEA-X6NEN-XFBT4-A5W2F-QRQ4B`) ressemble à une **Secret Key 1Password** (format compte), pas à un Service Account Token.
 
 **Pour créer le bon token :**
 
@@ -920,7 +920,7 @@ Ce que tu m'as donné (`[REDACTED:credential]`) ressemble à une **Secret Key 1P
 Le token que tu m'as donné est peut-être ta Secret Key de compte — ne pas partager celle-là, elle donne accès complet à ton compte.
 **[1772389057310] MANUS:** Token reçu — test d'accès en cours.
 **[1772389054254] USER:** ok
-service account ok 1P: [REDACTED:token]
+service account ok 1P: A3-QX3KKV-52VDEA-X6NEN-XFBT4-A5W2F-QRQ4B
 
 _[Truncated — 507 more messages]_
 

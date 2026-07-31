@@ -222,7 +222,7 @@ Mark uncertainty clearly. Do ...
 
 Sandbox reset absorbé proprement. Checkpoint `242d3f58` restauré, serveur redémarré, site fonctionnel. Navigation mobile optimisée (icône BookOpen), GTranslate actif (FR/IT/EN/DE).
 
-**Sur la question images PNG → WebP :** les URLs `[REDACTED:credential]` ont déjà `format,webp` dans les paramètres CDN — conversion automatique côté serveur. Seules les URLs `files.manuscdn.com` (esquisses aquarelle uploadées) restent en PNG natif.
+**Sur la question images PNG → WebP :** les URLs `private-us-east-1.manuscdn.com` ont déjà `format,webp` dans les paramètres CDN — conversion automatique côté serveur. Seules les URLs `files.manuscdn.com` (esquisses aquarelle uploadées) restent en PNG natif.
 
 **Veux-tu continuer avec :**
 1. Conversion manuelle des images `files.manuscdn.com` (esquisses) → WebP via S3
@@ -234,7 +234,7 @@ Sandbox reset absorbé proprement. Checkpoint `242d3f58` restauré, serveur red�
 60 références `.png` trouvées dans 11 fichiers. **Observation critique** : la majorité des URLs contiennent déjà `?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80` → **images déjà converties en WebP côté CDN**.
 
 **URLs avec conversion WebP automatique** (CDN Manus) :
-- `[REDACTED:credential]` → paramètre `format,webp` actif
+- `private-us-east-1.manuscdn.com` → paramètre `format,webp` actif
 - `files.manuscdn.com` → URLs sans conversion (vraies PNG)
 
 **Conclusion :** optimisation déjà appliquée pour images hébergées sur CDN Manus privé. Seules images `files.manuscdn.com` nécessitent conversion manuelle.
@@ -502,7 +502,7 @@ Je continue avec esquisses Eau/Feu maintenant ?
 - Tu upgrades Twilio quand tu veux activer notifications
 
 Je continue avec esquisses Eau/Feu maintenant ?
-**[1770828864936] MANUS:** Je vois maintenant ! Le **Primary token** est : `[REDACTED:credential]`
+**[1770828864936] MANUS:** Je vois maintenant ! Le **Primary token** est : `083ef6c77b23eff558bda4bdcf848d57`
 
 Mais l'authentification échoue toujours. Il y a 2 possibilités :
 
@@ -522,7 +522,7 @@ Vu que l'authentification bloque, je propose :
 4. 🔄 Revenir à Twilio plus tard quand compte vérifié
 
 Je continue autonome avec les esquisses maintenant ?
-**[1770828773992] MANUS:** Le Primary token visible (`[REDACTED:credential]`) n'est pas le bon. Il y a 2 possibilités :
+**[1770828773992] MANUS:** Le Primary token visible (`083ef6c77b23eff558bda4bdcf848d57`) n'est pas le bon. Il y a 2 possibilités :
 
 1. **Ce token est un Secondary token** (pas le Primary)
 2. **Le Primary token n'a pas été copié correctement**
@@ -534,12 +534,12 @@ Sur ton screenshot, je vois que le Primary token est masqué (•••••) e
 - Copie le token qui apparaît
 - Envoie-le moi
 
-Le Primary token devrait être différent du Secondary token (`[REDACTED:credential]` visible sur ton premier screenshot).
+Le Primary token devrait être différent du Secondary token (`eb71c86acee8a5911c8157be05796d4b` visible sur ton premier screenshot).
 **[1770828748992] MANUS:** Configuration Twilio WhatsApp avec sandbox pour tests.
 **[1770828703281] MANUS:** Parfait ! J'utilise le sandbox WhatsApp. Voici les 3 identifiants complets :
 
-✅ **Account SID** : `[REDACTED:twilio-sid]`
-✅ **Auth Token** : `[REDACTED:credential]`
+✅ **Account SID** : `[REDACTED:twilio_account_sid]`
+✅ **Auth Token** : `083ef6c77b23eff558bda4bdcf848d57`
 ✅ **WhatsApp Number** : `+14155238886` (sandbox)
 
 Je configure maintenant les secrets et teste la connexion...
@@ -586,8 +586,8 @@ Je recommande **B** pour avancer rapidement, tu pourras changer le numéro plus 
 **[1770828426491] USER:** +33648208582
 **[1770828363588] MANUS:** Parfait ! Maintenant j'ai les 2 identifiants :
 
-✅ **Account SID** : `[REDACTED:twilio-sid]`
-✅ **Auth Token** : `[REDACTED:credential]`
+✅ **Account SID** : `[REDACTED:twilio_account_sid]`
+✅ **Auth Token** : `083ef6c77b23eff558bda4bdcf848d57`
 
 **Dernière étape : Numéro WhatsApp**
 
@@ -609,7 +609,7 @@ Pour obtenir le numéro WhatsApp Twilio :
 
 **Live credentials (Production) :**
 
-1. **Account SID** : `[REDACTED:twilio-sid]`
+1. **Account SID** : `[REDACTED:twilio_account_sid]`
    
 2. **Auth token** : Clique sur l'icône "œil" 👁️ à côté de "Primary token" pour révéler le token complet (actuellement masqué par les points •••••)
 
@@ -620,7 +620,7 @@ Pour obtenir le numéro WhatsApp Twilio :
 **⚠️ Important :** 
 - N'utilise PAS les "Test credentials" (droite) pour production
 - Utilise les "Live credentials" (gauche)
-- Le Secondary token visible (`[REDACTED:credential]`) n'est PAS le Primary token
+- Le Secondary token visible (`eb71c86acee8a5911c8157be05796d4b`) n'est PAS le Primary token
 
 **Prochaine étape :** Clique sur l'œil 👁️ pour révéler le Primary token, puis je te guiderai pour le numéro WhatsApp.
 **[1770827862773] MANUS:** Je t'aide à obtenir les bons identifiants Twilio. Voici le guide pas à pas :

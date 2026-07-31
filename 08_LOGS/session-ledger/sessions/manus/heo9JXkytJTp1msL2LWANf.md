@@ -536,7 +536,7 @@ BRANCH:      arch/yos-architecture-bible-v0.1
 COMMIT:      ab8f9ff
 PR:          https://github.com/yj000018/yos-bus/pull/1
 REPORT:      outbox/general/branch-convergence-sprint0-report.md
-MISSING SOURCES: [REDACTED:token] branch, CasaTAO FSD docs
+MISSING SOURCES: yos/fcs-multi-llm-orchestration-protocol branch, CasaTAO FSD docs
 NEXT ACTION: Merge PR #1 → Ouvrir session ChatGPT "yOS Full Stack" avec le MCP
 ```
 

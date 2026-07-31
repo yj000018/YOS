@@ -162,7 +162,7 @@ Le problème visible dans le screenshot est un **cache HMR** — le site live ap
 **[1782421366057] MANUS:** CTAs mis à jour. Je mets aussi à jour le hero CTA "Contact" qui pointe vers une section supprimée, puis je vérifie la compilation et sauvegarde.
 **[1782421320541] MANUS:** Anchors EN mis à jour. Je fais pareil pour la version FR, puis je mets à jour le render des CTAs pour utiliser `<a href>` au lieu de `scrollTo`.
 **[1782421296786] MANUS:** Sections supprimées. Maintenant je mets à jour les CTAs "The Work" pour pointer vers les pages dédiées au lieu des anchors internes.
-**[1782421254487] MANUS:** Je supprime les sections yOS/Next [REDACTED:token] de la home et mets à jour les CTAs pour pointer vers les pages dédiées.
+**[1782421254487] MANUS:** Je supprime les sections yOS/Next Civ/HOPE/Integral/Architecture/About/Contact de la home et mets à jour les CTAs pour pointer vers les pages dédiées.
 **[1782421248613] USER:** A
 **[1782420456865] MANUS:** Je vois le problème complet : la home contient encore **toutes les sections complètes** (yOS avec 12 modules, Next Civ, HOPE, Integral) en anchor-scroll. C'est une page unique très longue qui duplique tout le contenu des pages dédiées.
 

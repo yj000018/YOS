@@ -803,13 +803,13 @@ sudo usermod -aG docker yannick
 echo "[4/5] cloudflared..."
 curl -L -o /tmp/cloudflared.deb https://g...
 **[1774155431686] MANUS:** Clé confirmée. Je prends le contrôle du N100.
-**[1774155427308] USER:** ssh-ed25519 [REDACTED:token] ubuntu@1e0e6654e335
+**[1774155427308] USER:** ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJBlysl9qaRZxDllswX9GmSpKlbn6zuy45V8S8Ev45wd ubuntu@1e0e6654e335
 **[1774155373880] MANUS:** La clé SSH n'est pas encore active sur le N100 — la commande `authorized_keys` a peut-être été exécutée dans une session différente ou le fichier n'a pas été sauvegardé.
 
 **Une dernière commande manuelle sur le N100** (depuis ton MBA via `ssh yannick@100.87.123.30`) :
 
 ```bash
-mkdir -p ~/.ssh && echo "ssh-ed25519 [REDACTED:token] ubuntu@1e0e6654e335" >> ~/.ssh/authorized_keys && chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys && cat ~/.ssh/authorized_keys
+mkdir -p ~/.ssh && echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJBlysl9qaRZxDllswX9GmSpKlbn6zuy45V8S8Ev45wd ubuntu@1e0e6654e335" >> ~/.ssh/authorized_keys && chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys && cat ~/.ssh/authorized_keys
 ```
 
 Colle-moi le résultat — dès que la clé est confirmée, je prends le contrôle total et tu ne touches plus rien.

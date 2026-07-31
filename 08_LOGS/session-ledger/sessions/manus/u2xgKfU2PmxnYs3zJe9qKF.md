@@ -386,7 +386,7 @@ Tu commandes l'embosseur, tu entres ton texte/logo au moment de la commande (cha
 **[1780097773082] MANUS:** Je regarde le produit pour te répondre précisément.
 **[1780097769468] USER:** donc ca moins bien?
 **[1780097766913] MANUS:** Je regarde ce produit.
-**[1780097762243] USER:** https://www.amazon.fr/Tampon-Personnalis%C3%A9-Gaufrage-Embosseur-Library/dp/B0F5MVHPYW/ref=sr_1_12?dib=[REDACTED:jwt]&dib_tag=se&keywords=nevaou%2Bembossing%2Bpersonnalis%C3%A9&qid=1780097295&sr=8-12&th=1
+**[1780097762243] USER:** https://www.amazon.fr/Tampon-Personnalis%C3%A9-Gaufrage-Embosseur-Library/dp/B0F5MVHPYW/ref=sr_1_12?dib=eyJ2IjoiMSJ9.0qeY7BkpPhe3nl9YNAFUzmt-ROckhFd3LRmFbq8k7mgVGmkFUyH3127k5lGPdnh_6FZR7h8cCx_4T0vDp8AEXBIcSqRSSU1QlD2S4e1-9UE0uuA4paIDHr2chDgxGkgtbu7t-u1mLEwtSDqceDVNwvUn_KuK_6N-BkqSFZV-TFJj6DMVwGvRykvHZtK34A7eOibhntLxfivRJCV4rFQVE1ckqCMfTqkS2SIA4rp9V09IlApv_7970rOvtH3wFPLqxVvmnwz4yizgBO850wsSTobEkV2S2SYF_iKJQSLojNc.HydqBVML_O1kEX5bO9gRe3SUtgyF1v0WaCL5AvqUPeE&dib_tag=se&keywords=nevaou%2Bembossing%2Bpersonnalis%C3%A9&qid=1780097295&sr=8-12&th=1
 **[1780097609736] MANUS:** **Top 3 embosseurs sur cette page — pour tes livres :**
 
 | # | Produit | Prix | Avis | Lien |

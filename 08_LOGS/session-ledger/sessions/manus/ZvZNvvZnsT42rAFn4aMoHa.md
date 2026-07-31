@@ -52,7 +52,7 @@ The script was successfully executed and ChatGPT returned a command to run the v
 {
   "action": "run_pipeline",
   "parameters": {
-    "pipeline_id": "[REDACTED:token]"
+    "pipeline_id": "manus_relevance_ai_integration_validation"
   },
   "reason": "To validate the current
 
@@ -115,7 +115,7 @@ The script was successfully executed and ChatGPT returned a command to run the v
 {
   "action": "run_pipeline",
   "parameters": {
-    "pipeline_id": "[REDACTED:token]"
+    "pipeline_id": "manus_relevance_ai_integration_validation"
   },
   "reason": "To validate the current...
 **[1767663954099] MANUS:** Script executed successfully! Now setting up the hourly cron job to run at the top of each hour...

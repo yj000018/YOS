@@ -1,11 +1,21 @@
 ---
-id: kPrbbK9RoZM9N2X1TfTjn9
+id: "kPrbbK9RoZM9N2X1TfTjn9"
 title: "[✓] RevenueCat MCP — Test Live & Production Factsheet Y-OS"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["RevenueCat", "Factsheet", "iOS", "IAP", "Integration", "Testing", "API", "Pricing"]
 summary: ""
+executive_summary: "A factsheet for the RevenueCat MCP iOS tool was created and published in Notion, detailing its capabilities, limits, access, and API entry points based on thorough testing."
+context_and_intent: "The intent was to create a comprehensive factsheet for a new iOS tool, RevenueCat MCP, following an existing metadata structure. The factsheet needed to detail the tool's capabilities, limitations, lessons learned, access methods, API entry points, technical possibilities (read/write), business features, and cost (free/paid). The goal was to provide a clear understanding of the tool's offerings based on hands-on testing."
+what_was_done: "The RevenueCat MCP iOS tool was thoroughly tested, including all accesses and API entry points. A factsheet was then created and published in Notion, summarizing the findings."
+outputs_produced: [{"description": "A comprehensive factsheet detailing the capabilities, limits, access, API entry points, technical possibilities, business features, and cost of the RevenueCat MCP iOS tool, published in Notion.", "name": "Factsheet for RevenueCat MCP", "type": "Document"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/kPrbbK9RoZM9N2X1TfTjn9"
 ---
 

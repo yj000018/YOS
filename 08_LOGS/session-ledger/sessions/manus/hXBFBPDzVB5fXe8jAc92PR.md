@@ -1,11 +1,21 @@
 ---
-id: hXBFBPDzVB5fXe8jAc92PR
+id: "hXBFBPDzVB5fXe8jAc92PR"
 title: "[✓] Ahrefs MCP Connector — Test Live & Factsheet Y-OS"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["Ahrefs", "MCP Connector", "Factsheet", "Notion", "API", "SEO", "Tool Assessment", "Documentation", "Live Test", "Content Strategy", "Brand Radar IA", "Audit automatisé"]
 summary: "Factsheet détaillée pour Ahrefs MCP Connector, incluant tests live, capacités techniques, cas d'usage business et limites, sur Notion."
+executive_summary: "The user requested a comprehensive factsheet for the Ahrefs MCP Connector, a new iOS tool, detailing its functionalities, limitations, access points, and business value, based on extensive testing. The assistant successfully generated and published the factsheet to Notion."
+context_and_intent: "The user requested a detailed factsheet for a new iOS tool, the Ahrefs MCP Connector. The factsheet needed to cover its capabilities, limits, lessons learned, access methods (technical and business-wise), and cost. The user emphasized that this particular tool had been thoroughly tested with all APIs and entry points, distinguishing it from previous instances where factsheets were based solely on online documentation. The factsheet was expected to adhere to an existing metadata structure."
+what_was_done: "The assistant created the requested factsheet for the Ahrefs MCP Connector and pushed it to Notion, providing a direct link to the document."
+outputs_produced: [{"description": "A detailed factsheet for the Ahrefs MCP Connector, covering its capabilities, limits, access, and business value, based on thorough testing.", "name": "Ahrefs MCP — Factsheet", "type": "Factsheet"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/hXBFBPDzVB5fXe8jAc92PR"
 ---
 

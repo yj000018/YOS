@@ -1,11 +1,21 @@
 ---
-id: WNvA8dDiCQDoNyXvayumt9
+id: "WNvA8dDiCQDoNyXvayumt9"
 title: "[✓] Veille MCP bimensuelle Y-OS : radar technologique et signaux émergents"
 date: "2026-03-15"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["veille", "MCP", "technologie", "radar technologique"]
 summary: ""
+executive_summary: "The session successfully conducted a bimonthly MCP watch for Y-OS, employing a structured 3-layer filtering logic to identify relevant and emerging technologies. The process culminated in the publication of a Notion page report."
+context_and_intent: "The intent was to perform a bimonthly MCP (Multi-Cloud Protocol/Platform) watch for Y-OS, specifically for the TECH-ARCHI agent, to identify technological radar and emerging signals."
+what_was_done: "A bimonthly MCP watch was performed for Y-OS (TECH-ARCHI agent) using specified sources (mcp.so, smithery.ai, github.com/punkpeye/awesome-mcp-servers, glama.ai/mcp/servers). A 3-layer filtering logic was applied: first for objective market traction, then for Y-OS specific relevance, and finally for identifying weak signals for future consideration. The results were compiled and published as a Notion page."
+outputs_produced: [{"description": "A published Notion page containing the MCP watch report.", "name": "RADAR-MCP — Rapport 15 Mars 2026 — Livré", "type": "Report"}]
+key_decisions: ["Implement a 3-layer filtering logic for the MCP watch.", "Layer 1 filtering based on objective traction: GitHub Stars (volume + 30-day growth), Smithery score/community upvotes, novelty (< 3 months + rapid momentum), and mentions in IA/dev communities (Reddit, HN, Twitter), keeping the top 20.", "Layer 2 filtering based on Y-OS relevance: alignment with active Y-OS agents (CORE, KMM, FIN, PROJ, CREA, TECH, COMM), existing stack (Notion ID 31435e21-8cf8-8136-83ba-e720d799b0b6), and elimination of functional duplicates, keeping 5-7.", "Layer 3 filtering for horizon opening: identify 2-3 MCPs from the initial top 20 that do not fit current Y-OS categories but represent emerging signals."]
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: ["The full criteria for 'COUCHE 3 — OUVERTURE D'HORIZON' (Horizon Opening) are incomplete, specifically what 'Mais représentent une n' refers to."]
+next_steps: []
 url: "https://manus.im/app/task/WNvA8dDiCQDoNyXvayumt9"
 ---
 

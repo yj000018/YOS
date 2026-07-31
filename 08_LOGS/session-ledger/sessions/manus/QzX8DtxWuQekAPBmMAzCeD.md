@@ -1,11 +1,21 @@
 ---
-id: QzX8DtxWuQekAPBmMAzCeD
+id: "QzX8DtxWuQekAPBmMAzCeD"
 title: "[✓] Army Monitor Telegram Setup + Formulaire VBS 33.001 Dommage CHF 200"
 date: "2026-05-04"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Telegram Interface"]
 tags: ["Telegram", "Army Monitor", "Formulaire", "VBS", "Dommage", "Profil", "Mem0", "Manus"]
 summary: ""
+executive_summary: "The session focused on optimizing the storage of contact profile information within Manus AI. The assistant clarified different internal storage mechanisms, highlighting 'Custom instructions' as the most effective for consistent data injection, after initially storing the data in the 'Agent about' field."
+context_and_intent: "The user aimed to store Yannick's profile details (address, phone number, AVS number, and damage specifics) and sought to understand the most efficient and integrated storage method within Manus AI, questioning the initial use of an external tool (Mem0)."
+what_was_done: "The assistant stored the profile information within the Manus agent's 'about' field. It then provided a detailed comparison of three Manus internal storage options: User Profile, Agent 'about', and Custom Instructions, explaining their respective data injection mechanisms and ideal use cases to address the user's query about optimal storage."
+outputs_produced: [{"description": "Profile details (address, phone number, AVS number, damage specifics) for Yannick, initially stored in the Manus agent's 'about' field.", "name": "Yannick's Profile Stored", "type": "Data Storage"}, {"description": "A detailed comparison table outlining Manus AI's User Profile, Agent 'about', and Custom Instructions storage options, explaining their injection mechanisms and ideal use cases.", "name": "Storage Mechanism Comparison", "type": "Documentation/Guidance"}]
+key_decisions: ["The assistant initially stored the profile in the 'Agent about' field.", "The assistant explicitly recommended 'Custom instructions' as the superior method for consistent data injection into all sessions."]
+lessons_learned: {"discoveries": ["Understanding the distinct behaviors and guarantees of Manus AI's internal storage options (User Profile, Agent 'about', Custom Instructions) regarding data injection into sessions."], "failed_or_suboptimal": ["Storing basic, frequently needed profile data in an external tool (Mem0) or the 'Agent about' field is less optimal than using 'Custom instructions' for consistent and guaranteed access across all sessions."], "worked_well": ["The assistant quickly processed the initial storage request.", "The assistant provided a clear, structured explanation and comparison of internal system functionalities for data storage."]}
+challenges_and_blockers: ["Identifying the most effective and integrated method to store basic profile information within Manus AI to ensure consistent access across sessions, avoiding external calls or suboptimal internal storage."]
+open_questions: []
+next_steps: ["The implied next step is for the user to move or store the profile information in the 'Custom instructions' section for optimal and consistent integration across sessions."]
 url: "https://manus.im/app/task/QzX8DtxWuQekAPBmMAzCeD"
 ---
 

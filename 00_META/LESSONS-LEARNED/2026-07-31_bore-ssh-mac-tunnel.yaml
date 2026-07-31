@@ -1,0 +1,144 @@
+---
+date: "2026-07-31"
+session: "ChatGPT bulk export pipeline"
+topic: "bore SSH tunnel — Mac access via bore.pub"
+author: "Y-OS Manus"
+status: "validated"
+---
+
+context: >
+  Session 2026-07-31 : relance du tunnel bore SSH pour accéder au Mac via bore.pub.
+  Objectif : extraire cookies Brave ChatGPT pour le bulk export 3067 conversations.
+  Problèmes rencontrés et solutions documentées.
+
+lessons:
+  - id: "LL-BORE-001"
+    title: "bore local 22 vs bore local 2222 — différence critique"
+    category: "infrastructure"
+    severity: "critical"
+    description: >
+      Deux configurations bore possibles sur le Mac :
+      - `bore local 22 --to bore.pub --port 22847` : forward direct SSH port 22
+      - `bore local 2222 --to bore.pub --port 22847` : forward via socat relay (port 2222)
+      Le LaunchAgent Y-OS utilise `bore local 2222` (socat relay).
+      Si Yannick relance manuellement avec `bore local 22`, le SSH ne répond pas
+      depuis réseau externe (macOS sshd refuse les connexions via bore.pub:22).
+    action: >
+      Toujours utiliser `bore local 2222 --to bore.pub --port 22847` pour le tunnel SSH.
+      Vérifier avec `nc -zv bore.pub 22847` puis tester SSH banner.
+    tags: ["bore", "ssh", "mac", "tunnel", "socat"]
+
+  - id: "LL-BORE-002"
+    title: "bore port already in use — changer de port"
+    category: "infrastructure"
+    severity: "high"
+    description: >
+      Si bore.pub retourne "server error: port already in use" sur le port 22847,
+      c'est qu'un ancien processus bore tient encore le port côté serveur bore.pub
+      même après pkill local. Le port reste réservé ~60s sur bore.pub.
+    action: >
+      Utiliser un port alternatif : `bore local 2222 --to bore.pub --port 22848`
+      (ou 22849, 22850...). Mettre à jour ~/.ssh/config Port en conséquence.
+    tags: ["bore", "port", "conflict"]
+
+  - id: "LL-BORE-003"
+    title: "LaunchAgent bore — Load failed I/O error"
+    category: "infrastructure"
+    severity: "medium"
+    description: >
+      `launchctl load ~/Library/LaunchAgents/com.yos.bore-tunnel.plist` peut retourner
+      "Load failed: 5: Input/output error" si le plist est corrompu ou si le processus
+      est déjà chargé dans un état invalide.
+    action: >
+      Fallback : lancer bore manuellement dans Terminal.
+      Pour diagnostiquer : `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.yos.bore-tunnel.plist`
+      Pour forcer : `launchctl kickstart -k gui/$(id -u)/com.yos.bore-tunnel`
+    tags: ["launchagent", "bore", "macos", "plist"]
+
+  - id: "LL-BORE-004"
+    title: "socat port 2222 — Address already in use"
+    category: "infrastructure"
+    severity: "low"
+    description: >
+      Si `socat TCP-LISTEN:2222,fork TCP:localhost:22 &` retourne "Address already in use",
+      socat tourne déjà sur le port 2222. C'est normal et attendu — le relay est actif.
+    action: >
+      Ne pas relancer socat. Le relay est déjà en place. Vérifier avec `lsof -i :2222`.
+    tags: ["socat", "port", "relay"]
+
+  - id: "LL-BORE-005"
+    title: "SSH depuis sandbox — clé manus_mac non persistante"
+    category: "infrastructure"
+    severity: "high"
+    description: >
+      La clé SSH `~/.ssh/manus_mac` est dans le sandbox éphémère Manus.
+      Elle est perdue à chaque nouvelle session Manus.
+      La clé publique correspondante est dans `~/.ssh/authorized_keys` sur le Mac.
+    action: >
+      En début de session : vérifier `ls ~/.ssh/manus_mac`.
+      Si absente : générer `ssh-keygen -t ed25519 -f ~/.ssh/manus_mac -N ""` puis
+      ajouter la clé publique via sshpass : 
+      `sshpass -p '    ' ssh-copy-id -i ~/.ssh/manus_mac.pub -p 22847 yannickjolliet@bore.pub`
+      Stocker la clé privée dans 1Password pour persistance cross-session.
+    tags: ["ssh", "key", "ephemeral", "manus_mac"]
+
+  - id: "LL-BORE-006"
+    title: "SSH instable via bore — première connexion OK, suivantes échouent"
+    category: "infrastructure"
+    severity: "high"
+    description: >
+      Pattern observé : la première connexion SSH via bore.pub réussit (banner SSH reçu,
+      authentification OK), mais les connexions suivantes dans la même session échouent
+      avec timeout ou kex_exchange_identification error.
+      Cause probable : sshd MaxStartups ou rate limiting macOS.
+    action: >
+      Utiliser `-o ControlMaster=auto -o ControlPath=/tmp/ssh_manus_%h_%p_%r -o ControlPersist=60`
+      pour réutiliser la même connexion SSH sans en ouvrir de nouvelles.
+      Alternative : exécuter toutes les commandes en une seule session SSH.
+    tags: ["ssh", "unstable", "bore", "controlmaster"]
+
+  - id: "LL-BORE-007"
+    title: "Règle Y-OS — LL créées ET pushées systématiquement"
+    category: "process"
+    severity: "critical"
+    description: >
+      Toute leçon technique apprise doit être :
+      1. Créée dans `00_META/LESSONS-LEARNED/<date>_<topic>.yaml`
+      2. Pushée dans GitHub yj000018/YOS immédiatement
+      3. Lue en début de session suivante (M1 + lecture LL registry)
+      Sans push, la LL est perdue à la fin de la session Manus.
+    action: >
+      Systématiser : après chaque pipeline validé ou problème résolu → créer LL YAML → push GitHub.
+      Lire `00_META/LESSONS-LEARNED/README.md` en début de session pour charger les LLs existantes.
+    tags: ["yos", "process", "ll", "github", "memory"]
+
+scripts:
+  - path: "/home/ubuntu/yos/tools/refresh_chatgpt_cookies.sh"
+    description: "Pipeline complet 1 commande : cookies Brave → Bearer token → bulk export"
+    location: "Cloud Computer"
+  - path: "/home/ubuntu/yos/ledger/ingest_chatgpt_cookies.py"
+    description: "ChatGPT API ingestion — 3067 conversations, pagination complète"
+    location: "Cloud Computer"
+
+ssh_config: |
+  Host yos-mac-air
+    HostName bore.pub
+    Port 22847
+    User yannickjolliet
+    IdentityFile ~/.ssh/manus_mac
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ControlMaster auto
+    ControlPath /tmp/ssh_manus_%h_%p_%r
+    ControlPersist 60
+
+outcome:
+  bore_port_used: 22847
+  ssh_working: true
+  cookies_extracted: 25
+  conversations_exported: 3067
+  fact_sheets_pushed: 3067
+  github_commit: "02aed53"
+  date: "2026-07-31"

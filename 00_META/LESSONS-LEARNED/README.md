@@ -28,6 +28,7 @@ memory.search("chatgpt pipeline", user_id="yannick", limit=5)
 | File | Date | Domain | Key topics |
 |---|---|---|---|
 | [2026-07-30_chatgpt-pipeline.yaml](2026-07-30_chatgpt-pipeline.yaml) | 2026-07-30 | ChatGPT API · macOS · SSH | Brave cookies, Keychain, AES decrypt, Cloudflare bypass |
+| [2026-07-31_bore-ssh-mac-tunnel.yaml](2026-07-31_bore-ssh-mac-tunnel.yaml) | 2026-07-31 | Infrastructure · SSH · bore | bore local 22 vs 2222, port conflicts, LaunchAgent, ControlMaster, LL push rule |
 
 ---
 

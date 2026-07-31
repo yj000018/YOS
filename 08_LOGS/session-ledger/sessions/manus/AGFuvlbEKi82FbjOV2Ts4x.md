@@ -1,11 +1,21 @@
 ---
-id: AGFuvlbEKi82FbjOV2Ts4x
+id: "AGFuvlbEKi82FbjOV2Ts4x"
 title: "[✓] Y-Downloads Shelf — macOS SwiftUI Menu-Bar App for Recent Downloads"
 date: "2026-06-30"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: ["Y-Downloads Shelf"]
 tags: ["macOS", "SwiftUI", "Menu Bar App", "Downloads", "File Management", "Productivity", "Utility"]
 summary: ""
+executive_summary: "A macOS SwiftUI menu-bar app, 'Y-Downloads Shelf', was developed to streamline the management of recent downloads. It monitors the `~/Downloads` folder, displays the 15 most recent completed files, and offers quick actions such as drag-and-drop, copy path, open, reveal in Finder, and Quick Look. The project successfully delivered a functional application, comprising 902 lines of Swift code across 11 source files."
+context_and_intent: "The intent was to create a minimal macOS SwiftUI menu-bar/floating-panel app called 'Y-Downloads Shelf' to reduce friction when managing recently downloaded files across various applications."
+what_was_done: "A SwiftUI app was developed with an NSPanel floating window, accessible via a menu bar and global hotkey. It monitors `~/Downloads` for the 15 most recent completed files, ignoring temporary download files. Each file row supports drag-and-drop, copying file URL/path, opening, revealing in Finder, and Quick Look. The app uses `FileManager` for scanning, `NSPasteboard` for copying, and includes a lightweight refresh mechanism (every 2 seconds or file system watcher). Simple preferences for the number of files shown and ignored extensions are persisted."
+outputs_produced: [{"description": "A functional macOS application delivered with 902 lines of Swift code across 11 source files, meeting the specified requirements for monitoring downloads and providing quick actions.", "name": "Y-Downloads Shelf", "type": "macOS SwiftUI Menu-Bar App"}]
+key_decisions: ["Utilize SwiftUI for the application framework.", "Implement an NSPanel for the floating window, with an optional always-on-top feature.", "Monitor `~/Downloads` for recent files.", "Filter out partial/temporary download files (.download, .crdownload, .part, .tmp).", "Provide quick actions for each file: drag to another app, copy file URL/path, open file, reveal in Finder, Quick Look preview.", "Use `FileManager` for scanning and `NSPasteboard` for clipboard operations.", "Include persistence for user preferences like the number of files shown and ignored extensions."]
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": ["The project successfully delivered a functional macOS SwiftUI application as requested, including core features and architectural considerations."]}
+challenges_and_blockers: ["Reducing friction when moving recently downloaded files between Finder, ChatGPT, Manus, browser, and automation tools."]
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/AGFuvlbEKi82FbjOV2Ts4x"
 ---
 

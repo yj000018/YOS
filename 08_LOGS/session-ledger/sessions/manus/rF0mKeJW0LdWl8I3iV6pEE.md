@@ -1,11 +1,21 @@
 ---
-id: rF0mKeJW0LdWl8I3iV6pEE
+id: "rF0mKeJW0LdWl8I3iV6pEE"
 title: "[✓] HARPA AI Extension Integration with yOS"
 date: "2026-03-01"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "HARPA AI Integration"]
 tags: ["HARPA AI", "Integration", "Chrome Extension", "API", "Webhook", "Troubleshooting", "AI", "n8n", "Manus", "Architecture"]
 summary: "Integration of HARPA AI Chrome extension with yOS, diagnosing webhook callback issues due to HARPA's active Chrome requirement."
+executive_summary: "The integration of HARPA AI with yOS was partially successful. While the HARPA API accepted requests and recognized the node, the critical webhook callback failed to arrive. The root cause was identified as HARPA's architecture requiring an active and visible Chrome browser on the host machine, making it a relay to the browser rather than a standalone cloud service. This implies specific operational prerequisites for yOS to leverage HARPA."
+context_and_intent: "The session aimed to integrate the HARPA AI Extension with yOS, specifically testing the HARPA API and webhook functionality."
+what_was_done: "The session involved testing the HARPA API's ability to accept requests and recognize a specific node (`2pft`), as well as verifying the functionality of a local webhook server. The primary goal was to determine why the webhook callback was not being received after a HARPA request was queued."
+outputs_produced: [{"description": "An honest assessment of what worked and what blocked the integration.", "name": "Bilan honnête", "type": "Diagnostic Report"}, {"description": "A final diagnosis of the HARPA GRID architecture and recommendations for yOS usage.", "name": "Diagnostic final + Reco", "type": "Recommendation Report"}]
+key_decisions: []
+lessons_learned: {"discoveries": ["HARPA GRID architecture is designed to function with Chrome active and visible on the host machine.", "HARPA is a relay to the browser, not a standalone cloud service."], "failed_or_suboptimal": ["The webhook callback from HARPA did not arrive.", "The HARPA Chrome extension on the Mac was not executing, likely due to the HARPA page not being active or the node awaiting an open page."], "worked_well": ["The HARPA API successfully accepted requests (status: ok, queued: true, requestId generated).", "Node `2pft` was recognized by the HARPA API.", "The local webhook server was operational."]}
+challenges_and_blockers: ["The webhook callback from HARPA is not arriving.", "HARPA AI extension requires Chrome to be active and visible on the host machine to execute nodes, it is not a standalone cloud service."]
+open_questions: ["Which integration option (A, B, or C) is best for yOS given HARPA's operational constraints?"]
+next_steps: ["For yOS, consider two main usages: Manus triggering HARPA while the user works (requiring Chrome + HARPA active on Mac) or n8n triggering HARPA in the background (also requiring Chrome + HARPA active on Mac)."]
 url: "https://manus.im/app/task/rF0mKeJW0LdWl8I3iV6pEE"
 ---
 

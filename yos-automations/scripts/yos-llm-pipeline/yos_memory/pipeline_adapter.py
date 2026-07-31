@@ -112,20 +112,18 @@ class PipelineAdapter:
             metadata["project_ids"] = [project] if project else []
             metadata["pipeline"] = "llm_distillation_pipeline"
 
-            temp_content = write_markdown(metadata, body)
-            content_hash = generate_content_hash(temp_content)
-
-            # Dedup check
-            if self.dedup.is_processed(global_uid, content_hash):
+            # Dedup check using stable body_hash (excludes frontmatter)
+            body_hash = generate_content_hash(body)
+            if self.dedup.is_processed(global_uid, body_hash):
                 log.debug(f"Skipping duplicate: {global_uid}")
                 return None
 
-            metadata["content_hash"] = content_hash
+            metadata["content_hash"] = body_hash
             validate_frontmatter(metadata)
             final_content = write_markdown(metadata, body)
 
             _, final_hash = write_canonical_file(abs_path, final_content)
-            self.dedup.update_git_state(global_uid, final_hash, str(rel_path))
+            self.dedup.update_git_state(global_uid, body_hash, str(rel_path))
             self.ledger.update_session(global_uid, {
                 "Title": title,
                 "Source": "Manus",
@@ -199,17 +197,16 @@ class PipelineAdapter:
                 metadata["legacy_notion_url"] = notion_url
 
             body = f"# {canonical_key}\n\n{content}"
-            temp_content = write_markdown(metadata, body)
-            content_hash = generate_content_hash(temp_content)
-
-            if self.dedup.is_processed(global_uid, content_hash):
+            # Dedup check using stable body_hash
+            body_hash = generate_content_hash(body)
+            if self.dedup.is_processed(global_uid, body_hash):
                 return None
 
-            metadata["content_hash"] = content_hash
+            metadata["content_hash"] = body_hash
             validate_frontmatter(metadata)
             final_content = write_markdown(metadata, body)
             _, final_hash = write_canonical_file(abs_path, final_content)
-            self.dedup.update_git_state(global_uid, final_hash, str(rel_path))
+            self.dedup.update_git_state(global_uid, body_hash, str(rel_path))
 
             log.debug(f"  [adapter] Knowledge mirrored: {canonical_key}")
             return str(rel_path)

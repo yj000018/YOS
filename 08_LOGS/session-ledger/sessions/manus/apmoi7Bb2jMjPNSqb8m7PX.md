@@ -1,11 +1,21 @@
 ---
-id: apmoi7Bb2jMjPNSqb8m7PX
+id: "apmoi7Bb2jMjPNSqb8m7PX"
 title: "[✓] Canonical Memory Management: Inter-Session Memory and Task Organization"
 date: "2026-02-25"
-importance: 5
+importance: "5"
+depth_score: "minor"
 projects: ["Y-OS", "Memory Pipeline"]
 tags: ["memory management", "API key", "configuration", "sandbox", "credentials", "task organization", "session management", "infrastructure"]
 summary: "Discussed canonical Manus API key management, inter-session memory, and task organization, including renaming sessions."
+executive_summary: "The user asked for guidance on API key placement. The assistant provided instructions and offered to manage the key injection and rename related sessions. However, the session renaming task was not completed, leading to user follow-up and a reported blocker related to 'session merge creation'."
+context_and_intent: "The user's initial intent was to understand where to place a new Manus API key. The conversation evolved to include the assistant's offer to inject the key and rename 12 sessions, followed by user follow-up on the status of the renaming."
+what_was_done: "The user initiated a query about API key placement. The assistant responded with two recommended storage locations and offered to manage the key injection and rename 12 sessions. The user subsequently followed up, indicating that the sessions had not been renamed, citing 'création session de fusion' as a potential reason."
+outputs_produced: [{"description": "Instructions for storing the Manus API key in a local sandbox (`.bashrc`) and in Notion.", "name": "API Key Storage Instructions", "type": "Documentation/Guidance"}, {"description": "An offer from the assistant to inject the API key and rename 12 sessions.", "name": "Service Offer", "type": "Action Proposal"}]
+key_decisions: ["Assistant recommended two canonical locations for API key storage: local sandbox and Notion.", "Assistant offered to handle API key injection and 12 session renamings."]
+lessons_learned: {"discoveries": ["The user discovered that the promised session renaming had not occurred."], "failed_or_suboptimal": ["The session renaming process failed or was not completed as promised, leading to user dissatisfaction and follow-up."], "worked_well": ["The assistant provided clear, canonical instructions for API key storage."]}
+challenges_and_blockers: ["Sessions were not renamed as expected, despite prior confirmation.", "The reason for the renaming failure is cited as 'création session de fusion' (session merge creation)."]
+open_questions: ["What is the exact cause of the 'création session de fusion' that blocked the renaming?", "What is the current status of the 12 sessions that were supposed to be renamed?", "How can the session renaming be successfully completed?"]
+next_steps: ["Investigate and resolve why the sessions were not renamed.", "Complete the session renaming task.", "Provide a clear status update to the user regarding the renaming."]
 url: "https://manus.im/app/task/apmoi7Bb2jMjPNSqb8m7PX"
 ---
 

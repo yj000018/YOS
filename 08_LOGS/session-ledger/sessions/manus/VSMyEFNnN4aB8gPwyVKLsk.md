@@ -1,11 +1,21 @@
 ---
-id: VSMyEFNnN4aB8gPwyVKLsk
+id: "VSMyEFNnN4aB8gPwyVKLsk"
 title: "Différences entre Claude et Cloud Work pour iOS"
 date: "2026-02-23"
-importance: 3
+importance: "3"
+depth_score: "minor"
 projects: ["Y-OS", "Manus", "Manus Browser", "MCP Playwright"]
 tags: []
 summary: ""
+executive_summary: "The user inquired about programmatic control over Claude's and OpenAI's web browsing tools, specifically regarding API availability. The assistant confirmed that no direct API exists for web actions with these tools, prompting further exploration of alternative integration strategies like Playwright or JSON-based instructions."
+context_and_intent: "The user sought to understand how to programmatically leverage the web browsing capabilities of Claude (Cloud computer use) and OpenAI (OVI browser) from Manus. They questioned the existence of direct APIs and proposed alternative methods like using shared JSON files for instructions or relying on Playwright, aiming to determine the most effective and least complex approach."
+what_was_done: "The assistant provided a direct response confirming that Claude Computer Use and OpenAI Browser do not offer APIs for performing web actions, addressing the user's primary blocker."
+outputs_produced: [{"description": "Confirmation that Claude Computer Use and OpenAI Browser do not have direct APIs for web actions.", "name": "API Availability Confirmation", "type": "Information"}]
+key_decisions: ["It was confirmed that direct API integration for web actions with Claude Computer Use and OpenAI Browser is not possible."]
+lessons_learned: {"discoveries": ["Claude Computer Use and OpenAI Browser do not offer direct APIs for web actions."], "failed_or_suboptimal": ["The initial assumption of direct API access to Claude's and OpenAI's web browsing tools was found to be incorrect."], "worked_well": []}
+challenges_and_blockers: ["Lack of direct API for programmatic interaction with Claude's 'Cloud computer use' and OpenAI's 'OVI browser' for web actions."]
+open_questions: ["Is Playwright (integrated into Manus Browser or MCP Playwright) sufficient to achieve 90% of the desired web automation power, negating the need for other web browser agents?", "If Claude or OpenAI's web browsing capabilities are valuable, how can Manus interact with them effectively without a direct API?", "What is the best approach for implementing a system where users load a JSON file containing a series of actions for 'Cloud computer use' or 'OVI browser'?"]
+next_steps: ["Explore the viability and sufficiency of using Playwright (integrated into Manus Browser or MCP Playwright) as an alternative for web automation.", "Investigate methods for passing instructions to these tools, such as via shared JSON files, if direct API interaction is not possible but their power is still desired."]
 url: "https://manus.im/app/task/VSMyEFNnN4aB8gPwyVKLsk"
 ---
 

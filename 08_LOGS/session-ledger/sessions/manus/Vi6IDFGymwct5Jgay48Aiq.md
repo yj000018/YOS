@@ -1,11 +1,21 @@
 ---
-id: Vi6IDFGymwct5Jgay48Aiq
+id: "Vi6IDFGymwct5Jgay48Aiq"
 title: "[✓] Weekly capabilities update: new media generation and system integrations"
 date: "2026-04-06"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["capabilities_update", "media_generation", "music_generation"]
 summary: ""
+executive_summary: "Manus AI provided an update on its new capabilities, including music generation from lyrics and style prompts, custom voice design from text descriptions, video generation from an image and prompt, and image-based slide presentations. These updates highlight significant advancements in media generation and creative AI functionalities."
+context_and_intent: "The user asked Manus AI in French if there were any new functionalities or capabilities introduced this week that were not available before."
+what_was_done: "Manus AI responded to the user's query by listing and describing four new or enhanced capabilities: music generation via the `minimax` MCP, custom voice design using `voice_design`, video generation from an image and prompt, and image-based slide presentations."
+outputs_produced: [{"description": "Compose music from lyrics and a style prompt, up to 1 minute, exportable as MP3/WAV. This is a complete sound creation capability.", "name": "Music Generation (MiniMax)", "type": "New capability"}, {"description": "Generate a custom voice from a textual description (`voice_design`), with a preview. This is about creating a vocal identity.", "name": "Custom Voice Design (MiniMax)", "type": "New capability"}, {"description": "Video generation (`generate_video`) with `first_frame_image` support, meaning video from an image + prompt. It's asynchronous with status polling.", "name": "Video Generation (MiniMax)", "type": "New capability"}, {"description": "Presentations can now be handled in image mode.", "name": "Image-based Slides (Nano Banana)", "type": "New capability"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": ["The assistant clearly articulated new capabilities, distinguishing them from existing ones."]}
+challenges_and_blockers: []
+open_questions: ["What are the full details of the 'Slides en mode image' capability, as the description was cut off?", "Are there any specific use cases or examples for these new capabilities?"]
+next_steps: []
 url: "https://manus.im/app/task/Vi6IDFGymwct5Jgay48Aiq"
 ---
 

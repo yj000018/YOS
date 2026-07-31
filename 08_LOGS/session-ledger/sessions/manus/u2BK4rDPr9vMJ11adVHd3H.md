@@ -1,11 +1,21 @@
 ---
-id: u2BK4rDPr9vMJ11adVHd3H
+id: "u2BK4rDPr9vMJ11adVHd3H"
 title: "[✓] Smart Glasses 2026 — Veille marché Apple/Meta + Import France"
 date: "2026-05-13"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: []
 tags: ["Smart Glasses", "Veille marché", "Apple", "Meta", "Import", "France", "Prix", "Douane", "TVA", "Europe", "US"]
 summary: "Market research on Smart Glasses (Apple/Meta) and detailed cost analysis for importing Meta Ray-Ban Display to France."
+executive_summary: "The session aimed to determine the best price for Meta Ray-Ban Display smart glasses, including import costs to France. The assistant provided US pricing for various Meta models and a detailed calculation for importing the Meta Ray-Ban Display to France, estimating a total cost of approximately €920-940, noting 0% customs duty for electronic glasses."
+context_and_intent: "The user's intent was to find the 'best price avec import' for smart glasses, specifically focusing on a market watch for Apple/Meta products in 2026 and import costs to France. The goal was to get a comprehensive cost estimate including all import duties and taxes."
+what_was_done: "The assistant identified relevant Meta smart glasses models and their US prices. It then performed a detailed calculation for importing the Meta Ray-Ban Display ($799 model) to France, including currency conversion, customs duties (noting 0% for electronics), French VAT (20%), estimated shipping, and customs clearance fees. It also began to outline US purchase options."
+outputs_produced: [{"description": "A table listing Meta Ray-Ban Display, Oakley Meta Vanguard, and Ray-Ban Meta Gen 2 with their US prices and notes.", "name": "US Price Table for Meta Smart Glasses", "type": "Table"}, {"description": "A detailed breakdown of estimated costs for importing the Meta Ray-Ban Display ($799 model) to France, including product price, exchange rate, customs duties, French TVA, shipping, and customs clearance fees.", "name": "France Import Cost Calculation Table", "type": "Table"}]
+key_decisions: ["Focus on Meta products initially, as implied by the response title and content.", "Prioritize the 'Meta Ray-Ban Display' for detailed import cost calculation due to its features (Neural Band, in-lens display).", "Identify the correct HS code (9004) to determine 0% customs duty for electronic glasses in the EU."]
+lessons_learned: {"discoveries": ["Electronic glasses (HS 9004) are subject to 0% customs duty when imported into the EU, which significantly impacts the total import cost."], "failed_or_suboptimal": ["The response was incomplete, leaving the 'Options d'achat US' section unfinished, which is a critical part of the user's request for practical purchasing advice."], "worked_well": ["The detailed breakdown of import costs, including specific percentages for VAT, currency conversion, shipping, and customs clearance fees, was very thorough and precise.", "The identification of 0% customs duty for electronic glasses was a key piece of information that added significant value to the cost calculation."]}
+challenges_and_blockers: ["The assistant's response was incomplete, cutting off the 'Options d'achat US' section, which is crucial for practical next steps."]
+open_questions: ["What are the full details of US purchase options and recommended intermediaries for shipping to France?", "How do Apple's smart glasses offerings compare in terms of price, features, and import costs for 2026?", "Are there any other potential hidden fees or complexities for import not yet covered in the calculation?"]
+next_steps: ["Complete the 'Options d'achat US' section, detailing how to purchase the glasses and potentially use an intermediary.", "Provide specific recommendations for reliable intermediaries for US to France shipping and customs handling.", "Potentially explore Apple's smart glasses offerings and their import costs to provide a comparative analysis, as suggested by the session title."]
 url: "https://manus.im/app/task/u2BK4rDPr9vMJ11adVHd3H"
 ---
 

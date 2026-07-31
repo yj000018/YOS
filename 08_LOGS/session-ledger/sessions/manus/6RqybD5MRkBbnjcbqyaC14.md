@@ -1,11 +1,21 @@
 ---
-id: 6RqybD5MRkBbnjcbqyaC14
+id: "6RqybD5MRkBbnjcbqyaC14"
 title: "[✓] Auto-trigger du skill program-os-orchestrator via frontmatter et yos-optimizer"
 date: "2026-06-27"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "program-os-orchestrator", "yos-optimizer", "dev"]
 tags: []
 summary: ""
+executive_summary: "The `program-os-orchestrator` skill was successfully configured for automatic triggering within the Y-OS system. This was achieved by modifying its frontmatter to include trigger directives and integrating it into the `yos-optimizer`'s routing logic for complex, multi-step tasks. An explanatory brief for ChatGPT was also prepared."
+context_and_intent: "The intent was to automate the triggering of the `program-os-orchestrator` skill within the Y-OS ecosystem, specifically for complex, multi-step tasks, to improve efficiency and reduce manual intervention. The user also requested an explanation of the work done for ChatGPT."
+what_was_done: "The `program-os-orchestrator` skill was configured for automatic triggering. This involved two main steps: 1) Modifying `program-os-orchestrator/SKILL.md` by rewriting its frontmatter to include an `ACTIVER AUTOMATIQUEMENT` directive with trigger keywords and adding a `## Trigger Conditions` section. 2) Modifying `yos-optimizer/SKILL.md` to integrate `program-os-orchestrator` into its routing logic, ensuring it is called for complex, multi-step tasks (corpus, refactor, mega-prompt) with a complexity score of 7 or higher. The skill was also added to the integration table. Finally, an explanatory brief for ChatGPT was prepared."
+outputs_produced: [{"description": "The frontmatter (`description:`) was rewritten to include the `ACTIVER AUTOMATIQUEMENT` directive with trigger keywords, and an explicit `## Trigger Conditions` section was added.", "name": "program-os-orchestrator/SKILL.md", "type": "Configuration file modification"}, {"description": "The `program-os-orchestrator` was added to step 4 (`ROUTING`) to be called if the complexity score is ≥ 7 and the task is multi-step (corpus, refactor, mega-prompt). It was also added to the integration table.", "name": "yos-optimizer/SKILL.md", "type": "Configuration file modification"}, {"description": "A brief explaining the auto-triggering mechanism for ChatGPT.", "name": "ChatGPT_Brief_Auto_Trigger.md", "type": "Documentation/Brief"}]
+key_decisions: ["Applied the complete 'Recommandation ⭐' for auto-triggering the `program-os-orchestrator` skill."]
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": ["Successfully implemented automatic triggering for the `program-os-orchestrator` skill, streamlining the workflow for complex, multi-step tasks by eliminating the need for manual invocation."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: ["Copy-paste the generated brief (`ChatGPT_Brief_Auto_Trigger.md`) to ChatGPT to keep it updated on the automation."]
 url: "https://manus.im/app/task/6RqybD5MRkBbnjcbqyaC14"
 ---
 

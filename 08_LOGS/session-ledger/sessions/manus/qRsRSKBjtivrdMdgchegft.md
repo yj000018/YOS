@@ -1,11 +1,21 @@
 ---
-id: qRsRSKBjtivrdMdgchegft
+id: "qRsRSKBjtivrdMdgchegft"
 title: "[✓] Otter.ai MCP Connector — Test Live & Factsheet Production"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "MCP Connector"]
 tags: ["Otter.ai", "Factsheet", "Knowledge Retrieval", "API", "Test"]
 summary: ""
+executive_summary: "A factsheet for the Otter.ai MCP Connector (iOS tool) was successfully created and archived in Notion, fulfilling the request to document its capabilities, limitations, and technical access points after thorough testing."
+context_and_intent: "The primary intent was to create a comprehensive factsheet for a new iOS tool, the Otter.ai MCP Connector. This factsheet needed to detail its capabilities, limitations, lessons learned, technical access points (APIs, entry points), business features, and cost (free/paid). The request emphasized thorough testing of the tool's access and APIs, distinguishing it from previous factsheets based solely on documentation. The factsheet was to leverage existing metadata structures."
+what_was_done: "A factsheet for the Otter.ai MCP Connector, a new iOS tool, was created. This involved testing the tool's capabilities, limitations, and technical access points (APIs, entry points) to gather comprehensive information. The completed factsheet was then archived in Notion."
+outputs_produced: [{"description": "A detailed document outlining the capabilities, limitations, access methods, business features, and cost of the Otter.ai MCP Connector for iOS, based on thorough testing.", "name": "Factsheet for Otter.ai MCP Connector", "type": "Document"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/qRsRSKBjtivrdMdgchegft"
 ---
 

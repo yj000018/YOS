@@ -1,11 +1,21 @@
 ---
-id: wAAkU1XVLuGLQYh4B7YnUM
+id: "wAAkU1XVLuGLQYh4B7YnUM"
 title: "[✓] Fact-Check: YouTube Video on Whale AI Communication Research (Project CETI)"
 date: "2026-05-09"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: []
 tags: ["Fact-Check", "AI", "Whale Communication", "Project CETI", "Research", "Science", "Marine Biology"]
 summary: "Fact-check of a YouTube video discussing Project CETI's AI research into whale communication, confirming its authenticity and claims."
+executive_summary: "The Manus AI session involved fact-checking a YouTube video about AI research into whale communication, specifically Project CETI. The verdict was that the content is real, presented as a popular science documentary rather than fake news. Several key claims within the video, such as Project CETI's existence, the 'conversation' with a humpback whale named Twain, and the complex grammatical structure of whale codas, were verified as real and supported by reputable scientific sources."
+context_and_intent: "The user submitted a YouTube video link and asked for a fact-check, inquiring if the content was real news or fake."
+what_was_done: "The assistant analyzed the provided YouTube video link. It determined that the video was a popular science documentary, not fake news. It then proceeded to fact-check four specific claims presented in the video, verifying each claim as 'Real' and providing corresponding scientific sources such as projectceti.org, seti.org, Nature Communications, and UC Berkeley studies."
+outputs_produced: [{"description": "A clear verdict on the authenticity of the YouTube video's content.", "name": "Fact-Check Verdict", "type": "Text"}, {"description": "A table detailing specific claims from the video, their verification status, and the scientific sources used for verification.", "name": "Verified Claims Table", "type": "Table"}]
+key_decisions: ["Classified the YouTube video as a popular science documentary, not fake news.", "Verified specific claims made in the video against external scientific sources."]
+lessons_learned: {"discoveries": ["Project CETI is a real initiative focused on decoding whale codas using AI.", "A 20-minute 'conversation' with a humpback whale named Twain by the SETI Institute is a real event.", "Sperm whale codas exhibit complex grammatical structures (tempo, rhythm, ornaments).", "Whales produce 'vowels' or acoustic diphthongs."], "failed_or_suboptimal": [], "worked_well": ["Successfully identified the nature of the content (popular science documentary vs. news/fake).", "Effectively fact-checked multiple claims by cross-referencing with credible scientific organizations and publications (projectceti.org, seti.org, Nature Communications, ls.berkeley.edu)."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/wAAkU1XVLuGLQYh4B7YnUM"
 ---
 

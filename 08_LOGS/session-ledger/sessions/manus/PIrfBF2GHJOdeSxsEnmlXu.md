@@ -1,11 +1,21 @@
 ---
-id: PIrfBF2GHJOdeSxsEnmlXu
+id: "PIrfBF2GHJOdeSxsEnmlXu"
 title: "[✓] Fritz!Box + Deco XE75 Mesh + Sonos — Architecture & Reset Setup"
 date: "2026-05-18"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: []
 tags: ["Fritz!Box", "Deco XE75", "Sonos", "Network Architecture", "WiFi Mesh", "Home Network", "Setup", "Troubleshooting"]
 summary: "Configuration et architecture réseau optimale pour Fritz!Box, Deco XE75 Mesh et Sonos, incluant reset et meilleures pratiques."
+executive_summary: "The session provides an optimal network architecture and setup guide for integrating a Fritz!Box router with a Deco XE75 Mesh system, specifically addressing compatibility with Sonos. The core solution involves configuring the Deco units in Access Point mode and disabling the Fritz!Box's Wi-Fi to prevent Double NAT, which is crucial for Sonos stability."
+context_and_intent: "The user has a Fritz!Box (a recent model, possibly Wi-Fi 6 capable) and a Deco XE75 mesh system. The intent is to set up an optimal network architecture for these devices, specifically considering compatibility with Sonos, and potentially leveraging Wi-Fi 6 capabilities."
+what_was_done: "The assistant provided an optimal network architecture, a key concept explaining the rationale behind avoiding Double NAT, a step-by-step reset procedure for the Deco XE75 units, and a specific rule for Sonos integration within this powerful mesh network."
+outputs_produced: [{"description": "Detailed steps and rationale for configuring Fritz!Box, Deco XE75, and Sonos for optimal network performance and stability.", "name": "Optimal Architecture and Setup Procedure", "type": "Architectural guidance and setup instructions"}]
+key_decisions: ["Configure Deco XE75 in \"Access Point\" mode.", "Disable Wi-Fi on the Fritz!Box.", "Do not connect any Sonos speaker via Ethernet with the powerful XE75 Mesh network."]
+lessons_learned: {"discoveries": ["Double NAT is a critical issue for Sonos stability.", "A powerful Mesh network like the Deco XE75 negates the need to connect Sonos speakers via Ethernet."], "failed_or_suboptimal": ["Running both the Fritz!Box and Deco in router mode (leading to Double NAT).", "Connecting Sonos speakers via Ethernet when a strong mesh network is already in place.", "Pressing the Deco reset button for too long (e.g., 10 seconds)."], "worked_well": ["Using the Fritz!Box as the primary router and the Deco XE75 as dedicated Access Points.", "Resetting Deco units by pressing the button for 1-2 seconds."]}
+challenges_and_blockers: ["Double NAT (two routers conflicting) which is detrimental to Sonos stability."]
+open_questions: []
+next_steps: ["Disable Wi-Fi on the Fritz!Box.", "Reset Deco XE75 units following the provided procedure (press reset button 1-2 seconds).", "Configure Deco XE75 in \"Access Point\" mode.", "Ensure no Sonos speakers are connected via Ethernet."]
 url: "https://manus.im/app/task/PIrfBF2GHJOdeSxsEnmlXu"
 ---
 

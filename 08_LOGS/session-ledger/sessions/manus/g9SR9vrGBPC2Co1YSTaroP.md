@@ -1,11 +1,21 @@
 ---
-id: g9SR9vrGBPC2Co1YSTaroP
+id: "g9SR9vrGBPC2Co1YSTaroP"
 title: "[✓] Insurance Options for Rehabilitation Coverage in France"
 date: "2025-07-12"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: []
 tags: ["assurance santé", "réhabilitation", "France", "Suisse", "sécurité sociale", "mutuelle"]
 summary: ""
+executive_summary: "The user requested a detailed presentation on French health insurance options for long-term rehabilitation for their French-Swiss mother, whose Swiss insurance no longer covers costs. The assistant successfully generated a 7-slide presentation outlining Sécurité Sociale and complementary insurance coverage, conditions, and alternatives."
+context_and_intent: "The user's mother, who is French and Swiss, previously covered by Swiss private insurance, requires long-term rehabilitation in France following hip surgery. Swiss insurance no longer covers these costs. The user's intent is to thoroughly investigate French healthcare options, specifically Sécurité Sociale and complementary health insurance (mutuelle), to determine coverage conditions, limits, and alternatives for her rehabilitation, given she currently does not have French complementary insurance."
+what_was_done: "The assistant created a 7-slide presentation providing a comprehensive overview of health coverage options for long-term rehabilitation in France, specifically addressing the French Social Security system and complementary insurance, based on the user's mother's specific situation."
+outputs_produced: [{"description": "A 7-slide presentation detailing French health coverage options for long-term rehabilitation, including an introduction, context, the French Social Security system, and basic reimbursement rates.", "name": "Présentation sur les options de couverture santé pour la réhabilitation de longue durée en France", "type": "Presentation Slides"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": ["The assistant successfully created a comprehensive 7-slide presentation addressing a complex, multi-faceted insurance and healthcare query."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/g9SR9vrGBPC2Co1YSTaroP"
 ---
 

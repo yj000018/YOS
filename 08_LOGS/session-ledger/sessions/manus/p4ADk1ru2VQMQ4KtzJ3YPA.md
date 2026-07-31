@@ -1,11 +1,21 @@
 ---
-id: p4ADk1ru2VQMQ4KtzJ3YPA
+id: "p4ADk1ru2VQMQ4KtzJ3YPA"
 title: "[✓] Test & Configuration du connecteur PASTE MCP — Blocage réseau localhost"
 date: "2026-06-02"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "PASTE MCP"]
 tags: ["test", "configuration", "connector", "network", "troubleshooting", "integration"]
 summary: "Test et configuration du connecteur PASTE MCP, avec diagnostic d'un blocage réseau localhost dans le sandbox Manus."
+executive_summary: "The user attempted to configure a PASTE MCP connector using a localhost URL, but the service was inaccessible from the Manus sandbox, resulting in a 'connection refused' error. The issue was diagnosed as the MCP service running on the user's local machine, not within the sandbox, requiring public exposure for connectivity."
+context_and_intent: "The user intended to test and configure the PASTE MCP connector by providing its local URL to Manus AI."
+what_was_done: "The user submitted a token in the PASTE connector configuration (updating `agentAuthorizedAccountUids`) and saved the configuration. Manus confirmed the 'PASTE: enabled' status. The system then attempted to connect to the provided URL, http://127.0.0.1:39725/mcp."
+outputs_produced: [{"description": "Configuration updated with agentAuthorizedAccountUids and saved, confirmed by Manus as 'PASTE: enabled'.", "name": "PASTE connector configuration update", "type": "Configuration update"}, {"description": "Error message indicating inability to connect to http://127.0.0.1:39725/mcp.", "name": "Connection Refused Error", "type": "Error message"}, {"description": "Diagnostic report explaining the root cause of the connection issue and proposing solutions.", "name": "Diagnostic Report for PASTE MCP", "type": "Analysis"}]
+key_decisions: ["User provided a localhost URL (http://127.0.0.1:39725/mcp) for the MCP service.", "Manus system confirmed PASTE connector enabled after configuration update."]
+lessons_learned: {"discoveries": ["127.0.0.1 within the Manus sandbox refers to the sandbox's own localhost, not the user's local machine.", "External services running on a user's local machine require public exposure (e.g., ngrok, Cloudflare Tunnel) to be accessible from the Manus sandbox."], "failed_or_suboptimal": ["Attempting to connect to a local service (127.0.0.1) from a remote sandbox environment without proper network exposure."], "worked_well": ["The token submission and configuration saving process for the PASTE connector worked successfully.", "Manus system accurately confirmed the PASTE connector was enabled."]}
+challenges_and_blockers: ["Connection refused error on 127.0.0.1:39725 because the PASTE MCP service was not listening within the Manus sandbox.", "The 127.0.0.1 address pointed to the sandbox's localhost, not the user's local machine where the service was likely running."]
+open_questions: []
+next_steps: ["Expose the local PASTE MCP service publicly (e.g., using ngrok, Cloudflare Tunnel) and provide the public URL to Manus.", "Alternatively, if PASTE MCP is a remote service, provide its direct public URL (e.g., https://paste.example.com/mcp)."]
 url: "https://manus.im/app/task/p4ADk1ru2VQMQ4KtzJ3YPA"
 ---
 

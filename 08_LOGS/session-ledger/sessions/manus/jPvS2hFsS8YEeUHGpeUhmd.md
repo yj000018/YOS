@@ -1,11 +1,21 @@
 ---
-id: jPvS2hFsS8YEeUHGpeUhmd
+id: "jPvS2hFsS8YEeUHGpeUhmd"
 title: "[✓] Plugin ChatGPT→Notion : taxonomie conversations + analyse marché + dev initié"
 date: "2026-03-06"
-importance: 3
+importance: "3"
+depth_score: "minor"
 projects: ["Plugin ChatGPT→Notion"]
 tags: ["ChatGPT", "Notion", "Plugin", "Extension"]
 summary: ""
+executive_summary: "Two key issues with the ChatGPT→Notion plugin were resolved: the extension download button now provides a direct CDN link, and a 'Continue in ChatGPT' button was added to SynthesisCards, copying context and opening ChatGPT. Subsequent steps for comprehensive testing, onboarding wizard development, and Product Hunt launch were identified."
+context_and_intent: "The session focused on addressing critical issues within the ChatGPT→Notion plugin, specifically fixing the extension download functionality and integrating a 'Continue in ChatGPT' feature, followed by outlining immediate next steps for testing and launch."
+what_was_done: "Two corrections were applied: the download extension button was fixed to provide a direct CDN link, and a 'Continue in ChatGPT' button was added to SynthesisCards, which copies the prompt context and opens chatgpt.com."
+outputs_produced: [{"description": "The 'Download extension ZIP' button in Settings now provides a functional direct CDN link for the Chrome Extension.", "name": "Functional Download Extension Button", "type": "Feature Fix"}, {"description": "A green 'Continue in ChatGPT' button was added to each SynthesisCard, copying the context prompt to the clipboard and opening chatgpt.com in a new tab.", "name": "Continue in ChatGPT Button", "type": "New Feature"}]
+key_decisions: ["Implement a direct CDN link for the extension download.", "Add a 'Continue in ChatGPT' button with clipboard copy and new tab functionality."]
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": ["The initial download extension button was not working correctly (not a real download, but a toast).", "Lack of a direct way to continue a conversation in ChatGPT from a SynthesisCard."], "worked_well": ["Implementing a direct CDN link for the Chrome Extension download.", "Adding a 'Continue in ChatGPT' button that copies context and opens chatgpt.com, with a retry mechanism for context loading."]}
+challenges_and_blockers: ["Download extension button was not functional."]
+open_questions: []
+next_steps: ["Test the complete flow: Settings → enter Notion token → Test → Save → install extension → export a ChatGPT conversation → verify generated taxonomy in Dashboard.", "Add an onboarding wizard: guide new users through (1. Notion token → 2. Install extension → 3. First export).", "Publish on Product Hunt: define a launch date and build a waitlist before public release."]
 url: "https://manus.im/app/task/jPvS2hFsS8YEeUHGpeUhmd"
 ---
 

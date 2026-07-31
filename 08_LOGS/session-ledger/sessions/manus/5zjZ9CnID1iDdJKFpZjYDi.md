@@ -1,11 +1,21 @@
 ---
-id: 5zjZ9CnID1iDdJKFpZjYDi
+id: "5zjZ9CnID1iDdJKFpZjYDi"
 title: "[✓] Shopify MCP Connector — Live Test & Factsheet Production"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: ["Y-OS"]
 tags: ["Shopify", "Connector", "Factsheet", "API", "GraphQL", "Integration", "E-commerce"]
 summary: ""
+executive_summary: "The session successfully produced a comprehensive factsheet for the new Shopify MCP Connector, based on thorough live testing of its APIs and entry points, and subsequently pushed it to the Notion Connectors Registry."
+context_and_intent: "The user requested a detailed factsheet for a new iOS tool, the Shopify MCP Connector. The factsheet needed to cover its capabilities, limitations, lessons learned, access points (APIs, entry points), technical functionalities (read/write), business features, and cost. A key requirement was that this factsheet be based on actual live testing, unlike previous instances where documentation was used. The output should leverage existing metadata structures."
+what_was_done: "A factsheet for the Shopify MCP Connector was created and subsequently pushed to the Notion Connectors Registry."
+outputs_produced: [{"description": "Factsheet detailing the capabilities, limits, lessons learned, access points, technical functionalities, and business features of the Shopify MCP Connector, based on live testing.", "name": "Shopify MCP Connector Factsheet", "type": "Factsheet"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/5zjZ9CnID1iDdJKFpZjYDi"
 ---
 

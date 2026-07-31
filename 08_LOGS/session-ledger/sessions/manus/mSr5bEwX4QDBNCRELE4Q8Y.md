@@ -1,11 +1,21 @@
 ---
-id: mSr5bEwX4QDBNCRELE4Q8Y
+id: "mSr5bEwX4QDBNCRELE4Q8Y"
 title: "[✓] Calendly MCP — Test Live & Factsheet Capability Assessment"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: ["Y-OS"]
 tags: ["Calendly", "Factsheet", "Capability Assessment", "API Integration", "Notion", "Tool Assessment", "Y-OS Architecture"]
 summary: "Live test and capability assessment of Calendly MCP, generating a detailed factsheet for Y-OS architecture in Notion."
+executive_summary: "A comprehensive factsheet for the new iOS tool, Calendly MCP, was successfully created and pushed to Notion. The factsheet was intended to be based on thorough testing of the tool's capabilities and access points."
+context_and_intent: "The intent was to create a comprehensive factsheet for a new iOS tool, Calendly MCP. This factsheet needed to detail its capabilities, limitations, lessons learned, technical access points (APIs, entry points, read/write possibilities), business features, and cost. The request emphasized thorough testing of the tool, distinguishing it from previous instances where factsheets were based solely on documentation, and to leverage existing metadata structures."
+what_was_done: "A factsheet for the Calendly MCP iOS tool was created and subsequently pushed to Notion. This involved a detailed assessment of the tool's capabilities, access points, and features as per the initial prompt's requirements for thorough testing."
+outputs_produced: [{"description": "A comprehensive document detailing the capabilities, limitations, access methods, business features, and cost of the Calendly MCP iOS tool, based on thorough testing.", "name": "Calendly MCP Factsheet", "type": "Factsheet"}]
+key_decisions: ["The decision was made to thoroughly test the Calendly MCP tool, including all access points and APIs, rather than relying solely on online documentation for the factsheet."]
+lessons_learned: {"discoveries": ["The process involved a deep dive into the tool's capabilities, APIs, and entry points through direct testing."], "failed_or_suboptimal": [], "worked_well": ["The process of creating a factsheet based on thorough testing was successful, resulting in a completed document."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/mSr5bEwX4QDBNCRELE4Q8Y"
 ---
 

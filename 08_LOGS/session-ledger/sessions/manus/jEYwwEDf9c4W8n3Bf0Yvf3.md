@@ -1,11 +1,21 @@
 ---
-id: jEYwwEDf9c4W8n3Bf0Yvf3
+id: "jEYwwEDf9c4W8n3Bf0Yvf3"
 title: "Ajouter un dossier à 'Mon Ordinateur' dans Manus"
 date: "2026-07-05"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "Manus"]
 tags: ["gestion de fichiers", "accès local", "Mac", "filesystem", "configuration", "Mac Bridge"]
 summary: ""
+executive_summary: "The user inquired about Manus's access to their Mac. The assistant confirmed existing access, listed already exposed folders, and provided clear instructions on how to add new local folders, explaining the underlying mechanism and potential uses."
+context_and_intent: "The user's intent was to understand if Manus had access to their Mac and implicitly, how to manage or add folders. They were likely trying to add a new folder or confirm existing setup."
+what_was_done: "The assistant analyzed the user's current Manus configuration, identified existing Mac access and exposed folders, provided step-by-step instructions to add a new local folder, explained the technical mechanism (Mac Bridge), and outlined potential actions Manus could perform with these folders."
+outputs_produced: [{"description": "Assistant confirmed that the user's MacBook-Air-7.local was connected with filesystem access.", "name": "Confirmation of existing Mac access", "type": "Information"}, {"description": "Provided a list of folders Manus already had access to, including root, Desktop, Documents, Downloads, yannickjolliet, CloudMounter-OneDrive4, CloudMounter-pCLOUD, and TO BE OUT-STORED.", "name": "List of exposed folders", "type": "Information"}, {"description": "Step-by-step guide on how to add a new local folder in Manus ('+ Add local folder' -> select folder).", "name": "Instructions for adding a local folder", "type": "Guide"}, {"description": "Clarified how Manus accesses folders via the Mac Bridge (skill `yos-mac-bridge`) or if mounted in the sandbox.", "name": "Explanation of access mechanism", "type": "Information"}, {"description": "Listed actions Manus can perform with accessible folders: read, write, index, or automate.", "name": "Capabilities list", "type": "Information"}]
+key_decisions: ["The assistant implicitly decided to provide both confirmation of the existing setup and instructions for adding new folders, anticipating the user's likely next step."]
+lessons_learned: {"discoveries": ["Manus can detect and list already configured filesystem access and exposed folders.", "Manus accesses local folders via a 'Mac Bridge' (skill `yos-mac-bridge`) or if the folder is mounted in the sandbox."], "failed_or_suboptimal": ["The user's second message 'c' indicates a potential break in communication or an incomplete thought, suggesting the conversation might have ended prematurely or with an unresolved user intent."], "worked_well": ["The assistant quickly understood the user's implicit need despite a vague initial prompt.", "The assistant provided relevant context by confirming existing setup and listing accessible folders.", "The assistant gave clear, actionable, step-by-step instructions for adding new local folders.", "The explanation of Manus's capabilities with accessible folders (read, write, index, automate) was helpful."]}
+challenges_and_blockers: ["The user's initial prompt was a question about access, indicating a potential lack of clarity on their part regarding Manus's capabilities or interface.", "The second user message 'c' is incomplete, suggesting a potential communication issue or interruption."]
+open_questions: ["\"Quel dossier tu veux utiliser pour quoi ?\" (What folder do you want to use for what purpose?) - This question from the assistant remains unanswered in the transcript."]
+next_steps: ["The user needs to follow the provided instructions to add a new folder.", "The user needs to specify their exact use case for the folders, as prompted by the assistant's open question."]
 url: "https://manus.im/app/task/jEYwwEDf9c4W8n3Bf0Yvf3"
 ---
 

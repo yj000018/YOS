@@ -1,0 +1,30 @@
+{
+  "report": "C4-SURFACES-CLOSURE",
+  "generated_at": "2026-07-31T05:00:00Z",
+  "overall_verdict": "PARTIAL",
+  "surfaces_closed": 2,
+  "surfaces_partial": 2,
+  "surfaces": {
+    "PROJECTS": {
+      "status": "PARTIAL",
+      "coverage": "62 projects / 239 sessions tagged (3060 ledger untagged)"
+    },
+    "TASKS": {
+      "status": "CLOSED",
+      "coverage": "0 ChatGPT Tasks (feature not used); 564 Manus tasks excluded"
+    },
+    "CUSTOM_INSTRUCTIONS": {
+      "status": "CLOSED",
+      "coverage": "custom_instructions_v2.md committed (2166 chars)"
+    },
+    "FILE_LIBRARY": {
+      "status": "PARTIAL",
+      "coverage": "GDrive folder empty or inaccessible; 0 files committed to YOS"
+    }
+  },
+  "blocking_dependency": "C2 (raw bodies) required for: Projects full tagging (3060 rows), File Library attachment reconciliation",
+  "c2_independent_actions": [
+    "DONE: custom_instructions_v2.md committed",
+    "TODO: rclone sync GDrive Chat GPT FILES → 07_SOURCE_CORPUS/chatgpt/file_library/ (folder appears empty)"
+  ]
+}

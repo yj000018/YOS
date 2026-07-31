@@ -1,0 +1,32 @@
+{
+  "surface": "CHATGPT_CUSTOM_INSTRUCTIONS",
+  "closure_status": "CLOSED",
+  "closure_note": "Custom instructions committed to YOS at 01_BACKBONE/GOVERNANCE/Policies/custom_instructions_v2.md (2166 chars). This IS the active ChatGPT custom instruction set (Manus system prompt).",
+  "generated_at": "2026-07-31T05:00:00Z",
+  "committed_file": "01_BACKBONE/GOVERNANCE/Policies/custom_instructions_v2.md",
+  "committed_size_chars": 2166,
+  "yos_config_files": [
+    {
+      "path": "01_BACKBONE/AGENTS/02_IDENTITIES/chatgpt.md",
+      "status": "present"
+    },
+    {
+      "path": "01_BACKBONE/MPM/02_ADAPTERS/mpx-chatgpt-adapter.md",
+      "status": "present"
+    },
+    {
+      "path": "01_BACKBONE/MPM/00_PROTOCOLS/mpm-chatgpt-guardian-review-protocol.md",
+      "status": "present"
+    },
+    {
+      "path": "02_AGENTS/chatgpt/TOOL-FACT-SHEET.md",
+      "status": "present"
+    },
+    {
+      "path": "01_BACKBONE/GOVERNANCE/Policies/custom_instructions_v2.md",
+      "status": "COMMITTED"
+    }
+  ],
+  "acquisition_gap": "None — custom instructions committed",
+  "recommended_action": "Verify custom_instructions_v2.md matches current ChatGPT Settings → Personalization"
+}

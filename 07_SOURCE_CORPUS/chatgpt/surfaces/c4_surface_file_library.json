@@ -1,0 +1,63 @@
+{
+  "surface": "CHATGPT_FILE_LIBRARY",
+  "closure_status": "PARTIAL",
+  "closure_note": "No uploaded files found committed in YOS repo. GDrive 'Chat GPT FILES' folder exists but content not yet inventoried.",
+  "generated_at": "2026-07-31T05:09:43Z",
+  "gdrive_folder": "01_Y_OS_CORE/02_Infrastructure/Chat GPT FILES",
+  "gdrive_files_found": 0,
+  "gdrive_files_list": [],
+  "yos_committed_attachments": 0,
+  "existing_manifest": {
+    "manifest_type": "CHATGPT_FILE_LIBRARY_MANIFEST",
+    "generated_at": "2026-07-31",
+    "source_ledger": "/home/ubuntu/yos/data/master_ledger.csv",
+    "total_conversations": 3060,
+    "raw_body_files_committed": 0,
+    "raw_body_files_known": 0,
+    "overlay_source_parts": [
+      {
+        "file": "chatgpt239.overlay-source.part00.b64",
+        "path": "01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/source/",
+        "size_bytes": 7000,
+        "type": "base64_encoded_overlay_source"
+      },
+      {
+        "file": "chatgpt239.overlay-source.part01.b64",
+        "path": "01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/source/",
+        "size_bytes": 7000,
+        "type": "base64_encoded_overlay_source"
+      },
+      {
+        "file": "chatgpt239.overlay-source.part02.b64",
+        "path": "01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/source/",
+        "size_bytes": 7000,
+        "type": "base64_encoded_overlay_source"
+      },
+      {
+        "file": "chatgpt239.overlay-source.part03.b64",
+        "path": "01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/source/",
+        "size_bytes": 5588,
+        "type": "base64_encoded_overlay_source"
+      }
+    ],
+    "enriched_resolved_json": {
+      "file": "CHATGPT-239-ENRICHED-RESOLVED.json",
+      "path": "01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/generated/chatgpt/",
+      "size_bytes": 303493,
+      "sha": "897a269d7664fc1d9dc438c7a1bad59ea05f1be8",
+      "coverage": "239/3060"
+    },
+    "gdrive_chatgpt_files_folder": {
+      "path": "01_Y_OS_CORE/02_Infrastructure/Chat GPT FILES",
+      "status": "EMPTY",
+      "note": "Folder exists in GDrive but contains no files"
+    },
+    "dropbox_chatgpt_exports": {
+      "status": "NONE_FOUND",
+      "note": "No ChatGPT export files found in Dropbox"
+    },
+    "verdict": "NO_RAW_BODY_FILES_AVAILABLE — identity acquisition complete (3060/3060), raw content acquisition pending"
+  },
+  "acquisition_gap": "File Library uploads not committed to YOS. GDrive folder requires full inventory and download.",
+  "recommended_action": "rclone sync 'manus_google_drive:01_Y_OS_CORE/02_Infrastructure/Chat GPT FILES' to 07_SOURCE_CORPUS/chatgpt/file_library/"
+}

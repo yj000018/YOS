@@ -1,0 +1,1295 @@
+{
+  "surface": "CHATGPT_PROJECTS",
+  "closure_status": "PARTIAL",
+  "closure_note": "62 projects identified from enriched-239 overlay. 3060 ledger rows have no Project_Tag — project assignment requires raw bodies or manual tagging.",
+  "generated_at": "2026-07-31T05:09:43Z",
+  "total_projects_identified": 62,
+  "unassigned_sessions_in_239": 0,
+  "ledger_3060_project_coverage": "0/3060 (Project_Tag field empty in master_ledger)",
+  "projects": [
+    {
+      "name": "yOS / YOUniverse Core",
+      "session_count": 82,
+      "top_category": "yOS / YOUniverse / AI architecture & memory",
+      "date_range": {
+        "min": "2025-10-15",
+        "max": "2026-07-20"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5de467-6844-83eb-9a4f-849597c24605",
+          "title": "🌟🌟🌟 ONE FUSION 🌟🌟🌟",
+          "created_at": "2026-07-20T09:03:44.093Z"
+        },
+        {
+          "uuid": "6a5e6fd5-5784-83ed-b3d2-d6a26689d44e",
+          "title": "WhatsApp Export and LLM Access",
+          "created_at": "2026-07-20T18:58:35.893Z"
+        },
+        {
+          "uuid": "6a5d5957-bd80-83eb-905c-986ec2a0190a",
+          "title": "OMEGA Audit Long Run",
+          "created_at": "2026-07-19T23:10:26.751Z"
+        }
+      ]
+    },
+    {
+      "name": "ŒUVRE / OMEGA / COC Control Plane",
+      "session_count": 12,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-02-16",
+        "max": "2026-07-20"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5e463d-cba8-83ed-801d-1e0ecfbe2b31",
+          "title": "Audit final non clôturé avec lacunes bloquantes",
+          "created_at": "2026-07-20T16:01:12.733Z"
+        },
+        {
+          "uuid": "6a5de61f-9594-83eb-912e-979547fd8a49",
+          "title": "Continuity Handoff Watch",
+          "created_at": "2026-07-20T09:11:01.643Z"
+        },
+        {
+          "uuid": "6a57a3ac-17d0-83ed-ae89-f55eeeba3afd",
+          "title": "Omega Wake-up Audit",
+          "created_at": "2026-07-15T15:14:01.901Z"
+        }
+      ]
+    },
+    {
+      "name": "yOS Automation & Execution Layer",
+      "session_count": 11,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2025-10-18",
+        "max": "2026-07-20"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5e4649-f5ec-83ed-bf66-8adaf44adabc",
+          "title": "Run the corrected crawler to unblock MAP WAVE 001",
+          "created_at": "2026-07-20T16:01:15.487Z"
+        },
+        {
+          "uuid": "6a5dd2f3-628c-83eb-9e6e-e5a3645951e7",
+          "title": "GitHub Action Request",
+          "created_at": "2026-07-20T07:49:11.268Z"
+        },
+        {
+          "uuid": "6a5d690b-3cec-83ed-884c-98a383712258",
+          "title": "Nightly hardening validated with 15 tests passing",
+          "created_at": "2026-07-20T00:17:18.330Z"
+        }
+      ]
+    },
+    {
+      "name": "KAP — Knowledge Architecture Program",
+      "session_count": 8,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-05-19",
+        "max": "2026-07-20"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5e47d4-ece4-83ed-ac78-9c71e5bef49a",
+          "title": "OMEGA audit converged with key gaps remaining",
+          "created_at": "2026-07-20T16:07:50.698Z"
+        },
+        {
+          "uuid": "6a5e2f9d-f728-83eb-9c58-f5503602e13b",
+          "title": "Omega Notion Takeout Final Sprint",
+          "created_at": "2026-07-20T14:24:32.208Z"
+        },
+        {
+          "uuid": "6a5697e1-1898-83eb-a906-415b6562a992",
+          "title": "Clôture Notion Takeout",
+          "created_at": "2026-07-14T20:12:29.451Z"
+        }
+      ]
+    },
+    {
+      "name": "Visual Reality / Living Canvas",
+      "session_count": 8,
+      "top_category": "Visual Reality / immersive art",
+      "date_range": {
+        "min": "2025-11-17",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a58ed47-a550-83eb-ab11-d26dd453ae4b",
+          "title": "#MAIN — CREATIVE WORLDS(World Governance & Coordination)",
+          "created_at": "2026-07-16T14:40:18.681Z"
+        },
+        {
+          "uuid": "6a40e4ba-1ef8-83eb-a2ae-180707ac95e8",
+          "title": "Animation vidéo Street View",
+          "created_at": "2026-06-28T09:09:51.992Z"
+        },
+        {
+          "uuid": "69d93ae5-f870-8331-b9d6-da95423dab04",
+          "title": "V-R & Spline",
+          "created_at": "2026-04-10T18:01:12.511Z"
+        }
+      ]
+    },
+    {
+      "name": "HOPE",
+      "session_count": 6,
+      "top_category": "HOPE / civilization / planetary transformation",
+      "date_range": {
+        "min": "2025-10-20",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a58e50e-f9e4-83ed-9972-7d4ad02aa439",
+          "title": "PROG — HOPE (Emotional & Civilizational Intelligence)",
+          "created_at": "2026-07-16T14:05:19.389Z"
+        },
+        {
+          "uuid": "68f5fe2e-8c8c-8332-96b0-854e10320abd",
+          "title": "PoM  - Peace of Mind",
+          "created_at": "2025-10-20T09:17:40.615Z"
+        },
+        {
+          "uuid": "6a176da3-e6fc-832d-b203-d589726e6be5",
+          "title": "ChangeMakers Ecosystem Mapping",
+          "created_at": "2026-05-27T22:27:32.033Z"
+        }
+      ]
+    },
+    {
+      "name": "Ludivine / Ludi-AI",
+      "session_count": 6,
+      "top_category": "Creative works / Ludivine / publishing / storytelling",
+      "date_range": {
+        "min": "2025-11-06",
+        "max": "2026-05-22"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "690c56ef-2e00-8325-be4a-db2789bade70",
+          "title": "** crazY storY",
+          "created_at": "2025-11-06T08:06:16.538Z"
+        },
+        {
+          "uuid": "6a0f9c33-d75c-8329-9a9c-80c694843484",
+          "title": "LightWay - Y-Publishing",
+          "created_at": "2026-05-22T00:01:55.391Z"
+        },
+        {
+          "uuid": "697d2ff6-98e4-8325-a153-3c7c4993c495",
+          "title": "Organisation et écriture Ludivine",
+          "created_at": "2026-01-30T22:26:03.737Z"
+        }
+      ]
+    },
+    {
+      "name": "Civilizational Research / Reference",
+      "session_count": 5,
+      "top_category": "Civilization / futures / education / society",
+      "date_range": {
+        "min": "2025-11-18",
+        "max": "2026-05-12"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "691e3373-f5c4-800c-a8b4-31fbb1260328",
+          "title": "Petits projets pour la société",
+          "created_at": "2025-11-19T21:15:32.574Z"
+        },
+        {
+          "uuid": "691cbd2a-31d0-800c-9adb-4c17897b9361",
+          "title": "WHAT THE F***  - Crazy stats.",
+          "created_at": "2025-11-18T18:38:46.450Z"
+        },
+        {
+          "uuid": "69ef286f-7ae8-8333-8a45-68bec95eb845",
+          "title": "Pilier EDU: eval/exam",
+          "created_at": "2026-04-27T09:12:53.842Z"
+        }
+      ]
+    },
+    {
+      "name": "Ariane — Visual Memory Studio",
+      "session_count": 4,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2025-10-20",
+        "max": "2026-07-18"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5b1287-6424-83ed-9238-6bba6a60302d",
+          "title": "ARIANE - Visual Memory Studio (VMS)",
+          "created_at": "2026-07-18T05:44:02.635Z"
+        },
+        {
+          "uuid": "6a4f551e-abb8-83ed-be5d-77b9e815ae9b",
+          "title": "Gestion photos iPhone simplifiée",
+          "created_at": "2026-07-09T08:02:40.742Z"
+        },
+        {
+          "uuid": "69fcfca3-333c-832d-8e6a-9452fdce871a",
+          "title": "AI photo apps Mac",
+          "created_at": "2026-05-07T20:57:24.186Z"
+        }
+      ]
+    },
+    {
+      "name": "LIFE OS",
+      "session_count": 4,
+      "top_category": "Business / finance / administration",
+      "date_range": {
+        "min": "2026-04-22",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a593d15-4a7c-83eb-a172-0cbe3c570f13",
+          "title": "Dashboard rattrapage emails",
+          "created_at": "2026-07-16T20:21:13.764Z"
+        },
+        {
+          "uuid": "6a58edd1-783c-83eb-b873-4027604a16f5",
+          "title": "SYSTEM — LIFE OS (Places, Devices & Operations)",
+          "created_at": "2026-07-16T14:42:28.239Z"
+        },
+        {
+          "uuid": "6a526946-d264-83eb-b057-e125e4cb609a",
+          "title": "Hardware Knowledge Graph",
+          "created_at": "2026-07-11T16:03:26.852Z"
+        }
+      ]
+    },
+    {
+      "name": "Strategic Finance / PI-OS",
+      "session_count": 4,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-05-24",
+        "max": "2026-06-04"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a15a4ca-e7ac-8328-a88a-8989cf4575bd",
+          "title": "Strategic Financial Dashboard",
+          "created_at": "2026-05-26T13:49:07.400Z"
+        },
+        {
+          "uuid": "6a132f2a-55b8-832a-8d3b-01e79a67d820",
+          "title": "Investissement en private equity",
+          "created_at": "2026-05-24T17:02:42.738Z"
+        },
+        {
+          "uuid": "6a21a446-161c-8331-970c-ce20e7bbb453",
+          "title": "Polymarket & NEXT CIV",
+          "created_at": "2026-06-04T16:14:40.846Z"
+        }
+      ]
+    },
+    {
+      "name": "Creative Worlds Portfolio",
+      "session_count": 4,
+      "top_category": "Creative systems / storytelling / games",
+      "date_range": {
+        "min": "2025-10-15",
+        "max": "2026-04-28"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "a37e8a18-f59c-8330-a5a6-509afe2fced4",
+          "title": "Collecte idées jeu cartes",
+          "created_at": "2025-10-15T23:15:14.257Z"
+        },
+        {
+          "uuid": "69ef1782-eed8-832c-bd4c-1f09055d9433",
+          "title": "Gus & Pixel",
+          "created_at": "2026-04-27T08:01:05.821Z"
+        },
+        {
+          "uuid": "69f0bc28-eb90-8327-b38a-6c7d10d49ade",
+          "title": "ARCHETYPES & Petits Malins",
+          "created_at": "2026-04-28T13:56:14.197Z"
+        }
+      ]
+    },
+    {
+      "name": "Spirituality / Wisdom Workstream",
+      "session_count": 4,
+      "top_category": "Spirituality / wisdom / sacred publishing",
+      "date_range": {
+        "min": "2025-10-06",
+        "max": "2025-12-08"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69204a73-d46c-8327-af85-8a3d03b088c4",
+          "title": "Voix de Dieu aux Humains",
+          "created_at": "2025-11-21T11:18:15.131Z"
+        },
+        {
+          "uuid": "6929741b-1d00-832c-9ed1-0441668bc0e3",
+          "title": "Titre:\nLe (***merdier***) Casino Judeo-chretien",
+          "created_at": "2025-11-28T10:06:24.548Z"
+        },
+        {
+          "uuid": "69361e5c-b0d0-832d-a721-8201ee939145",
+          "title": "7d life coaching system",
+          "created_at": "2025-12-08T00:40:00.186Z"
+        }
+      ]
+    },
+    {
+      "name": "ELYSIUM",
+      "session_count": 3,
+      "top_category": "Civilization / futures / education / society",
+      "date_range": {
+        "min": "2026-06-29",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a58e4f6-8934-83eb-bde3-7ea263433cc4",
+          "title": "PROG — ELYSIUM (Civilizational Architecture)",
+          "created_at": "2026-07-16T14:04:50.424Z"
+        },
+        {
+          "uuid": "6a41bc49-f674-83eb-b25b-a42462de6898",
+          "title": "Logo ELYSIUM Concept",
+          "created_at": "2026-06-29T00:29:04.354Z"
+        },
+        {
+          "uuid": "6a41c326-4934-83ed-a2e7-21bf4c83e36d",
+          "title": "Elysium FRAMEWORK",
+          "created_at": "2026-06-29T01:02:17.824Z"
+        }
+      ]
+    },
+    {
+      "name": "Support / Translation Utility",
+      "session_count": 3,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-06-25",
+        "max": "2026-07-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a55044a-4d7c-83eb-a8a6-1ffd74118792",
+          "title": "Problème lien expiré",
+          "created_at": "2026-07-13T15:29:29.371Z"
+        },
+        {
+          "uuid": "6a412693-6634-83ed-9812-539c177674c0",
+          "title": "Traduction de texte complexe",
+          "created_at": "2026-06-28T13:50:26.816Z"
+        },
+        {
+          "uuid": "6a3d8e66-c7f8-83ed-a2af-f650323b3fce",
+          "title": "Translate and Correct Transcript",
+          "created_at": "2026-06-25T20:25:00.582Z"
+        }
+      ]
+    },
+    {
+      "name": "EIA / Robi Scuderi",
+      "session_count": 3,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-03-26",
+        "max": "2026-07-06"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a4bd75f-1bc4-83eb-8f67-0f4d40dbb9e1",
+          "title": "-- eia app --",
+          "created_at": "2026-07-06T16:27:44.500Z"
+        },
+        {
+          "uuid": "69e0a68d-0d78-8396-98ed-dbf28d7621a0",
+          "title": "Manifesto EIA Scuderi",
+          "created_at": "2026-04-16T09:06:38.965Z"
+        },
+        {
+          "uuid": "69c503e0-0d54-832f-8bb9-14fce5494247",
+          "title": "Soi et perception du réel",
+          "created_at": "2026-03-26T10:01:15.420Z"
+        }
+      ]
+    },
+    {
+      "name": "OneShift / NEXT CIV",
+      "session_count": 3,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2025-10-18",
+        "max": "2026-04-27"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "68f3862b-dc58-832c-8b42-1782f5558166",
+          "title": "Future Society Transformation",
+          "created_at": "2025-10-18T12:20:59.861Z"
+        },
+        {
+          "uuid": "693611dd-2db0-8331-97ba-69980c8f99bb",
+          "title": "Plan action projet visionnaire",
+          "created_at": "2025-12-07T23:46:40.064Z"
+        },
+        {
+          "uuid": "69efc0da-401c-8327-a76d-1b60c4b831d5",
+          "title": "12 piliers - société et relations",
+          "created_at": "2026-04-27T20:07:40.990Z"
+        }
+      ]
+    },
+    {
+      "name": "ONE — Integral Human & Civilizational Architecture",
+      "session_count": 3,
+      "top_category": "Business / finance / administration",
+      "date_range": {
+        "min": "2025-10-18",
+        "max": "2026-02-11"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "68f385ff-bd70-832c-bafa-cf63060921c6",
+          "title": "ONE-NEW",
+          "created_at": "2025-10-18T12:20:15.751Z"
+        },
+        {
+          "uuid": "68f4e07b-dab8-832e-b16f-970f9078c3c2",
+          "title": "*** Holistic Transformation Map",
+          "created_at": "2025-10-19T12:58:52.828Z"
+        },
+        {
+          "uuid": "698bf8c4-6b48-832c-837c-6a18f889e1c3",
+          "title": "ONE architecture intégrale de transformation humaine et civilisationnelle",
+          "created_at": "2026-02-11T03:35:13.156Z"
+        }
+      ]
+    },
+    {
+      "name": "YStory / StoryStudio / StoryFusion",
+      "session_count": 3,
+      "top_category": "Creative systems / storytelling / games",
+      "date_range": {
+        "min": "2025-10-22",
+        "max": "2026-04-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69dd3493-4050-8329-b016-ed291915e855",
+          "title": "Agentic Story Engine ",
+          "created_at": "2026-04-13T18:24:25.840Z"
+        },
+        {
+          "uuid": "68f8c1b4-b704-832d-8e6a-f11e42b13c09",
+          "title": "StoryFusion co-création narrative",
+          "created_at": "2025-10-22T11:36:26.980Z"
+        },
+        {
+          "uuid": "68fbb162-b45c-8325-890f-c833455f204f",
+          "title": "YStory StoryStudio concept",
+          "created_at": "2025-10-24T17:03:36.381Z"
+        }
+      ]
+    },
+    {
+      "name": "Apple AI Interface & Accessibility",
+      "session_count": 3,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-04-08",
+        "max": "2026-05-03"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69d6a79f-4174-8333-bfc2-18f6db2bc9a2",
+          "title": "AI Apps on Apple Watch",
+          "created_at": "2026-04-08T19:08:39.707Z"
+        },
+        {
+          "uuid": "69f2b7f3-568c-832f-804b-06ff26b8e0e7",
+          "title": "Clavier spécifique iOS",
+          "created_at": "2026-04-30T02:01:44.550Z"
+        },
+        {
+          "uuid": "69f74833-6a10-8333-9d7a-d9cdf246fd5a",
+          "title": "Stack MacOS",
+          "created_at": "2026-05-03T13:06:58.011Z"
+        }
+      ]
+    },
+    {
+      "name": "yOS Memory Stack",
+      "session_count": 3,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-03-25",
+        "max": "2026-05-19"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a0cc12e-6638-832b-bd98-b729e4ec4697",
+          "title": "AI context import summary",
+          "created_at": "2026-05-19T20:00:13.810Z"
+        },
+        {
+          "uuid": "69c47a0a-8af4-8326-b621-6fcc817d9223",
+          "title": "Honcho Memory & yOS archi",
+          "created_at": "2026-03-26T00:13:00.311Z"
+        },
+        {
+          "uuid": "69c3bf2d-b118-8397-80c8-a07236a98e65",
+          "title": "Mémoire utilisateur exportée",
+          "created_at": "2026-03-25T10:55:44.428Z"
+        }
+      ]
+    },
+    {
+      "name": "AI Architectural Design Toolchain",
+      "session_count": 3,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-05-21",
+        "max": "2026-06-19"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a0f3bb0-7ac4-8332-8e8e-b329401d3dbb",
+          "title": "ANNX Studio Method Guide",
+          "created_at": "2026-05-21T17:07:00.812Z"
+        },
+        {
+          "uuid": "6a0f3f97-fa54-8329-9a20-4dd075c86579",
+          "title": "Best method ANNX Studio",
+          "created_at": "2026-05-21T17:23:37.453Z"
+        },
+        {
+          "uuid": "6a35a883-3194-8330-ba22-7e1ff91dc606",
+          "title": "Using Formas for 3D",
+          "created_at": "2026-06-19T20:37:41.503Z"
+        }
+      ]
+    },
+    {
+      "name": "Public Voice / TED / Substack",
+      "session_count": 3,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-03-19",
+        "max": "2026-06-06"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69bc5182-e58c-8333-90d8-885cb2217665",
+          "title": "Conférence TED ou TEDx",
+          "created_at": "2026-03-19T19:42:30.794Z"
+        },
+        {
+          "uuid": "69e389b1-c0e4-832c-b1ed-8324755269c0",
+          "title": "Réflexion spirituelle et diffusion",
+          "created_at": "2026-04-18T13:40:06.150Z"
+        },
+        {
+          "uuid": "6a241595-b79c-8327-a326-6f3c134036da",
+          "title": "Substack Strategy for Awakening",
+          "created_at": "2026-06-06T12:43:19.087Z"
+        }
+      ]
+    },
+    {
+      "name": "Business / Finance Operations",
+      "session_count": 2,
+      "top_category": "Business / finance / administration",
+      "date_range": {
+        "min": "2025-11-19",
+        "max": "2026-07-20"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5dc79b-c0f0-83ed-a00b-db46de3e59dc",
+          "title": "Release 1 ready for staging with OAuth blocker",
+          "created_at": "2026-07-20T07:00:47.214Z"
+        },
+        {
+          "uuid": "691def0c-ea08-800c-a3cd-3af3d70e525f",
+          "title": "Ydea concept development",
+          "created_at": "2025-11-19T16:23:41.196Z"
+        }
+      ]
+    },
+    {
+      "name": "KOSMOS / Genesis 001 / 4C",
+      "session_count": 2,
+      "top_category": "Product / app / tool design",
+      "date_range": {
+        "min": "2026-07-16",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a58e360-e7f4-83ed-85dc-ba74e7d99f10",
+          "title": "#MAIN — KOSMOS (World Governance & Coordination)",
+          "created_at": "2026-07-16T13:58:24.463Z"
+        },
+        {
+          "uuid": "6a58e3a9-63a0-83ed-a061-f72de5620c0d",
+          "title": "PROG — 4C (Foundational Ontology)",
+          "created_at": "2026-07-16T13:59:17.551Z"
+        }
+      ]
+    },
+    {
+      "name": "NEW — Navigate the Emerging World",
+      "session_count": 2,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-03-15",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a58e52a-b0fc-83eb-abd7-aa3dde77c3af",
+          "title": "PROG — NEW (Navigation for the Emerging World)",
+          "created_at": "2026-07-16T14:05:38.822Z"
+        },
+        {
+          "uuid": "69b6dac6-7e4c-8325-9f77-ee5892a25d75",
+          "title": "Explorateur Nouveau Monde",
+          "created_at": "2026-03-15T16:14:40.535Z"
+        }
+      ]
+    },
+    {
+      "name": "N100 Local Server & Home Infrastructure",
+      "session_count": 2,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-06-08",
+        "max": "2026-07-19"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5c9039-e4c0-83eb-ba73-f8510cf20aa0",
+          "title": "Outils stabilité connexion",
+          "created_at": "2026-07-19T08:52:14.249000Z"
+        },
+        {
+          "uuid": "6a271dbe-b634-8331-bb90-a997929cc889",
+          "title": "N100 Setup and Control",
+          "created_at": "2026-06-08T19:53:36.918Z"
+        }
+      ]
+    },
+    {
+      "name": "ChatGPT Extension / YStudio",
+      "session_count": 2,
+      "top_category": "Product / app / tool design",
+      "date_range": {
+        "min": "2025-10-20",
+        "max": "2026-07-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a54ef91-5764-83eb-af07-409e48c97586",
+          "title": "Gestionnaire d'extensions Chrome",
+          "created_at": "2026-07-13T14:01:06.393Z"
+        },
+        {
+          "uuid": "68f6b3f2-3dfc-8333-a4e7-77b99e71c40c",
+          "title": "Business Strategy",
+          "created_at": "2025-10-20T22:13:11.605Z"
+        }
+      ]
+    },
+    {
+      "name": "EYA — AI Companion",
+      "session_count": 2,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-07",
+        "max": "2026-07-11"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a520154-124c-83eb-98ea-d6d91c9d37ae",
+          "title": "Pitch eYa amélioré",
+          "created_at": "2026-07-11T08:40:57.426Z"
+        },
+        {
+          "uuid": "6a4d45ff-c6f4-83eb-997b-de1eebbca175",
+          "title": "Avatar vivant simplifié",
+          "created_at": "2026-07-07T18:31:35.578Z"
+        }
+      ]
+    },
+    {
+      "name": "Product / App Exploration",
+      "session_count": 2,
+      "top_category": "Product / app / tool design",
+      "date_range": {
+        "min": "2026-06-26",
+        "max": "2026-07-05"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a3ee7da-f418-83ed-a90e-090fec802d13",
+          "title": "Livre changement social",
+          "created_at": "2026-06-26T20:58:04.474Z"
+        },
+        {
+          "uuid": "6a4abcb7-63d4-83eb-bbbe-0dbb9fe82f43",
+          "title": "Mac système lent solution",
+          "created_at": "2026-07-05T20:21:14.525000Z"
+        }
+      ]
+    },
+    {
+      "name": "Peace of Mind",
+      "session_count": 2,
+      "top_category": "Care / Peace of Mind / assistive AI",
+      "date_range": {
+        "min": "2025-10-20",
+        "max": "2025-12-09"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "693799cb-1794-832d-aef3-6006829d3306",
+          "title": "Ours AI pour enfants et âgés",
+          "created_at": "2025-12-09T03:38:54.473Z"
+        },
+        {
+          "uuid": "68f60323-9164-8327-8c29-f2eb418e49d3",
+          "title": "PoM - Remote elderly monitoring systems",
+          "created_at": "2025-10-20T09:38:55.018Z"
+        }
+      ]
+    },
+    {
+      "name": "Interactive Media / MediaPipe",
+      "session_count": 2,
+      "top_category": "Product / app / tool design",
+      "date_range": {
+        "min": "2025-10-22",
+        "max": "2026-04-01"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "68f84f02-6ad4-8329-bf01-b4e1b79ca7e7",
+          "title": "Interactive media player",
+          "created_at": "2025-10-22T03:27:03.271Z"
+        },
+        {
+          "uuid": "69cc605c-f920-832e-be55-d79ca6e51f08",
+          "title": "Projection interactive MediaPipe",
+          "created_at": "2026-04-01T00:01:37.490Z"
+        }
+      ]
+    },
+    {
+      "name": "Future News / Journal du Futur",
+      "session_count": 2,
+      "top_category": "Civilization / futures / education / society",
+      "date_range": {
+        "min": "2026-04-04",
+        "max": "2026-04-04"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69d0fa89-a38c-832b-900d-49a68e5bec1d",
+          "title": "Journal du futur",
+          "created_at": "2026-04-04T11:48:33.966Z"
+        },
+        {
+          "uuid": "69d16647-6630-8332-8edd-9d2d713e207f",
+          "title": "Future News Conversion Help",
+          "created_at": "2026-04-04T19:28:46.676Z"
+        }
+      ]
+    },
+    {
+      "name": "WIP / LiveDivine / Petite Librairie Divine",
+      "session_count": 2,
+      "top_category": "Spirituality / wisdom / sacred publishing",
+      "date_range": {
+        "min": "2026-02-23",
+        "max": "2026-04-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "699ccbf8-6c10-8330-9910-e40b5d595269",
+          "title": "LiveDivine project progress",
+          "created_at": "2026-02-23T21:52:09.670Z"
+        },
+        {
+          "uuid": "69dd36af-56f4-8331-b10e-a0639d5590e1",
+          "title": "Analyse système WIP 1.0",
+          "created_at": "2026-04-13T18:33:00.170Z"
+        }
+      ]
+    },
+    {
+      "name": "Personal Activity Memory / Life Logging",
+      "session_count": 2,
+      "top_category": "Product / app / tool design",
+      "date_range": {
+        "min": "2025-10-13",
+        "max": "2026-04-21"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "230db209-70f8-8328-86bc-5f176d389306",
+          "title": "App diario iOS log",
+          "created_at": "2025-10-13T09:22:34.170Z"
+        },
+        {
+          "uuid": "69e7da4a-94cc-8327-90f1-054b4b8601fc",
+          "title": "Outils mémoire poste de travail",
+          "created_at": "2026-04-21T20:13:13.836Z"
+        }
+      ]
+    },
+    {
+      "name": "Garden & Plant Catalogue",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-17",
+        "max": "2026-07-17"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5aa6e9-2828-83eb-b29b-33f1f40f985a",
+          "title": "--GARDEN--",
+          "created_at": "2026-07-17T22:05:09.741Z"
+        }
+      ]
+    },
+    {
+      "name": "NIGHT / Aztec Privacy Crypto Monitor",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-06-01",
+        "max": "2026-06-01"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a1d4631-535c-8326-a09d-87dc79b52f23",
+          "title": "NIGHT crypto growth analysis",
+          "created_at": "2026-06-01T08:44:03.712Z"
+        }
+      ]
+    },
+    {
+      "name": "Goodnight / Roshi Goodnight",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-17",
+        "max": "2026-07-17"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a5ac0db-700c-83eb-a585-8a2e8dbdca01",
+          "title": "Skill Goodnight création",
+          "created_at": "2026-07-17T23:55:32.490Z"
+        }
+      ]
+    },
+    {
+      "name": "PIE — Visual Cognitive System",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-16",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a58e5df-1c88-83eb-8dfa-b10090adca4d",
+          "title": "PROG — PIE (Visual Cognitive System)",
+          "created_at": "2026-07-16T14:08:51.443Z"
+        }
+      ]
+    },
+    {
+      "name": "MissionOS",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-16",
+        "max": "2026-07-16"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a58e609-0334-83ed-8aa9-27044c540be1",
+          "title": "PROG — MissionOS (Mission & Expedition Engine)",
+          "created_at": "2026-07-16T14:09:29.978Z"
+        }
+      ]
+    },
+    {
+      "name": "Family Connect",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-17",
+        "max": "2026-07-17"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a59d7f8-5fcc-83ed-9c97-0932e68020e9",
+          "title": "FAMILY CONNECT",
+          "created_at": "2026-07-17T07:21:44.937000Z"
+        }
+      ]
+    },
+    {
+      "name": "Simple To-Do / Y-Tasks",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-03",
+        "max": "2026-07-03"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a480ac9-901c-83eb-9a52-60ab09a1a2eb",
+          "title": "Simple To-Do App",
+          "created_at": "2026-07-03T19:18:32.504Z"
+        }
+      ]
+    },
+    {
+      "name": "OpenAI–State Dossier",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2026-07-10",
+        "max": "2026-07-10"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a518623-c7c8-83ed-86bd-b15ba9abd156",
+          "title": "Suivi dossier OpenAI–État",
+          "created_at": "2026-07-10T23:54:35.469000Z"
+        }
+      ]
+    },
+    {
+      "name": "Device & Sensor Comparison",
+      "session_count": 1,
+      "top_category": "Other / requires semantic review",
+      "date_range": {
+        "min": "2025-12-13",
+        "max": "2025-12-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "693ddd8a-da78-832b-9469-6829376b5dfe",
+          "title": "Top motion sensor comparison",
+          "created_at": "2025-12-13T21:41:46.208000Z"
+        }
+      ]
+    },
+    {
+      "name": "CasaTAO / Anandaz Spatial Digital Twin",
+      "session_count": 1,
+      "top_category": "Business / finance / administration",
+      "date_range": {
+        "min": "2026-01-12",
+        "max": "2026-01-12"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69655ec0-1db8-832a-8b2f-7a708498ad70",
+          "title": "Analisi pagamenti incarico Casa Tao",
+          "created_at": "2026-01-12T20:51:25.418Z"
+        }
+      ]
+    },
+    {
+      "name": "Identity & Public Voice",
+      "session_count": 1,
+      "top_category": "Identity / personal profile",
+      "date_range": {
+        "min": "2025-10-07",
+        "max": "2025-10-07"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "b786bd3c-1c74-8321-bdfb-c683c9d3b1fb",
+          "title": "Create profile summary",
+          "created_at": "2025-10-07T16:07:56.398Z"
+        }
+      ]
+    },
+    {
+      "name": "GEN5",
+      "session_count": 1,
+      "top_category": "Civilization / futures / education / society",
+      "date_range": {
+        "min": "2026-03-21",
+        "max": "2026-03-21"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69bee404-0a58-8333-9b03-526cac5d8cd2",
+          "title": "Gen 5 Concept Analysis",
+          "created_at": "2026-03-21T18:32:09.958Z"
+        }
+      ]
+    },
+    {
+      "name": "Unassigned / Semantic Review",
+      "session_count": 1,
+      "top_category": "Project strategy / ecosystem",
+      "date_range": {
+        "min": "2025-12-09",
+        "max": "2025-12-09"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "693796c4-8364-832e-8f0d-f437a12f7842",
+          "title": "Analyse acteurs similaires",
+          "created_at": "2025-12-09T03:25:59.727Z"
+        }
+      ]
+    },
+    {
+      "name": "FIF — Future in Focus",
+      "session_count": 1,
+      "top_category": "Civilization / futures / education / society",
+      "date_range": {
+        "min": "2026-04-13",
+        "max": "2026-04-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69dd3727-3ea4-8333-819e-a66b8444e60e",
+          "title": "Analyse de FIF",
+          "created_at": "2026-04-13T18:34:30.098Z"
+        }
+      ]
+    },
+    {
+      "name": "Layoff / Job Cuts Monitor",
+      "session_count": 1,
+      "top_category": "Civilization / futures / education / society",
+      "date_range": {
+        "min": "2026-04-04",
+        "max": "2026-04-04"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69d0c2d1-5c9c-832c-a47d-bc9b0458aecd",
+          "title": "Job Cuts in 2026",
+          "created_at": "2026-04-04T07:51:03.042Z"
+        }
+      ]
+    },
+    {
+      "name": "ARC — Anandaz Retreat Chalet",
+      "session_count": 1,
+      "top_category": "Spirituality / philosophy / inner transformation",
+      "date_range": {
+        "min": "2026-04-13",
+        "max": "2026-04-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69dcf306-e8cc-8330-b430-8d1a03d24824",
+          "title": "ARC - Anandaz Retreat Chalet",
+          "created_at": "2026-04-13T13:43:44.605Z"
+        }
+      ]
+    },
+    {
+      "name": "BOOK Sassi",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-06-13",
+        "max": "2026-06-13"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a2d595a-4c88-8388-8e1d-e3cbde7f3252",
+          "title": "BOOK Sassi",
+          "created_at": "2026-06-13T13:21:46.089Z"
+        }
+      ]
+    },
+    {
+      "name": "Personal Operations / Utility",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-05-01",
+        "max": "2026-05-01"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69f51619-3fb0-8326-83e6-6bbc38cac46c",
+          "title": "Check-in quotidien Temu iOS",
+          "created_at": "2026-05-01T21:08:04.527Z"
+        }
+      ]
+    },
+    {
+      "name": "City 3.0",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-04-27",
+        "max": "2026-04-27"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69efe130-e990-832e-b704-bf208895f5e0",
+          "title": "City 3.0 concept",
+          "created_at": "2026-04-27T22:20:54.576Z"
+        }
+      ]
+    },
+    {
+      "name": "FocusBoard",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2025-10-25",
+        "max": "2025-10-25"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "68fca7c4-ce24-8331-9e12-3039475f3fc6",
+          "title": "Exporter FocusBoard JSON",
+          "created_at": "2025-10-25T10:34:51.347Z"
+        }
+      ]
+    },
+    {
+      "name": "Gratitude",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-03-28",
+        "max": "2026-03-28"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69c8140a-2810-8332-81ae-9925a5734e81",
+          "title": "Gratitude and well-being",
+          "created_at": "2026-03-28T17:47:06.548Z"
+        }
+      ]
+    },
+    {
+      "name": "Mixed Technology & Operations Session",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-01-02",
+        "max": "2026-01-02"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69585600-7494-8332-afa8-eb50d30b1986",
+          "title": "LLM monitoring",
+          "created_at": "2026-01-02T23:35:09.393Z"
+        }
+      ]
+    },
+    {
+      "name": "Visual Language for Patients",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-04-02",
+        "max": "2026-04-02"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69ce189c-d1f0-832d-97e2-c145d813b0c1",
+          "title": "Langage visuel pour patients",
+          "created_at": "2026-04-02T07:20:15.788Z"
+        }
+      ]
+    },
+    {
+      "name": "MLO — Health & Self Map",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-03-28",
+        "max": "2026-03-28"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69c7c3e0-70a8-8326-ae0c-91cc85ada9f0",
+          "title": "MLO",
+          "created_at": "2026-03-28T12:07:17.040Z"
+        }
+      ]
+    },
+    {
+      "name": "Travel Organizer",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-04-06",
+        "max": "2026-04-06"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69d392fb-f060-8330-b4cb-121c3909cbd0",
+          "title": "Outils pour organiser voyages",
+          "created_at": "2026-04-06T11:04:15.234Z"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Psy & Guidance",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-03-28",
+        "max": "2026-03-28"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "69c7c365-9924-832a-9542-ef2f8641f4e4",
+          "title": "Psy virtuel et guidance",
+          "created_at": "2026-03-28T12:03:43.194Z"
+        }
+      ]
+    },
+    {
+      "name": "Valais Discovery Guide",
+      "session_count": 1,
+      "top_category": "unknown",
+      "date_range": {
+        "min": "2026-05-24",
+        "max": "2026-05-24"
+      },
+      "sessions_sample": [
+        {
+          "uuid": "6a12a1fc-8028-838d-a22c-59114f11b83f",
+          "title": "Your guide to Valais this week",
+          "created_at": "2026-05-24T07:00:13.213Z"
+        }
+      ]
+    }
+  ],
+  "acquisition_gap": "3060 ledger rows require raw body analysis to assign project tags",
+  "recommended_action": "C2 → extract raw bodies → run project classifier → backfill ledger Project_Tag"
+}

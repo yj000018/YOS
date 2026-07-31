@@ -1,0 +1,11 @@
+{
+  "surface": "CHATGPT_TASKS",
+  "closure_status": "CLOSED",
+  "closure_note": "ChatGPT Tasks feature (scheduled automation) census: 0 entries. NOTE: api_task_list_full.json (564 entries) contains MANUS tasks, not ChatGPT Tasks — correctly excluded.",
+  "generated_at": "2026-07-31T05:00:00Z",
+  "chatgpt_tasks_feature_count": 0,
+  "manus_tasks_in_ledger": 564,
+  "manus_tasks_note": "Manus task list (564) stored separately in session-ledger — not ChatGPT Tasks feature",
+  "acquisition_gap": "None — ChatGPT Tasks feature not activated on this account",
+  "recommended_action": "None"
+}

@@ -1,11 +1,21 @@
 ---
-id: ikptWc73WjXexUmuoz6r6A
+id: "ikptWc73WjXexUmuoz6r6A"
 title: "[✓] Test & Factsheet du connecteur Mem MCP pour Y-OS"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: ["Y-OS"]
 tags: ["Mem MCP", "connector", "factsheet", "testing", "API integration"]
 summary: ""
+executive_summary: "A factsheet for Mem MCP was created and pushed to Notion."
+context_and_intent: "The primary goal was to create a comprehensive factsheet for a new iOS tool, Mem MCP. This factsheet needed to detail its capabilities, limitations, lessons learned, access methods, technical possibilities (read, write, API entry points), business features, and cost (free/paid). The user emphasized that the tool was thoroughly tested with all available APIs and entry points, distinguishing this analysis from those based solely on documentation."
+what_was_done: "A factsheet for Mem MCP was created and pushed to Notion."
+outputs_produced: [{"description": "A comprehensive document detailing the capabilities, limits, lessons learned, access, technical possibilities, business features, and cost of the Mem MCP iOS tool.", "name": "Factsheet for Mem MCP", "type": "Document"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/ikptWc73WjXexUmuoz6r6A"
 ---
 

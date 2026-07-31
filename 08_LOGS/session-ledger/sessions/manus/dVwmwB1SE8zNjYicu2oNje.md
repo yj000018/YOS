@@ -1,11 +1,21 @@
 ---
-id: dVwmwB1SE8zNjYicu2oNje
+id: "dVwmwB1SE8zNjYicu2oNje"
 title: "[✓] Karpathy's AutoResearch ML Agent Experiment - Status Review and Community Findings"
 date: "2026-03-11"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: ["Y-OS"]
 tags: ["ML Agent", "AutoResearch", "Karpathy", "LLM"]
 summary: ""
+executive_summary: "Karpathy's `autoresearch` is an autonomous ML research agent, launched March 7, 2026, that uses a single GPU to iteratively modify LLM training code, train for 5 minutes, and keep improvements based on `val_bpb`. Over two days and approximately 700 experiments, it achieved a -11% gain in `val_bpb` and reduced \"Time to GPT-2\" from 2.02h to 1.80h, with the approach confirmed to transfer to larger models."
+context_and_intent: "The session aimed to review the status of Karpathy's AutoResearch ML Agent experiment, gather community findings, and identify any \"gray discoveries\" or progress made with this approach."
+what_was_done: "An AI agent was configured to receive a real LLM training setup (`train.py`), which included a GPT model and an optimizer (Muon/AdamW). The agent's process involved modifying the code, training the model for 5 minutes, measuring the `val_bpb`, and retaining the changes if an improvement was observed, then repeating this cycle. The human's role was limited to programming the `program.md`, which served as the \"research policy\" guiding the agent's actions."
+outputs_produced: [{"description": "An autonomous ML research loop on a single GPU, published March 7, 2026, with 630 lines of code and an MIT License.", "name": "karpathy/autoresearch project", "type": "Project/Codebase"}, {"description": "Approximately 700 experiments were conducted autonomously by the agent over two days.", "name": "Autonomous Experiments Conducted", "type": "Metric/Activity"}, {"description": "Around 20 improvements were identified and retained by the agent's iterative process.", "name": "Improvements Kept", "type": "Metric/Result"}, {"description": "Achieved a -11% gain in validation bits per byte (val_bpb).", "name": "val_bpb Gain", "type": "Metric/Result"}, {"description": "Reduced the time required to reach GPT-2 performance from 2.02 hours to 1.80 hours.", "name": "\"Time to GPT-2\" Reduction", "type": "Metric/Result"}, {"description": "The autonomous research approach was confirmed to transfer successfully to larger models.", "name": "Transferability to Larger Models", "type": "Finding/Confirmation"}]
+key_decisions: []
+lessons_learned: {"discoveries": ["The agent successfully identified approximately 20 improvements out of ~700 experiments.", "A -11% gain in validation bits per byte (val_bpb) was achieved.", "\"Time to GPT-2\" was reduced from 2.02 hours to 1.80 hours.", "The autonomous research approach was confirmed to transfer successfully to larger models."], "failed_or_suboptimal": [], "worked_well": ["The autonomous ML research loop effectively found performance improvements in LLM training.", "The single-GPU setup allowed for rapid iteration and experimentation (5-minute training cycles).", "The human-defined `program.md` policy proved effective in guiding the agent's research."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/dVwmwB1SE8zNjYicu2oNje"
 ---
 

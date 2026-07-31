@@ -1,11 +1,21 @@
 ---
-id: 4iuGxxCK2LgKRvziG4E6f6
+id: "4iuGxxCK2LgKRvziG4E6f6"
 title: "[✓] LMP ChatGPT — Backup Playwright Delta-Sync vers Notion (bloqué: login)"
 date: "2026-05-11"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Memory Pipeline", "Y-OS"]
 tags: ["LMP", "ChatGPT"]
 summary: ""
+executive_summary: "The LLM Memory Pipeline for ChatGPT, intended to extract, synthesize, and archive sessions to Notion, was skipped due to missing login credentials (cookies, Harpa API key, token). The scheduled task has been running inefficiently, consuming credits without results, and was recommended to be disabled until the HARPA API key is provided."
+context_and_intent: "The user intended to run the LLM Memory Pipeline for ChatGPT to extract new sessions using Playwright, synthesize them with Claude, and archive them to Notion, specifically in a delta-only mode. A pre-check for login status was required, with a directive to skip and log if not logged in."
+what_was_done: "The LLM Memory Pipeline execution was skipped. The system detected a lack of necessary login credentials (cookies, HARPA API key, and token). The issue was logged. A recommendation was made to disable the scheduled task due to inefficient credit consumption."
+outputs_produced: [{"description": "Log entry indicating the pipeline was skipped due to missing credentials (cookies, harpa, token).", "name": "Log entry", "type": "Log"}, {"description": "Recommendation to disable the scheduled task and provide the HARPA API key.", "name": "Recommendation", "type": "Message"}]
+key_decisions: ["The pipeline execution was skipped due to login issues.", "A strong recommendation was made to disable the inefficient scheduled task."]
+lessons_learned: {"discoveries": ["The scheduled task was consuming credits unnecessarily due to a persistent login failure."], "failed_or_suboptimal": ["The automated pipeline failed to execute due to missing authentication.", "The current setup allowed a scheduled task to run inefficiently without a clear mechanism to self-disable or alert more proactively about persistent failures."], "worked_well": ["The system successfully identified and logged the login credential issues, preventing further execution of a doomed task.", "The system also provided a clear recommendation for remediation."]}
+challenges_and_blockers: ["Missing login credentials for Playwright (cookies, HARPA API key, token).", "The scheduled pipeline was running empty for several days, consuming Manus credits without producing results.", "The absence of the HARPA API key specifically prevented the process from proceeding."]
+open_questions: []
+next_steps: ["The user needs to disable the scheduled task from the Manus UI.", "The user needs to provide the HARPA API key to reactivate the pipeline."]
 url: "https://manus.im/app/task/4iuGxxCK2LgKRvziG4E6f6"
 ---
 

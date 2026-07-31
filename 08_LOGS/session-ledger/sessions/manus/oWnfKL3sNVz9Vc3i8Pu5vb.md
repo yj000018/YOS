@@ -1,11 +1,21 @@
 ---
-id: oWnfKL3sNVz9Vc3i8Pu5vb
+id: "oWnfKL3sNVz9Vc3i8Pu5vb"
 title: "[✓] Sourcing KSP Yack N972(H) — neuf/occasion, options livraison CH/FR/IT"
 date: "2026-06-21"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: []
 tags: ["sourcing", "KSP Yack N972(H)", "fauteuil roulant"]
 summary: ""
+executive_summary: "The session successfully provided detailed real-time durations for the disassembly and reassembly of the Yack N972, based on an official demonstration video. The output included step-by-step timings and a practical summary."
+context_and_intent: "The user wanted to know the real-time durations for disassembling the Yack N972 mobility device to fit it into a car trunk and then reassembling it afterwards."
+what_was_done: "The assistant analyzed an official demonstration video for the Yack N972 to extract precise timings. It then structured this information into two detailed tables for disassembly and reassembly, respectively, breaking down each process into key steps with their durations. A third summary table provided practical total times for quick reference."
+outputs_produced: [{"description": "Table detailing the steps and real durations for disassembling the Yack N972 into three separate pieces for transport.", "name": "Démontage (pour mettre dans le coffre)", "type": "Table"}, {"description": "Table detailing the steps and real durations for reassembling the Yack N972 and attaching a wheelchair.", "name": "Remontage (sortir du coffre + attacher le fauteuil roulant)", "type": "Table"}, {"description": "Summary table providing practical total durations for disassembly, reassembly, and a complete round trip cycle.", "name": "Résumé pratique", "type": "Table"}]
+key_decisions: []
+lessons_learned: {"discoveries": ["The Yack N972 can be disassembled in approximately 25-30 seconds (under 1 minute).", "Reassembly and attaching a wheelchair takes about 2 minutes 10 seconds (2-3 minutes).", "A full disassembly-reassembly cycle is approximately 5 minutes."], "failed_or_suboptimal": [], "worked_well": ["The assistant accurately extracted specific time data from the official demonstration video.", "The information was presented clearly and concisely using tables, breaking down complex actions into measurable steps.", "The source of the data (official demonstration video) was explicitly stated, adding credibility."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/oWnfKL3sNVz9Vc3i8Pu5vb"
 ---
 

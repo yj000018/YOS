@@ -1,11 +1,21 @@
 ---
-id: xus3YBWJTs7gqiABvnuJuZ
+id: "xus3YBWJTs7gqiABvnuJuZ"
 title: "[✓] Semrush MCP Connector — Test & Factsheet Y-OS"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "substantial"
 projects: ["Y-OS"]
 tags: ["Semrush MCP", "Factsheet", "Test", "API", "Pricing", "Notion", "iOS", "Connector", "Technology", "Infrastructure"]
 summary: "Test et création d'une factsheet Semrush MCP pour Y-OS, couvrant capacités, limites, pricing et intégration, archivée dans Notion."
+executive_summary: "A factsheet for the Semrush MCP Connector, a new iOS tool, was requested and subsequently delivered. The factsheet details the tool's capabilities, limitations, and access information based on comprehensive testing, and has been archived in Notion."
+context_and_intent: "The user requested a detailed factsheet for a new iOS tool, the Semrush MCP Connector. The factsheet needed to cover its capabilities, limitations, lessons learned, access methods (including APIs and entry points), technical features (read/write possibilities), business-wise benefits, and cost (free/paid). The user emphasized that this factsheet should be based on thorough testing of the tool, unlike previous instances where documentation was used. The factsheet should leverage existing metadata structures and descriptions for similar tools."
+what_was_done: "The assistant created and delivered the requested factsheet for the Semrush MCP Connector. The factsheet was then archived in Notion."
+outputs_produced: [{"description": "A comprehensive document detailing the capabilities, limits, lessons learned, access methods, technical features, business benefits, and cost of the Semrush MCP Connector.", "name": "Factsheet Semrush MCP", "type": "Factsheet"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": ["The factsheet was successfully created and delivered as requested."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: ["The created factsheet is archived in Notion under '⚙️'."]
 url: "https://manus.im/app/task/xus3YBWJTs7gqiABvnuJuZ"
 ---
 

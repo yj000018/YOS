@@ -1,52 +1,36 @@
 #!/usr/bin/env python3
 """
-Y-OS Session Ledger — LMP Phase 2: Deep Processing
-Processes Pending sessions: generates Topic_Summary via LLM, pushes to Notion, marks as Archived.
+Y-OS Session Ledger — Process Pending Sessions
+Fetches verbatim, generates summary, archives to Git + Mem0.
+Notion write is optional (legacy, requires NOTION_API_KEY + NOTION_SESSIONS_DB_ID).
 
-Usage:
-  python3 process_ledger.py --limit 10          # Process 10 pending sessions
-  python3 process_ledger.py --source Manus      # Process only Manus sessions
-  python3 process_ledger.py --dry-run           # Preview without writing
+Usage: python3 process_ledger.py [--limit N] [--source Manus] [--dry-run]
 
-Architecture:
-  1. Load Ledger → filter Pending sessions
-  2. For each session:
-     a. Fetch verbatim (Manus API GetSession, or from raw export file)
-     b. Generate Topic_Summary via LLM (Anthropic Claude)
-     c. Push synthesis to Notion (yOS Memory — Sessions)
-     d. Update Ledger: Archive_Status=Archived, Archive_Link=<notion_url>
-  3. Save updated Ledger
-
-NOTE: This script is a STUB. Full implementation requires:
-  - Manus API GetSession endpoint (to fetch verbatim for Manus sessions)
-  - Anthropic API key (set as ANTHROPIC_API_KEY env var)
-  - Notion API key (set as NOTION_API_KEY env var)
-  - Notion database ID for yOS Memory — Sessions
+MIGRATION NOTE (Phase 2 — MPX-20260731-YOS-MEMORY-GIT-MEM0-REFACTOR):
+  - Primary destination: Git (canonical Markdown) + Mem0 (semantic projection)
+  - Notion write: optional, legacy, guarded by NOTION_API_KEY env var
+  - Replaced custom load_ledger/save_ledger with yos_memory.SessionLedger
+  - Replaced custom CSV I/O with yos_memory.DedupState
+  - Credentials exclusively from environment variables (no hardcoded tokens)
 """
-import json
-import csv
-import sys
 import os
+import sys
+import json
 import argparse
+import urllib.request
+from pathlib import Path
 
-LEDGER_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'master_ledger.csv')
+# ─── yos_memory import ────────────────────────────────────────────────────────
+_PIPELINE_DIR = Path(__file__).resolve().parents[4] / "yos-automations" / "scripts" / "yos-llm-pipeline"
+if str(_PIPELINE_DIR) not in sys.path:
+    sys.path.insert(0, str(_PIPELINE_DIR))
 
-def load_ledger():
-    with open(LEDGER_PATH, 'r', encoding='utf-8') as f:
-        return list(csv.DictReader(f))
+from yos_memory.ledger import SessionLedger
+from yos_memory.dedup import DedupState
+from yos_memory.session_store import SessionStore
 
-def save_ledger(rows):
-    fieldnames = ['Global_UID', 'Source', 'Source_ID', 'Title', 'Project_ID',
-                  'Created_At', 'Updated_At', 'Archive_Status', 'Archive_Link',
-                  'Topic_Summary', 'Project_Tag']
-    with open(LEDGER_PATH, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
-
-def fetch_manus_verbatim(session_uid, jwt_token, client_id):
-    """Fetch full session content from Manus API."""
-    import urllib.request
+# ─── Manus verbatim fetch ─────────────────────────────────────────────────────
+def fetch_manus_verbatim(session_uid: str, jwt_token: str, client_id: str) -> dict:
     url = "https://api.manus.im/session.v1.SessionService/GetSession"
     headers = {
         "accept": "*/*",
@@ -56,12 +40,15 @@ def fetch_manus_verbatim(session_uid, jwt_token, client_id):
         "x-client-id": client_id,
     }
     payload = {"sessionUid": session_uid}
-    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers=headers, method='POST')
+    req = urllib.request.Request(
+        url, data=json.dumps(payload).encode(), headers=headers, method="POST"
+    )
     with urllib.request.urlopen(req) as r:
         return json.loads(r.read().decode())
 
-def generate_summary(title, verbatim_snippet, anthropic_key):
-    """Generate a 1-2 sentence topic summary using Claude."""
+
+# ─── LLM Summary ─────────────────────────────────────────────────────────────
+def generate_summary(title: str, verbatim_snippet: str, anthropic_key: str) -> str:
     import anthropic
     client = anthropic.Anthropic(api_key=anthropic_key)
     message = client.messages.create(
@@ -69,14 +56,23 @@ def generate_summary(title, verbatim_snippet, anthropic_key):
         max_tokens=150,
         messages=[{
             "role": "user",
-            "content": f"Session title: {title}\n\nFirst 500 chars of content: {verbatim_snippet[:500]}\n\nWrite a 1-2 sentence summary of what this session is about. Be specific and concise."
+            "content": (
+                f"Session title: {title}\n\n"
+                f"First 500 chars of content: {verbatim_snippet[:500]}\n\n"
+                "Write a 1-2 sentence summary of what this session is about. "
+                "Be specific and concise."
+            )
         }]
     )
     return message.content[0].text.strip()
 
-def push_to_notion(session, summary, notion_key, database_id):
-    """Push session synthesis to Notion yOS Memory — Sessions database."""
-    import urllib.request
+
+# ─── Legacy Notion write (optional) ──────────────────────────────────────────
+def push_to_notion_legacy(session: dict, summary: str, notion_key: str, database_id: str) -> str:
+    """
+    Legacy: push to Notion Sessions DB.
+    Only called if NOTION_API_KEY and NOTION_SESSIONS_DB_ID are set.
+    """
     headers = {
         "Authorization": f"Bearer {notion_key}",
         "Content-Type": "application/json",
@@ -85,94 +81,127 @@ def push_to_notion(session, summary, notion_key, database_id):
     payload = {
         "parent": {"database_id": database_id},
         "properties": {
-            "Name": {"title": [{"text": {"content": session['Title']}}]},
-            "Source": {"select": {"name": session['Source']}},
-            "Source_ID": {"rich_text": [{"text": {"content": session['Source_ID']}}]},
+            "Name": {"title": [{"text": {"content": session["Title"]}}]},
+            "Source": {"select": {"name": session["Source"]}},
+            "Source_ID": {"rich_text": [{"text": {"content": session["Source_ID"]}}]},
             "Summary": {"rich_text": [{"text": {"content": summary}}]},
-            "Date": {"date": {"start": session['Created_At'][:10] if session['Created_At'] else ""}},
+            "Date": {"date": {"start": session["Created_At"][:10] if session.get("Created_At") else ""}},
         }
     }
     req = urllib.request.Request(
         "https://api.notion.com/v1/pages",
         data=json.dumps(payload).encode(),
         headers=headers,
-        method='POST'
+        method="POST"
     )
     with urllib.request.urlopen(req) as r:
         result = json.loads(r.read().decode())
         return f"https://notion.so/{result['id'].replace('-', '')}"
 
+
+# ─── Main ─────────────────────────────────────────────────────────────────────
 def main():
-    parser = argparse.ArgumentParser(description='Process Pending sessions in the Ledger')
-    parser.add_argument('--limit', type=int, default=10, help='Number of sessions to process')
-    parser.add_argument('--source', default=None, help='Filter by source (e.g., Manus, ChatGPT)')
-    parser.add_argument('--dry-run', action='store_true', help='Preview without writing')
+    parser = argparse.ArgumentParser(description="Process Pending sessions in the Ledger")
+    parser.add_argument("--limit", type=int, default=10, help="Number of sessions to process")
+    parser.add_argument("--source", default=None, help="Filter by source (e.g., Manus, ChatGPT)")
+    parser.add_argument("--dry-run", action="store_true", help="Preview without writing")
     args = parser.parse_args()
 
-    # Load credentials from environment
-    jwt_token = os.environ.get('MANUS_JWT_TOKEN', '')
-    client_id = os.environ.get('MANUS_CLIENT_ID', '')
-    anthropic_key = os.environ.get('ANTHROPIC_API_KEY', '')
-    notion_key = os.environ.get('NOTION_API_KEY', '')
-    notion_db_id = os.environ.get('NOTION_SESSIONS_DB_ID', '')
+    # Credentials from environment only
+    jwt_token = os.environ.get("MANUS_JWT_TOKEN", "")
+    client_id = os.environ.get("MANUS_CLIENT_ID", "")
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    notion_key = os.environ.get("NOTION_API_KEY", "")
+    notion_db_id = os.environ.get("NOTION_SESSIONS_DB_ID", "")
 
-    ledger = load_ledger()
-    pending = [s for s in ledger if s['Archive_Status'] == 'Pending']
-    
+    # Load ledger via yos_memory
+    ledger = SessionLedger()
+    session_store = SessionStore()
+
+    all_rows = ledger.read_all()
+    pending = [s for s in all_rows if s.get("Processing_Status") != "processed"
+               and s.get("Archive_Status") != "Archived"]
+
     if args.source:
-        pending = [s for s in pending if s['Source'] == args.source]
-    
+        pending = [s for s in pending if s.get("Source") == args.source]
+
     print(f"Total pending: {len(pending)}")
     print(f"Processing: {min(args.limit, len(pending))} sessions")
-    
+
     if args.dry_run:
         print("\nDRY RUN — sessions that would be processed:")
         for s in pending[:args.limit]:
-            print(f"  [{s['Source']}] {s['Title'][:70]}")
+            print(f"  [{s.get('Source', '?')}] {s.get('Title', 'Untitled')[:70]}")
         return
-    
+
     if not anthropic_key:
         print("ERROR: ANTHROPIC_API_KEY not set. Export it before running.")
         sys.exit(1)
-    
+
     processed = 0
     for session in pending[:args.limit]:
-        print(f"\nProcessing: {session['Title'][:60]}...")
-        
+        title = session.get("Title", "Untitled")
+        source = session.get("Source", "Unknown")
+        source_id = session.get("Source_ID", "")
+        created_at = session.get("Created_At", "")
+
+        print(f"\nProcessing: {title[:60]}...")
+
         try:
-            # Step 1: Fetch verbatim
+            # Step 1: Fetch verbatim (Manus only)
             verbatim = ""
-            if session['Source'] == 'Manus' and jwt_token:
-                data = fetch_manus_verbatim(session['Source_ID'], jwt_token, client_id)
-                # Extract first message content as snippet
-                verbatim = str(data)[:500]
-            
+            if source == "Manus" and jwt_token and client_id:
+                try:
+                    data = fetch_manus_verbatim(source_id, jwt_token, client_id)
+                    verbatim = str(data)[:2000]
+                except Exception as e:
+                    print(f"  Verbatim fetch failed: {e}")
+
             # Step 2: Generate summary
-            summary = generate_summary(session['Title'], verbatim, anthropic_key)
+            summary = generate_summary(title, verbatim, anthropic_key)
             print(f"  Summary: {summary[:80]}...")
-            
-            # Step 3: Push to Notion (optional)
+
+            # Step 3: Archive to Git + Mem0 (primary destination)
+            body = f"## Summary\n\n{summary}\n\n## Verbatim Snippet\n\n{verbatim[:1000]}"
+            result = session_store.archive_session(
+                source=source,
+                source_id=source_id,
+                title=title,
+                body_markdown=body,
+                created_at=created_at,
+                project_id=session.get("Project_ID", ""),
+            )
+            print(f"  Git: {result.get('path', '?')} [{result.get('status')}]")
+            print(f"  Mem0: {result.get('mem0_status', '?')}")
+
+            # Step 4: Legacy Notion write (optional)
             notion_url = ""
             if notion_key and notion_db_id:
-                notion_url = push_to_notion(session, summary, notion_key, notion_db_id)
-                print(f"  Notion: {notion_url}")
-            
-            # Step 4: Update Ledger
-            for row in ledger:
-                if row['Source_ID'] == session['Source_ID']:
-                    row['Archive_Status'] = 'Archived'
-                    row['Topic_Summary'] = summary
-                    row['Archive_Link'] = notion_url
-                    break
-            
+                try:
+                    notion_url = push_to_notion_legacy(session, summary, notion_key, notion_db_id)
+                    print(f"  Notion (legacy): {notion_url}")
+                except Exception as e:
+                    print(f"  Notion write failed (non-blocking): {e}")
+
+            # Step 5: Update ledger with all results
+            ledger.update_session(session.get("Global_UID", ""), {
+                "Archive_Status": "Archived",
+                "Processing_Status": "processed",
+                "Topic_Summary": summary,
+                "Archive_Link": notion_url,
+                "Git_Path": result.get("path", ""),
+                "Content_Hash": result.get("hash", ""),
+                "Mem0_Status": result.get("mem0_status", ""),
+            })
+
             processed += 1
-            
+
         except Exception as e:
             print(f"  ERROR: {e}")
             continue
-    
-    save_ledger(ledger)
+
     print(f"\nDone. Processed {processed}/{min(args.limit, len(pending))} sessions.")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

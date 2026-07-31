@@ -1,11 +1,21 @@
 ---
-id: IscmW4QpsVSSWXpC19QBcp
+id: "IscmW4QpsVSSWXpC19QBcp"
 title: "[✓] Extraction Worldchanging — OCR scraping Archive.org (647 ressources)"
 date: "2026-05-18"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["YOUniverse", "Y-OS", "Y World", "PRÉCIPITATION", "OneSHIFT"]
 tags: []
 summary: ""
+executive_summary: "This Manus AI session was dedicated to initiating the extraction and inventorying of all components related to Yannick's Y World / YOUniverse ecosystem from a conversation. The primary output was intended to be a detailed inventory table, categorizing each item based on predefined criteria."
+context_and_intent: "The session's intent was to extract and categorize all projects, initiatives, concepts, apps, systems, places, writings, tools, experiments, and strategic ideas belonging to Yannick’s Y World / YOUniverse ecosystem from a conversation transcript. The goal was to produce a detailed inventory table with specific fields like name, aliases, essence, status, public/private nature, type, Y World location, related projects, existing assets, open questions, and suggested actions (consolidate, merge, etc.)."
+what_was_done: "The Manus AI was prompted to analyze a conversation transcript and extract all relevant entities pertaining to Yannick's Y World / YOUniverse. The extracted information was to be organized into a comprehensive inventory table, including details such as name, essence, status, public/private classification, type, Y World location, related projects, existing assets, open questions, and recommendations for future management."
+outputs_produced: [{"description": "An inventory table detailing projects, initiatives, concepts, apps, systems, places, writings, tools, experiments, and strategic ideas belonging to Yannick’s Y World / YOUniverse ecosystem, structured with 11 specific columns.", "name": "Y World / YOUniverse Ecosystem Inventory", "type": "Inventory Table"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/IscmW4QpsVSSWXpC19QBcp"
 ---
 

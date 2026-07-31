@@ -1,11 +1,21 @@
 ---
-id: ZdOhlGMOmrTqprOli50Y6k
+id: "ZdOhlGMOmrTqprOli50Y6k"
 title: "[✓] Install fast-navigation v2.0 skill and enforce via yos-optimizer"
 date: "2026-05-31"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS", "yos-optimizer"]
 tags: ["fast-navigation", "skill", "web", "browsing", "scraping", "workflow"]
 summary: ""
+executive_summary: "The 'fast-navigation v2.0' skill was successfully installed and enforced within `yos-optimizer`. This involved establishing a mandatory 4-step workflow for web prompts and configuring `fast_nav.py` as the default tool for web scraping and multi-URL operations, ensuring its systematic invocation."
+context_and_intent: "The user intended to install and enforce the 'fast-navigation v2.0' skill, ensuring its systematic use for web interactions by making it the default tool for web scraping and a mandatory step before any browser calls."
+what_was_done: "Manus updated `yos-optimizer` by adding a dedicated 'Règle web — fast-navigation FIRST' section, which establishes a mandatory 4-step workflow for all web prompts. Additionally, `fast_nav.py` was configured to replace `webpage_extract` as the default tool for web scraping and multi-URL operations across all modes. This ensures `fast_nav.py` is systematically invoked before any browser calls."
+outputs_produced: [{"description": "`yos-optimizer` was updated to include a new rule enforcing 'fast-navigation v2.0'.", "name": "`yos-optimizer` update", "type": "Configuration change"}, {"description": "A mandatory 4-step workflow ('Règle web — fast-navigation FIRST') was established for all web prompts before any browser calls.", "name": "Mandatory 'fast-navigation' workflow", "type": "New workflow rule"}, {"description": "`fast_nav.py` replaced `webpage_extract` as the default tool for web scraping and multi-URL operations across all modes.", "name": "`fast_nav.py` as default tool", "type": "Tool configuration"}]
+key_decisions: ["Enforce 'fast-navigation v2.0' systematically.", "Integrate 'fast-navigation' as a mandatory 4-step workflow before any browser calls.", "Designate `fast_nav.py` as the default tool for web scraping and multi-URL operations, replacing `webpage_extract`."]
+lessons_learned: {"discoveries": ["The `yos-optimizer` can be effectively updated to enforce specific workflows and tool preferences systematically across all web interactions."], "failed_or_suboptimal": [], "worked_well": ["The system successfully updated `yos-optimizer` and enforced the new skill as requested.", "The system provided clear confirmation of the changes and the systematic enforcement mechanism."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: ["Utilize the system for web-related tasks, observing the enforced 'fast-navigation' workflow and the use of `fast_nav.py`."]
 url: "https://manus.im/app/task/ZdOhlGMOmrTqprOli50Y6k"
 ---
 

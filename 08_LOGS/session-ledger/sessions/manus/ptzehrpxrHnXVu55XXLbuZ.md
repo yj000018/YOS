@@ -1,11 +1,21 @@
 ---
-id: ptzehrpxrHnXVu55XXLbuZ
+id: "ptzehrpxrHnXVu55XXLbuZ"
 title: "[✓] Démonstration du skill tool-router Y-OS — matrice de routage par domaine"
 date: "2026-05-02"
-importance: 3
+importance: "3"
+depth_score: "minor"
 projects: ["Y-OS"]
 tags: ["tool-router", "routage", "matrice"]
 summary: ""
+executive_summary: "The session involved a demonstration of the '/tool-router' skill, where the assistant analyzed the Y-OS routing matrix and produced a structured document. This document illustrated the tool's decision logic across four key domains: Web Search, LLM, Code/DB, and Design/Multimedia, justifying tool choices with clear tables."
+context_and_intent: "The user requested a demonstration of the newly added '/tool-router' skill for Manus, asking for great examples."
+what_was_done: "The assistant analyzed the Y-OS routing matrix and constructed a structured document. This document demonstrated the 'tool-router' skill's decision logic (Intention → Redundancy Check → Optimal Tool) across four domains: Web Search & Extraction, LLM & Cognitive Processing, Code/Projects & DB, and Design & Multimedia. It utilized clear tables to justify each architectural choice according to the user's implied rules."
+outputs_produced: [{"description": "A document illustrating the 'tool-router's decision logic across four domains (Web Search, LLM, Code/DB, Design/Multimedia) with clear tables justifying architectural choices based on user rules.", "name": "Structured Demonstration Document", "type": "Document"}]
+key_decisions: ["To structure the demonstration around four key domains: Web Search & Extraction, LLM & Cognitive Processing, Code/Projects & DB, and Design & Multimedia.", "To illustrate the decision logic as 'Intention → Vérification des redondances → Outil optimal' using clear tables."]
+lessons_learned: {"discoveries": ["The effectiveness of structuring the tool-router demonstration by domain and illustrating the decision logic (Intention -> Redundancy Check -> Optimal Tool) with clear tables."], "failed_or_suboptimal": [], "worked_well": ["The structured approach to demonstrating the 'tool-router' skill, covering diverse domains and clearly justifying tool choices based on a defined logic."]}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/ptzehrpxrHnXVu55XXLbuZ"
 ---
 

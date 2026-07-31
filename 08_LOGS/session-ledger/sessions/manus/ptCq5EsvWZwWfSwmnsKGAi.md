@@ -1,11 +1,21 @@
 ---
-id: ptCq5EsvWZwWfSwmnsKGAi
+id: "ptCq5EsvWZwWfSwmnsKGAi"
 title: "[✓] Fireflies MCP Connector — Live Test & Y-OS Factsheet v1"
 date: "2026-06-16"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: ["Y-OS"]
 tags: ["Fireflies MCP Connector", "Factsheet", "Live Test", "Tool Integration", "Capabilities", "Limits", "Lessons Learned", "API Access", "Multi-Agents Hub", "iOS"]
 summary: ""
+executive_summary: "A factsheet was requested and produced for the 'Fireflies MCP Connector', a new iOS tool. The factsheet details its capabilities, limitations, and access methods, based on a live test. The output was created and pushed to Notion."
+context_and_intent: "The user requested a factsheet for a new iOS tool, the 'Fireflies MCP Connector'. The factsheet needed to detail its capabilities, limits, lessons learned, access points (APIs, entry points), technical possibilities (e.g., read/write), business features, and cost (free/paid). The user specifically emphasized that this factsheet should be based on actual live testing, differentiating it from previous factsheets that might have relied solely on online documentation. The intent was to leverage existing metadata structures for tool descriptions rather than reinventing them."
+what_was_done: "The assistant created the requested factsheet for the Fireflies MCP Connector and pushed it to Notion."
+outputs_produced: [{"description": "A factsheet detailing the capabilities, limits, lessons learned, access, and features of the Fireflies MCP Connector, based on live testing. It was pushed to Notion.", "name": "Factsheet for Fireflies MCP Connector", "type": "Document"}]
+key_decisions: []
+lessons_learned: {"discoveries": [], "failed_or_suboptimal": [], "worked_well": []}
+challenges_and_blockers: []
+open_questions: []
+next_steps: []
 url: "https://manus.im/app/task/ptCq5EsvWZwWfSwmnsKGAi"
 ---
 

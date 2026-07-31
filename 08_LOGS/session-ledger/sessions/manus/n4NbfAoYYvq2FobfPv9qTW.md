@@ -354,7 +354,7 @@ Le test unitaire passe (1 req isolée) mais en parallèle → 429 immédiat.
 | :--- | :--- |
 | `yos_llm_router.py` | Router universel — à importer dans tout script yOS |
 | `yos_llm_config.json` | Config hot-reload — modifiable sans toucher au code |
-| `[REDACTED:credential]` | Documentation complète |
+| `YOS_LLM_ROUTER_ARCHITECTURE.md` | Documentation complète |
 | `gmail_phase2_v3.py` | Phase 2 Gmail réécrite avec le Router |
 
 ### Architecture en 1 ligne
@@ -629,7 +629,7 @@ Je tue le run actuel et réécris avec le vrai batch API.
 
 | Problème | Impact |
 | :--- | :--- |
-| **Modèle Gemini incorrect** (`[REDACTED:credential]` → 404) | IA:0 sur 310 emails structured — zéro extraction IA depuis le début |
+| **Modèle Gemini incorrect** (`gemini-2.5-flash-preview-04-17` → 404) | IA:0 sur 310 emails structured — zéro extraction IA depuis le début |
 | **Architecture séquentielle** : body fetch + Gemini pour chaque email non-NOISE | 13.5 emails/min → **208h pour 168k** — inacceptable |
 
 ## Solution : 2 phases séparées
@@ -682,7 +682,7 @@ Le pipeline tourne en autonomie complète. Je surveille et te livre le rapport q
 Ouvre ce lien depuis **ton Mac** (pas iPhone) dans Chrome ou Safari :
 
 ```
-https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google-oauth-id]&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.labels&access_type=offline&prompt=consent
+https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google_oauth_client_id]&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.labels&access_type=offline&prompt=consent
 ```
 
 Google va te rediriger vers `http://localhost:8080/callback?code=XXXX` — cette URL ne chargera pas (pas de serveur sur ton Mac) mais le **code** sera visible dans la barre d'adresse.
@@ -760,7 +760,7 @@ Le pipeline tourne en autonomie complète. Je surveille et te livre le rapport q
 Ouvre ce lien depuis **ton Mac** (pas iPhone) dans Chrome ou Safari :
 
 ```
-https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google-oauth-id]&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.labels&access_type=offline&prompt=consent
+https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google_oauth_client_id]&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.labels&access_type=offline&prompt=consent
 ```
 
 Google va te rediriger vers `http://localhost:8080/callback?code=XXXX` — cette URL ne chargera pas (pas de serveur sur ton Mac) mais le **code** sera visible dans la barre d'adresse.
@@ -775,7 +775,7 @@ Copie juste le paramètre `code=` depuis l'URL et colle-le ici.
 **Solution définitive — 2 options :**
 
 **Option A — Tu génères le token depuis ton propre Mac/iPhone (3 min) :**
-1. Ouvre ce lien sur ton Mac : [https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google-oauth-id]&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly&access_type=offline&prompt=consent](https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google-oauth-id]...
+1. Ouvre ce lien sur ton Mac : [https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google_oauth_client_id]&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.readonly&access_type=offline&prompt=consent](https://accounts.google.com/o/oauth2/auth?client_id=[REDACTED:google_oauth_client_id]...
 **[1772367967000] MANUS:** **yOS CORE:** Je relance le flow OAuth2 depuis le début.
 **[1772367960596] USER:** Redo pls
 **[1772365804833] MANUS:** **yOS CORE:** Google demande une vérification passkey — "Verifying it's you... Complete sign-in using your passkey". C'est une vérification biométrique/passkey sur ton appareil (iPhone ou Mac).
@@ -786,7 +786,7 @@ Google t'envoie une notification sur ton iPhone ou Mac pour valider. Accepte-la.
 Si tu ne reçois pas de notification, clique "More ways to verify" pour utiliser le mot de passe à la place.
 **[1772365776228] MANUS:** **yOS CORE:** Cette page (Client ID for Desktop) ne montre pas les redirect URIs — c'est une vue simplifiée. Pour un client "Desktop app", Google n'utilise pas de redirect URI enregistré — il accepte `http://localhost` nativement.
 
-Le vrai problème est que le nouveau client secret `[REDACTED:google-oauth-secret]` a un **délai d'activation de quelques heures** (comme tu l'avais mentionné). Je vais utiliser le flow `localhost` directement dans le browser sandbox — il est déjà connecté à ton compte Google.
+Le vrai problème est que le nouveau client secret `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` a un **délai d'activation de quelques heures** (comme tu l'avais mentionné). Je vais utiliser le flow `localhost` directement dans le browser sandbox — il est déjà connecté à ton compte Google.
 **[1772365747582] MANUS:** **yOS CORE:** Je le fais.
 **[1772365744671] USER:** Do it
 **[1772365741599] USER:** Donit
@@ -799,7 +799,7 @@ Je vais ouvrir l'URL d'autorisation directement dans le browser sandbox (déjà 
 
 Mais d'abord, il faut ajouter `http://localhost:8080/callback` comme redirect URI autorisé dans Google Cloud Console.
 
-**Lien direct :** [https://console.cloud.google.com/auth/clients/[REDACTED:google-oauth-id]?project=magic-ai-484318](https://console.cloud.google.com/auth/clients/[REDACTED:google-oauth-id]?project=magic-ai-484318)
+**Lien direct :** [https://console.cloud.google.com/auth/clients/[REDACTED:google_oauth_client_id]?project=magic-ai-484318](https://console.cloud.google.com/auth/clients/[REDACTED:google_oauth_client_id]?project=magic-ai-484318)
 
 Sur cette page → section "Authorized redirect URIs" → ajoute `http://localhost:8080/callback` → Save.
 
@@ -809,7 +809,7 @@ Ou dis-moi si tu préfères qu...
 Je génère la nouvelle URL avec `localhost:8080` et je lance un serveur local pour capturer le code automatiquement — zéro action de ta part.
 **[1772362211728] MANUS:** **yOS CORE:** Client secret reçu. Je configure et teste immédiatement.
 **[1772362206131] USER:** GOC*****AB mais délai activation possible
-**[1772361941997] MANUS:** **yOS CORE:** Lien direct → [https://console.cloud.google.com/auth/clients/[REDACTED:google-oauth-id]?project=magic-ai-484318](https://console.cloud.google.com/auth/clients/[REDACTED:google-oauth-id]?project=magic-ai-484318)
+**[1772361941997] MANUS:** **yOS CORE:** Lien direct → [https://console.cloud.google.com/auth/clients/[REDACTED:google_oauth_client_id]?project=magic-ai-484318](https://console.cloud.google.com/auth/clients/[REDACTED:google_oauth_client_id]?project=magic-ai-484318)
 
 Sur cette page :
 1. Clique **Disable** sur `****uZ-H` (le plus ancien)
@@ -823,7 +823,7 @@ Je stocke dans 1Password + Notion et lance Gmail API.
 
 **Approche alternative immédiate — je génère le flow OAuth2 sans client_secret :**
 
-J'ai le `client_id` : `[REDACTED:google-oauth-id]`
+J'ai le `client_id` : `[REDACTED:google_oauth_client_id]`
 
 Il me faut le `client_secret` (les 4 premières lettres visibles sont `TWaw` pour le premier). Je vais tenter une approche différente — utiliser le flow OAuth2 avec le Device Authorization Grant qui ne nécessite pas de browser redirect.
 
@@ -895,7 +895,7 @@ Je génère une URL d'autorisation → tu cliques → tu autorises → je récup
 **Alternative directe — gcloud CLI :**
 
 Je peux générer la clé directement via l'API Google Cloud sans passer par le browser. Il me faut juste un token d'accès valide. Je vais utiliser le token OAuth de la session browser active.
-**[1772360024338] MANUS:** **yOS CORE:** Une clé existe déjà — `[REDACTED:credential]`, créée le 8 Feb 2026, Active. Je crée une nouvelle clé JSON pour ce pipeline (la clé privée de l'ancienne n'est plus récupérable).
+**[1772360024338] MANUS:** **yOS CORE:** Une clé existe déjà — `0e454f12e156dc21e8004378b47a3155f59da913`, créée le 8 Feb 2026, Active. Je crée une nouvelle clé JSON pour ce pipeline (la clé privée de l'ancienne n'est plus récupérable).
 **[1772359974511] MANUS:** **yOS CORE:** Client ID reçu. Je récupère la clé privée du service account depuis Google Cloud Console et configure Gmail API.
 **[1772359970556] USER:** Domain-wide Delegation
 108469801937711319443

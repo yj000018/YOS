@@ -407,7 +407,7 @@ Je push sur GitHub et redéploie sur Vercel.
 **[1775587221975] MANUS:** Conflit de version React — Sanity v5 requiert React 19 mais le projet utilise React 18. Je corrige en passant à React 19 ou en utilisant une version compatible de Sanity.
 **[1775586851583] MANUS:** **Sanity CMS opérationnel.** 6 documents créés : homepage, signupPage, siteSettings, 3 testimonials. Maintenant je mets à jour l'app Next.js avec les vrais credentials Sanity, je crée le Sanity Studio intégré, et je redéploie.
 **[1775586674919] MANUS:** Token Sanity reçu. Je configure le projet et crée le contenu initial.
-**[1775586669228] USER:** [REDACTED:token]
+**[1775586669228] USER:** skIfb57bbn5iwhlfy0jkbjlFRjZfrWznMVcVsrso0l1tsrKDsypfodmWi3ory7gRwzzKem3YrBF39RpFuZMyQeyUvdmpHAe8gCUM9n2Nm11I59ABTOz9rilzLs8GmS0S9AgxsbDgvu0hvj5yc197PMmrdDeBmV6qOmTTioZVbT0R7wDt0Swb
 **[1775586396034] MANUS:** Ouvre ce lien dans ton navigateur pour connecter Sanity via GitHub :
 
 **https://api.sanity.io/v1/auth/login/github?type=token&label=684827c977ab+%2F+Linux&origin=http%3A%2F%2Flocalhost%3A4321%2Fcallback**

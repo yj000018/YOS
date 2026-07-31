@@ -91,7 +91,7 @@ ADD a solid paragraph describing key elements & positiining of each project, mat
 
 **3 alertes prioritaires identifiées :**
 
-🔴 **Sécurité** — Clé Replicate `[REDACTED:replicate-token]` exposée dans l'historique de session. Rotation immédiate recommandée sur [replicate.com/account/api-tokens](h
+🔴 **Sécurité** — Clé Replicate `[REDACTED:replicate_api_token]` exposée dans l'historique de session. Rotation immédiate recommandée sur [replicate.com/account/api-tokens](h
 
 ## Conversation Summary
 
@@ -174,7 +174,7 @@ Produce an inventory table with:
 
 **3 alertes prioritaires identifiées :**
 
-🔴 **Sécurité** — Clé Replicate `[REDACTED:replicate-token]` exposée dans l'historique de session. Rotation immédiate recommandée sur [replicate.com/account/api-tokens](h...
+🔴 **Sécurité** — Clé Replicate `[REDACTED:replicate_api_token]` exposée dans l'historique de session. Rotation immédiate recommandée sur [replicate.com/account/api-tokens](h...
 **[1782117155550] MANUS:** Analyse en cours — extraction exhaustive de tous les éléments Y World / YOUniverse mentionnés dans cette session...
 **[1782117149083] USER:** Extract all projects, initiatives, concepts, apps, systems, places, writings, tools, experiments, and strategic ideas mentioned in this conversation that may belong to Yannick’s Y World  / YOUniverse ecosystem.
 
@@ -308,7 +308,7 @@ Je finalise l'intégration Pollinations — test en cours.
 
 **Options disponibles :**
 
-1️⃣ **Garder Replicate** (ta clé `r8_...` est déjà configurée — ça marche, coût ~$0.003/image avec flux-schnell)
+1️⃣ **Garder Replicate** (ta clé `[REDACTED:replicate_api_token]` est déjà configurée — ça marche, coût ~$0.003/image avec flux-schnell)
 
 2️⃣ **Utiliser le LLM Forge pour enrichir le prompt** (déjà fait) + **Replicate pour générer** — meilleur des deux mondes
 

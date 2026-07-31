@@ -23,7 +23,7 @@ processed: true
 ## Initial Prompt
 
 Id yCKmO4Ib
-Secret key [REDACTED:token]
+Secret key rW8rI08jJsxbZvwCrXrgW2OYa5HXb8SfnQdKqyhaX8wPl4MQmTYnxOPauNW2KABs
 
 ## First Response
 
@@ -47,7 +47,7 @@ The MCP connector needs to complete an OAuth authorization flow where:
 ## Conversation Summary
 
 > **User:** Id yCKmO4Ib
-Secret key [REDACTED:token]
+Secret key rW8rI08jJsxbZvwCrXrgW2OYa5HXb8SfnQdKqyhaX8wPl4MQmTYnxOPauNW2KABs
 
 > **User:** Help me test the Wrike connector and show me how to use its feature (e.g. show any data you fetched with it). Give me a brief about its capabilities.
 
@@ -116,7 +116,7 @@ Alternatively, if there's a way for you to re-authorize or refresh the Wrike MCP
 
 The OAuth flow should be handled automatically by the MCP system when I attempt to use the connector. Let me try accessing the Wrike connector again - it may trigger the OAuth authentication process automatically.
 **[1767658315114] USER:** Id yCKmO4Ib
-Secret key [REDACTED:token]
+Secret key rW8rI08jJsxbZvwCrXrgW2OYa5HXb8SfnQdKqyhaX8wPl4MQmTYnxOPauNW2KABs
 **[1767658221460] MANUS:** It looks like the Wrike MCP connector requires OAuth authentication. The authentication needs to be completed before I can access your Wrike workspace. 
 
 Could you please check if you've completed the OAuth authorization for the Wrike connector in your MCP settings? You may need to:

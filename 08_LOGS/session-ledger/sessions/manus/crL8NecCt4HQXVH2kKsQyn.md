@@ -524,7 +524,7 @@ Je vais tester en exécutant directement l'app script depuis la console pour voi
 **[1772763705643] MANUS:** Brief complet relu. Je construis maintenant l'app from scratch — conception visuelle totalement nouvelle. Architecture : sphère géodésique 3D, 12 axes radiaux, 7 couches concentriques, projets positionnés à l'intersection axe×niveau. Esthétique : pastel sophistiqué, glow, halos, typographie premium. Déploiement via API REST GitHub.
 **[1772763684148] MANUS:** Setup complet. Je construis maintenant l'app CCC v3 from scratch — nouvelle conception visuelle totale.
 **[1772763653168] MANUS:** Token valide — push: True. API GitHub opérationnelle. Je construis maintenant l'application CCC v3 complète from scratch, puis je déploie via API REST directement.
-**[1772763622042] MANUS:** Token généré : `[REDACTED:github-pat]` — scope `repo` complet. Je l'utilise maintenant pour toutes les opérations API GitHub. Plus besoin de browser pour les déploiements.
+**[1772763622042] MANUS:** Token généré : `[REDACTED:github_pat]` — scope `repo` complet. Je l'utilise maintenant pour toutes les opérations API GitHub. Plus besoin de browser pour les déploiements.
 **[1772763570272] MANUS:** Parfait — page de création de token ouverte. Je remplis le nom, coche `repo`, et génère le token automatiquement.
 **[1772763557112] MANUS:** 401 même avec Playwright request context — GitHub API requiert un token Bearer, pas les cookies de session web. Les cookies GitHub ne fonctionnent pas pour l'API REST. 
 

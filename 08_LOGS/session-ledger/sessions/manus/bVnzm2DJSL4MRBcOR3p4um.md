@@ -311,7 +311,7 @@ Pourquoi ?
 3. Exécuter l'appel...
 **[1770565126896] USER:** be able to route a requets to a specific LLM, based on its type:
 | Service           | Modèles disponibles | Usage recommandé                               |
-| ----------------- | ------------------- | [REDACTED:token] |
+| ----------------- | ------------------- | ---------------------------------------------- |
 | **OpenAI**        | GPT-5, GPT-4o       | Raisonnement avancé, code, multimodal          |
 | **Perplexity**    | sonar-pro           | Recherche web temps réel avec citations        |
 | **Google Gemini** | gemini-2.5-flash    | Multimodal, contexte long, génération d'images |

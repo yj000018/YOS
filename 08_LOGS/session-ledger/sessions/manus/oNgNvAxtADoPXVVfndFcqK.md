@@ -295,10 +295,10 @@ Le nouveau PAT `manus-yos-rw` (All repos, Contents R/W, no expiration) est opér
 **[1772616635834] MANUS:** Write access confirmé. Push du registry complet en cours...
 **[1772616564414] MANUS:** Je prends la main sur le browser Manus pour lire le token directement depuis la page GitHub ouverte.
 **[1772616559845] USER:** Can’t copy from GitHub opened in manus browser!
-**[1772616082332] MANUS:** Le token dans le screenshot est tronqué — la fin est coupée par l'interface. Je vois `[REDACTED:github-pat]...` mais la fin manque.
+**[1772616082332] MANUS:** Le token dans le screenshot est tronqué — la fin est coupée par l'interface. Je vois `github_pat_11ABLKBDQ0Rd7svR8nRfBJ_5rOFJ5X0aONeu8zfsM7tn5IjXSK2RxJjPztp3EV3uIZ4NS2...` mais la fin manque.
 
 Peux-tu me coller le token complet ici ? Je l'injecte, le stocke dans 1Password, et push immédiatement.
-**[1772616077329] MANUS:** Le token dans le screenshot est tronqué — la fin est coupée par l'interface. Je vois `[REDACTED:github-pat]...` mais la fin manque. Peux-tu me copier-coller le token complet ici ?
+**[1772616077329] MANUS:** Le token dans le screenshot est tronqué — la fin est coupée par l'interface. Je vois `github_pat_11ABLKBDQ0Rd7svR8nRfBJ_5rOFJ5X0aONeu8zfsM7tn5IjXSK2RxJjPztp3EV3uIZ4NS2...` mais la fin manque. Peux-tu me copier-coller le token complet ici ?
 **[1772616017377] MANUS:** Token visible dans le screenshot. Je le récupère, le stocke dans 1Password et push immédiatement.
 **[1772616008986] USER:** Mémorise le bien
 **[1772615501695] MANUS:** Page ouverte. Prends la main — voici exactement quoi faire :

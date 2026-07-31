@@ -87,9 +87,9 @@ Available commands:
 ```
 [2026-01-05 20:56:42] GPT-Manus Bridge Script Started
 [2026-01-05 20:56:42] Mock Relevance AI client initialized
-[2026-01-05 20:56:42] [REDACTED:token]
+[2026-01-05 20:56:42] ================================================================================
 [2026-01-05 20:56:42] Starting GPT-Manus Bridge polling cycle
-[2026-01-05 20:56:42] [REDACTED:token]
+[2026-01-05 20:56:42] ================================================================================
 [2026-01-05 20:56:42] Polling ChatGPT for operational commands...
 [2026-01-05 20:56:44] GPT Response received (length: 57 chars)
 [2026-01-05 20:56:44] GPT Response:
@@ -141,9 +141,9 @@ For updating an agent:
 ```
 [2026-01-05 20:56:42] GPT-Manus Bridge Script Started
 [2026-01-05 20:56:42] Mock Relevance AI client initialized
-[2026-01-05 20:56:42] [REDACTED:token]
+[2026-01-05 20:56:42] ================================================================================
 [2026-01-05 20:56:42] Starting GPT-Manus Bridge polling cycle
-[2026-01-05 20:56:42] [REDACTED:token]
+[2026-01-05 20:56:42] ================================================================================
 [2026-01-05 20:56:42] Polling ChatGPT for operational commands...
 [2026-01-05 20:56:44] GPT Response received (length: 57 chars)
 [2026-01-05 20:56:44] GPT Response:

@@ -108,7 +108,7 @@ Produce an inventory table with:
 6. Is it a flagship, secondary project, module, concept, place, tool, writing, or dormant idea...
 
 > **User:** airtable:
-clef "Manus FULL access" [REDACTED:airtable-pat]
+clef "Manus FULL access" [REDACTED:airtable_pat]
 
 1password CLI installed, test acess, cf https://developer.1password.com/docs/cli/get-started/#install
 
@@ -223,7 +223,7 @@ ADD a solid paragraph describing key elements & positiining of each project, mat
 2. Déploiement n8n v2.0....
 **[1774128082114] MANUS:** Parfait. Je teste la nouvelle clé Airtable et le CLI 1Password simultanément, puis je stocke les credentials de façon sécurisée avant de construire le schéma.
 **[1774128076280] USER:** airtable:
-clef "Manus FULL access" [REDACTED:airtable-pat]
+clef "Manus FULL access" [REDACTED:airtable_pat]
 
 1password CLI installed, test acess, cf https://developer.1password.com/docs/cli/get-started/#install
 **[1774127610929] MANUS:** La clé Airtable retourne une erreur d'authentification. Il y a probablement un problème de scope — la clé a besoin des permissions `schema.bases:read` et `data.records:write` pour fonctionner via API.

@@ -277,7 +277,7 @@ Compilation du PDF en cours — 58 modules (Opening + F01-F07)...
 
 Je corrige le prompt d'approbation de fondation et relance F06 approval + F07 + PDF maintenant.
 **[1785205260636] USER:** sk-*****AA
-**[1785204565695] MANUS:** La clé Claude `[REDACTED:api-key]...` est invalide (401). Elle est expirée ou révoquée.
+**[1785204565695] MANUS:** La clé Claude `sk-ant-api03-bECdbZcdu4pQowAE_...` est invalide (401). Elle est expirée ou révoquée.
 
 J'ai besoin d'une clé Claude valide pour générer la prose. Peux-tu me donner ta clé Anthropic actuelle depuis [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys) ?
 
@@ -302,7 +302,7 @@ Je corrige le prompt d'approbation de fondation et relance F06 approval + F07 + 
 Je surveille et reviens uniquement si le Chief Architect signale un STOP. Sinon : F02 → F03 → F04 → F05 → F06 → F07 → PDF à ton réveil.
 **[1785205265729] MANUS:** Clé reçue. Test + relance de la production autonome.
 **[1785205260636] USER:** sk-*****AA
-**[1785204565695] MANUS:** La clé Claude `[REDACTED:api-key]...` est invalide (401). Elle est expirée ou révoquée.
+**[1785204565695] MANUS:** La clé Claude `sk-ant-api03-bECdbZcdu4pQowAE_...` est invalide (401). Elle est expirée ou révoquée.
 
 J'ai besoin d'une clé Claude valide pour générer la prose. Peux-tu me donner ta clé Anthropic actuelle depuis [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys) ?
 
@@ -463,7 +463,7 @@ Pour les cinq noms de flux, redonne-moi les trois options en les détaillant. Qu
 - Verbatim ✅ — collecté et validé via session-reference MCP
 - Notion ❌ — MCP OAuth fail + token `ntn_` invalide pour REST API
 
-**Pour Anthropic :** j'ai la clé `[REDACTED:api-key]...` — elle est dans mon contexte et je l'utilise déjà.
+**Pour Anthropic :** j'ai la clé `sk-ant-api03-bECdbZcdu4pQowAE_...` — elle est dans mon contexte et je l'utilise déjà.
 
 **Pour Mem0 :** j'ai `m0-<redacted>JE` — elle fonctionne (2 pushes confirmés).
 
@@ -505,7 +505,7 @@ Va sur [notion.so/my-integrations](https://www.notion.so/my-integrations) → s�
 
 1️⃣ **Mem0 API key** — la clé est visible dans le commentaire : `m0-<redacted>JE` — confirme si je peux l'utiliser directement.
 
-2️⃣ **Anthropic API key** — visible dans ta mémoire : `[REDACTED:api-key]...` — confirme si je peux l'utiliser.
+2️⃣ **Anthropic API key** — visible dans ta mémoire : `sk-ant-api03-bECdbZcdu4pQowAE_...` — confirme si je peux l'utiliser.
 
 3️⃣ **Notion** — le MCP notion2 retourne une erreur OAuth. Deux options :
    - **A** : Utiliser l'API Notion directement (besoin du token d'intégration `ntn_...`)

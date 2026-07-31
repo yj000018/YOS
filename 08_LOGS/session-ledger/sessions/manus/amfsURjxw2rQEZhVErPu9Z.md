@@ -45,7 +45,7 @@ Le titre Amazon DE est juste mal catégorisé par le vendeur. Le produit lui-mê
 
 > **User:** Continue
 
-> **User:** https://www.amazon.de/-/en/Renaissance-Wax-Eichenholz-Restaurierung-Holzpflege/dp/B0015F2GEM/ref=sr_1_1?dib=[REDACTED:jwt]&dib_tag=se&keywords=renaissance+wax...
+> **User:** https://www.amazon.de/-/en/Renaissance-Wax-Eichenholz-Restaurierung-Holzpflege/dp/B0015F2GEM/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Alh4Y9GKPNyKAPQFSqm3qr2OWLBECGeugCPCS4nebmjMPdFxDMRH14AS62dnvuaYXAEZ710V1TBm8GbTg5wqatrnRTmGi5GY74hesxiIYzB73zypyuuuESTw5PvY6mzSW7bPmCCTy0CqhsliWp2VAFSdP_bPk4RpovV9IqRpXtfKlcUmpxkHSfLdPLoN1a4Cm1ZH-k315ENXsJP0cXWqAi1kGdZuvPaeDOtS7Z7bLQaMM8ep2UP1HAaHXi4697StAZZj-YwEYTXOhsN04qGCym02p00La0488i3ZBuD3aSs.NRJGk4DJcNRv0HACDIqRNYK-uom-EDW7rLrmWxo9KjY&dib_tag=se&keywords=renaissance+wax...
 
 > **Manus:** Bonne catch. Le titre Amazon DE dit bien "Eichenholz Restaurierung Holzpflege" — mais c'est trompeur, c'est le même produit.
 
@@ -137,7 +137,7 @@ Laquelle tu préfères ?
 
 *Concernant le produit que tu as envoyé : c'est le bon — Renaissance Wax 200ml, même ASIN B0015F2GEM. Si Amazon DE est moins cher que FR, on commande là-bas. Je vérifierai le prix dès qu'on a accès.*
 **[1779054749789] MANUS:** Je vérifie — 30 sec.
-**[1779054745595] USER:** https://www.amazon.de/-/en/Renaissance-Wax-Eichenholz-Restaurierung-Holzpflege/dp/B0015F2GEM/ref=sr_1_1?dib=[REDACTED:jwt]&dib_tag=se&keywords=renaissance+wax&qid=1779054514&sr=8-1 celui ci???
+**[1779054745595] USER:** https://www.amazon.de/-/en/Renaissance-Wax-Eichenholz-Restaurierung-Holzpflege/dp/B0015F2GEM/ref=sr_1_1?dib=eyJ2IjoiMSJ9.Alh4Y9GKPNyKAPQFSqm3qr2OWLBECGeugCPCS4nebmjMPdFxDMRH14AS62dnvuaYXAEZ710V1TBm8GbTg5wqatrnRTmGi5GY74hesxiIYzB73zypyuuuESTw5PvY6mzSW7bPmCCTy0CqhsliWp2VAFSdP_bPk4RpovV9IqRpXtfKlcUmpxkHSfLdPLoN1a4Cm1ZH-k315ENXsJP0cXWqAi1kGdZuvPaeDOtS7Z7bLQaMM8ep2UP1HAaHXi4697StAZZj-YwEYTXOhsN04qGCym02p00La0488i3ZBuD3aSs.NRJGk4DJcNRv0HACDIqRNYK-uom-EDW7rLrmWxo9KjY&dib_tag=se&keywords=renaissance+wax&qid=1779054514&sr=8-1 celui ci???
 **[1779054390875] MANUS:** Je pilote le browser directement (sans Playwright MCP) — je navigue sur Amazon FR, ajoute les produits au panier, puis compare avec Amazon DE pour voir si c'est moins cher.
 **[1779054385308] USER:** pilote browser apres checz si ama.de pas moins cher que ama.fr
 **[1779054334769] MANUS:** Je lance Playwright pour créer le panier Amazon FR — foie de soufre x2 + Renaissance Wax x1. Je m'arrête avant le checkout.
@@ -206,7 +206,7 @@ Pour Nataraja → **Everbrite reste supérieur**.
 Le format **Pint (473ml)** est disponible :
 → [amazon.de — ProtectaClear Pint 473ml](https://www.amazon.de...
 **[1779053998132] MANUS:** Je vérifie ce produit sur Amazon DE — 1 min.
-**[1779053990792] USER:** Same no? https://www.amazon.de/-/en/protectaclear-Clear-Protective-Layer-Metal/dp/B01DCU12PG/ref=sr_1_2?dib=[REDACTED:jwt]&dib_tag=se&keywords=Everbrite&qid=1779053957&sr=8-2
+**[1779053990792] USER:** Same no? https://www.amazon.de/-/en/protectaclear-Clear-Protective-Layer-Metal/dp/B01DCU12PG/ref=sr_1_2?dib=eyJ2IjoiMSJ9.8FjaLKt5QxiNz3dITs0h_sT3V-EJra5XJBWJZkyFO9yJZjRRPT1t-DghSgO1IO1qER3H8WNbcBo3QzRMZNGteH-1pHAfHnoLHFW2sa_e_oJxq8XW88NWG3YJH_xOPEXH0vGcDXdWpjHv7t6UNGZ3lWizzkQZdzrTMzZetZUxLrx6HUPnRKiH9SQ68TbNL_pn19wcAGcBzzf9VWXueRep9P7EWl6xIcOH1CMyKBZtR1Xui5wtDlfZJQx4xyoNs28dRsNafGN6fxPpUZrnxloXLjoCjU9DFdx-SllckqWKRXU.8er_sUQcOvHDtOJFPlZNEAfXwc23mqG2ZFWsJ_s-ii8&dib_tag=se&keywords=Everbrite&qid=1779053957&sr=8-2
 **[1779053263110] MANUS:** # Résultat : équivalent Everbrite disponible localement
 
 ## Verdict rapide

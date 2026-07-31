@@ -54,7 +54,7 @@ Le port `39725` **n'écoute pas** dans ce sandbox. C'est l'URL que tu as fournie
 
 > **User:** oumettre le tojen dans le mcp custom? tu le fais?
 
-> **User:** token for paste mcp: [REDACTED:token]
+> **User:** token for paste mcp: ob468x90densNuoP2MH5aD2jpZ0PxN12SrI-AleplG4
 
 > **Manus:** ## Diagnostic PASTE MCP — État actuel
 
@@ -109,7 +109,7 @@ Le port `39725` **n'écoute pas** dans ce sandbox. C'est l'URL que tu as fournie
 **[1780402544697] MANUS:** Je lis le skill manus-config pour faire ça proprement.
 **[1780402540652] USER:** oumettre le tojen dans le mcp custom? tu le fais?
 **[1780402516280] MANUS:** Token reçu — je teste le connecteur PASTE maintenant.
-**[1780402513099] USER:** token for paste mcp: [REDACTED:token]
+**[1780402513099] USER:** token for paste mcp: ob468x90densNuoP2MH5aD2jpZ0PxN12SrI-AleplG4
 **[1780402300605] MANUS:** Sur le coup — je lis le skill yos-optimizer d'abord, puis j'explore le connecteur PASTE.
 **[1780402295466] USER:** Help me test the PASTE connector and show me how to use its feature (e.g. show any data you fetched with it). Give me a brief about its capabilities.
 

@@ -368,13 +368,13 @@ Pour stocker les clés dans 1Password de façon autonome, j'ai besoin d'un **1Pa
 **[1772014900501] MANUS:** **DeepSeek — blocage silencieux confirmé.** Le login ne répond pas (CAPTCHA invisible ou restriction géographique depuis le sandbox). DeepSeek est accessible via **OpenRouter** (déjà actif — `deepseek/deepseek-r1`). Clé directe DeepSeek = fallback toi.
 
 Je passe à la consolidation finale : toutes les clés obtenues → 1Password → CRT mise à jour → rapport.
-**[1772014828917] MANUS:** **HuggingFace ✅** — Token `[REDACTED:huggingface-token]` créé (Y-OS-CAR). Compte `yj000018` déjà existant avec 3 tokens. Passage à DeepSeek.
+**[1772014828917] MANUS:** **HuggingFace ✅** — Token `[REDACTED:huggingface_token]` créé (Y-OS-CAR). Compte `yj000018` déjà existant avec 3 tokens. Passage à DeepSeek.
 **[1772014700405] MANUS:** **HuggingFace ✅** — Connecté en tant que `yj000018`. Récupération du token API en cours.
 **[1772014605535] MANUS:** **Stability AI ✅** — Clé existante récupérée et stockée. Passage à HuggingFace puis consolidation finale.
 **[1772014537357] MANUS:** **Stability AI ✅** — Compte existant connecté (`sk-Jik***fgj` créé le 9/1/2022). Acceptation des CGU et récupération de la clé complète en cours.
-**[1772014435020] MANUS:** **ElevenLabs ✅** — Clé `[REDACTED:elevenlabs-key]` créée et stockée. Note : facture impayée sur le compte — à régler pour maintenir l'accès. Passage à Stability AI.
+**[1772014435020] MANUS:** **ElevenLabs ✅** — Clé `sk_14f65a11b7744716aec655b39500bbf34f2338f01327f2e4` créée et stockée. Note : facture impayée sur le compte — à régler pour maintenir l'accès. Passage à Stability AI.
 **[1772014251352] MANUS:** **ElevenLabs ✅** — Compte existant connecté via Google. Note : facture impayée détectée ("A payment failed"). Je ferme le popup et récupère la clé API.
-**[1772014204232] MANUS:** **fal.ai ✅** — Clé `[REDACTED:uuid-key]:d6064acd3bacc9549a09c95c6d43bb91` obtenue et stockée. Passage à ElevenLabs.
+**[1772014204232] MANUS:** **fal.ai ✅** — Clé `49b9d777-30f8-4e78-87b5-42b2cdb52d57:d6064acd3bacc9549a09c95c6d43bb91` obtenue et stockée. Passage à ElevenLabs.
 **[1772013660342] MANUS:** La clé fal.ai est masquée (`ef898a5d-••••••••`) — fal.ai ne permet pas de voir la valeur complète après création. Je dois créer une nouvelle clé pour obtenir la valeur complète. Je révoque l'ancienne et crée une nouvelle.
 **[1772013538776] MANUS:** **fal.ai ✅** — Clé partiellement masquée (`ef898a5d-••••••••`). Je dois cliquer sur "Copy" pour récupérer la valeur complète. Tentative.
 **[1772013451804] MANUS:** Vérification Google en cours — attente de la confirmation.
@@ -392,7 +392,7 @@ Dès que tu as approuvé, dis-moi et je continue automatiquement.
 **[1772012808540] MANUS:** **Mistral — blocage :** "Choose a plan" requis avant de créer une clé. Le bouton "Create new key" est grisé. Mistral exige un plan payant pour accéder à l'API. Pas de free tier programmatique direct.
 
 Mistral est accessible via **OpenRouter** (déjà actif) — pas besoin de clé directe pour l'instant. Je passe à HuggingFace → DeepSeek → ElevenLabs → Stability AI.
-**[1772012521970] MANUS:** **Cohere ✅** — Clé `[REDACTED:cohere-key]` obtenue et stockée. Passage à Mistral.
+**[1772012521970] MANUS:** **Cohere ✅** — Clé `Pge9h8mzF3q0PSgy6l20v3mylJgBUUsh929DYWk2` obtenue et stockée. Passage à Mistral.
 **[1772012080623] MANUS:** **Replicate ✅** — Clé obtenue. Suite : HuggingFace → Cohere → Mistral → DeepSeek → ElevenLabs → Stability AI.
 **[1772011930007] MANUS:** GitHub approuvé — autorisation Replicate en cours.
 **[1772011922140] USER:** Ai approuvé GitHub

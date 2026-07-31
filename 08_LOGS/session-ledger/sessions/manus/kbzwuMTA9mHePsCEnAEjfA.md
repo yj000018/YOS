@@ -1,11 +1,21 @@
 ---
-id: kbzwuMTA9mHePsCEnAEjfA
+id: "kbzwuMTA9mHePsCEnAEjfA"
 title: "[✓] Chandika Maha Lakshmi — Complete Course + Murti Sourcing (18-Armed Form)"
 date: "2026-04-18"
-importance: 3
+importance: "3"
+depth_score: "standard"
 projects: []
 tags: ["Hinduism", "Lakshmi", "Durga", "Murti", "Iconography", "Chandika", "Ashtadasha"]
 summary: "Analysis of iconographic distinctions between Durga and 18-armed Mahalakshmi Chandika for murti sourcing."
+executive_summary: "The session successfully clarified that Durga and Mahalakshmi Chandika murtis are iconographically distinct, despite some theological overlap. A detailed comparative analysis was provided, highlighting visual and textual differences."
+context_and_intent: "The user sought to understand if the Durga and Lakshmi versions of a murti, specifically the 18-armed form of Chandika Mahalakshmi, were iconographically and theologically identical."
+what_was_done: "The assistant responded to the user's query by directly stating the iconographic distinction between Durga and Mahalakshmi murtis. It then provided a comprehensive comparative analysis in a table format, detailing visual and textual differences across various attributes like complexion, vehicle, posture, presence of Mahishasura, number of arms, ornaments, and textual identification."
+outputs_produced: [{"description": "A direct answer stating that Durga and Lakshmi versions are iconographically distinct but theologically porous.", "name": "Direct Answer", "type": "Text"}, {"description": "A detailed table comparing Durga Mahishasura Mardini and Mahalakshmi Chandika (Devi Mahatmya) across criteria such as complexion, vehicle, posture, presence of Mahishasura, number of arms, ornaments, and textual identification.", "name": "Comparative Analysis Table", "type": "Table"}]
+key_decisions: ["The assistant decided to provide a direct 'No' answer to the initial query, followed by a comprehensive comparative table to elaborate on the distinctions."]
+lessons_learned: {"discoveries": ["Iconographic distinctions between Durga Mahishasura Mardini and Mahalakshmi Chandika (Devi Mahatmya) were clearly outlined.", "The theological boundary between these forms is considered 'porous' despite visual differences.", "Specific details like the 18 arms for Mahalakshmi Chandika were highlighted."], "failed_or_suboptimal": [], "worked_well": ["Providing a direct answer upfront, followed by a structured comparative table, was highly effective for clarifying complex iconographic details.", "The use of a table made the distinctions easy to understand and digest."]}
+challenges_and_blockers: []
+open_questions: ["What are the details of the 'Complete Course' for Chandika Maha Lakshmi?", "How can the 18-armed murti be sourced?", "What are the deeper theological implications of the 'porous' boundary between Durga and Mahalakshmi?"]
+next_steps: ["Continue the conversation to explore 'Complete Course' details for Chandika Maha Lakshmi.", "Discuss murti sourcing for the 18-armed form.", "Delve deeper into the theological porosity mentioned between Durga and Mahalakshmi."]
 url: "https://manus.im/app/task/kbzwuMTA9mHePsCEnAEjfA"
 ---
 

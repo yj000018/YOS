@@ -101,11 +101,19 @@ This matrix answers: *"What can I do from each platform/client?"*
 
 ## 6. Maintenance Protocol
 
-This document is a **living artifact**. Update it when:
-- A new execution node is added (e.g., N100 fully integrated).
-- A new workaround is validated (add to Section 3).
-- A platform capability changes (e.g., Cloudflare updates anti-bot rules).
-- A new LL (Lesson Learned) contradicts an existing routing decision.
+The ERT is a **living cognitive artifact**. It must be updated immediately when reality contradicts its rules.
+
+### Trigger Events for ERT Update:
+1. **New Execution Node:** e.g., N100 Lambda is fully integrated with Docker/n8n.
+2. **New Workaround Validated:** A new method is proven to bypass a block (e.g., a new CDP trick).
+3. **Platform Shift:** e.g., Cloudflare blocks CDP, or an API is shut down.
+4. **LL Contradiction:** A new Lesson Learned (LL) proves a routing decision in Section 3 is suboptimal.
+
+### Update Workflow:
+1. **Edit** `/home/ubuntu/ERT.md` (or CC path `/home/ubuntu/yos/ERT.md`).
+2. **Increment** the `Last updated` date.
+3. **Commit & Push** to GitHub `yj000018/YOS` under `00_META/ERT.md`.
+4. **Notify** Yannick that the ERT has been updated with the new routing logic.
 
 **Location:** `00_META/ERT.md` in GitHub `yj000018/YOS`.
 **Reference in AGENTS.md:** Règle Canon #3.

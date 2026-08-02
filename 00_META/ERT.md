@@ -1,87 +1,112 @@
-# ERT — Execution Routing Table
+# ERT — Execution Routing Table & Protocol
 
-## Purpose
-The Execution Routing Table (ERT) is the definitive decision matrix for Y-OS execution nodes. It dictates *where* and *how* to execute tasks based on constraints like Cloudflare blocking, required session states, hardware dependencies, and execution speed.
-
-This document replaces ad-hoc decision-making with a deterministic routing logic.
-
----
-
-## 1. Execution Nodes (The Fleet)
-
-| Node | Environment | Best For | Limitations |
-|---|---|---|---|
-| **Manus Sandbox** | Ephemeral Ubuntu VM (512MB RAM) | Orchestration, LLM calling, Git operations, text processing, lightweight Python scripts | Ephemeral (data lost on restart), no persistent heavy binaries, easily blocked by Cloudflare (datacenter IP) |
-| **Cloud Computer (CC)** | Persistent GCP VM (1GB RAM) | Cron jobs, background batches, headless Playwright, data pipelines (KAP) | Low RAM (OOM on heavy tasks like n8n), headless only, datacenter IP |
-| **Mac Physical (Yannick)** | macOS (GUI active) | Authenticated web access (CDP), Keychain access, native Mac apps, bypassing Cloudflare | Requires Yannick to open the Mac, not 24/7 |
-| **N100 Lambda** | Physical MiniPC (Ubuntu, 8-16GB RAM) | 24/7 heavy services (Docker, n8n, Home Assistant, databases) | (Pending full integration) |
+> **What it is:** A deterministic decision engine for Y-OS. For any task, the ERT tells you *which node executes it*, *which method to use*, and *what to do when the preferred path is blocked*.
+>
+> **How to use it:** Read the task type → follow the hierarchy → apply the relevant playbook. No improvisation.
+>
+> **How to maintain it:** Every new LL (Lesson Learned) that changes a routing decision MUST update this document. It is the living source of truth for execution strategy.
 
 ---
 
-## 2. Web Access Routing (The Hierarchy)
+## 1. Execution Nodes
 
-When a task requires accessing web data or interacting with web services, strictly follow this hierarchy:
-
-| Priority | Method | Execution Node | Speed | When to Use |
+| Node | Type | Persistence | RAM | Primary Role |
 |---|---|---|---|---|
-| **1️⃣ Direct API** | `requests` / `httpx` | Sandbox or CC | ~50ms | Public APIs, documented endpoints, services with official tokens (e.g., GitHub, Raindrop). |
-| **2️⃣ CDP (Chrome DevTools Protocol)** | WebSocket → `fetch()` | Mac Physical | ~100ms | Sites behind Cloudflare, services requiring complex auth (cookies/Keychain), when a real browser session is needed (e.g., ChatGPT API). |
-| **3️⃣ Headless Playwright** | `playwright` (Chromium) | Cloud Computer | ~1-2s | Scraping static/light dynamic sites without strict anti-bot measures, taking screenshots. |
-| **4️⃣ Headful Playwright** | `playwright` (UI rendered) | Sandbox | ~2-5s | Complex SPAs requiring visual interaction, but only if CDP is unavailable and anti-bot measures are low. |
-
-### Why CDP is the "Holy Grail" for Protected Sites:
-CDP injects JavaScript (`fetch()`) directly into the context of a real, running browser (like Brave on the Mac).
-- **Bypasses Cloudflare natively**: Uses the Mac's residential IP and a genuine TLS fingerprint.
-- **Accesses httpOnly cookies**: Inherits the active session (e.g., ChatGPT login) without needing to extract or decrypt cookies manually.
-- **Speed**: Bypasses HTML rendering overhead, returning raw JSON payloads.
+| **Mac Physical** | macOS (Yannick's machine) | Permanent | 16GB+ | Authenticated web access (CDP), Keychain, native Mac apps, residential IP |
+| **Cloud Computer (CC)** | GCP VM (Ubuntu) | Persistent | 1GB | Cron jobs, background pipelines, headless Playwright, data batches |
+| **N100 Lambda** | Physical MiniPC (Ubuntu) | Persistent | 8-16GB | Heavy 24/7 services: Docker, n8n, Home Assistant, databases |
+| **Manus Sandbox** | Ephemeral Ubuntu VM | Session-only | 512MB | Orchestration, LLM calls, Git operations, text/code generation |
 
 ---
 
-## 3. Specific Workarounds & Playbooks
+## 2. Web Access Hierarchy (IMMUABLE)
 
-### Scenario A: ChatGPT / OpenAI API Access
-- **Constraint**: Strictly protected by Cloudflare, requires complex auth tokens stored in macOS Keychain.
-- **Routing**: **Mac Physical + CDP** (or Cookie Extraction to CC).
-- **Playbook**:
-  1. Ensure Brave is running on the Mac.
-  2. If using CDP: Launch Brave via `osascript` with `--remote-debugging-port=9222`. Connect via WebSocket from the Sandbox/CC and execute `fetch('/api/auth/session')` to get the Bearer token, then query `/backend-api/conversations`.
-  3. If using Cookie Extraction: Run extraction script on Mac (via `osascript` to access Keychain), send cookies to CC, CC uses cookies to get Bearer token.
+Three methods, in strict priority order. No exceptions.
 
-### Scenario B: Scheduled Background Tasks (Cron)
-- **Constraint**: Must run autonomously, 24/7, without Yannick's intervention.
-- **Routing**: **Cloud Computer (CC)**.
-- **Playbook**:
-  - Deploy Python scripts (e.g., `delta_manus.py`) to `/home/ubuntu/yos/ledger/`.
-  - Schedule via `crontab`.
-  - Output pushed directly to GitHub `yj000018/YOS`.
+| Priority | Method | Node | Speed | When |
+|---|---|---|---|---|
+| **1️⃣ Direct API** | `requests` / `httpx` | Sandbox or CC | ~50ms | Public or documented API with a token (GitHub, Raindrop, Fireflies, etc.) |
+| **2️⃣ CDP** | WebSocket → JS `fetch()` in live browser | **Mac Physical** | ~100ms | Cloudflare-protected sites, httpOnly cookies, active session required (ChatGPT, Claude, etc.) |
+| **3️⃣ Playwright** | Browser automation (headless or headful) | CC (headless) / Sandbox (headful) | 1-5s | Last resort: no API, CDP unavailable, site not aggressively blocking bots |
 
-### Scenario C: Heavy Automation / Local Network Services
-- **Constraint**: Requires high RAM, persistent database, or local network access.
-- **Routing**: **N100 Lambda**.
-- **Playbook**:
-  - Deploy via Docker Compose (n8n, Home Assistant).
+### The "cookies_fresh.json" Pattern — Not a 4th Method
 
-### Scenario D: Standard Web Scraping (No Anti-Bot)
-- **Constraint**: Needs to render JS but isn't aggressively blocking bots.
-- **Routing**: **Cloud Computer (Headless Playwright)**.
-- **Playbook**:
-  - Execute scripts in `/home/ubuntu/yos/playwright/`.
+Storing extracted cookies in a file is a **cache optimization of CDP**, not a separate method. The flow is:
+
+```
+CDP (Mac) → extract cookies → store as cookies_fresh.json on CC → reuse for ~8h
+```
+
+**Critical limitation:** Bearer tokens from ChatGPT expire in ~8h. A stale `cookies_fresh.json` will cause silent auth failures in cron jobs. The correct approach for cron pipelines is to **re-extract cookies at runtime** via CDP before each significant batch, not to rely on a cached file.
+
+### Why CDP is the Canonical Solution for Cloudflare
+
+CDP injects `fetch()` directly into a live, authenticated browser (Brave on the Mac). Cloudflare sees:
+- A real residential IP (Mac's network)
+- A genuine TLS fingerprint (Brave's)
+- Valid httpOnly session cookies (from the Keychain-loaded profile)
+
+This is indistinguishable from a human user. It is 30-50x faster than Playwright because it bypasses HTML rendering entirely and returns raw JSON.
 
 ---
 
-## 4. Decision Matrix Summary
+## 3. Execution Routing by Task Type
 
-*If I need to...*
+| Task | Preferred Node | Method | Fallback |
+|---|---|---|---|
+| Call public API (GitHub, Raindrop) | Sandbox or CC | Direct API | — |
+| Extract ChatGPT conversations | Mac + CC | CDP → Bearer token → `/backend-api` | cookies_fresh.json (max 8h) |
+| Nightly sync pipeline (delta_*.py) | CC (cron) | Direct API or stored cookies | Alert if auth fails |
+| Scrape standard website (no Cloudflare) | CC | Headless Playwright | — |
+| Interact with complex SPA (Manus, Notion) | Sandbox | Headful Playwright | — |
+| Run 24/7 service (n8n, HA) | N100 Lambda | Docker | — |
+| Render diagram (Excalidraw, Mermaid) | CC | Python script | Sandbox |
+| Generate text/code/LLM output | Sandbox | LLM API | — |
 
-*   **Call a public API (e.g., GitHub)** ➔ Sandbox (`requests`)
-*   **Run a nightly sync script** ➔ CC (Cron + Python)
-*   **Extract data from ChatGPT** ➔ Mac (CDP or Cookie extract) ➔ CC (Processing)
-*   **Scrape a standard website** ➔ CC (Headless Playwright)
-*   **Run a complex n8n workflow** ➔ N100 Lambda
-*   **Render an Excalidraw diagram** ➔ CC (`build_native_excalidraw.py`)
+---
 
-## 5. Mac Access Protocol (Zero Friction)
-When routing a task to the Mac Physical node:
-1.  **Check Mount**: Is `/mnt/desktop/` available? If yes, execute directly.
-2.  **Fallback SSH**: Use `sshpass -p '    ' ssh yannickjolliet@bore.pub -p 22847`.
-3.  **User Prompt (Last Resort)**: Only if the above fail, ask Yannick to "Ouvre Manus Desktop sur ton Mac". Never ask him to type terminal commands.
+## 4. Mac Access Protocol (Zero Friction)
+
+When a task requires the Mac Physical node:
+
+1. **Check mount first:** `cat /proc/mounts | grep desktop` → if `/mnt/desktop/` is active, act directly and silently.
+2. **SSH fallback:** `ssh -i ~/.ssh/manus_mac -p 22847 yannickjolliet@bore.pub` (password: 4 spaces).
+3. **User prompt (last resort only):** "Ouvre Manus Desktop sur ton Mac." Never ask Yannick to type a terminal command.
+
+**Trigger phrase to Yannick:** "Pour cette tâche j'ai besoin du Mac ouvert (CDP / Keychain). Ouvre-le quand tu peux, je continue dès que le tunnel est actif."
+
+---
+
+## 5. Platform Capability Matrix
+
+This matrix answers: *"What can I do from each platform/client?"*
+
+| Capability | Mac Physical | Cloud Computer | N100 Lambda | Manus Sandbox | iOS/Android (web) | iOS/Android (native app) |
+|---|---|---|---|---|---|---|
+| **Run Python scripts** | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Persistent cron jobs** | ⚠️ (sleep risk) | ✅ | ✅ | ❌ | ❌ | ❌ |
+| **Keychain / credential access** | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **CDP (live browser injection)** | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Residential IP** | ✅ | ❌ (datacenter) | ✅ (home network) | ❌ (datacenter) | ✅ | ✅ |
+| **Cloudflare bypass (native)** | ✅ | ❌ | ✅ | ❌ | ✅ | ✅ |
+| **Headless Playwright** | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Headful browser (real session)** | ✅ | ❌ | ❌ | ⚠️ (limited) | ✅ (web browser) | ✅ (app) |
+| **Docker / heavy services** | ⚠️ (not ideal) | ❌ (OOM) | ✅ | ❌ | ❌ | ❌ |
+| **File system access** | ✅ | ✅ | ✅ | ✅ (ephemeral) | ❌ | ⚠️ (sandboxed) |
+| **GitHub push** | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Manus API access** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **ChatGPT API (authenticated)** | ✅ (CDP) | ⚠️ (cached cookies) | ❌ | ❌ | ✅ (web session) | ✅ (app session) |
+
+---
+
+## 6. Maintenance Protocol
+
+This document is a **living artifact**. Update it when:
+- A new execution node is added (e.g., N100 fully integrated).
+- A new workaround is validated (add to Section 3).
+- A platform capability changes (e.g., Cloudflare updates anti-bot rules).
+- A new LL (Lesson Learned) contradicts an existing routing decision.
+
+**Location:** `00_META/ERT.md` in GitHub `yj000018/YOS`.
+**Reference in AGENTS.md:** Règle Canon #3.
+**Last updated:** 2026-08-02

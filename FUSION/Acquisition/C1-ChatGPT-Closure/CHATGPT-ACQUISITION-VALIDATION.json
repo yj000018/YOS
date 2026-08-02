@@ -1,0 +1,61 @@
+{
+  "schema": "yos.c1.chatgpt.acquisition_validation.v1",
+  "execution_date": "2026-08-02",
+  "verdict": "C1_NOT_COMPLETE",
+  "repository_snapshots": {
+    "YOS_main": "deeab88fa7d3be97028fb08cfbe70f84d1dfdf70",
+    "KAP_main": "6c8f1e038465ac181af52ba0d175e3747c639b3a"
+  },
+  "gates": {
+    "C1.0_source_provenance": {
+      "status": "PASS",
+      "broad_ledger": "data/master_ledger.csv",
+      "rows": 3060,
+      "unique_ids": 3060,
+      "source_commit": "ac472da1864f338c9ac36209ed02becd1d96d4f5"
+    },
+    "C1.1_historical_crosswalk": {
+      "status": "PASS_WITH_EXPLICIT_EXCEPTIONS",
+      "curated_rows": 239,
+      "resolved": 237,
+      "explicit_ledger_absences": 2
+    },
+    "C1.2_content_branches_attachments": {
+      "status": "BLOCKED_NO_RAW_CONVERSATION_CONTENT",
+      "raw_bodies": 0,
+      "verbatims": 0,
+      "strict_complete": 0,
+      "branches_censused": false,
+      "attachments_reconciled": false
+    },
+    "C1.3_file_library_uploads": {
+      "status": "NOT_REEXECUTED_PREREQUISITE_FAILED",
+      "existing_evidence_status": "PARTIAL",
+      "committed_files_reported": 0
+    },
+    "C1.4_projects_gpts_tasks_instructions": {
+      "status": "NOT_REEXECUTED_PREREQUISITE_FAILED",
+      "existing_evidence_status": "PARTIAL_AND_INTERNALLY_INCONSISTENT",
+      "evidence_conflicts": [
+        "C4 Markdown reports 564 ChatGPT tasks while C4 JSON reports 0 ChatGPT tasks and excludes 564 Manus tasks.",
+        "C4 Markdown reports native ChatGPT instructions not captured while C4 JSON closes instructions using a YOS governance document."
+      ]
+    },
+    "C1.5_exceptions_and_certificate": {
+      "status": "TERMINAL_NOT_COMPLETE_CERTIFICATE_ISSUED"
+    }
+  },
+  "constraints": {
+    "reported_count_forced": false,
+    "rows_fabricated": 0,
+    "transcripts_fabricated": 0,
+    "semantic_deduplication": false,
+    "cross_source_fusion": false,
+    "kap_population": false,
+    "synthesis": false,
+    "canon_promotions": 0
+  },
+  "resume_point": "C1.2_RAW_BODY_ACQUISITION_AND_CONTENT_STRUCTURE_CENSUS",
+  "resume_precondition": "Authoritative raw ChatGPT conversation objects must be acquired and committed with source-native node, branch, and attachment references plus byte-level manifests."
+}
+

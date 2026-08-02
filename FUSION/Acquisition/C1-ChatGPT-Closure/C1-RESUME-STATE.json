@@ -1,0 +1,31 @@
+{
+  "schema": "yos.c1.chatgpt.resume_state.v1",
+  "execution_date": "2026-08-02",
+  "verdict": "C1_NOT_COMPLETE",
+  "last_completed_gate": "C1.1_HISTORICAL_CROSSWALK",
+  "blocked_gate": "C1.2_CONTENT_BRANCHES_ATTACHMENTS",
+  "exact_resume_point": "C1.2_RAW_BODY_ACQUISITION_AND_CONTENT_STRUCTURE_CENSUS",
+  "required_inputs": [
+    "Authoritative raw ChatGPT conversation objects for the validated ledger snapshot and any later identities",
+    "Source-native node and parent-child relationships sufficient to preserve branches",
+    "Source-native attachment and upload references",
+    "Byte-level manifest with paths, sizes, and SHA-256 hashes"
+  ],
+  "resume_sequence": [
+    "Acquire raw source bytes without synthesizing missing content",
+    "Reconcile the validated 3060-row snapshot and explicitly account for post-snapshot identity drift",
+    "Rerun C1.2 content, branch, and attachment validation",
+    "Run C1.3 File Library and uploads only after its inputs are available",
+    "Run C1.4 Projects, Custom GPTs, Tasks, and native instructions only after its inputs are available",
+    "Regenerate C1.5 validation and certificate"
+  ],
+  "forbidden_on_resume": [
+    "semantic deduplication",
+    "cross-source fusion",
+    "KAP population",
+    "synthesis",
+    "Canon promotion",
+    "fabrication of rows or transcripts"
+  ]
+}
+

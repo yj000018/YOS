@@ -1,0 +1,59 @@
+{
+  "schema": "yos.c1.chatgpt.content_coverage_checkpoint.v1",
+  "execution_date": "2026-08-02",
+  "status": "BLOCKED_NO_RAW_CONVERSATION_CONTENT",
+  "validated_broad_ledger_snapshot": {
+    "rows": 3060,
+    "unique_native_ids": 3060,
+    "sha256": "51417563521ecd21a19b444264353e6461b29413d68da3d2157f86cdbfaab4c0"
+  },
+  "committed_content_coverage_for_validated_snapshot": {
+    "raw_body_present": 0,
+    "verbatim_present": 0,
+    "substantive_fact_sheet_present": 0,
+    "summary_present": 0,
+    "strict_complete": 0,
+    "branches_censused": false,
+    "attachments_reconciled": false
+  },
+  "identity_metadata_materialization": {
+    "directory": "08_LOGS/session-ledger/sessions/chatgpt",
+    "files": 3067,
+    "files_with_delta_chatgpt_metadata_only_marker": 3067,
+    "files_with_detected_user_assistant_transcript_roles": 0,
+    "classification": "IDENTITY_FACT_SHEETS_NOT_TRANSCRIPTS"
+  },
+  "post_snapshot_identity_drift": {
+    "metadata_fact_sheet_ids": 3067,
+    "validated_ledger_ids": 3060,
+    "metadata_ids_not_in_validated_ledger": [
+      "6a6ad997-9c7c-83eb-b483-7c4dcd03309a",
+      "6a6b420a-6210-83eb-b309-d7ce01fd1856",
+      "6a6b7f19-a68c-83eb-8798-c379b6d52f52",
+      "6a6c8e23-b074-83eb-8df2-c2f48bdcd2bf",
+      "6a6ca04c-98c4-83eb-a99a-5454f75280c9",
+      "6a6cdfe0-6a34-83eb-b06b-1787f02a153e",
+      "6a6cfe63-eb7c-83eb-b495-3c1bdb0b4156",
+      "6a6cff67-f56c-83eb-8e28-a6f81eca72b7"
+    ],
+    "validated_ledger_ids_without_metadata_fact_sheet": [
+      "6a6a9480-72d8-83eb-9d74-1d455a2b9a7e"
+    ],
+    "union_unique_ids": 3068,
+    "interpretation": "The later metadata rebuild is not a new validated broad ledger and does not establish current account completeness."
+  },
+  "evidence": [
+    {
+      "path": "01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/generated/chatgpt/CHATGPT-3060-CONTENT-COVERAGE.csv",
+      "sha256": "192634d52a79cee7625b27a8fd25bfbe9ad0bc95051cec1befd37e1d63ccd051"
+    },
+    {
+      "path": "01_BACKBONE/KAP/05_RUNS/KAP-RUN-20260731-OVERNIGHT-SIX-PHASE/generated/chatgpt/CHATGPT-OVERNIGHT-PHASES-1-2-VALIDATION.json",
+      "reported_status": "complete_audit_with_external_sources_out_of_scope"
+    }
+  ],
+  "fabricated_transcripts": 0,
+  "fabricated_rows": 0,
+  "canon_promotions": 0
+}
+

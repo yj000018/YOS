@@ -1,0 +1,64 @@
+{
+  "schema": "yos.c1.chatgpt.source_provenance.v1",
+  "execution_date": "2026-08-02",
+  "status": "PASS",
+  "pack": {
+    "name": "C1-CHATGPT-SOURCE-PROVENANCE-AND-CLOSURE-PACK-v1.1",
+    "original_zip_status": "NOT_LOCATED",
+    "reported_sha256": "3278d88dc9e99e2b80796e18d33aca514a7a4748411275e6e8140026610a4e4b",
+    "reported_sha256_verification": "NOT_POSSIBLE_WITHOUT_ORIGINAL_BYTES",
+    "replacement_pack_fabricated": false
+  },
+  "repository_snapshots": {
+    "yj000018/YOS": {
+      "branch": "main",
+      "commit": "deeab88fa7d3be97028fb08cfbe70f84d1dfdf70"
+    },
+    "yj000018/KAP": {
+      "branch": "main",
+      "commit": "6c8f1e038465ac181af52ba0d175e3747c639b3a"
+    }
+  },
+  "candidates": [
+    {
+      "repository": "yj000018/YOS",
+      "path": "data/master_ledger.csv",
+      "classification": "AUTHORITATIVE_CHATGPT_BROAD_LEDGER_SNAPSHOT",
+      "csv_data_rows": 3060,
+      "source_counts": {
+        "ChatGPT": 3060
+      },
+      "unique_source_ids": 3060,
+      "blank_source_ids": 0,
+      "duplicate_source_ids": 0,
+      "sha256": "51417563521ecd21a19b444264353e6461b29413d68da3d2157f86cdbfaab4c0",
+      "provenance_commit": "ac472da1864f338c9ac36209ed02becd1d96d4f5",
+      "provenance_commit_subject": "feat(ledger): ingest 3060 ChatGPT conversations via Brave cookie pipeline",
+      "structural_validation": "PASS"
+    },
+    {
+      "repository": "yj000018/YOS",
+      "path": "08_LOGS/session-ledger/data/master_ledger.csv",
+      "classification": "LEGACY_MANUS_LEDGER_NOT_CHATGPT",
+      "csv_data_rows": 537,
+      "source_counts": {
+        "Manus": 537
+      },
+      "sha256": "1076d8c4b7fceb8ebb2f07ec93828c4fd1f626bd474d055c4734f462803746c9"
+    },
+    {
+      "repository": "yj000018/YOS",
+      "path": "08_LOGS/session-ledger/data/chatgpt_ledger.csv",
+      "classification": "SMALL_HISTORICAL_INDEX_NOT_BROAD_LEDGER",
+      "csv_data_rows": 83,
+      "sha256": "a5427030cd4a216363a96499ae5e05a801852ca5fbe39916ac269d8f1f45896c"
+    }
+  ],
+  "reported_count_policy": {
+    "forced": false,
+    "result": "SOURCE_LOCATED_AND_STRUCTURALLY_VALIDATED_AT_3060_ROWS",
+    "note": "3060 is accepted only because the located CSV independently parses to 3060 ChatGPT rows with 3060 unique nonblank native IDs."
+  },
+  "canon_promotions": 0
+}
+

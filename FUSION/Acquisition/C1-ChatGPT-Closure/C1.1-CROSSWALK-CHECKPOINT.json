@@ -1,0 +1,31 @@
+{
+  "schema": "yos.c1.chatgpt.crosswalk_checkpoint.v1",
+  "execution_date": "2026-08-02",
+  "status": "PASS_WITH_EXPLICIT_EXCEPTIONS",
+  "source_registry_rows": 239,
+  "source_registry_known_uuid_count": 236,
+  "source_registry_blank_uuid_count": 3,
+  "blank_uuid_recovered": 3,
+  "broad_ledger_rows": 3060,
+  "broad_ledger_unique_ids": 3060,
+  "resolved_crosswalk_rows": 237,
+  "known_uuid_absent_from_ledger": 2,
+  "absent_native_ids": [
+    "6a58ecce-0f74-83ed-a0d4-c023be2bc8c5",
+    "6a5de61f-9594-83eb-912e-979547fd8a49"
+  ],
+  "semantic_deduplication_performed": false,
+  "evidence": [
+    {
+      "path": "08_LOGS/session-ledger/reconciliation/chatgpt-239/generated/CHATGPT-239-TO-YOS-LEDGER-CROSSWALK.csv",
+      "sha256": "980e6c968dc69f29676d349cd3c897a415b8fff23795481de5993515923c7b53"
+    },
+    {
+      "path": "08_LOGS/session-ledger/reconciliation/chatgpt-239/generated/CHATGPT-239-CROSSWALK-VALIDATION.json",
+      "sha256": "4b392c8d7e9e408cde3fd29c081cfa5b756a5eb17c64ad1fa10c485834a882df"
+    }
+  ],
+  "evidence_commit": "9e0f4c90",
+  "canon_promotions": 0
+}
+

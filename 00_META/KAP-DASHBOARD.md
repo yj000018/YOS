@@ -1,7 +1,7 @@
 # 📊 Y-OS KAP Dashboard
 *(Capture, Absorption & Processing Dashboard)*
 
-**Dernière mise à jour automatique :** 2026-08-02 05:15:59 UTC
+**Dernière mise à jour automatique :** 2026-08-02 07:00:11 UTC
 
 Ce tableau de bord centralise le suivi du pipeline complet d'ingestion des données pour l'écosystème Y-OS. Il trace le parcours de chaque donnée depuis son identification jusqu'à sa transformation en *Fact Sheet* enrichie.
 

@@ -1,0 +1,131 @@
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#1a1a2e', 'primaryTextColor': '#e0e0e0', 'primaryBorderColor': '#4a4a8a', 'lineColor': '#7a7aaa', 'secondaryColor': '#16213e', 'tertiaryColor': '#0f3460'}}}%%
+
+flowchart TB
+
+    YAN(["👤 YANNICK\nDécideur · Guardian · Operator"])
+
+    subgraph KERNEL ["⬡  KERNEL — System Prompt Universel"]
+        KRN["Constitution Y-OS\nCartographie modules\nRègles non-négociables"]
+    end
+
+    subgraph FORGE ["🔥  FORGE — Axe Puissance"]
+        direction TB
+
+        subgraph INTEL ["📡  INTEL — Intelligence & Veille"]
+            IT["INTEL-TOOLS\nGitHub · Smithery\nProduct Hunt"]
+            IC["INTEL-LLM-CAP\nCapacités LLMs\nChangelogs · Releases"]
+            IN["INTEL-LLM-CONN\nConnecteurs natifs\nPlugins · Stores"]
+        end
+
+        POOL[["🗂  Pool de Veille\nTagué par type\nGit append-only"]]
+
+        subgraph ART ["🗺  ART — Connector Topology"]
+            TOPO[["CONNECTOR-TOPOLOGY.md\nMatrice LLM × Outil\nStatut activation"]]
+        end
+
+        subgraph SEC ["🔐  SEC — Security"]
+            OP[("🔑 1Password\nSource de vérité")]
+            MIR["Miroir Multi-LLM\nManus · ChatGPT\nClaude · Groq"]
+        end
+
+        CRT[["🧭  CRT — Cognitive Routing Table\nQuel LLM pour quelle tâche\nRègles de routage"]]
+
+        subgraph MPM ["⚙️  MPM — Mega Prompt Manager\nOrchestration inter-LLM"]
+            QUEUE["File d'attente\ndrafts → ready\n→ running → executed"]
+            LEDGER[("Ledger JSON\nSource de vérité\nexécution")]
+        end
+    end
+
+    subgraph SAGE ["🌿  SAGE — Axe Intelligence"]
+        direction TB
+
+        subgraph LORE ["📚  LORE — Living Operational Rules Engine"]
+            LL[["LESSONS-LEARNED\nPool global tagué\nappend-only"]]
+            AUD["Agent Audit\nCohérence règles\nSynthèse patterns"]
+        end
+
+        DOC["📄  DOC\nDocumentation\ntransversale"]
+    end
+
+    subgraph BACKBONE ["🦴  BACKBONE — Infrastructure Fondatrice"]
+        direction LR
+
+        subgraph KAP ["🧠  KAP — Knowledge Absorption Pipeline"]
+            KAP_P["Protocols\nGates · Schemas"]
+            KAP_R[("Registries\nRuns · Reports")]
+        end
+
+        subgraph BUS ["🚌  BUS — Transport Universel"]
+            BUS_D["Domains\nInbox/Workspace\nOutbox/Archive"]
+            BUS_R["Runtimes\nFile · Git · MCP"]
+        end
+
+        subgraph YARP ["📡  YARP — Agent Relay Protocol"]
+            YARP_M["Message Types\nEXECUTE · ACK\nPROGRESS · RESULT"]
+        end
+
+        LOG[("📋  LOG\nJournal Global\nappend-only")]
+    end
+
+    subgraph LLMs ["🤖  Agents LLM Opérateurs"]
+        direction LR
+        MAN["Manus\nexecutor\norchestrator"]
+        GPT["ChatGPT\narchitect\nguardian"]
+        CLD["Claude\narchitect\nreviewer"]
+        GEM["Gemini\nreviewer\nassimilator"]
+    end
+
+    %% Flux INTEL → Pool
+    IT --> POOL
+    IC --> POOL
+    IN --> POOL
+
+    %% Pool → Consommateurs
+    POOL --> ART
+    POOL --> CRT
+    POOL -.->|"Digest hebdo"| YAN
+
+    %% Décisions Yannick
+    YAN -.->|"Valide activation"| ART
+    YAN -.->|"Valide routage"| CRT
+    YAN -.->|"Valide règles"| LORE
+
+    %% ART → SEC → Miroir
+    ART -->|"Handoff credential"| SEC
+    OP --> MIR
+    MIR --> LLMs
+
+    %% MPM orchestre
+    MPM -->|"Séquence pipeline"| ART
+    MPM -->|"Séquence pipeline"| SEC
+    MPM -->|"Séquence pipeline"| CRT
+
+    %% LORE
+    ART -.->|"Écrit LL"| LL
+    SEC -.->|"Écrit LL"| LL
+    LL --> AUD
+    AUD -.->|"Propose révision"| YAN
+    AUD -.->|"Met à jour"| CRT
+
+    %% LOG
+    ART --> LOG
+    SEC --> LOG
+    MPM --> LOG
+    LORE --> LOG
+
+    %% KERNEL → LLMs
+    KRN --> MAN
+    KRN --> GPT
+    KRN --> CLD
+    KRN --> GEM
+    LOG -.->|"Mémoire opérationnelle"| KRN
+
+    %% KAP / BUS / YARP
+    KAP --> BUS
+    BUS --> YARP
+    YARP --> LLMs
+    MPM --> BUS
+
+    %% DOC
+    MPM -.->|"Déclenche si multi-module"| DOC
+    DOC -.-> LOG

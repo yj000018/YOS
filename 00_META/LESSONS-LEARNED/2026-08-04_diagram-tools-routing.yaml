@@ -1,0 +1,74 @@
+session: "2026-08-04-architecture-yos-modules"
+date: "2026-08-04"
+author: "manus"
+domain: ["diagrams", "d2", "mermaid", "excalidraw", "visualization", "tooling"]
+status: "validated"
+tool_fact_sheet: null
+mem0_tags: ["d2", "mermaid", "excalidraw", "diagram", "visualization", "yos", "tooling"]
+summary: >
+  During the Y-OS architecture session (SEC/INTEL/ART/LORE/FORGE/SAGE), attempted to render
+  a complex architecture diagram using D2 (via manus-render-diagram). D2 compiled successfully
+  but the SVG-to-PNG conversion via cairosvg failed to render embedded fonts — producing only
+  dashes/lines with no readable labels. Mermaid is the reliable fallback within Manus sandbox.
+  Yannick's stated preference for all diagrams is Excalidraw (visual, editable, archetype-ready).
+
+lessons:
+  - id: "LL-2026-08-04-001"
+    title: "D2 — manus-render-diagram broken (Playwright 404)"
+    category: "anti-pattern"
+    severity: "critical"
+    description: >
+      manus-render-diagram fails with D2 input files due to a Playwright installation error
+      (playwright-1.47.2-linux.zip returns 404 from all CDN mirrors). The tool cannot install
+      its browser dependency in the current sandbox environment.
+    action: "Never use manus-render-diagram with .d2 files. Use d2 CLI directly → SVG, then convert."
+    tags: ["d2", "manus-render-diagram", "playwright", "anti-pattern", "sandbox"]
+    workaround: >
+      d2 CLI is available at /usr/local/bin/d2 v0.7.1 and compiles .d2 → .svg successfully.
+      However cairosvg SVG→PNG conversion does NOT render D2's embedded woff2 fonts.
+      Result: shapes render but all text labels are invisible (only dashes appear).
+
+  - id: "LL-2026-08-04-002"
+    title: "D2 + cairosvg — font rendering broken in Manus sandbox"
+    category: "anti-pattern"
+    severity: "high"
+    description: >
+      D2 embeds fonts as base64 woff2 in SVG. cairosvg (the only SVG→PNG converter available
+      in Manus sandbox after librsvg2-bin package removal) does not support woff2 font rendering.
+      All text labels become invisible in the output PNG.
+    action: "Do not use D2 for diagram generation in Manus sandbox until font rendering is fixed."
+    tags: ["d2", "cairosvg", "svg", "png", "fonts", "woff2", "anti-pattern"]
+
+  - id: "LL-2026-08-04-003"
+    title: "Diagram tool routing — Yannick preference + system fallback"
+    category: "architecture"
+    severity: "medium"
+    description: >
+      Yannick's stated preference for diagrams is Excalidraw (visual, editable, archetype-ready,
+      supports icons and color coding). Mermaid is the preferred system fallback because it is
+      lightweight, fast, and renders reliably via manus-render-diagram (.mmd input).
+      D2 should be avoided entirely in Manus sandbox until the font issue is resolved.
+    action: >
+      Routing rule for diagram generation:
+      1. PRIMARY: Excalidraw (when Yannick requests a visual/archetype diagram, or interactive editing needed)
+      2. FALLBACK: Mermaid (.mmd via manus-render-diagram) — reliable, fast, readable
+      3. AVOID: D2 in Manus sandbox (font rendering broken as of 2026-08-04)
+    tags: ["excalidraw", "mermaid", "d2", "routing", "yannick-preference", "architecture"]
+    rule: >
+      DIAGRAM_TOOL_ROUTING:
+        default: excalidraw (propose to Yannick)
+        system_fallback: mermaid (.mmd)
+        avoid: d2 (Manus sandbox — font bug)
+        trigger_excalidraw: visual diagram, archetype map, Y-OS module map, interactive editing
+        trigger_mermaid: flowchart, sequence diagram, quick architecture sketch, automated pipeline
+
+  - id: "LL-2026-08-04-004"
+    title: "LORE pipeline test — LL captured and committed in same session"
+    category: "process"
+    severity: "low"
+    description: >
+      This LL file is itself a test of the LORE pipeline defined in the 2026-08-04 architecture session.
+      The pipeline (detect issue → write LL → commit to Git → update ART/Tools table → notify Yannick)
+      was executed manually by Manus as a live demonstration of the LORE module concept.
+    action: "Automate this pipeline as a LORE agent trigger in future implementation."
+    tags: ["lore", "pipeline", "test", "meta", "yos"]

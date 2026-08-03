@@ -29,6 +29,7 @@ memory.search("chatgpt pipeline", user_id="yannick", limit=5)
 |---|---|---|---|
 | [2026-07-30_chatgpt-pipeline.yaml](2026-07-30_chatgpt-pipeline.yaml) | 2026-07-30 | ChatGPT API · macOS · SSH | Brave cookies, Keychain, AES decrypt, Cloudflare bypass |
 | [2026-07-31_bore-ssh-mac-tunnel.yaml](2026-07-31_bore-ssh-mac-tunnel.yaml) | 2026-07-31 | Infrastructure · SSH · bore | bore local 22 vs 2222, port conflicts, LaunchAgent, ControlMaster, LL push rule |
+| [2026-08-04_diagram-tools-routing.yaml](2026-08-04_diagram-tools-routing.yaml) | 2026-08-04 | Diagrams · D2 · Mermaid · Excalidraw | D2 font bug (cairosvg), Mermaid fallback, Excalidraw preference, diagram routing rule |
 
 ---
 
@@ -43,4 +44,4 @@ memory.search("chatgpt pipeline", user_id="yannick", limit=5)
 
 ---
 
-*LL Registry v1.0 — 2026-07-30*
+*LL Registry v1.1 — mis à jour 2026-08-04*

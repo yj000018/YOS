@@ -3,7 +3,8 @@ tool_id: YOT-49
 tool_name: "Mermaid Chart"
 tool_type: "MCP Connector"
 category: "Design / Visual"
-status: "A tester"
+status: "Actif — FALLBACK système (diagrammes automatisés)"
+ll_ref: "00_META/LESSONS-LEARNED/2026-08-04_diagram-tools-routing.yaml"
 pricing: "Freemium"
 source_type: "Officiel"
 source_url: "https://mermaid.js.org/"
@@ -13,13 +14,13 @@ migrated_from_notion: true
 migration_date: "2026-07-30"
 ---
 
-# ⚪ YOT-49 — Mermaid Chart
+# 🟡 YOT-49 — Mermaid Chart
 
 | Champ | Valeur |
 | :--- | :--- |
 | **Type** | MCP Connector |
 | **Catégorie** | Design / Visual |
-| **Statut** | A tester |
+| **Statut** | **🟡 FALLBACK système — diagrammes automatisés** |
 | **Pricing** | Freemium |
 | **Source** | Officiel |
 | **Auth** | OAuth MCP |
@@ -39,8 +40,15 @@ _N/A_
 
 ## Known Limits & Bugs
 
-_N/A_
+Aucun bug connu dans Manus sandbox. `manus-render-diagram` fonctionne avec les fichiers `.mmd`.
 
 ## Workarounds & Lessons
 
-_N/A_
+**Rôle dans le routing diagrammes Y-OS :**
+```
+PRIMARY:  Excalidraw (YOT-75) — préférence Yannick
+FALLBACK: Mermaid (ce tool) — diagrammes automatisés, flowcharts, pipelines
+AVOID:    D2 (YOT-74) — bug font rendering dans Manus sandbox
+```
+
+Référence LL : `00_META/LESSONS-LEARNED/2026-08-04_diagram-tools-routing.yaml` — LL-2026-08-04-003

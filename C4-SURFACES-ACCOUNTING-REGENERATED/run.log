@@ -1,0 +1,23 @@
+[MPX-C4] Execution log
+Generated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
+Executor: Manus
+Branch: fix/c4-chatgpt-surfaces-accounting
+Mode: evidence-first, non-destructive, bounded
+
+Step 1: Evidence collection from CC
+  - master_ledger.csv: 538 rows (sha: 1076d8c4b7fceb8ebb2f07ec93828c4fd1f626bd474d055c4734f462803746c9)
+  - api_task_list_full.json: 2521 items (sha: be150cb5dc8f4bbecfd35f78e9cc1cd0e9ee417c566e5d490a8927e8b77222af)
+  - factsheets_enriched: 564 files
+  - enrich_done.json: 565 entries
+  - c4_surface_tasks.json: sha 08f8552e5d53b4fdbdc85888f9616ae6e05fcc3709a4e19ae7879e5293c3ed80
+  - c4_surface_projects.json: sha 1cd77cecd57e4894327e9fdf42be256feec49b7a5b56585e5a4eaed9e79cd66a
+  - c4_surface_custom_instructions.json: sha 600877e1bf1449ea2964eb80a9ad335eca5b662aa9418c4333c0ebd1687504eb
+  - c4_surface_file_library.json: sha 3445ea87085949060125ebe5cd61f8e0b089ac1ecdac0cc11b051408498cd64f
+
+Step 2: Generated c4_surfaces_state.json (canonical state)
+Step 3: Generated all deliverables from state
+Step 4: Validation passed
+Step 5: ZIP created
+Step 6: Committed on branch fix/c4-chatgpt-surfaces-accounting
+
+Exit code: 0

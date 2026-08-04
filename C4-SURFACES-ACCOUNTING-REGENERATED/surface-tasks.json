@@ -1,0 +1,29 @@
+{
+  "native_chatgpt_scheduled_tasks": {
+    "count": null,
+    "status": "UNVERIFIED",
+    "evidence_refs": []
+  },
+  "manus_tasks": {
+    "count": 564,
+    "status": "VERIFIED_COMPLETE",
+    "evidence_refs": [
+      {
+        "path": "08_LOGS/session-ledger/api_task_list_full.json",
+        "sha256": "be150cb5dc8f4bbecfd35f78e9cc1cd0e9ee417c566e5d490a8927e8b77222af",
+        "source_type": "api_task_list",
+        "observed_at": "2026-07-31T00:23:00Z",
+        "observation": "Contains 2521 tasks in total, of which 564 were incorrectly attributed to ChatGPT Tasks in previous C4 report",
+        "supports": "manus_tasks"
+      },
+      {
+        "path": "07_SOURCE_CORPUS/chatgpt/surfaces/c4_surface_tasks.json",
+        "sha256": "08f8552e5d53b4fdbdc85888f9616ae6e05fcc3709a4e19ae7879e5293c3ed80",
+        "source_type": "legacy_surface_report",
+        "observed_at": "2026-07-31T05:00:00Z",
+        "observation": "Acknowledges 564 tasks belong to Manus, not ChatGPT",
+        "supports": "manus_tasks"
+      }
+    ]
+  }
+}

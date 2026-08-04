@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "single_state_source_used": true,
+    "markdown_generated_from_state": true,
+    "json_generated_from_state": true,
+    "no_count_564_labeled_as_chatgpt_tasks_without_native_evidence": true,
+    "no_semantic_label_presented_as_native_project": true,
+    "no_yos_prompt_presented_as_native_chatgpt_instruction": true,
+    "no_external_folder_presented_as_native_file_library": true,
+    "all_non_null_counts_have_evidence": true,
+    "all_unknown_counts_are_null_not_zero": true,
+    "all_output_hashes_recorded": true,
+    "no_secrets_detected": true
+  },
+  "verdict": "PASS"
+}

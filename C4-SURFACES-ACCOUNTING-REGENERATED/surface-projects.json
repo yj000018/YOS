@@ -1,0 +1,26 @@
+{
+  "semantic_project_taxonomy": {
+    "labels_count": 62,
+    "tagged_conversations": 239,
+    "source": "enriched_239",
+    "status": "CAPTURED_DERIVED",
+    "evidence_refs": [
+      {
+        "path": "07_SOURCE_CORPUS/chatgpt/surfaces/c4_surface_projects.json",
+        "sha256": "1cd77cecd57e4894327e9fdf42be256feec49b7a5b56585e5a4eaed9e79cd66a",
+        "source_type": "legacy_surface_report",
+        "observed_at": "2026-07-31T05:00:00Z",
+        "observation": "Reports 62 projects derived from enriched-239 conversations",
+        "supports": "semantic_project_taxonomy"
+      }
+    ]
+  },
+  "native_chatgpt_projects": {
+    "count": null,
+    "native_ids_available": false,
+    "files_captured": false,
+    "instructions_captured": false,
+    "status": "UNVERIFIED",
+    "evidence_refs": []
+  }
+}

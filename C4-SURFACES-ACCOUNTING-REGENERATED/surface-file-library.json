@@ -1,0 +1,25 @@
+{
+  "external_collection_folder": {
+    "path": "01_Y_OS_CORE/02_Infrastructure/Chat GPT FILES",
+    "observed_file_count": 0,
+    "status": "VERIFIED_COMPLETE",
+    "evidence_refs": [
+      {
+        "path": "07_SOURCE_CORPUS/chatgpt/surfaces/c4_surface_file_library.json",
+        "sha256": "3445ea87085949060125ebe5cd61f8e0b089ac1ecdac0cc11b051408498cd64f",
+        "source_type": "legacy_surface_report",
+        "observed_at": "2026-07-31T05:09:43Z",
+        "observation": "Reports 0 files in GDrive folder",
+        "supports": "external_collection_folder"
+      }
+    ]
+  },
+  "native_chatgpt_files": {
+    "conversation_attachments_count": null,
+    "project_files_count": null,
+    "custom_gpt_files_count": null,
+    "export_embedded_files_count": null,
+    "status": "UNVERIFIED",
+    "evidence_refs": []
+  }
+}

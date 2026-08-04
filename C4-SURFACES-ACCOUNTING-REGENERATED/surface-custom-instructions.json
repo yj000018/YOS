@@ -1,0 +1,24 @@
+{
+  "yos_artifacts": {
+    "present": true,
+    "files": [
+      "01_BACKBONE/GOVERNANCE/Policies/custom_instructions_v2.md"
+    ],
+    "status": "VERIFIED_COMPLETE",
+    "evidence_refs": [
+      {
+        "path": "01_BACKBONE/GOVERNANCE/Policies/custom_instructions_v2.md",
+        "sha256": "unknown",
+        "source_type": "yos_policy_file",
+        "observed_at": "2026-08-04T00:00:00Z",
+        "observation": "File exists with 1961 chars",
+        "supports": "yos_artifacts"
+      }
+    ]
+  },
+  "native_chatgpt_settings": {
+    "captured": false,
+    "status": "MISSING",
+    "evidence_refs": []
+  }
+}

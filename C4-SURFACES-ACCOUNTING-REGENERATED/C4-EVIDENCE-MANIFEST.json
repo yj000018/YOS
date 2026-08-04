@@ -1,0 +1,10 @@
+{
+  "manifest": [
+    "08_LOGS/session-ledger/api_task_list_full.json",
+    "07_SOURCE_CORPUS/chatgpt/surfaces/c4_surface_tasks.json",
+    "07_SOURCE_CORPUS/chatgpt/surfaces/c4_surface_projects.json",
+    "07_SOURCE_CORPUS/chatgpt/surfaces/c4_surface_custom_instructions.json",
+    "07_SOURCE_CORPUS/chatgpt/surfaces/c4_surface_file_library.json",
+    "01_BACKBONE/GOVERNANCE/Policies/custom_instructions_v2.md"
+  ]
+}

@@ -1,7 +1,8 @@
 {
-  "schema": "yos-github-assimilation-tracker-v1.0",
+  "schema": "yos-github-assimilation-tracker-v1.1",
   "run_id": "KAP-GITHUB-ASSIMILATION-2026-07-23",
   "status": "IN_PROGRESS",
+  "last_updated": "2026-08-06",
   "doctrine": "Assimilate before building",
   "scope": {
     "repository": "yj000018/YOS",
@@ -16,7 +17,7 @@
     {"id": "T04", "name": "YARP and BUS transport architecture", "status": "FIRST_PASS_COMPLETE"},
     {"id": "T05", "name": "MPM orchestration runtime", "status": "FIRST_PASS_COMPLETE"},
     {"id": "T06", "name": "KAP protocols, registries, runs and adapters", "status": "FIRST_PASS_COMPLETE"},
-    {"id": "T07", "name": "Governance and ADRs", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T07", "name": "Governance and ADRs", "status": "DEEP_AUDIT_COMPLETE_PENDING_RECONCILIATION", "evidence": "08_LOGS/kap-runs/2026-08-06-GITHUB-ASSIMILATION-WAVE-01-GOVERNANCE.md"},
     {"id": "T08", "name": "Legacy agents and Manus skills", "status": "PENDING_DEEP_AUDIT"},
     {"id": "T09", "name": "Automations, scripts, n8n and userscripts", "status": "PENDING_DEEP_AUDIT"},
     {"id": "T10", "name": "Interfaces, YOS Shell, cockpit, browser, mobile and voice", "status": "PENDING_DEEP_AUDIT"},
@@ -28,42 +29,22 @@
     {"id": "T16", "name": "Final coverage proof and residual unknowns", "status": "PENDING"}
   ],
   "confirmed_findings": [
-    {
-      "id": "F001",
-      "severity": "HIGH",
-      "finding": "Root README and several 00_META maps describe the pre-reorganization topology and are stale relative to the current backbone."
-    },
-    {
-      "id": "F002",
-      "severity": "HIGH",
-      "finding": "AGENTS and YARP are first-class backbone modules in implemented candidate architectures but are absent from YOS-MODULE-REGISTRY v1.0 and the older repo map."
-    },
-    {
-      "id": "F003",
-      "severity": "HIGH",
-      "finding": "ART and CRT are routing submodules of AGENTS/04_ROUTING, not standalone backbone modules."
-    },
-    {
-      "id": "F004",
-      "severity": "MEDIUM",
-      "finding": "File-count claims conflict: root README says 915, pre-reorg inventory says 940; a fresh authoritative census is required."
-    },
-    {
-      "id": "F005",
-      "severity": "MEDIUM",
-      "finding": "KAP source registries contain substantial prior metadata assimilation, but the current YOS monorepo itself has not yet been fully registered and semantically classified as a source instance."
-    },
-    {
-      "id": "F006",
-      "severity": "MEDIUM",
-      "finding": "The KAP adapter census is useful but contains environment-specific status from Manus in July 2026 and must not be treated as timeless capability truth."
-    }
+    {"id": "F001", "severity": "HIGH", "finding": "Root README and several 00_META maps describe the pre-reorganization topology and are stale relative to the current backbone."},
+    {"id": "F002", "severity": "HIGH", "finding": "AGENTS and YARP are first-class backbone modules in implemented candidate architectures but are absent from YOS-MODULE-REGISTRY v1.0 and the older repo map."},
+    {"id": "F003", "severity": "HIGH", "finding": "ART and CRT are routing submodules of AGENTS/04_ROUTING, not standalone backbone modules."},
+    {"id": "F004", "severity": "MEDIUM", "finding": "File-count claims conflict: root README says 915, pre-reorg inventory says 940; a fresh authoritative census is required."},
+    {"id": "F005", "severity": "MEDIUM", "finding": "KAP source registries contain substantial prior metadata assimilation, but the current YOS monorepo itself has not yet been fully registered and semantically classified as a source instance."},
+    {"id": "F006", "severity": "MEDIUM", "finding": "The KAP adapter census is useful but contains environment-specific status from Manus in July 2026 and must not be treated as timeless capability truth."},
+    {"id": "F007", "severity": "HIGH", "finding": "The absolute JSON-first rule conflicts with canonical Markdown ADRs and specifications; source authority must be defined by object type, not extension alone."},
+    {"id": "F008", "severity": "HIGH", "finding": "ADR-005 and policy-manifest fixed agent roles are bootstrap configuration partially superseded by orchestrator-agnostic AGENTS/ART/CRT routing."},
+    {"id": "F009", "severity": "MEDIUM", "finding": "ADR-004 remains useful history but its seven-folder monorepo topology is superseded by the implemented canonical layers."}
   ],
   "next_batch": [
-    "Governance and ADR deep audit",
-    "Legacy-to-canonical duplication census",
+    "Legacy agents and Manus skills census",
+    "Automations, n8n and userscripts implementation audit",
     "YOS Shell and Manus interface lineage",
-    "Automations and userscripts implementation audit"
+    "Legacy-to-canonical duplication census",
+    "Apps and prototypes census"
   ],
   "completion_rule": "Do not mark COMPLETE until every tracked top-level domain has an evidence-backed inventory, semantic classification, lineage decision, and explicit residual-unknown list."
 }

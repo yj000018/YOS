@@ -1,5 +1,5 @@
 {
-  "schema": "yos-github-assimilation-tracker-v1.2",
+  "schema": "yos-github-assimilation-tracker-v1.3",
   "run_id": "KAP-GITHUB-ASSIMILATION-2026-07-23",
   "status": "IN_PROGRESS",
   "last_updated": "2026-08-06",
@@ -9,6 +9,13 @@
     "target_coverage": 1.0,
     "development_freeze": true,
     "manus_usage": "exclusive-capability-only"
+  },
+  "coverage": {
+    "top_level_structural_coverage": "COMPLETE",
+    "family_level_semantic_coverage": "PARTIAL",
+    "file_level_semantic_coverage": "INCOMPLETE",
+    "canonical_reconciliation": "INCOMPLETE",
+    "global_github_assimilation": "IN_PROGRESS"
   },
   "audit_tracks": [
     {"id": "T01", "name": "Meta, constitution, source-of-truth and migration", "status": "FIRST_PASS_COMPLETE"},
@@ -21,9 +28,9 @@
     {"id": "T08", "name": "Legacy agents and Manus skills", "status": "FIRST_PASS_COMPLETE", "evidence": "08_LOGS/kap-runs/2026-08-06-GITHUB-ASSIMILATION-WAVE-02-AGENTS-AUTOMATIONS-SHELL.md"},
     {"id": "T09", "name": "Automations, scripts, n8n and userscripts", "status": "FIRST_PASS_COMPLETE", "evidence": "08_LOGS/kap-runs/2026-08-06-GITHUB-ASSIMILATION-WAVE-02-AGENTS-AUTOMATIONS-SHELL.md"},
     {"id": "T10", "name": "Interfaces, YOS Shell, cockpit, browser, mobile and voice", "status": "FIRST_PASS_COMPLETE", "evidence": "08_LOGS/kap-runs/2026-08-06-GITHUB-ASSIMILATION-WAVE-02-AGENTS-AUTOMATIONS-SHELL.md"},
-    {"id": "T11", "name": "Apps, products and prototypes", "status": "PENDING_DEEP_AUDIT"},
-    {"id": "T12", "name": "Y-WORLD knowledge domain and Obsidian assets", "status": "PENDING_DEEP_AUDIT"},
-    {"id": "T13", "name": "Source corpus, logs, migrations and archives", "status": "PENDING_DEEP_AUDIT"},
+    {"id": "T11", "name": "Apps, products and prototypes", "status": "FIRST_PASS_COMPLETE_PENDING_DEEP_APP_CENSUS", "evidence": "08_LOGS/kap-runs/2026-08-06-GITHUB-ASSIMILATION-WAVE-03-APPS-KNOWLEDGE-CORPUS-LOGS.md"},
+    {"id": "T12", "name": "Y-WORLD knowledge domain and Obsidian assets", "status": "FIRST_PASS_COMPLETE_PENDING_NOTE_LEVEL_ASSIMILATION", "evidence": "08_LOGS/kap-runs/2026-08-06-GITHUB-ASSIMILATION-WAVE-03-APPS-KNOWLEDGE-CORPUS-LOGS.md"},
+    {"id": "T13", "name": "Source corpus, logs, migrations and archives", "status": "FIRST_PASS_COMPLETE_PENDING_LEDGER_RECONCILIATION", "evidence": "08_LOGS/kap-runs/2026-08-06-GITHUB-ASSIMILATION-WAVE-03-APPS-KNOWLEDGE-CORPUS-LOGS.md"},
     {"id": "T14", "name": "Duplicate, contradiction and lineage reconciliation", "status": "IN_PROGRESS"},
     {"id": "T15", "name": "Canonical topology and registry patch plan", "status": "PENDING"},
     {"id": "T16", "name": "Final coverage proof and residual unknowns", "status": "PENDING"}
@@ -42,15 +49,23 @@
     {"id": "F011", "severity": "HIGH", "finding": "yos-manus-client, manus-enhancer and yos-cockpit are overlapping generations of the YOS Shell and require file-level lineage reconciliation before development resumes."},
     {"id": "F012", "severity": "MEDIUM", "finding": "Provider-neutral workflows and Manus-specific execution instructions are mixed inside the legacy skill corpus."},
     {"id": "F013", "severity": "MEDIUM", "finding": "Canonical automation/interface destinations are not proof of completed migration; substantive implementations remain in legacy paths."},
-    {"id": "F014", "severity": "MEDIUM", "finding": "Empty n8n and playbook roots mean not recovered in those paths, not proof that the workflows never existed."}
+    {"id": "F014", "severity": "MEDIUM", "finding": "Empty n8n and playbook roots mean not recovered in those paths, not proof that the workflows never existed."},
+    {"id": "F015", "severity": "HIGH", "finding": "Canonical knowledge-domain directories are empty scaffolds; substantive Y-WORLD content remains in legacy or external sources."},
+    {"id": "F016", "severity": "HIGH", "finding": "The root contains both 03_AUTOMATIONS and 05_AUTOMATION, requiring explicit lineage and authority reconciliation."},
+    {"id": "F017", "severity": "MEDIUM", "finding": "The repository has a CANON root whose relationship to Governance, Knowledge Domains and source-of-truth policy is not yet reconciled."},
+    {"id": "F018", "severity": "MEDIUM", "finding": "Several canonical app/product directories are placeholders, while substantive implementations remain in legacy roots."},
+    {"id": "F019", "severity": "MEDIUM", "finding": "Global logging directories are unevenly populated; module-local ledgers and global logs need a crosswalk."}
   ],
   "next_batch": [
     "Complete file-level Manus skills census and overlap matrix",
     "Compare yos-manus-client, manus-enhancer and yos-cockpit trees",
     "Inventory every operational script and userscript",
-    "Audit apps, products and prototypes",
-    "Audit Y-WORLD and Obsidian knowledge assets",
-    "Audit source corpus, logs, migrations and archives"
+    "Create one fact sheet per substantive app or prototype",
+    "Run note-level Y-WORLD semantic assimilation and duplicate detection",
+    "Register source-corpus collections and reconcile ledgers",
+    "Resolve 03_AUTOMATIONS versus 05_AUTOMATION and CANON authority",
+    "Generate canonical topology and registry patch plan",
+    "Produce final residual-unknown proof"
   ],
   "completion_rule": "Do not mark COMPLETE until every tracked top-level domain has an evidence-backed inventory, semantic classification, lineage decision, and explicit residual-unknown list."
 }

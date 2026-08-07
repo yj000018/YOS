@@ -1,0 +1,18 @@
+{
+  "device_id": "AND-002",
+  "name": "Galaxy Z Fold 7",
+  "model": "SM-F956",
+  "profile": "primary_phone",
+  "android_version": "16",
+  "sdk": "36",
+  "tailscale_ip": null,
+  "adb_port": 5555,
+  "status": "pending_delivery",
+  "provisioned_date": null,
+  "phases_completed": [],
+  "phases_pending": ["P0", "P1", "P2", "P3", "P4", "P5"],
+  "decision_mdm": "none",
+  "decision_date": "2026-08-07",
+  "notes": "No MDM/Knox. Baseline légère. Ne pas restaurer depuis iPhone à l'OOBE.",
+  "provision_command": "bash yos-android-provision.sh --ip <TAILSCALE_IP>:5555 --id AND-002 --profile primary_phone"
+}

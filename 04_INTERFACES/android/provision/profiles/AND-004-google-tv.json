@@ -1,0 +1,15 @@
+{
+  "device_id": "AND-004",
+  "name": "Google TV",
+  "model": "unknown",
+  "profile": "media_tv",
+  "os": "Android TV / Google TV",
+  "tailscale_ip": null,
+  "adb_port": 5555,
+  "status": "pending_setup",
+  "provisioned_date": null,
+  "phases_completed": [],
+  "phases_pending": ["P0", "P1", "P4", "P5"],
+  "notes": "Monitoring via Home Assistant (Android TV Remote integration). ADB over WiFi possible si même réseau. Tailscale non disponible sur Google TV.",
+  "provision_command": "bash yos-android-provision.sh --ip <LOCAL_IP>:5555 --id AND-004 --profile media_tv --phases P2,P3,P4,P5"
+}

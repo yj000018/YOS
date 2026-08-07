@@ -1,0 +1,17 @@
+{
+  "device_id": "AND-003",
+  "name": "Galaxy Watch Ultra 2",
+  "model": "SM-L705",
+  "profile": "watch",
+  "os": "Wear OS 7",
+  "one_ui_watch": "8",
+  "tailscale_ip": null,
+  "adb_available": false,
+  "proxy_device": "AND-002",
+  "status": "pending_pairing",
+  "provisioned_date": null,
+  "phases_completed": [],
+  "phases_pending": ["P0", "P1", "P4", "P5"],
+  "notes": "Pas d'ADB remote. Monitoring via HA Companion Wear + AND-002 proxy. Appairer via Galaxy Wearable sur AND-002.",
+  "provision_command": "Manual only — no ADB provisioning for Wear OS"
+}

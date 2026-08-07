@@ -1,0 +1,17 @@
+{
+  "device_id": "AND-001",
+  "name": "Galaxy Tab S11",
+  "model": "SM-X730",
+  "profile": "creative_tablet",
+  "android_version": "16",
+  "sdk": "36",
+  "tailscale_ip": "100.89.158.44",
+  "adb_port": 5555,
+  "status": "operational",
+  "provisioned_date": "2026-08-07",
+  "phases_completed": ["P0", "P1", "P2", "P3", "P5"],
+  "phases_pending": [],
+  "notes": "P4 config partiellement appliquée. Wireless Debugging stable sur reboot.",
+  "apps_baseline": 118,
+  "provision_command": "bash yos-android-provision.sh --ip 100.89.158.44:5555 --id AND-001 --profile creative_tablet --phases P3,P4"
+}

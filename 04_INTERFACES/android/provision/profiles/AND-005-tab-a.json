@@ -1,0 +1,15 @@
+{
+  "device_id": "AND-005",
+  "name": "Galaxy Tab A (Robi)",
+  "model": "unknown",
+  "profile": "family_tablet",
+  "android_version": "unknown",
+  "tailscale_ip": null,
+  "adb_port": 5555,
+  "status": "pending_setup",
+  "provisioned_date": null,
+  "phases_completed": [],
+  "phases_pending": ["P0", "P1", "P2", "P3", "P4", "P5"],
+  "notes": "Vérifier Android version avant provisioning. Si < Android 11 : pas de Wireless Debugging, ADB uniquement via USB. Profil familial : apps éducation/divertissement.",
+  "provision_command": "bash yos-android-provision.sh --ip <TAILSCALE_IP>:5555 --id AND-005 --profile family_tablet"
+}

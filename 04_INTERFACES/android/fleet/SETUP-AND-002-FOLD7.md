@@ -22,12 +22,9 @@ decision_required: COPE vs Fully Managed — AVANT OOBE
 | **Perso avec outils pro** | Work Profile BYOD | Respect maximal du perso, conformité limitée |
 | **Pas prêt pour MDM** | Tailscale + ADB + HA, sans MDM | Réversible, pas d'enforcement policy |
 
-**Recommandation Y-OS ⭐ : WP-C/COPE** — usage pro/perso mixte, Fold 7 = téléphone principal.
+**DéCISION PRISE ✅ : WP-C/COPE** — Pro + perso (confirmé 2026-08-07)
 
-### Pour décider maintenant
-- [ ] Le Fold 7 sera-t-il **exclusivement professionnel** ? → Fully Managed
-- [ ] Auras-tu des **apps personnelles** dessus ? → WP-C/COPE ⭐
-- [ ] Veux-tu **éviter tout MDM** pour l'instant ? → Baseline légère (Tailscale + ADB)
+> Usage pro/perso mixte. Espace professionnel séparé de l'espace personnel. Contrôle Y-OS limité à l'espace pro.
 
 ---
 

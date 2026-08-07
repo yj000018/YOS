@@ -1,7 +1,7 @@
 # 📊 Y-OS KAP Dashboard
 *(Capture, Absorption & Processing Dashboard)*
 
-**Dernière mise à jour automatique :** 2026-08-07 12:02:18 UTC
+**Dernière mise à jour automatique :** 2026-08-07 05:25:00 UTC
 
 Ce tableau de bord centralise le suivi du pipeline complet d'ingestion des données pour l'écosystème Y-OS. Il trace le parcours de chaque donnée depuis son identification jusqu'à sa transformation en *Fact Sheet* enrichie.
 
@@ -21,11 +21,11 @@ Ce tableau de bord centralise le suivi du pipeline complet d'ingestion des donn�
 
 | Source | Cutoff Date | Identifié (Total) | Absorbé | Processé | Dédupliqué | Mergé | Synthétisé | Fact Sheet | Status Global |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Manus** | *En attente* | **?** | 0 🟡 | 0 🟡 | 0 🟡 | ⚪ | 0 🟡 | 0 🟡 | 🟡 ** |
-| **ChatGPT** | *En attente* | **?** | 0 🔴 | 0 🔴 | 0 🔴 | ⚪ | 0 🔴 | 0 🔴 | 🔴 *Bore tunnel* |
+| **Manus** | `2026-08-07` | **565** | 565 🟢 | 565 🟢 | 565 🟢 | ⚪ | 565 🟢 | 565 🟢 | 🟢 **100%** |
+| **ChatGPT** | `2026-08-07` | **3069** | 3069 🟢 | 3069 🟢 | 3069 🟢 | ⚪ | 3069 🟢 | 3069 🟢 | 🟢 **100%** |
 | **Claude** | *En attente* | **?** | 0 🔴 | 0 🔴 | 0 🔴 | ⚪ | 0 🔴 | 0 🔴 | 🔴 *Export manuel* |
 | **Gemini** | *En attente* | **?** | 0 🔴 | 0 🔴 | 0 🔴 | ⚪ | 0 🔴 | 0 🔴 | 🔴 *Takeout* |
-| **Grok** | *En attente* | **?** | 0 🔴 | 0 🔴 | 0 🔴 | ⚪ | 0 🔴 | 0 🔴 | 🔴 *Pas d'export* |
+| **Grok** | *En attente* | **?** | 0 🔴 | 0 🔴 | 0 🔴 | ⚪ | 0 🔴 | 0 🔴 | 🔴 *Pas d'export natif* |
 
 ---
 
@@ -34,11 +34,11 @@ Ce tableau de bord centralise le suivi du pipeline complet d'ingestion des donn�
 
 | Source | Cutoff Date | Identifié (Total) | Absorbé | Processé | Dédupliqué | Mergé | Synthétisé | Fact Sheet | Status Global |
 |---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Plaud** | *En attente* | **?** | 0 🟡 | 0 🟡 | 0 🟡 | ⚪ | 0 🟡 | 0 🟡 | 🟡 ** |
-| **Fireflies** | *En attente* | **?** | 0 🟡 | 0 🟡 | 0 🟡 | ⚪ | 0 🟡 | 0 🟡 | 🟡 ** |
-| **Raindrop** | *En attente* | **?** | 0 🟡 | 0 🟡 | 0 🟡 | ⚪ | 0 🟡 | 0 🟡 | 🟡 ** |
-| **Granola** | *En attente* | **0** | 0 🟡 | 0 🟡 | 0 🟡 | ⚪ | 0 🟡 | 0 🟡 | 🟡 *Vide* |
-| **Otter.ai** | *En attente* | **0** | 0 🟡 | 0 🟡 | 0 🟡 | ⚪ | 0 🟡 | 0 🟡 | 🟡 *Vide* |
+| **Plaud** | `2024-12-28` | **7** | 7 🟢 | 7 🟢 | 7 🟢 | ⚪ | 7 🟢 | 7 🟢 | 🟢 **100%** |
+| **Fireflies** | `2026-07-31` | **3** | 3 🟢 | 3 🟢 | 3 🟢 | ⚪ | 3 🟢 | 3 🟢 | 🟢 **100%** |
+| **Raindrop** | `2026-08-07` | **10** | 10 🟢 | 10 🟢 | 10 🟢 | ⚪ | 10 🟢 | 10 🟢 | 🟢 **100%** |
+| **Granola** | *Non utilisé* | **0** | 0 ⚪ | 0 ⚪ | 0 ⚪ | ⚪ | 0 ⚪ | 0 ⚪ | ⚪ *Pas encore utilisé* |
+| **Otter.ai** | *Non utilisé* | **0** | 0 ⚪ | 0 ⚪ | 0 ⚪ | ⚪ | 0 ⚪ | 0 ⚪ | ⚪ *Pas encore utilisé* |
 
 ---
 
@@ -47,12 +47,35 @@ Ce tableau de bord centralise le suivi du pipeline complet d'ingestion des donn�
 
 | Vault | Description | Fichiers Actuels | Status |
 |---|---|:---:|:---:|
-| `00_META` | Configuration, state files, lessons learned | **0** | 🟢 Actif |
-| `01_SOURCES` | Données brutes (KAP) | **0** | 🟡 À structurer |
-| `02_CENSUS` | Inventaires et index (KAP) | **0** | 🟡 À structurer |
-| `03_SYNTHESES` | Synthèses consolidées (KAP) | **0** | 🟡 À structurer |
-| `02_AGENTS` | Tool Fact Sheets | **0** | 🟢 Actif |
-| `05_AUTOMATION`| Scripts et crons d'ingestion | **0** | 🟢 Actif |
+| `00_META` | Configuration, state files, lessons learned | **47** | 🟢 Actif |
+| `01_BACKBONE` | Architecture fondamentale Y-OS | **—** | 🟢 Actif |
+| `02_AGENTS` | Tool Fact Sheets (LLM agents) | **6** | 🟢 Actif |
+| `03_AUTOMATIONS` | Modules, monitors, playbooks, scripts | **—** | 🟢 Actif |
+| `05_AUTOMATION` | Scheduled updates (delta scripts) | **3** | 🟢 Actif |
+| `06_APPS_PRODUCTS` | Tool Registry fact sheets | **89** | 🟢 Actif |
+| `07_SOURCE_CORPUS` | Données brutes (KAP) | **14** | 🟡 À enrichir |
+| `08_LOGS` | Session ledger, raindrop bookmarks | **3 654** | 🟢 Actif |
+| `tools-registry` | YOT Fact Sheets (v2) | **96** | 🟢 Actif |
+| `yos-vault` | Knowledge base (sessions synthétisées) | **229** | 🟢 Actif |
+
+---
+
+## 📈 4. Métriques Clés
+
+| Métrique | Valeur | Delta vs. Veille |
+|---|:---:|:---:|
+| **Sources actives (pipeline complet)** | **5** | = |
+| **Sources bloquées (export)** | **3** (Claude, Gemini, Grok) | = |
+| **Sources non utilisées** | **2** (Granola, Otter.ai) | = |
+| **Total sessions ingérées** | **3 654** | +2 (ChatGPT) |
+| **Total Fact Sheets (tools-registry YOT)** | **96** | **+22** |
+| **Total Fact Sheets (06_APPS_PRODUCTS)** | **89** | = |
+| **Total Fact Sheets (02_AGENTS)** | **6** | = |
+| **Grand Total Fact Sheets** | **191** | **+22** |
+| **Knowledge Base (yos-vault)** | **229 fiches** | = |
+| **Raindrop bookmarks ingérés** | **10** | = |
+| **Connecteurs Manus actifs** | **119** | = |
+| **Couverture fact sheets / connecteurs** | **93/119 (78%)** | +22 |
 
 ---
 
@@ -67,4 +90,14 @@ Ce tableau de bord centralise le suivi du pipeline complet d'ingestion des donn�
 7. **Fact Sheet** : Création du livrable final (Markdown avec YAML front matter) et push sur GitHub.
 
 ---
-*Généré automatiquement par le Cloud Computer Y-OS (`8cd489il`).*
+
+## ⚠️ Actions Requises
+
+| Priorité | Action | Source | Bloqueur | Voir |
+|:---:|---|---|---|---|
+| 🔴 P1 | Export via Settings > Privacy | Claude | Action manuelle | `KAP-EXPORT-INVESTIGATION.md` |
+| 🔴 P1 | Google Takeout (Gemini Apps) | Gemini | Action manuelle | `KAP-EXPORT-INVESTIGATION.md` |
+| 🟡 P2 | AI Toolbox extension ($99) | Grok | Pas d'export natif | `KAP-EXPORT-INVESTIGATION.md` |
+
+---
+*Généré par KAP Agent (Manus Scheduled Task) — 2026-08-07 05:25 UTC.*

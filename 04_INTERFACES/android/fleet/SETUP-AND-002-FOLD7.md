@@ -2,7 +2,8 @@
 device_id: AND-002
 model: Samsung Galaxy Z Fold 7
 status: pending_delivery
-decision_required: COPE vs Fully Managed — AVANT OOBE
+decision_management: Baseline légère — Tailscale + ADB + HA (No MDM, No Knox)
+decision_date: 2026-08-07
 ---
 
 # AND-002 — Galaxy Z Fold 7 — Procédure Setup
@@ -40,17 +41,15 @@ decision_required: COPE vs Fully Managed — AVANT OOBE
 
 ## Étape 2 — OOBE (Out Of Box Experience)
 
-### Si Baseline légère (sans MDM) :
+**Décision confirmée : Baseline légère — No MDM, No Knox (2026-08-07)**
+
 1. Démarrer normalement, connecter WiFi
 2. Connecter compte Google
 3. Connecter compte Samsung
-4. **Ne pas activer Knox** si pas de MDM prévu
-5. Passer les étapes de restauration (ne pas restaurer depuis iPhone — repartir propre)
-
-### Si WP-C/COPE (Knox/EMM) :
-1. Au premier écran → **scanner le QR code d'enrôlement** (Knox Mobile Enrollment)
-2. L'appareil se configure automatiquement
-3. L'espace professionnel est créé séparément de l'espace personnel
+4. **Ne pas activer Knox** — pas de MDM
+5. **Ne pas restaurer depuis iPhone** — repartir propre Android natif
+6. Biométrie : empreinte + PIN robuste
+7. Laisser les mises à jour se faire
 
 ---
 

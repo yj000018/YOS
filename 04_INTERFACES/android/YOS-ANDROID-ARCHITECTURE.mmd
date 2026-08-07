@@ -1,0 +1,49 @@
+flowchart TD
+    MANUS["🧠 Manus\nCerveau Y-OS\nOrchestration + décisions"]
+
+    subgraph CC["☁️ Cloud Computer — yos-cloud-operator"]
+        ADB_ENGINE["ADB Engine\nhealth_probe.py · drift_packages.py\nadb_reconnect.sh · yos-notify"]
+    end
+
+    subgraph TS["🔒 Tailscale Overlay\nChiffré · DERP si AP Isolation"]
+        TAIL[" "]
+    end
+
+    subgraph FLEET["📱 Flotte Android"]
+        A1["AND-001\nGalaxy Tab S11\n✅ Opérationnel\nAndroid 16 · 100.89.158.44"]
+        A2["AND-002\nGalaxy Z Fold 7\n🔜 À réception\nBaseline légère · No MDM"]
+        A3["AND-003\nGalaxy Watch Ultra 2\n🔜 Via Fold 7\nWear OS 7"]
+        A4["AND-004\nGoogle TV\n🔜 Via Home Assistant\nAndroid TV Remote"]
+        A5["AND-005\nGalaxy Tab A Robi\n🔜 À configurer\nProfil familial"]
+    end
+
+    subgraph HA["🏠 Home Assistant\n(N100 Lambda — à venir)"]
+        HA_CORE["HA Core\nTélémétrie · Automatisations"]
+    end
+
+    NOTIF["📲 Telegram\nyos-notify\nAlertes P1→P4"]
+
+    MANUS -->|"jobs autorisés A0-A3"| CC
+    CC -->|"ADB over Tailscale"| TS
+    TS -->|"100.89.158.44:5555"| A1
+    TS -->|"IP à attribuer"| A2
+    A2 -->|"Bluetooth\nGalaxy Wearable"| A3
+    HA_CORE -->|"Android TV Remote\nGoogle Cast"| A4
+    TS -->|"IP à attribuer"| A5
+    CC -->|"alertes dédupliquées"| NOTIF
+    HA_CORE -->|"alertes contextuelles"| NOTIF
+    A1 -->|"HA Companion\n(à installer)"| HA_CORE
+    A2 -->|"HA Companion\n(à installer)"| HA_CORE
+    A3 -->|"HA Companion Wear\n(à installer)"| HA_CORE
+
+    style MANUS fill:#1a1a2e,color:#e0e0ff,stroke:#6c63ff
+    style CC fill:#16213e,color:#e0e0ff,stroke:#0f3460
+    style TS fill:#0f3460,color:#e0e0ff,stroke:#533483
+    style FLEET fill:#1a1a2e,color:#e0e0ff,stroke:#e94560
+    style HA fill:#1a2e1a,color:#e0ffe0,stroke:#2d6a4f
+    style NOTIF fill:#2e1a1a,color:#ffe0e0,stroke:#e94560
+    style A1 fill:#1b4332,color:#d8f3dc,stroke:#52b788
+    style A2 fill:#1e3a5f,color:#d0e8ff,stroke:#4a90d9
+    style A3 fill:#3d1a5f,color:#e8d0ff,stroke:#9b59b6
+    style A4 fill:#3d2a1a,color:#ffe8d0,stroke:#e67e22
+    style A5 fill:#3d3d1a,color:#ffffe0,stroke:#f1c40f

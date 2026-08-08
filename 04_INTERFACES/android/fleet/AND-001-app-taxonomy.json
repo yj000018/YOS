@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "device": "AND-001",
+    "total_apps": 0,
+    "manually_tagged": 0,
+    "auto_tagged": 0
+  },
+  "page_names": {
+    "1": "Most Common",
+    "2": "AI & Web",
+    "3": "Office",
+    "4": "Photo & Video",
+    "5": "Tools & Utils",
+    "6": "Sys / Network"
+  },
+  "apps": {}
+}

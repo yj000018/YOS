@@ -1,323 +1,124 @@
-# Y-OS Android Operator — Documentation Complète
+# Blueprint : Y-OS Android Operator
+
 > **Source de vérité** : `yj000018/YOS` → `04_INTERFACES/android/YOS-ANDROID-OPERATOR.md`
-> **Last updated** : 2026-08-05
-> **Statut** : ✅ Opérationnel — Galaxy Tab S11 connectée via CC→Tailscale→ADB
+> **Last updated** : 2026-08-08
+> **Statut** : ✅ Opérationnel — Gestion complète (Provisioning, Nova, Monitoring)
 
 ---
 
-## TL;DR — Ce qu'il faut savoir en 30 secondes
+## 1. Philosophie & Architecture
 
-```
-Manus → CC yos-cloud-operator (100.93.75.9) → Tailscale → Galaxy Tab S11 (100.89.158.44:5555)
-```
+L'Android Operator est le sous-système de Y-OS chargé d'administrer, monitorer et automatiser la flotte d'appareils Android (tablettes, téléphones, montres) de Yannick. Il fonctionne de manière centralisée depuis le Cloud Computer (CC).
 
-**Commande de connexion depuis le CC :**
-```bash
-adb kill-server && adb start-server && adb connect 100.89.158.44:5555
-```
+### 1.1 Architecture de connexion (P0)
+Le contrôle P0 s'effectue exclusivement via **ADB over Tailscale**.
+- **Avantages** : Contourne l'AP Isolation des réseaux Wi-Fi, permet le contrôle hors domicile, sécurisé via Tailnet.
+- **Règle d'or** : Ne **JAMAIS** rooter les appareils Samsung (Knox est irréversible et annule la garantie/sécurité matérielle).
+- **Canal de contrôle** : `CC → Tailscale → IP_Appareil:5555`
 
-**Vérification :**
-```bash
-adb devices
-# → 100.89.158.44:5555  device  SM_X730
-```
-
-**Auto-reconnect** : cron `*/2 * * * *` → `/home/ubuntu/yos/adb_reconnect.sh` (CC)
+### 1.2 Hiérarchie de gestion
+- **Automatisable (ADB)** : Installation d'apps, désinstallation/debloat, permissions système (GRANT), paramètres de base (Settings DB), kill/restart d'apps.
+- **Manuel (Action requise par l'utilisateur)** : Onboarding d'apps, connexion aux comptes (OAuth/Google), permissions spéciales (Accessibilité, Draw over other apps), restauration de backups Nova.
+- **Interface** : Les actions manuelles sont remontées dans le **Notion Y-OS Command Center (DB Action Items)**. Le CC poll Notion et notifie Yannick via Telegram.
 
 ---
 
-## 1. Architecture globale
+## 2. Pipeline de Provisioning (Phases P0 → P5)
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  MANUS (orchestration)                                          │
-│  session préfixée : cloud-pc-8cd489il:                          │
-└────────────────────────┬────────────────────────────────────────┘
-                         │ shell tool (direct)
-                         ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  CC — yos-cloud-operator                                        │
-│  IP publique : 34.148.90.222                                    │
-│  IP Tailscale : 100.93.75.9                                     │
-│  ADB v1.0.41 : /usr/bin/adb                                     │
-│  Cron auto-reconnect : */2 * * * *                              │
-└────────────────────────┬────────────────────────────────────────┘
-                         │ Tailscale (WireGuard overlay)
-                         │ via DERP relay (pas de direct path
-                         │ car AP Isolation sur WiFi local)
-                         ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  Galaxy Tab S11 — galaxy-tab-s11                                │
-│  IP Tailscale : 100.89.158.44                                   │
-│  ADB TCP port : 5555                                            │
-│  Wireless Debugging : ON (port variable ~37000-45000)           │
-│  Tailscale : connecté au tailnet tail7c87e1.ts.net              │
-└─────────────────────────────────────────────────────────────────┘
-```
+Lors de l'ajout d'un nouvel appareil à la flotte Y-OS, le provisioning suit 6 phases strictes.
 
-### Pourquoi pas direct depuis le Mac ?
-L'AP Isolation du routeur WiFi bloque les connexions TCP entre appareils du même réseau local (Mac ↔ Tablette). Le ping ICMP passe, TCP est bloqué. Le CC est sur internet (GCP) et passe via DERP relay Tailscale → bypass total de l'AP Isolation.
+### Phase P0 : Hardware & Connectivité (Manuel)
+1. Déballage et configuration initiale Wi-Fi + Compte Google.
+2. Activer les Options Développeur (Tap 7x sur Build Number).
+3. Activer **Wireless Debugging** (Débogage sans fil).
+4. Installer et connecter **Tailscale**.
+5. *Action CC* : `adb pair` (si nécessaire, via Mac relais 1x) puis `adb connect IP:5555`.
 
-### Pourquoi pas ADB direct depuis le CC via Tailscale sans pairing ?
-Android 16 bloque les connexions TCP entrantes sur l'interface Tailscale (`ts0`). Il faut un pairing initial depuis un appareil autorisé. Le CC a été appairé une fois et est listé dans "Paired devices" sur la tablette → connexion directe possible ensuite.
+### Phase P1 : Nettoyage & Debloat (Automatisé)
+Exécution du script `yos-android-provision.sh --phase 1`.
+- Désinstallation des apps inutiles (Jeux, Bloatwares opérateurs).
+- Désactivation (`pm disable-user`) des services système Samsung non désirés (Bixby, Kids Mode, TV Plus, AR Zone).
 
----
+### Phase P2 : Base System & Paramètres (Automatisé)
+Exécution de `yos-android-system-config.sh`.
+- Animation scale à 0.5x.
+- Désactivation des sons système (Touch, Screen lock).
+- Désactivation du correcteur orthographique agressif.
+- Configuration du timeout écran (ex: 5 mins).
 
-## 2. Inventaire des appareils Android Y-OS
+### Phase P3 : Installation Core Apps Y-OS (Automatisé)
+- Installation via `adb install` ou ouverture du Play Store (`am start -a android.intent.action.VIEW -d "market://details?id=..."`).
+- **Core Stack** : Nova Launcher, Tasker, Telegram, Tailscale, Notion, Home Assistant.
+- **AI Stack** : ChatGPT, Claude, Perplexity, Grok, DeepSeek.
 
-| ID | Appareil | Modèle | IP Tailscale | Statut | Méthode ADB |
-|---|---|---|---|---|---|
-| AND-001 | Galaxy Tab S11 | SM-X730 | 100.89.158.44 | ✅ Opérationnel | CC → Tailscale → :5555 |
-| AND-002 | Galaxy Z Fold 7 | SM-F956 | _à configurer_ | ⏳ Session dédiée | CC → Tailscale → :5555 |
+### Phase P4 : Permissions & Setup (Hybride)
+- *Automatisé* : Script `grant_all_permissions.sh` accorde `CAMERA`, `RECORD_AUDIO`, `READ_EXTERNAL_STORAGE`, `ACCESS_FINE_LOCATION` à toutes les apps de la taxonomie.
+- *Manuel* : L'utilisateur ouvre chaque app 1x pour passer l'onboarding et accepter les conditions.
+
+### Phase P5 : Nova Launcher & UI (Hybride)
+- *Automatisé* : Pousser le backup Nova préparé (`adb push backup.novabackup /sdcard/Download/`).
+- *Automatisé* : Déclencher l'Intent de restauration (`am start -a android.intent.action.VIEW ... com.teslacoilsw.launcher/.RestoreBackupFileHandler`).
+- *Manuel* : L'utilisateur confirme la restauration sur l'écran.
 
 ---
 
-## 3. Protocole de connexion ADB — Procédure complète
+## 3. Gestion des Cas de Bord (Edge Cases)
 
-### 3.1 Connexion standard (tablette déjà appairée)
+Le système est conçu pour être résilient face aux événements système.
 
-```bash
-# Depuis le CC (session cloud-pc-8cd489il:)
-adb kill-server
-sleep 1
-adb start-server
-sleep 1
-adb connect 100.89.158.44:5555
-adb devices -l
-```
+### 3.1 Reboot de l'appareil
+- **Problème** : ADB Wireless se désactive parfois au reboot selon la version d'Android.
+- **Solution Y-OS** : 
+  1. Tailscale se lance automatiquement au boot (Always-On VPN).
+  2. Le CC tente `adb connect` toutes les 2 minutes (`adb_reconnect.sh`).
+  3. Si échec > 3 fois, notification Telegram à Yannick : *"Appareil hors ligne, vérifie le Wi-Fi ou réactive le Wireless Debugging."*
 
-**Résultat attendu :**
-```
-100.89.158.44:5555     device product:gts11wifieea model:SM_X730 device:gts11wifi
-```
+### 3.2 Crash du Launcher (Nova)
+- **Problème** : Nova crashe (ex: base SQLite corrompue) et Android retombe sur One UI.
+- **Solution Y-OS** :
+  1. Le CC détecte que One UI est en `topActivity` (via `health_probe.py`).
+  2. Le CC exécute `pm clear com.teslacoilsw.launcher` pour réinitialiser Nova.
+  3. Le CC pousse le backup canonique et déclenche la restauration.
+  4. Notification Telegram : *"Nova a crashé. Backup propre poussé, confirme la restauration sur l'écran."*
 
-### 3.2 Pairing initial (nouvel appareil ou clé RSA perdue)
-
-**Prérequis sur la tablette :**
-1. Paramètres → Options développeur → Wireless debugging → **ON**
-2. Wireless debugging → "Appairer l'appareil avec un code" → noter le **code 6 chiffres** et le **port**
-
-**Depuis le CC :**
-```bash
-adb pair <IP_TAILSCALE>:<PORT_PAIRING> <CODE_6_CHIFFRES>
-# Exemple : adb pair 100.89.158.44:40303 861885
-```
-
-**⚠️ IMPORTANT — ADB version sur le CC :**
-- CC utilise ADB v1.0.41 (debian) — `adb pair` peut retourner "Unable to start pairing client"
-- Si échec du pairing depuis le CC : utiliser le Mac comme relais pour le pairing initial (1 seule fois)
-- Une fois appairé, `adb connect` fonctionne directement depuis le CC
-
-**Pairing via Mac (fallback) :**
-```python
-import paramiko
-ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect('bore.pub', port=22847, username='yannickjolliet', password='    ')
-_, stdout, _ = ssh.exec_command('/opt/homebrew/bin/adb pair 100.89.158.44:<PORT> <CODE>')
-print(stdout.read().decode())
-```
-
-### 3.3 Reconnexion après reboot tablette
-
-```bash
-# Le cron tourne automatiquement toutes les 2 min sur le CC
-# Forcer manuellement :
-bash /home/ubuntu/yos/adb_reconnect.sh
-
-# Vérifier le log :
-cat /home/ubuntu/yos/logs/adb_reconnect.log
-```
+### 3.3 Batterie Faible
+- **Problème** : L'appareil s'éteint, coupant la connexion.
+- **Solution Y-OS** :
+  1. `health_probe.py` lit le niveau de batterie (`dumpsys battery`).
+  2. Si < 20%, création d'une tâche P2 dans Notion + Notif Telegram silencieuse.
+  3. Si < 10%, création d'une tâche P1 dans Notion + Notif Telegram critique.
 
 ---
 
-## 4. Commandes ADB opérationnelles
+## 4. Organisation UI : Les Fonctionymes
 
-### Informations système
-```bash
-ADB="adb -s 100.89.158.44:5555"
+Y-OS abandonne la logique de "Dossiers par App" pour adopter les **Fonctionymes** (Clusters de Workflows).
 
-# Modèle / Android / SDK
-$ADB shell getprop ro.product.model
-$ADB shell getprop ro.build.version.release
-$ADB shell getprop ro.build.version.sdk
-
-# Batterie
-$ADB shell dumpsys battery | grep -E "level|status|temperature" | head -5
-
-# Uptime
-$ADB shell uptime
-
-# Stockage
-$ADB shell df /data | tail -1
-```
-
-### Apps
-```bash
-# Lister apps tierces
-$ADB shell pm list packages -3 | sort | sed 's/package://'
-
-# Désinstaller une app
-$ADB uninstall com.package.name
-
-# Désactiver une app système (sans désinstaller)
-$ADB shell pm disable-user --user 0 com.package.name
-
-# Installer un APK
-$ADB install /path/to/app.apk
-
-# Lancer une app
-$ADB shell monkey -p com.package.name 1
-```
-
-### Fichiers
-```bash
-# Screenshot
-$ADB shell screencap /sdcard/screen.png
-$ADB pull /sdcard/screen.png /tmp/screen.png
-
-# Transfert fichier vers tablette
-$ADB push /local/file.pdf /sdcard/Download/
-
-# Transfert depuis tablette
-$ADB pull /sdcard/Download/file.pdf /tmp/
-```
-
-### Contrôle UI
-```bash
-# Simuler tap (x, y)
-$ADB shell input tap 540 960
-
-# Simuler swipe
-$ADB shell input swipe 540 1500 540 500 300
-
-# Simuler touche physique
-$ADB shell input keyevent 26   # Power
-$ADB shell input keyevent 3    # Home
-$ADB shell input keyevent 4    # Back
-$ADB shell input keyevent 187  # Recents
-
-# Saisir du texte
-$ADB shell input text "hello"
-
-# Allumer/éteindre écran
-$ADB shell input keyevent 224  # Allumer
-$ADB shell input keyevent 223  # Éteindre
-```
-
-### Notifications & monitoring
-```bash
-# Lire les notifications actives
-$ADB shell dumpsys notification | grep "pkg=" | head -20
-
-# Logs en temps réel
-$ADB logcat -v time | grep -i error
-
-# Processus actifs
-$ADB shell ps -A | grep -v "S " | head -20
-```
+- **Concept** : Une application n'est pas rangée selon ce qu'elle *est*, mais selon ce qu'elle *fait* dans un workflow.
+- **Multiplicité** : Une app comme "ChatGPT" apparaît dans `Most Common` ET dans `AI & Web`.
+- **Interface** : 
+  - Nova Launcher : 6 groupes dans le tiroir d'applications.
+  - Recherche : Le Swipe Down sur l'écran d'accueil ouvre Nova Search (recherche sémantique).
+  - **Y-OS App Explorer** : Web App D3.js (Mind Map) déployée sur le CC (port 8080) permettant d'explorer visuellement la taxonomie par tags et fonctions.
 
 ---
 
-## 5. Ce que Manus peut faire avec l'Android Operator
+## 5. Interactions avec les autres LLMs
 
-| Capacité | Commande | Usage Y-OS |
-|---|---|---|
-| **Screenshot** | `screencap + pull` | Vérification visuelle état tablette |
-| **Installer APK** | `adb install` | Déploiement apps sans Play Store |
-| **Désinstaller apps** | `adb uninstall` | Nettoyage automatisé |
-| **Lancer apps** | `monkey -p` | Automation workflows |
-| **Transfert fichiers** | `push/pull` | Sync documents, PDFs, médias |
-| **Contrôle UI** | `input tap/swipe/keyevent` | Automation UI complète |
-| **Monitoring batterie** | `dumpsys battery` | Alertes Telegram si < 20% |
-| **Logs système** | `logcat` | Debug apps |
-| **Désactiver bloatware** | `pm disable-user` | Nettoyage Samsung |
-| **Reboot** | `adb reboot` | Redémarrage à distance |
-| **Notifications** | `dumpsys notification` | Lecture notifications |
+**Instruction pour les autres agents (ChatGPT, Claude, etc.) :**
+> "Vous êtes un agent interagissant avec l'écosystème Y-OS. Pour toute action sur un appareil Android de Yannick, vous ne devez pas lui demander de le faire manuellement. Vous devez documenter l'action requise (ex: changer un paramètre) et utiliser l'API Manus ou mettre à jour le Notion Command Center pour que le Cloud Computer exécute l'action via ADB. Référez-vous toujours à `YOS-ANDROID-OPERATOR.md` et aux Tool Fact Sheets dans GitHub."
 
 ---
 
-## 6. Auto-reconnect — Architecture du cron
+## 6. Commandes ADB Utiles (Aide-mémoire)
 
-**Script** : `/home/ubuntu/yos/adb_reconnect.sh` (CC)
-**Cron** : `*/2 * * * *` (toutes les 2 minutes)
-**Logique** :
-1. Vérifie si `100.89.158.44:5555` est dans `adb devices` avec statut `device`
-2. Si oui → exit silencieux
-3. Si non → `adb kill-server && adb start-server && adb connect 100.89.158.44:5555`
-4. Si reconnexion réussie → notif Telegram `@yos_notif_bot` → chat_id `223132272`
-
-**Log** : `/home/ubuntu/yos/logs/adb_reconnect.log`
-
-**Conditions de déconnexion connues :**
-- Reboot tablette (Wireless Debugging reste ON après reboot sur Android 16 ✅)
-- Tailscale déconnecté sur tablette (ouvrir app Tailscale → reconnecter)
-- ADB server crash sur CC (résolu par kill-server + start-server)
-
----
-
-## 7. Leçons apprises — Pièges à éviter
-
-| Piège | Symptôme | Solution |
-|---|---|---|
-| AP Isolation WiFi | Mac ne peut pas ping tablette en TCP | Passer par le CC (internet) |
-| ADB v34 debian — pairing bug | "Unable to start pairing client" | Pairer depuis Mac (1x), puis CC fonctionne |
-| Android 16 — TCP entrant bloqué sur ts0 | `adb connect` timeout depuis CC sans pairing | Pairing initial obligatoire depuis appareil autorisé |
-| Tailscale déconnecté tablette | ping 0% depuis CC | Ouvrir app Tailscale sur tablette → reconnecter |
-| Knox irréversible | — | NE PAS ROOTER — Knox = brick définitif |
-| Port Wireless Debugging variable | Port change à chaque session Wireless Debug | Utiliser port 5555 (tcpip) — stable |
-| Code pairing expire vite | "protocol fault" | Générer nouveau code < 30s avant usage |
-
----
-
-## 8. Specs matérielles — Galaxy Tab S11
-
-| Champ | Valeur |
+| Action | Commande ADB |
 |---|---|
-| **Modèle** | Samsung Galaxy Tab S11 (SM-X730) |
-| **Serial ADB** | R5GYB0AXSBY |
-| **Android** | 16 / One UI 8.0 |
-| **SDK** | 36 |
-| **Knox** | 3.12 / API 39 |
-| **IP WiFi locale** | 192.168.1.91 (DHCP stable) |
-| **IP Tailscale** | 100.89.158.44 |
-| **MagicDNS** | galaxy-tab-s11.tail7c87e1.ts.net |
-| **ADB port** | 5555 (tcpip permanent) |
-| **Apps tierces** | 190 |
-
----
-
-## 9. Roadmap Android Y-OS
-
-| Étape | Statut | Notes |
-|---|---|---|
-| Galaxy Tab S11 — ADB via CC→Tailscale | ✅ Opérationnel | Pipeline validé 2026-08-05 |
-| Auto-reconnect cron | ✅ Actif | `*/2 * * * *` sur CC |
-| Nettoyage apps tablette | ⏳ En cours | ~35 apps à supprimer |
-| Galaxy Z Fold 7 — même pipeline | ⏳ Session dédiée | Même protocole que Tab S11 |
-| MacBook Pro always-on — relais ADB permanent | ⏳ À réception | Remplace bore tunnel Mac Air |
-| Monitoring batterie automatique (Telegram) | ⏳ À créer | Script cron CC → alerte si < 20% |
-| Automation UI tablette (scénarios) | ⏳ À définir | input tap/swipe via ADB |
-
----
-
-## 10. Fichiers clés sur le CC
-
-| Fichier | Rôle |
-|---|---|
-| `/home/ubuntu/yos/adb_reconnect.sh` | Auto-reconnect ADB toutes les 2 min |
-| `/home/ubuntu/yos/logs/adb_reconnect.log` | Log des reconnexions |
-| `/usr/bin/adb` | ADB v1.0.41 (android-tools-adb) |
-
----
-
-## Changelog
-
-| Date | Action |
-|---|---|
-| 2026-08-03 | Tailscale installé sur Galaxy Tab S11 (100.89.158.44) |
-| 2026-08-04 | Pipeline ADB validé via Mac relais (CC→SSH bore→Mac→adb 192.168.1.91:5555) |
-| 2026-08-04 | Reboot tablette → AP Isolation découverte → pipeline Mac cassé |
-| 2026-08-05 | **Pipeline final validé** : CC→Tailscale→100.89.158.44:5555 (bypass AP Isolation) |
-| 2026-08-05 | Auto-reconnect cron installé sur CC |
-| 2026-08-05 | Ce module DOC créé dans GitHub YOS |
+| Connecter | `adb connect IP:5555` |
+| Désinstaller | `adb uninstall <package>` |
+| Désactiver système | `adb shell pm disable-user --user 0 <package>` |
+| Simuler tap | `adb shell input tap X Y` |
+| Simuler swipe | `adb shell input swipe X1 Y1 X2 Y2 Duration` |
+| Allumer écran | `adb shell input keyevent 224` |
+| Batterie | `adb shell dumpsys battery` |
+| Top Activity | `adb shell dumpsys activity \| grep topResumedActivity` |

@@ -1,5 +1,5 @@
 # AGENTS.md — Yannick's Cloud Computer (cloud-pc-8cd489il)
-# Last updated: 2026-08-02 (Règle Canon #4 ajoutée : xbar + Telegram)
+# Last updated: 2026-08-05 (Android Operator opérationnel — CC→Tailscale→Galaxy Tab S11)
 
 ---
 
@@ -55,6 +55,7 @@
 - **Disque** : 33 GB
 - **IP publique** : 34.148.90.222
 - **UFW** : port 22 uniquement
+- **Tailscale** : v1.98.10 — hostname `yos-cloud-operator` — IP `100.93.75.9` — MagicDNS `yos-cloud-operator.tail7c87e1.ts.net`
 - **Docker** : v29.5.2 (micro-containers uniquement)
 - **Node.js** : v22.22.2
 - **Python** : 3.12.3
@@ -202,18 +203,26 @@ Prérequis : connecter le N100 comme "My Computer" via Manus desktop client.
 
 ---
 
-## 🔴 RÈGLE CANON #2 — GitHub = Source de Vérité Unique (Notion = MORT)
+## 🔴 RÈGLE CANON #2 — GitHub = Source de Vérité + Notion = Interface Opérationnelle
 
 > **Tout ce qui est créé, documenté, ou mis à jour va dans GitHub `yj000018/YOS`.**
-> **Notion est déprécié — ne jamais créer de nouveau contenu dans Notion.**
+> **Notion KM documentaire = DÉPRÉCIÉ. Notion dashboard opérationnel = AUTORISÉ.**
 >
-> | Type de contenu | Destination GitHub |
+> | Type de contenu | Destination |
 > |---|---|
-> | Tool Fact Sheet | `02_AGENTS/<tool>/TOOL-FACT-SHEET.md` |
-> | Lessons Learned | `00_META/LESSONS-LEARNED/<date>_<topic>.yaml` |
-> | LL Registry index | `00_META/LESSONS-LEARNED/README.md` |
+> | Tool Fact Sheet | GitHub `02_AGENTS/<tool>/TOOL-FACT-SHEET.md` |
+> | Lessons Learned | GitHub `00_META/LESSONS-LEARNED/<date>_<topic>.yaml` |
+> | LL Registry index | GitHub `00_META/LESSONS-LEARNED/README.md` |
 > | Mémoire cross-session | Mem0 (`memory.search()`) |
 > | Infra CC opérationnelle | Ce fichier `AGENTS.md` |
+> | **Dashboard opérationnel** | **Notion — 🤖 Y-OS Command Center** |
+> | **Fleet status (devices)** | **Notion DB Fleet** (mis à jour par health_probe.py) |
+> | **Tâches manuelles** | **Notion DB Action Items** (polling watcher → Telegram) |
+>
+> **Notion Command Center** : https://app.notion.com/p/3b535e218cf88136aeced9be10c2706d
+> **Token Notion (Kap4)** : `/home/ubuntu/yos/.env` → `NOTION_TOKEN`
+> **Fleet DB ID** : `ee6b6f12-0b06-428d-9b3e-3d90eb877dab`
+> **Action Items DB ID** : `b8d00a1e-f73a-4390-9532-a55c67b71e2a`
 
 ---
 
@@ -358,8 +367,41 @@ Brave Mac (session active) → Keychain → AES decrypt → cookies JSON
 | 2026-07-31 | KAP Dashboard créé : `00_META/KAP-DASHBOARD.md` dans GitHub yj000018/YOS. Script `update_kap_dashboard.py` + cron 07:00 UTC. Agent KAP Manus scheduled task actif (task_uid: 8tBPTbvN1p7UscgbGZpBx6, cron: `0 0 7 * * *`, --run-as-new-task, mode: lite). KAP = Knowledge Acquisition Protocol — deux tableaux (Y-OS Cognitif + Universe Knowledge) avec pipeline complet Identifié→Absorbé→Processé→Dédupliqué→Mergé→Synthétisé→Fact Sheet. |
 | 2026-07-31 | ChatGPT full rebuild : 3067 conversations exportées via Brave cookies → Bearer token → backend-api. 3067 fact sheets pushées dans GitHub `08_LOGS/session-ledger/sessions/chatgpt/`. delta_chatgpt.py installé, cron 04:00 UTC actif. Cutoff: 2026-07-31 21:21:12. LL bore SSH : port 22847 = bore local 22 (direct SSH), port 22848 = bore local 2222 (socat relay). |
 | 2026-08-02 | Règle CANON #3 ajoutée : Hiérarchie accès web programmatique API→CDP→Playwright. CDP documenté comme solution canonique Y-OS pour tout site Cloudflare/auth complexe. LL Brave 151+ : déchiffrement AES-GCM échoue, contournement via CDP natif. |
+| 2026-08-03 | Tailscale v1.98.10 installé via apt. Hostname `yos-cloud-operator`, IP Tailscale `100.93.75.9`, MagicDNS `yos-cloud-operator.tail7c87e1.ts.net`. tailscaled enabled+active (systemd). Ping anandaz-ubuntu (100.87.123.30) timeout — nœud offline depuis 93j. |
+| 2026-08-04 | Galaxy Tab S11 (SM-X730) ajouté au tailnet (100.89.158.44). Pipeline ADB validé via Mac relais. Screenshot live capturé. HARDWARE-REGISTRY.md créé dans GitHub 00_META/. |
+| 2026-08-05 | **Pipeline final Android Operator** : CC→Tailscale→100.89.158.44:5555 (bypass AP Isolation). Auto-reconnect cron installé. Module DOC créé dans 04_INTERFACES/android/. |
 
-### Manus API v2 (task.listMessages) — PIPELINE VALIDÉ ✅ (2026-07-30)
+### ADB Android over Tailscale — PIPELINE FINAL Y-OS ✅ (2026-08-05)
+
+**Architecture finale validée :**
+```
+Manus → CC (yos-cloud-operator) → Tailscale → Galaxy Tab S11 (100.89.158.44:5555)
+```
+
+**Commande de connexion depuis le CC :**
+```bash
+adb kill-server && adb start-server && adb connect 100.89.158.44:5555
+# Résultat : 100.89.158.44:5555  device  SM_X730
+```
+
+**Auto-reconnect :** Cron `*/2 * * * *` → `/home/ubuntu/yos/adb_reconnect.sh`
+
+**Points critiques (LL) — Android 16 / AP Isolation :**
+- **❌ ADB direct depuis Mac** : AP Isolation du routeur WiFi bloque TCP entre Mac et tablette (même réseau local). Ping ICMP passe, TCP bloqué.
+- **❌ ADB pair depuis CC (ADB v34 debian)** : `Unable to start pairing client` — bug connu ADB v34
+- **❌ Termux `setprop`/`stop adbd`** : permission denied sans root
+- **✅ Solution finale** : CC est sur internet (GCP) → Tailscale DERP relay bypass AP Isolation → `adb connect 100.89.158.44:5555` fonctionne directement
+- **✅ Pairing initial** : CC listé dans "Paired devices" sur la tablette → `adb connect` sans re-pairing
+- **✅ Si re-pairing nécessaire** : utiliser Mac comme relais (1x) via `/opt/homebrew/bin/adb pair <IP_TS>:<PORT> <CODE>`
+- **✅ ADB installé sur CC** : `/usr/bin/adb` v1.0.41
+- **✅ Serial tablette** : `R5GYB0AXSBY` (guid: `adb-R5GYB0AXSBY-91hXvS`)
+- **Ne pas rooter Galaxy Tab S11** : Knox 3.12 — brick irréversible
+
+**Doc complète** : `04_INTERFACES/android/YOS-ANDROID-OPERATOR.md` dans GitHub yj000018/YOS
+
+---
+
+### Manus API v2 (task.listMessages) — PIPELINE VALIDé ✅ (2026-07-30)
 
 **Pipeline d'extraction de sessions Manus sans Playwright :**
 L'API interne de Manus permet de récupérer l'intégralité du verbatim d'une session sans avoir à scrapper le DOM.

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Y-OS App Explorer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0f; color: #e0e0ff; font-family: -apple-system, 'SF Pro', sans-serif; overflow: hidden; }
+  
+  #header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10,10,20,0.95); padding: 12px 16px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  #search { flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; padding: 8px 14px; color: #fff; font-size: 16px; outline: none; }
+  #search::placeholder { color: rgba(255,255,255,0.4); }
+  #search:focus { border-color: rgba(120,120,255,0.6); background: rgba(255,255,255,0.12); }
+  #title { font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.7); white-space: nowrap; }
+  
+  #filters { position: fixed; top: 56px; left: 0; right: 0; z-index: 99; background: rgba(10,10,20,0.9); padding: 8px 16px; display: flex; gap: 8px; overflow-x: auto; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  #filters::-webkit-scrollbar { display: none; }
+  .filter-btn { padding: 5px 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); background: transparent; color: rgba(255,255,255,0.7); font-size: 12px; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
+  .filter-btn.active { background: rgba(120,120,255,0.3); border-color: rgba(120,120,255,0.6); color: #fff; }
+  
+  #canvas { position: fixed; top: 96px; left: 0; right: 0; bottom: 0; }
+  
+  #tooltip { position: fixed; background: rgba(15,15,30,0.97); border: 1px solid rgba(120,120,255,0.4); border-radius: 12px; padding: 12px 16px; max-width: 260px; pointer-events: none; opacity: 0; transition: opacity 0.2s; z-index: 200; }
+  #tooltip h3 { font-size: 15px; margin-bottom: 6px; }
+  #tooltip .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  #tooltip .tag { background: rgba(120,120,255,0.2); border-radius: 4px; padding: 2px 7px; font-size: 11px; color: rgba(200,200,255,0.9); }
+  #tooltip .page-label { font-size: 11px; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
+  
+  #info { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(15,15,30,0.9); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 8px 16px; font-size: 12px; color: rgba(255,255,255,0.5); pointer-events: none; }
+  
+  .node circle { cursor: pointer; transition: r 0.2s; }
+  .node text { pointer-events: none; font-size: 10px; fill: rgba(255,255,255,0.85); text-anchor: middle; }
+  .link { stroke: rgba(120,120,255,0.15); stroke-width: 1; }
+  .link.highlighted { stroke: rgba(120,120,255,0.6); stroke-width: 2; }
+  .node.dimmed circle { opacity: 0.15; }
+  .node.dimmed text { opacity: 0.1; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div id="title">🤖 Y-OS Apps</div>
+  <input id="search" type="search" placeholder="Search by name or function (e.g. 3d, ai, video)..." autocomplete="off">
+</div>
+
+<div id="filters">
+  <button class="filter-btn active" data-filter="all">All (116)</button>
+  <button class="filter-btn" data-filter="page-1">⭐ Common</button>
+  <button class="filter-btn" data-filter="page-2">🤖 AI & Web</button>
+  <button class="filter-btn" data-filter="page-3">📋 Office</button>
+  <button class="filter-btn" data-filter="page-4">🎨 Photo & Video</button>
+  <button class="filter-btn" data-filter="page-5">🔧 Tools</button>
+  <button class="filter-btn" data-filter="page-6">⚙️ Sys</button>
+  <button class="filter-btn" data-filter="tag-yos">Y-OS</button>
+  <button class="filter-btn" data-filter="tag-ai">AI</button>
+  <button class="filter-btn" data-filter="tag-creative">Creative</button>
+  <button class="filter-btn" data-filter="tag-3d">3D</button>
+</div>
+
+<svg id="canvas"></svg>
+<div id="tooltip"></div>
+<div id="info">Pinch to zoom · Tap node to explore · Search by function</div>
+
+<script>
+// Embedded taxonomy data (from app_taxonomy.json)
+const TAXONOMY = {
+  "ai.leonardo.leonardo": {"name": "Leonardo AI", "tags": ["ai","image-gen","creative","art"], "page": 2},
+  "ai.perplexity.app.android": {"name": "Perplexity", "tags": ["ai","search","research","web"], "page": 2},
+  "ai.x.grok": {"name": "Grok", "tags": ["ai","llm","chat","social"], "page": 2},
+  "ch.coop.coopapp": {"name": "Coop", "tags": ["shopping","local","swiss"], "page": 5},
+  "ch.coop.jumbo": {"name": "Jumbo", "tags": ["shopping","local","swiss"], "page": 5},
+  "ch.suva.slopetrack.beta": {"name": "Slope Track", "tags": ["sport","ski","outdoor","safety"], "page": 5},
+  "ch.ticketcorner.mobile.app.Android": {"name": "Ticket Corner", "tags": ["events","tickets","swiss"], "page": 5},
+  "co.windyapp.android": {"name": "Windy", "tags": ["weather","outdoor","tools"], "page": 5},
+  "com.adobe.lrmobile": {"name": "Lightroom", "tags": ["photo","editing","creative","adobe"], "page": 4},
+  "com.adobe.photoshop.retail": {"name": "Photoshop", "tags": ["photo","editing","creative","adobe","ai"], "page": 4},
+  "com.adobe.psmobile": {"name": "Photoshop Express", "tags": ["photo","editing","creative","adobe"], "page": 4},
+  "com.alibaba.aliexpresshd": {"name": "AliExpress", "tags": ["shopping","ecommerce"], "page": 5},
+  "com.amazon.avod.thirdpartyclient": {"name": "Prime Video", "tags": ["video","media","streaming"], "page": 1},
+  "com.amazon.kindle": {"name": "Kindle", "tags": ["reading","books","learning","office"], "page": 3},
+  "com.amazon.mShop.android.shopping": {"name": "Amazon", "tags": ["shopping","ecommerce"], "page": 1},
+  "com.amazon.mp3": {"name": "Amazon Music", "tags": ["music","streaming","media"], "page": 5},
+  "com.anthropic.claude": {"name": "Claude", "tags": ["ai","llm","chat","assistant","yos"], "page": 2},
+  "com.apple.android.music": {"name": "Apple Music", "tags": ["music","audio","streaming"], "page": 2},
+  "com.apple.atve.androidtv.appletv": {"name": "Apple TV", "tags": ["video","media","streaming"], "page": 1},
+  "com.audible.application": {"name": "Audible", "tags": ["audio","books","learning","podcast"], "page": 3},
+  "com.autodesk.autocadws": {"name": "AutoCAD", "tags": ["architecture","design","cad","3d"], "page": 5},
+  "com.azure.authenticator": {"name": "Azure Auth", "tags": ["security","auth","2fa"], "page": 6},
+  "com.belightsoft.livehome3d": {"name": "Live Home 3D", "tags": ["architecture","3d","design","tools"], "page": 5},
+  "com.brave.browser": {"name": "Brave", "tags": ["browser","web","privacy"], "page": 2},
+  "com.canva.editor": {"name": "Canva", "tags": ["design","creative","ai","presentation"], "page": 4},
+  "com.deepseek.chat": {"name": "DeepSeek", "tags": ["ai","llm","chat","assistant"], "page": 2},
+  "com.disney.disneyplus": {"name": "Disney+", "tags": ["video","media","streaming"], "page": 1},
+  "com.dropbox.android": {"name": "Dropbox", "tags": ["storage","cloud","files","sync"], "page": 1},
+  "com.duolingo": {"name": "Duolingo", "tags": ["learning","language","education"], "page": 3},
+  "com.einnovation.temu": {"name": "Temu", "tags": ["shopping","ecommerce"], "page": 5},
+  "com.etsy.android": {"name": "Etsy", "tags": ["shopping","creative","marketplace"], "page": 5},
+  "com.facebook.katana": {"name": "Facebook", "tags": ["social","communication"], "page": 1},
+  "com.facebook.stella": {"name": "Messenger", "tags": ["messaging","social","communication"], "page": 1},
+  "com.goodnotes.android.app": {"name": "GoodNotes", "tags": ["notes","handwriting","office","creative"], "page": 3},
+  "com.google.android.apps.maps": {"name": "Google Maps", "tags": ["maps","navigation","travel"], "page": 1},
+  "com.google.android.apps.tachyon": {"name": "Google Meet", "tags": ["video-call","communication"], "page": 3},
+  "com.google.android.apps.youtube.creator": {"name": "YouTube Studio", "tags": ["video","youtube","creative"], "page": 4},
+  "com.google.android.apps.youtube.music": {"name": "YouTube Music", "tags": ["music","audio","streaming"], "page": 2},
+  "com.google.android.calendar": {"name": "Google Calendar", "tags": ["calendar","productivity","office"], "page": 3},
+  "com.google.android.contacts": {"name": "Google Contacts", "tags": ["contacts","productivity","google"], "page": 3},
+  "com.google.android.apps.translate": {"name": "Google Translate", "tags": ["tools","language","translation"], "page": 5},
+  "com.google.android.youtube": {"name": "YouTube", "tags": ["video","media","streaming","learning"], "page": 1},
+  "com.homeassistant.companion.android": {"name": "Home Assistant", "tags": ["smarthome","iot","automation","yos"], "page": 5},
+  "com.instagram.android": {"name": "Instagram", "tags": ["social","photo","communication"], "page": 1},
+  "com.intsig.camscanner": {"name": "CamScanner", "tags": ["scan","documents","office"], "page": 3},
+  "io.homeassistant.companion.android": {"name": "Home Assistant", "tags": ["smarthome","iot","automation","yos"], "page": 5},
+  "com.kde.kdeconnect_tp": {"name": "KDE Connect", "tags": ["sync","desktop","tools","yos"], "page": 5},
+  "org.kde.kdeconnect_tp": {"name": "KDE Connect", "tags": ["sync","desktop","tools","yos"], "page": 5},
+  "kling.ai.video.chat": {"name": "Kling AI", "tags": ["ai","video-gen","creative"], "page": 2},
+  "com.lightricks.videoleap": {"name": "Videoleap", "tags": ["video","editing","creative","ai"], "page": 4},
+  "com.luma_touch.lumafusion": {"name": "LumaFusion", "tags": ["video","editing","creative"], "page": 4},
+  "com.milanote.milanoteApp": {"name": "Milanote", "tags": ["design","notes","creative","planning"], "page": 3},
+  "md.obsidian": {"name": "Obsidian", "tags": ["notes","knowledge","markdown","office","yos"], "page": 3},
+  "com.netflix.mediaclient": {"name": "Netflix", "tags": ["video","media","streaming"], "page": 1},
+  "com.niksoftware.snapseed": {"name": "Snapseed", "tags": ["photo","editing","creative","ai"], "page": 4},
+  "com.notion.id": {"name": "Notion", "tags": ["notes","knowledge","productivity","yos"], "page": 3},
+  "notion.id": {"name": "Notion", "tags": ["notes","knowledge","productivity","yos"], "page": 3},
+  "com.openai.chatgpt": {"name": "ChatGPT", "tags": ["ai","llm","chat","assistant"], "page": 2},
+  "com.picsart.studio": {"name": "PicsArt", "tags": ["photo","editing","creative","ai"], "page": 4},
+  "com.pixverseai.pixverse": {"name": "PixVerse", "tags": ["ai","video-gen","creative"], "page": 2},
+  "com.polycam": {"name": "Polycam", "tags": ["3d","scan","ar","creative"], "page": 4},
+  "com.scaniverse.app": {"name": "Scaniverse", "tags": ["3d","scan","ar","creative"], "page": 4},
+  "com.sensopia.magicplan": {"name": "Magic Plan", "tags": ["architecture","design","tools","3d"], "page": 5},
+  "com.skylum.luminar": {"name": "Luminar Neo", "tags": ["photo","editing","creative","ai"], "page": 4},
+  "com.spotify.music": {"name": "Spotify", "tags": ["music","audio","media","streaming"], "page": 1},
+  "com.strava": {"name": "Strava", "tags": ["sport","fitness","health","outdoor"], "page": 1},
+  "com.suno.android": {"name": "Suno", "tags": ["ai","music-gen","creative","audio"], "page": 2},
+  "com.tailscale.ipn.android": {"name": "Tailscale", "tags": ["network","vpn","yos","infra"], "page": 5},
+  "com.tailscale.ipn": {"name": "Tailscale", "tags": ["network","vpn","yos","infra"], "page": 6},
+  "com.termux": {"name": "Termux", "tags": ["terminal","linux","dev","yos"], "page": 5},
+  "com.todoist.android": {"name": "Todoist", "tags": ["tasks","productivity","office","yos"], "page": 3},
+  "com.tophatch.concepts": {"name": "Concepts", "tags": ["drawing","design","creative","vector"], "page": 4},
+  "com.touchtype.swiftkey": {"name": "SwiftKey", "tags": ["keyboard","ai","tools"], "page": 5},
+  "com.vsco.cam": {"name": "VSCO", "tags": ["photo","editing","creative"], "page": 4},
+  "com.waze": {"name": "Waze", "tags": ["maps","navigation","travel"], "page": 1},
+  "com.whatsapp": {"name": "WhatsApp", "tags": ["social","messaging","communication"], "page": 1},
+  "com.whatsapp.w4b": {"name": "WhatsApp Business", "tags": ["messaging","business","communication"], "page": 1},
+  "com.wondershare.filmorago": {"name": "Filmora", "tags": ["video","editing","creative","ai"], "page": 4},
+  "com.zoom.videomeetings": {"name": "Zoom", "tags": ["video-call","meeting","communication","office"], "page": 3},
+  "us.zoom.videomeetings": {"name": "Zoom", "tags": ["video-call","meeting","communication","office"], "page": 3},
+  "company.thebrowser.arc": {"name": "Arc", "tags": ["browser","web","ai"], "page": 2},
+  "im.monica.app.monica": {"name": "Monica AI", "tags": ["ai","crm","assistant","productivity"], "page": 2},
+  "jp.co.celsys.clipstudiopaint.galaxystore": {"name": "Clip Studio", "tags": ["drawing","illustration","creative","art"], "page": 4},
+  "mind.map.mindmap": {"name": "MindMap", "tags": ["productivity","planning","creative"], "page": 3},
+  "net.dinglisch.android.taskerm": {"name": "Tasker", "tags": ["automation","tools","yos","dev"], "page": 6},
+  "net.superblock.pushover": {"name": "Pushover", "tags": ["notifications","automation","yos"], "page": 5},
+  "org.telegram.messenger": {"name": "Telegram", "tags": ["social","messaging","communication","yos"], "page": 1},
+  "org.videolan.vlc": {"name": "VLC", "tags": ["video","media","player"], "page": 4},
+  "tv.pluto.android": {"name": "Pluto TV", "tags": ["video","streaming","free"], "page": 1},
+  "com.google.android.apps.photosgo": {"name": "Google Photos", "tags": ["photo","gallery","cloud"], "page": 4},
+  "com.samsung.android.health": {"name": "Samsung Health", "tags": ["health","fitness","samsung"], "page": 5},
+  "com.samsung.android.app.watchmanager": {"name": "Galaxy Wearable", "tags": ["samsung","watch","wearable","yos"], "page": 5},
+  "com.substack.app": {"name": "Substack", "tags": ["reading","newsletter","learning"], "page": 3},
+  "com.amazon.kindle": {"name": "Kindle", "tags": ["reading","books","learning"], "page": 3}
+};
+
+const PAGE_COLORS = {
+  1: "#ff6b6b", 2: "#a78bfa", 3: "#34d399",
+  4: "#f59e0b", 5: "#60a5fa", 6: "#9ca3af"
+};
+const PAGE_NAMES = {
+  1: "Most Common", 2: "AI & Web", 3: "Office",
+  4: "Photo & Video", 5: "Tools & Utils", 6: "Sys / Network"
+};
+
+// Deduplicate by name
+const seen = new Set();
+const apps = [];
+for (const [pkg, info] of Object.entries(TAXONOMY)) {
+  if (!seen.has(info.name)) {
+    seen.add(info.name);
+    apps.push({ id: pkg, ...info });
+  }
+}
+
+// Build tag-based links
+const tagMap = {};
+apps.forEach(app => {
+  app.tags.forEach(tag => {
+    if (!tagMap[tag]) tagMap[tag] = [];
+    tagMap[tag].push(app.id);
+  });
+});
+
+const linkSet = new Set();
+const links = [];
+Object.values(tagMap).forEach(pkgs => {
+  if (pkgs.length < 2 || pkgs.length > 8) return;
+  for (let i = 0; i < pkgs.length; i++) {
+    for (let j = i+1; j < pkgs.length; j++) {
+      const key = [pkgs[i], pkgs[j]].sort().join('|');
+      if (!linkSet.has(key)) {
+        linkSet.add(key);
+        links.push({ source: pkgs[i], target: pkgs[j] });
+      }
+    }
+  }
+});
+
+// D3 Force simulation
+const svg = d3.select('#canvas');
+let width = window.innerWidth;
+let height = window.innerHeight - 96;
+svg.attr('width', width).attr('height', height);
+
+const g = svg.append('g');
+
+// Zoom
+const zoom = d3.zoom().scaleExtent([0.3, 3]).on('zoom', e => g.attr('transform', e.transform));
+svg.call(zoom);
+
+const simulation = d3.forceSimulation(apps)
+  .force('link', d3.forceLink(links).id(d => d.id).distance(60).strength(0.3))
+  .force('charge', d3.forceManyBody().strength(-120))
+  .force('center', d3.forceCenter(width/2, height/2))
+  .force('collision', d3.forceCollide(28));
+
+const link = g.append('g').selectAll('line')
+  .data(links).join('line').attr('class', 'link');
+
+const node = g.append('g').selectAll('g')
+  .data(apps).join('g').attr('class', 'node')
+  .call(d3.drag()
+    .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
+
+node.append('circle')
+  .attr('r', d => d.tags.includes('yos') ? 14 : 10)
+  .attr('fill', d => PAGE_COLORS[d.page] || '#888')
+  .attr('fill-opacity', 0.85)
+  .attr('stroke', d => d.tags.includes('yos') ? '#fff' : 'rgba(255,255,255,0.3)')
+  .attr('stroke-width', d => d.tags.includes('yos') ? 2 : 1);
+
+node.append('text')
+  .attr('dy', 22)
+  .text(d => d.name.length > 12 ? d.name.substring(0, 11) + '…' : d.name);
+
+simulation.on('tick', () => {
+  link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+  node.attr('transform', d => `translate(${d.x},${d.y})`);
+});
+
+// Tooltip
+const tooltip = document.getElementById('tooltip');
+node.on('mouseover touchstart', function(e, d) {
+  e.preventDefault();
+  const tagsHtml = d.tags.map(t => `<span class="tag">#${t}</span>`).join('');
+  tooltip.innerHTML = `
+    <div class="page-label">Page ${d.page} — ${PAGE_NAMES[d.page]}</div>
+    <h3>${d.name}</h3>
+    <div class="tags">${tagsHtml}</div>
+  `;
+  tooltip.style.opacity = '1';
+  const x = Math.min(e.clientX || e.touches?.[0]?.clientX || 100, width - 270);
+  const y = Math.min(e.clientY || e.touches?.[0]?.clientY || 100, height - 150);
+  tooltip.style.left = x + 'px';
+  tooltip.style.top = y + 'px';
+  
+  // Highlight connected nodes
+  const connected = new Set([d.id]);
+  links.forEach(l => {
+    if (l.source.id === d.id) connected.add(l.target.id);
+    if (l.target.id === d.id) connected.add(l.source.id);
+  });
+  node.classed('dimmed', n => !connected.has(n.id));
+  link.classed('highlighted', l => l.source.id === d.id || l.target.id === d.id);
+})
+.on('mouseout touchend', function() {
+  tooltip.style.opacity = '0';
+  node.classed('dimmed', false);
+  link.classed('highlighted', false);
+});
+
+// Search
+document.getElementById('search').addEventListener('input', function() {
+  const q = this.value.toLowerCase().trim();
+  if (!q) { node.classed('dimmed', false); link.classed('highlighted', false); return; }
+  
+  const matched = new Set();
+  apps.forEach(app => {
+    if (app.name.toLowerCase().includes(q) || app.tags.some(t => t.includes(q))) {
+      matched.add(app.id);
+    }
+  });
+  node.classed('dimmed', d => !matched.has(d.id));
+  link.classed('highlighted', l => matched.has(l.source.id) && matched.has(l.target.id));
+});
+
+// Filters
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const f = this.dataset.filter;
+    
+    if (f === 'all') { node.classed('dimmed', false); link.classed('highlighted', false); return; }
+    
+    const matched = new Set();
+    apps.forEach(app => {
+      if (f.startsWith('page-') && app.page === parseInt(f.split('-')[1])) matched.add(app.id);
+      if (f.startsWith('tag-') && app.tags.includes(f.split('-')[1])) matched.add(app.id);
+    });
+    node.classed('dimmed', d => !matched.has(d.id));
+    link.classed('highlighted', false);
+  });
+});
+
+// Resize
+window.addEventListener('resize', () => {
+  width = window.innerWidth;
+  height = window.innerHeight - 96;
+  svg.attr('width', width).attr('height', height);
+  simulation.force('center', d3.forceCenter(width/2, height/2)).alpha(0.3).restart();
+});
+</script>
+</body>
+</html>

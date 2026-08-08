@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Registre Y-OS des workflows clusters (Fonctionymes). Définit les raccourcis Nova et la navigation sémantique.",
+    "updated_at": "2026-08-08"
+  },
+  "clusters": [
+    {
+      "id": "workflow_ai_chat",
+      "primary_app": "com.anthropic.claude",
+      "name": "AI Assistants",
+      "fonctionymes": [
+        {"package": "com.openai.chatgpt", "name": "ChatGPT"},
+        {"package": "ai.perplexity.app.android", "name": "Perplexity"},
+        {"package": "ai.x.grok", "name": "Grok"},
+        {"package": "com.google.android.apps.bard", "name": "Gemini"},
+        {"package": "com.deepseek.chat", "name": "DeepSeek"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_notes_km",
+      "primary_app": "md.obsidian",
+      "name": "Knowledge & Notes",
+      "fonctionymes": [
+        {"package": "com.notion.id", "name": "Notion"},
+        {"package": "com.goodnotes.android.app", "name": "GoodNotes"},
+        {"package": "com.milanote.milanoteApp", "name": "Milanote"},
+        {"package": "mind.map.mindmap", "name": "MindMap"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_photo_edit",
+      "primary_app": "com.niksoftware.snapseed",
+      "name": "Photo Editing",
+      "fonctionymes": [
+        {"package": "com.adobe.lrmobile", "name": "Lightroom"},
+        {"package": "com.adobe.photoshop.retail", "name": "Photoshop"},
+        {"package": "com.vsco.cam", "name": "VSCO"},
+        {"package": "com.picsart.studio", "name": "PicsArt"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_video_edit",
+      "primary_app": "com.luma_touch.lumafusion",
+      "name": "Video Editing",
+      "fonctionymes": [
+        {"package": "com.lightricks.videoleap", "name": "Videoleap"},
+        {"package": "com.wondershare.filmorago", "name": "Filmora"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_ai_creative",
+      "primary_app": "com.canva.editor",
+      "name": "AI Creative",
+      "fonctionymes": [
+        {"package": "ai.leonardo.leonardo", "name": "Leonardo AI"},
+        {"package": "kling.ai.video.chat", "name": "Kling AI"},
+        {"package": "com.pixverseai.pixverse", "name": "PixVerse"},
+        {"package": "com.suno.android", "name": "Suno"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_3d_scan",
+      "primary_app": "com.polycam",
+      "name": "3D Scanning",
+      "fonctionymes": [
+        {"package": "com.scaniverse.app", "name": "Scaniverse"},
+        {"package": "com.luma.ai", "name": "Luma AI"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_architecture",
+      "primary_app": "com.sensopia.magicplan",
+      "name": "Architecture & CAD",
+      "fonctionymes": [
+        {"package": "com.belightsoft.livehome3d", "name": "Live Home 3D"},
+        {"package": "com.autodesk.autocadws", "name": "AutoCAD"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_drawing",
+      "primary_app": "com.tophatch.concepts",
+      "name": "Drawing & Vector",
+      "fonctionymes": [
+        {"package": "jp.co.celsys.clipstudiopaint.galaxystore", "name": "Clip Studio"}
+      ],
+      "actions": []
+    },
+    {
+      "id": "workflow_yos_ops",
+      "primary_app": "com.tailscale.ipn",
+      "name": "Y-OS Operations",
+      "fonctionymes": [
+        {"package": "io.homeassistant.companion.android", "name": "Home Assistant"},
+        {"package": "com.termux", "name": "Termux"},
+        {"package": "net.dinglisch.android.taskerm", "name": "Tasker"},
+        {"package": "net.superblock.pushover", "name": "Pushover"}
+      ],
+      "actions": [
+        {"name": "Backup Nova", "type": "adb_intent", "intent": "com.teslacoilsw.launcher.BACKUP"},
+        {"name": "Health Probe", "type": "script", "script": "health_probe.py"}
+      ]
+    },
+    {
+      "id": "workflow_social",
+      "primary_app": "org.telegram.messenger",
+      "name": "Social & Messaging",
+      "fonctionymes": [
+        {"package": "com.whatsapp", "name": "WhatsApp"},
+        {"package": "com.whatsapp.w4b", "name": "WhatsApp Business"},
+        {"package": "com.facebook.stella", "name": "Messenger"},
+        {"package": "com.instagram.android", "name": "Instagram"}
+      ],
+      "actions": []
+    }
+  ]
+}
